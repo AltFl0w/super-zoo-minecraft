@@ -46,6 +46,9 @@ RUN (curl -L --retry 3 --retry-delay 2 \
 # Create necessary directories
 RUN mkdir -p worlds behavior_packs resource_packs zoo-ai-bot logs backups
 
+# Copy the Super Zoo world
+COPY worlds/sWcJIvWk2cM=/ ./worlds/Super\ Zoo/
+
 # Set up AI Bot
 WORKDIR /home/minecraft/zoo-ai-bot
 COPY zoo-ai-bot/package*.json ./
