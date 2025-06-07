@@ -46,40 +46,33 @@ RUN (curl -L --retry 3 --retry-delay 2 \
 # Create necessary directories
 RUN mkdir -p worlds behavior_packs resource_packs zoo-ai-bot logs backups
 
-# Setup AI Bot directory and dependencies
+# Set up AI Bot
 WORKDIR /home/minecraft/zoo-ai-bot
 COPY zoo-ai-bot/package*.json ./
 RUN npm install
-
-# Copy AI Bot source code
 COPY zoo-ai-bot/ ./
 RUN chown -R minecraft:minecraft /home/minecraft/zoo-ai-bot
 
 # Back to main directory
 WORKDIR /home/minecraft
 
-# Copy world and packs (these will be mounted as volumes in production)
-COPY worlds/ ./worlds/
-COPY behavior_packs/ ./behavior_packs/
-COPY resource_packs/ ./resource_packs/
-
 # Copy server configuration files
-COPY server.properties ./
-COPY permissions.json ./
-COPY allowlist.json ./
+COPY server.properties ./server.properties
+COPY permissions.json ./permissions.json
+COPY allowlist.json ./allowlist.json
+COPY start.sh ./start.sh
 
-# Copy startup script
-COPY start.sh ./
+# Make start script executable
 RUN chmod +x start.sh
 
 # Set ownership
 RUN chown -R minecraft:minecraft /home/minecraft
 
-# Expose ports
-EXPOSE 19132/udp 8080
-
 # Switch to minecraft user
 USER minecraft
+
+# Expose ports
+EXPOSE 19132/udp 8080
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
