@@ -1,0 +1,13 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:attachable":{
+    "description":{
+      "identifier":"serp:rocketf_leggings",
+      "materials":{"default":"armor","enchanted":"armor_enchanted"},
+      "textures":{"default":"textures/models/rocketf/leggings","enchanted":"textures/misc/enchanted_item_glint"},
+      "geometry":{"default":"geometry.serp_rocketf_armor"},
+      "scripts":{"parent_setup":"v.leg_layer_visible=0;"},
+      "render_controllers":["controller.render.armor"]
+    }
+  }
+}

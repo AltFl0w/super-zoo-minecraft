@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:pokedex",
+	    "menu_category":{"category":"items"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"serp.pokedex"},
+      "minecraft:icon":"pokedex"
+    }
+  }
+}

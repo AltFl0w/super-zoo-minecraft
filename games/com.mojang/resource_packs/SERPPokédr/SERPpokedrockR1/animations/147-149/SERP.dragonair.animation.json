@@ -1,0 +1,296 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.dragonair.quiet": {
+			"loop": true,
+			"bones": {
+				"dragonair": {
+					"position": ["-1-(math.cos(q.anim_time*360)*-1)", "-6-(math.cos(q.anim_time*360)*-1)", "-2-(math.cos(q.anim_time*360)*-1)"]
+				},
+				"body": {
+					"rotation": ["-30-(math.cos(q.anim_time*360)*5)", 0, 0]
+				},
+				"body2": {
+					"rotation": [50, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"body3": {
+					"rotation": ["40-(math.cos(q.anim_time*360)*5)", "math.cos(q.anim_time*360)*-15", 0],
+					"position": [0, 1.5, -0.25]
+				},
+				"body4": {
+					"rotation": [45, 0, "math.cos(q.anim_time*360)*15"],
+					"position": [0, 0.5, -0.5]
+				},
+				"body5": {
+					"rotation": [0, 0, "math.cos(q.anim_time*480)*-15"]
+				}
+			}
+		},
+		"animation.dragonair.walk": {
+			"loop": true,
+			"bones": {
+				"dragonair": {
+					"position": ["-1-(math.cos(q.anim_time*360)*-1)", "-10-(math.cos(q.anim_time*360)*-1)", "-10-(math.cos(q.anim_time*720)*-1)"]
+				},
+				"body": {
+					"rotation": ["0-(math.cos(q.anim_time*360)*10)", 0, 0]
+				},
+				"body2": {
+					"rotation": [50, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"body3": {
+					"rotation": ["40-(math.cos(q.anim_time*360)*5)", "math.cos(q.anim_time*360)*-15", 0],
+					"position": [0, 1.5, -0.25]
+				},
+				"body4": {
+					"rotation": [45, 0, "math.cos(q.anim_time*360)*15"],
+					"position": [0, 0.5, -0.5]
+				},
+				"body5": {
+					"rotation": [0, 0, "math.cos(q.anim_time*480)*-15"]
+				}
+			}
+		},
+		"animation.dragonair.sitting": {
+			"loop": true,
+			"bones": {
+				"dragonair": {
+					"position": [0, -10, -4]
+				},
+				"body": {
+					"rotation": [-20, 0, 0]
+				},
+				"body2": {
+					"rotation": [20, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"body3": {
+					"rotation": [90, -30, 0],
+					"position": [0, 2, 1]
+				},
+				"body4": {
+					"rotation": [0, 0, -60],
+					"position": [-0.75, 0.5, -0.5]
+				},
+				"body5": {
+					"rotation": [0, 0, -60]
+				}
+			}
+		},
+		"animation.dragonair.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 0, -1]
+				},
+				"body": {
+					"rotation": [-45, 0, 0]
+				},
+				"body2": {
+					"rotation": [60, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"body3": {
+					"rotation": [50, 30, -20],
+					"position": [0, 1, -0.2]
+				},
+				"body4": {
+					"rotation": [45, 40, -40],
+					"position": [0, 0.5, -1]
+				},
+				"dragonair": {
+					"position": [0, -8, 0]
+				},
+				"body5": {
+					"rotation": [55, 20, -15]
+				}
+			}
+		},
+		"animation.dragonair.attack2": {
+			"loop": true,
+			"bones": {
+				"dragonair": {
+					"position": [0, -5, 7]
+				},
+				"body2": {
+					"rotation": [-30, 0, 0],
+					"position": [0, 1, 0.25]
+				},
+				"body3": {
+					"rotation": [-30, 0, 0],
+					"position": [0, 1, 0.5]
+				},
+				"body4": {
+					"rotation": [-30, 0, 0],
+					"position": [0, 0.5, 0.5]
+				},
+				"body5": {
+					"rotation": [-45, 0, 0]
+				}
+			}
+		},
+		"animation.dragonair.swimming": {
+			"loop": true,
+			"bones": {
+				"dragonair": {
+					"position": ["-1-(math.cos(q.anim_time*360)*-1)", "-6-(math.cos(q.anim_time*360)*-1)", "-2-(math.cos(q.anim_time*360)*-1)"]
+				},
+				"body": {
+					"rotation": ["-30-(math.cos(q.anim_time*360)*5)", 0, 0]
+				},
+				"body2": {
+					"rotation": [50, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"body3": {
+					"rotation": ["40-(math.cos(q.anim_time*360)*5)", "math.cos(q.anim_time*360)*-15", 0],
+					"position": [0, 1.5, -0.25]
+				},
+				"body4": {
+					"rotation": [45, 0, "math.cos(q.anim_time*360)*15"],
+					"position": [0, 0.5, -0.5]
+				},
+				"body5": {
+					"rotation": [0, 0, "math.cos(q.anim_time*480)*-15"]
+				}
+			}
+		},
+		"animation.dragonair.sink": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"dragonair": {
+					"position": [0, "math.cos(q.anim_time*460)*1", 0]
+				},
+				"head": {
+					"position": [0, -25, -8]
+				},
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": [90, -10, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [90, 10, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [90, -10, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": [0, -23, -5]
+				},
+				"body2": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [0, 0, -10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [0, 0, 10],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body3": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, -10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [0, 0, 10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [0, 0, -10],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body4": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [0, 0, -10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [0, 0, 10],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body5": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, -10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [0, 0, 10],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [0, 0, -10],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.dragonair.defeated": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -10, -8]
+				},
+				"body": {
+					"rotation": [90, -45, 0],
+					"position": [1, -8, -7]
+				},
+				"body2": {
+					"rotation": [0, 0, -45],
+					"position": [0.5, 0.5, -0.5]
+				},
+				"body3": {
+					"rotation": [0, 0, -45],
+					"position": [0, 0.5, 0.5]
+				},
+				"body4": {
+					"rotation": [0, 0, -45],
+					"position": [-0.75, 0.5, -0.5]
+				},
+				"dragonair": {
+					"position": [0, -14, 0]
+				},
+				"body5": {
+					"rotation": [0, 0, -60],
+					"position": [0, 0, -0.5]
+				}
+			}
+		},
+		"animation.dragonair.direction": {
+			"loop": true,
+			"bones": {
+				"dragonair": {
+					"rotation": ["query.target_x_rotation - this", "query.target_y_rotation - this", "-math.max(-20,math.min(20,query.yaw_speed))"]
+				},
+				"tail": {
+					"rotation": [0, 0, "math.max(-35,math.min(35,query.yaw_speed))"]
+				}
+			}
+		}
+	}
+}

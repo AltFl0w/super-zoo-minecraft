@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.armor_skin": {
+      "geometry": "Geometry.armor_skin",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.armor_skin", "Texture.enchanted" ]
+    }
+  }
+}

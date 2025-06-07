@@ -1,0 +1,202 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.doduo.quiet": {
+			"loop": true,
+			"bones": {
+				"doduo": {
+					"position": [0, "-0.3+(Math.cos(q.anim_time*360)*-0.2)", "Math.cos(q.anim_time*360)*-0.25"]
+				},
+				"head1": {
+					"position": [-1, 0, "Math.cos(q.anim_time*180)*1.75"]
+				},
+				"head2": {
+					"position": [1, 0, "Math.cos(q.anim_time*180)*-1.75"]
+				},
+				"body": {
+					"rotation": [0, "Math.cos(q.anim_time*180)*5", 0]
+				},
+				"neck1": {
+					"rotation": ["Math.cos(q.anim_time*180)*-15", 0, -15]
+				},
+				"neck2": {
+					"rotation": ["Math.cos(q.anim_time*180)*15", 0, 15]
+				},
+				"right_leg": {
+					"rotation": ["10+(Math.cos(q.anim_time*360)*5)", 15, 0],
+					"position": ["(Math.cos(q.anim_time*360)*-0.1)", 0, 0]
+				},
+				"right_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*360)*-5)", 0, 0]
+				},
+				"left_leg": {
+					"rotation": ["10+(Math.cos(q.anim_time*360)*5)", -15, 0],
+					"position": ["(Math.cos(q.anim_time*360)*0.1)", 0, 0]
+				},
+				"left_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*360)*-5)", 0, 0]
+				}
+			}
+		},
+		"animation.doduo.walk": {
+			"loop": true,
+			"bones": {
+				"doduo": {
+					"position": [0, "Math.cos(q.anim_time*720)*1", 0]
+				},
+				"head1": {
+					"position": ["-1+(Math.cos(q.anim_time*360)*-1)", "-2+(Math.cos(q.anim_time*360)*1)", "-7+(Math.cos(q.anim_time*360)*1)"]
+				},
+				"head2": {
+					"position": ["1+(Math.cos(q.anim_time*360)*-1)", "-2+(Math.cos(q.anim_time*360)*-1)", "-7+(Math.cos(q.anim_time*360)*-1)"]
+				},
+				"body": {
+					"rotation": [0, "Math.cos(q.anim_time*360)*5", 0]
+				},
+				"neck1": {
+					"rotation": ["35+(Math.cos(q.anim_time*360)*-15)", 0, -20],
+					"position": [0, 0, -2]
+				},
+				"neck2": {
+					"rotation": ["35+(Math.cos(q.anim_time*360)*15)", 0, 20],
+					"position": [0, 0, -2]
+				},
+				"right_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*-35", 0, 0]
+				},
+				"right_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*720)*10)", 0, 0]
+				},
+				"left_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*35", 0, 0]
+				},
+				"left_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*720)*10)", 0, 0]
+				}
+			}
+		},
+		"animation.doduo.sitting": {
+			"loop": true,
+			"bones": {
+				"doduo": {
+					"position": [0, -4.2, 0]
+				},
+				"head1": {
+					"position": [-1.5, -3, 0]
+				},
+				"head2": {
+					"position": [1.5, -3, 0]
+				},
+				"neck1": {
+					"rotation": [0, 0, -35]
+				},
+				"neck2": {
+					"rotation": [0, 0, 35]
+				},
+				"legs": {
+					"position": [0, 1, -2],
+					"scale": [1, 0.8, 1]
+				},
+				"right_leg": {
+					"rotation": [45, 1, 0]
+				},
+				"right_foot": {
+					"rotation": [-45, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [45, -1, 0]
+				},
+				"left_foot": {
+					"rotation": [-45, 0, 0]
+				}
+			}
+		},
+		"animation.doduo.attack": {
+			"loop": true,
+			"bones": {
+				"head1": {
+					"position": [0, -11, -9]
+				},
+				"head2": {
+					"position": [0, -6, -9]
+				},
+				"body": {
+					"position": [0, -1, 0]
+				},
+				"neck1": {
+					"rotation": [120, 0, 0],
+					"position": [0, 0, -2]
+				},
+				"neck2": {
+					"rotation": [60, 0, 0],
+					"position": [0, 0, -2]
+				},
+				"right_leg": {
+					"rotation": [0, 30, 0]
+				},
+				"left_leg": {
+					"rotation": [0, -30, 0]
+				}
+			}
+		},
+		"animation.doduo.attack2": {
+			"loop": true,
+			"bones": {
+				"head1": {
+					"position": [-1, 0, 0]
+				},
+				"head2": {
+					"position": [1, 0, 0]
+				},
+				"neck1": {
+					"rotation": [0, 0, -15]
+				},
+				"neck2": {
+					"rotation": [0, 0, 15]
+				},
+				"right_leg": {
+					"rotation": [0, 35, 0]
+				},
+				"left_leg": {
+					"rotation": [0, -35, 0]
+				}
+			}
+		},
+		"animation.doduo.defeated": {
+			"loop": true,
+			"bones": {
+				"doduo": {
+					"position": [0, -0.5, 0]
+				},
+				"head1": {
+					"position": [-2, -12, -9]
+				},
+				"head2": {
+					"position": [2, -12, -9]
+				},
+				"neck1": {
+					"rotation": [120, 30, 0],
+					"position": [0, -1, -2]
+				},
+				"neck2": {
+					"rotation": [120, -30, 0],
+					"position": [0, -1, -2]
+				},
+				"right_leg": {
+					"rotation": [15, 35, 0],
+					"position": [-0.5, 0, 0]
+				},
+				"right_foot": {
+					"rotation": [-15, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [15, -35, 0],
+					"position": [0.5, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [-15, 0, 0]
+				}
+			}
+		}
+	}
+}

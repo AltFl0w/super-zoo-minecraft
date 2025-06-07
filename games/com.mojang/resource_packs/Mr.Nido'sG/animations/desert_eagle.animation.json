@@ -1,0 +1,251 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.desert_eagle.third.idle": {
+			"loop": true,
+			"bones": {
+				"base_attachable": {
+					"rotation": [90, 0, 0],
+					"position": [0.25, 0, 0.4],
+					"scale": 0.5
+				},
+				"red_laser": {
+					"scale": [1, 1, 250]
+				},
+				"blue_laser": {
+					"scale": [1, 1, 250]
+				},
+				"green_laser": {
+					"scale": [1, 1, 250]
+				}
+			}
+		},
+		"animation.desert_eagle.first.idle": {
+			"loop": true,
+			"bones": {
+				"base_attachable": {
+					"position": [-0.5, 7.5, -0.5],
+					"scale": 0.5
+				},
+				"red_laser": {
+					"scale": [1, 1, 250]
+				},
+				"blue_laser": {
+					"scale": [1, 1, 250]
+				},
+				"green_laser": {
+					"scale": [1, 1, 250]
+				}
+			}
+		},
+		"animation.desert_eagle.first.shoot": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"reload_attachable": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 3],
+						"0.1667": [0, 0, 0],
+						"0.3333": [0, 0, 0]
+					}
+				},
+				"desert_recarga_attachable": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 3],
+						"0.1667": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.desert_eagle.first.reload": {
+			"animation_length": 2,
+			"bones": {
+				"desert_recarga_attachable": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 0, 4],
+						"1.5": [0, 0, 4],
+						"1.75": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.desert_eagle.third.shoot": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [-7.5, 0, 0],
+						"0.21": [0, 0, 0],
+						"0.33": [0, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [-10, 0, 0],
+						"0.21": [0, 0, 0],
+						"0.33": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.08": [-12.5, 0, 0],
+						"0.21": [0, 0, 0],
+						"0.33": [0, 0, 0]
+					}
+				},
+				"right_shoot_particle": {
+					"position": [2, -8, -3]
+				},
+				"right_bullet_particle": {
+					"position": [0, -3, -3]
+				}
+			},
+			"particle_effects": {
+				"0.07": {
+					"effect": "smoke_fire",
+					"locator": "right_shoot_particle"
+				},
+				"0.08": {
+					"effect": "shoot_effect",
+					"locator": "right_shoot_particle"
+				},
+				"0.09": {
+					"effect": "shoot_light",
+					"locator": "right_shoot_particle"
+				},
+				"0.1": {
+					"effect": "smoke_fire",
+					"locator": "right_shoot_particle"
+				},
+				"0.11": {
+					"effect": "fusil_bullet",
+					"locator": "right_bullet_particle"
+				},
+				"0.15": {
+					"effect": "smoke_fire",
+					"locator": "right_shoot_particle"
+				}
+			}
+		},
+		"animation.player.desert_eagle.first.shoot": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"base_brazoes": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-10, 0, 0],
+						"0.3333": [0, 0, 0]
+					}
+				},
+				"second_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.1667": [-7.5, 0, 0],
+						"0.3333": [0, 0, 0]
+					}
+				},
+				"rightArm_model": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.1667": [-2.5, 0, 0],
+						"0.3333": [0, 0, 0]
+					}
+				},
+				"shoot_particle": {
+					"position": [5.5882, -6.03899, -12.89312]
+				}
+			},
+			"particle_effects": {
+				"0.0417": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				},
+				"0.0833": {
+					"effect": "shoot_effect",
+					"locator": "shoot_particle"
+				},
+				"0.125": {
+					"effect": "shoot_light",
+					"locator": "shoot_particle"
+				},
+				"0.1667": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				},
+				"0.2083": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				}
+			}
+		},
+		"animation.player.desert_eagle.first.reload": {
+			"animation_length": 2,
+			"bones": {
+				"base_brazoes": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.3333": [0, 0, 0],
+						"1.5": [-22.5, 0, 0],
+						"1.625": [0, 0, 0],
+						"1.8333": [10, 0, 0],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"second_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [55, -2.5, 30],
+						"0.875": [55, -2.5, 30],
+						"1.0833": [-15, 20, 15],
+						"1.3333": [0, 20, 15],
+						"1.625": [0, 6.43, -5.18],
+						"2.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.1667": [4, 0, 7],
+						"0.875": [4, 0, 7],
+						"1.0833": [1, -1, 2],
+						"1.625": [1, -1, 2],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"rightArm_model": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [-25, 42.5, -7.5],
+						"0.4583": [-2.5, 42.5, -7.5],
+						"0.6667": [-7.5, 35, -7.5],
+						"0.875": [-7.5, 40, -7.5],
+						"1.0833": [-14.81, 39.04, -7.5],
+						"1.3333": [-2.5, 42.5, -7.5],
+						"1.625": [4.63, -8.62, -11.12],
+						"2.0": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [-3, 0, 0],
+						"1.3333": [-3, 0, 0],
+						"1.625": [-3, 0, 0],
+						"2.0": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "desert_eagle"
+				}
+			}
+		}
+	}
+}

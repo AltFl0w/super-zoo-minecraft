@@ -1,0 +1,8 @@
+credits:
+-sounds: https://www.zapsplat.com/
+         https://freesound.org/
+         https://www.myinstants.com/en/search/?name=eevee (31.10.2022)
+         https://www.soundboard.com/sb/Pikachu_Sound (31.10.2022)
+         https://www.myinstants.com/en/search/?name=squirtle (31.10.2022)
+         https://www.zedge.net/find/ringtones/squirtle (31.10.2022)
+         https://www.voicy.network/official-soundboards/anime/bulbasaur (31.10.2022)

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "fauna:sepat",
+      "materials": {
+        "default": "salmon"
+      },
+      "textures": {
+        "default": "textures/entity/fish/sepat"
+      },
+      "geometry": {
+        "default": "geometry.sepat"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.ZRot \u003d !query.is_in_water ? Math.cos((query.time_stamp + query.frame_alpha) * 14.32) * 90 : 0.0;",
+          "variable.AnimationAmountBlend \u003d Math.lerp(variable.AnimationAmountPrev, variable.AnimationAmount, query.frame_alpha);"
+        ]
+      },
+      "animations": {
+        "flop": "animation.sepat.flop",
+        "swim": "animation.sepat.swim"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.fish.general"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.salmon"
+      ],
+      "spawn_egg": {
+        "texture": "sepat",
+        "texture_index": 0
+      }
+    }
+  }
+}

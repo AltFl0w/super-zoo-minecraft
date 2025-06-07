@@ -1,0 +1,14 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:attachable":{
+    "description":{
+      "identifier":"serp:dynamax_band",
+      "materials":{"default":"entity_alphatest"},
+      "textures":{"equipped":"textures/entity/dynamax_band"},
+      "geometry":{"equipped":"geometry.serpdynamaxband"},
+      "animations":{"b":"animation.serpitem.b"},
+      "scripts":{"animate":["b"]},
+      "render_controllers":[{"controller.render.bracelets":"(c.is_first_person&&(q.get_equipped_item_name('off_hand')=='dynamax_band'&&q.get_equipped_item_name('main_hand')=='')||q.get_equipped_item_name('main_hand')=='dynamax_band')||!c.is_first_person"}]
+    }
+  }
+}

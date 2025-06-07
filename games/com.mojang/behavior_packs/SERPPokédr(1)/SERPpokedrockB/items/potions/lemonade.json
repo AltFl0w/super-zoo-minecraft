@@ -1,0 +1,19 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:lemonade"
+    },
+    "components": {
+		"minecraft:render_offsets": "apple",
+		"minecraft:creative_category": {
+			"parent": "itemGroup.name.berries"
+		},
+      "minecraft:use_duration": 32,
+      "minecraft:food": {
+        "nutrition": 4,
+        "saturation_modifier": "low"
+      } 
+    }
+  }
+}

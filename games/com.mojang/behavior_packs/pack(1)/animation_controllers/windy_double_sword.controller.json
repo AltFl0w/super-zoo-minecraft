@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.windy_double_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'windy_double_sword' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'windy_double_sword' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'windy_double_sword'"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=!item,r=5,c=1] ~~~ summon wep:wind_slash ~~~"
+					]
+				}
+			}
+		}
+	}
+}

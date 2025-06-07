@@ -1,0 +1,66 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "df:peluche_de_foxdee",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+    },
+		"components": {
+            "minecraft:interact": {
+                "interactions": [
+                
+                        {
+							"hurt_item": 0,
+							"interact_text": "Pet",
+							"on_interact": {
+								"event": "pet",
+								"target": "self"
+							}
+                        }
+                ]
+            },
+			"minecraft:health": {
+				"value": 10,
+				"max": 10
+			},
+			"minecraft:collision_box": {
+				"width": 1.3,
+				"height": 4.0
+			  },
+			"minecraft:scale": {
+				"value": 0.45
+            },
+			"minecraft:knockback_resistance": {
+                "value": 0.5
+            },
+			"minecraft:type_family": {
+				"family": [ "DanyFox", "df_Peluche_De_Foxdee"]
+			  },
+			"minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:nameable": {},
+			"minecraft:fire_immune": false,
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"pet": {
+				"run_command": {
+					"command": [
+						"playanimation @s animation.df_peluche_de_foxdee.feliz",
+						"playsound squish @a[r=10] ~ ~ ~ 1 1 1",
+						"particle minecraft:heart_particle ~ ~1 ~"
+					]
+				}
+			}
+        }
+	}
+}

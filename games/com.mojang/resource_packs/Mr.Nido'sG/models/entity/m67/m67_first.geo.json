@@ -1,0 +1,119 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.m67_first",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve2",
+					"parent": "second_arm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightSleeve",
+					"parent": "rightArm_model",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_attachable",
+					"parent": "rightArm_model",
+					"pivot": [-5.5, 13.8, -4],
+					"cubes": [
+						{"origin": [-7, 12, -5.5], "size": [3, 3, 3], "inflate": 0.1, "uv": [0, 8]},
+						{"origin": [-7.5, 13, -6], "size": [4, 1, 4], "inflate": -0.3, "uv": [0, 0]},
+						{"origin": [-6.5, 14, -5], "size": [2, 1, 2], "inflate": 0.25, "uv": [12, 8]},
+						{"origin": [-6, 14.75, -4.5], "size": [1, 1, 1], "inflate": 0, "uv": [14, 18]},
+						{"origin": [-6, 15.6, -4.5], "size": [1, 2, 2], "inflate": -0.15, "uv": [14, 14]},
+						{"origin": [-6.5, 16.765, -4.125], "size": [2, 1, 2], "inflate": -0.3, "uv": [0, 14]},
+						{"origin": [-6.5, 12, -5], "size": [2, 1, 2], "inflate": 0.25, "uv": [12, 11]}
+					]
+				},
+				{
+					"name": "grenade_open",
+					"parent": "base_attachable",
+					"pivot": [-5.5, 17.25, -2.15],
+					"cubes": [
+						{"origin": [-6.5, 15.6, -2.8], "size": [2, 2, 1], "inflate": -0.35, "uv": [16, 0]},
+						{"origin": [-6.5, 14.3, -2.8], "size": [2, 2, 1], "inflate": -0.35, "pivot": [-5.5, 15.95, -2.45], "rotation": [15, 0, 0], "uv": [16, 3]},
+						{"origin": [-6.5, 11.1, -2.5], "size": [2, 4, 1], "inflate": -0.325, "uv": [8, 14]},
+						{"origin": [-6.5, 16.925, -2.825], "size": [2, 1, 1], "inflate": -0.325, "pivot": [-5.5, 17.25, -2.15], "rotation": [52.5, 0, 0], "uv": [16, 6]}
+					]
+				},
+				{
+					"name": "candado0",
+					"parent": "base_attachable",
+					"pivot": [-4.7, 16.6, -2.5],
+					"rotation": [0, 0, -17.5],
+					"cubes": [
+						{"origin": [-5.2, 15, -3.5], "size": [1, 2, 2], "inflate": -0.4, "uv": [0, 17]},
+						{"origin": [-6.325, 16.075, -2.85], "size": [2, 1, 1], "inflate": -0.475, "uv": [0, 21]}
+					]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				}
+			]
+		}
+	]
+}

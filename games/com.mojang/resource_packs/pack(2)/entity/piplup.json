@@ -1,0 +1,39 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:piplup",
+        "materials": { "default": "entity_alphatest" },
+        "textures": {
+          "variant0": "textures/entity/piplup_1",
+          "variant1": "textures/entity/piplup_2"
+        },
+        "render_controllers": [ "controller.render.piplup" ],
+        "spawn_egg": {
+          "base_color": "#0065ca",
+          "overlay_color": "#ffffff"
+        },
+        "geometry": {
+          "default": "geometry.piplup"
+        },
+        "animation_controllers": [
+          {"piplup.baby": "controller.animation.piplup.baby"},
+          {"piplup": "controller.animation.piplup"}
+        ],
+        "animations": {
+          "general": "animation.piplup.general",
+          "run": "animation.piplup.run",
+          "walk": "animation.piplup.walk",
+          "swimm": "animation.piplup.swimm",
+          "look_at_target": "animation.common.look_at_target",
+          "sitting": "animation.piplup.sitting",
+          "piplup_baby": "animation.piplup.baby",
+          "attack1": "animation.piplup.attack1",
+          "attack2": "animation.piplup.attack2"
+        },
+        "sound_effects": {
+          "bubbles": "piplup.bubbles"
+        }
+    } 
+  }
+}

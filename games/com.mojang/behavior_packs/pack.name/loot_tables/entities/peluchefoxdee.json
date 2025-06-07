@@ -1,0 +1,285 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_actor_id",
+              "id": "testdf:toy_freddy"
+            }
+          ]
+        }
+	  ]
+  },
+  {
+    "rolls": 1,
+    "entries": [
+      {
+        "type": "item",
+        "name": "minecraft:spawn_egg",
+        "weight": 1,
+        "functions": [
+          {
+            "function": "set_actor_id",
+            "id": "testdf:toy_bonnie"
+          }
+        ]
+      }
+  ]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:toy_chica"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:toy_foxy"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:mangle"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:balloon_boy"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:puppet"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:withered_freddy"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:withered_bonnie"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:withered_chica"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:withered_foxy"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:withered_golden_freddy"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:shadow_freddy2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:shadow_bonnie"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:endo02"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "testdf:jj"
+        }
+      ]
+    }
+]
+},{
+  "conditions": [
+      {
+          "condition": "killed_by_player"
+      },
+      {
+          "condition": "random_chance_with_looting",
+          "chance": 0.05,
+          "looting_multiplier": 0.05
+      }
+  ],
+  "rolls": 1,
+  "entries": [
+    {
+        "type": "item",
+        "name": "minecraft:spawn_egg",
+        "weight": 1,
+        "functions": [
+          {
+            "function": "set_actor_id",
+            "id": "testdf:foxdee"
+          }
+        ]
+      }
+  ]
+}
+  ]
+}

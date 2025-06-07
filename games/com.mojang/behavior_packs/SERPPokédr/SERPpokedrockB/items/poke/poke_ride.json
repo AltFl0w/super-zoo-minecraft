@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:poke_ride",
+	    "menu_category":{"category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:poke_ride.name"},
+      "minecraft:icon":"poke_ride"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gunsaddon:grenade_m67_explode",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.m67_entity"
+            },
+            "textures": {
+                "default": "textures/3d_guns/m67"
+            },
+            "animations": {
+                "grenade_m67": "animation.grenade_m67"
+            },
+            "scripts": {
+                "animate": [
+                    "grenade_m67"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#ffffff",
+                "overlay_color": "#ffffff"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

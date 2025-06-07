@@ -1,0 +1,2465 @@
+{
+   "content" : [
+      {
+         "path" : "animation_controllers/events.animation_controllers.json"
+      },
+      {
+         "path" : "animation_controllers/timer.animation.controller.json"
+      },
+      {
+         "path" : "animations/timer.animation.json"
+      },
+      {
+         "path" : "blocks/center_bell.json"
+      },
+      {
+         "path" : "blocks/center_front.json"
+      },
+      {
+         "path" : "blocks/po/apricorn.json"
+      },
+      {
+         "path" : "blocks/po/berry.json"
+      },
+      {
+         "path" : "blocks/po/ore.json"
+      },
+      {
+         "path" : "contents.json"
+      },
+      {
+         "path" : "entities/boat.json"
+      },
+      {
+         "path" : "entities/iron_golem.json"
+      },
+      {
+         "path" : "entities/minecart.json"
+      },
+      {
+         "path" : "entities/minecraft/axolotl.json"
+      },
+      {
+         "path" : "entities/minecraft/bat.json"
+      },
+      {
+         "path" : "entities/minecraft/bee.json"
+      },
+      {
+         "path" : "entities/minecraft/camel.json"
+      },
+      {
+         "path" : "entities/minecraft/cat.json"
+      },
+      {
+         "path" : "entities/minecraft/chicken.json"
+      },
+      {
+         "path" : "entities/minecraft/cow.json"
+      },
+      {
+         "path" : "entities/minecraft/dolphin.json"
+      },
+      {
+         "path" : "entities/minecraft/donkey.json"
+      },
+      {
+         "path" : "entities/minecraft/fish.json"
+      },
+      {
+         "path" : "entities/minecraft/fox.json"
+      },
+      {
+         "path" : "entities/minecraft/glow_squid.json"
+      },
+      {
+         "path" : "entities/minecraft/goat.json"
+      },
+      {
+         "path" : "entities/minecraft/horse.json"
+      },
+      {
+         "path" : "entities/minecraft/llama.json"
+      },
+      {
+         "path" : "entities/minecraft/mooshroom.json"
+      },
+      {
+         "path" : "entities/minecraft/mule.json"
+      },
+      {
+         "path" : "entities/minecraft/ocelot.json"
+      },
+      {
+         "path" : "entities/minecraft/panda.json"
+      },
+      {
+         "path" : "entities/minecraft/parrot.json"
+      },
+      {
+         "path" : "entities/minecraft/pig.json"
+      },
+      {
+         "path" : "entities/minecraft/polar_bear.json"
+      },
+      {
+         "path" : "entities/minecraft/pufferfish.json"
+      },
+      {
+         "path" : "entities/minecraft/rabbit.json"
+      },
+      {
+         "path" : "entities/minecraft/salmon.json"
+      },
+      {
+         "path" : "entities/minecraft/sheep.json"
+      },
+      {
+         "path" : "entities/minecraft/shulker.json"
+      },
+      {
+         "path" : "entities/minecraft/skeleton_horse.json"
+      },
+      {
+         "path" : "entities/minecraft/sniffer.json"
+      },
+      {
+         "path" : "entities/minecraft/squid.json"
+      },
+      {
+         "path" : "entities/minecraft/tropicalfish.json"
+      },
+      {
+         "path" : "entities/minecraft/turtle.json"
+      },
+      {
+         "path" : "entities/minecraft/wolf.json"
+      },
+      {
+         "path" : "entities/minecraft/zombie_horse.json"
+      },
+      {
+         "path" : "entities/player.json"
+      },
+      {
+         "path" : "entities/poke/data/attack.json"
+      },
+      {
+         "path" : "entities/poke/data/data.json"
+      },
+      {
+         "path" : "entities/poke/data/despawn.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/bike.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/hoopa_ring.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/loot_bubble.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/communicator.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/healing_machine.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/machines_spawn.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/pc_box.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/personal_lab.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/rotomarket.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/slot_machine.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/tm_machine.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/machines/trade_machine.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/poke2.json"
+      },
+      {
+         "path" : "entities/poke/gameplay/poke_stop.json"
+      },
+      {
+         "path" : "entities/poke/npc/game_corner.json"
+      },
+      {
+         "path" : "entities/poke/npc/jenny.json"
+      },
+      {
+         "path" : "entities/poke/npc/joy.json"
+      },
+      {
+         "path" : "entities/poke/npc/professors.json"
+      },
+      {
+         "path" : "entities/poke/npc/store.json"
+      },
+      {
+         "path" : "entities/poke/npc/trainer.json"
+      },
+      {
+         "path" : "entities/pokemon/001bulbasaur.json"
+      },
+      {
+         "path" : "entities/pokemon/002ivysaur.json"
+      },
+      {
+         "path" : "entities/pokemon/003venusaur.json"
+      },
+      {
+         "path" : "entities/pokemon/004charmander.json"
+      },
+      {
+         "path" : "entities/pokemon/005charmeleon.json"
+      },
+      {
+         "path" : "entities/pokemon/006charizard.json"
+      },
+      {
+         "path" : "entities/pokemon/007squirtle.json"
+      },
+      {
+         "path" : "entities/pokemon/008wartortle.json"
+      },
+      {
+         "path" : "entities/pokemon/009blastoise.json"
+      },
+      {
+         "path" : "entities/pokemon/010caterpie.json"
+      },
+      {
+         "path" : "entities/pokemon/011metapod.json"
+      },
+      {
+         "path" : "entities/pokemon/012butterfree.json"
+      },
+      {
+         "path" : "entities/pokemon/013_weedle.json"
+      },
+      {
+         "path" : "entities/pokemon/014kakuna.json"
+      },
+      {
+         "path" : "entities/pokemon/015beedrill.json"
+      },
+      {
+         "path" : "entities/pokemon/016.pidgey.json"
+      },
+      {
+         "path" : "entities/pokemon/017pidgeotto.json"
+      },
+      {
+         "path" : "entities/pokemon/018pidgeot.json"
+      },
+      {
+         "path" : "entities/pokemon/019rattata.json"
+      },
+      {
+         "path" : "entities/pokemon/020raticate.json"
+      },
+      {
+         "path" : "entities/pokemon/021spearow.json"
+      },
+      {
+         "path" : "entities/pokemon/022fearow.json"
+      },
+      {
+         "path" : "entities/pokemon/023ekans.json"
+      },
+      {
+         "path" : "entities/pokemon/024arbok.json"
+      },
+      {
+         "path" : "entities/pokemon/025pikachu.json"
+      },
+      {
+         "path" : "entities/pokemon/026raichu.json"
+      },
+      {
+         "path" : "entities/pokemon/027sandshrew.json"
+      },
+      {
+         "path" : "entities/pokemon/028sandslash.json"
+      },
+      {
+         "path" : "entities/pokemon/029nidoranh.json"
+      },
+      {
+         "path" : "entities/pokemon/030nidorina.json"
+      },
+      {
+         "path" : "entities/pokemon/031nidoqueen.json"
+      },
+      {
+         "path" : "entities/pokemon/032nidoranm.json"
+      },
+      {
+         "path" : "entities/pokemon/033nidorino.json"
+      },
+      {
+         "path" : "entities/pokemon/034nidoking.json"
+      },
+      {
+         "path" : "entities/pokemon/035clefairy.json"
+      },
+      {
+         "path" : "entities/pokemon/036clefable.json"
+      },
+      {
+         "path" : "entities/pokemon/037vulpix.json"
+      },
+      {
+         "path" : "entities/pokemon/038ninetales.json"
+      },
+      {
+         "path" : "entities/pokemon/039jigglypuff.json"
+      },
+      {
+         "path" : "entities/pokemon/040wigglytuff.json"
+      },
+      {
+         "path" : "entities/pokemon/041zubat.json"
+      },
+      {
+         "path" : "entities/pokemon/042golbat.json"
+      },
+      {
+         "path" : "entities/pokemon/043oddish.json"
+      },
+      {
+         "path" : "entities/pokemon/044gloom.json"
+      },
+      {
+         "path" : "entities/pokemon/045vileplume.json"
+      },
+      {
+         "path" : "entities/pokemon/046paras.json"
+      },
+      {
+         "path" : "entities/pokemon/047parasect.json"
+      },
+      {
+         "path" : "entities/pokemon/048venonat.json"
+      },
+      {
+         "path" : "entities/pokemon/049venomoth.json"
+      },
+      {
+         "path" : "entities/pokemon/050diglett.json"
+      },
+      {
+         "path" : "entities/pokemon/051dugtrio.json"
+      },
+      {
+         "path" : "entities/pokemon/052meowth.json"
+      },
+      {
+         "path" : "entities/pokemon/053persian.json"
+      },
+      {
+         "path" : "entities/pokemon/054psyduck.json"
+      },
+      {
+         "path" : "entities/pokemon/055golduck.json"
+      },
+      {
+         "path" : "entities/pokemon/056mankey.json"
+      },
+      {
+         "path" : "entities/pokemon/057primeape.json"
+      },
+      {
+         "path" : "entities/pokemon/058growlithe.json"
+      },
+      {
+         "path" : "entities/pokemon/059arcanine.json"
+      },
+      {
+         "path" : "entities/pokemon/060poliwag.json"
+      },
+      {
+         "path" : "entities/pokemon/061poliwhirl.json"
+      },
+      {
+         "path" : "entities/pokemon/062poliwrath.json"
+      },
+      {
+         "path" : "entities/pokemon/066machop.json"
+      },
+      {
+         "path" : "entities/pokemon/067machoke.json"
+      },
+      {
+         "path" : "entities/pokemon/068machamp.json"
+      },
+      {
+         "path" : "entities/pokemon/069bellsprout.json"
+      },
+      {
+         "path" : "entities/pokemon/070weepinbell.json"
+      },
+      {
+         "path" : "entities/pokemon/071victreebel.json"
+      },
+      {
+         "path" : "entities/pokemon/072tentacool.json"
+      },
+      {
+         "path" : "entities/pokemon/073tentacruel.json"
+      },
+      {
+         "path" : "entities/pokemon/074geodude.json"
+      },
+      {
+         "path" : "entities/pokemon/075graveler.json"
+      },
+      {
+         "path" : "entities/pokemon/076golem.json"
+      },
+      {
+         "path" : "entities/pokemon/077ponyta.json"
+      },
+      {
+         "path" : "entities/pokemon/078rapidash.json"
+      },
+      {
+         "path" : "entities/pokemon/079slowpoke.json"
+      },
+      {
+         "path" : "entities/pokemon/080slowbro.json"
+      },
+      {
+         "path" : "entities/pokemon/081magnemite.json"
+      },
+      {
+         "path" : "entities/pokemon/082magneton.json"
+      },
+      {
+         "path" : "entities/pokemon/083farfetchd.json"
+      },
+      {
+         "path" : "entities/pokemon/084doduo.json"
+      },
+      {
+         "path" : "entities/pokemon/085dodrio.json"
+      },
+      {
+         "path" : "entities/pokemon/086seel.json"
+      },
+      {
+         "path" : "entities/pokemon/087dewgong.json"
+      },
+      {
+         "path" : "entities/pokemon/090shellder.json"
+      },
+      {
+         "path" : "entities/pokemon/091cloyster.json"
+      },
+      {
+         "path" : "entities/pokemon/092gastly.json"
+      },
+      {
+         "path" : "entities/pokemon/093haunter.json"
+      },
+      {
+         "path" : "entities/pokemon/094gengar.json"
+      },
+      {
+         "path" : "entities/pokemon/095onix.json"
+      },
+      {
+         "path" : "entities/pokemon/096drowzee.json"
+      },
+      {
+         "path" : "entities/pokemon/097hypno.json"
+      },
+      {
+         "path" : "entities/pokemon/102exeggcute.json"
+      },
+      {
+         "path" : "entities/pokemon/103exeggutor.json"
+      },
+      {
+         "path" : "entities/pokemon/104cubone.json"
+      },
+      {
+         "path" : "entities/pokemon/105marowak.json"
+      },
+      {
+         "path" : "entities/pokemon/108lickitung.json"
+      },
+      {
+         "path" : "entities/pokemon/109koffing.json"
+      },
+      {
+         "path" : "entities/pokemon/110weezing.json"
+      },
+      {
+         "path" : "entities/pokemon/111rhyhorn.json"
+      },
+      {
+         "path" : "entities/pokemon/112rhydon.json"
+      },
+      {
+         "path" : "entities/pokemon/113chansey.json"
+      },
+      {
+         "path" : "entities/pokemon/115kangaskhan.json"
+      },
+      {
+         "path" : "entities/pokemon/118goldeen.json"
+      },
+      {
+         "path" : "entities/pokemon/119seaking.json"
+      },
+      {
+         "path" : "entities/pokemon/123scyther.json"
+      },
+      {
+         "path" : "entities/pokemon/125electabuzz.json"
+      },
+      {
+         "path" : "entities/pokemon/128tauros.json"
+      },
+      {
+         "path" : "entities/pokemon/129magikarp.json"
+      },
+      {
+         "path" : "entities/pokemon/130gyarados.json"
+      },
+      {
+         "path" : "entities/pokemon/131lapras.json"
+      },
+      {
+         "path" : "entities/pokemon/133eevee.json"
+      },
+      {
+         "path" : "entities/pokemon/134vaporeon.json"
+      },
+      {
+         "path" : "entities/pokemon/135jolteon.json"
+      },
+      {
+         "path" : "entities/pokemon/136flareon.json"
+      },
+      {
+         "path" : "entities/pokemon/138omanyte.json"
+      },
+      {
+         "path" : "entities/pokemon/139omastar.json"
+      },
+      {
+         "path" : "entities/pokemon/140kabuto.json"
+      },
+      {
+         "path" : "entities/pokemon/141kabutops.json"
+      },
+      {
+         "path" : "entities/pokemon/142aerodactyl.json"
+      },
+      {
+         "path" : "entities/pokemon/143snorlax.json"
+      },
+      {
+         "path" : "entities/pokemon/144articuno.json"
+      },
+      {
+         "path" : "entities/pokemon/145zapdos.json"
+      },
+      {
+         "path" : "entities/pokemon/146moltres.json"
+      },
+      {
+         "path" : "entities/pokemon/147dratini.json"
+      },
+      {
+         "path" : "entities/pokemon/148dragonair.json"
+      },
+      {
+         "path" : "entities/pokemon/149dragonite.json"
+      },
+      {
+         "path" : "entities/pokemon/150mewtwo.json"
+      },
+      {
+         "path" : "entities/pokemon/151mew.json"
+      },
+      {
+         "path" : "entities/pokemon/152chikorita.json"
+      },
+      {
+         "path" : "entities/pokemon/153bayleef.json"
+      },
+      {
+         "path" : "entities/pokemon/154meganium.json"
+      },
+      {
+         "path" : "entities/pokemon/155cyndaquil.json"
+      },
+      {
+         "path" : "entities/pokemon/156quilava.json"
+      },
+      {
+         "path" : "entities/pokemon/157typhlosion.json"
+      },
+      {
+         "path" : "entities/pokemon/158totodile.json"
+      },
+      {
+         "path" : "entities/pokemon/159croconaw.json"
+      },
+      {
+         "path" : "entities/pokemon/160feraligatr.json"
+      },
+      {
+         "path" : "entities/pokemon/161sentret.json"
+      },
+      {
+         "path" : "entities/pokemon/162furret.json"
+      },
+      {
+         "path" : "entities/pokemon/163hoothoot.json"
+      },
+      {
+         "path" : "entities/pokemon/164noctowl.json"
+      },
+      {
+         "path" : "entities/pokemon/165ledyba.json"
+      },
+      {
+         "path" : "entities/pokemon/166ledian.json"
+      },
+      {
+         "path" : "entities/pokemon/167spinarak.json"
+      },
+      {
+         "path" : "entities/pokemon/168ariados.json"
+      },
+      {
+         "path" : "entities/pokemon/169crobat.json"
+      },
+      {
+         "path" : "entities/pokemon/172pichu.json"
+      },
+      {
+         "path" : "entities/pokemon/175togepi.json"
+      },
+      {
+         "path" : "entities/pokemon/176togetic.json"
+      },
+      {
+         "path" : "entities/pokemon/179mareep.json"
+      },
+      {
+         "path" : "entities/pokemon/180flaaffy.json"
+      },
+      {
+         "path" : "entities/pokemon/181ampharos.json"
+      },
+      {
+         "path" : "entities/pokemon/182bellossom.json"
+      },
+      {
+         "path" : "entities/pokemon/185sudowoodo.json"
+      },
+      {
+         "path" : "entities/pokemon/186politoed.json"
+      },
+      {
+         "path" : "entities/pokemon/187hoppip.json"
+      },
+      {
+         "path" : "entities/pokemon/188skiploom.json"
+      },
+      {
+         "path" : "entities/pokemon/189jumpluff.json"
+      },
+      {
+         "path" : "entities/pokemon/196espeon.json"
+      },
+      {
+         "path" : "entities/pokemon/197umbreon.json"
+      },
+      {
+         "path" : "entities/pokemon/199slowking.json"
+      },
+      {
+         "path" : "entities/pokemon/200misdreavus.json"
+      },
+      {
+         "path" : "entities/pokemon/203girafarig.json"
+      },
+      {
+         "path" : "entities/pokemon/204pineco.json"
+      },
+      {
+         "path" : "entities/pokemon/205forretress.json"
+      },
+      {
+         "path" : "entities/pokemon/206dunsparce.json"
+      },
+      {
+         "path" : "entities/pokemon/208steellix.json"
+      },
+      {
+         "path" : "entities/pokemon/212scizor.json"
+      },
+      {
+         "path" : "entities/pokemon/214heracross.json"
+      },
+      {
+         "path" : "entities/pokemon/225delibird.json"
+      },
+      {
+         "path" : "entities/pokemon/234stantler.json"
+      },
+      {
+         "path" : "entities/pokemon/239elekid.json"
+      },
+      {
+         "path" : "entities/pokemon/241miltank.json"
+      },
+      {
+         "path" : "entities/pokemon/242blissey.json"
+      },
+      {
+         "path" : "entities/pokemon/243raikou.json"
+      },
+      {
+         "path" : "entities/pokemon/244entei.json"
+      },
+      {
+         "path" : "entities/pokemon/245suicune.json"
+      },
+      {
+         "path" : "entities/pokemon/252treecko.json"
+      },
+      {
+         "path" : "entities/pokemon/253grovyle.json"
+      },
+      {
+         "path" : "entities/pokemon/254sceptile.json"
+      },
+      {
+         "path" : "entities/pokemon/255torchic.json"
+      },
+      {
+         "path" : "entities/pokemon/256combusken.json"
+      },
+      {
+         "path" : "entities/pokemon/257blaziken.json"
+      },
+      {
+         "path" : "entities/pokemon/258mudkip.json"
+      },
+      {
+         "path" : "entities/pokemon/259marshtomp.json"
+      },
+      {
+         "path" : "entities/pokemon/260swampert.json"
+      },
+      {
+         "path" : "entities/pokemon/261poochyena.json"
+      },
+      {
+         "path" : "entities/pokemon/262mightyena.json"
+      },
+      {
+         "path" : "entities/pokemon/263zigzagoon.json"
+      },
+      {
+         "path" : "entities/pokemon/264linoone.json"
+      },
+      {
+         "path" : "entities/pokemon/265wurmple.json"
+      },
+      {
+         "path" : "entities/pokemon/266silcoon.json"
+      },
+      {
+         "path" : "entities/pokemon/267beautifly.json"
+      },
+      {
+         "path" : "entities/pokemon/268cascoon.json"
+      },
+      {
+         "path" : "entities/pokemon/269dustox.json"
+      },
+      {
+         "path" : "entities/pokemon/270lotad.json"
+      },
+      {
+         "path" : "entities/pokemon/271lombre.json"
+      },
+      {
+         "path" : "entities/pokemon/272ludicolo.json"
+      },
+      {
+         "path" : "entities/pokemon/273seedot.json"
+      },
+      {
+         "path" : "entities/pokemon/274nuzleaf.json"
+      },
+      {
+         "path" : "entities/pokemon/275shiftry.json"
+      },
+      {
+         "path" : "entities/pokemon/276taillow.json"
+      },
+      {
+         "path" : "entities/pokemon/277swellow.json"
+      },
+      {
+         "path" : "entities/pokemon/280ralts.json"
+      },
+      {
+         "path" : "entities/pokemon/281kirlia.json"
+      },
+      {
+         "path" : "entities/pokemon/282gardevoir.json"
+      },
+      {
+         "path" : "entities/pokemon/285shroomish.json"
+      },
+      {
+         "path" : "entities/pokemon/286breloom.json"
+      },
+      {
+         "path" : "entities/pokemon/302sableye.json"
+      },
+      {
+         "path" : "entities/pokemon/328trapinch.json"
+      },
+      {
+         "path" : "entities/pokemon/329vibrava.json"
+      },
+      {
+         "path" : "entities/pokemon/330flygon.json"
+      },
+      {
+         "path" : "entities/pokemon/341glameow.json"
+      },
+      {
+         "path" : "entities/pokemon/353shuppet.json"
+      },
+      {
+         "path" : "entities/pokemon/354banette.json"
+      },
+      {
+         "path" : "entities/pokemon/371bagon.json"
+      },
+      {
+         "path" : "entities/pokemon/372shelgon.json"
+      },
+      {
+         "path" : "entities/pokemon/373salamence.json"
+      },
+      {
+         "path" : "entities/pokemon/374beldum.json"
+      },
+      {
+         "path" : "entities/pokemon/375metang.json"
+      },
+      {
+         "path" : "entities/pokemon/376metagross.json"
+      },
+      {
+         "path" : "entities/pokemon/382kyogre.json"
+      },
+      {
+         "path" : "entities/pokemon/383groudon.json"
+      },
+      {
+         "path" : "entities/pokemon/384rayquaza.json"
+      },
+      {
+         "path" : "entities/pokemon/385jirachi.json"
+      },
+      {
+         "path" : "entities/pokemon/386deoxys.json"
+      },
+      {
+         "path" : "entities/pokemon/387turtwig.json"
+      },
+      {
+         "path" : "entities/pokemon/388grotle.json"
+      },
+      {
+         "path" : "entities/pokemon/389torterra.json"
+      },
+      {
+         "path" : "entities/pokemon/390chimchar.json"
+      },
+      {
+         "path" : "entities/pokemon/391monferno.json"
+      },
+      {
+         "path" : "entities/pokemon/392infernape.json"
+      },
+      {
+         "path" : "entities/pokemon/393piplup.json"
+      },
+      {
+         "path" : "entities/pokemon/394prinplup.json"
+      },
+      {
+         "path" : "entities/pokemon/395empoleon.json"
+      },
+      {
+         "path" : "entities/pokemon/396starly.json"
+      },
+      {
+         "path" : "entities/pokemon/397staravia.json"
+      },
+      {
+         "path" : "entities/pokemon/398staraptor.json"
+      },
+      {
+         "path" : "entities/pokemon/399bidoof.json"
+      },
+      {
+         "path" : "entities/pokemon/400bibarel.json"
+      },
+      {
+         "path" : "entities/pokemon/417pachirisu.json"
+      },
+      {
+         "path" : "entities/pokemon/429mismagius.json"
+      },
+      {
+         "path" : "entities/pokemon/432purugly.json"
+      },
+      {
+         "path" : "entities/pokemon/443gible.json"
+      },
+      {
+         "path" : "entities/pokemon/444gabite.json"
+      },
+      {
+         "path" : "entities/pokemon/445garchomp.json"
+      },
+      {
+         "path" : "entities/pokemon/447riolu.json"
+      },
+      {
+         "path" : "entities/pokemon/448lucario.json"
+      },
+      {
+         "path" : "entities/pokemon/462magnezone.json"
+      },
+      {
+         "path" : "entities/pokemon/466electivire.json"
+      },
+      {
+         "path" : "entities/pokemon/468togekiss.json"
+      },
+      {
+         "path" : "entities/pokemon/470leafeon.json"
+      },
+      {
+         "path" : "entities/pokemon/471glaceon.json"
+      },
+      {
+         "path" : "entities/pokemon/475gallade.json"
+      },
+      {
+         "path" : "entities/pokemon/722rowlet.json"
+      },
+      {
+         "path" : "entities/pokemon/744rockruff.json"
+      },
+      {
+         "path" : "entities/pokemon/778mimikyu.json"
+      },
+      {
+         "path" : "entities/pokemon/813scorbunny.json"
+      },
+      {
+         "path" : "entities/pokemon/885dreepy.json"
+      },
+      {
+         "path" : "entities/pokemon/886drakloak.json"
+      },
+      {
+         "path" : "entities/pokemon/887dragapult.json"
+      },
+      {
+         "path" : "entities/pokemon/909fuecoco.json"
+      },
+      {
+         "path" : "entities/pokemon/sudowoodo_tree.json"
+      },
+      {
+         "path" : "entities/wandering_trader.json"
+      },
+      {
+         "path" : "exp/gym/gym_front.json"
+      },
+      {
+         "path" : "exp/gym/sign_bug.json"
+      },
+      {
+         "path" : "exp/gym/statue.json"
+      },
+      {
+         "path" : "feature_rules/buildings_feature_rule.json"
+      },
+      {
+         "path" : "feature_rules/ore_feature_rule.json"
+      },
+      {
+         "path" : "feature_rules/pokecity_feature_rule.json"
+      },
+      {
+         "path" : "features/aspear_berry_feature.json"
+      },
+      {
+         "path" : "features/battle_arena_mcstructure.json"
+      },
+      {
+         "path" : "features/black_apricorn_feature.json"
+      },
+      {
+         "path" : "features/blue_apricorn_feature.json"
+      },
+      {
+         "path" : "features/buildings_feature.json"
+      },
+      {
+         "path" : "features/cheri_berry_feature.json"
+      },
+      {
+         "path" : "features/chesto_berry_feature.json"
+      },
+      {
+         "path" : "features/cyan_apricorn_feature.json"
+      },
+      {
+         "path" : "features/enigma_berry_feature.json"
+      },
+      {
+         "path" : "features/game_corner_mcstructure.json"
+      },
+      {
+         "path" : "features/green_apricorn_feature.json"
+      },
+      {
+         "path" : "features/houses_feature.json"
+      },
+      {
+         "path" : "features/lamp_mcstructure.json"
+      },
+      {
+         "path" : "features/lum_berry_feature.json"
+      },
+      {
+         "path" : "features/nanab_berry_feature.json"
+      },
+      {
+         "path" : "features/oran_berry_feature.json"
+      },
+      {
+         "path" : "features/orange_apricorn_feature.json"
+      },
+      {
+         "path" : "features/pamtre_berry_feature.json"
+      },
+      {
+         "path" : "features/pecha_berry_feature.json"
+      },
+      {
+         "path" : "features/persim_berry_feature.json"
+      },
+      {
+         "path" : "features/pinap_berry_feature.json"
+      },
+      {
+         "path" : "features/pink_apricorn_feature.json"
+      },
+      {
+         "path" : "features/player_house_mcstructure.json"
+      },
+      {
+         "path" : "features/poke_ore_feature.json"
+      },
+      {
+         "path" : "features/pokecenter_mcstructure.json"
+      },
+      {
+         "path" : "features/pokehouse1_mcstructure.json"
+      },
+      {
+         "path" : "features/pokehouse2_mcstructure.json"
+      },
+      {
+         "path" : "features/pokehouse3_mcstructure.json"
+      },
+      {
+         "path" : "features/rawst_berry_feature.json"
+      },
+      {
+         "path" : "features/razz_berry_feature.json"
+      },
+      {
+         "path" : "features/red_apricorn_feature.json"
+      },
+      {
+         "path" : "features/rindo_berry_feature.json"
+      },
+      {
+         "path" : "features/select_apricorn_feature.json"
+      },
+      {
+         "path" : "features/select_berry_feature.json"
+      },
+      {
+         "path" : "features/sitrus_berry_feature.json"
+      },
+      {
+         "path" : "features/white_apricorn_feature.json"
+      },
+      {
+         "path" : "features/yellow_apricorn_feature.json"
+      },
+      {
+         "path" : "functions/battle_win.mcfunction"
+      },
+      {
+         "path" : "functions/condition.mcfunction"
+      },
+      {
+         "path" : "functions/constant.mcfunction"
+      },
+      {
+         "path" : "functions/dialogues/activate.mcfunction"
+      },
+      {
+         "path" : "functions/dialogues/communicator_dialogues.mcfunction"
+      },
+      {
+         "path" : "functions/dialogues/hard_return.mcfunction"
+      },
+      {
+         "path" : "functions/dialogues/jenny_dialogues.mcfunction"
+      },
+      {
+         "path" : "functions/dialogues/joy_dialogues.mcfunction"
+      },
+      {
+         "path" : "functions/dialogues/prof_dialogues.mcfunction"
+      },
+      {
+         "path" : "functions/pokecenter.mcfunction"
+      },
+      {
+         "path" : "functions/reset.mcfunction"
+      },
+      {
+         "path" : "functions/scores.mcfunction"
+      },
+      {
+         "path" : "functions/spawn/dash.mcfunction"
+      },
+      {
+         "path" : "functions/spawn/ride.mcfunction"
+      },
+      {
+         "path" : "functions/tick.json"
+      },
+      {
+         "path" : "items/TM/mt_bug.json"
+      },
+      {
+         "path" : "items/TM/mt_dark.json"
+      },
+      {
+         "path" : "items/TM/mt_dragon.json"
+      },
+      {
+         "path" : "items/TM/mt_electric.json"
+      },
+      {
+         "path" : "items/TM/mt_fairy.json"
+      },
+      {
+         "path" : "items/TM/mt_fighting.json"
+      },
+      {
+         "path" : "items/TM/mt_fire.json"
+      },
+      {
+         "path" : "items/TM/mt_flying.json"
+      },
+      {
+         "path" : "items/TM/mt_ghost.json"
+      },
+      {
+         "path" : "items/TM/mt_grass.json"
+      },
+      {
+         "path" : "items/TM/mt_ground.json"
+      },
+      {
+         "path" : "items/TM/mt_ice.json"
+      },
+      {
+         "path" : "items/TM/mt_normal.json"
+      },
+      {
+         "path" : "items/TM/mt_poison.json"
+      },
+      {
+         "path" : "items/TM/mt_psychic.json"
+      },
+      {
+         "path" : "items/TM/mt_rock.json"
+      },
+      {
+         "path" : "items/TM/mt_steel.json"
+      },
+      {
+         "path" : "items/TM/mt_water.json"
+      },
+      {
+         "path" : "items/apricorn_seed.json"
+      },
+      {
+         "path" : "items/apricorns/black.json"
+      },
+      {
+         "path" : "items/apricorns/blue.json"
+      },
+      {
+         "path" : "items/apricorns/cyan.json"
+      },
+      {
+         "path" : "items/apricorns/green.json"
+      },
+      {
+         "path" : "items/apricorns/orange.json"
+      },
+      {
+         "path" : "items/apricorns/pink.json"
+      },
+      {
+         "path" : "items/apricorns/red.json"
+      },
+      {
+         "path" : "items/apricorns/white.json"
+      },
+      {
+         "path" : "items/apricorns/yellow.json"
+      },
+      {
+         "path" : "items/balls/parts/diveball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/down_part.json"
+      },
+      {
+         "path" : "items/balls/parts/dreamball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/duskball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/fastball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/friendball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/greatball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/healball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/heavyball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/lureball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/luxuryball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/moonball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/nestball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/netball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/parkball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/pokeball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/premierball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/safariball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/timerball_up.json"
+      },
+      {
+         "path" : "items/balls/parts/ultraball_up.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/diveball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/dreamball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/duskball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/fastball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/friendball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/greatball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/healball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/heavyball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/lureball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/luxuryball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/masterball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/moonball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/nestball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/netball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/parkball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/pokeball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/premierball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/safariball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/timerball.json"
+      },
+      {
+         "path" : "items/balls/pokeballs/ultraball.json"
+      },
+      {
+         "path" : "items/berry_seeds.json"
+      },
+      {
+         "path" : "items/equippables/aspear_berry.json"
+      },
+      {
+         "path" : "items/equippables/black_belt.json"
+      },
+      {
+         "path" : "items/equippables/black_glasses.json"
+      },
+      {
+         "path" : "items/equippables/charcoal.json"
+      },
+      {
+         "path" : "items/equippables/cheri_berry.json"
+      },
+      {
+         "path" : "items/equippables/chesto_berry.json"
+      },
+      {
+         "path" : "items/equippables/dragon_fang.json"
+      },
+      {
+         "path" : "items/equippables/enigma_berry.json"
+      },
+      {
+         "path" : "items/equippables/fairy_feather.json"
+      },
+      {
+         "path" : "items/equippables/focus_band.json"
+      },
+      {
+         "path" : "items/equippables/hard_stone.json"
+      },
+      {
+         "path" : "items/equippables/king's_rock.json"
+      },
+      {
+         "path" : "items/equippables/leftovers.json"
+      },
+      {
+         "path" : "items/equippables/lum_berry.json"
+      },
+      {
+         "path" : "items/equippables/magnet.json"
+      },
+      {
+         "path" : "items/equippables/metal_coat.json"
+      },
+      {
+         "path" : "items/equippables/miracle_seed.json"
+      },
+      {
+         "path" : "items/equippables/mystic_water.json"
+      },
+      {
+         "path" : "items/equippables/nanab_berry.json"
+      },
+      {
+         "path" : "items/equippables/never_melt_ice.json"
+      },
+      {
+         "path" : "items/equippables/oran_berry.json"
+      },
+      {
+         "path" : "items/equippables/pamtre_berry.json"
+      },
+      {
+         "path" : "items/equippables/pecha_berry.json"
+      },
+      {
+         "path" : "items/equippables/persim_berry.json"
+      },
+      {
+         "path" : "items/equippables/pinap_berry.json"
+      },
+      {
+         "path" : "items/equippables/poison_barb.json"
+      },
+      {
+         "path" : "items/equippables/rawst_berry.json"
+      },
+      {
+         "path" : "items/equippables/razz_berry.json"
+      },
+      {
+         "path" : "items/equippables/rindo_berry.json"
+      },
+      {
+         "path" : "items/equippables/sharp_beak.json"
+      },
+      {
+         "path" : "items/equippables/silk_scarf.json"
+      },
+      {
+         "path" : "items/equippables/silver_powder.json"
+      },
+      {
+         "path" : "items/equippables/sitrus_berry.json"
+      },
+      {
+         "path" : "items/equippables/soft_sand.json"
+      },
+      {
+         "path" : "items/equippables/spell_tag.json"
+      },
+      {
+         "path" : "items/equippables/twisted_spoon.json"
+      },
+      {
+         "path" : "items/evo_stones/dawn_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/dusk_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/fire_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/ice_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/leaf_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/moon_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/shiny_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/sun_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/thunder_stone.json"
+      },
+      {
+         "path" : "items/evo_stones/water_stone.json"
+      },
+      {
+         "path" : "items/fossils/ancient_amber.json"
+      },
+      {
+         "path" : "items/fossils/fossil_dome.json"
+      },
+      {
+         "path" : "items/fossils/fossil_helix.json"
+      },
+      {
+         "path" : "items/legends/articuno_feather.json"
+      },
+      {
+         "path" : "items/legends/articuno_offering.json"
+      },
+      {
+         "path" : "items/legends/deoxys_offering.json"
+      },
+      {
+         "path" : "items/legends/deoxys_virus.json"
+      },
+      {
+         "path" : "items/legends/entei_lock.json"
+      },
+      {
+         "path" : "items/legends/entei_offering.json"
+      },
+      {
+         "path" : "items/legends/groudon_claw.json"
+      },
+      {
+         "path" : "items/legends/groudon_offering.json"
+      },
+      {
+         "path" : "items/legends/jirachi_offering.json"
+      },
+      {
+         "path" : "items/legends/jirachi_ribbon.json"
+      },
+      {
+         "path" : "items/legends/kyogre_fang.json"
+      },
+      {
+         "path" : "items/legends/kyogre_offering.json"
+      },
+      {
+         "path" : "items/legends/mew_dna.json"
+      },
+      {
+         "path" : "items/legends/mew_offering.json"
+      },
+      {
+         "path" : "items/legends/moltres_feather.json"
+      },
+      {
+         "path" : "items/legends/moltres_offering.json"
+      },
+      {
+         "path" : "items/legends/raikou_lock.json"
+      },
+      {
+         "path" : "items/legends/raikou_offering.json"
+      },
+      {
+         "path" : "items/legends/rayquaza_offering.json"
+      },
+      {
+         "path" : "items/legends/rayquaza_scale.json"
+      },
+      {
+         "path" : "items/legends/suicune_lock.json"
+      },
+      {
+         "path" : "items/legends/suicune_offering.json"
+      },
+      {
+         "path" : "items/legends/zapdos_feather.json"
+      },
+      {
+         "path" : "items/legends/zapdos_offering.json"
+      },
+      {
+         "path" : "items/machines/communicator.json"
+      },
+      {
+         "path" : "items/machines/healing_machine.json"
+      },
+      {
+         "path" : "items/machines/pc_box.json"
+      },
+      {
+         "path" : "items/machines/personal_lab.json"
+      },
+      {
+         "path" : "items/machines/rotomarket.json"
+      },
+      {
+         "path" : "items/machines/slot_machine.json"
+      },
+      {
+         "path" : "items/machines/tm_machine.json"
+      },
+      {
+         "path" : "items/machines/trade_machine.json"
+      },
+      {
+         "path" : "items/mega_rings/aerodactylite.json"
+      },
+      {
+         "path" : "items/mega_rings/ampharosite.json"
+      },
+      {
+         "path" : "items/mega_rings/banettite.json"
+      },
+      {
+         "path" : "items/mega_rings/beedrillite.json"
+      },
+      {
+         "path" : "items/mega_rings/blastoisinite.json"
+      },
+      {
+         "path" : "items/mega_rings/blazikenite.json"
+      },
+      {
+         "path" : "items/mega_rings/charizardite_x.json"
+      },
+      {
+         "path" : "items/mega_rings/charizardite_y.json"
+      },
+      {
+         "path" : "items/mega_rings/galladite.json"
+      },
+      {
+         "path" : "items/mega_rings/garchompite.json"
+      },
+      {
+         "path" : "items/mega_rings/gardevoirite.json"
+      },
+      {
+         "path" : "items/mega_rings/gengarite.json"
+      },
+      {
+         "path" : "items/mega_rings/green_prism.json"
+      },
+      {
+         "path" : "items/mega_rings/gyaradosite.json"
+      },
+      {
+         "path" : "items/mega_rings/heracronite.json"
+      },
+      {
+         "path" : "items/mega_rings/kangaskhanite.json"
+      },
+      {
+         "path" : "items/mega_rings/key_shard_natural.json"
+      },
+      {
+         "path" : "items/mega_rings/key_shard_processed.json"
+      },
+      {
+         "path" : "items/mega_rings/key_stone.json"
+      },
+      {
+         "path" : "items/mega_rings/lucarionite.json"
+      },
+      {
+         "path" : "items/mega_rings/mega_ring.json"
+      },
+      {
+         "path" : "items/mega_rings/mewtwonite_x.json"
+      },
+      {
+         "path" : "items/mega_rings/mewtwonite_y.json"
+      },
+      {
+         "path" : "items/mega_rings/pidgeotite.json"
+      },
+      {
+         "path" : "items/mega_rings/sablenite.json"
+      },
+      {
+         "path" : "items/mega_rings/salamencite.json"
+      },
+      {
+         "path" : "items/mega_rings/sceptilite.json"
+      },
+      {
+         "path" : "items/mega_rings/scizorite.json"
+      },
+      {
+         "path" : "items/mega_rings/slowbronite.json"
+      },
+      {
+         "path" : "items/mega_rings/swampertite.json"
+      },
+      {
+         "path" : "items/mega_rings/venusaurite.json"
+      },
+      {
+         "path" : "items/poke/bad_egg.json"
+      },
+      {
+         "path" : "items/poke/badge.json"
+      },
+      {
+         "path" : "items/poke/clefairy_plush.json"
+      },
+      {
+         "path" : "items/poke/dynamax_band.json"
+      },
+      {
+         "path" : "items/poke/dynamax_candy.json"
+      },
+      {
+         "path" : "items/poke/hoopa_ring.json"
+      },
+      {
+         "path" : "items/poke/linking_cord.json"
+      },
+      {
+         "path" : "items/poke/max_repel.json"
+      },
+      {
+         "path" : "items/poke/pichu_plush.json"
+      },
+      {
+         "path" : "items/poke/poke.json"
+      },
+      {
+         "path" : "items/poke/poke_ride.json"
+      },
+      {
+         "path" : "items/poke/pokebike.json"
+      },
+      {
+         "path" : "items/poke/pokedex.json"
+      },
+      {
+         "path" : "items/poke/pokemon_egg.json"
+      },
+      {
+         "path" : "items/poke/rare_candy.json"
+      },
+      {
+         "path" : "items/poke/repel.json"
+      },
+      {
+         "path" : "items/poke/shellder_shell.json"
+      },
+      {
+         "path" : "items/poke/super_repel.json"
+      },
+      {
+         "path" : "items/poke/wishing_star.json"
+      },
+      {
+         "path" : "items/poke_ore.json"
+      },
+      {
+         "path" : "items/potions/cooked_slowpoke_tail.json"
+      },
+      {
+         "path" : "items/potions/fresh_water.json"
+      },
+      {
+         "path" : "items/potions/full_heal.json"
+      },
+      {
+         "path" : "items/potions/full_restore.json"
+      },
+      {
+         "path" : "items/potions/hyperpotion.json"
+      },
+      {
+         "path" : "items/potions/lemonade.json"
+      },
+      {
+         "path" : "items/potions/max_elixir.json"
+      },
+      {
+         "path" : "items/potions/max_potion.json"
+      },
+      {
+         "path" : "items/potions/max_revive.json"
+      },
+      {
+         "path" : "items/potions/moomoo_milk.json"
+      },
+      {
+         "path" : "items/potions/pokepuff_citrus.json"
+      },
+      {
+         "path" : "items/potions/pokepuff_mint.json"
+      },
+      {
+         "path" : "items/potions/pokepuff_mocha.json"
+      },
+      {
+         "path" : "items/potions/pokepuff_spice.json"
+      },
+      {
+         "path" : "items/potions/pokepuff_sweet.json"
+      },
+      {
+         "path" : "items/potions/potion.json"
+      },
+      {
+         "path" : "items/potions/revive.json"
+      },
+      {
+         "path" : "items/potions/slowpoke_tail.json"
+      },
+      {
+         "path" : "items/potions/soda_pop.json"
+      },
+      {
+         "path" : "items/potions/superpotion.json"
+      },
+      {
+         "path" : "items/suits/ash/boots.json"
+      },
+      {
+         "path" : "items/suits/ash/chestplate.json"
+      },
+      {
+         "path" : "items/suits/ash/helmet.json"
+      },
+      {
+         "path" : "items/suits/ash/leggins.json"
+      },
+      {
+         "path" : "items/suits/green/boots.json"
+      },
+      {
+         "path" : "items/suits/green/chestplate.json"
+      },
+      {
+         "path" : "items/suits/green/helmet.json"
+      },
+      {
+         "path" : "items/suits/green/leggins.json"
+      },
+      {
+         "path" : "items/suits/poke/exp_share.json"
+      },
+      {
+         "path" : "items/suits/red/boots.json"
+      },
+      {
+         "path" : "items/suits/red/chestplate.json"
+      },
+      {
+         "path" : "items/suits/red/helmet.json"
+      },
+      {
+         "path" : "items/suits/red/leggins.json"
+      },
+      {
+         "path" : "items/suits/rocket_female/leggins.json"
+      },
+      {
+         "path" : "items/suits/rocket_male/boots.json"
+      },
+      {
+         "path" : "items/suits/rocket_male/chestplate.json"
+      },
+      {
+         "path" : "items/suits/rocket_male/helmet.json"
+      },
+      {
+         "path" : "items/suits/rocket_male/leggins.json"
+      },
+      {
+         "path" : "loot_tables/chests/desert_pyramid.json"
+      },
+      {
+         "path" : "loot_tables/chests/pillager_outpost.json"
+      },
+      {
+         "path" : "loot_tables/chests/spawn_bonus_chest.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_butcher.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_cartographer.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_desert_house.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_plains_house.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_savanna_house.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_taiga_house.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_temple.json"
+      },
+      {
+         "path" : "loot_tables/chests/village/village_weaponsmith.json"
+      },
+      {
+         "path" : "loot_tables/chests/village_blacksmith.json"
+      },
+      {
+         "path" : "loot_tables/chests/woodland_mansion.json"
+      },
+      {
+         "path" : "loot_tables/entities/articuno.json"
+      },
+      {
+         "path" : "loot_tables/entities/battle_win.json"
+      },
+      {
+         "path" : "loot_tables/entities/beedrill.json"
+      },
+      {
+         "path" : "loot_tables/entities/cold_ocean_ruins_brushable_block.json"
+      },
+      {
+         "path" : "loot_tables/entities/deoxys.json"
+      },
+      {
+         "path" : "loot_tables/entities/desert_pyramid_brushable_block.json"
+      },
+      {
+         "path" : "loot_tables/entities/desert_well_brushable_block.json"
+      },
+      {
+         "path" : "loot_tables/entities/elekid.json"
+      },
+      {
+         "path" : "loot_tables/entities/empty_brushable_block.json"
+      },
+      {
+         "path" : "loot_tables/entities/entei.json"
+      },
+      {
+         "path" : "loot_tables/entities/exeggcute.json"
+      },
+      {
+         "path" : "loot_tables/entities/exeggutor.json"
+      },
+      {
+         "path" : "loot_tables/entities/geodude.json"
+      },
+      {
+         "path" : "loot_tables/entities/groudon.json"
+      },
+      {
+         "path" : "loot_tables/entities/jirachi.json"
+      },
+      {
+         "path" : "loot_tables/entities/kabuto.json"
+      },
+      {
+         "path" : "loot_tables/entities/kyogre.json"
+      },
+      {
+         "path" : "loot_tables/entities/lotad.json"
+      },
+      {
+         "path" : "loot_tables/entities/mew.json"
+      },
+      {
+         "path" : "loot_tables/entities/moltres.json"
+      },
+      {
+         "path" : "loot_tables/entities/omanyte.json"
+      },
+      {
+         "path" : "loot_tables/entities/paras.json"
+      },
+      {
+         "path" : "loot_tables/entities/parasect.json"
+      },
+      {
+         "path" : "loot_tables/entities/raikou.json"
+      },
+      {
+         "path" : "loot_tables/entities/rayquaza.json"
+      },
+      {
+         "path" : "loot_tables/entities/seedot.json"
+      },
+      {
+         "path" : "loot_tables/entities/shellder.json"
+      },
+      {
+         "path" : "loot_tables/entities/slowpoke.json"
+      },
+      {
+         "path" : "loot_tables/entities/snorlax.json"
+      },
+      {
+         "path" : "loot_tables/entities/suicune.json"
+      },
+      {
+         "path" : "loot_tables/entities/totem.json"
+      },
+      {
+         "path" : "loot_tables/entities/trade_resources.json"
+      },
+      {
+         "path" : "loot_tables/entities/trail_ruins_brushable_block_common.json"
+      },
+      {
+         "path" : "loot_tables/entities/trail_ruins_brushable_block_rare.json"
+      },
+      {
+         "path" : "loot_tables/entities/warm_ocean_ruins_brushable_block.json"
+      },
+      {
+         "path" : "loot_tables/entities/wool.json"
+      },
+      {
+         "path" : "loot_tables/entities/zapdos.json"
+      },
+      {
+         "path" : "loot_tables/gameplay/fishing.json"
+      },
+      {
+         "path" : "loot_tables/gameplay/fishing/fish.json"
+      },
+      {
+         "path" : "loot_tables/gameplay/fishing/jungle_fish.json"
+      },
+      {
+         "path" : "loot_tables/gameplay/fishing/jungle_junk.json"
+      },
+      {
+         "path" : "loot_tables/gameplay/fishing/junk.json"
+      },
+      {
+         "path" : "loot_tables/gameplay/fishing/treasure.json"
+      },
+      {
+         "path" : "loot_tables/gameplay/jungle_fishing.json"
+      },
+      {
+         "path" : "loot_tables/loot_bubbles.json"
+      },
+      {
+         "path" : "loot_tables/machines/communicator.json"
+      },
+      {
+         "path" : "loot_tables/machines/healing_machine.json"
+      },
+      {
+         "path" : "loot_tables/machines/pc_box.json"
+      },
+      {
+         "path" : "loot_tables/machines/personal_lab.json"
+      },
+      {
+         "path" : "loot_tables/machines/rotomarket.json"
+      },
+      {
+         "path" : "loot_tables/machines/slot_machine.json"
+      },
+      {
+         "path" : "loot_tables/machines/tm_machine.json"
+      },
+      {
+         "path" : "loot_tables/machines/trade_machine.json"
+      },
+      {
+         "path" : "loot_tables/mission/egg.json"
+      },
+      {
+         "path" : "loot_tables/mission/legendary.json"
+      },
+      {
+         "path" : "loot_tables/mission/max.json"
+      },
+      {
+         "path" : "loot_tables/mission/mega.json"
+      },
+      {
+         "path" : "loot_tables/mission/trade1.json"
+      },
+      {
+         "path" : "loot_tables/mission/trade2.json"
+      },
+      {
+         "path" : "loot_tables/mission/trade3.json"
+      },
+      {
+         "path" : "loot_tables/poke_ore/crop_break.json"
+      },
+      {
+         "path" : "loot_tables/poke_ore/key_ore.json"
+      },
+      {
+         "path" : "loot_tables/poke_ore/main.json"
+      },
+      {
+         "path" : "loot_tables/poke_ore/poke_ore.json"
+      },
+      {
+         "path" : "loot_tables/poke_ore/wish_ore.json"
+      },
+      {
+         "path" : "loot_tables/table/back_graveler.json"
+      },
+      {
+         "path" : "loot_tables/table/back_gravelers.json"
+      },
+      {
+         "path" : "loot_tables/table/back_haunter.json"
+      },
+      {
+         "path" : "loot_tables/table/back_haunters.json"
+      },
+      {
+         "path" : "loot_tables/table/back_poliwhirl.json"
+      },
+      {
+         "path" : "loot_tables/table/back_poliwhirls.json"
+      },
+      {
+         "path" : "loot_tables/table/back_scyther.json"
+      },
+      {
+         "path" : "loot_tables/table/back_scythers.json"
+      },
+      {
+         "path" : "manifest.json"
+      },
+      {
+         "path" : "pack_icon.png"
+      },
+      {
+         "path" : "recipes/balls/diveball.json"
+      },
+      {
+         "path" : "recipes/balls/dreamball.json"
+      },
+      {
+         "path" : "recipes/balls/duskball.json"
+      },
+      {
+         "path" : "recipes/balls/fastball.json"
+      },
+      {
+         "path" : "recipes/balls/friendball.json"
+      },
+      {
+         "path" : "recipes/balls/greatball.json"
+      },
+      {
+         "path" : "recipes/balls/healball.json"
+      },
+      {
+         "path" : "recipes/balls/heavyball.json"
+      },
+      {
+         "path" : "recipes/balls/lureball.json"
+      },
+      {
+         "path" : "recipes/balls/luxuryball.json"
+      },
+      {
+         "path" : "recipes/balls/moonball.json"
+      },
+      {
+         "path" : "recipes/balls/nestball.json"
+      },
+      {
+         "path" : "recipes/balls/netball.json"
+      },
+      {
+         "path" : "recipes/balls/parkball.json"
+      },
+      {
+         "path" : "recipes/balls/parts/diveball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/down_part.json"
+      },
+      {
+         "path" : "recipes/balls/parts/dreamball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/duskball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/fastball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/friendball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/greatball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/healball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/heavyball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/lureball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/luxuryball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/moonball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/nestball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/netball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/parkball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/pokeball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/premierball_up.json"
+      },
+      {
+         "path" : "recipes/balls/parts/safariball.json"
+      },
+      {
+         "path" : "recipes/balls/parts/timerball.json"
+      },
+      {
+         "path" : "recipes/balls/parts/ultrarball_up.json"
+      },
+      {
+         "path" : "recipes/balls/pokeball.json"
+      },
+      {
+         "path" : "recipes/balls/premierball.json"
+      },
+      {
+         "path" : "recipes/balls/safariball.json"
+      },
+      {
+         "path" : "recipes/balls/timerball.json"
+      },
+      {
+         "path" : "recipes/balls/ultraball.json"
+      },
+      {
+         "path" : "recipes/gameplay/cooked_slowpoke_tail.json"
+      },
+      {
+         "path" : "recipes/gameplay/dynamax_candy.json"
+      },
+      {
+         "path" : "recipes/gameplay/iron_ingot.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/communicator.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/healing_machine.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/pc_box.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/personal_lab.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/pokedex.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/rotomarket.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/slot_machine.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/tm_machine.json"
+      },
+      {
+         "path" : "recipes/gameplay/machines/trader.json"
+      },
+      {
+         "path" : "recipes/gameplay/max_revive.json"
+      },
+      {
+         "path" : "recipes/gameplay/mega/key_stone.json"
+      },
+      {
+         "path" : "recipes/gameplay/mega/shards_processed.json"
+      },
+      {
+         "path" : "recipes/gameplay/milk.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/articuno_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/deoxys_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/entei_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/groudon_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/jirachi_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/kyogre_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/mew_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/moltres_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/raikou_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/rayquaza_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/suicune_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/offerings/zapdos_offering.json"
+      },
+      {
+         "path" : "recipes/gameplay/pokepuffs/pokepuff_mint.json"
+      },
+      {
+         "path" : "recipes/gameplay/pokepuffs/pokepuff_mocha.json"
+      },
+      {
+         "path" : "recipes/gameplay/pokepuffs/pokepuff_sitrus.json"
+      },
+      {
+         "path" : "recipes/gameplay/pokepuffs/pokepuff_spice.json"
+      },
+      {
+         "path" : "recipes/gameplay/pokepuffs/pokepuff_sweet.json"
+      },
+      {
+         "path" : "recipes/gameplay/rare_candy.json"
+      },
+      {
+         "path" : "recipes/gameplay/shulker.json"
+      },
+      {
+         "path" : "recipes/gameplay/totem.json"
+      },
+      {
+         "path" : "scripts/serproot.js"
+      },
+      {
+         "path" : "spawn_rules/hoopa_ring.json"
+      },
+      {
+         "path" : "spawn_rules/poke_stop.json"
+      },
+      {
+         "path" : "spawn_rules/pokemon.json"
+      },
+      {
+         "path" : "spawn_rules/trainer.json"
+      },
+      {
+         "path" : "structures/battle_arena.mcstructure"
+      },
+      {
+         "path" : "structures/berry_tree.mcstructure"
+      },
+      {
+         "path" : "structures/game_corner.mcstructure"
+      },
+      {
+         "path" : "structures/lamp.mcstructure"
+      },
+      {
+         "path" : "structures/player_house.mcstructure"
+      },
+      {
+         "path" : "structures/poke_ore.mcstructure"
+      },
+      {
+         "path" : "structures/pokecenter.mcstructure"
+      },
+      {
+         "path" : "structures/pokehouse1.mcstructure"
+      },
+      {
+         "path" : "structures/pokehouse2.mcstructure"
+      },
+      {
+         "path" : "structures/pokehouse3.mcstructure"
+      },
+      {
+         "path" : "structures/pokelab.mcstructure"
+      },
+      {
+         "path" : "texts/en_GB.lang"
+      },
+      {
+         "path" : "texts/en_US.lang"
+      },
+      {
+         "path" : "texts/es_ES.lang"
+      },
+      {
+         "path" : "texts/es_MX.lang"
+      },
+      {
+         "path" : "texts/languages.json"
+      },
+      {
+         "path" : "texts/pt_BR.lang"
+      },
+      {
+         "path" : "texts/pt_PT.lang"
+      },
+      {
+         "path" : "trading/economy_trades/rocket_trades.json"
+      },
+      {
+         "path" : "trading/economy_trades/wandering_trader_trades.json"
+      }
+   ],
+   "version" : 1
+}

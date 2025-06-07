@@ -1,0 +1,285 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scyther.quiet": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"scyther": {
+					"position": [0, -1, 0]
+				},
+				"body_root": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.3": [10, 0, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"head": {
+					"position": {
+						"0.0": [0, -1, -4],
+						"0.4": [0, -1.5, -4.5],
+						"0.8": [0, -1, -4]
+					}
+				},
+				"body": {
+					"rotation": [30, 0, 0]
+				},
+				"body2": {
+					"rotation": [-45, 0, 0]
+				},
+				"Right_wings": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, -20, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"Left_wings": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, 20, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"arms": {
+					"rotation": {
+						"0.0": [15, 0, 0],
+						"0.5": [35, 0, 0],
+						"0.8": [15, 0, 0]
+					},
+					"position": [0, -1, -3]
+				},
+				"right_arm": {
+					"rotation": [0, 0, 10]
+				},
+				"right_hand": {
+					"rotation": [-75, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, -10]
+				},
+				"left_hand": {
+					"rotation": [-75, 0, 0]
+				},
+				"legs": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, -1]
+				},
+				"right_leg": {
+					"rotation": [0, 0, 15]
+				},
+				"right_foot": {
+					"rotation": [-15, 20, -20]
+				},
+				"left_leg": {
+					"rotation": [0, 0, -15]
+				},
+				"left_foot": {
+					"rotation": [-15, -20, 20]
+				}
+			}
+		},
+		"animation.scyther.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"scyther": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, 2, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"head": {
+					"position": [0, -3, -5]
+				},
+				"body": {
+					"rotation": [45, 0, 0],
+					"position": [0, 0, 1]
+				},
+				"Right_wings": {
+					"rotation": {
+						"0.0": [0, 15, 0],
+						"0.1": [0, -25, 0],
+						"0.2": [0, 15, 0],
+						"0.3": [0, -25, 0],
+						"0.4": [0, 15, 0],
+						"0.5": [0, -25, 0],
+						"0.6": [0, 15, 0],
+						"0.7": [0, -25, 0],
+						"0.8": [0, 15, 0]
+					}
+				},
+				"Left_wings": {
+					"rotation": {
+						"0.0": [0, -15, 0],
+						"0.1": [0, 25, 0],
+						"0.2": [0, -15, 0],
+						"0.3": [0, 25, 0],
+						"0.4": [0, -15, 0],
+						"0.5": [0, 25, 0],
+						"0.6": [0, -15, 0],
+						"0.7": [0, 25, 0],
+						"0.8": [0, -15, 0]
+					}
+				},
+				"arms": {
+					"rotation": {
+						"0.0": [40, 0, 0],
+						"0.4": [20, 0, 0],
+						"0.8": [40, 0, 0]
+					},
+					"position": [0, -2, -2]
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": [0, 0, 15],
+						"0.8": [0, 0, 15]
+					}
+				},
+				"right_hand": {
+					"rotation": {
+						"0.0": [-75, 0, 0],
+						"0.2": [-50, 0, 0],
+						"0.8": [-75, 0, 0]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [0, 0, -15],
+						"0.8": [0, 0, -15]
+					}
+				},
+				"left_hand": {
+					"rotation": {
+						"0.0": [-75, 0, 0],
+						"0.2": [-50, 0, 0],
+						"0.8": [-75, 0, 0]
+					}
+				},
+				"legs": {
+					"rotation": {
+						"0.0": [30, 0, 0],
+						"0.5": [15, 0, 0],
+						"0.8": [30, 0, 0]
+					},
+					"position": [0, 0, 1]
+				},
+				"right_leg": {
+					"rotation": [0, 0, 5]
+				},
+				"right_foot": {
+					"rotation": [-20, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [0, 0, -5]
+				},
+				"left_foot": {
+					"rotation": [-20, 0, 0]
+				}
+			}
+		},
+		"animation.scyther.sitting": {
+			"loop": true,
+			"bones": {
+				"scyther": {
+					"position": [0, -8, 0]
+				},
+				"head": {
+					"position": [0, -1, -2]
+				},
+				"body": {
+					"rotation": [20, 0, 0],
+					"position": [0, 0, 1]
+				},
+				"body2": {
+					"rotation": [-20, 0, 0]
+				},
+				"arms": {
+					"position": [0, -1, -1]
+				},
+				"right_arm": {
+					"rotation": [0, -35, 0]
+				},
+				"right_hand": {
+					"rotation": [-75, 10, 5]
+				},
+				"left_arm": {
+					"rotation": [0, 35, 0]
+				},
+				"left_hand": {
+					"rotation": [-75, -10, -5]
+				},
+				"legs": {
+					"rotation": [130, 0, 0],
+					"position": [0, -2, -1]
+				},
+				"right_foot": {
+					"rotation": [-130, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [-130, 0, 0]
+				}
+			}
+		},
+		"animation.scyther.attack": {
+			"loop": true,
+			"bones": {
+				"scyther": {
+					"position": [0, -1.5, 0]
+				},
+				"head": {
+					"position": [-2, -1, -2]
+				},
+				"body": {
+					"rotation": [20, 50, 0]
+				},
+				"right_arm": {
+					"rotation": [75, 45, 80],
+					"position": [0, 0, 3]
+				},
+				"right_hand": {
+					"rotation": [-30, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [-65, 20, -35],
+					"position": [-3, 0, -5]
+				},
+				"left_hand": {
+					"rotation": [-30, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [-35, 75, 0],
+					"position": [0, 0, 1]
+				},
+				"right_foot": {
+					"rotation": [25, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [23, 10, -23],
+					"position": [0, 0, -2]
+				},
+				"left_foot": {
+					"rotation": [-25, 10, 20]
+				}
+			}
+		},
+        "animation.scyther.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,31,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

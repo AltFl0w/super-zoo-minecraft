@@ -1,0 +1,14 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:attachable":{
+    "description":{
+      "identifier":"serp:never_melt_ice",
+      "materials":{"default":"entity_alphatest"},
+      "textures":{"default":"pokeitems/items/poke/never_melt_ice"},
+      "geometry":{"default":"geometry.serpitem"},
+      "animations":{"fm":"animation.serpitem.fm","tm":"animation.serpitem.tm"},
+      "scripts":{"animate":[{"fm":"c.is_first_person"},{"tm":"!c.is_first_person"}]},
+      "render_controllers":["controller.render.default"]
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:bulletproof_helmet",
+			  "menu_category": {
+				"category": "equipment",
+                "group": "itemGroup.name.helmet"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"bulletproof_helmet"
+                ]
+            },
+			"minecraft:icon": {
+				"texture": "bulletproof_helmet"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:enchantable": {
+				"value": 10,
+				"slot": "armor_head"
+			},
+			"minecraft:durability": {
+				"max_durability": 2000
+			},
+			"minecraft:wearable": {
+				"protection": 3,
+				"slot": "slot.armor.head"
+			}
+		}
+	}
+}

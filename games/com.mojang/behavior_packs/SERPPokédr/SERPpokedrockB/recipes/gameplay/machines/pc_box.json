@@ -1,0 +1,21 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+      "identifier":"serp:pc_box"
+    },
+    "tags":["crafting_table"],
+    "group":"poke_machines",
+    "pattern":[
+      "hgh",
+      "rrr",
+      "hhh"
+    ],
+    "key":{
+      "r":{"item":"minecraft:redstone"},
+      "g":{"item":"minecraft:stained_glass","data":11},
+      "h":{"item":"minecraft:iron_ingot"}
+    },
+    "result":{"item":"serp:pc_box"}
+  }
+}

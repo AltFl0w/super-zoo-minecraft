@@ -1,0 +1,117 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+	"controller.animation.communicator": {
+			"initial_state": "off",
+			"states": {
+				"on": {
+			"animations": ["on"],
+        "blend_transition": 0.2,
+        "blend_via_shortest_path": true,
+			"transitions": [
+{"off": "query.variant == 0"}
+					]
+				},
+				"off": {
+			"animations": ["off"],
+        "blend_transition": 0.2,
+        "blend_via_shortest_path": true,
+			"transitions": [
+{"on": "query.variant == 1"}
+					]
+				}
+			}
+		},
+	"controller.animation.trader_particles": {
+			"initial_state": "normal",
+			"states": {
+				"normal": {
+			"transitions": [
+				{
+	"working": "query.is_shaking"
+						},
+				{
+	"finished": "query.is_saddled"
+						}
+					]
+				},
+				"working": {
+"particle_effects":[{"effect":"trade", "locator":"trade1"}],
+			"transitions": [
+				{
+	"finished": "query.is_saddled"
+						},
+				{
+	"normal": "query.variant == 0"
+						}
+					]
+				},
+				"finished": {
+"particle_effects":[{"effect":"trade", "locator":"trade2"}],
+			"transitions": [
+				{
+	"working": "query.is_shaking"
+						},
+				{
+	"normal": "query.variant == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.serp_pc": {
+			"states": {
+				"off": {
+			"animations": [ "off" ],
+			"blend_transition": 0.3,
+			"blend_via_shortest_path": true,
+			"transitions": [
+				{
+			"on": "query.variant == 1"
+						}
+					]
+				},
+				"on": {
+			"animations": [ "on" ],
+			"blend_transition": 0.3,
+			"blend_via_shortest_path": true,
+			"transitions": [
+				{
+			"off": "query.variant == 0"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.loot": {
+			"initial_state": "closed",
+			"states": {
+				"closed": {
+			"animations": [ "closed" ],
+			"blend_transition": 0.1,
+			"blend_via_shortest_path": true,
+			"transitions": [
+				{
+			"open": "query.variant == 2"
+						}
+					]
+				},
+				"open": {
+			"animations": [ "open" ],
+            "particle_effects": [
+                {
+                "effect": "bubbles"
+                        }
+                    ],
+			"blend_transition": 0.1,
+			"blend_via_shortest_path": true,
+			"transitions": [
+				{
+			"closed": "query.variant == 0"
+						}
+					]
+				}
+			}
+		}
+    }
+}

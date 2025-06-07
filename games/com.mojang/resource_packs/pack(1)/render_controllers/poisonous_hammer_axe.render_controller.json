@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.poisonous_hammer_axe": {
+			"geometry": "Geometry.poisonous_hammer_axe",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.poisonous_hammer_axe"
+			]
+		}
+	}
+}

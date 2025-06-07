@@ -1,0 +1,11 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "serp:iron_ingot_from_metal_coat"
+    },
+  "tags": ["furnace"],
+  "input": "serp:metal_coat",
+  "output": "minecraft:iron_ingot"
+  }
+}

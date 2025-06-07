@@ -1,0 +1,17 @@
+{
+  "format_version":"1.8.0",
+  "minecraft:spawn_rules":{
+    "description":{
+      "identifier":"serp:hoopa_ring",
+      "population_control":"animal"
+    },
+    "conditions":[
+      {
+    "minecraft:spawns_on_surface":{},
+    "minecraft:delay_filter":{"min":1200,"max":2400,"identifier":"serp:despawn","spawn_chance":10},
+    "minecraft:permute_type":[{"entity_type":"serp:hoopa_ring"}],
+    "minecraft:biome_filter":{"test":"has_biome_tag","value":"animal"}
+      }
+    ]
+  }
+}

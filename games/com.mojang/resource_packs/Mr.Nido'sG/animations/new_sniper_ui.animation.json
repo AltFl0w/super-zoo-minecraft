@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.new_sniper_ui.idle": {
+			"loop": true,
+			"bones": {
+				"huesos_ui": {
+					"position": [0.015, 0.015, 0]
+				}
+			}
+		}
+	}
+}

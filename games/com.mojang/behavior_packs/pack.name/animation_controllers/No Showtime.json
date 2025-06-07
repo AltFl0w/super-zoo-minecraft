@@ -1,0 +1,27 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.df_animatronicos.no_showtime": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "sound": "query.is_sheared"
+                        }
+                    ],
+                    "on_entry": [
+                        "/stopsound @a showtime.musica.fnaf2"
+                    ]
+                },
+                "no_showtime": {
+                    "transitions": [{
+                            "default": "!query.is_sheared"
+                        }
+                    ],
+                    "on_entry": [
+                        "/stopsound @a showtime.musica.fnaf2"
+                    ]
+                }
+            }
+        }
+    }
+}

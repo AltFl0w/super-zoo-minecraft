@@ -1,0 +1,16 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:pinap_berry",
+      "menu_category":{"group":"itemGroup.name.crop","category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"equippable.11"},
+      "minecraft:icon":"pinap",
+      "minecraft:food":{"nutrition":7,"saturation_modifier":0.3},
+	    "minecraft:use_modifiers":{"use_duration":1.6,"movement_modifier":0.35},
+	    "minecraft:use_animation":"eat"
+    }
+  }
+}

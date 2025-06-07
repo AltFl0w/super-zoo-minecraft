@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:water_axe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"## ",
+			"#s ",
+			" s "
+		],
+		"key": {
+			"#": {
+				"item": "wep:water_ingot"
+			},
+			"s": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:water_axe",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,23 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "§4§lSquid §cGame §f| Skin Pack v1",
+        "uuid": "f531898b-a9e0-4011-8543-2f64405e20dd",
+        "version": [
+            1,
+            0,
+            0
+        ]
+    },
+    "modules": [
+        {
+            "type": "skin_pack",
+            "uuid": "4f42b49e-9f6a-4a33-9e8d-374daa212c15",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}

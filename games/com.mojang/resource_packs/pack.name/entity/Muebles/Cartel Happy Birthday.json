@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:cartel_happy_birthday",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_happy_birthday"
+      },
+      "geometry": {
+        "default": "geometry.df_cartel_colgante"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_cartel_happy_birthday",
+        "texture_index": 0
+      }
+    }
+  }
+}

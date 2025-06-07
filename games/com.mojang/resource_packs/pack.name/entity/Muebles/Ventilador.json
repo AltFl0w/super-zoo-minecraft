@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:ventilador_fnaf2",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_ventilador_fnaf2"
+      },
+      "geometry": {
+        "default": "geometry.df_ventilador_fnaf2"
+      },
+      "animations": {
+        "df_ventilador_base": "animation.df_ventilador_fnaf2.base"
+  
+      },
+      "scripts": {
+        "animate": [
+         "df_ventilador_base"
+        ]
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_ventilador_fnaf2",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:covered_military_helmet",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/covered_military_helmet"
+			},
+			"geometry": {
+				"default": "geometry.covered_military_helmet"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

@@ -1,0 +1,40 @@
+{
+  "format_version":"1.16.0",
+  "minecraft:entity":{
+    "description":{
+      "identifier":"serp:slot_machine",
+      "is_spawnable":false,
+      "is_summonable":true,
+      "is_experimental":false,
+      "properties":{"serp:stop":{"client_sync":true,"range":[0,3],"type":"int","default":0},"serp:rot1":{"client_sync":true,"range":[0,7],"type":"int","default":0},"serp:rot2":{"client_sync":true,"range":[0,7],"type":"int","default":0},"serp:rot3":{"client_sync":true,"range":[0,7],"type":"int","default":0}}
+		},
+    "component_groups":{
+      "serp:tamed":{"minecraft:is_tamed":{}},
+      "serp:working":{"minecraft:is_saddled":{},"minecraft:timer":{"looping":true,"randomInterval":false,"time":0.25,"time_down_event":{"event":"serp:wheels"}}},
+      "serp:despawn":{"minecraft:instant_despawn":{}}
+    },
+    "components":{
+      "minecraft:type_family":{"family":["inanimated"]},
+      "minecraft:admire_item":{"duration":2.4},
+      "minecraft:knockback_resistance":{"value":100},
+      "minecraft:interact":{"interactions":[{"on_interact":{"filters":{"all_of":[{"test":"is_sneaking","subject":"other"},{"test":"is_owner","subject":"other"},{"test":"distance_to_nearest_player","operator":"<=","value":5}]},"event":"serp:despawn"},"add_items":{"table":"loot_tables/machines/slot_machine.json"},"interact_text":"structure_block.save"}]},
+      "minecraft:damage_sensor":{"triggers":[{"on_damage":{"filters":{"test":"has_equipment","subject":"other","operator":"!=","domain":"hand","value":"serp:pokedex"},"event":"serp:rotate"},"deals_damage":false},{"on_damage":{"filters":{"test":"has_damage","value":"fatal"}},"deals_damage":false}]},
+      "minecraft:scheduler":{"min_delay_secs":0,"max_delay_secs":0,"scheduled_events":[{"filters":{"all_of":[{"test":"has_component","value":"minecraft:is_saddled"},{"test":"distance_to_nearest_player","operator":">","value":3}]},"event":"serp:reset"}]},
+      "minecraft:collision_box":{"width":0.6,"height":1.9},
+      "minecraft:breathable":{"total_supply":15,"suffocate_time":0},
+      "minecraft:health":{"value":1},
+      "minecraft:physics":{},
+      "minecraft:pushable":{"is_pushable":false,"is_pushable_by_piston":true}
+    },
+    "events":{
+"minecraft:entity_spawned":{"queue_command":{"command":["scoreboard players set @s TrainerID 0"]}},
+"minecraft:entity_transformed":{"add":{"component_groups":["serp:tamed"]},"queue_command":{"command":["tp @s ~~0.2~ 0 0","scoreboard players set @s TrainerID 0"]}},
+"serp:rotate":{"queue_command":{"command":["tp @s ~~0.25~~90~"]}},
+"serp:despawn":{"add":{"component_groups":["serp:despawn"]}},
+"serp:start":{"add":{"component_groups":["serp:working"]},"set_property":{"serp:stop":3,"serp:rot1":"math.random(0,7)","serp:rot2":"math.random(0,7)","serp:rot3":"math.random(0,7)"}},
+"serp:stop":{"set_property":{"serp:stop":"q.property('serp:stop')-1"}},
+"serp:wheels":{"sequence":[{"filters":{"test":"int_property","domain":"serp:stop","operator":">","value":2},"set_property":{"serp:rot1":"math.random(0,7)"}},{"filters":{"test":"int_property","domain":"serp:stop","operator":">","value":1},"set_property":{"serp:rot2":"math.random(0,7)"}},{"filters":{"test":"int_property","domain":"serp:stop","operator":">","value":0},"set_property":{"serp:rot3":"math.random(0,7)"}}]},
+"serp:reset":{"remove":{"component_groups":["serp:working"]},"set_property":{"serp:stop":0,"serp:rot1":0,"serp:rot2":0,"serp:rot3":0}}
+    }
+  }
+}

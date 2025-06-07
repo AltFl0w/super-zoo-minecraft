@@ -1,0 +1,15 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "§l§2Turtle§fLand",
+        "uuid": "d5fe6c91-ed28-4e9c-a598-a522102b7a00",
+        "version": [ 1, 0, 0 ]
+        },
+    "modules": [
+        {
+            "type": "skin_pack",
+            "uuid": "df4b3422-b4f4-41e4-903d-431afb54e27a",
+            "version": [ 1, 0, 0 ]
+        }
+    ]
+}

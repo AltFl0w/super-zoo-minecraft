@@ -1,0 +1,55 @@
+//bridge-file-version: #4
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.meteorite_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'meteorite_sword' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'meteorite_sword' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'meteorite_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_cast_meteor"
+					]
+				}
+			}
+		},
+		"controller.animation.meteorite.effect": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"effect": "!query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/tag @s remove bedrock"
+					]
+				},
+				"effect": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/tp @s ~~~ 0",
+						"/execute @e[tag=meteorite_sword,r=30] ~~~ effect @s absorption 10 5"
+					],
+					"animations": [
+						"meteor"
+					]
+				}
+			}
+		}
+	}
+}

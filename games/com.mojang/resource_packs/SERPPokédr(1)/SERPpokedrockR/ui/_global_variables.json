@@ -1,0 +1,22 @@
+{
+    "$transition_time_push_size":0,
+    "$transition_time_pop_size":0,
+    "$transition_time_push":0,
+    "$transition_time_pop":0,
+    "$0_color_format":[0,0,0],
+    "$1_color_format":[0,0.2,0.6],
+    "$2_color_format":[0,0.667,0],
+    "$3_color_format":[0,0.667,0.667],
+    "$4_color_format":[0.667,0,0],
+    "$5_color_format":[0.7,0.2,0.6],
+    "$6_color_format":[1,0.667,0],
+    "$7_color_format":[0.7,0.7,0.7],
+    "$8_color_format":[0.45,0.45,0.45],
+    "$9_color_format":[0,0.5,1],
+    "$a_color_format":[0.2,0.8,0.2],
+    "$b_color_format":[0.333,1,1],
+    "$c_color_format":[1,0.333,0.333],
+    "$d_color_format":[1,0.333,1],
+    "$e_color_format":[1,1,0.333],
+    "$f_color_format":[1,1,1]
+}

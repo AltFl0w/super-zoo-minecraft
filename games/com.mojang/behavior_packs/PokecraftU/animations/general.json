@@ -1,0 +1,90 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.charizard_slown_falling": {
+     "animation_length": 4.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+						"/effect @s slow_falling 30 0 true"
+            ]
+      }
+    }, 
+    "animation.regeneration_trevenant": {
+     "animation_length": 4.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+						"/execute @s ~~~ effect @p regeneration 2 0 true"
+            ]
+      }
+    }, 
+    "animation.pokeball_2": {
+     "animation_length": 4.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+						"/playsound sound.pokeball_2 @a[r=5] ~ ~ ~ 10"
+            ]
+      }
+    }, 
+    "animation.charizard_fly_time": {
+     "animation_length": 31.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "@s minecraft:charizard_fly_time"
+            ],
+        "25.0": [
+ "@s minecraft:charizard_fly_time"
+            ],
+        "30.0": [ 
+ "@s minecraft:charizard_fly_time"
+            ]
+      }
+    },
+    "animation.charizard_fly1": {
+     "animation_length": 16.0,
+      "loop": true,
+      "timeline": { 
+        "0.0": [
+ "@s minecraft:salvaje_volando"
+            ],
+        "10.0": [
+ "@s minecraft:salvaje_no_volando_random"
+            ],
+        "15.0": [
+ "@s minecraft:salvaje_volando_random"
+            ]
+      }
+    },
+    "animation.charizard_fly2": {
+     "animation_length": 30.0,
+      "loop": true,
+      "timeline": {
+        "0.0": [
+ "@s minecraft:salvaje_volando_random"
+            ]
+      }
+    },
+    "animation.pokeball_entity_desaparecer": {
+     "animation_length": 2.0, 
+      "loop": true,  
+      "timeline": {
+          "0.0":[ 
+              "/execute @p[r=4] ~~~ execute @e[type=pokemon_unite:pokeball_entity,r=4]  ~~~ event entity @s minecraft:desaparecer1"
+              ]
+      }
+    },
+    "animation.dialogo_esperando_tame_pokemon": {
+     "animation_length": 1.2,
+      "loop": false,
+      "timeline": {
+        "1.0": [ 
+            "/dialogue change @s dialogo_esperando_tame_pokemon @p",
+"/title @a[r=10] Title §gCatch Pokemon Succesfull"
+            ]
+      }
+    }
+  } 
+}

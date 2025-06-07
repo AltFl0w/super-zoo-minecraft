@@ -1,0 +1,126 @@
+{
+    "pools": [
+		{
+            "rolls": 1,
+            "entries": [
+                {
+            "type": "item",
+            "name": "serp:bad_egg",
+            "weight": 2
+        },
+        {
+            "type": "item",
+            "name": "serp:bike_pass",
+            "weight": 1
+        },
+        {
+            "type": "item",
+            "name": "serp:ride_pass",
+            "weight": 1
+        },
+        {
+            "type": "item",
+            "name": "serp:clothing_ticket",
+            "weight": 1
+        },
+        {
+            "type": "item",
+            "name": "serp:poke",
+            "weight": 10,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 2,
+                        "max": 7
+                    }
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "serp:potion",
+            "weight": 10
+        },
+        {
+            "type": "item",
+            "name": "serp:lemonade",
+            "weight": 2,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": 2
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "serp:super_potion",
+            "weight": 8
+        },
+        {
+            "type": "item",
+            "name": "serp:hyper_potion",
+            "weight": 6
+        },
+        {
+            "type": "item",
+            "name": "serp:pokeball",
+            "weight": 10,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "serp:revive",
+            "weight": 5,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "serp:metal_coat",
+            "weight": 5
+        },
+        {
+            "type": "item",
+            "name": "serp:superball",
+            "weight": 8,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "serp:ultraball",
+            "weight": 6
+                },
+        {
+            "type": "item",
+            "name": "serp:rare_candy",
+            "weight": 2
+                }
+            ]
+        }
+    ]
+}

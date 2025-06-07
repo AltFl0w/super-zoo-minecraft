@@ -1,0 +1,519 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gunsaddon:m249_shoot",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"bullet": "controller.animation.bullet"
+			},
+			"scripts": {
+				"animate": [
+					"bullet"
+				]
+			}
+		},
+		"components": {
+			"minecraft:break_blocks": {
+				"breakable_blocks": [
+					"melon_block",
+					"melon_stem",
+					"minecraft:pumpkin",
+					"minecraft:jack_o_lantern",
+					"glass",
+					"glass_pane",
+					"ice",
+					"blue_ice",
+					"packed_ice",
+					"frosted_ice",
+					"glowstone",
+					"redstone_lamp",
+					"bamboo",
+					"sea_lantern"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.1,
+				"height": 0.1
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 0.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "destroy"
+				}
+			}
+		},
+		"component_groups": {
+			"hit": {
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"normal_laser": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								12,
+								12
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.0,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"apuntar_laser": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								12,
+								12
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 1.75,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"silenciador_laser": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								11,
+								11
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.0,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"silenciador_apuntar_laser": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								11,
+								11
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 1.75,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"normal": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								12,
+								12
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.75,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"apuntar": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								12,
+								12
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.4,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"silenciador": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								11,
+								11
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.75,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"silenciador_apuntar": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								11,
+								11
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.4,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"fire": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								12,
+								12
+							],
+							"knockback": false,
+							"destroy_on_hit": true
+						},
+					    "catch_fire": {
+						  "fire_affected_by_griefing": true
+					    },
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.75,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			},
+			"hit_explode": {
+				"minecraft:explode": {
+				"fuse_length": 0,
+				"fuse_lit": true,
+				"breaks_blocks": false,
+				"power": 1,
+				"causes_fire": false,
+				"destroy_affected_by_griefing": false
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"explosive": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit_explode"
+							}
+						},
+						"impact_damage": {
+							"damage": [
+								12,
+								12
+							],
+							"knockback": false,
+							"destroy_on_hit": false
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 7.5,
+					"gravity": 0.001,
+					"anchor": 1,
+					"angle_offset":0,
+					"destroy_on_hurt": true,
+					"uncertaintyBase": 2.2,
+					"offset": [
+						0,
+						0,
+						0
+					]
+				}
+			}
+		},
+		"events": {
+			"hit_explode": {
+				"add": {
+					"component_groups": [
+						"hit_explode"
+					]
+				}
+			},
+			"explosive": {
+				"add": {
+					"component_groups": [
+						"explosive"
+					]
+				}
+			},
+			"fire": {
+				"add": {
+					"component_groups": [
+						"fire"
+					]
+				}
+			},
+			"normal_laser": {
+				"add": {
+					"component_groups": [
+						"normal_laser"
+					]
+				}
+			},
+			"apuntar_laser": {
+				"add": {
+					"component_groups": [
+						"apuntar_laser"
+					]
+				}
+			},
+			"silenciador_laser": {
+				"add": {
+					"component_groups": [
+						"silenciador_laser"
+					]
+				}
+			},
+			"silenciador_apuntar_laser": {
+				"add": {
+					"component_groups": [
+						"silenciador_apuntar_laser"
+					]
+				}
+			},
+			"normal": {
+				"add": {
+					"component_groups": [
+						"normal"
+					]
+				}
+			},
+			"apuntar": {
+				"add": {
+					"component_groups": [
+						"apuntar"
+					]
+				}
+			},
+			"silenciador": {
+				"add": {
+					"component_groups": [
+						"silenciador"
+					]
+				}
+			},
+			"silenciador_apuntar": {
+				"add": {
+					"component_groups": [
+						"silenciador_apuntar"
+					]
+				}
+			},
+			"destroy": {
+				"add": {
+					"component_groups": [
+						"hit"
+					]
+				}
+			},
+			"hit": {
+				"sequence": [
+					 {
+						 "queue_command": {
+						     "command": [
+								"function impact_bullet"
+							]
+						}
+					},
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

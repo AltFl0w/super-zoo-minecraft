@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:luxuryball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bbb",
+      "aaa"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_black"
+      },
+      "b": {
+        "item": "serp:apricorn_red"
+      }
+    },
+    "result": {
+      "item": "serp:luxuryball_up",
+      "count": 6
+    }
+  }
+}

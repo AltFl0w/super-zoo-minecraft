@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.catsharkvariant": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.catshark",
+            "Texture.leopard",
+            "Texture.invisible",
+            "Texture.iceland"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.skins[query.variant]"
+      ]
+    }
+  }
+}

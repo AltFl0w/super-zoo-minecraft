@@ -1,0 +1,141 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.barret_m82a1" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : { "on_entry" : [ "/scoreboard objectives add barret_m82a1_explosive dummy", "/scoreboard players add @s barret_m82a1_explosive 0", "/scoreboard objectives add barret_m82a1_fire dummy", "/scoreboard players add @s barret_m82a1_fire 0", "/scoreboard objectives add barret_m82a1_shotgun dummy", "/scoreboard players add @s barret_m82a1_shotgun 0", "/scoreboard objectives add barret_m82a1_m203 dummy", "/scoreboard players add @s barret_m82a1_m203 0", "/scoreboard objectives add barret_m82a1 dummy", "/scoreboard players add @s barret_m82a1 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [ { "default" : "(1.0)" } ]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add barret_m82a1_explosive dummy", "/scoreboard players add @s barret_m82a1_explosive 0", "/scoreboard objectives add barret_m82a1_fire dummy", "/scoreboard players add @s barret_m82a1_fire 0","/scoreboard objectives add barret_m82a1_shotgun dummy", "/scoreboard players add @s barret_m82a1_shotgun 0", "/scoreboard objectives add barret_m82a1_m203 dummy", "/scoreboard players add @s barret_m82a1_m203 0", "/scoreboard objectives add barret_m82a1 dummy", "/scoreboard players add @s barret_m82a1 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"barret_m82a1" : "q.scoreboard('barret_m82a1') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('barret_m82a1') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && q.is_using_item && q.scoreboard('second_gun') == 0 && q.is_alive"
+						},
+						{
+							"m203.reload" : "q.scoreboard('barret_m82a1_m203') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && q.is_using_item && q.scoreboard('second_gun') == 1 && q.is_alive"
+						},
+						{
+							"shotgun.reload" : "q.scoreboard('barret_m82a1_shotgun') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && q.is_using_item && q.scoreboard('second_gun') == 2 && q.is_alive"
+						}
+					]
+				},
+				"barret_m82a1" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('barret_m82a1') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('barret_m82a1') < 0 && q.is_using_item"
+						},
+						{
+							"m203.reload" : "q.scoreboard('barret_m82a1_m203') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && q.is_using_item && q.scoreboard('second_gun') == 1"
+						},
+						{
+							"shotgun.reload" : "q.scoreboard('barret_m82a1_shotgun') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && q.is_using_item && q.scoreboard('second_gun') == 2"
+						},
+						{
+							"shoot" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('barret_m82a1_fire') == 0 && q.scoreboard('barret_m82a1_explosive') == 0"
+						},
+						{
+							"shoot.fire" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('barret_m82a1_fire') > 0"
+						},
+						{
+							"shoot.explosive" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('barret_m82a1_explosive') == 1"
+						}
+					]
+				},
+				"shoot.explosive" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "barret_m82a1.shoot.explosive" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"barret_m82a1" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('barret_m82a1') < 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot.fire" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "barret_m82a1.shoot.fire" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"barret_m82a1" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('barret_m82a1') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "barret_m82a1.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"barret_m82a1" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('barret_m82a1') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off", "/function barret_m82a1/barret_m82a1" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				//Reload
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:barret_m82a1_ammo}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "barret_m82a1.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') || !q.is_alive"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.barret_m82a1_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.dark_broadsword": {
+			"geometry": "Geometry.dark_broadsword",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.dark_broadsword"
+			]
+		}
+	}
+}

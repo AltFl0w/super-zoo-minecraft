@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:plants",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+	  "minecraft:transformation":{"into":"serp:despawn","delay":{"value":1},"keep_owner":true},
+      "minecraft:movement":{"value":0},
+	    "minecraft:physics": {}
+    },
+    "events": {
+      "minecraft:entity_spawned":{
+          "randomize":[
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_black_block"]}},
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_blue_block"]}},
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_cyan_block"]}},
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_green_block"]}},
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_orange_block"]}},
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_red_block"]}},
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_white_block"]}},
+{"weight":10,"run_command":{"command":["setblock ~~~ serp:apricorn_yellow_block"]}},
+{"weight":20,"run_command":{"command":["structure load berry_tree ~~~"]}}
+        ]
+      }
+    }
+  }
+}

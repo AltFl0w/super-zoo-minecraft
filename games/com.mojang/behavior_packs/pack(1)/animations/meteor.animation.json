@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.meteor": {
+			"animation_length": 0.9,
+			"loop": true,
+			"timeline": {
+				"0.0": [
+					"/summon wep:meteor ^^30^"
+				],
+				"0.3": [
+					"/summon wep:meteor ^8^30^"
+				],
+				"0.6": [
+					"/summon wep:meteor ^^30^8"
+				],
+				"0.9": [
+					"/summon wep:meteor ^16^30^"
+				],
+				"0.12": [
+					"/summon wep:meteor ^^30^16"
+				]
+			}
+		}
+	}
+}

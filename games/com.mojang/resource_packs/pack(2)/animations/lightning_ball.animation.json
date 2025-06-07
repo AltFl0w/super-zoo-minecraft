@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.lightning_ball.general": {
+			"loop": true,
+			"bones": {
+				"ball": {
+					"position": ["math.random(-2,2)", "math.random(-2,2)", 0]
+				}
+			},
+			"particle_effects": {
+				"0.0": [
+					{
+						"effect": "lightning_ball",
+						"locator": "locator"
+					},
+					{
+						"effect": "lightning_ball2",
+						"locator": "locator"
+					}
+				]
+			}
+		}
+	}
+}

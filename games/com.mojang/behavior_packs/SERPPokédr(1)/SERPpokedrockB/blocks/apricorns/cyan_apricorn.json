@@ -1,0 +1,97 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:block": {
+        "description": {
+        "identifier": "serp:apricorn_cyan_block",
+        "is_experimental": false,
+        "register_to_creative_menu": true,
+	    "properties":{"serp:state":[0,1,2]}
+        },
+        "components": {
+    "minecraft:material_instances": {
+        "*": {
+      "texture": "apricorn_stem",
+      "render_method": "alpha_test",
+      "ambient_occlusion": false,
+      "face_dimming": true
+      }
+    },
+    "minecraft:geometry": "geometry.apricorn_stem",
+    "minecraft:placement_filter":{
+	"conditions":[{"allowed_faces":["up"]}]
+	},
+    "minecraft:destructible_by_explosion": {
+      "explosion_resistance": 0
+    },
+    "minecraft:destructible_by_mining": {
+      "seconds_to_destroy": 0
+    },
+    "minecraft:flammable": {
+      "catch_chance_modifier": 5,
+      "destroy_chance_modifier": 20
+    },
+	"minecraft:collision_box": false,
+    "minecraft:block_light_filter":0,
+    "minecraft:random_ticking":{
+        "on_tick":{"event":"serp:auto_grow",
+        "target":"self"}
+    },
+    "minecraft:on_interact": {
+        "event": "serp:mulch",
+        "condition":"!(query.block_property('serp:state')==2) && query.get_equipped_item_name('main_hand')=='mulch'"
+    },
+    "minecraft:loot":"loot_tables/apricorn/break.json"
+        },
+	"permutations": [
+		{"condition":"query.block_property('serp:state')==1",
+		"components": {
+    "minecraft:material_instances": {
+        "*": {
+      "texture": "apricorn_empty",
+      "render_method": "alpha_test",
+      "ambient_occlusion": false,
+      "face_dimming": true
+      }
+    },
+	"minecraft:geometry": "geometry.apricorn_plant"
+			}
+		},
+		{"condition":"query.block_property('serp:state')==2",
+		"components": {
+    "minecraft:material_instances": {
+        "*": {
+      "texture": "apricorn_cyan",
+      "render_method": "alpha_test",
+      "ambient_occlusion": false,
+      "face_dimming": true
+      }
+    },
+	"minecraft:geometry": "geometry.apricorn_plant",
+    "minecraft:loot": "loot_tables/apricorn/cyan.json"
+			    }
+		    }
+		],
+		"events": {
+    "serp:mulch": {
+        "sequence": [
+    {"decrement_stack":{}},
+    {"run_command":{"command":["particle minecraft:crop_growth_emitter ~~~"]}},
+    {"trigger":{"event":"serp:manual_grow"
+                        }
+                    }
+                ]
+            },
+	"serp:manual_grow": {
+    "set_block_property":{"serp:state":"(query.block_property('serp:state')<2)?query.block_property('serp:state')+1:2"
+        }
+	  },
+	"serp:auto_grow": {
+	"randomize": [
+    {"weight":80},
+    {"weight":20,"set_block_property":{"serp:state":"(query.block_property('serp:state')<2)?query.block_property('serp:state')+1:2"}
+	      }
+	    ]
+	  }
+	}
+  }
+}

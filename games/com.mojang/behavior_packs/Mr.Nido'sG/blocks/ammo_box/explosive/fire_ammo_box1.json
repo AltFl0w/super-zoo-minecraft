@@ -1,0 +1,93 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "gunsaddon:explosive_ammo_box1",
+       "menu_category": {
+                "category": "items",
+                "group": "items"
+            },
+      "traits": {
+
+			}
+    },
+    "components": {
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "explosive_ammo_box",
+          "render_method": "alpha_test",
+          "ambient_occlusion": true,
+		  "face_dimming": true
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "geometry.ammo_box1"
+      },
+      "minecraft:map_color": "#343434",
+      "minecraft:collision_box": {
+				"origin": [ -3.5, 0, -6 ],
+				"size": [ 7, 7, 12 ]
+			},
+			"minecraft:selection_box": {
+				"origin": [ -3.5, 0, -6 ],
+				"size": [ 7, 7, 12 ]
+			},
+      "minecraft:light_dampening": 0,
+      "minecraft:light_emission": 0,
+      "minecraft:friction": 0.4,
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 30.0
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.4
+      },
+      "minecraft:transformation": {
+				"rotation": [ 0, 0, 0 ]
+			},
+      "minecraft:loot": "loot_tables/blocks/ammo_box/explosive_ammo_box1.json",
+      "tag:ammo_box": {},
+      "tag:custom_stairs": {},
+      "tag:pickaxe_diggable": {},
+      "tag:solid_block": {},
+      "tag:stone": {},
+      "minecraft:custom_components": [
+            "gunsaddon:explosive_ammo_box1"
+       ]
+    },
+    "permutations": [
+      {
+        "condition": "query.block_state('minecraft:facing_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 0, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:facing_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 90, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:facing_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, 180, 0 ]
+          }
+        }
+      },
+      {
+        "condition": "query.block_state('minecraft:facing_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [ 0, -90, 0 ]
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:tm_machine",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{"on":"textures/entity/tm_machine/tm_machine_on","off":"textures/entity/tm_machine/tm_machine_off"},
+      "geometry":{"default":"geometry.serptm_machine"},
+      "animations":{"icon":"animation.serppc_box.icon"},
+      "scripts":{"scale":"0.9","animate":["icon"]},
+      "render_controllers":["controller.render.pc_box"]
+    }
+  }
+}

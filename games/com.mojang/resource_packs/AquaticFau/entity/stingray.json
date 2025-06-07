@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "animations": {
+        "attack": "animation.stingray.attack",
+        "attack_controller": "controller.animation.stingray.attack",
+        "climbing": "animation.stingray.climbing",
+        "move_controller": "controller.animation.stingray.move",
+        "setup": "animation.stingray.idle",
+        "walk": "animation.stingray.walk"
+      },
+      "geometry": {
+        "default": "geometry.stingray"
+      },
+      "identifier": "fauna:stingray",
+      "materials": {
+        "default": "iron_golem"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          "move_controller",
+          "setup",
+          "attack_controller"
+        ],
+        "pre_animation": [
+          "variable.modified_tcos0 \u003d Math.clamp(((Math.cos(query.modified_distance_moved * 13.5) * Math.min(query.modified_move_speed, 0.6) / variable.gliding_speed_value) * 25.0), -12.5, 12.5);",
+          "variable.attack \u003d Math.sin(variable.attack_time * 30.0);",
+          "variable.random \u003d math.round(math.random(0,1));"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "stingray",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/stingray"
+      }
+    }
+  }
+}

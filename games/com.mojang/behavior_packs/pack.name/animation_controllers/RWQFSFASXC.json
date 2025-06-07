@@ -1,0 +1,46 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.RWQFSFASXC.efecto": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "efecto": "query.has_target"
+                        }, {
+                            "sin_efecto": "!query.has_target"
+                        }
+                    ]
+                },
+                "efecto": {
+                    "transitions": [{
+                            "default": "!query.has_target"
+                        }
+                    ],
+                    "on_entry": [
+                        "/execute @e[type=df:shadow_bonnie] ~ ~ ~ effect @e[r=40,type=!df:shadow_bonnie] slowness 10 2 true",
+                        "/execute @e[type=df:shadow_bonnie] ~ ~ ~ effect @e[r=30,type=!df:shadow_bonnie] blindness 5 2 true",
+                        "/execute @e[type=df:shadow_bonnie] ~ ~ ~ effect @e[r=20,type=!df:shadow_bonnie] nausea 15 2 true",
+                        "/execute @e[type=df:shadow_bonnie,r=10] ~ ~ ~ title @a actionbar §oi see you there",
+                        "/execute @e[type=df:shadow_bonnie,r=10] ~ ~ ~ gamemode s @a",
+                        "/execute @e[type=df:shadow_bonnie,r=10] ~ ~ ~ playsound ScareScrape @a",
+                        "/gamerule sendcommandfeedback false",
+                        "/gamerule commandblockoutput false"
+                    ]
+                },
+				"sin_efecto": {
+                    "transitions": [{
+                            "default": "query.has_target"
+                        }
+                    ],
+					"on_entry": [
+                        "/execute @e[type=df:shadow_bonnie] ~ ~ ~ effect @e[r=30,type=!df:shadow_bonnie] slowness 0 0 true",
+                        "/execute @e[type=df:shadow_bonnie] ~ ~ ~ effect @e[r=20,type=!df:shadow_bonnie] blindness 0 0 true",
+                        "/execute @e[type=df:shadow_bonnie] ~ ~ ~ effect @e[r=10,type=!df:shadow_bonnie] nausea 0 0 true",
+                        "/gamerule sendcommandfeedback false",
+                        "/gamerule commandblockoutput false"
+                    ]
+                }
+            }
+        }
+    }
+}

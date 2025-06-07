@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.barracuda"
+      },
+      "identifier": "fauna:barracuda",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.salmon"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "barracuda",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/barracuda"
+      },
+      "animations": {
+        "attack": "animation.barracuda.attack",
+        "idle": "animation.barracuda.idle",
+        "swim": "animation.barracuda.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

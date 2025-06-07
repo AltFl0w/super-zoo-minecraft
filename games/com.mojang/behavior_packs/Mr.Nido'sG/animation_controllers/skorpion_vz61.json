@@ -1,0 +1,147 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.skorpion_vz61" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : { "on_entry" : [ "/scoreboard objectives add skorpion_vz61_explosive dummy", "/scoreboard players add @s skorpion_vz61_explosive 0", "/scoreboard objectives add skorpion_vz61_fire dummy", "/scoreboard players add @s skorpion_vz61_fire 0", "/scoreboard objectives add skorpion_vz61_shotgun dummy", "/scoreboard players add @s skorpion_vz61_shotgun 0", "/scoreboard objectives add skorpion_vz61_m203 dummy", "/scoreboard players add @s skorpion_vz61_m203 0", "/scoreboard objectives add skorpion_vz61 dummy", "/scoreboard players add @s skorpion_vz61 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [ { "default" : "(1.0)" } ]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add skorpion_vz61_explosive dummy", "/scoreboard players add @s skorpion_vz61_explosive 0", "/scoreboard objectives add skorpion_vz61_fire dummy", "/scoreboard players add @s skorpion_vz61_fire 0","/scoreboard objectives add skorpion_vz61_shotgun dummy", "/scoreboard players add @s skorpion_vz61_shotgun 0", "/scoreboard objectives add skorpion_vz61_m203 dummy", "/scoreboard players add @s skorpion_vz61_m203 0", "/scoreboard objectives add skorpion_vz61 dummy", "/scoreboard players add @s skorpion_vz61 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"skorpion_vz61" : "q.scoreboard('skorpion_vz61') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('skorpion_vz61') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61') && q.is_using_item && q.scoreboard('second_gun') == 0 && q.is_alive"
+						}
+					]
+				},
+				"skorpion_vz61" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('skorpion_vz61') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('skorpion_vz61') < 0 && q.is_using_item"
+						},
+						{
+							"shoot" : "q.is_using_item && !q.is_sneaking && q.scoreboard('second_gun') == 0 && q.scoreboard('skorpion_vz61_fire') == 0 && q.scoreboard('skorpion_vz61_explosive') == 0"
+						},
+						{
+							"shoot_apuntar" : "q.is_using_item && q.is_sneaking && q.scoreboard('second_gun') == 0 && q.scoreboard('skorpion_vz61_fire') == 0 && q.scoreboard('skorpion_vz61_explosive') == 0"
+						},
+						{
+							"shoot.fire" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('skorpion_vz61_fire') > 0"
+						},
+						{
+							"shoot.explosive" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('skorpion_vz61_explosive') == 1"
+						}
+					]
+				},
+				"shoot.explosive" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "skorpion_vz61.shoot.explosive" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"skorpion_vz61" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('skorpion_vz61') < 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot.fire" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "skorpion_vz61.shoot.fire" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"skorpion_vz61" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('skorpion_vz61') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "skorpion_vz61.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"skorpion_vz61" : "!q.is_using_item || q.is_sneaking"
+						},
+						{
+							"no_ammo" : "q.scoreboard('skorpion_vz61') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot_apuntar" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "skorpion_vz61.apuntar.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"skorpion_vz61" : "!q.is_using_item || !q.is_sneaking"
+						},
+						{
+							"no_ammo" : "q.scoreboard('skorpion_vz61') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off", "/function skorpion_vz61/skorpion_vz61" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item"
+						}
+					]
+				},
+				//Reload
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:skorpion_vz61_ammo}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "skorpion_vz61.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61') || !q.is_alive"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.skorpion_vz61_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

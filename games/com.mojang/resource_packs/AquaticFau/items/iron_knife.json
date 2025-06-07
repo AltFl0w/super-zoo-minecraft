@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:iron_knife",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:use_animation": "eat",
+      "minecraft:icon": "iron_knife",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

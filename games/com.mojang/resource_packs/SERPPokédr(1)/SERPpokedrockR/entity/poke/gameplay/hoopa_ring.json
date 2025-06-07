@@ -1,0 +1,27 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:hoopa_ring",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{
+    "default":"textures/entity/hoopa_ring"
+      },
+      "geometry":{
+    "default":"geometry.hooparing"
+      },
+      "animations":{
+    "shoot":"animation.actor.billboard",
+    "ring":"animation.hoopa_ring.animation",
+    "persistent":"controller.animation.persistent_particle"
+      },
+      "particle_effects":{
+    "particle":"serp:hoopa_ring_emitter"
+      },
+      "scripts":{
+    "animate":["ring","shoot","persistent"]
+      },
+      "render_controllers":["controller.render.fireball"]
+    }
+  }
+} 

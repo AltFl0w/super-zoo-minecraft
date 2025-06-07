@@ -1,0 +1,20 @@
+{
+    "format_version":"1.13.0",
+    "minecraft:structure_template_feature":{
+        "description":{
+    "identifier":"serp:lamp_mcstructure"
+        },
+        "structure_name":"mystructure:lamp",
+        "adjustment_radius":2,
+    "constraints":{
+      "grounded":{},
+      "block_intersection":{
+        "block_allowlist":[
+          "air",
+          "grass",
+          "dirt"
+        ]
+      }
+    }
+  }
+}

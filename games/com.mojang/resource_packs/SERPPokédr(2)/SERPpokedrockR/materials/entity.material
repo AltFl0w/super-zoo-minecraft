@@ -1,0 +1,15 @@
+{
+  "materials": {
+    "version": "1.0.0",
+
+    "pokemon:entity_nocull": {
+      "+defines": [
+        "ALPHA_TEST",
+        "USE_EMISSIVE",
+        "USE_OVERLAY",
+        "USE_COLOR_MASK"
+
+      ]
+    }
+  }
+}

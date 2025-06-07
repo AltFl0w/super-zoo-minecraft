@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:blue_ribbon",
+	    "menu_category":{"category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:blue_ribbon.name"},
+	    "minecraft:icon":"blue_ribbon"
+    }
+  }
+}

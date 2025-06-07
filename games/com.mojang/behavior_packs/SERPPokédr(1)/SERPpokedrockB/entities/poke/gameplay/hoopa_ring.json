@@ -1,0 +1,121 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:hoopa_ring",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "serp:despawn": {
+      "minecraft:instant_despawn":{}
+    },
+      "serp:teleport": {
+      "minecraft:teleport": {
+        "random_teleports": true,
+        "max_random_teleport_time": 1,
+        "random_teleport_cube": [10,10,10],
+        "dark_teleport_chance":0.8,
+        "light_teleport_chance":0.8
+      }
+    }
+  },
+    "components": {
+      "minecraft:type_family":{"family": ["ring"]},
+      "minecraft:transformation":{"into":"serp:despawn","delay":{"value":180}},
+      "minecraft:scale": {"value":1.5},
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_water": true,
+        "breathes_air": true,
+        "generates_bubbles": false
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,"height": 1
+      },
+      "minecraft:custom_hit_test":{
+        "hitboxes": [
+      {
+        "width": 0.6,"height": 1,
+        "pivot": [0,2,0]
+          }
+        ]
+      },
+    "minecraft:health":{"value":40,"max":40},
+    "minecraft:damage_sensor": {
+      "triggers": [
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:articuno_offering"},"event":"serp:articuno"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:zapdos_offering"},"event":"serp:zapdos"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:moltres_offering"},"event":"serp:moltres"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:mewtwo_offering"},"event":"serp:mewtwo"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:mew_offering"},"event":"serp:mew"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:raikou_offering"},"event":"serp:raikou"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:entei_offering"},"event":"serp:entei"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:suicune_offering"},"event":"serp:suicune"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:lugia_offering"},"event":"serp:lugia"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:hooh_offering"},"event":"serp:hooh"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:celebi_offering"},"event":"serp:celebi"},"deals_damage":false},
+{"on_damage":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:xdxd_offering"},"event":"serp:xdxd"},"deals_damage":false}
+        ]
+      },
+      "minecraft:scheduler": {
+        "min_delay_secs": 0,
+        "max_delay_secs": 0,
+        "scheduled_events": [
+{"filters":{"test":"distance_to_nearest_player","operator":">","value":7},"event":"serp:far"},
+{"filters":{"test":"distance_to_nearest_player","operator":"<=","value":7},"event":"serp:near"}
+        ]
+      },
+    "minecraft:movement": {"value":0},
+    "minecraft:behavior.float":{"priority":0},
+		"minecraft:behavior.move_towards_restriction":{"priority":7},
+      "minecraft:knockback_resistance":{"value":10},
+	    "minecraft:physics": {"has_gravity":false},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "serp:near":{
+"add":{"component_groups":["serp:teleport"]}},
+      "serp:far":{
+"remove":{"component_groups":["serp:teleport"]}},
+      "serp:articuno":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:articuno ~~1.5~","clear @p serp:articuno_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:zapdos":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:zapdos ~~1.5~","clear @p serp:zapdos_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:moltres":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:moltres ~~1.5~","clear @p serp:moltres_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:mewtwo":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:mewtwo ~~1.5~","clear @p serp:mewtwo_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:mew":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:mew ~~1.5~","clear @p serp:mew_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:raikou":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:raikou ~~1.5~","clear @p serp:raikou_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:entei":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:entei ~~1.5~","clear @p serp:entei_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:suicune":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:suicune ~~1.5~","clear @p serp:suicune_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:lugia":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:lugia ~~1.5~","clear @p serp:lugia_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:hooh":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:hooh ~~1.5~","clear @p serp:hooh_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}},
+      "serp:celebi":{
+"run_command":{"command":["particle serp:hoopa_ring_summoner ~~1.5~","summon serp:celebi ~~1.5~","clear @p serp:celebi_offering 0 1"]},
+"add":{"component_groups":["serp:despawn"]}}
+    }
+  }
+}

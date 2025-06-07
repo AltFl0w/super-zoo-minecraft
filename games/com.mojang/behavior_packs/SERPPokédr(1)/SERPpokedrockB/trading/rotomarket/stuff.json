@@ -1,0 +1,81 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 48}],
+    "gives": [{"item": "serp:clefairy_plush"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 48}],
+    "gives": [{"item": "serp:pichu_plush"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 10}],
+    "gives": [{"item": "serp:mulch"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 15}],
+    "gives": [{"item": "serp:revive"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 60},{"item": "serp:poke",
+    "quantity": 60}],
+    "gives": [{"item": "serp:max_revive"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 10}],
+    "gives": [{"item": "serp:repel"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 20}],
+    "gives": [{"item": "serp:super_repel"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 30}],
+    "gives": [{"item": "serp:max_repel"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 30}],
+    "gives": [{"item": "serp:fluffy_tail"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 20}],
+    "gives": [{"item": "serp:rare_candy"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 8}],
+    "gives": [{"item": "serp:down_part"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 30}],
+    "gives": [{"item": "serp:clothing_ticket"}],
+        "max_uses": 256
+        }
+      ]
+    }
+  ]
+}

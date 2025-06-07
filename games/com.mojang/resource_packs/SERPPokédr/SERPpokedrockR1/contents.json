@@ -1,0 +1,2750 @@
+{
+   "content" : [
+      {
+         "path" : "animation_controllers/effect_roots.animation_controller.json"
+      },
+      {
+         "path" : "animations/001-003/SERP.bulbasaur.animation.json"
+      },
+      {
+         "path" : "animations/001-003/SERP.ivysaur.animation.json"
+      },
+      {
+         "path" : "animations/001-003/SERP.venusaur.animation.json"
+      },
+      {
+         "path" : "animations/004-006/SERP.charizard.animation.json"
+      },
+      {
+         "path" : "animations/004-006/SERP.charmander.animation.json"
+      },
+      {
+         "path" : "animations/004-006/SERP.charmeleon.animation.json"
+      },
+      {
+         "path" : "animations/007-009/SERP.blastoise.animation.json"
+      },
+      {
+         "path" : "animations/007-009/SERP.squirtle.animation.json"
+      },
+      {
+         "path" : "animations/007-009/SERP.wartortle.animation.json"
+      },
+      {
+         "path" : "animations/010-012/SERP.butterfree.animation.json"
+      },
+      {
+         "path" : "animations/010-012/SERP.caterpie.animation.json"
+      },
+      {
+         "path" : "animations/010-012/SERP.metapod.animation.json"
+      },
+      {
+         "path" : "animations/013-015/SERP.beedrill.animation.json"
+      },
+      {
+         "path" : "animations/013-015/SERP.kakuna.animation.json"
+      },
+      {
+         "path" : "animations/013-015/SERP.weedle.animation.json"
+      },
+      {
+         "path" : "animations/016-018/SERP.pidgeot.animation.json"
+      },
+      {
+         "path" : "animations/016-018/SERP.pidgeotto.animation.json"
+      },
+      {
+         "path" : "animations/016-018/SERP.pidgey.animation.json"
+      },
+      {
+         "path" : "animations/019-020/SERP.ratata.animation.json"
+      },
+      {
+         "path" : "animations/019-020/SERP.raticate.animation.json"
+      },
+      {
+         "path" : "animations/021-022/SERP.fearow.animation.json"
+      },
+      {
+         "path" : "animations/021-022/SERP.spearow.animation.json"
+      },
+      {
+         "path" : "animations/023-024/SERP.arbok.animation.json"
+      },
+      {
+         "path" : "animations/023-024/SERP.ekans.animation.json"
+      },
+      {
+         "path" : "animations/025-026/SERP.pikachu.animation.json"
+      },
+      {
+         "path" : "animations/025-026/SERP.raichu.animation.json"
+      },
+      {
+         "path" : "animations/027-028/SERP.sandshrew.animation.json"
+      },
+      {
+         "path" : "animations/027-028/SERP.sandslash.animation.json"
+      },
+      {
+         "path" : "animations/029-031/SERP.nidoqueen.animation.json"
+      },
+      {
+         "path" : "animations/029-031/SERP.nidoranh.animation.json"
+      },
+      {
+         "path" : "animations/029-031/SERP.nidorina.animation.json"
+      },
+      {
+         "path" : "animations/032-034/SERP.nidoking.animation.json"
+      },
+      {
+         "path" : "animations/032-034/SERP.nidoranm.animation.json"
+      },
+      {
+         "path" : "animations/032-034/SERP.nidorino.animation.json"
+      },
+      {
+         "path" : "animations/035-036/SERP.clefable.animation.json"
+      },
+      {
+         "path" : "animations/035-036/SERP.clefairy.animation.json"
+      },
+      {
+         "path" : "animations/037-038/SERP.ninetales.animation.json"
+      },
+      {
+         "path" : "animations/037-038/SERP.vulpix.animation.json"
+      },
+      {
+         "path" : "animations/039-040/SERP.jigglypuff.animation.json"
+      },
+      {
+         "path" : "animations/039-040/SERP.wigglytuff.animation.json"
+      },
+      {
+         "path" : "animations/041-042/SERP.golbat.animation.json"
+      },
+      {
+         "path" : "animations/041-042/SERP.zubat.animation.json"
+      },
+      {
+         "path" : "animations/043-045/SERP.gloom.animation.json"
+      },
+      {
+         "path" : "animations/043-045/SERP.oddish.animation.json"
+      },
+      {
+         "path" : "animations/043-045/SERP.vileplume.animation.json"
+      },
+      {
+         "path" : "animations/046-047/SERP.paras.animation.json"
+      },
+      {
+         "path" : "animations/046-047/SERP.parasect.animation.json"
+      },
+      {
+         "path" : "animations/048-049/SERP.venomoth.animation.json"
+      },
+      {
+         "path" : "animations/048-049/SERP.venonat.animation.json"
+      },
+      {
+         "path" : "animations/050-051/SERP.diglett.animation.json"
+      },
+      {
+         "path" : "animations/050-051/SERP.dugtrio.animation.json"
+      },
+      {
+         "path" : "animations/052-053/SERP.meowth.animation.json"
+      },
+      {
+         "path" : "animations/052-053/SERP.persian.animation.json"
+      },
+      {
+         "path" : "animations/054-055/SERP.golduck.animation.json"
+      },
+      {
+         "path" : "animations/054-055/SERP.psyduck.animation.json"
+      },
+      {
+         "path" : "animations/056-057/SERP.mankey.animation.json"
+      },
+      {
+         "path" : "animations/056-057/SERP.primeape.animation.json"
+      },
+      {
+         "path" : "animations/058-059/SERP.arcanine.animation.json"
+      },
+      {
+         "path" : "animations/058-059/SERP.growlithe.animation.json"
+      },
+      {
+         "path" : "animations/060-062/SERP.poliwag.animation.json"
+      },
+      {
+         "path" : "animations/060-062/SERP.poliwhirl.animation.json"
+      },
+      {
+         "path" : "animations/060-062/SERP.poliwrath.animation.json"
+      },
+      {
+         "path" : "animations/066-068/SERP.machamp.animation.json"
+      },
+      {
+         "path" : "animations/066-068/SERP.machoke.animation.json"
+      },
+      {
+         "path" : "animations/066-068/SERP.machop.animation.json"
+      },
+      {
+         "path" : "animations/069-071/SERP.victreebel.animation.json"
+      },
+      {
+         "path" : "animations/069-071/SERP.weepinbell.animation.json"
+      },
+      {
+         "path" : "animations/069-071/serp.bellsprout.animation.json"
+      },
+      {
+         "path" : "animations/072-073/SERP.tentacool.animation.json"
+      },
+      {
+         "path" : "animations/072-073/SERP.tentacruel.animation.json"
+      },
+      {
+         "path" : "animations/074-076/SERP.geodude.animation.json"
+      },
+      {
+         "path" : "animations/074-076/SERP.golem.animation.json"
+      },
+      {
+         "path" : "animations/074-076/SERP.graveler.animation.json"
+      },
+      {
+         "path" : "animations/077-078/SERP.ponyta.animation.json"
+      },
+      {
+         "path" : "animations/077-078/SERP.rapidash.animation.json"
+      },
+      {
+         "path" : "animations/079-080/SERP.slowbro.animation.json"
+      },
+      {
+         "path" : "animations/079-080/SERP.slowpoke.animation.json"
+      },
+      {
+         "path" : "animations/081-082/SERP.magnemite.animation.json"
+      },
+      {
+         "path" : "animations/081-082/SERP.magneton.animation.json"
+      },
+      {
+         "path" : "animations/083/SERP.farfetchd.animation.json"
+      },
+      {
+         "path" : "animations/084-085/SERP.dodrio.animation.json"
+      },
+      {
+         "path" : "animations/084-085/SERP.doduo.animation.json"
+      },
+      {
+         "path" : "animations/086-087/SERP.dewgong.animation.json"
+      },
+      {
+         "path" : "animations/086-087/SERP.seel.animation.json"
+      },
+      {
+         "path" : "animations/090-091/SERP.cloyster.animation.json"
+      },
+      {
+         "path" : "animations/090-091/SERP.shellder.animation.json"
+      },
+      {
+         "path" : "animations/092-094/SERP.gastly.animation.json"
+      },
+      {
+         "path" : "animations/092-094/SERP.gengar.animation.json"
+      },
+      {
+         "path" : "animations/092-094/SERP.haunter.animation.json"
+      },
+      {
+         "path" : "animations/095/SERP.onix.animation.json"
+      },
+      {
+         "path" : "animations/096-097/SERP.drowzee.animation.json"
+      },
+      {
+         "path" : "animations/096-097/SERP.hypno.animation.json"
+      },
+      {
+         "path" : "animations/102-103/SERP.exeggcute.animation.json"
+      },
+      {
+         "path" : "animations/102-103/SERP.exeggutor.animation.json"
+      },
+      {
+         "path" : "animations/104-105/SERP.cubone.animation.json"
+      },
+      {
+         "path" : "animations/104-105/SERP.marowak.animation.json"
+      },
+      {
+         "path" : "animations/108/SERP.lickitung.animation.json"
+      },
+      {
+         "path" : "animations/109-110/SERP.koffing.animation.json"
+      },
+      {
+         "path" : "animations/109-110/SERP.weezing.animation.json"
+      },
+      {
+         "path" : "animations/111-112/SERP.rhydon.animation.json"
+      },
+      {
+         "path" : "animations/111-112/SERP.rhyhorn.animation.json"
+      },
+      {
+         "path" : "animations/113/SERP.chansey.animation.json"
+      },
+      {
+         "path" : "animations/115/SERP.kangaskhan.animation.json"
+      },
+      {
+         "path" : "animations/118-119/SERP.goldeen.animation.json"
+      },
+      {
+         "path" : "animations/118-119/SERP.seaking.animation.json"
+      },
+      {
+         "path" : "animations/123/SERP.scyther.animation.json"
+      },
+      {
+         "path" : "animations/125/SERP.electabuzz.animation.json"
+      },
+      {
+         "path" : "animations/128/SERP.tauros.animation.json"
+      },
+      {
+         "path" : "animations/129-130/SERP.gyarados.animation.json"
+      },
+      {
+         "path" : "animations/129-130/SERP.magikarp.animation.json"
+      },
+      {
+         "path" : "animations/131/SERP.lapras.animation.json"
+      },
+      {
+         "path" : "animations/133-136/SERP.eevee.animation.json"
+      },
+      {
+         "path" : "animations/133-136/SERP.flareon.animation.json"
+      },
+      {
+         "path" : "animations/133-136/SERP.jolteon.animation.json"
+      },
+      {
+         "path" : "animations/133-136/SERP.vaporeon.animation.json"
+      },
+      {
+         "path" : "animations/138-139/SERP.omanyte.animation.json"
+      },
+      {
+         "path" : "animations/138-139/SERP.omastar.animation.json"
+      },
+      {
+         "path" : "animations/140-141/SERP.kabuto.animation.json"
+      },
+      {
+         "path" : "animations/140-141/SERP.kabutops.animation.json"
+      },
+      {
+         "path" : "animations/142/SERP.aerodactyl.animation.json"
+      },
+      {
+         "path" : "animations/143/SERP.snorlax.animation.json"
+      },
+      {
+         "path" : "animations/144-146/SERP.articuno.animation.json"
+      },
+      {
+         "path" : "animations/144-146/SERP.moltres.animation.json"
+      },
+      {
+         "path" : "animations/144-146/SERP.zapdos.animation.json"
+      },
+      {
+         "path" : "animations/147-149/SERP.dragonair.animation.json"
+      },
+      {
+         "path" : "animations/147-149/SERP.dragonite.animation.json"
+      },
+      {
+         "path" : "animations/147-149/SERP.dratini.animation.json"
+      },
+      {
+         "path" : "animations/150-151/SERP.mew.animation.json"
+      },
+      {
+         "path" : "animations/150-151/SERP.mewtwo.animation.json"
+      },
+      {
+         "path" : "animations/722-724/SERP.rowlet.animation.json"
+      },
+      {
+         "path" : "animations/744-745/SERP.rockruff.animation.json"
+      },
+      {
+         "path" : "animations/778/SERP.mimikyu.animation.json"
+      },
+      {
+         "path" : "animations/813/SERP.scorbunny.animation.json"
+      },
+      {
+         "path" : "animations/885-887/SERP.dragapult.animation.json"
+      },
+      {
+         "path" : "animations/885-887/SERP.drakloak.animation.json"
+      },
+      {
+         "path" : "animations/885-887/SERP.dreepy.animation.json"
+      },
+      {
+         "path" : "animations/909-911/SERP.fuecoco.animation.json"
+      },
+      {
+         "path" : "contents.json"
+      },
+      {
+         "path" : "entity/pokemon/001-003/001bulbasaur.json"
+      },
+      {
+         "path" : "entity/pokemon/001-003/002ivysaur.json"
+      },
+      {
+         "path" : "entity/pokemon/001-003/003venusaur.json"
+      },
+      {
+         "path" : "entity/pokemon/004-006/004charmander.json"
+      },
+      {
+         "path" : "entity/pokemon/004-006/005charmeleon.json"
+      },
+      {
+         "path" : "entity/pokemon/004-006/006charizard.json"
+      },
+      {
+         "path" : "entity/pokemon/007-009/007squirtle.json"
+      },
+      {
+         "path" : "entity/pokemon/007-009/008wartortle.json"
+      },
+      {
+         "path" : "entity/pokemon/007-009/009blastoise.json"
+      },
+      {
+         "path" : "entity/pokemon/010-012/010caterpie.json"
+      },
+      {
+         "path" : "entity/pokemon/010-012/011metapod.json"
+      },
+      {
+         "path" : "entity/pokemon/010-012/012butterfree.json"
+      },
+      {
+         "path" : "entity/pokemon/013-015/013weedle.json"
+      },
+      {
+         "path" : "entity/pokemon/013-015/014kakuna.json"
+      },
+      {
+         "path" : "entity/pokemon/013-015/015beedrill.json"
+      },
+      {
+         "path" : "entity/pokemon/016-018/016pidgey.json"
+      },
+      {
+         "path" : "entity/pokemon/016-018/017pidgeotto.json"
+      },
+      {
+         "path" : "entity/pokemon/016-018/018pidgeot.json"
+      },
+      {
+         "path" : "entity/pokemon/019-020/019ratata.json"
+      },
+      {
+         "path" : "entity/pokemon/019-020/020raticate.json"
+      },
+      {
+         "path" : "entity/pokemon/021-022/021spearow.json"
+      },
+      {
+         "path" : "entity/pokemon/021-022/022fearow.json"
+      },
+      {
+         "path" : "entity/pokemon/023-024/023ekans.json"
+      },
+      {
+         "path" : "entity/pokemon/023-024/024arbok.json"
+      },
+      {
+         "path" : "entity/pokemon/025-026/025pikachu.json"
+      },
+      {
+         "path" : "entity/pokemon/025-026/026raichu.json"
+      },
+      {
+         "path" : "entity/pokemon/027-028/027sandshrew.json"
+      },
+      {
+         "path" : "entity/pokemon/027-028/028sandslash.json"
+      },
+      {
+         "path" : "entity/pokemon/029-031/029nidoranh.json"
+      },
+      {
+         "path" : "entity/pokemon/029-031/030nidorina.json"
+      },
+      {
+         "path" : "entity/pokemon/029-031/031nidoqueen.json"
+      },
+      {
+         "path" : "entity/pokemon/032-034/032nidoranm.json"
+      },
+      {
+         "path" : "entity/pokemon/032-034/033nidorino.json"
+      },
+      {
+         "path" : "entity/pokemon/032-034/034nidoking.json"
+      },
+      {
+         "path" : "entity/pokemon/035-036/035clefairy.json"
+      },
+      {
+         "path" : "entity/pokemon/035-036/036clefable.json"
+      },
+      {
+         "path" : "entity/pokemon/037-038/037vulpix.json"
+      },
+      {
+         "path" : "entity/pokemon/037-038/038ninetales.json"
+      },
+      {
+         "path" : "entity/pokemon/039-040/039jigglypuff.json"
+      },
+      {
+         "path" : "entity/pokemon/039-040/040wigglytuff.json"
+      },
+      {
+         "path" : "entity/pokemon/041-042/041zubat.json"
+      },
+      {
+         "path" : "entity/pokemon/041-042/042golbat.json"
+      },
+      {
+         "path" : "entity/pokemon/043-045/043oddish.json"
+      },
+      {
+         "path" : "entity/pokemon/043-045/044gloom.json"
+      },
+      {
+         "path" : "entity/pokemon/043-045/045vileplume.json"
+      },
+      {
+         "path" : "entity/pokemon/046-047/046paras.json"
+      },
+      {
+         "path" : "entity/pokemon/046-047/047parasect.json"
+      },
+      {
+         "path" : "entity/pokemon/048-049/048venonat.json"
+      },
+      {
+         "path" : "entity/pokemon/048-049/049venomoth.json"
+      },
+      {
+         "path" : "entity/pokemon/050-051/050diglett.json"
+      },
+      {
+         "path" : "entity/pokemon/050-051/051dugtrio.json"
+      },
+      {
+         "path" : "entity/pokemon/052-053/052meowth.json"
+      },
+      {
+         "path" : "entity/pokemon/052-053/053persian.json"
+      },
+      {
+         "path" : "entity/pokemon/054-055/054psyduck.json"
+      },
+      {
+         "path" : "entity/pokemon/054-055/055golduck.json"
+      },
+      {
+         "path" : "entity/pokemon/056-057/056mankey.json"
+      },
+      {
+         "path" : "entity/pokemon/056-057/057primeape.json"
+      },
+      {
+         "path" : "entity/pokemon/058-059/058growlithe.json"
+      },
+      {
+         "path" : "entity/pokemon/058-059/059arcanine.json"
+      },
+      {
+         "path" : "entity/pokemon/060-062/060poliwag.json"
+      },
+      {
+         "path" : "entity/pokemon/060-062/061poliwhirl.json"
+      },
+      {
+         "path" : "entity/pokemon/060-062/062poliwrath.json"
+      },
+      {
+         "path" : "entity/pokemon/066-068/066machop.json"
+      },
+      {
+         "path" : "entity/pokemon/066-068/067machoke.json"
+      },
+      {
+         "path" : "entity/pokemon/066-068/068machamp.json"
+      },
+      {
+         "path" : "entity/pokemon/069-071/069bellsprout.json"
+      },
+      {
+         "path" : "entity/pokemon/069-071/070weepinbell.json"
+      },
+      {
+         "path" : "entity/pokemon/069-071/071victreebel.json"
+      },
+      {
+         "path" : "entity/pokemon/072-073/072tentacool.json"
+      },
+      {
+         "path" : "entity/pokemon/072-073/073tentacruel.json"
+      },
+      {
+         "path" : "entity/pokemon/074-076/074geodude.json"
+      },
+      {
+         "path" : "entity/pokemon/074-076/075graveler.json"
+      },
+      {
+         "path" : "entity/pokemon/074-076/076golem.json"
+      },
+      {
+         "path" : "entity/pokemon/077-078/077ponyta.json"
+      },
+      {
+         "path" : "entity/pokemon/077-078/078rapidash.json"
+      },
+      {
+         "path" : "entity/pokemon/079-080/079slowpoke.json"
+      },
+      {
+         "path" : "entity/pokemon/079-080/080slowbro.json"
+      },
+      {
+         "path" : "entity/pokemon/081-082/081magnemite.json"
+      },
+      {
+         "path" : "entity/pokemon/081-082/082magneton.json"
+      },
+      {
+         "path" : "entity/pokemon/083/83Farfetchd.json"
+      },
+      {
+         "path" : "entity/pokemon/084-085/084doduo.json"
+      },
+      {
+         "path" : "entity/pokemon/084-085/085dodrio.json"
+      },
+      {
+         "path" : "entity/pokemon/086-087/086seel.json"
+      },
+      {
+         "path" : "entity/pokemon/086-087/087dewgong.json"
+      },
+      {
+         "path" : "entity/pokemon/090-091/090shellder.json"
+      },
+      {
+         "path" : "entity/pokemon/090-091/091cloyster.json"
+      },
+      {
+         "path" : "entity/pokemon/092-094/092gastly.json"
+      },
+      {
+         "path" : "entity/pokemon/092-094/093haunter.json"
+      },
+      {
+         "path" : "entity/pokemon/092-094/094gengar.json"
+      },
+      {
+         "path" : "entity/pokemon/095/095onix.json"
+      },
+      {
+         "path" : "entity/pokemon/096-097/096drowzee.json"
+      },
+      {
+         "path" : "entity/pokemon/096-097/097hypno.json"
+      },
+      {
+         "path" : "entity/pokemon/102-103/102exeggcute.json"
+      },
+      {
+         "path" : "entity/pokemon/102-103/103exeggutor.json"
+      },
+      {
+         "path" : "entity/pokemon/104-105/104cubone.json"
+      },
+      {
+         "path" : "entity/pokemon/104-105/105marowak.json"
+      },
+      {
+         "path" : "entity/pokemon/108/108lickitung.json"
+      },
+      {
+         "path" : "entity/pokemon/109-110/109koffing.json"
+      },
+      {
+         "path" : "entity/pokemon/109-110/110weezing.json"
+      },
+      {
+         "path" : "entity/pokemon/111-112/111rhyhorn.json"
+      },
+      {
+         "path" : "entity/pokemon/111-112/112rhydon.json"
+      },
+      {
+         "path" : "entity/pokemon/113/113chansey.json"
+      },
+      {
+         "path" : "entity/pokemon/115/115kangaskhan.json"
+      },
+      {
+         "path" : "entity/pokemon/118-119/118goldeen.json"
+      },
+      {
+         "path" : "entity/pokemon/118-119/119seaking.json"
+      },
+      {
+         "path" : "entity/pokemon/123/123scyther.json"
+      },
+      {
+         "path" : "entity/pokemon/125/125electabuzz.json"
+      },
+      {
+         "path" : "entity/pokemon/128/128tauros.json"
+      },
+      {
+         "path" : "entity/pokemon/129-130/129magikarp.json"
+      },
+      {
+         "path" : "entity/pokemon/129-130/130gyarados.json"
+      },
+      {
+         "path" : "entity/pokemon/131/131lapras.json"
+      },
+      {
+         "path" : "entity/pokemon/133-136/133eevee.json"
+      },
+      {
+         "path" : "entity/pokemon/133-136/134vaporeon.json"
+      },
+      {
+         "path" : "entity/pokemon/133-136/135jolteon.json"
+      },
+      {
+         "path" : "entity/pokemon/133-136/136flareon.json"
+      },
+      {
+         "path" : "entity/pokemon/138-139/138omanyte.json"
+      },
+      {
+         "path" : "entity/pokemon/138-139/139omastar.json"
+      },
+      {
+         "path" : "entity/pokemon/140-141/140kabuto.json"
+      },
+      {
+         "path" : "entity/pokemon/140-141/141kabutops.json"
+      },
+      {
+         "path" : "entity/pokemon/142/142aerodactyl.json"
+      },
+      {
+         "path" : "entity/pokemon/143/143snorlax.json"
+      },
+      {
+         "path" : "entity/pokemon/144-146/144articuno.json"
+      },
+      {
+         "path" : "entity/pokemon/144-146/145zapdos.json"
+      },
+      {
+         "path" : "entity/pokemon/144-146/146moltres.json"
+      },
+      {
+         "path" : "entity/pokemon/147-149/147dratini.json"
+      },
+      {
+         "path" : "entity/pokemon/147-149/148dragonair.json"
+      },
+      {
+         "path" : "entity/pokemon/147-149/149dragonite.json"
+      },
+      {
+         "path" : "entity/pokemon/150-151/150mewtwo.json"
+      },
+      {
+         "path" : "entity/pokemon/150-151/151mew.json"
+      },
+      {
+         "path" : "entity/pokemon/722-724/722rowlet.json"
+      },
+      {
+         "path" : "entity/pokemon/744-745/744rockruff.json"
+      },
+      {
+         "path" : "entity/pokemon/778/778mimkyu.json"
+      },
+      {
+         "path" : "entity/pokemon/813-815/813scorbunny.json"
+      },
+      {
+         "path" : "entity/pokemon/885-887/885dreepy.json"
+      },
+      {
+         "path" : "entity/pokemon/885-887/886drakloak.json"
+      },
+      {
+         "path" : "entity/pokemon/885-887/887dragapult.json"
+      },
+      {
+         "path" : "entity/pokemon/909-911/909fuecoco.json"
+      },
+      {
+         "path" : "manifest.json"
+      },
+      {
+         "path" : "models/entity/001-003/SERP.bulbasaur.geo.bbmodel"
+      },
+      {
+         "path" : "models/entity/001-003/SERP.bulbasaur.geo.json"
+      },
+      {
+         "path" : "models/entity/001-003/SERP.ivysaur.geo.json"
+      },
+      {
+         "path" : "models/entity/001-003/SERP.venusaur.geo.json"
+      },
+      {
+         "path" : "models/entity/004-006/SERP.charizard.geo.json"
+      },
+      {
+         "path" : "models/entity/004-006/SERP.charmander.geo.json"
+      },
+      {
+         "path" : "models/entity/004-006/SERP.charmeleon.geo.json"
+      },
+      {
+         "path" : "models/entity/007-009/SERP.blastoise.geo.json"
+      },
+      {
+         "path" : "models/entity/007-009/SERP.squirtle.geo.json"
+      },
+      {
+         "path" : "models/entity/007-009/SERP.wartortle.geo.json"
+      },
+      {
+         "path" : "models/entity/010-012/SERP.butterfree.geo.json"
+      },
+      {
+         "path" : "models/entity/010-012/SERP.caterpie.geo.json"
+      },
+      {
+         "path" : "models/entity/010-012/SERP.metapod.geo.json"
+      },
+      {
+         "path" : "models/entity/013-015/SERP.beedrill.geo.json"
+      },
+      {
+         "path" : "models/entity/013-015/SERP.kakuna.geo.json"
+      },
+      {
+         "path" : "models/entity/013-015/SERP.weedle.geo.json"
+      },
+      {
+         "path" : "models/entity/016-018/SERP.pidgeot.geo.json"
+      },
+      {
+         "path" : "models/entity/016-018/SERP.pidgeotto.geo.json"
+      },
+      {
+         "path" : "models/entity/016-018/SERP.pidgey.geo.json"
+      },
+      {
+         "path" : "models/entity/019-020/SERP.ratata.geo.json"
+      },
+      {
+         "path" : "models/entity/019-020/SERP.raticate.geo.json"
+      },
+      {
+         "path" : "models/entity/021-022/SERP.fearow.geo.json"
+      },
+      {
+         "path" : "models/entity/021-022/SERP.spearow.geo.json"
+      },
+      {
+         "path" : "models/entity/023-024/SERP.arbok.geo.json"
+      },
+      {
+         "path" : "models/entity/023-024/SERP.ekans.geo.json"
+      },
+      {
+         "path" : "models/entity/025-026/SERP.pikachu.geo.json"
+      },
+      {
+         "path" : "models/entity/025-026/SERP.raichu.geo.json"
+      },
+      {
+         "path" : "models/entity/027-028/SERP.sandshrew.geo.json"
+      },
+      {
+         "path" : "models/entity/027-028/SERP.sandslash.geo.json"
+      },
+      {
+         "path" : "models/entity/029-031/SERP.nidoqueen.geo.json"
+      },
+      {
+         "path" : "models/entity/029-031/SERP.nidoranh.geo.json"
+      },
+      {
+         "path" : "models/entity/029-031/SERP.nidorina.geo.json"
+      },
+      {
+         "path" : "models/entity/032-034/SERP.nidoking.geo.json"
+      },
+      {
+         "path" : "models/entity/032-034/SERP.nidoranm.geo.json"
+      },
+      {
+         "path" : "models/entity/032-034/SERP.nidorino.geo.json"
+      },
+      {
+         "path" : "models/entity/035-036/SERP.clefable.geo.json"
+      },
+      {
+         "path" : "models/entity/035-036/SERP.clefairy.geo.json"
+      },
+      {
+         "path" : "models/entity/037-038/SERP.ninetales.geo.json"
+      },
+      {
+         "path" : "models/entity/037-038/SERP.vulpix.geo.json"
+      },
+      {
+         "path" : "models/entity/039-040/SERP.jigglypuff.geo.json"
+      },
+      {
+         "path" : "models/entity/039-040/SERP.wigglytuff.geo.json"
+      },
+      {
+         "path" : "models/entity/041-042/SERP.golbat.geo.json"
+      },
+      {
+         "path" : "models/entity/041-042/SERP.zubat.geo.json"
+      },
+      {
+         "path" : "models/entity/043-045/SERP.gloom.geo.json"
+      },
+      {
+         "path" : "models/entity/043-045/SERP.oddish.geo.json"
+      },
+      {
+         "path" : "models/entity/043-045/SERP.vileplume.geo.json"
+      },
+      {
+         "path" : "models/entity/046-047/SERP.paras.geo.json"
+      },
+      {
+         "path" : "models/entity/046-047/SERP.parasect.geo.json"
+      },
+      {
+         "path" : "models/entity/048-049/SERP.venomoth.geo.json"
+      },
+      {
+         "path" : "models/entity/048-049/SERP.venonat.geo.json"
+      },
+      {
+         "path" : "models/entity/050-051/SERP.diglett.geo.json"
+      },
+      {
+         "path" : "models/entity/050-051/SERP.dugtrio.geo.json"
+      },
+      {
+         "path" : "models/entity/052-053/SERP.meowth.geo.json"
+      },
+      {
+         "path" : "models/entity/052-053/SERP.persian.geo.json"
+      },
+      {
+         "path" : "models/entity/054-055/SERP.golduck.geo.json"
+      },
+      {
+         "path" : "models/entity/054-055/SERP.psyduck.geo.json"
+      },
+      {
+         "path" : "models/entity/056-057/SERP.mankey.geo.json"
+      },
+      {
+         "path" : "models/entity/056-057/SERP.primeape.geo.json"
+      },
+      {
+         "path" : "models/entity/058-059/SERP.arcanine.geo.json"
+      },
+      {
+         "path" : "models/entity/058-059/SERP.growlithe.geo.json"
+      },
+      {
+         "path" : "models/entity/060-062/SERP.poliwag.geo.json"
+      },
+      {
+         "path" : "models/entity/060-062/SERP.poliwhirl.geo.json"
+      },
+      {
+         "path" : "models/entity/060-062/SERP.poliwrath.geo.json"
+      },
+      {
+         "path" : "models/entity/066-068/SERP.machamp.geo.json"
+      },
+      {
+         "path" : "models/entity/066-068/SERP.machoke.geo.json"
+      },
+      {
+         "path" : "models/entity/066-068/SERP.machop.geo.json"
+      },
+      {
+         "path" : "models/entity/069-071/SERP.bellsprout.geo.json"
+      },
+      {
+         "path" : "models/entity/069-071/SERP.victreebel.geo.json"
+      },
+      {
+         "path" : "models/entity/069-071/SERP.weepinbell.geo.json"
+      },
+      {
+         "path" : "models/entity/072-073/SERP.tentacool.geo.json"
+      },
+      {
+         "path" : "models/entity/072-073/SERP.tentacruel.geo.json"
+      },
+      {
+         "path" : "models/entity/074-076/SERP.geodude.geo.json"
+      },
+      {
+         "path" : "models/entity/074-076/SERP.golem.geo.json"
+      },
+      {
+         "path" : "models/entity/074-076/SERP.graveler.geo.json"
+      },
+      {
+         "path" : "models/entity/077-078/SERP.ponyta.geo.json"
+      },
+      {
+         "path" : "models/entity/077-078/SERP.rapidash.geo.json"
+      },
+      {
+         "path" : "models/entity/079-080/SERP.slowbro.geo.json"
+      },
+      {
+         "path" : "models/entity/079-080/SERP.slowpoke.geo.json"
+      },
+      {
+         "path" : "models/entity/081-082/SERP.magnemite.geo.json"
+      },
+      {
+         "path" : "models/entity/081-082/SERP.magneton.geo.json"
+      },
+      {
+         "path" : "models/entity/083/SERP.farfetchd.geo.json"
+      },
+      {
+         "path" : "models/entity/084-085/SERP.dodrio.geo.json"
+      },
+      {
+         "path" : "models/entity/084-085/SERP.doduo.geo.json"
+      },
+      {
+         "path" : "models/entity/086-087/SERP.dewgong.geo.json"
+      },
+      {
+         "path" : "models/entity/086-087/SERP.seel.geo.json"
+      },
+      {
+         "path" : "models/entity/090-091/SERP.cloyster.geo.json"
+      },
+      {
+         "path" : "models/entity/090-091/SERP.shellder.geo.json"
+      },
+      {
+         "path" : "models/entity/092-094/SERP.gaslty.geo.json"
+      },
+      {
+         "path" : "models/entity/092-094/SERP.gengar.geo.json"
+      },
+      {
+         "path" : "models/entity/092-094/SERP.haunter.geo.json"
+      },
+      {
+         "path" : "models/entity/095/SERP.onix.geo.json"
+      },
+      {
+         "path" : "models/entity/096-097/SERP.drowzee.geo.json"
+      },
+      {
+         "path" : "models/entity/096-097/SERP.hypno.geo.json"
+      },
+      {
+         "path" : "models/entity/102-103/SERP.exeggcute.geo.json"
+      },
+      {
+         "path" : "models/entity/102-103/SERP.exeggutor.geo.json"
+      },
+      {
+         "path" : "models/entity/104-105/SERP.cubone.geo.json"
+      },
+      {
+         "path" : "models/entity/104-105/SERP.marowak.geo.json"
+      },
+      {
+         "path" : "models/entity/108/SERP.lickitung.geo.json"
+      },
+      {
+         "path" : "models/entity/109-110/SERP.koffing.geo.json"
+      },
+      {
+         "path" : "models/entity/109-110/SERP.weezing.geo.json"
+      },
+      {
+         "path" : "models/entity/111-112/SERP.rhydon.geo.json"
+      },
+      {
+         "path" : "models/entity/111-112/SERP.rhyhorn.geo.json"
+      },
+      {
+         "path" : "models/entity/113/SERP.chansey.geo.json"
+      },
+      {
+         "path" : "models/entity/115/SERP.kangaskhan.geo.json"
+      },
+      {
+         "path" : "models/entity/118-119/SERP.goldeen.geo.json"
+      },
+      {
+         "path" : "models/entity/118-119/SERP.seaking.geo.json"
+      },
+      {
+         "path" : "models/entity/123/SERP.scyther.geo.json"
+      },
+      {
+         "path" : "models/entity/124/SERP.jynx.geo.json"
+      },
+      {
+         "path" : "models/entity/125/SERP.electabuzz.geo.json"
+      },
+      {
+         "path" : "models/entity/128/SERP.tauros.geo.json"
+      },
+      {
+         "path" : "models/entity/129-130/SERP.gyarados.geo.json"
+      },
+      {
+         "path" : "models/entity/129-130/SERP.magikarp.geo.json"
+      },
+      {
+         "path" : "models/entity/131/SERP.lapras.geo.json"
+      },
+      {
+         "path" : "models/entity/133-136/SERP.eevee.geo.json"
+      },
+      {
+         "path" : "models/entity/133-136/SERP.flareon.geo.json"
+      },
+      {
+         "path" : "models/entity/133-136/SERP.jolteon.geo.json"
+      },
+      {
+         "path" : "models/entity/133-136/SERP.vaporeon.geo.json"
+      },
+      {
+         "path" : "models/entity/138-139/SERP.omanyte.geo.json"
+      },
+      {
+         "path" : "models/entity/138-139/SERP.omastar.geo.json"
+      },
+      {
+         "path" : "models/entity/140-141/SERP.kabuto.geo.json"
+      },
+      {
+         "path" : "models/entity/140-141/SERP.kabutops.geo.json"
+      },
+      {
+         "path" : "models/entity/142/SERP.aerodactyl.geo.json"
+      },
+      {
+         "path" : "models/entity/143/SERP.snorlax.geo.json"
+      },
+      {
+         "path" : "models/entity/144-146/SERP.articuno.geo.json"
+      },
+      {
+         "path" : "models/entity/144-146/SERP.moltres.geo.json"
+      },
+      {
+         "path" : "models/entity/144-146/SERP.zapdos.geo.json"
+      },
+      {
+         "path" : "models/entity/147-149/SERP.dragonair.geo.json"
+      },
+      {
+         "path" : "models/entity/147-149/SERP.dragonite.geo.json"
+      },
+      {
+         "path" : "models/entity/147-149/SERP.dratini.geo.json"
+      },
+      {
+         "path" : "models/entity/150-151/SERP.mew.geo.json"
+      },
+      {
+         "path" : "models/entity/150-151/SERP.mewtwo.geo.json"
+      },
+      {
+         "path" : "models/entity/722-724/SERP.rowlet.geo.json"
+      },
+      {
+         "path" : "models/entity/744-745/SERP.rockruff.geo.json"
+      },
+      {
+         "path" : "models/entity/778/SERP.mimikyu.geo.json"
+      },
+      {
+         "path" : "models/entity/813-815/SERP.scorbunny.geo.json"
+      },
+      {
+         "path" : "models/entity/885-887/SERP.dragapult.geo.json"
+      },
+      {
+         "path" : "models/entity/885-887/SERP.drakloak.geo.json"
+      },
+      {
+         "path" : "models/entity/885-887/SERP.dreepy.geo.json"
+      },
+      {
+         "path" : "models/entity/909-911/SERP.crocalor.geo.json"
+      },
+      {
+         "path" : "models/entity/909-911/SERP.fuecoco.geo.json"
+      },
+      {
+         "path" : "pack_icon.png"
+      },
+      {
+         "path" : "particles/charmander/charizard_mouth.particle.json"
+      },
+      {
+         "path" : "particles/charmander/charizard_tail.particle.json"
+      },
+      {
+         "path" : "particles/charmander/charizard_tailm.particle.json"
+      },
+      {
+         "path" : "particles/charmander/charizard_tailm2.particle.json"
+      },
+      {
+         "path" : "particles/charmander/charmander_tail.particle.json"
+      },
+      {
+         "path" : "particles/charmander/charmeleon_tail.particle.json"
+      },
+      {
+         "path" : "particles/gastly/gastly_smoke.particle.json"
+      },
+      {
+         "path" : "particles/gastly/gastlys_smoke.particle.json"
+      },
+      {
+         "path" : "particles/koffing/koffing_smoke.particle.json"
+      },
+      {
+         "path" : "particles/koffing/koffings_smoke.particle.json"
+      },
+      {
+         "path" : "particles/moltres/moltres_body.particle.json"
+      },
+      {
+         "path" : "particles/moltres/moltres_head.particle.json"
+      },
+      {
+         "path" : "particles/moltres/moltres_wing.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_body.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_bodys.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_head.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_heads.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_leg.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_legs.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_neck.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_necks.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_tail.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/ponyta_tails.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_body.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_bodys.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_head.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_heads.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_leg.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_legs.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_neck.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_necks.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_tail.particle.json"
+      },
+      {
+         "path" : "particles/ponyta/rapidash_tails.particle.json"
+      },
+      {
+         "path" : "sounds/serp/poke/001.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/002.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/003.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/004.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/005.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/006.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/007.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/008.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/009.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/010.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/011.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/012.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/013.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/014.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/015.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/016.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/017.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/018.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/019.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/020.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/021.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/022.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/023.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/024.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/025-1.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/025-2.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/025-3.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/025-defeat.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/025.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/026.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/027.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/028.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/029.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/030.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/031.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/032.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/033.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/034.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/035.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/036.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/037.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/038.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/039.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/040.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/041.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/042.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/043.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/044.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/045.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/046.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/047.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/048.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/049.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/050.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/051.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/052.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/053.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/054.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/055.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/056.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/057.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/058.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/059.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/060.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/061.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/062.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/063.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/064.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/065.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/066.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/067.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/068.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/069.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/070.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/071.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/072.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/073.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/074.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/075.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/076.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/077.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/078.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/079.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/080.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/081.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/082.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/083.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/084.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/085.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/086.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/087.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/088.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/089.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/090.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/091.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/092.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/093.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/094.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/095.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/096.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/097.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/098.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/099.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/100.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/101.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/102.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/103.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/104.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/105.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/106.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/107.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/108.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/109.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/110.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/111.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/112.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/113.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/114.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/115.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/116.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/117.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/118.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/119.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/120.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/121.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/122.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/123.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/124.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/125.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/126.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/127.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/128.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/129.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/130.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/131.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/132.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/133.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/134.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/135.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/136.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/137.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/138.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/139.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/140.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/141.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/142.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/143.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/144.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/145.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/146.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/147.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/148.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/149.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/150.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/151.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/boot_off.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/boot_on.ogg"
+      },
+      {
+         "path" : "sounds/serp/poke/find_item.ogg"
+      },
+      {
+         "path" : "texts/en_US.lang"
+      },
+      {
+         "path" : "texts/es_ES.lang"
+      },
+      {
+         "path" : "texts/es_MX.lang"
+      },
+      {
+         "path" : "texts/languages.json"
+      },
+      {
+         "path" : "texts/pt_BR.lang"
+      },
+      {
+         "path" : "texts/pt_PT.lang"
+      },
+      {
+         "path" : "textures/entity/normal/aerodactyl.png"
+      },
+      {
+         "path" : "textures/entity/normal/aerodactyl_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/arbok.png"
+      },
+      {
+         "path" : "textures/entity/normal/arcanine.png"
+      },
+      {
+         "path" : "textures/entity/normal/articuno.png"
+      },
+      {
+         "path" : "textures/entity/normal/beedrill.png"
+      },
+      {
+         "path" : "textures/entity/normal/beedrill_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/bellsprout.png"
+      },
+      {
+         "path" : "textures/entity/normal/blastoise.png"
+      },
+      {
+         "path" : "textures/entity/normal/blastoise_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/bulbasaur.png"
+      },
+      {
+         "path" : "textures/entity/normal/butterfree.png"
+      },
+      {
+         "path" : "textures/entity/normal/caterpie.png"
+      },
+      {
+         "path" : "textures/entity/normal/chansey.png"
+      },
+      {
+         "path" : "textures/entity/normal/charizard.png"
+      },
+      {
+         "path" : "textures/entity/normal/charizard_mega_x.png"
+      },
+      {
+         "path" : "textures/entity/normal/charizard_mega_y.png"
+      },
+      {
+         "path" : "textures/entity/normal/charmander.png"
+      },
+      {
+         "path" : "textures/entity/normal/charmeleon.png"
+      },
+      {
+         "path" : "textures/entity/normal/clefable.png"
+      },
+      {
+         "path" : "textures/entity/normal/clefairy.png"
+      },
+      {
+         "path" : "textures/entity/normal/cloyster.png"
+      },
+      {
+         "path" : "textures/entity/normal/cubone.png"
+      },
+      {
+         "path" : "textures/entity/normal/dewgong.png"
+      },
+      {
+         "path" : "textures/entity/normal/diglett.png"
+      },
+      {
+         "path" : "textures/entity/normal/dodrio.png"
+      },
+      {
+         "path" : "textures/entity/normal/doduo.png"
+      },
+      {
+         "path" : "textures/entity/normal/dragapult.png"
+      },
+      {
+         "path" : "textures/entity/normal/dragonair.png"
+      },
+      {
+         "path" : "textures/entity/normal/dragonite.png"
+      },
+      {
+         "path" : "textures/entity/normal/drakloak.png"
+      },
+      {
+         "path" : "textures/entity/normal/dratini.png"
+      },
+      {
+         "path" : "textures/entity/normal/dreepy.png"
+      },
+      {
+         "path" : "textures/entity/normal/drowzee.png"
+      },
+      {
+         "path" : "textures/entity/normal/dugtrio.png"
+      },
+      {
+         "path" : "textures/entity/normal/eevee.png"
+      },
+      {
+         "path" : "textures/entity/normal/ekans.png"
+      },
+      {
+         "path" : "textures/entity/normal/electabuzz.png"
+      },
+      {
+         "path" : "textures/entity/normal/exeggcute.png"
+      },
+      {
+         "path" : "textures/entity/normal/exeggutor.png"
+      },
+      {
+         "path" : "textures/entity/normal/farfetchd.png"
+      },
+      {
+         "path" : "textures/entity/normal/fearow.png"
+      },
+      {
+         "path" : "textures/entity/normal/flareon.png"
+      },
+      {
+         "path" : "textures/entity/normal/fuecoco.png"
+      },
+      {
+         "path" : "textures/entity/normal/gastly.png"
+      },
+      {
+         "path" : "textures/entity/normal/gengar.png"
+      },
+      {
+         "path" : "textures/entity/normal/gengar_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/geodude.png"
+      },
+      {
+         "path" : "textures/entity/normal/gloom.png"
+      },
+      {
+         "path" : "textures/entity/normal/golbat.png"
+      },
+      {
+         "path" : "textures/entity/normal/goldeen.png"
+      },
+      {
+         "path" : "textures/entity/normal/golduck.png"
+      },
+      {
+         "path" : "textures/entity/normal/golem.png"
+      },
+      {
+         "path" : "textures/entity/normal/graveler.png"
+      },
+      {
+         "path" : "textures/entity/normal/growlithe.png"
+      },
+      {
+         "path" : "textures/entity/normal/gyarados.png"
+      },
+      {
+         "path" : "textures/entity/normal/gyarados_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/haunter.png"
+      },
+      {
+         "path" : "textures/entity/normal/hypno.png"
+      },
+      {
+         "path" : "textures/entity/normal/ivysaur.png"
+      },
+      {
+         "path" : "textures/entity/normal/jigglypuff.png"
+      },
+      {
+         "path" : "textures/entity/normal/jolteon.png"
+      },
+      {
+         "path" : "textures/entity/normal/kabuto.png"
+      },
+      {
+         "path" : "textures/entity/normal/kabutops.png"
+      },
+      {
+         "path" : "textures/entity/normal/kakuna.png"
+      },
+      {
+         "path" : "textures/entity/normal/kangaskhan.png"
+      },
+      {
+         "path" : "textures/entity/normal/kangaskhan_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/koffing.png"
+      },
+      {
+         "path" : "textures/entity/normal/lapras.png"
+      },
+      {
+         "path" : "textures/entity/normal/lickitung.png"
+      },
+      {
+         "path" : "textures/entity/normal/machamp.png"
+      },
+      {
+         "path" : "textures/entity/normal/machoke.png"
+      },
+      {
+         "path" : "textures/entity/normal/machop.png"
+      },
+      {
+         "path" : "textures/entity/normal/magikarp.png"
+      },
+      {
+         "path" : "textures/entity/normal/magnemite.png"
+      },
+      {
+         "path" : "textures/entity/normal/mankey.png"
+      },
+      {
+         "path" : "textures/entity/normal/marowak.png"
+      },
+      {
+         "path" : "textures/entity/normal/meowth.png"
+      },
+      {
+         "path" : "textures/entity/normal/metapod.png"
+      },
+      {
+         "path" : "textures/entity/normal/mew.png"
+      },
+      {
+         "path" : "textures/entity/normal/mewtwo.png"
+      },
+      {
+         "path" : "textures/entity/normal/mewtwo_mega_x.png"
+      },
+      {
+         "path" : "textures/entity/normal/mewtwo_mega_y.png"
+      },
+      {
+         "path" : "textures/entity/normal/mimikyu.png"
+      },
+      {
+         "path" : "textures/entity/normal/moltres.png"
+      },
+      {
+         "path" : "textures/entity/normal/nidoking.png"
+      },
+      {
+         "path" : "textures/entity/normal/nidoqueen.png"
+      },
+      {
+         "path" : "textures/entity/normal/nidoranh.png"
+      },
+      {
+         "path" : "textures/entity/normal/nidoranm.png"
+      },
+      {
+         "path" : "textures/entity/normal/nidorina.png"
+      },
+      {
+         "path" : "textures/entity/normal/nidorino.png"
+      },
+      {
+         "path" : "textures/entity/normal/ninetales.png"
+      },
+      {
+         "path" : "textures/entity/normal/oddish.png"
+      },
+      {
+         "path" : "textures/entity/normal/omanyte.png"
+      },
+      {
+         "path" : "textures/entity/normal/omastar.png"
+      },
+      {
+         "path" : "textures/entity/normal/onix.png"
+      },
+      {
+         "path" : "textures/entity/normal/paras.png"
+      },
+      {
+         "path" : "textures/entity/normal/parasect.png"
+      },
+      {
+         "path" : "textures/entity/normal/persian.png"
+      },
+      {
+         "path" : "textures/entity/normal/pidgeot.png"
+      },
+      {
+         "path" : "textures/entity/normal/pidgeot_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/pidgeotto.png"
+      },
+      {
+         "path" : "textures/entity/normal/pidgey.png"
+      },
+      {
+         "path" : "textures/entity/normal/pikachu.png"
+      },
+      {
+         "path" : "textures/entity/normal/poliwag.png"
+      },
+      {
+         "path" : "textures/entity/normal/poliwhirl.png"
+      },
+      {
+         "path" : "textures/entity/normal/poliwrath.png"
+      },
+      {
+         "path" : "textures/entity/normal/ponyta.png"
+      },
+      {
+         "path" : "textures/entity/normal/primeape.png"
+      },
+      {
+         "path" : "textures/entity/normal/psyduck.png"
+      },
+      {
+         "path" : "textures/entity/normal/raichu.png"
+      },
+      {
+         "path" : "textures/entity/normal/rapidash.png"
+      },
+      {
+         "path" : "textures/entity/normal/raticate.png"
+      },
+      {
+         "path" : "textures/entity/normal/rattata.png"
+      },
+      {
+         "path" : "textures/entity/normal/rhydon.png"
+      },
+      {
+         "path" : "textures/entity/normal/rhyhorn.png"
+      },
+      {
+         "path" : "textures/entity/normal/rockruff.png"
+      },
+      {
+         "path" : "textures/entity/normal/rowlet.png"
+      },
+      {
+         "path" : "textures/entity/normal/sandshrew.png"
+      },
+      {
+         "path" : "textures/entity/normal/sandslash.png"
+      },
+      {
+         "path" : "textures/entity/normal/scorbunny.png"
+      },
+      {
+         "path" : "textures/entity/normal/scyther.png"
+      },
+      {
+         "path" : "textures/entity/normal/seaking.png"
+      },
+      {
+         "path" : "textures/entity/normal/seel.png"
+      },
+      {
+         "path" : "textures/entity/normal/shellder.png"
+      },
+      {
+         "path" : "textures/entity/normal/slowbro.png"
+      },
+      {
+         "path" : "textures/entity/normal/slowbro_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/slowpoke.png"
+      },
+      {
+         "path" : "textures/entity/normal/snorlax.png"
+      },
+      {
+         "path" : "textures/entity/normal/spearow.png"
+      },
+      {
+         "path" : "textures/entity/normal/squirtle.png"
+      },
+      {
+         "path" : "textures/entity/normal/tauros.png"
+      },
+      {
+         "path" : "textures/entity/normal/tentacool.png"
+      },
+      {
+         "path" : "textures/entity/normal/tentacruel.png"
+      },
+      {
+         "path" : "textures/entity/normal/texture.png"
+      },
+      {
+         "path" : "textures/entity/normal/vaporeon.png"
+      },
+      {
+         "path" : "textures/entity/normal/venomoth.png"
+      },
+      {
+         "path" : "textures/entity/normal/venonat.png"
+      },
+      {
+         "path" : "textures/entity/normal/venusaur.png"
+      },
+      {
+         "path" : "textures/entity/normal/venusaur_mega.png"
+      },
+      {
+         "path" : "textures/entity/normal/victreebel.png"
+      },
+      {
+         "path" : "textures/entity/normal/vileplume.png"
+      },
+      {
+         "path" : "textures/entity/normal/vulpix.png"
+      },
+      {
+         "path" : "textures/entity/normal/wartortle.png"
+      },
+      {
+         "path" : "textures/entity/normal/weedle.png"
+      },
+      {
+         "path" : "textures/entity/normal/weepinbell.png"
+      },
+      {
+         "path" : "textures/entity/normal/weezing.png"
+      },
+      {
+         "path" : "textures/entity/normal/wigglytuff.png"
+      },
+      {
+         "path" : "textures/entity/normal/zapdos.png"
+      },
+      {
+         "path" : "textures/entity/normal/zubat.png"
+      },
+      {
+         "path" : "textures/entity/shiny/aerodactyl.png"
+      },
+      {
+         "path" : "textures/entity/shiny/aerodactyl_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/arbok.png"
+      },
+      {
+         "path" : "textures/entity/shiny/arcanine.png"
+      },
+      {
+         "path" : "textures/entity/shiny/articuno.png"
+      },
+      {
+         "path" : "textures/entity/shiny/beedrill.png"
+      },
+      {
+         "path" : "textures/entity/shiny/beedrill_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/bellsprout.png"
+      },
+      {
+         "path" : "textures/entity/shiny/blastoise.png"
+      },
+      {
+         "path" : "textures/entity/shiny/blastoise_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/bulbasaur.png"
+      },
+      {
+         "path" : "textures/entity/shiny/butterfree.png"
+      },
+      {
+         "path" : "textures/entity/shiny/caterpie.png"
+      },
+      {
+         "path" : "textures/entity/shiny/chansey.png"
+      },
+      {
+         "path" : "textures/entity/shiny/charizard.png"
+      },
+      {
+         "path" : "textures/entity/shiny/charizard_mega_x.png"
+      },
+      {
+         "path" : "textures/entity/shiny/charizard_mega_y.png"
+      },
+      {
+         "path" : "textures/entity/shiny/charmander.png"
+      },
+      {
+         "path" : "textures/entity/shiny/charmeleon.png"
+      },
+      {
+         "path" : "textures/entity/shiny/clefable.png"
+      },
+      {
+         "path" : "textures/entity/shiny/clefairy.png"
+      },
+      {
+         "path" : "textures/entity/shiny/cloyster.png"
+      },
+      {
+         "path" : "textures/entity/shiny/cubone.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dewgong.png"
+      },
+      {
+         "path" : "textures/entity/shiny/diglett.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dodrio.png"
+      },
+      {
+         "path" : "textures/entity/shiny/doduo.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dragapult.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dragonair.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dragonite.png"
+      },
+      {
+         "path" : "textures/entity/shiny/drakloak.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dratini.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dreepy.png"
+      },
+      {
+         "path" : "textures/entity/shiny/drowzee.png"
+      },
+      {
+         "path" : "textures/entity/shiny/dugtrio.png"
+      },
+      {
+         "path" : "textures/entity/shiny/eevee.png"
+      },
+      {
+         "path" : "textures/entity/shiny/ekans.png"
+      },
+      {
+         "path" : "textures/entity/shiny/electabuzz.png"
+      },
+      {
+         "path" : "textures/entity/shiny/exeggcute.png"
+      },
+      {
+         "path" : "textures/entity/shiny/exeggutor.png"
+      },
+      {
+         "path" : "textures/entity/shiny/farfetchd.png"
+      },
+      {
+         "path" : "textures/entity/shiny/fearow.png"
+      },
+      {
+         "path" : "textures/entity/shiny/flareon.png"
+      },
+      {
+         "path" : "textures/entity/shiny/fuecoco.png"
+      },
+      {
+         "path" : "textures/entity/shiny/gastly.png"
+      },
+      {
+         "path" : "textures/entity/shiny/gengar.png"
+      },
+      {
+         "path" : "textures/entity/shiny/gengar_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/geodude.png"
+      },
+      {
+         "path" : "textures/entity/shiny/gloom.png"
+      },
+      {
+         "path" : "textures/entity/shiny/golbat.png"
+      },
+      {
+         "path" : "textures/entity/shiny/goldeen.png"
+      },
+      {
+         "path" : "textures/entity/shiny/golduck.png"
+      },
+      {
+         "path" : "textures/entity/shiny/golem.png"
+      },
+      {
+         "path" : "textures/entity/shiny/graveler.png"
+      },
+      {
+         "path" : "textures/entity/shiny/growlithe.png"
+      },
+      {
+         "path" : "textures/entity/shiny/gyarados.png"
+      },
+      {
+         "path" : "textures/entity/shiny/gyarados_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/haunter.png"
+      },
+      {
+         "path" : "textures/entity/shiny/hypno.png"
+      },
+      {
+         "path" : "textures/entity/shiny/ivysaur.png"
+      },
+      {
+         "path" : "textures/entity/shiny/jigglypuff.png"
+      },
+      {
+         "path" : "textures/entity/shiny/jolteon.png"
+      },
+      {
+         "path" : "textures/entity/shiny/kabuto.png"
+      },
+      {
+         "path" : "textures/entity/shiny/kabutops.png"
+      },
+      {
+         "path" : "textures/entity/shiny/kakuna.png"
+      },
+      {
+         "path" : "textures/entity/shiny/kangaskhan.png"
+      },
+      {
+         "path" : "textures/entity/shiny/kangaskhan_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/koffing.png"
+      },
+      {
+         "path" : "textures/entity/shiny/lapras.png"
+      },
+      {
+         "path" : "textures/entity/shiny/lickitung.png"
+      },
+      {
+         "path" : "textures/entity/shiny/machamp.png"
+      },
+      {
+         "path" : "textures/entity/shiny/machoke.png"
+      },
+      {
+         "path" : "textures/entity/shiny/machop.png"
+      },
+      {
+         "path" : "textures/entity/shiny/magikarp.png"
+      },
+      {
+         "path" : "textures/entity/shiny/magnemite.png"
+      },
+      {
+         "path" : "textures/entity/shiny/mankey.png"
+      },
+      {
+         "path" : "textures/entity/shiny/marowak.png"
+      },
+      {
+         "path" : "textures/entity/shiny/meowth.png"
+      },
+      {
+         "path" : "textures/entity/shiny/metapod.png"
+      },
+      {
+         "path" : "textures/entity/shiny/mew.png"
+      },
+      {
+         "path" : "textures/entity/shiny/mewtwo.png"
+      },
+      {
+         "path" : "textures/entity/shiny/mewtwo_mega_x.png"
+      },
+      {
+         "path" : "textures/entity/shiny/mewtwo_mega_y.png"
+      },
+      {
+         "path" : "textures/entity/shiny/mimikyu.png"
+      },
+      {
+         "path" : "textures/entity/shiny/moltres.png"
+      },
+      {
+         "path" : "textures/entity/shiny/nidoking.png"
+      },
+      {
+         "path" : "textures/entity/shiny/nidoqueen.png"
+      },
+      {
+         "path" : "textures/entity/shiny/nidoranh.png"
+      },
+      {
+         "path" : "textures/entity/shiny/nidoranm.png"
+      },
+      {
+         "path" : "textures/entity/shiny/nidorina.png"
+      },
+      {
+         "path" : "textures/entity/shiny/nidorino.png"
+      },
+      {
+         "path" : "textures/entity/shiny/ninetales.png"
+      },
+      {
+         "path" : "textures/entity/shiny/oddish.png"
+      },
+      {
+         "path" : "textures/entity/shiny/omanyte.png"
+      },
+      {
+         "path" : "textures/entity/shiny/omastar.png"
+      },
+      {
+         "path" : "textures/entity/shiny/onix.png"
+      },
+      {
+         "path" : "textures/entity/shiny/paras.png"
+      },
+      {
+         "path" : "textures/entity/shiny/parasect.png"
+      },
+      {
+         "path" : "textures/entity/shiny/persian.png"
+      },
+      {
+         "path" : "textures/entity/shiny/pidgeot.png"
+      },
+      {
+         "path" : "textures/entity/shiny/pidgeot_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/pidgeotto.png"
+      },
+      {
+         "path" : "textures/entity/shiny/pidgey.png"
+      },
+      {
+         "path" : "textures/entity/shiny/pikachu.png"
+      },
+      {
+         "path" : "textures/entity/shiny/poliwag.png"
+      },
+      {
+         "path" : "textures/entity/shiny/poliwhirl.png"
+      },
+      {
+         "path" : "textures/entity/shiny/poliwrath.png"
+      },
+      {
+         "path" : "textures/entity/shiny/ponyta.png"
+      },
+      {
+         "path" : "textures/entity/shiny/primeape.png"
+      },
+      {
+         "path" : "textures/entity/shiny/psyduck.png"
+      },
+      {
+         "path" : "textures/entity/shiny/raichu.png"
+      },
+      {
+         "path" : "textures/entity/shiny/rapidash.png"
+      },
+      {
+         "path" : "textures/entity/shiny/raticate.png"
+      },
+      {
+         "path" : "textures/entity/shiny/rattata.png"
+      },
+      {
+         "path" : "textures/entity/shiny/rhydon.png"
+      },
+      {
+         "path" : "textures/entity/shiny/rhyhorn.png"
+      },
+      {
+         "path" : "textures/entity/shiny/rockruff.png"
+      },
+      {
+         "path" : "textures/entity/shiny/rowlet.png"
+      },
+      {
+         "path" : "textures/entity/shiny/sandshrew.png"
+      },
+      {
+         "path" : "textures/entity/shiny/sandslash.png"
+      },
+      {
+         "path" : "textures/entity/shiny/scorbunny.png"
+      },
+      {
+         "path" : "textures/entity/shiny/scyther.png"
+      },
+      {
+         "path" : "textures/entity/shiny/seaking.png"
+      },
+      {
+         "path" : "textures/entity/shiny/seel.png"
+      },
+      {
+         "path" : "textures/entity/shiny/shellder.png"
+      },
+      {
+         "path" : "textures/entity/shiny/slowbro.png"
+      },
+      {
+         "path" : "textures/entity/shiny/slowbro_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/slowpoke.png"
+      },
+      {
+         "path" : "textures/entity/shiny/snorlax.png"
+      },
+      {
+         "path" : "textures/entity/shiny/spearow.png"
+      },
+      {
+         "path" : "textures/entity/shiny/squirtle.png"
+      },
+      {
+         "path" : "textures/entity/shiny/tauros.png"
+      },
+      {
+         "path" : "textures/entity/shiny/tentacool.png"
+      },
+      {
+         "path" : "textures/entity/shiny/tentacruel.png"
+      },
+      {
+         "path" : "textures/entity/shiny/vaporeon.png"
+      },
+      {
+         "path" : "textures/entity/shiny/venomoth.png"
+      },
+      {
+         "path" : "textures/entity/shiny/venonat.png"
+      },
+      {
+         "path" : "textures/entity/shiny/venusaur.png"
+      },
+      {
+         "path" : "textures/entity/shiny/venusaur_mega.png"
+      },
+      {
+         "path" : "textures/entity/shiny/victreebel.png"
+      },
+      {
+         "path" : "textures/entity/shiny/vileplume.png"
+      },
+      {
+         "path" : "textures/entity/shiny/vulpix.png"
+      },
+      {
+         "path" : "textures/entity/shiny/wartortle.png"
+      },
+      {
+         "path" : "textures/entity/shiny/weedle.png"
+      },
+      {
+         "path" : "textures/entity/shiny/weepinbell.png"
+      },
+      {
+         "path" : "textures/entity/shiny/weezing.png"
+      },
+      {
+         "path" : "textures/entity/shiny/wigglytuff.png"
+      },
+      {
+         "path" : "textures/entity/shiny/zapdos.png"
+      },
+      {
+         "path" : "textures/entity/shiny/zubat.png"
+      },
+      {
+         "path" : "textures/textures_list.json"
+      }
+   ],
+   "version" : 1
+}

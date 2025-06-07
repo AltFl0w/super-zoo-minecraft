@@ -1,0 +1,19 @@
+{
+  "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:aerodactyl"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:aerodactyls"
+                }
+            ]
+        }
+    ]
+}

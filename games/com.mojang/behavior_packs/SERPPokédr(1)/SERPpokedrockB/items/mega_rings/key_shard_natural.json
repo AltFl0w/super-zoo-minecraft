@@ -1,0 +1,8 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:key_shard_natural"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 60}],
+    "gives": [{"item": "serp:pokeball",
+    "quantity": 6}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 15}],
+    "gives": [{"item": "serp:superball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 20}],
+    "gives": [{"item": "serp:ultraball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 64},{"item": "serp:badge",
+    "quantity": 24}],
+    "gives": [{"item": "serp:masterball"}],
+        "max_uses": 256
+        }
+      ]
+    },
+    {
+      "trades": [
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:diveball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:duskball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:fastball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:heavyball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:lureball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:moonball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:nestball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:netball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:parkball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:premiereball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:safariball"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:timerball"}],
+        "max_uses": 256
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:deoxys_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      " v ",
+      " o ",
+      "vov"
+    ],
+    "key":{
+      "o":{"item":"minecraft:obsidian"},
+      "v":{"item":"serp:deoxys_virus"}
+    },
+    "result":{"item":"serp:deoxys_offering"}
+  }
+}

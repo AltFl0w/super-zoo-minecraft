@@ -1,0 +1,31 @@
+{
+  "namespace":"pokehud",
+  "main_team":{
+    "type":"label","anchor_from":"top_right","anchor_to":"top_right",
+    "factory":{"name":"hud_actionbar_text_factory","control_ids":{"hud_actionbar_text":"team_root@pokehud.team_root"}}
+  },
+  "as1":{"anim_type":"offset","easing":"out_cubic","duration":0.1,"from":[0,0],"to":[0,-3],"next":"@pokehud.as2"},"as2":{"anim_type":"offset","easing":"out_cubic","duration":0.4,"from":[0,-3],"to":[0,0],"next":"@pokehud.as1"},
+  "ato1":{"anim_type":"offset","easing":"out_cubic","duration":0.15,"from":[0,10],"to":[0,-5],"next":"@pokehud.ato2"},"ato2":{"anim_type":"offset","easing":"out_cubic","duration":0.1,"from":[0,-5],"to":[0,0]},
+  "ado":{"anim_type":"offset","easing":"out_cubic","duration":0.3,"from":[-80,36],"to":[-26,36]},"ada":{"anim_type":"alpha","easing":"linear","from":0,"to":1,"duration":0.3},
+  "team_root":{
+    "$ab":"$actionbar_text","$slot":0,"type":"panel","visible":"(not($ab=($ab-'§0poke')))",
+    "controls":[
+{"team_slots":{"type":"image","texture":"textures/ui/slots","offset":["-120px","40px"],"alpha":0.6,"size":["237px","37px"]}},
+{"team1@team":{"offset":["-30px","40px"],"$slot":6}},
+{"team2@team":{"offset":["-65px","40px"],"$slot":5}},
+{"team3@team":{"offset":["-100px","40px"],"$slot":4}},
+{"team4@team":{"offset":["-135px","40px"],"$slot":3}},
+{"team5@team":{"offset":["-170px","40px"],"$slot":2}},
+{"team6@team":{"offset":["-205px","40px"],"$slot":1}}
+    ]
+  },
+  "team":{"type":"panel","$ab":"$actionbar_text","$slot":0,"controls":[{"ball_off":{"type":"image","$slot":0,"size":[37,37],"texture":"textures/ui/status/off"}},{"pokemon@pokeslot":{"visible":"(not($ab=$ab-('poke'+$slot)))"}}]},
+  "pokeslot":{
+    "type":"panel","$ab":"$actionbar_text","$ht":"#hud_title_text_string",
+    "controls":[
+{"ball":{"type":"image","size":[42,42],"anims":["@pokehud.ato1"],"texture":"('textures/ui/status/'+($ab-('§0poke'+$slot)-',b'))"}},
+{"pokemon_icon":{"type":"image","size":[30,30],"layer":10,"texture":"#texture","bindings":[{"binding_name":"$ht","binding_type":"global"},{"binding_name":"$ht","binding_type":"view","source_property_name":"(not('0'=$ht))","target_property_name":"#visible"},{"binding_name":"$ht","binding_type":"view","source_property_name":"('pokeitems/items/icons/'+$ht)","target_property_name":"#texture"}]}},
+{"pokedata":{"type":"image","size":[86,36],"anims":["@pokehud.ado","@pokehud.ada"],"texture":"textures/ui/status/pokedata","bindings":[{"binding_name":"$ht","binding_type":"global"},{"binding_name":"$ab","binding_type":"view","source_property_name":"(not(($ab-'poke')=$ab or '0'=$ht))","target_property_name":"#visible"}],"controls":[{"pokemon_info":{"bindings":[{"binding_name":"#hud_subtitle_text_string","binding_type":"global"}],"type":"label","text":"#hud_subtitle_text_string","layer":10,"size":["100%-4px","100%"],"offset":[4,8],"shadow":true,"localize":false,"font_size":"normal","font_scale_factor":0.85}}]}}
+    ]
+  }
+}

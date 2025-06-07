@@ -1,0 +1,18 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:lightning_ball",
+        "render_controllers": [ "controller.render.skeleton" ],
+        "materials": { "default": "entity_alphatest" },
+        "textures": {"default": "textures/entity/lightning_ball"},
+        "geometry": {"default": "geometry.lightning_ball"},
+        "animation_controllers": [{"lightning_ball": "controller.animation.lightning_ball"}],
+        "animations": {"general": "animation.lightning_ball.general"},
+        "particle_effects": {
+          "lightning_ball": "nw:lightning_ball",
+          "lightning_ball2": "nw:lightning_ball2"
+        }
+      }
+    }
+  }

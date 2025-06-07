@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:rocky_greatsword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" ##",
+			" ##",
+			" ss"
+		],
+		"key": {
+			"#": {
+				"item": "wep:earth_ingot"
+			},
+			"s": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:rocky_greatsword",
+				"count": 1
+			}
+		]
+	}
+}

@@ -1,0 +1,30 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "gunsaddon:m67"
+      },
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        " CC",
+        "BBC",
+        "AA "
+      ],
+      "key": {
+          "A": {
+          "item": "minecraft:gunpowder"
+        },
+        "B": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:gold_nugget"
+        }
+      },
+      "result": {
+        "item": "gunsaddon:m67",
+        "count": 1
+      }
+    }
+  }

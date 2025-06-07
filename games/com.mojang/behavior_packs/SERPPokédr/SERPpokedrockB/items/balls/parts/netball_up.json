@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:netball_up",
+      "menu_category":{"group":"itemGroup.name.arrow","category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:netball_up.name"},
+      "minecraft:icon":"netball_up"
+    }
+  }
+}

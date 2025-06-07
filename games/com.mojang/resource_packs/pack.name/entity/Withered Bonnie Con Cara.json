@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:withered_bonnie_con_cara",
+      "materials": {
+        "default": "spider",
+        "outer": "guitarra"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_withered_bonnie",
+        "df_papel_con_cara": "textures/entity/danyfox/df_papel_con_cara"
+      },
+      "geometry": {
+        "default": "geometry.df_withered_bonnie",
+        "df_papel_con_cara": "geometry.df_papel_con_cara"
+      },
+      "animations": {
+        "df_withered_bonnie_general": "animation.df_withered_bonnie.base",
+        "df_caminando_withered_bonnie": "animation.df_withered_bonnie.walk",
+        "df_caminando_withered_bonnie2": "animation.df_withered_bonnie.walk2",
+        "df_seleccion_withered_bonnie": "animation.df_withered_bonnie.casting",
+        "df_ataque_withered_bonnie": "animation.df_withered_bonnie.attack",
+        "look_at_target": "animation.common.look_at_target",
+
+        "movimiento": "controller.animation.df_withered_bonnie.movimiento",
+        "general": "controller.animation.df_withered_bonnie.general",
+        "ataque": "controller.animation.df_withered_bonnie.ataque"
+      },
+      "scripts": {
+        "animate": [
+          "movimiento", "general", "ataque"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [
+         "controller.render.fnaf",
+         "controller.render.df_papel_con_cara"
+         ],
+      "spawn_egg": {
+        "texture": "df_withered_bonnie_con_cara",
+        "texture_index": 0
+      }
+    }
+  }
+}

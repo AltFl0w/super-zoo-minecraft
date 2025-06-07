@@ -1,0 +1,83 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.gastly.quiet": {
+			"loop": true,
+			"animation_length": 0.8,
+			"override_previous_animation": true,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [15, 0, 0],
+						"0.4": [0, 0, 0],
+						"0.6": [15, 0, 0],
+						"0.8": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [-1, 2, 0],
+						"0.2": [0, 0, 0],
+						"0.4": [1, 2, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [-1, 2, 0]
+					}
+				}
+			}
+		},
+		"animation.gastly.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"head": {
+					"rotation": [25, 0, 0],
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, 1, 0],
+						"0.8": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.gastly.sitting": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [0, 0, -180],
+					"position": [0, -1, 0]
+				}
+			}
+		},
+		"animation.gastly.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [40, 30, 0]
+				}
+			}
+		},
+		"animation.gastly.direction": {
+			"loop": true,
+			"bones": {
+				"gastly": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+        "animation.gastly.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,22,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

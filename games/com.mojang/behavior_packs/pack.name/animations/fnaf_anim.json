@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+		"animation.animation.attack_anim": {
+            "timeline": {
+                "0": [
+					"/tp @p[r=5] ^ ^-1 ^2 facing @s"
+                ]
+            },
+            "animation_length": 0,
+			"loop": true
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:moonball_up",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "moonball_up"
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.Pizza.new": {
+			"loop": true,
+			"bones": {
+				"Rebanada1": {
+					"rotation": [27.5, 0, 0],
+					"position": [0, 5, 4]
+				},
+				"ParteRebana1": {
+					"rotation": [17.5, 0, 0]
+				},
+				"ParteRebana2": {
+					"rotation": [-25, 0, 0],
+					"position": [0, -0.3, 0.6]
+				},
+				"Rebanada3": {
+					"position": [2, 0, 0]
+				},
+				"Rebanada6": {
+					"position": [-4, 0, -3]
+				}
+			}
+		},
+		"animation.df_pizza.pared": {
+			"loop": true,
+			"bones": {
+				"Pizza": {
+					"rotation": [90, 0, 0],
+					"position": [0, 15, 5],
+					"scale": 1.1
+				}
+			}
+		},
+		"animation.df_pizza.pared2": {
+			"loop": true,
+			"bones": {
+				"Pizza": {
+					"rotation": [90, 0, 12.5],
+					"position": [0, 15, 5],
+					"scale": 1.1
+				},
+				"ParteRebana5": {
+					"scale": 0
+				},
+				"ParteRebana6": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.df_pizza.pared3": {
+			"loop": true,
+			"bones": {
+				"Pizza": {
+					"rotation": [90, 0, 12.5],
+					"position": [-6, 10, 5],
+					"scale": 1.1
+				},
+				"ParteRebana5": {
+					"scale": 0
+				},
+				"ParteRebana6": {
+					"scale": 0
+				},
+				"Rebanada1": {
+					"scale": [0, 10, 0]
+				},
+				"Rebanada3": {
+					"scale": 1
+				},
+				"Rebanada4": {
+					"scale": 0
+				},
+				"Rebanada5": {
+					"scale": 0
+				},
+				"Rebanada6": {
+					"scale": 0
+				},
+				"Rebanada7": {
+					"scale": 0
+				},
+				"Rebanada8": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

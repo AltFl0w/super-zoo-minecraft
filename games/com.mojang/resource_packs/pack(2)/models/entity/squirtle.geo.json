@@ -1,0 +1,91 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.squirtle",
+				"texture_width": 48,
+				"texture_height": 48,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "squirtle",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "squirtle",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body2",
+					"parent": "body",
+					"pivot": [0, 7, 3],
+					"cubes": [
+						{"origin": [-4, 5, 0.5], "size": [8, 10, 7], "pivot": [0, 5, 2], "rotation": [2.5, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "leg0",
+					"parent": "body",
+					"pivot": [-3, 7, 3],
+					"rotation": [0, 0, 2.5],
+					"cubes": [
+						{"origin": [-4.69466, 0.00666, 2], "size": [3, 8, 3], "pivot": [-3.69466, 0.00666, 0], "rotation": [0, 0, 2.5], "uv": [36, 37]}
+					]
+				},
+				{
+					"name": "leg1",
+					"parent": "body",
+					"pivot": [3, 7, 3],
+					"rotation": [0, 0, -2.5],
+					"cubes": [
+						{"origin": [1.69466, 0.00666, 2], "size": [3, 8, 3], "pivot": [3.69466, 0.00666, 0], "rotation": [0, 0, -2.5], "uv": [36, 37], "mirror": true}
+					]
+				},
+				{
+					"name": "leg2",
+					"parent": "body",
+					"pivot": [-4, 15, 2],
+					"cubes": [
+						{"origin": [-6, 7, 1], "size": [3, 8, 3], "pivot": [-4, 14, 2], "rotation": [-10, 0, 20], "uv": [36, 26]}
+					]
+				},
+				{
+					"name": "leg3",
+					"parent": "body",
+					"pivot": [4, 15, 2],
+					"cubes": [
+						{"origin": [3, 7, 1], "size": [3, 8, 3], "pivot": [4, 14, 2], "rotation": [-10, 0, -20], "uv": [36, 26], "mirror": true}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 6, 5],
+					"cubes": [
+						{"origin": [-1, 4.5, 4], "size": [2, 2, 4], "uv": [36, 0]},
+						{"origin": [-1.5, 4.5, 8], "size": [3, 3, 4], "pivot": [0, 4.5, 8], "rotation": [7.5, 0, 0], "uv": [0, 41]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "squirtle",
+					"pivot": [0, 15, 2],
+					"cubes": [
+						{"origin": [-3.5, 15, -1], "size": [7, 7, 7], "uv": [0, 17]},
+						{"origin": [-3, 17.5, -1.1], "size": [2, 2, 2], "uv": [28, 44]},
+						{"origin": [1, 17.5, -1.1], "size": [2, 2, 2], "uv": [28, 44]},
+						{"origin": [-1, 16, -1.1], "size": [2, 1, 2], "uv": [20, 36]}
+					],
+					"locators": {
+						"lead": [-1, 14.5, 4]
+					}
+				}
+			]
+		}
+	]
+}

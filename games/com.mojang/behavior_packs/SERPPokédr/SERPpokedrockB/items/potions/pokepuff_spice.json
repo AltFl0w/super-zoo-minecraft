@@ -1,0 +1,16 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:pokepuff_spice",
+	    "menu_category":{"group":"itemGroup.name.cookedFood","category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:pokepuff_spice.name"},
+      "minecraft:icon":"pokepuff_spice",
+      "minecraft:food":{"nutrition":5,"saturation_modifier":0.4},
+      "minecraft:use_modifiers":{"use_duration":1.6,"movement_modifier":0.35},
+      "minecraft:use_animation":"eat"
+    }
+  }
+}

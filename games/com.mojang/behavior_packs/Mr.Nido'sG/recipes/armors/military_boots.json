@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "gunsaddon:military_boots"
+      },
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "A A",
+        "C C"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:coal"
+        }
+      },
+      "result": {
+        "item": "gunsaddon:military_boots",
+        "count": 1
+      }
+    }
+  }

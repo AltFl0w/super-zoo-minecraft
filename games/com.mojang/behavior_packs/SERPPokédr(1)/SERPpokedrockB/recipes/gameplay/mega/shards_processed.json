@@ -1,0 +1,11 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:key_shard_processed"
+    },
+    "tags": ["blast_furnace"],
+    "input": "serp:key_shard_natural",
+    "output": "serp:key_shard_processed"
+  }
+}

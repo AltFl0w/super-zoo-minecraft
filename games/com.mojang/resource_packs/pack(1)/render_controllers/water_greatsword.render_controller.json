@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.water_greatsword": {
+			"geometry": "Geometry.water_greatsword",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.water_greatsword"
+			]
+		}
+	}
+}

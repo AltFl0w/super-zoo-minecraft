@@ -1,0 +1,28 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "serp:candy_bowl"
+        },
+
+
+        "tags": [ "crafting_table" ],
+    "group": "rare_candy",
+    "pattern": [
+      "ccc",
+      "cbc",
+      "ccc"
+    ],
+    "key": {
+      "c": {
+        "item": "serp:rare_candy"
+      },
+      "b": {
+        "item": "minecraft:bowl"
+      }
+},
+        "result": {
+            "item": "serp:candy_bowl"
+        }
+    }
+}

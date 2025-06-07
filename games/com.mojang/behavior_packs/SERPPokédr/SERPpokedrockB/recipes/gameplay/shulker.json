@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:shulker_from_shellder"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "# #"
+    ],
+    "key": {
+      "#": {
+        "item": "serp:shellder_shell"
+      }
+    },
+    "result": {
+      "item": "minecraft:shulker_shell"
+    }
+  }
+}

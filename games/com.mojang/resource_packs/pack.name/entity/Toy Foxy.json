@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:toy_foxy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_mangle"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_foxy"
+      },
+      "animations": {
+        "moving": "animation.df_toy_foxy.walk",
+        "run": "animation.df_toy_foxy.run",
+        "t.foxy_general": "animation.df_toy_foxy.base",
+        "attacking": "animation.df_toy_foxy.attack",
+        "parpadeo": "animation.df_toy_foxy.parpadeo",
+        "cola": "animation.df_toy_foxy.cola",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_toy_foxy.move",
+        "general": "controller.animation.df_toy_foxy.general",
+        "ataque": "controller.animation.df_toy_foxy.ataque",
+        "corriendo": "controller.animation.df_toy_foxy.corriendo"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general", "ataque", "corriendo"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_toy_foxy",
+        "texture_index": 0
+      }
+    }
+  }
+}

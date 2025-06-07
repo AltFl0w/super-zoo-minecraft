@@ -1,0 +1,194 @@
+{
+  "sound.snorlax": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/snorlax1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/snorlax2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/snorlax3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/snorlax4",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/snorlax5",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.wigglytuff": {  
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/wigglytuff1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wigglytuff2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wigglytuff3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wigglytuff4",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/wigglytuff5",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.mamoswine": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/mamoswine1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/mamoswine2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/mamoswine3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/mamoswine4",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/mamoswine5",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.charizard": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/charizard1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/charizard2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/charizard3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/charizard4",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/charizard5",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.trevenant": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/trevenant1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/trevenant2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  
+  "sound.crustle": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/crustle1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      },
+      {
+        "name": "sounds/mob/crustle2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+    
+  "sound.pokeball_capture": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pokeball_capture",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+  "sound.pokeball_3": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pokeball_3",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ] 
+  },
+  "sound.pokeball_1": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pokeball_1",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  },
+  "sound.pokeball_2": { 
+    "category": "neutral",
+    "sounds": [
+      {
+        "name": "sounds/mob/pokeball_2",
+        "volume": 2.0,
+        "load_on_low_memory": true
+      }
+        ]
+  }
+}

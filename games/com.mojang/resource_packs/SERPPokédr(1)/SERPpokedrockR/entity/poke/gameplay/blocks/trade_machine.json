@@ -1,0 +1,15 @@
+{
+	"format_version":"1.10.0",
+	"minecraft:client_entity":{
+		"description":{
+			"identifier":"serp:trade_machine",
+      "materials":{"default":"entity_emissive_alpha"},
+			"textures":{"off":"textures/entity/trade_machine/trader_off","on":"textures/entity/trade_machine/trader_on"},
+			"geometry":{"default":"geometry.serptrader"},
+      "scripts":{"scale":"0.7","animate":["particles"]},
+      "animations":{"particles":"controller.animation.trader_particles","prepare":"animation.trader.prepare"},
+      "particle_effects":{"trade":"serp:trade"},
+			"render_controllers":["controller.render.trader"]
+	  }
+  }
+}

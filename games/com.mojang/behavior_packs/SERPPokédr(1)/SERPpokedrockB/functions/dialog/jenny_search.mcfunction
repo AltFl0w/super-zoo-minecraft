@@ -1,0 +1,1 @@
+tellraw @a[r=6] {"rawtext":[{"translate":"jenny.1"}]}

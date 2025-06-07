@@ -1,0 +1,16 @@
+{
+   "format_version":"1.8.0",
+   "render_controllers":{
+      "controller.render.scope_6x":{
+         "textures":[
+            "texture.scope_6x"
+         ],
+         "geometry":"geometry.scope",
+         "materials":[
+            {
+               "*":"material.default"
+            }
+         ]
+      }
+   }
+}

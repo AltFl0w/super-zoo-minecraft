@@ -1,0 +1,33 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gunsaddon:target_shooting",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.target_shooting"
+            },
+            "textures": {
+                "default": "textures/entity/target_shooting"
+            },
+            "animations": {
+                "shoot": "animation.target_shooting.shoot",
+				"move": "controller.animation.target_shooting.shoot"
+            },
+            "scripts": {
+                "animate": [
+					"move"
+                ]
+            },
+		  "spawn_egg": {
+			"texture": "target_shooting",
+			"texture_index": 0
+		  },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

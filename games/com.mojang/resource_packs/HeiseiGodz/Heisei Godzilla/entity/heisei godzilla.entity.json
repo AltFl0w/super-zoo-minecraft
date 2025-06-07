@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "heiseigodzilla:heisei_godzilla",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"normal": "textures/entities/heisei godzilla",
+				"soiled": "textures/entities/heisei godzilla soiled",
+				"atomic": "textures/entities/heisei godzilla atomic"
+			},
+			"geometry": {
+				"default": "geometry.heiseigodzilla.heisei_godzilla"
+			},
+            "animations": {
+                "animIdle": "animation.heisei_godzilla.idle",
+                "animMove": "animation.heisei_godzilla.walk",
+                "animRoar": "animation.heisei_godzilla.roar",
+                "animAttack": "animation.heisei_godzilla.attack",
+                "animAtomicBreath": "animation.heisei_godzilla.atomic_breath",
+                "contMovement": "controller.animation.heisei_godzilla_movement",
+                "contAttack": "controller.animation.heisei_godzilla_attack"
+            },
+            "scripts": {
+                "animate": [
+                    "contMovement",
+                    "contAttack"
+                ]
+            },
+			"render_controllers": [
+				"controller.render.heisei_godzilla"
+			],
+			"spawn_egg": {
+				"base_color": "#111111",
+				"overlay_color": "#47473a"
+			},
+            "sound_effects": {
+                "atomicBreathSound": "mob.heisei_godzilla.atomic_breath"
+            }
+        }
+    }
+}

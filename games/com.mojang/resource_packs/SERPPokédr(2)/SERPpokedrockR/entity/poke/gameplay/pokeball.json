@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:ball_thrown",
+      "materials": { "default": "entity_emissive_alpha" },
+      "textures": {
+        "pokeball": "textures/entity/pokeballs/pokeball",
+        "greatball": "textures/entity/pokeballs/greatball",
+        "ultraball": "textures/entity/pokeballs/ultraball",
+        "masterball": "textures/entity/pokeballs/masterball",
+        "diveball": "textures/entity/pokeballs/diveball",
+        "duskball": "textures/entity/pokeballs/duskball",
+        "fastball": "textures/entity/pokeballs/fastball",
+        "heavyball": "textures/entity/pokeballs/heavyball",
+        "lureball": "textures/entity/pokeballs/lureball",
+        "moonball": "textures/entity/pokeballs/moonball",
+        "nestball": "textures/entity/pokeballs/nestball",
+        "netball": "textures/entity/pokeballs/netball",
+        "parkball": "textures/entity/pokeballs/parkball",
+        "premierball": "textures/entity/pokeballs/premierball",
+        "safariball": "textures/entity/pokeballs/safariball",
+        "timerball": "textures/entity/pokeballs/timerball"
+    },
+      "geometry": {
+        "default": "geometry.serppokeball"
+      },
+      "animations": {
+    "spawn": "animation.pokeball.spawn",
+    "direction": "animation.pokeball.direction"
+      },
+      "scripts": {
+        "animate": ["spawn","direction"]
+      },
+      "sound_effects": {
+        "spawn": "serp.pokeball.throw"
+      },
+      "render_controllers": [ "controller.render.ball_thrown" ]
+    }
+  }
+}

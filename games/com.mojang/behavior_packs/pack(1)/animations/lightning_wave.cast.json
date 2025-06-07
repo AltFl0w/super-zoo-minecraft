@@ -1,0 +1,14 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.lightning_wave": {
+			"animation_length": 0.4,
+			"loop": true,
+			"timeline": {
+				"0.3": [
+					"/summon lightning_bolt ~~~"
+				]
+			}
+		}
+	}
+}

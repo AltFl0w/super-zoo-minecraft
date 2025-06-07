@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:linking_cord",
+	    "menu_category":{"category":"items"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:linking_cord.name"},
+      "minecraft:icon":"linking_cord"
+    }
+  }
+}

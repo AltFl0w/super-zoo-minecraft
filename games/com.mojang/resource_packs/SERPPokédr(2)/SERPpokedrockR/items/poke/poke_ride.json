@@ -1,0 +1,12 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:poke_ride",
+      "category": "mounting"
+    },
+    "components": {
+      "minecraft:icon": "poke_ride"
+    }
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "format_version":"1.14.0",
+  "sound_definitions":{
+    "bulbasaur.whoosh":{
+      "category":"neutral",
+      "sounds":[
+        {
+          "name" : "sounds/projectiles/bulbasaur/bulbasaur.whoosh_1",
+          "volume" : 0.3,
+          "pitch" : 1.0
+        },
+        {
+          "name" : "sounds/projectiles/bulbasaur/bulbasaur.whoosh_2",
+          "volume" : 4.0,
+          "pitch" : 1.0
+        }
+      ]
+    },
+    "squirtle.water.splash":{
+      "category":"neutral",
+      "sounds":[
+        {
+          "name" : "sounds/projectiles/squirtle/squirtle.water.splash_1",
+          "volume" : 1,
+          "pitch" : 2
+        },
+        {
+          "name" : "sounds/projectiles/squirtle/squirtle.water.splash_2",
+          "volume" : 1,
+          "pitch" : 2
+        },
+        {
+          "name" : "sounds/projectiles/squirtle/squirtle.water.splash_3",
+          "volume" : 1,
+          "pitch" : 2
+        }
+      ]
+    },
+    "eevee.stomp":{
+      "category":"neutral",
+      "sounds":[
+        {
+          "name" : "sounds/projectiles/eevee/eevee.stomp_1",
+          "volume" : 1,
+          "pitch" : 0.6
+        },
+        {
+          "name" : "sounds/projectiles/eevee/eevee.stomp_2",
+          "volume" : 1,
+          "pitch" : 1
+        }
+      ]
+    },
+    "piplup.bubbles":{
+      "category":"neutral",
+      "sounds":[
+        {
+          "name" : "sounds/projectiles/piplup/bubbles_1",
+          "volume" : 1,
+          "pitch" : 1
+        },
+        {
+          "name" : "sounds/projectiles/piplup/bubbles_2",
+          "volume" : 1,
+          "pitch" : 1
+        }
+      ]
+    },
+    "stone.break":{
+      "category":"neutral",
+      "sounds":["sounds/projectiles/stone_attack/stone.break_1","sounds/projectiles/stone_attack/stone.break_2"]
+    },
+    "eevee.noise":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/eevee/eboi","sounds/pokemon/eevee/eevee"]
+    },
+    "eevee.damage":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/eevee/eevee.damage"]
+    },
+    "pikachu.noise":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/pikachu/pika.pika.happy","sounds/pokemon/pikachu/pikachu"]
+    },
+    "pikachu.damage":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/pikachu/pikachu.damage"]
+    },
+    "bulbasaur.noise":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/bulbasaur/bulba","sounds/pokemon/bulbasaur/bulbasaur"]
+    },
+    "bulbasaur.damage":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/bulbasaur/bulbasaur.damage"]
+    },
+    "squirtle.noise":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/squirtle/squirtle_x2","sounds/pokemon/squirtle/squirtle_x3"]
+    },
+    "squirtle.damage":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/squirtle/squirtle.damage"]
+    },
+    "piplup.noise":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/piplup/piplup_1","sounds/pokemon/piplup/piplup_2"]
+    },
+    "piplup.damage":{
+      "category":"neutral",
+      "sounds":["sounds/pokemon/piplup/piplup_damage"]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.ammonite"
+      },
+      "identifier": "fauna:ammonite",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.salmon"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "ammonite",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/ammonite"
+      },
+      "animations": {
+        "attack": "animation.ammonite.attack",
+        "idle": "animation.ammonite.idle",
+        "swim": "animation.ammonite.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

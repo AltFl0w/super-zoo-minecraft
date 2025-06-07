@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:m67",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"item_hand",
+					"m67"
+                ]
+            },
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:max_stack_size": 16,
+			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 0.7
+			},
+			"minecraft:cooldown": {
+				"duration": 4.0,
+				"category": "m67"
+			},
+			"minecraft:icon": {
+				"texture": "m67"
+			},
+			"minecraft:display_name": {
+				"value": "M67"
+			},
+			"minecraft:hand_equipped": true
+		}
+	}
+}

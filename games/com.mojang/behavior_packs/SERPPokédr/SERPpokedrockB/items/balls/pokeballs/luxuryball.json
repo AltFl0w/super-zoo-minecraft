@@ -1,0 +1,16 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:luxuryball",
+      "menu_category":{"group":"itemGroup.name.arrow","category":"equipment"}
+    },
+    "components":{
+    "minecraft:display_name":{"value":"item.serp:luxuryball.name"},
+    "minecraft:icon":"luxuryball",
+    "minecraft:cooldown":{"category":"reload","duration":1},
+    "minecraft:throwable":{"do_swing_animation":true},
+    "minecraft:projectile":{"projectile_entity":"serp:ball_thrown<serp:luxuryball>"}
+    }
+  }
+}

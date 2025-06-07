@@ -1,0 +1,97 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.predator.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "idle"
+          ],
+          "transitions": [
+            {
+              "landattack": "query.is_delayed_attacking"
+            },
+            {
+              "swim": "query.is_in_water"
+            }
+          ],
+          "blend_transition": 0.4
+        },
+        "swim": {
+          "transitions": [
+            {
+              "default": "!query.is_in_water"
+            },
+            {
+              "attack": "query.is_delayed_attacking"
+            }
+          ],
+          "blend_transition": 0.2,
+          "animations": [
+            {
+              "swim": "query.is_in_water"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            {
+              "attack": "query.is_in_water"
+            },
+            {
+              "landattack": "!query.is_in_water"
+            },
+            "swim"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_delayed_attacking \u0026\u0026 !query.is_in_water"
+            },
+            {
+              "swim": "!query.is_delayed_attacking \u0026\u0026 query.is_in_water"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "landattack": {
+          "animations": [
+            {
+              "attack": "query.is_in_water"
+            },
+            {
+              "landattack": "!query.is_in_water"
+            },
+            "idle"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_delayed_attacking \u0026\u0026 !query.is_in_water"
+            },
+            {
+              "swim": "!query.is_delayed_attacking \u0026\u0026 query.is_in_water"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "walk": {
+          "animations": [
+            {
+              "walk": "!query.ground_speed\u003e0"
+            },
+            "idle"
+          ],
+          "transitions": [
+            {
+              "default": "!query.ground_speed\u003e0"
+            },
+            {
+              "swim": "query.is_in_water"
+            }
+          ],
+          "blend_transition": 0.1
+        }
+      }
+    }
+  }
+}

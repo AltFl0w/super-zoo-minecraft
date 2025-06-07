@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.rotomarket.quiet": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [0, 0, "Math.cos(q.anim_time*180)*5"],
+					"position": [0, "Math.cos(q.anim_time*120)*1", 0]
+				},
+				"right_arm": {
+					"rotation": [0, 0, "Math.cos(q.anim_time*180)*15"]
+				},
+				"left_arm": {
+					"rotation": [0, 0, "Math.cos(q.anim_time*180)*15"]
+				}
+			}
+		},
+		"animation.rotomarket.walk": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": ["25+(Math.cos(q.anim_time*180)*5)", 0, 0]
+				},
+				"arms": {
+					"rotation": ["-35+(Math.cos(q.anim_time*360)*15)", 0, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 60, 0]
+				},
+				"left_arm": {
+					"rotation": [0, -60, 0]
+				}
+			}
+		}
+	}
+}

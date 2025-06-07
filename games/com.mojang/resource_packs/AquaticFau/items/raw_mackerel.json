@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:raw_mackerel",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "raw_mackerel",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  super-zoo-server:
+    environment:
+      - NODE_ENV=development
+    volumes:
+      # Mount source code for development
+      - ./zoo-ai-bot:/home/minecraft/zoo-ai-bot

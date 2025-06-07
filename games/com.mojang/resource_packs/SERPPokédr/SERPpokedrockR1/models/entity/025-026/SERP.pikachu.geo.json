@@ -1,0 +1,135 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serppikachu",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "pikachu",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "head",
+					"parent": "pikachu",
+					"pivot": [0, 11, 1],
+					"cubes": [
+						{"origin": [-1.5, 9.5, -3.5], "size": [3, 2, 1], "uv": [8, 25]},
+						{"origin": [-3.61, 9.5, -3.5], "size": [2.11, 2, 1], "pivot": [-1.5, 11, -3.5], "rotation": [0, 45, 0], "uv": [39, 7]},
+						{"origin": [1.5, 9.5, -3.5], "size": [2.11, 2, 1], "pivot": [1.5, 11, -3.5], "rotation": [0, -45, 0], "uv": [39, 7], "mirror": true},
+						{"origin": [-3.5, 9.5, -3.6], "size": [2, 2, 0], "pivot": [-1.5, 11, -3.5], "rotation": [0, 45, 0], "uv": [0, 14]},
+						{"origin": [1.5, 9.5, -3.6], "size": [2, 2, 0], "pivot": [1.5, 11, -3.5], "rotation": [0, -45, 0], "uv": [0, 14], "mirror": true},
+						{"origin": [-2.5, 9.5, -2.5], "size": [5, 4, 5], "uv": [0, 14]},
+						{"origin": [-3.5, 13, 0], "size": [2, 5, 0], "pivot": [-2, 14, -3], "rotation": [0, 0, -20], "uv": [18, 40]},
+						{"origin": [1.5, 13, 0], "size": [2, 5, 0], "pivot": [2, 14, -3], "rotation": [0, 0, 20], "uv": [18, 40], "mirror": true},
+						{"origin": [-3, 10, -2], "size": [1, 3, 4], "uv": [34, 33]},
+						{"origin": [2, 10, -2], "size": [1, 3, 4], "uv": [34, 33]},
+						{"origin": [-2, 10, -3], "size": [4, 3, 1], "uv": [17, 0]},
+						{"origin": [-2, 10, 2], "size": [4, 3, 1], "uv": [17, 0]},
+						{"origin": [-2, 13, -2], "size": [4, 1, 4], "uv": [13, 26]}
+					]
+				},
+				{
+					"name": "open_eyes",
+					"parent": "head",
+					"pivot": [1, 11, -3],
+					"cubes": [
+						{"origin": [-2.5, 11.5, -3.1], "size": [5, 2, 0], "uv": [0, 42]}
+					]
+				},
+				{
+					"name": "closed_eyes",
+					"parent": "head",
+					"pivot": [1, 11, -3],
+					"cubes": [
+						{"origin": [-2.5, 11.5, -3.1], "size": [5, 2, 0], "uv": [0, 44]}
+					]
+				},
+				{
+					"name": "angry_eyes",
+					"parent": "head",
+					"pivot": [1, 11, -3],
+					"cubes": [
+						{"origin": [-2.5, 11.5, -3.1], "size": [5, 2, 0], "uv": [0, 46]}
+					]
+				},
+				{
+					"name": "body_root",
+					"parent": "pikachu",
+					"pivot": [0, 3, -2]
+				},
+				{
+					"name": "body",
+					"parent": "body_root",
+					"pivot": [0, 3, -2],
+					"cubes": [
+						{"origin": [-2, 8.5, -2.5], "size": [4, 1, 5], "uv": [23, 0]},
+						{"origin": [-2.5, 2, -3], "size": [5, 7, 6], "uv": [0, 0]},
+						{"origin": [-2, 2.5, -3.5], "size": [4, 6, 1], "uv": [33, 13]},
+						{"origin": [-3, 2.5, -2.5], "size": [1, 6, 5], "uv": [0, 24]},
+						{"origin": [2, 2.5, -2.5], "size": [1, 6, 5], "uv": [0, 24]},
+						{"origin": [-2, 2.5, 2.5], "size": [4, 6, 1], "uv": [13, 32]},
+						{"origin": [-2, 1.5, -2.5], "size": [4, 1, 5], "uv": [16, 19]}
+					]
+				},
+				{
+					"name": "arms",
+					"parent": "body_root",
+					"pivot": [0, 8, -3],
+					"rotation": [65, 0, 0]
+				},
+				{
+					"name": "right_arm",
+					"parent": "arms",
+					"pivot": [-2.5, 8, -2],
+					"rotation": [0, -105, 0],
+					"cubes": [
+						{"origin": [-6.5, 6, -3], "size": [4, 2, 2], "uv": [37, 0]},
+						{"origin": [-7.5, 6, -3], "size": [1, 2, 2], "uv": [38, 21]}
+					]
+				},
+				{
+					"name": "left_arm",
+					"parent": "arms",
+					"pivot": [2.5, 8, -2],
+					"rotation": [0, 105, 0],
+					"cubes": [
+						{"origin": [2.5, 6, -3], "size": [4, 2, 2], "uv": [37, 0], "mirror": true},
+						{"origin": [6.5, 6, -3], "size": [1, 2, 2], "uv": [38, 21], "mirror": true}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "body_root",
+					"pivot": [0, 2, 3],
+					"rotation": [25, 0, 0],
+					"cubes": [
+						{"origin": [-0.5, 2, 3], "size": [1, 2, 4], "uv": [0, 36]},
+						{"origin": [-0.5, 4, 6], "size": [1, 2, 4], "uv": [31, 22]},
+						{"origin": [-0.5, 6, 8], "size": [1, 4, 7], "uv": [16, 7]}
+					]
+				},
+				{
+					"name": "legs",
+					"parent": "pikachu",
+					"pivot": [0, 4, -1],
+					"cubes": [
+						{"origin": [-3, 0.5, -2], "size": [2, 4, 3], "uv": [27, 29]},
+						{"origin": [1, 0.5, -2], "size": [2, 4, 3], "uv": [27, 29], "mirror": true},
+						{"origin": [-3.5, 1, -1.5], "size": [1, 3, 2], "uv": [24, 37]},
+						{"origin": [2.5, 1, -1.5], "size": [1, 3, 2], "uv": [24, 37], "mirror": true},
+						{"origin": [-2.5, 1, -1.5], "size": [0, 3, 2], "uv": [0, 0]},
+						{"origin": [-2.5, 0, -2.5], "size": [1, 1, 2], "uv": [11, 40]},
+						{"origin": [1.5, 0, -2.5], "size": [1, 1, 2], "uv": [11, 40], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

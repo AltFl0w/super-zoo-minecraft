@@ -1,0 +1,63 @@
+{
+	"format_version": "1.19.30",
+	"minecraft:block": {
+	"description": {
+	"identifier": "serp:berry_sapling",
+	"register_to_creative_menu": true,
+	"is_experimental": false
+		},
+		"components": {
+	"minecraft:material_instances": {
+		"*": {
+	"texture": "berry_sapling",
+	"render_method": "alpha_test",
+    "ambient_occlusion": false,
+    "face_dimming": true
+		}
+	},
+	"minecraft:geometry": "geometry.berry_top",
+    "minecraft:block_light_filter": 0,
+	"minecraft:collision_box": false,
+    "minecraft:destructible_by_mining": {
+      "seconds_to_destroy": 0
+    },
+	"minecraft:random_ticking": {
+		"on_tick": {"event":"serp:grow"}
+	},
+	"minecraft:placement_filter": {
+		"conditions": [
+			{
+		"allowed_faces": ["up"],
+		"block_filter": ["grass","dirt"]
+			    }
+		    ]
+	    },
+    "minecraft:flammable": {
+      "catch_chance_modifier": 5,
+      "destroy_chance_modifier": 20
+    },
+    "minecraft:on_interact": {
+        "event": "serp:mulch",
+        "condition": "query.get_equipped_item_name('main_hand')=='mulch'"
+            },
+    "minecraft:loot": "loot_tables/berry/berry_sapling.json"
+	},
+		"events": {
+    "serp:mulch": {
+        "sequence": [
+    {"decrement_stack":{}},
+    {"run_command":{"command":["particle minecraft:crop_growth_emitter ~~~"]}},
+    {"trigger":{"event":"serp:grow"
+                        }
+                    }
+                ]
+            },
+	"serp:grow": {
+		"randomize": [
+    {"weight":80},
+    {"weight":20,"run_command":{"command":["structure load berry_tree ~-2~~-2"]}}
+				]
+			}
+	    }
+    }
+}

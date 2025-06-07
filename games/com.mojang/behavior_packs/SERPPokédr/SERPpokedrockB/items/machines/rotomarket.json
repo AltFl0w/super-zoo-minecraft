@@ -1,0 +1,14 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:rotomarket",
+	    "menu_category":{"group":"itemGroup.name.mobEgg","category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:rotomarket.name"},
+      "minecraft:entity_placer":{"entity":"serp:machines_spawn<rotomarket>"},
+	    "minecraft:icon":"rotomarket"
+    }
+  }
+}

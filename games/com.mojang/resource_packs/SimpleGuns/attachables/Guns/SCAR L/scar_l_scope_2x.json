@@ -1,0 +1,38 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:scar_l_scope_2x",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/guns/scar_l/scar_l"
+         },
+         "scripts":{
+            "animate":[
+               "wielding",
+               "shooting",
+               {
+                  "first_person_sneaking_main_hand":"(c.is_first_person) && query.is_sneaking"
+               }
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.scar_l.wield_first_person",
+            "wield_third_person":"animation.scar_l.wield_third_person",
+            "first_person_sneaking_main_hand":"animation.scar_l_scope.first_person_sneaking_main_hand",
+            "wielding":"controller.animation.gun.wielding",
+            "shooting":"controller.animation.gun.shooting",
+            "shoot":"animation.scar_l.shoot"
+         },
+         "geometry":{
+            "default":"geometry.scar_l_scope_2x"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

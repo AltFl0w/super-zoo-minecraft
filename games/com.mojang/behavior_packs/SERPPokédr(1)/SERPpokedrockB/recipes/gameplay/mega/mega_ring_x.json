@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "serp:mega_ring_x"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "group": "mega",
+    "ingredients": [
+      {
+        "item": "serp:mega_ring_empty"
+      },
+      {
+        "item": "serp:key_stone"
+      },
+      {
+        "item": "serp:x_factor"
+      }
+      ],
+
+    "result": {
+      "item": "serp:mega_ring_x"
+    }
+  }
+}

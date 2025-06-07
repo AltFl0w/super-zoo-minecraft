@@ -1,0 +1,159 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.haunter.quiet": {
+			"loop": true,
+			"animation_length": 0.8,
+			"override_previous_animation": true,
+			"bones": {
+				"haunter": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, 2, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"head": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.4": [1, 1.1, 1],
+						"0.8": [1, 1, 1]
+					}
+				},
+				"hands": {
+					"position": {
+						"0.0": [0, -1, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [0, -1, 0]
+					}
+				},
+				"right_hand": {
+					"rotation": {
+						"0.0": [0, -20, 0],
+						"0.4": [0, 0, 0],
+						"0.8": [0, -20, 0]
+					},
+					"position": {
+						"0.0": [1, 0, 0],
+						"0.2": [0, 0, 0],
+						"0.8": [1, 0, 0]
+					},
+					"scale": 0.8
+				},
+				"left_hand": {
+					"rotation": {
+						"0.0": [0, 20, 0],
+						"0.4": [0, 0, 0],
+						"0.8": [0, 20, 0]
+					},
+					"position": {
+						"0.0": [-1, 0, 0],
+						"0.2": [0, 0, 0],
+						"0.8": [-1, 0, 0]
+					},
+					"scale": 0.8
+				}
+			}
+		},
+		"animation.haunter.walk": {
+			"loop": true,
+			"animation_length": 1.6,
+			"override_previous_animation": true,
+			"bones": {
+				"haunter": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [15, 0, 0],
+						"0.8": [0, 0, 0],
+						"1.2": [15, 0, 0],
+						"1.6": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [-2, 2, 0],
+						"0.4": [0, 0, 0],
+						"0.8": [2, 2, 0],
+						"1.2": [0, 0, 0],
+						"1.6": [-2, 2, 0]
+					},
+					"scale": {
+						"0.0": [1, 1.2, 1],
+						"0.4": [1, 1, 1],
+						"0.8": [1, 1.2, 1],
+						"1.2": [1, 1, 1],
+						"1.6": [1, 1.2, 1]
+					}
+				},
+				"head": {
+					"rotation": [20, 0, 0]
+				},
+				"hands": {
+					"rotation": [100, 0, 0],
+					"position": [0, -4, 1],
+					"scale": 0.8
+				}
+			}
+		},
+		"animation.haunter.sitting": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -1, -3],
+					"scale": [1, 0.9, 1]
+				},
+				"hands": {
+					"rotation": [-30, 0, 0],
+					"position": [0, -6, 2],
+					"scale": [1, 0.5, 1]
+				},
+				"right_hand": {
+					"rotation": [0, 0, 10]
+				},
+				"left_hand": {
+					"rotation": [0, 0, -10]
+				}
+			}
+		},
+		"animation.haunter.attack": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"head": {
+					"rotation": [10, 0, 0]
+				},
+				"right_hand": {
+					"rotation": [0, -30, 0],
+					"position": [2, 0, -2]
+				},
+				"left_hand": {
+					"rotation": [0, -60, 0],
+					"position": [2, 0, 9],
+					"scale": 0.8
+				}
+			}
+		},
+		"animation.haunter.direction": {
+			"loop": true,
+			"bones": {
+				"haunter": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+        "animation.haunter.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,26,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

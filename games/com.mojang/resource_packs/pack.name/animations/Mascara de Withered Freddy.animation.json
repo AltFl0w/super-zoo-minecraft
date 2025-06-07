@@ -1,0 +1,27 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.df_mascara_de_withered_freddy.third_person": {
+			"loop": true,
+			"bones": {
+				"WitheredFreddy": {
+					"position": [0, 2, 0],
+					"scale": 0.7
+				}
+			}
+		},
+		"animation.df_mascara_de_withered_freddy.first_person": {
+			"loop": true,
+			"bones": {
+				"WitheredFreddy": {
+					"rotation": [0, -180, 0],
+					"position": [0, 0, 6],
+					"scale": 0.7
+				},
+				"head": {
+					"position": [0, 1, 0]
+				}
+			}
+		}
+	}
+}

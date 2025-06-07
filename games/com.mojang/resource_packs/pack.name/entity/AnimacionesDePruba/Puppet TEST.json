@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:puppet",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_puppet"
+      },
+      "geometry": {
+        "default": "geometry.df_puppet"
+      },
+      "animations": {
+        "default_pose": "animation.df_puppet.base",
+        "no_pose": "animation.df_puppet.walk",
+        "solemn_pose": "animation.df_puppet.salto",
+        "athena_pose": "animation.df_puppet.pose1",
+        "brandish_pose": "animation.df_puppet.pose2",
+        "honor_pose": "animation.df_puppet.pose3",
+        "entertain_pose": "animation.df_puppet.pose4",
+        "riposte_pose": "animation.df_puppet.muerte",
+        "zombie_pose": "animation.df_puppet.base",
+        "cancan_a_pose": "animation.df_puppet.walk",
+        "cancan_b_pose": "animation.df_puppet.salto",
+        "hero_pose": "animation.df_puppet.pose1",
+        "wiggle": "animation.df_puppet.pose2"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_puppet",
+		"texture_index": 0
+      }
+    }
+  }
+}

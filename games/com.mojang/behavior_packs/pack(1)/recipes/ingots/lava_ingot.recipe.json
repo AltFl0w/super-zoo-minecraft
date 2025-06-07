@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:lava_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"lbl",
+			" i ",
+			"lcl"
+		],
+		"key": {
+			"b": {
+				"item": "minecraft:coal_block"
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"c": {
+				"item": "minecraft:coal"
+			},
+			"l": {
+				"item": "minecraft:lava_bucket"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:lava_ingot",
+				"count": 3
+			}
+		]
+	}
+}

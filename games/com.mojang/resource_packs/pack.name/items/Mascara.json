@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "df:mascara_fnaf2",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "df_mascara_fnaf2",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:raw_sardinella",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "raw_sardinella",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

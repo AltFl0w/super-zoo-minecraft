@@ -1,0 +1,73 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "showtime:toy_bonnie",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+                "animate": [
+                    "showtime"
+                ]
+            },
+            "animations": {
+                "showtime": "controller.animation.df_animatronicos.showtime"
+			}
+		},
+		"component_groups": {
+			"minecraft:is_dead": {
+                "minecraft:transformation": {
+                    "into": "df:toy_bonnie_m"
+                }
+			}
+		},
+		"components": {
+			
+			"minecraft:nameable": {},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:health": {
+				"value": 30,
+				"max": 30
+			},
+			"minecraft:collision_box": {
+				"width": 2.0,
+				"height": 6.0
+			},
+			"minecraft:damage_sensor": [{
+				"on_damage": {
+					"filters": {
+						"all_of": [{
+								"test": "has_damage",
+								"value": "fatal"
+							}
+						]
+					},
+					"event": "minecraft:event_spawn_dead"
+				}
+			}
+		],
+			"minecraft:loot": {
+				"table": "loot_tables/entities/empty.json"
+			},
+			"minecraft:scale": {
+				"value": 0.47
+			},
+			"minecraft:type_family": {
+				"family": ["DanyFox","ToyBonnie"]
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:event_spawn_dead": {
+                "add": {
+                    "component_groups": ["minecraft:is_dead"]
+                }
+            }
+		}
+	}
+}

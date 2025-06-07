@@ -1,0 +1,49 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Bugatti Centodieci (BP)",
+		"description": "Pack of behaviors of the Bugatti Centodieci. Specially made for MCPEDL\nCode: ashminggu",
+		"uuid": "f6cbee0b-b0e2-47a3-80c9-39619b09a215",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			16,
+			100
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "8695ed25-72fa-4ca5-90b9-ff6dccc21a66",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "ab5ca10b-b5f9-46b9-ad9a-aabf71c1d545"
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	}
+}

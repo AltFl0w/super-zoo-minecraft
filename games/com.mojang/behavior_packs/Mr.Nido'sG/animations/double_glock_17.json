@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.double_glock_17.shoot": {
+      "loop": true,
+      "animation_length": 0.17,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.glock_17 @a[r=25]",
+			"/scoreboard players remove @s double_glock_17 1",
+			"/event entity @s guns:glock_17",
+			"/function double_glock_17"
+        ]
+      }
+    },
+    "animation.double_glock_17.reload": {
+      "loop": false,
+      "animation_length": 4.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.double_glock_17_reload @a[r=25]"
+        ],
+        "3.9": [
+			"/scoreboard players add @s double_glock_17 30",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:glock_17_ammo 0 2"
+        ]
+      }
+    }
+  }
+}

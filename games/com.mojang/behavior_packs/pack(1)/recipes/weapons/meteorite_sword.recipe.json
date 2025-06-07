@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:meteorite_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" # ",
+			" # ",
+			" s "
+		],
+		"key": {
+			"#": {
+				"item": "wep:meteorite_forged_metal"
+			},
+			"s": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:meteorite_sword",
+				"count": 1
+			}
+		]
+	}
+}

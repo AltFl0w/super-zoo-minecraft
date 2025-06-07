@@ -1,0 +1,74 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serptrader",
+				"texture_width": 160,
+				"texture_height": 160,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [0, 1.5, 0]
+			},
+			"bones": [
+				{
+					"name": "trader",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "machine",
+					"parent": "trader",
+					"pivot": [0, -1, 0],
+					"cubes": [
+						{"origin": [-27, 11, -8], "size": [15, 8, 16], "uv": [0, 53]},
+						{"origin": [12, 11, -8], "size": [15, 8, 16], "uv": [0, 53], "mirror": true},
+						{"origin": [-25, 19, -3], "size": [8, 2, 8], "uv": [102, 96]},
+						{"origin": [17, 19, -3], "size": [8, 2, 8], "uv": [102, 96], "mirror": true},
+						{"origin": [-24, 26, -2], "size": [6, 2, 6], "uv": [47, 53]},
+						{"origin": [18, 26, -2], "size": [6, 2, 6], "uv": [47, 53], "mirror": true},
+						{"origin": [-23, 28, -1], "size": [4, 9, 4], "uv": [0, 0]},
+						{"origin": [19, 28, -1], "size": [4, 9, 4], "uv": [0, 0], "mirror": true},
+						{"origin": [-22, 34, -1.5], "size": [5, 8, 5], "pivot": [-20, 38, 0], "rotation": [0, 0, 45], "uv": [37, 107]},
+						{"origin": [17, 34, -1.5], "size": [5, 8, 5], "pivot": [20, 38, 0], "rotation": [0, 0, -45], "uv": [37, 107], "mirror": true},
+						{"origin": [-26, 12, -7.5], "size": [15, 5, 15], "pivot": [-30, 12, 0], "rotation": [0, 0, 15], "uv": [66, 38]},
+						{"origin": [11, 12, -7.5], "size": [15, 5, 15], "pivot": [30, 12, 0], "rotation": [0, 0, -15], "uv": [66, 38], "mirror": true},
+						{"origin": [-27, -2, -7.5], "size": [16, 4, 15], "pivot": [-30, 2, 0], "rotation": [0, 0, -10], "uv": [48, 63]},
+						{"origin": [11, -2, -7.5], "size": [16, 4, 15], "pivot": [30, 2, 0], "rotation": [0, 0, 10], "uv": [48, 63], "mirror": true},
+						{"origin": [-12, -1, -11.5], "size": [24, 4, 2], "pivot": [0, 3, -11.5], "rotation": [55, 0, 0], "uv": [96, 59]},
+						{"origin": [-12, 3, -11.5], "size": [24, 8, 4], "uv": [57, 83]},
+						{"origin": [-12, 1, -8], "size": [24, 16, 16], "uv": [0, 20]},
+						{"origin": [-12, 10, -8], "size": [24, 7, 4], "pivot": [0, 17, -8], "rotation": [-30, 0, 0], "uv": [90, 0]},
+						{"origin": [-8, 17, -6], "size": [16, 2, 13], "uv": [65, 20]},
+						{"origin": [-5, 19, -1], "size": [10, 10, 4], "uv": [102, 107]},
+						{"origin": [-7, 29, -1], "size": [14, 2, 4], "uv": [0, 106]},
+						{"origin": [-11, 31, -2], "size": [22, 16, 6], "uv": [0, 83]},
+						{"origin": [-7, 47, -1], "size": [14, 4, 4], "uv": [96, 66]},
+						{"origin": [-19, 37, -1], "size": [8, 4, 4], "uv": [111, 12]},
+						{"origin": [11, 37, -1], "size": [8, 4, 4], "uv": [111, 12], "mirror": true},
+						{"origin": [-10, 32, 4], "size": [20, 13, 2], "uv": [57, 96]},
+						{"origin": [-18, 0, -8.5], "size": [36, 2, 17], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "ball",
+					"parent": "trader",
+					"pivot": [-21, 18, 0],
+					"cubes": [
+						{"origin": [-23, 16, -1], "size": [4, 4, 4], "uv": [111, 21]}
+					]
+				},
+				{
+					"name": "lever",
+					"parent": "trader",
+					"pivot": [0, 11, -11],
+					"rotation": [-30, 0, 0],
+					"cubes": [
+						{"origin": [-3, 11, -12], "size": [1, 4, 1], "uv": [5, 20]},
+						{"origin": [2, 11, -12], "size": [1, 4, 1], "uv": [0, 20]},
+						{"origin": [-3.5, 15, -12.5], "size": [7, 2, 2], "uv": [0, 78]}
+					]
+				}
+			]
+		}
+	]
+}

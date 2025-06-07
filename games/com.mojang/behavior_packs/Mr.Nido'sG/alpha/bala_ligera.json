@@ -1,0 +1,25 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:bala_ligera",
+			  "menu_category": {
+				"category": "items"
+			  }
+		},
+		"components": {
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 64,
+			"minecraft:allow_off_hand": true,
+			"minecraft:hand_equipped": false,
+			"minecraft:icon": {
+				"texture": "bala_ligera"
+			},
+           "minecraft:tags": {
+                "tags": [
+					"bala_ligera"
+                ]
+            }
+		}
+	}
+}

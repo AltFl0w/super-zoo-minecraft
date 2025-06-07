@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.item.drop": {
+			"animation_length": 0.1,
+			"loop": false,
+			"timeline": {
+				"0.0": [
+					"/event entity @s[name=\"Burning Double Axe\"] wep:on_burning_double_axe_drop",
+					"/event entity @s[name=\"Fiery Sword\"] wep:on_fiery_sword_drop",
+					"/event entity @s[name=\"Lava Sword\"] wep:on_lava_sword_drop",
+					"/event entity @s[name=\"Magma Greatsword\"] wep:on_magma_greatsword_drop",
+					"/event entity @s[name=\"Meteorite Sword\"] wep:on_meteorite_sword_drop",
+					"/event entity @s[name=\"Air Sword\"] wep:on_air_sword_drop",
+					"/event entity @s[name=\"Windy Greataxe\"] wep:on_windy_greataxe_drop",
+					"/event entity @s[name=\"Tornado Sword\"] wep:on_tornado_sword_drop",
+					"/event entity @s[name=\"Throwing Axe\"] wep:on_throwing_axe_drop",
+					"/event entity @s[name=\"Void Sword\"] wep:on_void_sword_drop",
+					"/event entity @s[name=\"Battle Void Axe\"] wep:on_battle_void_axe_drop",
+					"/event entity @s[name=\"Short Shadow Sword\"] wep:on_short_shadow_sword_drop",
+					"/event entity @s[name=\"Dark Broadsword\"] wep:on_dark_broadsword_drop",
+					"/event entity @s[name=\"Storm Sword\"] wep:on_storm_sword_drop",
+					"/event entity @s[name=\"Water Axe\"] wep:on_water_axe_drop",
+					"/event entity @s[name=\"Water Greatsword\"] wep:on_water_greatsword_drop",
+					"/event entity @s[name=\"Geyser Axe\"] wep:on_geyser_axe_drop",
+					"/event entity @s[name=\"Boulder Axe\"] wep:on_boulder_axe_drop",
+					"/event entity @s[name=\"Rocky Greatsword\"] wep:on_rocky_greatsword_drop",
+					"/event entity @s[name=\"Ground Axe\"] wep:on_ground_axe_drop",
+					"/event entity @s[name=\"Rockfall Axe\"] wep:on_rockfall_axe_drop",
+					"/event entity @s[name=\"Snap Sword\"] wep:on_snap_sword_drop",
+					"/event entity @s[name=\"Electric Axe\"] wep:on_electric_axe_drop",
+					"/event entity @s[name=\"Lightning Sword\"] wep:on_lightning_sword_drop",
+					"/event entity @s[name=\"Bolt Sword\"] wep:on_bolt_sword_drop",
+					"/event entity @s[name=\"Poison Sword\"] wep:on_poison_sword_drop",
+					"/event entity @s[name=\"Poisonous Axe\"] wep:on_poisonous_axe_drop",
+					"/event entity @s[name=\"Poisonous Hammer Axe\"] wep:on_poisonous_hammer_axe_drop",
+					"/event entity @s[name=\"Frost Sword Drop\"] wep:on_frost_sword_drop",
+					"/event entity @s[name=\"Ice Battleaxe\"] wep:on_ice_battleaxe_drop",
+					"/event entity @s[name=\"Icicle Sword\"] wep:on_icicle_sword_drop",
+					"/event entity @s[name=\"Reverse Sword\"] wep:on_reverse_sword_drop",
+					"/event entity @s[name=\"Timelapse Axe\"] wep:on_timelapse_axe_drop",
+					"/event entity @s[name=\"Fast Sword\"] wep:on_fast_sword_drop"
+				]
+			}
+		}
+	}
+}

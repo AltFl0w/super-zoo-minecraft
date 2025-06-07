@@ -1,0 +1,31 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:poison_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" p ",
+			" i ",
+			" p "
+		],
+		"key": {
+			"p": {
+				"item": "minecraft:potion",
+				"data": 25
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:poison_ingot",
+				"count": 3
+			}
+		]
+	}
+}

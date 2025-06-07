@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.seadragon"
+      },
+      "identifier": "fauna:dragon",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "dragon",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/dragon/default"
+      },
+      "animations": {
+        "attack": "animation.seadragon.attack",
+        "swimattack": "animation.seadragon.swimattack",
+        "idle": "animation.seadragon.idle",
+        "sit": "animation.seadragon.sit",
+        "move": "controller.animation.dragon.move",
+        "walk": "animation.seadragon.walk",
+        "swim": "animation.seadragon.swim",
+        "default": "animation.seadragon.default",
+        "look_at_target": "animation.dinosaur.look_at_target"
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:m202",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"mira": "slime",
+				"laser": "outline_light"
+			},
+			"textures": {
+				"default": "textures/3d_guns/m202/m202",
+				"trs26": "textures/m202_scope.png"
+			},
+			"geometry": {
+				"default": "geometry.m202",
+				"first": "geometry.m202_first",
+				"sniper_ui": "geometry.new_sniper_ui"
+			},
+			"render_controllers": [
+				{ "controller.render.gun.first": "c.is_first_person" },
+				{ "controller.render.gun.third": "!c.is_first_person" },
+				{ "controller.render.gun.trs26": "c.is_first_person && q.is_sneaking" }
+			],
+			"scripts": {
+                "animate": [
+				  { "gun": "c.is_first_person" },
+				  { "third": "!c.is_first_person" },
+				  "accesorios",
+				  "reload.c",
+				  "shoot.c",
+				  { "sniper": "q.is_sneaking" }
+                ]
+			},
+            "animations": {
+				"shoot.c": "controller.animation.guns.shoot",
+				"shoot": "animation.m202.shoot",
+				"shotgun.shoot": "animation.assault_rifle.shotgun.shoot",
+				"reload.c": "controller.animation.guns.reload",
+				"reload": "animation.m202.reload",
+				"reload.m203": "animation.assault_rifle.m203.reload",
+				"sniper": "animation.gun.attachable.sniper",
+				"gun": "animation.m202.idle",
+				"third": "animation.m202.third"
+            }
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Quick Craft 2.0",
+		"description": "Build anything under 1 minute by using this addon Made By youtube: @dantegaming77",
+		"uuid": "943c66e8-b985-11ea-b3de-0242ac130004",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "data",
+			"uuid": "943c6b02-b985-11ea-b3de-0242ac130004",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

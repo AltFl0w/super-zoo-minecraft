@@ -1,0 +1,38 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:ak47_scope_2x",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/guns/ak47/ak47"
+         },
+         "scripts":{
+            "animate":[
+               "wielding",
+               "shooting",
+               {
+                  "first_person_sneaking_main_hand":"(c.is_first_person) && query.is_sneaking"
+               }
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.ak47.wield_first_person",
+            "wield_third_person":"animation.ak47.wield_third_person",
+            "first_person_sneaking_main_hand":"animation.ak47_scope.first_person_sneaking_main_hand",
+            "wielding":"controller.animation.gun.wielding",
+            "shooting":"controller.animation.gun.shooting",
+            "shoot":"animation.ak47.shoot"
+         },
+         "geometry":{
+            "default":"geometry.ak47_scope_2x"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:time_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" b ",
+			"oiw",
+			" r "
+		],
+		"key": {
+			"o": {
+				"item": "wep:electric_ingot"
+			},
+			"b": {
+				"item": "wep:earth_ingot"
+			},
+			"r": {
+				"item": "wep:lava_ingot"
+			},
+			"w": {
+				"item": "wep:water_ingot"
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:time_ingot",
+				"count": 3
+			}
+		]
+	}
+}

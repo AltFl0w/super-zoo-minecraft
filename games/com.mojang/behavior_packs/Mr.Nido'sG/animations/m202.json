@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.m202.shoot": {
+      "loop": true,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.rocket @a[r=25]",
+			"/scoreboard players remove @s m202 1",
+			"/event entity @s guns:rocket_launcer",
+			"/function m202"
+        ]
+      }
+    },
+    "animation.m202.reload": {
+      "loop": false,
+      "animation_length": 3.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.rpg_reload @a[r=25]"
+        ],
+        "2.95": [
+			"/scoreboard players add @s m202 4",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:m202_ammo 0 1",
+			"/function m202"
+        ]
+      }
+    }
+  }
+}

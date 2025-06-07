@@ -1,0 +1,83 @@
+{
+	"format_version": "1.18.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gunsaddon:flashlight_effect",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"time": {
+					"minecraft:timer": {
+						"looping": true,
+				"time": [0.5,0.5],
+				"time_down_event": {
+				  "event": "remove"
+				}
+			  }
+			},
+			"despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:timer": {
+				"looping": false,
+        "time": [0.4,0.5],
+        "time_down_event": {
+          "event": "remove_wait"
+        }
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+		  "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+			"minecraft:scale": {
+				"value": 0
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:movement": {
+				"value": 0
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			}
+		},
+		"events": {
+			"remove_wait": {
+			"add": {
+			  "component_groups": [
+				"despawn"
+			  ]
+			},
+	      "queue_command": {
+			  "command": [
+				"fill ~-2 ~-2 ~-2 ~2 ~2 ~2 air replace light_block_6",
+				"fill ~ ~ ~ ~ ~ ~ air replace light_block_6",
+				"event entity @s remove"
+			  ]
+			  }
+			},
+			"place_lightblock": {
+				  "queue_command": {
+				  "command": [
+					"fill ~ ~ ~ ~ ~ ~ light_block_6 replace air"
+				  ]
+			  }
+			}
+		}
+	}
+}

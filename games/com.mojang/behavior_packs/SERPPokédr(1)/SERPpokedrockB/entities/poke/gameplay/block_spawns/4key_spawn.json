@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:key_spawn",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+	  "scripts":{"animate":["spawn"]},
+"animations": {"spawn": "controller.animation.block_spawn"}},
+	"components": {
+	  "minecraft:variant": {"value":4},
+	  "minecraft:despawn": {}
+	}
+  }
+}

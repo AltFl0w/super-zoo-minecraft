@@ -1,0 +1,49 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+		"controller.animation.rotate": {
+			"states": {
+    "default": {
+"transitions": [
+{"rotate": "query.skin_id == 1"}]},
+    "rotate": {
+"transitions": [
+{"default": "query.skin_id != 1"}],
+"on_entry": ["tp @s ~~0.2~~45~","@s serp:no_rotate"]}
+			}
+		},
+    "controller.animation.block_spawn": {
+        "initial_state":"default",
+      "states": {
+        "default": {
+    "transitions": [
+    {"healer": "query.variant==1"},
+    {"slot": "query.variant==2"},
+    {"lab": "query.variant==3"},
+    {"key": "query.variant==4"},
+    {"trader": "query.variant==5"},
+    {"communicator": "query.variant==6"}
+            ]
+        },
+        "healer": {
+"on_entry":["/summon serp:healing_machine ~~~ serp:from_player"]
+        },
+        "slot": {
+"on_entry":["/summon serp:slot_machine"]
+        },
+        "lab": {
+"on_entry":["/summon serp:mini_lab"]
+        },
+        "key": {
+"on_entry":["/summon serp:key_table"]
+        },
+        "trader": {
+"on_entry":["/summon serp:trade_machine"]
+        },
+        "communicator": {
+"on_entry":["/summon serp:communicator"]
+        }
+      }
+    }
+  }
+}

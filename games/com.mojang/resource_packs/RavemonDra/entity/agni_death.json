@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ravemontod:agni_death",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/agni_dragon"
+      },
+      "geometry": {
+        "default": "geometry.agni_dragon"
+      },
+      "animations": {
+        "on_air": "animation.Flame.Sit",
+        "death_set": "animation.Flame.dead",
+        "death": "animation.flame.deadbody",
+        "death_controller": "controller.animation.agni.death"
+      },
+      "scripts": {
+        "animate": [
+          "death_controller"
+        ]
+      },
+      "sound_effects": {
+        "dragon_float": "mob.phantom.flap",
+	    "dragon_flap": "mob.enderdragon.flap"
+	  },
+      "render_controllers": [ "controller.render.skeleton" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+	    "base_color": "#316200",
+        "overlay_color": "#80FF00"
+	  }
+    }
+  }
+}

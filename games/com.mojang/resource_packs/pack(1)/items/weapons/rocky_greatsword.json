@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:rocky_greatsword"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:icon": "rocky_greatsword",
+			"minecraft:render_offsets": "tools",
+			"minecraft:display_name": {}
+		}
+	}
+}

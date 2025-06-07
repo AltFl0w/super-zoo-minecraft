@@ -1,0 +1,19 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"heiseigodzilla:heisei_godzilla": {
+				"volume": 2,
+				"pitch": [
+					0.8,
+					1.2
+				],
+				"events": {
+                    "step": "mob.heisei_godzilla.footstep",
+					"hurt": "mob.heisei_godzilla.hurt",
+					"death": "mob.heisei_godzilla.death",
+                    "roar": "mob.heisei_godzilla.roar"
+				}
+			}
+        }
+    }
+}

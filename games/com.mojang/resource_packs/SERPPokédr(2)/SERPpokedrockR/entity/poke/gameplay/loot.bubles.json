@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:loot_bubble",
+      "materials": { 
+          "default": "entity_emissive_alpha",
+          "evolve": "charged_creeper"
+          },
+      "textures": {
+        "default": "empty",
+        "evolve": "textures/entity/evolving",
+        "evolve2": "textures/entity/evolving2"
+      },
+      "geometry": {
+        "default": "geometry.empty"
+      },
+      "animations": {
+    "persistent_particle": "controller.animation.persistent_particle"
+      },
+      "particle_effects": {
+        "particle": "serp:loot_bubble"
+            },
+      "scripts": {
+        "animate": [
+		"persistent_particle"
+        ]
+      },
+      "render_controllers": [ "controller.render.pokemon", "controller.render.evolve" ],
+      "spawn_egg": {
+          "texture": "pokespawn",
+        "texture_index": 4
+      }
+    }
+  }
+}

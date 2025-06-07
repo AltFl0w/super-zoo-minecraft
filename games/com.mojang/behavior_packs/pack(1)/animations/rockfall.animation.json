@@ -1,0 +1,63 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.rockfall_axe": {
+			"animation_length": 1,
+			"loop": true,
+			"timeline": {
+				"0.5": [
+					"/event entity @s wep:on_cast_rockfall",
+					"/playsound dig.ancient_debris @a ~~~ 1 0.7"
+				]
+			}
+		},
+		"animation.rockfall": {
+			"animation_length": 0.9,
+			"loop": true,
+			"timeline": {
+				"0.0": [
+					"/summon wep:boulder_rock ^^7^",
+					"/summon wep:boulder_rock ^1^7^",
+					"/summon wep:boulder_rock ^^7^5",
+					"/playsound dig.stone @a"
+				],
+				"0.1": [
+					"/summon wep:boulder_rock ^^7^2",
+					"/summon wep:boulder_rock ^1^7^2",
+					"/summon wep:boulder_rock ^2^7^3",
+					"/playsound dig.stone @a"
+				],
+				"0.2": [
+					"/summon wep:boulder_rock ^3^7^2",
+					"/summon wep:boulder_rock ^5^7^3",
+					"/summon wep:boulder_rock ^4^7^1",
+					"/playsound dig.stone @a"
+				],
+				"0.3": [
+					"/summon wep:boulder_rock ^2^7^",
+					"/summon wep:boulder_rock ^3^7^4",
+					"/summon wep:boulder_rock ^3^7^1",
+					"/playsound dig.stone @a"
+				],
+				"0.6": [
+					"/summon wep:boulder_rock ^^7^3",
+					"/summon wep:boulder_rock ^2^7^5",
+					"/summon wep:boulder_rock ^1^7^1",
+					"/playsound dig.stone @a"
+				],
+				"0.9": [
+					"/summon wep:boulder_rock ^4^7^",
+					"/summon wep:boulder_rock ^5^7^5",
+					"/summon wep:boulder_rock ^2^7^2",
+					"/playsound dig.stone @a"
+				],
+				"0.12": [
+					"/summon wep:boulder_rock ^^7^6",
+					"/summon wep:boulder_rock ^1^7^6",
+					"/summon wep:boulder_rock ^6^7^6",
+					"/playsound dig.stone @a"
+				]
+			}
+		}
+	}
+}

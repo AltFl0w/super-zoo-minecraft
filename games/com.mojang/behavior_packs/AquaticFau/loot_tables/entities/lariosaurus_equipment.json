@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.2
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:cod",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:salmon",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

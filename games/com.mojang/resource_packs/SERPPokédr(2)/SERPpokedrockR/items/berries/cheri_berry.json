@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:chery_berry",
+      "category": "Nature"
+    },
+    "components": {
+		"minecraft:creative_category": {
+			"parent": "itemGroup.name.berries"
+		},
+      "minecraft:icon": "cheri",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

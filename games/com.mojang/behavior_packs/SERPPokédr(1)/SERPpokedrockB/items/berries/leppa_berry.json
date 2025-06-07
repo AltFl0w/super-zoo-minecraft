@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:leppa_berry",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:use_duration": 32,
+      "minecraft:hand_equipped": false,
+      "minecraft:food": {
+        "nutrition": 3,
+        "saturation_modifier": "low",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "regeneration",
+            "chance": 1.0,
+            "duration": 15,
+            "amplifier": 0
+          }
+        ]
+      }
+    }
+  }
+}

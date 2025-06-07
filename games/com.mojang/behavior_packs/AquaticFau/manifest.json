@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "https://youtube.com/channel/UC_NK4wr9C97UpPyQd2hOGjw My youtube by §aAesthetic Craft",
+    "name": "§9Aquatic Fauna",
+    "uuid": "2f0b277c-5d54-4b4f-a528-6d08e701b8fd",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "https://youtube.com/channel/UC_NK4wr9C97UpPyQd2hOGjw My youtube by §aAesthetic Craft",
+      "type": "data",
+      "uuid": "8a18dfc2-167e-452a-974f-dcc0f046da0b",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "e94dcdd5-e501-4239-9865-0f9590e7059c",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+	"format_version": "1.19.30",
+    "minecraft:block": {
+    "description": {
+    "identifier": "serp:berry_leaves_light",
+	"register_to_creative_menu": true,
+	"is_experimental": false
+        },
+    "components": {
+	"minecraft:material_instances": {
+		"*": {
+	"texture": "berry_leaves_light",
+	"render_method": "alpha_test",
+    "ambient_occlusion": false,
+    "face_dimming": true
+		}
+	},
+	"minecraft:geometry": "geometry.berry_leaves",
+    "minecraft:flammable": {
+      "catch_chance_modifier": 5,
+      "destroy_chance_modifier": 20
+    },
+    "minecraft:block_light_filter": 0,
+	"minecraft:breathability": "solid",
+    "minecraft:destructible_by_mining": {
+      "seconds_to_destroy": 0.25
+    },
+    "minecraft:loot": "loot_tables/berry/berry_leaves.json"
+    }
+  }
+}

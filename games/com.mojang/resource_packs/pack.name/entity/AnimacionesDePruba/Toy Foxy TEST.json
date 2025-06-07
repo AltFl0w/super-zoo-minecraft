@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:toy_foxy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_mangle"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_foxy"
+      },
+      "animations": {
+        "default_pose": "animation.df_toy_foxy.base",
+        "no_pose": "animation.df_toy_foxy.parpadeo",
+        "solemn_pose": "animation.df_toy_foxy.walk",
+        "athena_pose": "animation.df_toy_foxy.run",
+        "brandish_pose": "animation.df_toy_foxy.attack",
+        "honor_pose": "animation.df_toy_foxy.pose1",
+        "entertain_pose": "animation.df_toy_foxy.pose2",
+        "salute_pose": "animation.df_toy_foxy.pose3",
+        "riposte_pose": "animation.df_toy_foxy.pose4",
+        "zombie_pose": "animation.df_toy_foxy.pose5",
+        "cancan_a_pose": "animation.df_toy_foxy.pose6",
+        "cancan_b_pose": "animation.df_toy_foxy.cola",
+        "hero_pose": "animation.df_toy_foxy.muerte",
+        "wiggle": "animation.df_toy_foxy.attack"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_toy_foxy",
+		"texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:apricorn_cyan",
+	    "menu_category":{"group":"itemGroup.name.crop","category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:apricorn_cyan.name"},
+	  "minecraft:icon":"cyan_apricorn"
+    }
+  }
+}

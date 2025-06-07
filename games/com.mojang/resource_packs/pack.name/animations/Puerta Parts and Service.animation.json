@@ -1,0 +1,71 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.df_puerta_parts_service_fnaf2.open": {
+			"animation_length": 50,
+			"bones": {
+				"Puerta2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 7.5, 0],
+						"0.72": [0, 65, 0],
+						"1.0": [0, 90, 0],
+						"1.08": [0, 92.5, 0],
+						"1.12": [0, 87.5, 0],
+						"1.24": [0, 92.5, 0],
+						"1.32": [0, 87.5, 0],
+						"1.4": [0, 92.5, 0],
+						"2.16": [0, 82.5, 0],
+						"4.44": [0, 77.5, 0]
+					}
+				}
+			}
+		},
+		"animation.df_puerta_parts_service_fnaf2.close": {
+			"animation_length": 50,
+			"bones": {
+				"Puerta2": {
+					"rotation": {
+						"0.0": [0, 77.5, 0],
+						"0.88": [0, -25.44, 0],
+						"1.0": [0, -22.05, 0],
+						"1.12": [0, -23.75, 0],
+						"4.4": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.door.north": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [0, "-query.body_y_rotation - this", 0]
+				}
+			}
+		},
+		"animation.door.east": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [0, "-query.body_y_rotation - this + 90", 0]
+				}
+			}
+		},
+		"animation.door.south": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [0, "-query.body_y_rotation - this + 180", 0]
+				}
+			}
+		},
+		"animation.door.west": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"rotation": [0, "-query.body_y_rotation - this - 90", 0]
+				}
+			}
+		}
+	}
+}

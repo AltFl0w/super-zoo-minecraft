@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+   "controller.animation.df_shadow_bonnie2.base": {
+      "states": {
+        "default": {
+          "animations": [
+            "df_shadow_bonnie2_general",
+            "df_shadow_bonnie2_glicht",
+            "look_at_target"
+          ]
+        }
+      }
+    },
+    "controller.animation.df_shadow_bonnie2.movimiento": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "df_caminando_df_shadow_bonnie2": "query.modified_move_speed *5"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

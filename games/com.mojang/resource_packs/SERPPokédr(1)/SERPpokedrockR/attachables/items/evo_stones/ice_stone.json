@@ -1,0 +1,14 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:attachable":{
+    "description":{
+      "identifier":"serp:ice_stone",
+      "materials":{"default":"entity_alphatest"},
+      "textures":{"default":"pokeitems/items/poke/ice_stone"},
+      "geometry":{"default":"geometry.serpitem"},
+      "animations":{"fm":"animation.serpitem.fm","tm":"animation.serpitem.tm"},
+      "scripts":{"animate":[{"fm":"c.is_first_person"},{"tm":"!c.is_first_person"}]},
+      "render_controllers":["controller.render.default"]
+    }
+  }
+}

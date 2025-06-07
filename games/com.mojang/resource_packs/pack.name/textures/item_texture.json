@@ -1,0 +1,302 @@
+{
+  "resource_pack_name": "DanyFox[Resource]",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "spawn_egg": {
+      "textures": [
+      ]
+    },
+    "df_toy_freddy": {
+      "textures": "textures/items/df_toy_freddy"
+    },
+    "df_toy_bonnie": {
+      "textures": "textures/items/df_toy_bonnie"
+    },
+    "df_toy_chica": {
+      "textures": "textures/items/df_toy_chica"
+    },
+    "df_toy_chica_sin_pico": {
+      "textures": "textures/items/df_toy_chica_sin_pico"
+    },
+    "df_toy_foxy": {
+      "textures": "textures/items/df_toy_foxy"
+    },
+    "df_bb": {
+      "textures": "textures/items/df_bb"
+    },
+    "df_jj": {
+      "textures": "textures/items/df_jj"
+    },
+    "df_mangle": {
+      "textures": "textures/items/df_mangle"
+    },
+    "df_puppet": {
+    "textures": "textures/items/df_puppet"
+    },
+    "df_withered_freddy": {
+      "textures": "textures/items/df_withered_freddy"
+    },
+    "df_shadow_freddy2": {
+      "textures": "textures/items/df_shadow_freddy2"
+    },
+    "df_shadow_bonnie": {
+      "textures": "textures/items/df_shadow_bonnie"
+    },
+    "df_withered_golden_freddy": {
+      "textures": "textures/items/df_withered_golden_freddy"
+    },
+    "df_withered_bonnie": {
+      "textures": "textures/items/df_withered_bonnie"
+    },
+    "df_withered_bonnie_con_cara": {
+      "textures": "textures/items/df_withered_bonnie_con_cara"
+    },
+    "df_withered_chica": {
+      "textures": "textures/items/df_withered_chica"
+    },
+    "df_withered_foxy": {
+      "textures": "textures/items/df_withered_foxy"
+    },
+    "df_endo02": {
+      "textures": "textures/items/df_endo02"
+    },
+    "df_toy_bonnie_showtime": {
+      "textures": "textures/items/df_toy_bonnie_showtime"
+    },
+    "df_toy_freddy_showtime": {
+      "textures": "textures/items/df_toy_freddy_showtime"
+    },
+    "df_toy_chica_showtime": {
+      "textures": "textures/items/df_toy_chica_showtime"
+    },
+    "df_toy_foxy_showtime": {
+      "textures": "textures/items/df_toy_foxy_showtime"
+    },
+    "df_peluche_toy_freddy": {
+      "textures": "textures/items/df_peluche_toy_freddy"
+    },
+    "df_peluche_toy_bonnie": {
+      "textures": "textures/items/df_peluche_toy_bonnie"
+    },
+    "df_peluche_toy_chica": {
+      "textures": "textures/items/df_peluche_toy_chica"
+    },
+    "df_peluche_toy_foxy": {
+      "textures": "textures/items/df_peluche_toy_foxy"
+    },
+    "df_cupcake2": {
+      "textures": "textures/items/df_cupcake2"
+    },
+
+    
+    "df_peluche_foxdee": {
+      "textures": "textures/items/df_peluche_foxdee"
+    },
+    "df_foco_colgante": {
+      "textures": "textures/items/df_foco_colgante"
+    },
+    "df_foco_colgante2": {
+      "textures": "textures/items/df_foco_colgante2"
+    },
+    "df_foco_colgante3": {
+      "textures": "textures/items/df_foco_colgante3"
+    },
+    "df_escritorio_fnaf2": {
+      "textures": "textures/items/df_escritorio_fnaf2"
+    },
+    "df_ventilador_fnaf2": {
+      "textures": "textures/items/df_ventilador_fnaf2"
+    },
+    "df_panel_de_luz": {
+      "textures": "textures/items/df_panel_de_luz"
+    },
+    "df_tvs1": {
+      "textures": "textures/items/df_tvs1"
+    },
+    "df_tvs2": {
+      "textures": "textures/items/df_tvs2"
+    },
+    "df_cables_colgantes1_fnaf2": {
+      "textures": "textures/items/df_cables_colgantes1_fnaf2"
+    },
+    "df_cables_colgantes2_fnaf2": {
+      "textures": "textures/items/df_cables_colgantes2_fnaf2"
+    },
+    "df_cables_colgantes3_fnaf2": {
+      "textures": "textures/items/df_cables_colgantes3_fnaf2"
+    },
+    "df_mesa_blanca_fnaf2": {
+      "textures": "textures/items/df_mesa_blanca_fnaf2"
+    },
+    "df_mesa_blanca2_fnaf2": {
+      "textures": "textures/items/df_mesa_blanca2_fnaf2"
+    },
+    "df_mascara_fnaf2": {
+      "textures": "textures/items/df_mascara_fnaf2"
+    },
+    "df_caja_de_objetos": {
+      "textures": "textures/items/df_caja_de_objetos"
+    },
+    "df_estanteria_fnaf2": {
+      "textures": "textures/items/df_estanteria_fnaf2"
+    },
+    "df_mesa_metalica": {
+      "textures": "textures/items/df_mesa_metalica"
+    },
+    "df_arcade_toy_bonnie": {
+      "textures": "textures/items/df_arcade_toy_bonnie"
+    },
+    "df_arcade_toy_chica": {
+      "textures": "textures/items/df_arcade_toy_chica"
+    },
+    "df_arcade_toy_foxy": {
+      "textures": "textures/items/df_arcade_toy_foxy"
+    },
+    "df_arcade_toy_freddy": {
+      "textures": "textures/items/df_arcade_toy_freddy"
+    },
+    "df_bocina": {
+      "textures": "textures/items/df_bocina"
+    },
+    "df_caja_de_puppet": {
+      "textures": "textures/items/df_caja_de_puppet"
+    },
+    "df_cartel_happy_birthday": {
+      "textures": "textures/items/df_happy_birthday"
+    },
+    "df_cartel_lets_party": {
+      "textures": "textures/items/df_lets_party"
+    },
+    "df_estrellas1": {
+      "textures": "textures/items/df_estrellas1"
+    },
+    "df_estrellas2": {
+      "textures": "textures/items/df_estrellas2"
+    },
+    "df_mesa_roja_fnaf2": {
+      "textures": "textures/items/df_mesa_roja_fnaf2"
+    },
+    "df_recorte_toy_foxy": {
+      "textures": "textures/items/df_recorte_toy_foxy"
+    },
+    "df_carrusel": {
+      "textures": "textures/items/df_carrusel"
+    },
+    "peluchefreddy": {
+      "textures": "textures/items/peluchefreddy"
+    },
+    "peluchebonnie": {
+      "textures": "textures/items/peluchebonnie"
+    },
+    "peluchechica": {
+      "textures": "textures/items/peluchechica"
+    },
+    "peluchefoxy": {
+      "textures": "textures/items/peluchefoxy"
+    },
+    "peluchefredbear": {
+      "textures": "textures/items/peluchefredbear"
+    },
+    "df_regalo_amarillo": {
+      "textures": "textures/items/df_regalo_amarillo"
+    },
+    "df_regalo_azul": {
+      "textures": "textures/items/df_regalo_azul"
+    },
+    "df_regalo_morado": {
+      "textures": "textures/items/df_regalo_morado"
+    },
+    "df_regalo_rojo": {
+      "textures": "textures/items/df_regalo_rojo"
+    },
+    "df_regalo_rosado": {
+      "textures": "textures/items/df_regalo_rosado"
+    },
+    "df_regalo_verde": {
+      "textures": "textures/items/df_regalo_verde"
+    },
+    "df_rebanada_de_pizza": {
+      "textures": "textures/items/df_rebanada_de_pizza"
+    },
+    "df_inodoro": {
+      "textures": "textures/items/df_inodoro"
+    },
+    "df_pizza_colgante": {
+      "textures": "textures/items/df_pizza_colgante"
+    },
+    "df_pizza_colgante2": {
+      "textures": "textures/items/df_pizza_colgante2"
+    },
+    "df_pizza_colgante1_1": {
+      "textures": "textures/items/df_pizza_colgante1_1"
+    },
+    "df_pizza_colgante1_2": {
+      "textures": "textures/items/df_pizza_colgante1_2"
+    },
+    "df_pizza_colgante2_1": {
+      "textures": "textures/items/df_pizza_colgante2_1"
+    },
+    "df_pizza_colgante2_2": {
+      "textures": "textures/items/df_pizza_colgante2_2"
+    },
+    "df_globo1": {
+      "textures": "textures/items/df_globo1"
+    },
+    "df_globo2": {
+      "textures": "textures/items/df_globo2"
+    },
+    "df_paperpal1": {
+      "textures": "textures/items/df_paperpal1"
+    },
+    "df_paperpal2": {
+      "textures": "textures/items/df_paperpal2"
+    },
+    "df_paperpal3": {
+      "textures": "textures/items/df_paperpal3"
+    },
+    "df_caja_de_pizza": {
+      "textures": "textures/items/df_caja_de_pizza"
+    },
+    "df_aviso_piso_mojado": {
+      "textures": "textures/items/df_aviso_piso_mojado"
+    },
+    "df_cable_colgante_horizontal": {
+      "textures": "textures/items/df_cable_colgante_horizontal"
+    },
+    "df_adorno_colgante1": {
+      "textures": "textures/items/df_adorno_colgante1"
+    },
+    "df_hombres_de_papel": {
+      "textures": "textures/items/df_hombres_de_papel"
+    },
+    "df_puerta_parts_and_service_fnaf2": {
+      "textures": "textures/items/df_puerta_parts_and_service_fnaf2"
+    },
+    "df_adorno_colgante2": {
+      "textures": "textures/items/df_adorno_colgante2"
+    },
+    "df_silla_escritorio": {
+      "textures": "textures/items/df_silla_escritorio"
+    },
+
+
+    "df_foxdee_stand": {
+      "textures": "textures/items/df_foxdee_stand"
+    }, 
+    "df_minifigura_foxdee": {
+      "textures": "textures/items/df_minifigura_foxdee"
+    }, 
+    "df_foxdee_pop": {
+      "textures": "textures/items/df_foxdee_fox"
+    }, 
+    "df_peluche_de_foxdee": {
+      "textures": "textures/items/df_peluche_de_foxdee"
+    },
+    "df_peluche_de_foxdee_fanatico": {
+      "textures": "textures/items/df_peluche_de_foxdee_camisa"
+    },
+    "df_foxdee": {
+      "textures": "textures/items/df_foxdee"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.ice_battleaxe": {
+			"geometry": "Geometry.ice_battleaxe",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.ice_battleaxe"
+			]
+		}
+	}
+}

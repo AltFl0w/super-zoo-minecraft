@@ -1,0 +1,40 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "Cursed Brainrot Addon  by ZinHali",
+    "name": "Cursed Brainrot Addon",
+    "uuid": "286f891f-4ea7-4f44-aaac-b1e85fe2abad",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "Cursed Brainrot Addon  by ZinHali",
+      "type": "resources",
+      "uuid": "8b3dc635-6268-4a13-9068-503574c9438d",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "24a2bb76-bc50-493b-aa79-909586c28bc2",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

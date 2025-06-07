@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.water_ball.general": {
+			"loop": true,
+			"particle_effects": {
+				"0.0": {
+					"effect": "water_splash",
+					"locator": "locator"
+				}
+			}
+		}
+	}
+}

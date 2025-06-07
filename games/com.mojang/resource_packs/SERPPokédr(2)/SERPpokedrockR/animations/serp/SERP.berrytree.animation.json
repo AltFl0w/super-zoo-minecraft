@@ -1,0 +1,106 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.berrytree.phase1": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"berry_tree": {
+					"position": [0, -4, 0],
+					"scale": 0.3
+				}
+			}
+		},
+		"animation.berrytree.phase2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.24,
+			"bones": {
+				"berry_tree": {
+					"scale": {
+						"0.0": [0.5, 0.5, 0.5],
+						"0.08": [0.5, 0.6, 0.5],
+						"0.24": [0.5, 0.5, 0.5]
+					}
+				}
+			}
+		},
+		"animation.berrytree.phase3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.24,
+			"bones": {
+				"berry_tree": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.08": [1, 1.1, 1],
+						"0.24": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.berrytree.fruit": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.24,
+			"bones": {
+				"tree": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.08": [1.1, 1, 1.1],
+						"0.24": [1, 1, 1]
+					}
+				},
+				"fruit": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.08": [0, -1, 0],
+						"0.24": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+            "0":{
+					"effect": "pop"
+                }
+			}
+		},
+		"animation.berrytree.hurt": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.4,
+			"bones": {
+				"berry_tree": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.04": [0, 0, -5],
+						"0.16": [0, 0, 0],
+						"0.24": [0, 0, -2.5],
+						"0.4": [0, 0, 0]
+					}
+				},
+				"tree": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.16": [0, 0, -5],
+						"0.24": [0, 0, 5],
+						"0.4": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.04": [1.1, 1, 1.1],
+						"0.16": [1, 1, 1],
+						"0.24": [1.1, 1, 1.1],
+						"0.4": [1, 1, 1]
+					}
+				}
+			},
+			"sound_effects": {
+            "0":{
+					"effect": "shake"
+                },
+            "0.16":{
+					"effect": "shake"
+                },
+            "0.24":{
+					"effect": "shake"
+                }
+			}
+		}
+	}
+}

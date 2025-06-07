@@ -1,0 +1,25 @@
+{
+  "format_version":"1.13.0",
+  "minecraft:weighted_random_feature":{
+    "description":{
+      "identifier":"serp:select_berry_feature"
+    },
+    "features":[
+      ["serp:aspear_berry_feature",15],
+      ["serp:cheri_berry_feature",10],
+      ["serp:chesto_berry_feature",10],
+      ["serp:enigma_berry_feature",1],
+      ["serp:lum_berry_feature",10],
+      ["serp:nanab_berry_feature",10],
+      ["serp:oran_berry_feature",20],
+      ["serp:pamtre_berry_feature",10],
+      ["serp:pecha_berry_feature",10],
+      ["serp:persim_berry_feature",10],
+      ["serp:pinap_berry_feature",10],
+      ["serp:rawst_berry_feature",10],
+      ["serp:razz_berry_feature",10],
+      ["serp:rindo_berry_feature",10],
+      ["serp:sitrus_berry_feature",15]
+    ]
+  }
+}

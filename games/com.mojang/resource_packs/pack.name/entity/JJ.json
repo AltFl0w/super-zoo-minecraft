@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:jj",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_jj"
+      },
+      "geometry": {
+        "default": "geometry.df_jj"
+      },
+      "animations": {
+        "df_JJ_general": "animation.df_jj.base",
+        "df_balloon_boy_sombrero": "animation.df_balloon_boy.sombrero",
+        "df_caminando_JJ": "animation.df_jj.walk",
+        "df_corriendo_JJ": "animation.df_jj.run",
+        "df_ataque_balloon_boy": "animation.df_balloon_boy.attack",
+        "df_parpadeo_balloon_boy": "animation.df_balloon_boy.parpadeo",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_jj.move",
+        "general": "controller.animation.df_jj.general",
+        "ataque": "controller.animation.df_jj.ataque"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general", "ataque"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_jj",
+        "texture_index": 0
+      }
+    }
+  }
+}

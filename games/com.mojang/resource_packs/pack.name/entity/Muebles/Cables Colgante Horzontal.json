@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:cable_colgante_horizontal",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_cable_colgante_horizontal"
+      },
+      "geometry": {
+        "default": "geometry.df_cable_colgante_horizontal"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_cable_colgante_horizontal",
+        "texture_index": 0
+      }
+    }
+  }
+}

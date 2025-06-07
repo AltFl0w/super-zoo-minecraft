@@ -1,0 +1,209 @@
+{
+  "format_version": "1.20.41",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "gunsaddon:target_shooting",
+      "is_spawnable": true,
+
+      "is_summonable": true,
+
+      "is_experimental": false,
+	  "scripts": {
+	  "animate": [
+		"rotation",
+		"water.c"
+	  ]
+	  },
+      "animations": {
+		"water.c": "controller.animation.target_shooting.water",
+		"rotation": "controller.animation.block.rotation"
+	  }
+    },
+    "component_groups": {
+		"gunsaddon:shot": {
+			"minecraft:mark_variant": {
+			  "value": 1
+			},
+		  "minecraft:collision_box": {
+			"width": 1,
+			"height": 0.25
+		  },
+			"minecraft:timer": {
+				  "looping": true,
+				  "time": 12.0,
+				  "time_down_event": {
+					"event": "gunsaddon:default"
+				}
+			},
+			"minecraft:damage_sensor": {
+			  "triggers": {
+				"cause": "all",
+				"deals_damage": false
+			  }
+			}
+		},
+		"gunsaddon:default": {
+			"minecraft:mark_variant": {
+			  "value": 0
+			},
+		  "minecraft:collision_box": {
+			"width": 1,
+			"height": 1.5
+		  },
+			"minecraft:addrider": {
+			  "entity_type": "gunsaddon:target_shooting_collision"
+			},
+			"minecraft:rideable": {
+			  "seat_count": 1,
+			  "family_types": [
+				"target_shooting_collision"
+			  ],
+			  "seats": {
+				"position": [ 0.0, 0.0, 0.0 ]
+			  }
+			},
+			"minecraft:damage_sensor": {
+			  "triggers": {
+				"on_damage": {
+				  "event": "gunsaddon:shot",
+				  "target": "self"
+				},
+				"deals_damage": false
+			  }
+			}
+		},
+		"gunsaddon:death": {
+				"minecraft:spawn_entity": {
+					"entities": {
+						"min_wait_time": 0,
+						"max_wait_time": 0,
+						"single_use": true,
+						"num_to_spawn": 1,
+						"spawn_item": "gunsaddon:target_shooting_spawn_egg"
+					}
+				},
+			"minecraft:timer": {
+				  "looping": true,
+				  "time": 0.01,
+				  "time_down_event": {
+					"event": "gunsaddon:death_on"
+				}
+			}
+		},
+		"gunsaddon:death_on": {
+			"minecraft:instant_despawn": {
+				"remove_child_entities": true
+			}
+		}
+	},
+    "components": {
+		"minecraft:on_death": {
+			"event": "gunsaddon:death",
+			"target": "self"
+		},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"play_sounds": "armor.equip_generic",
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{ "test": "is_sneaking", "subject": "other"}
+								]
+							},
+							"event": "gunsaddon:death"
+						}
+					}
+				]
+			},
+      "minecraft:type_family": {
+        "family": [ "target_shooting" ]
+      },
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+		"minecraft:fire_immune": {},
+		"minecraft:persistent": {},
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:fall_damage": {
+      "value": 0.0
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      }
+    },
+
+		"events": {
+		  "minecraft:entity_spawned": {
+			"add": {
+			  "component_groups": [
+				"gunsaddon:default"
+			  ]
+			}
+		  },
+		  "gunsaddon:shot": {
+			"queue_command": {
+			  "command": [
+				"event entity @e[r=1.5, c=1, type=gunsaddon:target_shooting_collision] death"
+			  ]
+			},
+			"add": {
+			  "component_groups": [
+				"gunsaddon:shot"
+			  ]
+			},
+			"remove": {
+			  "component_groups": [
+				"gunsaddon:default"
+			  ]
+			}
+		  },
+		  "gunsaddon:default": {
+			"remove": {
+			  "component_groups": [
+				"gunsaddon:shot"
+			  ]
+			},
+			"add": {
+			  "component_groups": [
+				"gunsaddon:default"
+			  ]
+			}
+		  },
+		  "gunsaddon:death_on": {
+			"add": {
+			  "component_groups": [
+				"gunsaddon:death_on"
+			  ]
+			}
+		  },
+		  "gunsaddon:death": {
+			"add": {
+			  "component_groups": [
+				"gunsaddon:death"
+			  ]
+			}
+		  }
+		}
+	}
+  }

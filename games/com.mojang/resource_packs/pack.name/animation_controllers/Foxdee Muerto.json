@@ -1,0 +1,12 @@
+{
+  "format_version": "1.8.0",
+  "animation_controllers": {
+    "controller.animation.foxdee_m.general": {
+      "states": {
+        "attack": {
+          "animations": [ { "foxdee_m_general": [] } ]
+        }
+      }
+    }
+  }
+}

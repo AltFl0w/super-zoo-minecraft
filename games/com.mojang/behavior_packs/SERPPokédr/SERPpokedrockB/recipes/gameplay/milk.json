@@ -1,0 +1,17 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "serp:milk"
+    },
+    "tags": [ "crafting_table" ],
+    "group": "revive",
+    "ingredients": [
+{"item": "serp:moomoo_milk","count": 3},
+{"item": "minecraft:bucket","count": 1}
+      ],
+    "result": {
+      "item": "minecraft:milk_bucket"
+    }
+  }
+}

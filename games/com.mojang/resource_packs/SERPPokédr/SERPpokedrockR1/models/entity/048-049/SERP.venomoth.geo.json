@@ -1,0 +1,89 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serpvenomoth",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "venomoth",
+					"pivot": [0, 1, 0]
+				},
+				{
+					"name": "head",
+					"parent": "venomoth",
+					"pivot": [0, 9, -8],
+					"cubes": [
+						{"origin": [-2, 5, -10], "size": [4, 7, 2], "uv": [0, 0]},
+						{"origin": [-4, 7, -12], "size": [3, 3, 3], "uv": [17, 24]},
+						{"origin": [1, 7, -12], "size": [3, 3, 3], "uv": [0, 24]},
+						{"origin": [-0.8, 11.2, -11.7318], "size": [1.6, 9.6, 1.6], "pivot": [0, 11.48236, -11.93185], "rotation": [-15, 0, 0], "uv": [11, 29]},
+						{"origin": [-2.29881, 11, -11.4], "size": [1.6, 6.6, 1.6], "pivot": [-1.49881, 11.85963, -12.29696], "rotation": [-15, 0, -25], "uv": [0, 30]},
+						{"origin": [0.69881, 11, -11.4], "size": [1.6, 6.6, 1.6], "pivot": [1.49881, 11.85963, -12.29696], "rotation": [-15, 0, 25], "uv": [28, 29]},
+						{"origin": [-3, 4.5, -10], "size": [6, 2, 0], "uv": [0, 11]},
+						{"origin": [-2, 5.21954, -11.99536], "size": [4, 6.6, 2], "pivot": [0, 12.21954, -9.99536], "rotation": [12.5, 0, 0], "uv": [17, 0]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "venomoth",
+					"pivot": [0, 5, -4],
+					"cubes": [
+						{"origin": [-4, 4, -8], "size": [8, 7, 8], "uv": [0, 48]}
+					]
+				},
+				{
+					"name": "right_wing",
+					"parent": "body",
+					"pivot": [-2, 12, -3],
+					"cubes": [
+						{"origin": [-22, 11, -19], "size": [20, 0, 32], "pivot": [-2, 10, -1], "rotation": [0, 0, 25], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "left_wing",
+					"parent": "body",
+					"pivot": [2, 12, -3],
+					"cubes": [
+						{"origin": [2, 11, -19], "size": [20, 0, 32], "pivot": [2, 10, -1], "rotation": [0, 0, -25], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "body2",
+					"parent": "body",
+					"pivot": [0, 7, 0],
+					"cubes": [
+						{"origin": [-5, 3, 0], "size": [10, 9, 16], "uv": [56, 48]},
+						{"origin": [-4.5, 3.5, 15.5], "size": [9, 8, 1], "uv": [33, 64]},
+						{"origin": [-4.5, 11.5, 0.5], "size": [9, 1, 15], "uv": [72, 0]},
+						{"origin": [4.5, 3.5, 0.5], "size": [1, 8, 15], "uv": [0, 24]},
+						{"origin": [-5.5, 3.5, 0.5], "size": [1, 8, 15], "uv": [0, 0]},
+						{"origin": [-4.5, 2.5, 0.5], "size": [9, 1, 15], "uv": [0, 64]}
+					]
+				},
+				{
+					"name": "right_leg",
+					"parent": "venomoth",
+					"pivot": [-4, 4, -4],
+					"cubes": [
+						{"origin": [-4.2, 0, -8], "size": [0, 4, 8], "uv": [49, 66]}
+					]
+				},
+				{
+					"name": "left_leg",
+					"parent": "venomoth",
+					"pivot": [4, 4, -4],
+					"cubes": [
+						{"origin": [4.2, 0, -8], "size": [0, 4, 8], "uv": [33, 66]}
+					]
+				}
+			]
+		}
+	]
+}

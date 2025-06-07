@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:mini_lab",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "glass": "charged_creeper"
+          },
+      "textures": {
+    "normal": "textures/entity/lab/default",
+    "failed": "textures/entity/lab/failed",
+    "glass": "textures/entity/lab/glass",
+    "glass_failed": "textures/entity/lab/glass_failed"
+      },
+      "geometry": {
+        "default": "geometry.serplab",
+        "glass": "geometry.serpfossil_glass"
+      },
+      "animations": {
+          "spawn": "animation.lab.spawn",
+          "shake": "animation.lab.shake",
+          "fail": "animation.lab.fail",
+          "item": "animation.lab.item"
+    },
+      "scripts": {
+        "animate": [ 
+            "item",
+            "spawn",
+          {"shake": "query.variant == 1"},
+          {"fail": "query.variant == 3"}
+        ]
+      },
+      "sound_effects": {
+        "shake": "serp.lab.working",
+        "fail": "mob.pc.boot_off",
+        "restore": "mob.pc.boot_on"
+      },
+      "render_controllers": ["controller.render.lab", "controller.render.lab_glass"]
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+    "entity_sounds":{
+        "entities":{
+            "nw:pikachu":{
+                "events":{
+                    "ambient" : "pikachu.noise",
+                    "death" : "pikachu.damage",
+                    "hurt" : "pikachu.damage"
+                },
+                "pitch" : 1,
+                "volume" : 1
+            },
+            "nw:eevee":{
+                "events":{
+                    "ambient" : "eevee.noise",
+                    "death" : "eevee.damage",
+                    "hurt" : "eevee.damage"
+                },
+                "pitch" : 1,
+                "volume" : 1
+            },
+            "nw:bulbasaur":{
+                "events":{
+                    "ambient" : "bulbasaur.noise",
+                    "death" : "bulbasaur.damage",
+                    "hurt" : "bulbasaur.damage"
+                },
+                "pitch" : 1,
+                "volume" : 1
+            },
+            "nw:squirtle":{
+                "events":{
+                    "ambient" : "squirtle.noise",
+                    "death" : "squirtle.damage",
+                    "hurt" : "squirtle.damage"
+                },
+                "pitch" : 1,
+                "volume" : 1
+            },
+            "nw:piplup":{
+                "events":{
+                    "ambient" : "piplup.noise",
+                    "death" : "piplup.damage",
+                    "hurt" : "piplup.damage"
+                },
+                "pitch" : 1,
+                "volume" : 1
+            }
+        }
+    }
+}

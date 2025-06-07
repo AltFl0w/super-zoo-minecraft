@@ -1,0 +1,494 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:item_drop",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"wep:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"wep:default": {
+				"minecraft:mark_variant": {
+					"value": 0
+				}
+			},
+			"wep:burning_double_axe": {
+				"minecraft:mark_variant": {
+					"value": 1
+				}
+			},
+			"wep:fiery_sword": {
+				"minecraft:mark_variant": {
+					"value": 2
+				}
+			},
+			"wep:lava_sword": {
+				"minecraft:mark_variant": {
+					"value": 3
+				}
+			},
+			"wep:magma_greatsword": {
+				"minecraft:mark_variant": {
+					"value": 4
+				}
+			},
+			"wep:meteorite_sword": {
+				"minecraft:mark_variant": {
+					"value": 5
+				}
+			},
+			"wep:air_sword": {
+				"minecraft:mark_variant": {
+					"value": 6
+				}
+			},
+			"wep:windy_double_sword": {
+				"minecraft:mark_variant": {
+					"value": 7
+				}
+			},
+			"wep:windy_greataxe": {
+				"minecraft:mark_variant": {
+					"value": 8
+				}
+			},
+			"wep:tornado_sword": {
+				"minecraft:mark_variant": {
+					"value": 9
+				}
+			},
+			"wep:throwing_axe": {
+				"minecraft:mark_variant": {
+					"value": 10
+				}
+			},
+			"wep:void_sword": {
+				"minecraft:mark_variant": {
+					"value": 11
+				}
+			},
+			"wep:battle_void_axe": {
+				"minecraft:mark_variant": {
+					"value": 12
+				}
+			},
+			"wep:short_shadow_sword": {
+				"minecraft:mark_variant": {
+					"value": 13
+				}
+			},
+			"wep:dark_broadsword": {
+				"minecraft:mark_variant": {
+					"value": 14
+				}
+			},
+			"wep:storm_sword": {
+				"minecraft:mark_variant": {
+					"value": 15
+				}
+			},
+			"wep:water_axe": {
+				"minecraft:mark_variant": {
+					"value": 16
+				}
+			},
+			"wep:water_greatsword": {
+				"minecraft:mark_variant": {
+					"value": 17
+				}
+			},
+			"wep:geyser_axe": {
+				"minecraft:mark_variant": {
+					"value": 18
+				}
+			},
+			"wep:boulder_axe": {
+				"minecraft:mark_variant": {
+					"value": 19
+				}
+			},
+			"wep:rocky_greatsword": {
+				"minecraft:mark_variant": {
+					"value": 20
+				}
+			},
+			"wep:ground_axe": {
+				"minecraft:mark_variant": {
+					"value": 21
+				}
+			},
+			"wep:rockfall_axe": {
+				"minecraft:mark_variant": {
+					"value": 22
+				}
+			},
+			"wep:snap_sword": {
+				"minecraft:mark_variant": {
+					"value": 23
+				}
+			},
+			"wep:electric_axe": {
+				"minecraft:mark_variant": {
+					"value": 24
+				}
+			},
+			"wep:lightning_sword": {
+				"minecraft:mark_variant": {
+					"value": 25
+				}
+			},
+			"wep:bolt_sword": {
+				"minecraft:mark_variant": {
+					"value": 26
+				}
+			},
+			"wep:poison_sword": {
+				"minecraft:mark_variant": {
+					"value": 27
+				}
+			},
+			"wep:poisonous_axe": {
+				"minecraft:mark_variant": {
+					"value": 28
+				}
+			},
+			"wep:poisonous_hammer_axe": {
+				"minecraft:mark_variant": {
+					"value": 29
+				}
+			},
+			"wep:frost_sword": {
+				"minecraft:mark_variant": {
+					"value": 30
+				}
+			},
+			"wep:ice_battleaxe": {
+				"minecraft:mark_variant": {
+					"value": 31
+				}
+			},
+			"wep:icicle_sword": {
+				"minecraft:mark_variant": {
+					"value": 32
+				}
+			},
+			"wep:reverse_sword": {
+				"minecraft:mark_variant": {
+					"value": 33
+				}
+			},
+			"wep:timelapse_axe": {
+				"minecraft:mark_variant": {
+					"value": 34
+				}
+			},
+			"wep:fast_sword": {
+				"minecraft:mark_variant": {
+					"value": 35
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"item_drop"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:environment_sensor": {
+				"triggers": [
+					{
+						"filters": [
+							{
+								"all_of": [
+									{
+										"test": "is_riding",
+										"subject": "self",
+										"value": false
+									}
+								]
+							}
+						],
+						"event": "wep:on_despawn",
+						"target": "self"
+					}
+				]
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"wep:on_despawn": {
+				"add": {
+					"component_groups": [
+						"wep:despawn"
+					]
+				}
+			},
+			"wep:on_default": {
+				"add": {
+					"component_groups": [
+						"wep:default"
+					]
+				}
+			},
+			"wep:on_burning_double_axe": {
+				"add": {
+					"component_groups": [
+						"wep:burning_double_axe"
+					]
+				}
+			},
+			"wep:on_fiery_sword": {
+				"add": {
+					"component_groups": [
+						"wep:fiery_sword"
+					]
+				}
+			},
+			"wep:on_lava_sword": {
+				"add": {
+					"component_groups": [
+						"wep:lava_sword"
+					]
+				}
+			},
+			"wep:on_magma_greatsword": {
+				"add": {
+					"component_groups": [
+						"wep:magma_greatsword"
+					]
+				}
+			},
+			"wep:on_meteorite_sword": {
+				"add": {
+					"component_groups": [
+						"wep:meteorite_sword"
+					]
+				}
+			},
+			"wep:on_air_sword": {
+				"add": {
+					"component_groups": [
+						"wep:air_sword"
+					]
+				}
+			},
+			"wep:on_windy_double_sword": {
+				"add": {
+					"component_groups": [
+						"wep:windy_double_sword"
+					]
+				}
+			},
+			"wep:on_windy_greataxe": {
+				"add": {
+					"component_groups": [
+						"wep:windy_greataxe"
+					]
+				}
+			},
+			"wep:on_tornado_sword": {
+				"add": {
+					"component_groups": [
+						"wep:tornado_sword"
+					]
+				}
+			},
+			"wep:on_throwing_axe": {
+				"add": {
+					"component_groups": [
+						"wep:throwing_axe"
+					]
+				}
+			},
+			"wep:on_void_sword": {
+				"add": {
+					"component_groups": [
+						"wep:void_sword"
+					]
+				}
+			},
+			"wep:on_battle_void_axe": {
+				"add": {
+					"component_groups": [
+						"wep:battle_void_axe"
+					]
+				}
+			},
+			"wep:on_short_shadow_sword": {
+				"add": {
+					"component_groups": [
+						"wep:short_shadow_sword"
+					]
+				}
+			},
+			"wep:on_dark_broadsword": {
+				"add": {
+					"component_groups": [
+						"wep:dark_broadsword"
+					]
+				}
+			},
+			"wep:on_storm_sword": {
+				"add": {
+					"component_groups": [
+						"wep:storm_sword"
+					]
+				}
+			},
+			"wep:on_water_axe": {
+				"add": {
+					"component_groups": [
+						"wep:water_axe"
+					]
+				}
+			},
+			"wep:on_water_greatsword": {
+				"add": {
+					"component_groups": [
+						"wep:water_greatsword"
+					]
+				}
+			},
+			"wep:on_geyser_axe": {
+				"add": {
+					"component_groups": [
+						"wep:geyser_axe"
+					]
+				}
+			},
+			"wep:on_boulder_axe": {
+				"add": {
+					"component_groups": [
+						"wep:boulder_axe"
+					]
+				}
+			},
+			"wep:on_rocky_greatsword": {
+				"add": {
+					"component_groups": [
+						"wep:rocky_greatsword"
+					]
+				}
+			},
+			"wep:on_ground_axe": {
+				"add": {
+					"component_groups": [
+						"wep:ground_axe"
+					]
+				}
+			},
+			"wep:on_rockfall_axe": {
+				"add": {
+					"component_groups": [
+						"wep:rockfall_axe"
+					]
+				}
+			},
+			"wep:on_snap_sword": {
+				"add": {
+					"component_groups": [
+						"wep:snap_sword"
+					]
+				}
+			},
+			"wep:on_electric_axe": {
+				"add": {
+					"component_groups": [
+						"wep:electric_axe"
+					]
+				}
+			},
+			"wep:on_lightning_sword": {
+				"add": {
+					"component_groups": [
+						"wep:lightning_sword"
+					]
+				}
+			},
+			"wep:on_bolt_sword": {
+				"add": {
+					"component_groups": [
+						"wep:bolt_sword"
+					]
+				}
+			},
+			"wep:on_poison_sword": {
+				"add": {
+					"component_groups": [
+						"wep:poison_sword"
+					]
+				}
+			},
+			"wep:on_poisonous_axe": {
+				"add": {
+					"component_groups": [
+						"wep:poisonous_axe"
+					]
+				}
+			},
+			"wep:on_poisonous_hammer_axe": {
+				"add": {
+					"component_groups": [
+						"wep:poisonous_hammer_axe"
+					]
+				}
+			},
+			"wep:on_frost_sword": {
+				"add": {
+					"component_groups": [
+						"wep:frost_sword"
+					]
+				}
+			},
+			"wep:on_ice_battleaxe": {
+				"add": {
+					"component_groups": [
+						"wep:ice_battleaxe"
+					]
+				}
+			},
+			"wep:on_icicle_sword": {
+				"add": {
+					"component_groups": [
+						"wep:icicle_sword"
+					]
+				}
+			},
+			"wep:on_reverse_sword": {
+				"add": {
+					"component_groups": [
+						"wep:reverse_sword"
+					]
+				}
+			},
+			"wep:on_timelapse_axe": {
+				"add": {
+					"component_groups": [
+						"wep:timelapse_axe"
+					]
+				}
+			},
+			"wep:on_fast_sword": {
+				"add": {
+					"component_groups": [
+						"wep:fast_sword"
+					]
+				}
+			}
+		}
+	}
+}

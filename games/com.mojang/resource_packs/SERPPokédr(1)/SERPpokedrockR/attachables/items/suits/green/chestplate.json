@@ -1,0 +1,13 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:attachable":{
+    "description":{
+      "identifier":"serp:green_chestplate",
+      "materials":{"default":"armor","enchanted":"armor_enchanted"},
+      "textures":{"default":"textures/models/green/chestplate","enchanted":"textures/misc/enchanted_item_glint"},
+      "geometry":{"default":"geometry.serp_green_armor"},
+      "scripts":{"parent_setup":"v.chest_layer_visible=0;"},
+      "render_controllers":["controller.render.armor"]
+    }
+  }
+}

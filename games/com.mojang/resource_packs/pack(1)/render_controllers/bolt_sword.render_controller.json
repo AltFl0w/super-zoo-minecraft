@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.bolt_sword": {
+			"geometry": "Geometry.bolt_sword",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.bolt_sword"
+			]
+		}
+	}
+}

@@ -1,0 +1,32 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§2SERP §ePokédrock §4R",
+        "description": "pack.description",
+        "uuid": "bff02548-6ef9-4c69-a527-b9b0b58eeba6",
+        "version": [1,0,15],
+        "min_engine_version": [1,13,0]
+    },
+    "modules": [
+        {
+        "description": "pack.description",
+        "type": "resources",
+        "uuid": "202e855e-1006-4fc1-bbdd-e00aa990a11e",
+        "version": [1,0,15]
+        }
+    ],
+  "subpacks": [
+    {"folder_name":"1","name":"1 Gen",
+    "memory_tier":2},
+    {"folder_name":"2","name":"2 Gen",
+   	"memory_tier":2},
+    {"folder_name":"3","name":"3 Gen",
+    "memory_tier":2},
+    {"folder_name":"4","name":"4 Gen",
+	"memory_tier":2},
+    {"folder_name":"8","name":"8 Gen",
+    "memory_tier":2},
+    {"folder_name":"SERP","name":"SERP",
+    "memory_tier":2}
+    ]
+}

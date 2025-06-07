@@ -1,0 +1,33 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "gunsaddon:attachments_bench"
+      },
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "DDD",
+        "DCD",
+        "BAB"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:crafting_table"
+        },
+        "B": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:leather"
+        },
+        "D": {
+          "item": "minecraft:copper_ingot"
+        }
+      },
+      "result": {
+        "item": "gunsaddon:attachments_bench",
+        "count": 1
+      }
+    }
+  }

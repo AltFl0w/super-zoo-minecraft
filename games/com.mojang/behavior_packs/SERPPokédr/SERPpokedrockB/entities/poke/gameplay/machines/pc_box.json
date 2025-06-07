@@ -1,0 +1,46 @@
+{
+  "format_version":"1.16.0",
+  "minecraft:entity":{
+    "description":{
+      "identifier":"serp:pc_box",
+      "is_spawnable":false,
+      "is_summonable":true,
+      "is_experimental":false
+		},
+    "component_groups":{
+      "serp:tamed":{"minecraft:is_tamed":{}},
+	    "serp:off":{"minecraft:variant":{"value":0}},
+	    "serp:on":{"minecraft:variant":{"value":1}},
+      "serp:despawn":{"minecraft:health":{"value":0},"minecraft:instant_despawn":{}}
+    },
+    "components":{
+    "minecraft:persistent":{},
+    "minecraft:type_family":{"family":["pc","inanimated"]},
+    "minecraft:inventory":{"container_type":"container","inventory_size":27,"restrict_to_owner":true},
+    "minecraft:interact":{"interactions":[{"on_interact":{"filters":{"all_of":[{"test":"is_sneaking","subject":"other"},{"test":"is_owner","subject":"other"},{"test":"distance_to_nearest_player","operator":"<=","value":5}]},"event":"serp:despawn"},"add_items":{"table":"loot_tables/machines/pc_box.json"},"interact_text":"structure_block.save"}]},
+    "minecraft:knockback_resistance":{"value":100,"max":100},
+    "minecraft:is_stackable":{},
+    "minecraft:damage_sensor":{"triggers":[{"on_damage":{"filters":{"test":"has_equipment","subject":"other","operator":"!=","domain":"hand","value":"serp:pokedex"},"event":"serp:rotate"},"deals_damage":false},{"on_damage":{"filters":{"test":"has_damage","value":"fatal"}},"deals_damage":false}]},
+      "minecraft:scheduler":{
+        "scheduled_events":[
+{"filters":{"test":"distance_to_nearest_player","operator":">","value":5},
+"event":"serp:off"},
+{"filters":{"test":"distance_to_nearest_player","operator":"<=","value":5},
+"event":"serp:on"}
+        ]
+      },
+      "minecraft:collision_box":{"width":0.6,"height":1.98},
+    "minecraft:health":{"value":1},
+    "minecraft:movement":{"value":0},
+	  "minecraft:physics":{},
+    "minecraft:pushable":{"is_pushable":false,"is_pushable_by_piston":true}
+    },
+    "events":{
+    "minecraft:entity_transformed":{"queue_command":{"command":["tp @s ~~~ 0"]}},
+	  "serp:on":{"add":{"component_groups":["serp:on"]},"remove":{"component_groups":["serp:off"]}},
+	  "serp:off":{"add":{"component_groups":["serp:off"]},"remove":{"component_groups":["serp:on"]}},
+	  "serp:rotate":{"queue_command":{"command":["tp @s ~~0.25~~90~"]}},
+    "serp:despawn":{"add":{"component_groups":["serp:despawn"]}}
+    }
+  }
+}

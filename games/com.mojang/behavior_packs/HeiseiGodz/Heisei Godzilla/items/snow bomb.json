@@ -1,0 +1,19 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "heiseigodzilla:snow_bomb",
+			"category": "Equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:icon": {
+				"texture": "snow bomb"
+			},
+			"minecraft:display_name": {
+				"value": "item.heiseigodzilla:snow_bomb.name"
+			},
+			"minecraft:render_offsets": "apple"
+		}
+	}
+}

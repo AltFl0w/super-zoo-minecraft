@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:fire_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" b ",
+			" i ",
+			" c "
+		],
+		"key": {
+			"b": {
+				"item": "minecraft:coal_block"
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"c": {
+				"item": "minecraft:coal"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:fire_ingot",
+				"count": 3
+			}
+		]
+	}
+}

@@ -1,0 +1,763 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "minecraft:player",
+      "properties":{
+		//Load animation 1. Hulk super_attack, 2. Shoot, 3. Reload
+		"arathnido:animation":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Mira Telescopica
+		"nido:item.attachments.1":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Mira Laser o Linterna
+		"nido:item.attachments.2":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Silenciador o Bayoneta
+		"nido:item.attachments.3":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Arma secundaria: M203 o Escopeta
+		"nido:item.attachments.4":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true },
+		//Skin
+		"nido:item.attachments.5":{ "type": "int","range": [0, 100], "default": "0", "client_sync": true }
+      },
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+		  "m16.c",
+		  "double_micro_uzi.c",
+		  "guns.score",
+		  "guns.mira.c",
+		  "guns.flashlight.c",
+		  "guns.second_gun.c",
+		  "micro_uzi.c",
+		  "benelli_m4.c",
+		  "glock_17.c",
+		  "m67.c",
+		  "desert_eagle.c",
+		  "barret_m82a1.c",
+		  "m249.c",
+		  "m4a1.c",
+		  "double_glock_17.c",
+		  "remington_870.c",
+		  "m32.c",
+		  "m202.c",
+		  "skorpion_vz61.c",
+		  "double_skorpion_vz61.c"
+        ]
+      },
+      "animations": {
+        "double_skorpion_vz61.c": "controller.animation.double_skorpion_vz61",
+		"double_skorpion_vz61.shoot": "animation.double_skorpion_vz61.shoot",
+		"double_skorpion_vz61.reload": "animation.double_skorpion_vz61.reload",
+		
+        "skorpion_vz61.c": "controller.animation.skorpion_vz61",
+		"skorpion_vz61.shoot": "animation.skorpion_vz61.shoot",
+		"skorpion_vz61.shoot.fire": "animation.skorpion_vz61.shoot.fire",
+		"skorpion_vz61.shoot.explosive": "animation.skorpion_vz61.shoot.explosive",
+		"skorpion_vz61.apuntar.shoot": "animation.skorpion_vz61.apuntar.shoot",
+		"skorpion_vz61.reload": "animation.skorpion_vz61.reload",
+
+        "m202.c": "controller.animation.m202",
+		"m202.shoot": "animation.m202.shoot",
+		"m202.reload": "animation.m202.reload",
+
+        "m32.c": "controller.animation.m32",
+		"m32.shoot": "animation.m32.shoot",
+		"m32.reload": "animation.m32.reload",
+
+        "remington_870.c": "controller.animation.remington_870",
+		"remington_870.shoot": "animation.remington_870.shoot",
+		"remington_870.shoot.fire": "animation.remington_870.shoot.fire",
+		"remington_870.shoot.explosive": "animation.remington_870.shoot.explosive",
+		"remington_870.reload": "animation.remington_870.reload",
+
+        "double_glock_17.c": "controller.animation.double_glock_17",
+		"double_glock_17.shoot": "animation.double_glock_17.shoot",
+		"double_glock_17.reload": "animation.double_glock_17.reload",
+
+        "m4a1.c": "controller.animation.m4a1",
+		"m4a1.shoot": "animation.m4a1.shoot",
+		"m4a1.shoot.fire": "animation.m4a1.shoot.fire",
+		"m4a1.shoot.explosive": "animation.m4a1.shoot.explosive",
+		"m4a1.apuntar.shoot": "animation.m4a1.apuntar.shoot",
+		"m4a1.reload": "animation.m4a1.reload",
+		"m4a1.m203.reload": "animation.m4a1.m203.reload",
+		"m4a1.shotgun.reload": "animation.m4a1.shotgun.reload",
+
+        "m249.c": "controller.animation.m249",
+		"m249.shoot": "animation.m249.shoot",
+		"m249.shoot.fire": "animation.m249.shoot.fire",
+		"m249.shoot.explosive": "animation.m249.shoot.explosive",
+		"m249.apuntar.shoot": "animation.m249.apuntar.shoot",
+		"m249.reload": "animation.m249.reload",
+
+        "barret_m82a1.c": "controller.animation.barret_m82a1",
+		"barret_m82a1.shoot": "animation.barret_m82a1.shoot",
+		"barret_m82a1.shoot.fire": "animation.barret_m82a1.shoot.fire",
+		"barret_m82a1.shoot.explosive": "animation.barret_m82a1.shoot.explosive",
+		"barret_m82a1.reload": "animation.barret_m82a1.reload",
+
+        "desert_eagle.c": "controller.animation.desert_eagle",
+		"desert_eagle.shoot": "animation.desert_eagle.shoot",
+		"desert_eagle.apuntar.shoot": "animation.desert_eagle.apuntar.shoot",
+		"desert_eagle.reload": "animation.desert_eagle.reload",
+
+        "m67.c": "controller.animation.m67",
+		"m67.shoot": "animation.m67.shoot",
+		"m67.time": "animation.m67.time",
+		
+        "glock_17.c": "controller.animation.glock_17",
+		"glock_17.shoot": "animation.glock_17.shoot",
+		"glock_17.apuntar.shoot": "animation.glock_17.apuntar.shoot",
+		"glock_17.reload": "animation.glock_17.reload",
+
+        "benelli_m4.c": "controller.animation.benelli_m4",
+		"benelli_m4.shoot": "animation.benelli_m4.shoot",
+		"benelli_m4.shoot.fire": "animation.benelli_m4.shoot.fire",
+		"benelli_m4.shoot.explosive": "animation.benelli_m4.shoot.explosive",
+		"benelli_m4.reload": "animation.benelli_m4.reload",
+
+        "micro_uzi.c": "controller.animation.micro_uzi",
+		"micro_uzi.shoot": "animation.micro_uzi.shoot",
+		"micro_uzi.shoot.fire": "animation.micro_uzi.shoot.fire",
+		"micro_uzi.shoot.explosive": "animation.micro_uzi.shoot.explosive",
+		"micro_uzi.apuntar.shoot": "animation.micro_uzi.apuntar.shoot",
+		"micro_uzi.reload": "animation.micro_uzi.reload",
+		"micro_uzi.m203.reload": "animation.micro_uzi.m203.reload",
+		"micro_uzi.shotgun.reload": "animation.micro_uzi.shotgun.reload",
+		"guns.second_gun.c": "controller.animation.guns.second_gun",
+		"guns.shotgun.shoot": "animation.guns.shotgun.shoot",
+		"guns.m203.shoot": "animation.guns.m203.shoot",
+		"guns.flashlight.c": "controller.animation.guns.flashlight",
+		"guns.flashlight.on": "animation.flashlight.on",
+		"guns.mira.c": "controller.animation.guns.mira",
+		"guns.mira.default": "animation.guns.mira.default",
+		"guns.mira.eotech": "animation.guns.mira.eotech",
+		"guns.mira.trs26": "animation.guns.mira.trs26",
+		"guns.mira.sniper": "animation.guns.mira.sniper",
+		"guns.score": "animation.guns.score",
+        "double_micro_uzi.c": "controller.animation.double_micro_uzi",
+		"double_micro_uzi.shoot": "animation.double_micro_uzi.shoot",
+		"double_micro_uzi.reload": "animation.double_micro_uzi.reload",
+        "m16.c": "controller.animation.m16",
+		"m16.shoot": "animation.m16.shoot",
+		"m16.shoot.fire": "animation.m16.shoot.fire",
+		"m16.shoot.explosive": "animation.m16.shoot.explosive",
+		"m16.apuntar.shoot": "animation.m16.apuntar.shoot",
+		"m16.reload": "animation.m16.reload",
+		"m16.m203.reload": "animation.m16.m203.reload",
+		"m16.shotgun.reload": "animation.m16.shotgun.reload",
+		"reload.time": "animation.reload.time"
+      }
+    },
+
+    "component_groups": {
+	  //Skorpion
+	  "guns:skorpion_vz61.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"fire","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"apuntar","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61_silenciador": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"silenciador","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61_silenciador_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"silenciador_apuntar","num_to_spawn": 1 }]}
+      },
+	  //SkorpionLaser
+	  "guns:skorpion_vz61_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"normal_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61_silenciador_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"silenciador_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:skorpion_vz61_silenciador_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:skorpion_vz61_shoot","spawn_event":"silenciador_apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  //Remington870
+	  "guns:remington_870.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:remington_870_shoot","spawn_event":"fire","num_to_spawn": 8 }]}
+      },
+	  "guns:remington_870.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:remington_870_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:remington_870": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:remington_870_shoot","spawn_event":"normal","num_to_spawn": 8 }]}
+      },
+	  //M249
+	  "guns:m249.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"fire","num_to_spawn": 1 }]}
+      },
+	  "guns:m249.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:m249": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:m249_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"apuntar","num_to_spawn": 1 }]}
+      },
+	  "guns:m249_silenciador": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"silenciador","num_to_spawn": 1 }]}
+      },
+	  "guns:m249_silenciador_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"silenciador_apuntar","num_to_spawn": 1 }]}
+      },
+	  //M249Laser
+	  "guns:m249_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"normal_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m249_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m249_silenciador_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"silenciador_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m249_silenciador_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m249_shoot","spawn_event":"silenciador_apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  //DesertEagle
+	  "guns:desert_eagle": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:desert_eagle_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"apuntar","num_to_spawn": 1 }]}
+      },
+	  "guns:desert_eagle_silenciador": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"silenciador","num_to_spawn": 1 }]}
+      },
+	  "guns:desert_eagle_silenciador_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"silenciador_apuntar","num_to_spawn": 1 }]}
+      },
+	  //DesertEagleLaser
+	  "guns:desert_eagle_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"normal_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:desert_eagle_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:desert_eagle_silenciador_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"silenciador_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:desert_eagle_silenciador_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:desert_eagle_shoot","spawn_event":"silenciador_apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  //M67
+	  "guns:m67": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m67_shoot","num_to_spawn": 1 }]}
+      },
+	  //Glock17
+	  "guns:glock_17": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:glock_17_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"apuntar","num_to_spawn": 1 }]}
+      },
+	  "guns:glock_17_silenciador": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"silenciador","num_to_spawn": 1 }]}
+      },
+	  "guns:glock_17_silenciador_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"silenciador_apuntar","num_to_spawn": 1 }]}
+      },
+	  //Glock17Laser
+	  "guns:glock_17_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"normal_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:glock_17_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:glock_17_silenciador_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"silenciador_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:glock_17_silenciador_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:glock_17_shoot","spawn_event":"silenciador_apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  //BarretM82
+	  "guns:barret_m82a1.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:barret_m82a1_shoot","spawn_event":"fire","num_to_spawn": 1 }]}
+      },
+	  "guns:barret_m82a1.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:barret_m82a1_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:barret_m82a1": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:barret_m82a1_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  //BenelliM4
+	  "guns:benelli_m4.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:benelli_m4_shoot","spawn_event":"fire","num_to_spawn": 8 }]}
+      },
+	  "guns:benelli_m4.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:benelli_m4_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:benelli_m4": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:benelli_m4_shoot","spawn_event":"normal","num_to_spawn": 8 }]}
+      },
+	  //MicroUzi
+	  "guns:micro_uzi.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"fire","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"apuntar","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi_silenciador": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"silenciador","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi_silenciador_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"silenciador_apuntar","num_to_spawn": 1 }]}
+      },
+	  //MicroUziLaser
+	  "guns:micro_uzi_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"normal_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi_silenciador_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"silenciador_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:micro_uzi_silenciador_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:micro_uzi_shoot","spawn_event":"silenciador_apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  //RocketLauncher
+	  "guns:rocket_launcer": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:rocket_launcer_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  //GrenadeLauncher
+	  "guns:grenade_launcher": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:grenade_launcher_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:grenade_launcher.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:grenade_launcher_shoot","spawn_event":"fire","num_to_spawn": 1 }]}
+      },
+	  "guns:grenade_launcher.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:grenade_launcher_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  //Mossberg500
+	  "guns:mossberg500": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:mossberg500_shoot","spawn_event":"normal","num_to_spawn": 9 }]}
+      },
+	  "guns:mossberg500.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:mossberg500_shoot","spawn_event":"fire","num_to_spawn": 9 }]}
+      },
+	  "guns:mossberg500.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:mossberg500_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  //M16
+	  "guns:m16.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"fire","num_to_spawn": 1 }]}
+      },
+	  "guns:m16.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:m16": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:m16_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"apuntar","num_to_spawn": 1 }]}
+      },
+	  "guns:m16_silenciador": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"silenciador","num_to_spawn": 1 }]}
+      },
+	  "guns:m16_silenciador_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"silenciador_apuntar","num_to_spawn": 1 }]}
+      },
+	  //M16Laser
+	  "guns:m16_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"normal_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m16_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m16_silenciador_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"silenciador_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m16_silenciador_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m16_shoot","spawn_event":"silenciador_apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  //M4A1
+	  "guns:m4a1.fire": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"fire","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1.explosive": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"explosive","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"normal","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"apuntar","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1_silenciador": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"silenciador","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1_silenciador_apuntar": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"silenciador_apuntar","num_to_spawn": 1 }]}
+      },
+	  //M4A1Laser
+	  "guns:m4a1_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"normal_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"apuntar_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1_silenciador_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"silenciador_laser","num_to_spawn": 1 }]}
+      },
+	  "guns:m4a1_silenciador_apuntar_laser": { "minecraft:spawn_entity": {"entities": [{"min_wait_time": 0,"max_wait_time": 0,"single_use": true,"spawn_entity": "gunsaddon:m4a1_shoot","spawn_event":"silenciador_apuntar_laser","num_to_spawn": 1 }]}
+      },
+      "guns:flashlight": {
+        "minecraft:is_sheared": {
+        }
+      },
+      "minecraft:add_bad_omen": {
+        "minecraft:spell_effects": {
+          "add_effects": [
+            {
+              "effect": "bad_omen",
+              "duration": 6000,
+              "display_on_screen_animation": true
+            }
+          ]
+        },
+        "minecraft:timer": {
+          "time": [ 0.0, 0.0 ],
+          "looping": false,
+          "time_down_event": {
+            "event": "minecraft:clear_add_bad_omen",
+            "target": "self"
+          }
+        }
+      },
+      "minecraft:clear_bad_omen_spell_effect": {
+        "minecraft:spell_effects": {
+        }
+      },
+      "minecraft:raid_trigger": {
+        "minecraft:raid_trigger": {
+          "triggered_event": {
+            "event": "minecraft:remove_raid_trigger",
+            "target": "self"
+          }
+        },
+        "minecraft:spell_effects": {
+          "remove_effects": "bad_omen"
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:experience_reward": {
+        "on_death": "Math.Min(query.player_level * 7, 100)"
+      },
+      "minecraft:type_family": {
+        "family": [ "player" ]
+      },
+      "minecraft:is_hidden_when_invisible": {
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/empty.json"
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.8
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 1
+      },
+      "minecraft:player.saturation": {
+        "value": 20
+      },
+      "minecraft:player.exhaustion": {
+        "value": 0,
+        "max": 4
+      },
+      "minecraft:player.level": {
+        "value": 0,
+        "max": 24791
+      },
+      "minecraft:player.experience": {
+        "value": 0,
+        "max": 1
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": -1,
+        "inhale_time": 3.75,
+        "generates_bubbles": false
+      },
+      "minecraft:nameable": {
+        "always_show": true,
+        "allow_name_tag_renaming": false
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:insomnia": {
+        "days_until_insomnia": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": [
+          "parrot_tame"
+        ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.4, -0.2, -0.1 ],
+            "min_rider_count": 0,
+            "max_rider_count": 0,
+            "lock_rider_rotation": 0
+          },
+          {
+            "position": [ -0.4, -0.2, -0.1 ],
+            "min_rider_count": 1,
+            "max_rider_count": 2,
+            "lock_rider_rotation": 0
+          }
+        ]
+      },
+      "minecraft:scaffolding_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": {
+          "filters": {
+            "all_of": [
+              {
+                "test": "has_mob_effect",
+                "subject": "self",
+                "value": "bad_omen"
+              },
+              {
+                "test": "is_in_village",
+                "subject": "self",
+                "value": true
+              }
+            ]
+          },
+          "event": "minecraft:trigger_raid"
+        }
+      }
+    },
+
+    "events": {
+      "minecraft:gain_bad_omen": {
+        "add": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        }
+      },
+      "minecraft:clear_add_bad_omen": {
+        "remove": {
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
+        }
+      },
+      "minecraft:trigger_raid": {
+        "add": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+      "minecraft:remove_raid_trigger": {
+        "remove": {
+          "component_groups": [ "minecraft:raid_trigger" ]
+        }
+      },
+	  //GunsAddon
+	  //Mira
+      "guns:mira.off": { "set_property":{ "nido:item.attachments.1": 0 }
+      },
+      "guns:mira.eotech": { "set_property":{ "nido:item.attachments.1": 1 }
+      },
+      "guns:mira.trs26": { "set_property":{ "nido:item.attachments.1": 2 }
+      },
+      "guns:mira.sniper": { "set_property":{ "nido:item.attachments.1": 3 }
+      },
+
+      "guns:accesorio.2.off": { "set_property":{ "nido:item.attachments.2": 0 }
+      },
+      "guns:laser.rojo": { "set_property":{ "nido:item.attachments.2": 1 }
+      },
+      "guns:laser.azul": { "set_property":{ "nido:item.attachments.2": 2 }
+      },
+      "guns:laser.verde": { "set_property":{ "nido:item.attachments.2": 3 }
+      },
+      "guns:flashlight": { "add": { "component_groups": [ "guns:flashlight" ] }
+      },
+      "guns:flashlight.off": { "remove": { "component_groups": [ "guns:flashlight" ] }
+      },
+	  
+      "guns:accesorio.3.off": { "set_property":{ "nido:item.attachments.3": 0 }
+      },
+      "guns:silenciador": { "set_property":{ "nido:item.attachments.3": 1 }
+      },
+      "guns:bayonet": { "set_property":{ "nido:item.attachments.3": 2 }
+      },
+
+      "guns:accesorio.4.off": { "set_property":{ "nido:item.attachments.4": 0 }
+      },
+      "guns:m203_attachments": { "set_property":{ "nido:item.attachments.4": 1 }
+      },
+      "guns:shotgun_attachment": { "set_property":{ "nido:item.attachments.4": 2 }
+      },
+      "guns:reload": { "set_property":{ "arathnido:animation": 3 }
+      },
+      "guns:reload.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+      "guns:shoot.m203": { "set_property":{ "arathnido:animation": 16 }
+      },
+      "guns:shoot.shotgun": { "set_property":{ "arathnido:animation": 17 }
+      },
+      "guns:reload.m203": { "set_property":{ "arathnido:animation": 18 }
+      },
+      "guns:reload.shotgun": { "set_property":{ "arathnido:animation": 19 }
+      },
+      "guns:shoot": { "set_property":{ "arathnido:animation": 2 }
+      },
+      "guns:shoot.off": { "set_property":{ "arathnido:animation": 0 }
+      },
+	  //Mossberg500
+      "guns:mossberg500": { "add": { "component_groups": [ "guns:mossberg500" ] }
+      },
+      "guns:mossberg500.fire": { "add": { "component_groups": [ "guns:mossberg500.fire" ] }
+      },
+      "guns:mossberg500.explosive": { "add": { "component_groups": [ "guns:mossberg500.explosive" ] }
+      },
+	  //GrenadeLauncher
+      "guns:grenade_launcher": { "add": { "component_groups": [ "guns:grenade_launcher" ] }
+      },
+      "guns:grenade_launcher.fire": { "add": { "component_groups": [ "guns:grenade_launcher.fire" ] }
+      },
+      "guns:grenade_launcher.explosive": { "add": { "component_groups": [ "guns:grenade_launcher.explosive" ] }
+      },
+	  //M249
+      "guns:m249.fire": { "add": { "component_groups": [ "guns:m249.fire" ] }
+      },
+      "guns:m249.explosive": { "add": { "component_groups": [ "guns:m249.explosive" ] }
+      },
+      "guns:m249": { "add": { "component_groups": [ "guns:m249" ] }
+      },
+      "guns:m249_apuntar": { "add": { "component_groups": [ "guns:m249_apuntar" ] }
+      },
+      "guns:m249_silenciador": { "add": { "component_groups": [ "guns:m249_silenciador" ] }
+      },
+      "guns:m249_silenciador_apuntar": { "add": { "component_groups": [ "guns:m249_silenciador_apuntar" ] }
+      },
+	  //M249Laser
+      "guns:m249_laser": { "add": { "component_groups": [ "guns:m249_laser" ] }
+      },
+      "guns:m249_apuntar_laser": { "add": { "component_groups": [ "guns:m249_apuntar_laser" ] }
+      },
+      "guns:m249_silenciador_laser": { "add": { "component_groups": [ "guns:m249_silenciador_laser" ] }
+      },
+      "guns:m249_silenciador_apuntar_laser": { "add": { "component_groups": [ "guns:m249_silenciador_apuntar_laser" ] }
+      },
+	  //M16
+      "guns:m16.fire": { "add": { "component_groups": [ "guns:m16.fire" ] }
+      },
+      "guns:m16.explosive": { "add": { "component_groups": [ "guns:m16.explosive" ] }
+      },
+      "guns:m16": { "add": { "component_groups": [ "guns:m16" ] }
+      },
+      "guns:m16_apuntar": { "add": { "component_groups": [ "guns:m16_apuntar" ] }
+      },
+      "guns:m16_silenciador": { "add": { "component_groups": [ "guns:m16_silenciador" ] }
+      },
+      "guns:m16_silenciador_apuntar": { "add": { "component_groups": [ "guns:m16_silenciador_apuntar" ] }
+      },
+	  //M16Laser
+      "guns:m16_laser": { "add": { "component_groups": [ "guns:m16_laser" ] }
+      },
+      "guns:m16_apuntar_laser": { "add": { "component_groups": [ "guns:m16_apuntar_laser" ] }
+      },
+      "guns:m16_silenciador_laser": { "add": { "component_groups": [ "guns:m16_silenciador_laser" ] }
+      },
+      "guns:m16_silenciador_apuntar_laser": { "add": { "component_groups": [ "guns:m16_silenciador_apuntar_laser" ] }
+      },
+	  //Skorpion
+      "guns:skorpion_vz61.fire": { "add": { "component_groups": [ "guns:skorpion_vz61.fire" ] }
+      },
+      "guns:skorpion_vz61.explosive": { "add": { "component_groups": [ "guns:skorpion_vz61.explosive" ] }
+      },
+      "guns:skorpion_vz61": { "add": { "component_groups": [ "guns:skorpion_vz61" ] }
+      },
+      "guns:skorpion_vz61_apuntar": { "add": { "component_groups": [ "guns:skorpion_vz61_apuntar" ] }
+      },
+      "guns:skorpion_vz61_silenciador": { "add": { "component_groups": [ "guns:skorpion_vz61_silenciador" ] }
+      },
+      "guns:skorpion_vz61_silenciador_apuntar": { "add": { "component_groups": [ "guns:skorpion_vz61_silenciador_apuntar" ] }
+      },
+	  //SkorpionLaser
+      "guns:skorpion_vz61_laser": { "add": { "component_groups": [ "guns:skorpion_vz61_laser" ] }
+      },
+      "guns:skorpion_vz61_apuntar_laser": { "add": { "component_groups": [ "guns:skorpion_vz61_apuntar_laser" ] }
+      },
+      "guns:skorpion_vz61_silenciador_laser": { "add": { "component_groups": [ "guns:skorpion_vz61_silenciador_laser" ] }
+      },
+      "guns:skorpion_vz61_silenciador_apuntar_laser": { "add": { "component_groups": [ "guns:skorpion_vz61_silenciador_apuntar_laser" ] }
+      },
+	  //MicroUzi
+      "guns:micro_uzi.fire": { "add": { "component_groups": [ "guns:micro_uzi.fire" ] }
+      },
+      "guns:micro_uzi.explosive": { "add": { "component_groups": [ "guns:micro_uzi.explosive" ] }
+      },
+      "guns:micro_uzi": { "add": { "component_groups": [ "guns:micro_uzi" ] }
+      },
+      "guns:micro_uzi_apuntar": { "add": { "component_groups": [ "guns:micro_uzi_apuntar" ] }
+      },
+      "guns:micro_uzi_silenciador": { "add": { "component_groups": [ "guns:micro_uzi_silenciador" ] }
+      },
+      "guns:micro_uzi_silenciador_apuntar": { "add": { "component_groups": [ "guns:micro_uzi_silenciador_apuntar" ] }
+      },
+	  //MicroUziLaser
+      "guns:micro_uzi_laser": { "add": { "component_groups": [ "guns:micro_uzi_laser" ] }
+      },
+      "guns:micro_uzi_apuntar_laser": { "add": { "component_groups": [ "guns:micro_uzi_apuntar_laser" ] }
+      },
+      "guns:micro_uzi_silenciador_laser": { "add": { "component_groups": [ "guns:micro_uzi_silenciador_laser" ] }
+      },
+      "guns:micro_uzi_silenciador_apuntar_laser": { "add": { "component_groups": [ "guns:micro_uzi_silenciador_apuntar_laser" ] }
+      },
+	  //BarretM82
+      "guns:barret_m82a1.fire": { "add": { "component_groups": [ "guns:barret_m82a1.fire" ] }
+      },
+      "guns:barret_m82a1.explosive": { "add": { "component_groups": [ "guns:barret_m82a1.explosive" ] }
+      },
+      "guns:barret_m82a1": { "add": { "component_groups": [ "guns:barret_m82a1" ] }
+      },
+	  //Remington870
+      "guns:remington_870.fire": { "add": { "component_groups": [ "guns:remington_870.fire" ] }
+      },
+      "guns:remington_870.explosive": { "add": { "component_groups": [ "guns:remington_870.explosive" ] }
+      },
+      "guns:remington_870": { "add": { "component_groups": [ "guns:remington_870" ] }
+      },
+	  //BenelliM4
+      "guns:benelli_m4.fire": { "add": { "component_groups": [ "guns:benelli_m4.fire" ] }
+      },
+      "guns:benelli_m4.explosive": { "add": { "component_groups": [ "guns:benelli_m4.explosive" ] }
+      },
+      "guns:benelli_m4": { "add": { "component_groups": [ "guns:benelli_m4" ] }
+      },
+	  //Glock17
+      "guns:glock_17": { "add": { "component_groups": [ "guns:glock_17" ] }
+      },
+      "guns:glock_17_apuntar": { "add": { "component_groups": [ "guns:glock_17_apuntar" ] }
+      },
+      "guns:glock_17_silenciador": { "add": { "component_groups": [ "guns:glock_17_silenciador" ] }
+      },
+      "guns:glock_17_silenciador_apuntar": { "add": { "component_groups": [ "guns:glock_17_silenciador_apuntar" ] }
+      },
+	  //Glock17UziLaser
+      "guns:glock_17_laser": { "add": { "component_groups": [ "guns:glock_17_laser" ] }
+      },
+      "guns:glock_17_apuntar_laser": { "add": { "component_groups": [ "guns:glock_17_apuntar_laser" ] }
+      },
+      "guns:glock_17_silenciador_laser": { "add": { "component_groups": [ "guns:glock_17_silenciador_laser" ] }
+      },
+      "guns:glock_17_silenciador_apuntar_laser": { "add": { "component_groups": [ "guns:glock_17_silenciador_apuntar_laser" ] }
+      },
+	  //M67
+      "guns:m67": { "add": { "component_groups": [ "guns:m67" ] }
+      },
+	  //DesertEagle
+      "guns:desert_eagle": { "add": { "component_groups": [ "guns:desert_eagle" ] }
+      },
+      "guns:desert_eagle_apuntar": { "add": { "component_groups": [ "guns:desert_eagle_apuntar" ] }
+      },
+      "guns:desert_eagle_silenciador": { "add": { "component_groups": [ "guns:desert_eagle_silenciador" ] }
+      },
+      "guns:desert_eagle_silenciador_apuntar": { "add": { "component_groups": [ "guns:desert_eagle_silenciador_apuntar" ] }
+      },
+	  //DesertEagleLaser
+      "guns:desert_eagle_laser": { "add": { "component_groups": [ "guns:desert_eagle_laser" ] }
+      },
+      "guns:desert_eagle_apuntar_laser": { "add": { "component_groups": [ "guns:desert_eagle_apuntar_laser" ] }
+      },
+      "guns:desert_eagle_silenciador_laser": { "add": { "component_groups": [ "guns:desert_eagle_silenciador_laser" ] }
+      },
+      "guns:desert_eagle_silenciador_apuntar_laser": { "add": { "component_groups": [ "guns:desert_eagle_silenciador_apuntar_laser" ] }
+      },
+	  //M4A1
+      "guns:m4a1.fire": { "add": { "component_groups": [ "guns:m4a1.fire" ] }
+      },
+      "guns:m4a1.explosive": { "add": { "component_groups": [ "guns:m4a1.explosive" ] }
+      },
+      "guns:m4a1": { "add": { "component_groups": [ "guns:m4a1" ] }
+      },
+      "guns:m4a1_apuntar": { "add": { "component_groups": [ "guns:m4a1_apuntar" ] }
+      },
+      "guns:m4a1_silenciador": { "add": { "component_groups": [ "guns:m4a1_silenciador" ] }
+      },
+      "guns:m4a1_silenciador_apuntar": { "add": { "component_groups": [ "guns:m4a1_silenciador_apuntar" ] }
+      },
+	  //M4A1Laser
+      "guns:m4a1_laser": { "add": { "component_groups": [ "guns:m4a1_laser" ] }
+      },
+      "guns:m4a1_apuntar_laser": { "add": { "component_groups": [ "guns:m4a1_apuntar_laser" ] }
+      },
+      "guns:m4a1_silenciador_laser": { "add": { "component_groups": [ "guns:m4a1_silenciador_laser" ] }
+      },
+      "guns:m4a1_silenciador_apuntar_laser": { "add": { "component_groups": [ "guns:m4a1_silenciador_apuntar_laser" ] }
+      },
+	  //Rocket
+      "guns:rocket_launcer": { "add": { "component_groups": [ "guns:rocket_launcer" ] }
+      }
+    }
+  }
+}

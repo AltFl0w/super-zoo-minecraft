@@ -1,0 +1,34 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:electric_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" p ",
+			"aia",
+			" a "
+		],
+		"key": {
+			"p": {
+				"item": "minecraft:potion",
+				"data": 14
+			},
+			"i": {
+				"item": "minecraft:gold_block"
+			},
+			"a": {
+				"item": "minecraft:glowstone"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:electric_ingot",
+				"count": 3
+			}
+		]
+	}
+}

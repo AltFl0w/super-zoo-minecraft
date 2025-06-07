@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:adorno_colgante2",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_adorno_estrellas_colgantes"
+      },
+      "geometry": {
+        "default": "geometry.df_adorno_colgante2_fnaf2"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_adorno_colgante2",
+        "texture_index": 0
+      }
+    }
+  }
+}

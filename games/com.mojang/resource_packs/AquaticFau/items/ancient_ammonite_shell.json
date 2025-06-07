@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:ancient_ammonite_shell",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:use_animation": "eat",
+      "minecraft:icon": "ancient_ammonite_shell",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

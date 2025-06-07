@@ -1,0 +1,30 @@
+{
+  "format_version":"1.10.0",
+  "animation_controllers":{
+    "controller.animation.communicator":{
+      "initial_state":"off",
+      "states":{
+"on":{"animations":["on"],"blend_transition":0.2,"blend_via_shortest_path":true,"transitions":[{"off":"q.variant==0"}]},
+"off":{"animations":["off"],"blend_transition":0.2,"blend_via_shortest_path":true,"transitions":[{"on":"q.variant==1"}]}
+      }
+    },
+    "controller.animation.trader_particles":{
+      "states":{
+        "default":{
+          "transitions":[
+            {"trader1":"q.property('serp:trader')==1"},
+            {"trader2":"q.property('serp:trader')==2"}
+          ]
+        },
+        "trader1":{"particle_effects":[{"effect":"trade","locator":"trade1"}],"transitions":[{"default":"q.property('serp:trader')!=1"}]},
+        "trader2":{"animations":["prepare"],"particle_effects":[{"effect":"trade","locator":"trade1"},{"effect":"trade","locator":"trade2"}],"transitions":[{"default":"q.property('serp:trader')!=2"}]}
+      }
+    },
+    "controller.animation.serp_pc":{
+      "states":{
+        "default":{"animations":["off"],"transitions":[{"on":"q.variant==1"}]},
+        "on":{"animations":["on"],"blend_transition":0.2,"blend_via_shortest_path":true,"transitions":[{"default":"q.variant==0"}]}
+      }
+    }
+  }
+}

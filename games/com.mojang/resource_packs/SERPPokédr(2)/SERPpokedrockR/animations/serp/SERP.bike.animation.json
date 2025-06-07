@@ -1,0 +1,51 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.serpbike.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"star": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.8": [360, 0, 0]
+					}
+				},
+				"back_wheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.8": [360, 0, 0]
+					}
+				},
+				"front_wheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.8": [360, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0": {
+					"effect": "wheel"
+				},
+				"0.4": {
+					"effect": "wheel"
+				}
+			}
+		},
+		"animation.bike.direction": {
+			"loop": true,
+			"bones": {
+				"handle": {
+					"rotation": [0, "math.max(-35,math.min(35,query.yaw_speed))", 0]
+				},
+				"bike": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-10,math.min(10,query.yaw_speed))"]
+				},
+				"bike_up": {
+					"rotation": [ "query.vertical_speed * -1.0", 0, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:pc_box",
+      "materials": {
+    "default": "entity_emissive_alpha",
+    "parts": "charged_creeper"
+    },
+      "textures": {
+"tame": "textures/entity/pc_box/tamed",
+"off": "textures/entity/pc_box/default",
+"parts_tame": "textures/entity/pc_box/parts_tame",
+"parts_off": "textures/entity/pc_box/parts_off"
+      },
+      "geometry": {
+    "default": "geometry.serppc_box",
+    "parts": "geometry.serppc_box_parts"
+      },
+      "scripts": {
+        "animate": [
+          "serp_pc"
+        ]
+      },
+      "animations": {
+    "on": "animation.serppc_box.wake",
+    "off": "animation.serppc_box.sleep",
+    "serp_pc": "controller.animation.serp_pc"
+      },
+      "render_controllers": [ "controller.render.pc_box","controller.render.pc_box_parts" ]
+    }
+  }
+}

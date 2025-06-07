@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:heavyball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "bab",
+      "aba"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_white"
+      },
+      "b": {
+        "item": "serp:apricorn_blue"
+      }
+    },
+    "result": {
+      "item": "serp:heavyball_up",
+      "count": 6
+    }
+  }
+}

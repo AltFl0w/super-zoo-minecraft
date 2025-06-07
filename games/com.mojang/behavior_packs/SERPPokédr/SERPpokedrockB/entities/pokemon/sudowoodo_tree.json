@@ -1,0 +1,47 @@
+{
+  "format_version":"1.16.0",
+  "minecraft:entity":{
+    "description":{
+      "identifier":"serp:sudowoodo_tree",
+      "is_spawnable":false,
+      "is_summonable":true,
+      "is_experimental":false
+		},
+  "component_groups":{
+	  "serp:normal":{
+      "minecraft:environment_sensor":{"triggers":[
+{"filters":{"test":"in_contact_with_water"},"event":"serp:wake"}
+      ]},
+      "minecraft:timer":{"time":[45,60],"looping":true,"time_down_event":{"event":"serp:despawn"}}
+	  },
+	  "serp:wake":{
+		"minecraft:is_shaking":{},
+		"minecraft:transformation":{"into":"serp:despawn","delay":{"value":3.1}},
+    "minecraft:timer":{"time":3,"looping":false,"time_down_event":{"event":"serp:sudowoodo"}}
+    },
+	  "serp:despawn":{"minecraft:instant_despawn":{}}
+  },
+  "components":{
+      "minecraft:despawn":{"filters":{"test":"distance_to_nearest_player","operator":">","value":35}},
+      "minecraft:is_stackable":{},
+      "minecraft:persistent":{},
+      "minecraft:health":{"value":1},
+      "minecraft:damage_sensor":{
+        "triggers":[
+{"on_damage":{"filters":{"test":"has_damage","value":"fatal"}},"deals_damage":false}
+          ]
+        },
+      "minecraft:collision_box":{"width":0.3,"height":1},
+      "minecraft:hurt_on_condition":{"damage_conditions":[{"filters":{"test":"in_lava"}, "cause":"lava","damage_per_tick":10}]},
+      "minecraft:movement":{"value":0},
+	    "minecraft:physics":{},
+      "minecraft:pushable":{"is_pushable":false,"is_pushable_by_piston":false}
+    },
+    "events":{
+	  "minecraft:entity_spawned":{"randomize":[{"weight":80,"add":{"component_groups":["serp:despawn"]}},{"weight":20,"add":{"component_groups":["serp:normal"]}}]},
+    "serp:wake":{"remove":{"component_groups":["serp:normal"]},"add":{"component_groups":["serp:wake"]}},
+	  "serp:sudowoodo":{"queue_command":{"command":["summon pokemon:p185"]}},
+	  "serp:despawn":{"add":{"component_groups":["serp:despawn"]}}
+    }
+  }
+}

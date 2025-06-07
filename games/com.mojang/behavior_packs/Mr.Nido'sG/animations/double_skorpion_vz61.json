@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.double_skorpion_vz61.shoot": {
+      "loop": true,
+      "animation_length": 0.09,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.skorpion_vz61 @a[r=25]",
+			"/scoreboard players remove @s double_skorpion_vz61 1",
+			"/event entity @s guns:skorpion_vz61",
+			"/function double_skorpion_vz61"
+        ]
+      }
+    },
+    "animation.double_skorpion_vz61.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.double_skorpion_vz61_reload @a[r=25]"
+        ],
+        "1.9": [
+			"/scoreboard players add @s double_skorpion_vz61 40",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:skorpion_vz61_ammo 0 2"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+    "controller.animation.poke_start": {
+        "initial_state": "start",
+      "states": {
+        "default": {
+      "transitions": [{"start":"query.is_moving"}]
+        },
+        "start": {
+      "transitions": [{"1":"query.get_equipped_item_name == 'button_a'&&(query.is_using_item)"}]
+        },
+        "1": {
+      "animations": ["timer"],
+      "transitions": [{"2":"query.anim_time >= 3"}],
+      "on_entry":["/function intro/1"]
+        },
+        "2": {
+      "animations": ["timer"],
+      "transitions": [{"3":"query.anim_time >= 3"}],
+      "on_entry":["/function intro/2"]
+        },
+        "3": {
+      "animations": ["timer"],
+      "transitions": [{"4":"query.anim_time >= 3"}],
+      "on_entry":["/function intro/3"]
+        },
+        "4": {
+      "animations": ["timer"],
+      "transitions": [{"gen":"query.anim_time >= 3"}],
+      "on_entry":["/function intro/4"]
+        },
+        "gen": {
+          "transitions": [
+{"first":"query.get_equipped_item_name == 'first_generation'&&(query.is_using_item)"},
+{"second":"query.get_equipped_item_name == 'second_generation'&&(query.is_using_item)"},
+{"third":"query.get_equipped_item_name == 'third_generation'&&(query.is_using_item)"},
+{"fourth":"query.get_equipped_item_name == 'fourth_generation'&&(query.is_using_item)"},
+{"fifth":"query.get_equipped_item_name == 'fifth_generation'&&(query.is_using_item)"},
+{"sixth":"query.get_equipped_item_name == 'sixth_generation'&&(query.is_using_item)"},
+{"seventh":"query.get_equipped_item_name == 'seventh_generation'&&(query.is_using_item)"},
+{"eighth":"query.get_equipped_item_name == 'eighth_generation'&&(query.is_using_item)"},
+{"ninth":"query.get_equipped_item_name == 'ninth_generation'&&(query.is_using_item)"}
+  ],
+  "on_entry": ["/function intro/choosing_gen"],
+  "on_exit": ["/function intro/choosed_gen"]
+        },
+        "first": {
+      "transitions": [{"bulbasaur":"query.get_equipped_item_name == 'pre_bulbasaur'&&(query.is_using_item)"},{"charmander":"query.get_equipped_item_name == 'pre_charmander'&&(query.is_using_item)"},{"squirtle":"query.get_equipped_item_name == 'pre_squirtle'&&(query.is_using_item)"}],
+  "on_entry": ["/function intro/choosing_poke1"]
+        },
+        "bulbasaur": {
+      "animations": ["timer"],
+      "transitions": [{"5":"query.anim_time >= 3"}],
+"on_entry":["/function choose/bulbasaur"]
+        },
+        "charmander": {
+      "animations": ["timer"],
+      "transitions": [{"5":"query.anim_time >= 3"}],
+"on_entry":["/function choose/charmander"]
+        },
+        "squirtle": {
+      "animations": ["timer"],
+      "transitions": [{"5":"query.anim_time >= 3"}],
+"on_entry":["/function choose/squirtle"]
+        },
+        "second": {
+      "transitions": [{"chikorita":"query.get_equipped_item_name == 'pre_chikorita'&&(query.is_using_item)"},{"cyndaquil":"query.get_equipped_item_name == 'pre_cyndaquil'&&(query.is_using_item)"},{"totodile":"query.get_equipped_item_name == 'pre_totodile'&&(query.is_using_item)"}],
+  "on_entry": ["/function intro/choosing_poke2"]
+        },
+        "chikorita": {
+      "animations": ["timer"],
+      "transitions": [{"5":"query.anim_time >= 3"}],
+"on_entry":["/function choose/chikorita"]
+        },
+        "cyndaquil": {
+      "animations": ["timer"],
+      "transitions": [{"5":"query.anim_time >= 3"}],
+"on_entry":["/function choose/cyndaquil"]
+        },
+        "totodile": {
+      "animations": ["timer"],
+      "transitions": [{"5":"query.anim_time >= 3"}],
+"on_entry":["/function choose/totodile"]
+        },
+        "5": {
+      "animations": ["timer"],
+      "transitions": [{"6":"query.anim_time >= 3"}],
+      "on_entry":["/function intro/5"]
+        },
+        "6": {
+      "animations": ["timer"],
+      "transitions": [{"7":"query.anim_time >= 3"}],
+      "on_entry":["/function intro/6"]
+        },
+        "7": {
+      "animations": ["timer"],
+      "on_entry":["/function intro/7"]
+        }
+      }
+    },
+    "controller.animation.poke_constant": {
+      "states": {
+        "default": {
+      "transitions": [{"1":"(1.0)"}]},
+        "1": {
+      "transitions": [{"default":"(1.0)"}],
+  "on_entry": [
+    "/function constant"
+          ]
+        }
+      }
+    }
+  }
+}

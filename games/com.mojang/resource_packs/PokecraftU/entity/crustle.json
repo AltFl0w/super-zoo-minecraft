@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pokemon_unite:crustle",
+      "materials": { "default": "skeleton" },
+      "textures": {
+        "default": "textures/entity/pokemon_unite/crustle",
+        "pokeball": "textures/entity/pokemon_unite/pokeball"
+      },
+      "geometry": { 
+        "default": "geometry.crustle",
+        "pokeball": "geometry.pokeball"
+      },
+ 
+      "animations": { 
+          "pokeball_v1": "animation.pokeballv1",
+ 
+
+        "walk": "animation.crustle.walk",
+        "attack": "animation.crustle.attack",
+        "idle": "animation.crustle.idle"
+      },
+      "scripts": {
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+"idle",
+          { "pokeball_v1": "query.variant == 1" },
+
+          { "attack": "variable.attack_time > 0.0" }
+        ]
+      },
+      "render_controllers": [
+          "controller.render.pokemon_n",
+          "controller.render.pokeball"
+      
+      ],
+      "spawn_egg": {
+        "base_color": "#9A7C5D",
+        "overlay_color": "#E7B257"
+      }
+    }
+  }
+}

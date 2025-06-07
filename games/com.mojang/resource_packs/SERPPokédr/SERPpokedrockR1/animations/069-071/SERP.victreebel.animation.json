@@ -1,0 +1,282 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.victreebel.quiet": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"victreebel": {
+					"rotation": {
+						"0.0": [10, 0, 0],
+						"0.8": [0, 0, 0],
+						"1.6": [10, 0, 0]
+					}
+				},
+				"big_leaf": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.8": [10, 0, 0],
+						"1.6": [0, 0, 0]
+					}
+				},
+				"right_leaf": {
+					"rotation": {
+						"0.0": [0, 0, 20],
+						"0.8": [0, 0, -20],
+						"1.6": [0, 0, 20]
+					}
+				},
+				"left_leaf": {
+					"rotation": {
+						"0.0": [0, 0, -20],
+						"0.8": [0, 0, 20],
+						"1.6": [0, 0, -20]
+					}
+				}
+			}
+		},
+		"animation.victreebel.walk": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"victreebel": {
+					"rotation": {
+						"0.0": [0, 0, -10],
+						"0.15": [15, 0, 0],
+						"0.5": [0, 0, 10],
+						"0.65": [15, 0, 0],
+						"1.0": [0, 0, -10]
+					},
+					"position": {
+						"0.0": [0, 3, 0],
+						"0.15": [0, 0, 0],
+						"0.50": [0, 3, 0],
+						"0.65": [0, 0, 0],
+						"1.0": [0, 3, 0]
+					}
+				},
+				"stem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.15": [-9.17, 0, 0],
+						"0.50": [2.5, 0, 0],
+						"0.65": [-10, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"big_leaf": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.15": [-25, 0, 0],
+						"0.50": [0, 0, 0],
+						"0.65": [-25, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"right_leaf": {
+					"rotation": {
+						"0.0": [0, 0, 30],
+						"0.15": [0, 0, -30],
+						"0.50": [0, 0, 30],
+						"0.65": [0, 0, -30],
+						"1.0": [0, 0, 30]
+					}
+				},
+				"right_top": {
+					"rotation": {
+						"0.0": [0, 0, 25],
+						"0.15": [0, 0, -25],
+						"0.50": [0, 0, 25],
+						"0.65": [0, 0, -25],
+						"1.0": [0, 0, 25]
+					}
+				},
+				"left_leaf": {
+					"rotation": {
+						"0.0": [0, 0, -30],
+						"0.15": [0, 0, 30],
+						"0.50": [0, 0, -30],
+						"0.65": [0, 0, 30],
+						"1.0": [0, 0, -30]
+					}
+				},
+				"left_top": {
+					"rotation": {
+						"0.0": [0, 0, -25],
+						"0.15": [0, 0, 25],
+						"0.50": [0, 0, -25],
+						"0.65": [0, 0, 15],
+						"1.0": [0, 0, -25]
+					}
+				}
+			}
+		},
+		"animation.victreebel.sitting": {
+			"loop": true,
+			"bones": {
+				"victreebel": {
+					"position": [0, -6, 0]
+				},
+				"stem": {
+					"rotation": [-20, 0, -35]
+				},
+				"big_leaf": {
+					"rotation": [15, -10, 35],
+					"position": [0, 1, -2]
+				},
+				"right_leaf": {
+					"rotation": [0, 0, 50]
+				},
+				"right_top": {
+					"rotation": [0, 0, 40]
+				},
+				"left_leaf": {
+					"rotation": [0, 0, -50]
+				},
+				"left_top": {
+					"rotation": [0, 0, -40]
+				}
+			}
+		},
+		"animation.victreebel.jump": {
+			"loop": true,
+			"bones": {
+				"victreebel": {
+					"position": [0, 7, 0],
+					"scale": [1, 1.4, 1]
+				},
+				"stem": {
+					"rotation": [30, 0, 0]
+				},
+				"big_leaf": {
+					"rotation": [-20, 0, 0]
+				},
+				"right_leaf": {
+					"rotation": [0, 0, -50]
+				},
+				"left_leaf": {
+					"rotation": [0, 0, 50]
+				}
+			}
+		},
+		"animation.victreebel.attack": {
+			"loop": true,
+			"bones": {
+				"victreebel": {
+					"rotation": [25, 0, 0],
+					"position": [0, 2, 3]
+				},
+				"body": {
+					"rotation": [35, 0, 0],
+					"position": [0, 2, 11]
+				},
+				"big_leaf": {
+					"rotation": [-70, 0, 0],
+					"position": [0, 0, -6]
+				},
+				"leaves": {
+					"rotation": [35, 0, 0],
+					"position": [0, 0, 7]
+				},
+				"right_leaf": {
+					"rotation": [0, 0, -45]
+				},
+				"left_leaf": {
+					"rotation": [0, 0, 45]
+				}
+			}
+		},
+		"animation.victreebel.swimming": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"victreebel": {
+					"rotation": {
+						"0.0": [0, 0, -10],
+						"0.15": [15, 0, 0],
+						"0.5": [0, 0, 10],
+						"0.65": [15, 0, 0],
+						"1.0": [0, 0, -10]
+					},
+					"position": {
+						"0.0": [0, 3, 0],
+						"0.15": [0, 0, 0],
+						"0.50": [0, 3, 0],
+						"0.65": [0, 0, 0],
+						"1.0": [0, 3, 0]
+					}
+				},
+				"stem": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.15": [-9.17, 0, 0],
+						"0.50": [2.5, 0, 0],
+						"0.65": [-10, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"big_leaf": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.15": [-25, 0, 0],
+						"0.50": [0, 0, 0],
+						"0.65": [-25, 0, 0],
+						"1.0": [0, 0, 0]
+					}
+				},
+				"right_leaf": {
+					"rotation": {
+						"0.0": [0, 0, 30],
+						"0.15": [0, 0, -30],
+						"0.50": [0, 0, 30],
+						"0.65": [0, 0, -30],
+						"1.0": [0, 0, 30]
+					}
+				},
+				"right_top": {
+					"rotation": {
+						"0.0": [0, 0, 25],
+						"0.15": [0, 0, -25],
+						"0.50": [0, 0, 25],
+						"0.65": [0, 0, -25],
+						"1.0": [0, 0, 25]
+					}
+				},
+				"left_leaf": {
+					"rotation": {
+						"0.0": [0, 0, -30],
+						"0.15": [0, 0, 30],
+						"0.50": [0, 0, -30],
+						"0.65": [0, 0, 30],
+						"1.0": [0, 0, -30]
+					}
+				},
+				"left_top": {
+					"rotation": {
+						"0.0": [0, 0, -25],
+						"0.15": [0, 0, 25],
+						"0.50": [0, 0, -25],
+						"0.65": [0, 0, 15],
+						"1.0": [0, 0, -25]
+					}
+				}
+			}
+		},
+        "animation.victreebel.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,42,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

@@ -1,0 +1,98 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+		"controller.animation.door_fnaf_closed": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "door_fnaf_close": "query.mark_variant == 1"
+                        }, {
+                            "door_fnaf_open": "query.mark_variant == 2"
+                        }
+                    ]
+                },
+                "door_fnaf_close": {
+                    "transitions": [{
+                            "default": "query.mark_variant != 1"
+                        }
+                    ],
+                    "on_entry": [
+                        "/execute @s ~~~ fill ~~~ ~~2~ barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~~ ~~~1 barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~2~ ~~2~1 barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~~ ~1~~ barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~2~ ~1~2~ barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~~ ~~~-1 barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~2~ ~~2~-1 barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~~ ~-1~~ barrier 0 replace air 0",
+						"/execute @s ~~~ fill ~~2~ ~-1~2~ barrier 0 replace air 0"
+                    ]
+                },
+				"door_fnaf_open": {
+                    "transitions": [{
+                            "default": "query.mark_variant != 2"
+                        }
+                    ],
+                    "on_entry": [
+                        "/execute @s ~~~ fill ~~~ ~~2~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~~~1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~~2~1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~1~~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~1~2~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~~~-1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~~2~-1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~-1~~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~-1~2~ air 0 replace barrier 0"
+                    ]
+                }
+            }
+        },
+		"controller.animation.door_fnaf_break": {
+            "states": {
+				"default": {
+					"transitions": [
+						{
+							"door_fnaf_breaked": "!query.is_alive"
+						}
+					]
+				},
+				"door_fnaf_breaked": {
+					"on_entry": [
+						"/execute @s ~~~ fill ~~~ ~~2~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~~~1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~~2~1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~1~~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~1~2~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~~~-1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~~2~-1 air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~~ ~-1~~ air 0 replace barrier 0",
+						"/execute @s ~~~ fill ~~2~ ~-1~2~ air 0 replace barrier 0",
+						"/teleport @s ~ ~-1000 ~"
+					]
+				}
+			}
+        },
+		"controller.animation.stand_still": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "song": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+						"/execute @s ~~~ tp @s ~~~"
+                    ]
+                },
+                "song": {
+                    "transitions": [{
+                            "default": "(1.0)"
+                        }
+                    ],
+                    "on_entry": [
+                        "/execute @s ~~~ tp @s ~~~"
+                    ]
+                }
+            }
+        }
+    }
+}

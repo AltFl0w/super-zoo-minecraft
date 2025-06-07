@@ -1,0 +1,321 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.golduck.quiet": {
+			"loop": true,
+			"animation_length": 1.2,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.6": [0, -1, -1],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6": [5, 0, 0],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [15, 0, 0],
+						"0.8": [0, 0, 0],
+						"1.2": [15, 0, 0]
+					}
+				},
+				"arms": {
+					"rotation": [10, 0, 0]
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": [0, 0, -20],
+						"0.4": [0, 0, -40],
+						"1.2": [0, 0, -20]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [0, 0, 20],
+						"0.4": [0, 0, 40],
+						"1.2": [0, 0, 20]
+					}
+				}
+			}
+		},
+		"animation.golduck.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"golduck": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, 0, 0],
+						"0.4": [0, 0, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"head": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2": [0, -1, -2],
+						"0.4": [0, 0, 0],
+						"0.6": [0, -1, -2],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [0, 5, 0],
+						"0.2": [10, 0, 0],
+						"0.4": [0, -5, 0],
+						"0.6": [10, 0, 0],
+						"0.8": [0, 5, 0]
+					}
+				},
+				"arms": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2": [15, 0, 0],
+						"0.4": [0, 0, 0],
+						"0.6": [15, 0, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, -25, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [0, 25, 0],
+						"0.4": [0, -25, 0],
+						"0.8": [0, 25, 0]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"0.0": [0, 30, 0],
+						"0.4": [-30, 0, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [0, 30, 0]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [0, 25, 0],
+						"0.4": [0, 0, 0],
+						"0.8": [0, 25, 0]
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"0.0": [-30, 0, 0],
+						"0.2": [0, 0, 0],
+						"0.4": [0, -30, 0],
+						"0.8": [-30, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.golduck.sitting": {
+			"loop": true,
+			"bones": {
+				"golduck": {
+					"position": [0, -5, 0]
+				},
+				"arms": {
+					"rotation": [30, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [0, -30, -15]
+				},
+				"tail": {
+					"rotation": [80, 15, 90]
+				},
+				"legs": {
+					"rotation": [-70, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 30, 15]
+				}
+			}
+		},
+		"animation.golduck.jump": {
+			"loop": true,
+			"bones": {
+				"golduck": {
+					"position": [0, 2, 0]
+				},
+				"arms": {
+					"rotation": [-40, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 0, 40]
+				},
+				"tail": {
+					"rotation": [-60, 0, 0],
+					"position": [0, 0, -1]
+				},
+				"legs": {
+					"rotation": [25, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, -40]
+				}
+			}
+		},
+		"animation.golduck.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -2, -4]
+				},
+				"body": {
+					"rotation": [20, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 45, 0]
+				},
+				"left_arm": {
+					"rotation": [-40, 50, 0]
+				}
+			}
+		},
+		"animation.golduck.swimming": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"golduck": {
+					"position": {
+						"0.0": [0, 2, 0],
+						"0.4": [0, 0, 0],
+						"0.8": [0, 2, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": [0, 25, 0],
+						"0.4": [0, -20, 0],
+						"0.8": [0, 25, 0]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [0, -20, 0],
+						"0.4": [0, 25, 0],
+						"0.8": [0, -20, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [0, 20, 0],
+						"0.4": [0, -20, 0],
+						"0.8": [0, 20, 0]
+					}
+				},
+				"legs": {
+					"rotation": {
+						"0.0": [15, 0, 0],
+						"0.4": [0, 0, 0],
+						"0.8": [15, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.golduck.sink": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"golduck": {
+					"rotation": {
+						"0.0": [-5, 0, 0],
+						"0.4": [5, 0, 0],
+						"0.6": [-5, 0, 0]
+					}
+				},
+				"arms": {
+					"rotation": {
+						"0.0": [30, 0, 0],
+						"0.4": [0, 0, 0],
+						"0.6": [30, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": [0, 0, -65],
+					"position": [-1, 0, 0]
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [-80, 0, -20],
+						"0.3": [-80, 0, 20],
+						"0.6": [-80, 0, -20]
+					},
+					"position": [0, 0, -2]
+				},
+				"legs": {
+					"rotation": {
+						"0.0": [85, 0, 0],
+						"0.2": [105, 0, 0],
+						"0.6": [85, 0, 0]
+					},
+					"position": [0, -5, 2]
+				},
+				"right_leg": {
+					"rotation": [0, -25, 0]
+				},
+				"head": {
+					"position": {
+						"0.0": [0, -17, -7.5],
+						"0.3": [0, -18, -7.5],
+						"0.6": [0, -17, -7.5]
+					}
+				},
+				"body": {
+					"rotation": [75, 0, 0],
+					"position": [0, -5, 3]
+				},
+				"left_arm": {
+					"rotation": [0, 0, 60],
+					"position": [1, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [0, 25, 0]
+				}
+			}
+		},
+		"animation.golduck.direction": {
+			"loop": true,
+			"bones": {
+				"golduck": {
+					"rotation": ["query.target_x_rotation - this", "query.target_y_rotation - this", "-math.max(-20,math.min(20,query.yaw_speed))"]
+				},
+				"tail": {
+					"rotation": [0, 0, "math.max(-35,math.min(35,query.yaw_speed))"]
+				}
+			}
+		},
+		"animation.golduck.health_bar": {
+			"loop": true,
+			"bones": {
+				"health_hover": {
+					"rotation": ["q.camera_rotation(0)", "q.camera_rotation(1)-q.body_y_rotation", 0],
+					"position": [0, 30, 0],
+					"scale": "query.is_in_ui?0:1.5"
+				},
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+		}
+	}
+}

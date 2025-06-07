@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:bocina",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_bocina"
+      },
+      "geometry": {
+        "default": "geometry.df_bocina"
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_bocina",
+        "texture_index": 0
+      }
+    }
+  }
+}

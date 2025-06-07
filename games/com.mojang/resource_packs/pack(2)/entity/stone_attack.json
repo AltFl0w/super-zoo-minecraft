@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "nw:stone_attack",
+      "render_controllers": [ "controller.render.skeleton" ],
+      "materials": { "default": "entity_alphatest" },
+      "textures": {"default": "textures/entity/stone_attack"},
+      "geometry": {"default": "geometry.stone_attack"},
+      "animation_controllers": [{"stone_attack": "controller.animation.stone_attack"}],
+      "animations": {"general": "animation.stone_attack.general"},
+      "particle_effects": {"stone_explosion": "nw:stone_explosion"},
+      "sound_effects": {"stomp": "eevee.stomp","break": "stone.break"}
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:pikachu",
+        "materials": { "default": "entity_alphatest" },
+        "textures": {
+          "default": "textures/entity/pikachu",
+          "pikachu_light_tail": "textures/entity/pikachu_light_tail"
+        },
+        "render_controllers": [ "controller.render.pikachu" ],
+        "spawn_egg": {
+          "base_color": "#ebc335",
+          "overlay_color": "#1a1100"
+        },
+        "geometry": {
+          "default": "geometry.pikachu"
+        },
+        "particle_effects": {
+          "tail_light": "nw:tail_light"
+        },
+        "animation_controllers": [
+          {"pikachu.baby": "controller.animation.pikachu.baby"},
+          {"pikachu": "controller.animation.pikachu"}
+        ],
+        "animations": {
+          "general": "animation.pikachu.general",
+          "sniff": "animation.pikachu.sniff",
+          "stretch": "animation.pikachu.stretch",
+          "run": "animation.pikachu.run",
+          "walk": "animation.pikachu.walk",
+          "swimm": "animation.pikachu.swimm",
+          "look_at_target": "animation.common.look_at_target",
+          "sitting": "animation.pikachu.sitting",
+          "pikachu_baby": "animation.pikachu.baby",
+          "attack1": "animation.pikachu.attack1",
+          "attack2": "animation.pikachu.attack2"
+        }
+    } 
+  }
+}

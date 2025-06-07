@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.joy.music": {
+			"loop": true,
+			"animation_length": 31.9,
+			"sound_effects": {
+            "0":{
+					"effect": "music"
+                }
+			}
+		}
+	}
+}

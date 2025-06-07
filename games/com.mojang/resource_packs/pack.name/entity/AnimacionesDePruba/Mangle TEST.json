@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:mangle",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_mangle"
+      },
+      "geometry": {
+        "default": "geometry.df_mangle"
+      },
+      "animations": {
+        "default_pose": "animation.df_mangle.base",
+        "no_pose": "animation.df_toy_foxy.parpadeo",
+        "solemn_pose": "animation.df_mangle.walk",
+        "athena_pose": "animation.df_mangle.attack",
+        "brandish_pose": "animation.df_mangle.pose1",
+        "honor_pose": "animation.df_mangle.pose2",
+        "entertain_pose": "animation.df_mangle.pose3",
+        "salute_pose": "animation.df_mangle.pose4",
+        "riposte_pose": "animation.df_mangle.escalando",
+        "zombie_pose": "animation.df_mangle.muerte",
+        "cancan_a_pose": "animation.df_mangle.base",
+        "cancan_b_pose": "animation.df_toy_foxy.parpadeo",
+        "hero_pose": "animation.df_mangle.walk",
+        "wiggle": "animation.df_mangle.attack"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_mangle",
+		"texture_index": 0
+      }
+    }
+  }
+}

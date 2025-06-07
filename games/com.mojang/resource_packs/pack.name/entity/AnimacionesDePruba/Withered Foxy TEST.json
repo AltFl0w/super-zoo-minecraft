@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:withered_foxy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_withered_foxy"
+      },
+      "geometry": {
+        "default": "geometry.df_withered_foxy"
+      },
+      "animations": {
+        "default_pose": "animation.df_withered_foxy.base",
+        "no_pose": "animation.testdf_withered_foxy.walk",
+        "solemn_pose": "animation.df_withered_foxy.casting",
+        "athena_pose": "animation.testdf_withered_foxy.run",
+        "brandish_pose": "animation.testdf_withered_foxy.attack",
+        "honor_pose": "animation.df_withered_foxy.parpadeo",
+        "entertain_pose": "animation.df_withered_foxy.pose1",
+        "riposte_pose": "animation.df_withered_foxy.pose2",
+        "salute_pose": "animation.df_withered_foxy.pose3",
+        "zombie_pose": "animation.df_withered_foxy.pose4",
+        "cancan_a_pose": "animation.df_withered_foxy.pose5",
+        "cancan_b_pose": "animation.df_withered_foxy.muerte",
+        "hero_pose": "animation.df_withered_foxy.base",
+        "wiggle": "animation.testdf_withered_foxy.walk"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_withered_foxy",
+		"texture_index": 0
+      }
+    }
+  }
+}

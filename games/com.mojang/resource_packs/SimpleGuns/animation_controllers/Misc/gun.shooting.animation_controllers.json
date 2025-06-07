@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10.0",
+   "animation_controllers":{
+      "controller.animation.gun.shooting":{
+         "initial_state":"default",
+         "states":{
+            "default":{
+               "transitions":[
+                  {
+                     "shoot":"q.main_hand_item_use_duration"
+                  }
+               ]
+            },
+            "shoot":{
+               "animations":[
+                  {
+                     "shoot":1
+                  }
+               ],
+               "transitions":[
+                  {
+                     "default":"q.all_animations_finished"
+                  }
+               ],
+               "blend_transition":3,
+               "blend_via_shortest_path":true
+            }
+         }
+      }
+   }
+}

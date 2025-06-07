@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:squirtle",
+        "materials": { "default": "entity_alphatest" },
+        "textures": {
+          "default": "textures/entity/squirtle"
+        },
+        "render_controllers": [ "controller.render.skeleton" ],
+        "spawn_egg": {
+          "base_color": "#2a91d6",
+          "overlay_color": "#b3927f"
+        },
+        "geometry": {
+          "default": "geometry.squirtle"
+        },
+        "animation_controllers": [
+          {"squirtle.baby": "controller.animation.squirtle.baby"},
+          {"squirtle": "controller.animation.squirtle"}
+        ],
+        "animations": {
+          "general": "animation.squirtle.general",
+          "run": "animation.squirtle.run",
+          "walk": "animation.squirtle.walk",
+          "swimm": "animation.squirtle.swimm",
+          "look_at_target": "animation.common.look_at_target",
+          "sitting": "animation.squirtle.sitting",
+          "squirtle_baby": "animation.squirtle.baby",
+          "attack1": "animation.squirtle.attack1",
+          "attack2": "animation.squirtle.attack2"
+        },
+        "sound_effects": {
+          "water.splash": "squirtle.water.splash"
+        }
+    } 
+  }
+}

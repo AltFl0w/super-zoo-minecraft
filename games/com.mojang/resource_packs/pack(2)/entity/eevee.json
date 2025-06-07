@@ -1,0 +1,41 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:eevee",
+        "materials": { "default": "entity_alphatest" },
+        "textures": {
+          "default": "textures/entity/eevee"
+        },
+        "render_controllers": [ "controller.render.skeleton" ],
+        "spawn_egg": {
+          "base_color": "#b8945d",
+          "overlay_color": "#fcf8f0"
+        },
+        "particle_effects": {
+          "flame": "nw:flame"
+        },
+        "geometry": {
+          "default": "geometry.eevee"
+        },
+        "animation_controllers": [
+          {"eevee.baby": "controller.animation.eevee.baby"},
+          {"eevee": "controller.animation.eevee"}
+        ],
+        "animations": {
+          "look_at_target": "animation.common.look_at_target",
+          "general": "animation.eevee.general",
+          "run": "animation.eevee.run",
+          "walk": "animation.eevee.walk",
+          "swimm": "animation.eevee.swimm",
+          "sitting": "animation.eevee.sitting",
+          "eevee_baby": "animation.eevee.baby",
+          "attack1": "animation.eevee.attack1",
+          "attack2": "animation.eevee.attack2"
+        },
+        "sound_effects": {
+          "stomp": "eevee.stomp"
+        }
+    } 
+  }
+}

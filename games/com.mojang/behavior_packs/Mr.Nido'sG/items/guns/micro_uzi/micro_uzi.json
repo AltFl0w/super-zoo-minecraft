@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:micro_uzi",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"gun",
+                    "item_hand",
+					"micro_uzi",
+					"item_using",
+					"one_gun"
+                ]
+            },
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 0.85
+			},
+			"minecraft:cooldown": {
+				"duration": 0.1,
+				"category": "micro_uzi"
+			},
+			"minecraft:icon": {
+				"texture": "micro_uzi"
+			},
+			"minecraft:hand_equipped": true
+		}
+	}
+}

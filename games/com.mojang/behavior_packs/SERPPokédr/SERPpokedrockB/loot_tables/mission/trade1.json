@@ -1,0 +1,26 @@
+{
+  "pools":[
+	{
+      "rolls":1,
+      "entries":[
+{"type":"item","name":"serp:poke","functions":[{"function":"set_count","count":{"min":30,"max":50}}]}
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+{"type":"item","weight":10,"name":"serp:cheri_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:chesto_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:lum_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:nanab_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:aspear_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:pamtre_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:razz_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:pinap_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:persim_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:rindo_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]},
+{"type":"item","weight":10,"name":"serp:rawst_berry","functions":[{"function":"set_count","count":{"min":2,"max":5}}]}
+      ]
+    }
+  ]
+}

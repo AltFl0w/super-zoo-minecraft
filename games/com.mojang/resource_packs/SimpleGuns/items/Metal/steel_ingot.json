@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:steel_ingot",
+      "category": "Item"
+    },
+    
+    "components": {
+      "minecraft:icon": "steel_ingot"
+    }
+  }
+}

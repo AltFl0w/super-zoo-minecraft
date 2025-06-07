@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:withered_bonnie",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_withered_bonnie"
+      },
+      "geometry": {
+        "default": "geometry.df_withered_bonnie"
+      },
+      "animations": {
+        "default_pose": "animation.df_withered_bonnie.base",
+        "no_pose": "animation.testdf_withered_bonnie.walk",
+        "solemn_pose": "animation.df_withered_bonnie.casting",
+        "athena_pose": "animation.testdf_withered_bonnie.attack",
+        "brandish_pose": "animation.df_withered_bonnie.pose1",
+        "honor_pose": "animation.df_withered_bonnie.pose2",
+        "entertain_pose": "animation.df_withered_bonnie.pose3",
+        "salute_pose": "animation.df_withered_bonnie.pose4",
+        "riposte_pose": "animation.df_withered_bonnie.muerte",
+        "zombie_pose": "animation.df_withered_bonnie.base",
+        "cancan_a_pose": "animation.testdf_withered_bonnie.walk",
+        "cancan_b_pose": "animation.df_withered_bonnie.casting",
+        "hero_pose": "animation.testdf_withered_bonnie.attack",
+        "wiggle": "animation.df_withered_bonnie.pose1"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_withered_bonnie",
+		"texture_index": 0
+      }
+    }
+  }
+}

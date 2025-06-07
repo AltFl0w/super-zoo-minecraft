@@ -1,0 +1,16 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:max_repel",
+      "menu_category":{"category":"items"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:max_repel.name"},
+      "minecraft:icon":"max_repel",
+      "minecraft:food":{"nutrition":0,"saturation_modifier":0},
+	    "minecraft:use_modifiers":{"use_duration":1.6,"movement_modifier":0.35},
+	    "minecraft:use_animation":"drink"
+    }
+  }
+}

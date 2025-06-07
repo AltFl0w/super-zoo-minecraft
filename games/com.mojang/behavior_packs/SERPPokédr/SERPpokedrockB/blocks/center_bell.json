@@ -1,0 +1,15 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:block":{
+    "description":{
+      "identifier":"serp:center_bell"
+    },
+    "components":{
+	    "minecraft:collision_box":{"origin":[-4,0,-4],"size":[8,5,8]},
+      "minecraft:selection_box":{"origin":[-4,0,-4],"size":[8,5,8]},
+      "minecraft:material_instances":{"*":{"texture":"center_bell","render_method":"alpha_test","face_dimming":false}},
+      "minecraft:geometry":"geometry.centerbell",
+      "minecraft:destructible_by_mining":false
+    }
+  }
+}

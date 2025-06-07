@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.reverse_sword": {
+			"geometry": "Geometry.reverse_sword",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.reverse_sword"
+			]
+		}
+	}
+}

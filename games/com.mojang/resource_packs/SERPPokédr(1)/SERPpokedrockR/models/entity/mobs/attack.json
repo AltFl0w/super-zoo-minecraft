@@ -1,0 +1,86 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.attack",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "diagonal_cut",
+					"parent": "body",
+					"pivot": [0, 8, 0],
+					"locators": {
+						"diagonal_cut": {
+							"offset": [0, 8, 0],
+							"rotation": [0, 0, 45]
+						}
+					}
+				},
+				{
+					"name": "one",
+					"parent": "body",
+					"pivot": [0, 8, 0],
+					"locators": {
+						"point": [0, 8, 0]
+					}
+				},
+				{
+					"name": "two",
+					"parent": "body",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "part1",
+					"parent": "two",
+					"pivot": [0, 16, 0],
+					"locators": {
+						"part1": [0, 16, 0]
+					}
+				},
+				{
+					"name": "part2",
+					"parent": "two",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 0, -180],
+					"locators": {
+						"part2": [0, 0, 0]
+					}
+				},
+				{
+					"name": "fire_blast",
+					"parent": "body",
+					"pivot": [0, 8, 0],
+					"locators": {
+						"blast1": [0, 8, 0],
+						"blast2": {
+							"offset": [0, 12, 0],
+							"rotation": [0, 0, -40]
+						},
+						"blast3": {
+							"offset": [0, 12, 0],
+							"rotation": [0, 0, 40]
+						},
+						"blast4": {
+							"offset": [0, 8, 0],
+							"rotation": [0, 0, -135]
+						},
+						"blast5": {
+							"offset": [0, 8, 0],
+							"rotation": [0, 0, 135]
+						}
+					}
+				}
+			]
+		}
+	]
+}

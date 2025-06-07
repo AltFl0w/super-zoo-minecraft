@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:kyogre_fang",
+	    "menu_category":{"category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:kyogre_fang.name"},
+	    "minecraft:icon":"kyogre_fang"
+    }
+  }
+}

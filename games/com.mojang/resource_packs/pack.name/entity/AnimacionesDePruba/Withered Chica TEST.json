@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:withered_chica",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_withered_chica"
+      },
+      "geometry": {
+        "default": "geometry.df_withered_chica"
+      },
+      "animations": {
+        "default_pose": "animation.df_withered_chica.base",
+        "no_pose": "animation.testdf_withered_chica.walk",
+        "solemn_pose": "animation.df_withered_chica.casting",
+        "athena_pose": "animation.testdf_withered_chica.attack",
+        "brandish_pose": "animation.df_withered_chica.muerte",
+        "honor_pose": "animation.df_withered_chica.pose1",
+        "entertain_pose": "animation.df_withered_chica.pose2",
+        "riposte_pose": "animation.df_withered_chica.pose3",
+        "salute_pose": "animation.df_withered_chica.pose4",
+        "zombie_pose": "animation.df_withered_chica.base",
+        "cancan_a_pose": "animation.testdf_withered_chica.walk",
+        "cancan_b_pose": "animation.df_withered_chica.casting",
+        "hero_pose": "animation.testdf_withered_chica.attack",
+        "wiggle": "animation.df_withered_chica.muerte"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_withered_chica",
+		"texture_index": 0
+      }
+    }
+  }
+}

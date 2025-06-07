@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:cooked_seaurchin",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "cooked_seaurchin",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

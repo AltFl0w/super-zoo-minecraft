@@ -1,0 +1,99 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:tornado_summon",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"wep:despawning": {
+				"minecraft:is_sheared": {},
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"event": "wep:on_despawn"
+					}
+				}
+			},
+			"wep:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"wep:cast": {
+				"minecraft:is_ignited": {},
+				"minecraft:transformation": {
+					"into": "wep:tornado"
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"despawns"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": 2,
+				"time_down_event": {
+					"event": "wep:on_despawning"
+				}
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": false
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:knockback_resistance": {
+				"value": 999
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 20,
+						"add": {
+							"component_groups": [
+								"wep:cast"
+							]
+						}
+					},
+					{
+						"weight": 80
+					}
+				]
+			},
+			"wep:on_despawning": {
+				"add": {
+					"component_groups": [
+						"wep:despawning"
+					]
+				}
+			},
+			"wep:on_despawn": {
+				"add": {
+					"component_groups": [
+						"wep:despawn"
+					]
+				}
+			}
+		}
+	}
+}

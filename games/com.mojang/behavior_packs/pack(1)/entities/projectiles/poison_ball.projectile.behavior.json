@@ -1,0 +1,96 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:poison_ball",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball",
+			"animations": {
+				"effect": "controller.animation.poison_ball.effect"
+			},
+			"scripts": {
+				"animate": [
+					"effect"
+				]
+			}
+		},
+		"component_groups": {
+			"minecraft:exploding": {
+				"minecraft:explode": {
+					"fuse_length": 0.9,
+					"fuse_lit": true,
+					"power": 1,
+					"causes_fire": false,
+					"max_resistance": 4,
+					"destroy_affected_by_griefing": true
+				},
+				"minecraft:is_ignited": {}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.15,
+				"height": 0.15
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"definition_event": {
+						"affect_projectile": true,
+						"event_trigger": {
+							"event": "minecraft:explode",
+							"target": "self"
+						}
+					},
+					"mob_effect": {
+						"effect": "poison",
+						"durationeasy": 200,
+						"durationnormal": 200,
+						"durationhard": 200,
+						"amplifier": 2
+					},
+					"stick_in_ground": {}
+				},
+				"power": 0.6,
+				"gravity": 0,
+				"uncertainty_base": 7.5,
+				"uncertainty_multiplier": 1,
+				"shoot_sound": "mob.witch.throw",
+				"hit_sound": "mob.elderguardian.curse",
+				"anchor": 1,
+				"offset": [
+					0,
+					-0.1,
+					0
+				],
+				"is_dangerous": true,
+				"inertia": 1,
+				"liquid_inertia": 1,
+				"shoot_target": false,
+				"reflect_on_hurt": true
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:conditional_bandwidth_optimization": {
+				"default_values": {
+					"max_optimized_distance": 80,
+					"max_dropped_ticks": 10,
+					"use_motion_prediction_hints": true
+				}
+			}
+		},
+		"events": {
+			"minecraft:explode": {
+				"add": {
+					"component_groups": [
+						"minecraft:exploding"
+					]
+				}
+			}
+		}
+	}
+}

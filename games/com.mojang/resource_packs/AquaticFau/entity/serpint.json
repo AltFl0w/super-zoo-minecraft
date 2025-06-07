@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.serpint"
+      },
+      "identifier": "fauna:serpint",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "serpint",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/serpint"
+      },
+      "animations": {
+        "attack": "animation.serpint.attack",
+        "idle": "animation.serpint.idle",
+        "swim": "animation.serpint.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

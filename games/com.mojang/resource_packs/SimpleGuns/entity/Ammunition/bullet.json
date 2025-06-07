@@ -1,0 +1,30 @@
+{
+   "format_version":"1.10.0",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:bullet",
+         "materials":{
+            "default":"skeleton"
+         },
+         "textures":{
+            "default":"textures/entity/guns/bullet"
+         },
+         "geometry":{
+            "default":"geometry.bullet"
+         },
+         "animations":{
+            "bullet_shoot":"controller.animation.bullet_shoot"
+         },
+         "scripts":{
+            "animate":[
+               {
+                  "bullet_shoot":"query.life_time <= 1"
+               }
+            ]
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

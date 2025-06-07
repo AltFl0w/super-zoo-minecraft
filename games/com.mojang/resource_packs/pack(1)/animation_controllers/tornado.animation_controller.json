@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tornado": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"tornado": "query.is_alive"
+						}
+					]
+				},
+				"tornado": {
+					"transitions": [
+						{
+							"default": "!query.is_alive"
+						}
+					],
+					"particle_effects": [
+						{
+							"effect": "tornado"
+						}
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:wishing_star",
+	    "menu_category":{"group":"itemGroup.name.stone","category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:wishing_star.name"},
+      "minecraft:icon":"wishing_star"
+    }
+  }
+}

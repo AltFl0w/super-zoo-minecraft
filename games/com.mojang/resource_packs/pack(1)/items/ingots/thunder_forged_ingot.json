@@ -1,0 +1,16 @@
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:thunder_forged_ingot"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.iron"
+			},
+			"minecraft:icon": "thunder_forged_ingot",
+			"minecraft:render_offsets": "ingots",
+			"minecraft:display_name": {}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:toy_bonnie",
+      "materials": {
+        "default": "base",
+        "outer": "guitarra"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_toy_bonnie"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_bonnie"
+      },
+      "animations": {
+        "df_toy_bonnie_general": "animation.df_toy_bonnie.base",
+        "df_caminando_toy_bonnie": "animation.df_toy_bonnie.walk",
+        "df_corriendo_toy_bonnie": "animation.df_toy_bonnie.run",
+        "df_ataque_toy_bonnie": "animation.df_toy_bonnie.attack",
+        "df_parpadeo_toy_bonnie": "animation.df_toy_bonnie.parpadeo",
+        "df_preparacion_toy_bonnie": "animation.df_toy_bonnie.salto",
+        "df_salto2_toy_bonnie": "animation.df_toy_bonnie.salto2",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_toy_bonnie.move",
+        "salto": "controller.animation.df_toy_bonnie.salto",
+        "general": "controller.animation.df_toy_bonnie.general",
+        "ataque": "controller.animation.df_toy_bonnie.ataque",
+        "corriendo": "controller.animation.df_toy_bonnie.corriendo"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general", "ataque", "corriendo", "salto"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf"],
+      "spawn_egg": {
+        "texture": "df_toy_bonnie",
+        "texture_index": 0
+      }
+    }
+  }
+}

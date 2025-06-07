@@ -1,0 +1,121 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+		"controller.animation.df_mascara_fnaf2": {
+			"initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+						{
+                            "df_mascara": "query.get_equipped_item_name('main_hand') == 'mascara_fnaf2' && query.is_using_item"
+                        }
+					]
+                },
+                "df_mascara": {
+                    "transitions": [
+						{
+                            "default": "query.get_equipped_item_name('main_hand') != 'mascara_fnaf2'"
+                        }
+                    ],
+                    "on_entry": [
+					   "/replaceitem entity @s slot.weapon.mainhand 0 air",
+					   "/replaceitem entity @s slot.armor.head 0 df:mascara_fnaf2",
+					   "/say safe"
+                    ]
+                }
+            }
+        },
+		"controller.animation.keypad": {
+			"initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+						{
+                            "keypad1": "query.get_equipped_item_name('main_hand') == 'keypad' && query.is_using_item"
+                        }
+					]
+                },
+                "keypad1": {
+                    "transitions": [
+						{
+                            "keypad2": "query.get_equipped_item_name('main_hand') == 'keypad2' && query.is_using_item"
+                        }
+                    ],
+                    "animations": [
+					   "keypad1"
+                    ]
+                },
+                "keypad2": {
+                    "transitions": [
+						{
+                            "keypad3": "query.get_equipped_item_name('main_hand') == 'keypad3' && query.is_using_item"
+                        }
+                    ],
+                    "animations": [
+					   "keypad2"
+                    ]
+                },
+                "keypad3": {
+                    "transitions": [
+						{
+                            "keypad4": "query.get_equipped_item_name('main_hand') == 'keypad4' && query.is_using_item"
+                        }
+                    ],
+                    "animations": [
+					   "keypad3"
+                    ]
+                },
+                "keypad4": {
+                    "transitions": [
+						{
+                            "keypad5": "query.get_equipped_item_name('main_hand') == 'keypad5' && query.is_using_item"
+                        }
+                    ],
+                    "animations": [
+					   "keypad4"
+                    ]
+                },
+                "keypad5": {
+                    "transitions": [
+						{
+                            "keypad6": "query.get_equipped_item_name('main_hand') == 'keypad6' && query.is_using_item"
+                        }
+                    ],
+                    "animations": [
+					   "keypad5"
+                    ]
+                },
+                "keypad6": {
+                    "transitions": [
+						{
+                            "keypad7": "query.get_equipped_item_name('main_hand') == 'keypad7' && query.is_using_item"
+                        }
+                    ],
+                    "animations": [
+					   "keypad6"
+                    ]
+                },
+                "keypad7": {
+                    "transitions": [
+						{
+                            "keypad8": "query.get_equipped_item_name('main_hand') == 'keypad8' && query.is_using_item"
+                        }
+                    ],
+                    "animations": [
+					   "keypad7"
+                    ]
+                },
+                "keypad8": {
+                    "transitions": [
+						{
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "animations": [
+					   "keypad8"
+                    ]
+                }
+            }
+        }
+    }
+}

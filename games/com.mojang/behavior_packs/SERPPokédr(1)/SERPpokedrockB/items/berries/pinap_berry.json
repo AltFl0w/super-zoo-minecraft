@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:pinap_berry",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:use_duration": 32,
+      "minecraft:hand_equipped": false,
+      "minecraft:food": {
+        "nutrition": 12,
+        "saturation_modifier": "good",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "resistance",
+            "chance": 1.0,
+            "duration": 15,
+            "amplifier": 0
+          }
+        ]
+      }
+    }
+  }
+}

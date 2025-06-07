@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:big_bulletproof_vest",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/big_bulletproof_vest"
+			},
+			"geometry": {
+				"default": "geometry.big_bulletproof_vest"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

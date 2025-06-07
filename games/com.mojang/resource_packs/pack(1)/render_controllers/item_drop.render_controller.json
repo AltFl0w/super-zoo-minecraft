@@ -1,0 +1,96 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.item_drop": {
+			"arrays": {
+				"textures": {
+					"Array.textures": [
+						"Texture.default",
+						"Texture.burning_double_axe",
+						"Texture.fiery_sword",
+						"Texture.lava_sword",
+						"Texture.magma_greatsword",
+						"Texture.meteorite_sword",
+						"Texture.air_sword",
+						"Texture.windy_double_sword",
+						"Texture.windy_greataxe",
+						"Texture.tornado_sword",
+						"Texture.throwing_axe",
+						"Texture.void_sword",
+						"Texture.battle_void_axe",
+						"Texture.short_shadow_sword",
+						"Texture.dark_broadsword",
+						"Texture.storm_sword",
+						"Texture.water_axe",
+						"Texture.water_greatsword",
+						"Texture.geyser_axe",
+						"Texture.boulder_axe",
+						"Texture.rocky_greatsword",
+						"Texture.ground_axe",
+						"Texture.rockfall_axe",
+						"Texture.snap_sword",
+						"Texture.electric_axe",
+						"Texture.lightning_sword",
+						"Texture.bolt_sword",
+						"Texture.poison_sword",
+						"Texture.poisonous_axe",
+						"Texture.poisonous_hammer_axe",
+						"Texture.frost_sword",
+						"Texture.ice_battleaxe",
+						"Texture.icicle_sword",
+						"Texture.reverse_sword",
+						"Texture.timelapse_axe",
+						"Texture.fast_sword"
+					]
+				},
+				"geometries": {
+					"Array.models": [
+						"Geometry.default",
+						"Geometry.burning_double_axe",
+						"Geometry.fiery_sword",
+						"Geometry.lava_sword",
+						"Geometry.magma_greatsword",
+						"Geometry.meteorite_sword",
+						"Geometry.air_sword",
+						"Geometry.windy_double_sword",
+						"Geometry.windy_greataxe",
+						"Geometry.tornado_sword",
+						"Geometry.throwing_axe",
+						"Geometry.void_sword",
+						"Geometry.battle_void_axe",
+						"Geometry.short_shadow_sword",
+						"Geometry.dark_broadsword",
+						"Geometry.storm_sword",
+						"Geometry.water_axe",
+						"Geometry.water_greatsword",
+						"Geometry.geyser_axe",
+						"Geometry.boulder_axe",
+						"Geometry.rocky_greatsword",
+						"Geometry.ground_axe",
+						"Geometry.rockfall_axe",
+						"Geometry.snap_sword",
+						"Geometry.electric_axe",
+						"Geometry.lightning_sword",
+						"Geometry.bolt_sword",
+						"Geometry.poison_sword",
+						"Geometry.poisonous_axe",
+						"Geometry.poisonous_hammer_axe",
+						"Geometry.frost_sword",
+						"Geometry.ice_battleaxe",
+						"Geometry.icicle_sword",
+						"Geometry.reverse_sword",
+						"Geometry.timelapse_axe",
+						"Geometry.fast_sword"
+					]
+				}
+			},
+			"geometry": "Array.models[query.mark_variant]",
+			"materials": [{
+				"*": "Material.default"
+			}],
+			"textures": [
+				"Array.textures[query.mark_variant]"
+			]
+		}
+	}
+}

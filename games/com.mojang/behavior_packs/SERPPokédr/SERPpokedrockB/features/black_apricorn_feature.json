@@ -1,0 +1,12 @@
+{
+  "format_version":"1.16.0",
+  "minecraft:single_block_feature":{
+    "description":{
+      "identifier":"serp:black_apricorn_feature"
+    },
+    "places_block":{"name":"serp:apricorn_block","states":{"serp:phase":2,"serp:apricorn":1}},
+    "enforce_survivability_rules":false,
+    "enforce_placement_rules":false,
+    "may_replace":["minecraft:tallgrass"]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "minecraft:furnace_raw_seaurchin"
+    },
+    "tags": [
+      "furnace",
+      "smoker"
+    ],
+    "input": "fauna:raw_seaurchin",
+    "output": "fauna:cooked_seaurchin"
+  }
+}

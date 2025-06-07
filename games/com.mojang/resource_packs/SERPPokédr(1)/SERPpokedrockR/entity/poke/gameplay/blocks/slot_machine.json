@@ -1,0 +1,15 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:slot_machine",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{"default":"textures/entity/slot_machine"},
+      "geometry":{"default":"geometry.serpslot"},
+      "animations":{"rotate":"animation.slot.rotation"},
+      "sound_effects":{"clap":"serp.slot.clap"},
+	  "scripts":{"animate":[{"rotate":"q.property('serp:stop')>0"}]},
+      "render_controllers":["controller.render.serp_general"]
+  }
+  }
+}

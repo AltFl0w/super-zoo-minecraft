@@ -1,0 +1,116 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.weepinbell.quiet": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"weepinbell": {
+					"rotation": {
+						"0.0": [0, 0, 5],
+						"0.8": [0, 0, -5],
+						"1.6": [0, 0, 5]
+					}
+				},
+				"right_leaf": {
+					"rotation": {
+						"0.0": [0, 0, 10],
+						"0.8": [0, 0, -10],
+						"1.6": [0, 0, 10]
+					}
+				},
+				"left_leaf": {
+					"rotation": {
+						"0.0": [0, 0, -10],
+						"0.8": [0, 0, 10],
+						"1.6": [0, 0, -10]
+					}
+				}
+			}
+		},
+		"animation.weepinbell.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"weepinbell": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6": [-10, 0, 0],
+						"0.8": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, 2, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"right_leaf": {
+					"rotation": {
+						"0.0": [90, -25, 0],
+						"0.4": [45, 25, 0],
+						"0.8": [90, -25, 0]
+					}
+				},
+				"left_leaf": {
+					"rotation": {
+						"0.0": [90, 25, 0],
+						"0.4": [45, -50, 0],
+						"0.8": [90, 25, 0]
+					}
+				}
+			}
+		},
+		"animation.weepinbell.sitting": {
+			"loop": true,
+			"bones": {
+				"weepinbell": {
+					"rotation": [35, 0, 0],
+					"position": [0, -4, -12]
+				},
+				"right_leaf": {
+					"rotation": [-35, 0, -40]
+				},
+				"left_leaf": {
+					"rotation": [-35, 0, 40]
+				}
+			}
+		},
+		"animation.weepinbell.jump": {
+			"loop": true
+		},
+		"animation.weepinbell.attack": {
+			"loop": true,
+			"bones": {
+				"weepinbell": {
+					"rotation": [-35, 0, 0],
+					"position": [0, -6, 0]
+				}
+			}
+		},
+		"animation.weepinbell.swimming": {
+			"loop": true,
+			"bones": {
+				"weepinbell": {
+					"rotation": [35, 0, -180],
+					"position": [0, -30, -9]
+				}
+			}
+		},
+        "animation.weepinbell.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,35,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

@@ -1,0 +1,41 @@
+{
+    "format_version": "1.10.0",
+    "animations": {
+        "animation.heiseigodzilla.delay_heisei_godzilla_spawn": {
+            "animation_length": 1,
+            "loop": false,
+            "timeline": {
+                "0.3": [
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ yellow_flower 0 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 0 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 1 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 2 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 3 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 4 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 5 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 6 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 7 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 8 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 9 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ red_flower 10 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ double_plant 0 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ double_plant 1 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ double_plant 4 event entity @s heiseigodzilla:become_soiled_variant",
+                    "/execute @s[tag=!fullySpawned] ~ ~ ~ detect ~ ~ ~ double_plant 5 event entity @s heiseigodzilla:become_soiled_variant"
+                ],
+                "0.6": [
+                    "/tag @s[tag=fullySpawned] add fullySpawned"
+                ]
+            }
+        },
+        "animation.heiseigodzilla.create_fire_on_ground": {
+            "animation_length": 0.05,
+            "loop": true,
+            "timeline": {
+                "0": [
+                    "/execute @s[tag=!neutralized] ~ ~ ~ fill ~-16 ~ ~-16 ~+16 ~+3 ~+16 fire 0 keep"
+                ]
+            }
+        }
+    }
+}

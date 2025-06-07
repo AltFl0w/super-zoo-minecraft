@@ -1,0 +1,20 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:rayquaza_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      " f ",
+      "iwi",
+      "fif"
+    ],
+    "key":{
+      "w":{"item":"minecraft:ancient_debris"},
+      "f":{"item":"serp:rayquaza_scale"},
+      "i":{"item":"minecraft:dried_kelp"}
+    },
+    "result":{"item":"serp:rayquaza_offering"}
+  }
+}

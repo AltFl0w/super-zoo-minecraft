@@ -1,0 +1,74 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serpitem",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "poke_stop",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "base",
+					"parent": "poke_stop",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-5, 0, -5], "size": [10, 2, 10], "uv": [0, 0]},
+						{"origin": [-5, 16, -5], "size": [10, 1, 10], "uv": [0, 12]},
+						{"origin": [-4, 2, -4], "size": [1, 14, 1], "uv": [12, 37]},
+						{"origin": [3, 2, -4], "size": [1, 14, 1], "uv": [8, 37]},
+						{"origin": [3, 2, 3], "size": [1, 14, 1], "uv": [4, 37]},
+						{"origin": [-4, 2, 3], "size": [1, 14, 1], "uv": [0, 37]}
+					]
+				},
+				{
+					"name": "ball",
+					"parent": "poke_stop",
+					"pivot": [0, 18, 0],
+					"cubes": [
+						{"origin": [-3, 18, 0], "size": [6, 6, 0], "uv": [30, 0]}
+					]
+				},
+				{
+					"name": "side1",
+					"parent": "poke_stop",
+					"pivot": [-3, 16, 0],
+					"cubes": [
+						{"origin": [-3, 2, -3], "size": [0, 14, 6], "uv": [12, 17]}
+					]
+				},
+				{
+					"name": "side2",
+					"parent": "poke_stop",
+					"pivot": [3, 16, 0],
+					"cubes": [
+						{"origin": [3, 2, -3], "size": [0, 14, 6], "uv": [0, 17]}
+					]
+				},
+				{
+					"name": "side3",
+					"parent": "poke_stop",
+					"pivot": [0, 16, 3],
+					"cubes": [
+						{"origin": [-3, 2, 3], "size": [6, 14, 0], "uv": [36, 23]}
+					]
+				},
+				{
+					"name": "side4",
+					"parent": "poke_stop",
+					"pivot": [0, 16, -3],
+					"cubes": [
+						{"origin": [-3, 2, -3], "size": [6, 14, 0], "uv": [24, 23]}
+					]
+				}
+			]
+		}
+	]
+}

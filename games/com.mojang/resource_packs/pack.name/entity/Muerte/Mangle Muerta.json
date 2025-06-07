@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:mangle_m",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_mangle"
+      },
+      "geometry": {
+        "default": "geometry.df_mangle"
+      },
+      "animations": {
+        "muerte": "animation.df_mangle.humo",
+        "df_mangle_m": "animation.df_mangle.muerte"
+  
+      },
+      "scripts": {
+        "animate": [
+         "df_mangle_m", "muerte"
+        ]
+      },
+      "particle_effects": {
+        "humo": "minecraft:egg_destroy_emitter",
+        "humo2": "minecraft:campfire_tall_smoke_particle"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_foxdee",
+        "texture_index": 0
+      }
+    }
+  }
+}

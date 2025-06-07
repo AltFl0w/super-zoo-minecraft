@@ -1,0 +1,143 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serphealer",
+				"texture_width": 160,
+				"texture_height": 160,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "healer",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "machine",
+					"parent": "healer",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-12, 0, -13], "size": [24, 15, 29], "uv": [0, 0]},
+						{"origin": [-17, 0, -13.05], "size": [34, 20, 0], "uv": [88, 50]},
+						{"origin": [-19, 4, -13], "size": [7, 11, 29], "pivot": [-12, 15, 0], "rotation": [0, 0, -25.6], "uv": [44, 58]},
+						{"origin": [12, 4, -13], "size": [7, 11, 29], "pivot": [12, 15, 0], "rotation": [0, 0, 25.6], "uv": [44, 58], "mirror": true},
+						{"origin": [-18.31283, -0.0246, -13], "size": [7, 12, 29], "uv": [0, 45]},
+						{"origin": [-19.32328, 8.86692, -13], "size": [1, 3.17, 29], "pivot": [-19.01045, 8.89152, 0], "rotation": [0, 0, 18.4], "uv": [0, 45]},
+						{"origin": [18.32328, 8.86692, -13], "size": [1, 3.17, 29], "pivot": [19.01045, 8.89152, 0], "rotation": [0, 0, -18.4], "uv": [0, 45], "mirror": true},
+						{"origin": [-19.31283, -0.0246, -13], "size": [1, 9, 29], "uv": [0, 45]},
+						{"origin": [18.31283, -0.0246, -13], "size": [1, 9, 29], "uv": [0, 45], "mirror": true},
+						{"origin": [11.31283, -0.0246, -13], "size": [7, 12, 29], "uv": [0, 45], "mirror": true},
+						{"origin": [-10, 15, 11], "size": [20, 4, 5], "uv": [78, 0]},
+						{"origin": [-4, 19, 12.5], "size": [8, 2, 2], "uv": [0, 7]},
+						{"origin": [-6, 21, 11.5], "size": [12, 6, 4], "uv": [44, 45]},
+						{"origin": [-7, 23.5, 12], "size": [1, 3, 3], "uv": [9, 17]},
+						{"origin": [6, 23.5, 12], "size": [1, 3, 3], "uv": [9, 17], "mirror": true},
+						{"origin": [-17, 23.5, 12], "size": [6, 3, 3], "pivot": [-12, 25, 14], "rotation": [0, 0, -45], "uv": [0, 0]},
+						{"origin": [11, 23.5, 12], "size": [6, 3, 3], "pivot": [12, 25, 14], "rotation": [0, 0, 45], "uv": [0, 0], "mirror": true},
+						{"origin": [-12, 24, 12.5], "size": [5, 2, 2], "uv": [9, 12]},
+						{"origin": [7, 24, 12.5], "size": [5, 2, 2], "uv": [9, 12], "mirror": true},
+						{"origin": [-16, 13, 12.5], "size": [2, 10, 2], "uv": [0, 12]},
+						{"origin": [14, 13, 12.5], "size": [2, 10, 2], "uv": [0, 12], "mirror": true},
+						{"origin": [-10, 15, -13], "size": [20, 4, 4], "uv": [34, 99]},
+						{"origin": [-6, 18, -9], "size": [11, 0, 20], "uv": [97, 79]},
+						{"origin": [-10, 15, -9], "size": [5, 4, 20], "uv": [63, 99]},
+						{"origin": [5, 15, -9], "size": [5, 4, 20], "uv": [63, 99], "mirror": true},
+						{"origin": [-12, 15, -13], "size": [2, 4.47, 29], "pivot": [-12, 15, 0], "rotation": [0, 0, 26.5], "uv": [0, 87]},
+						{"origin": [10, 15, -13], "size": [2, 4.47, 29], "pivot": [12, 15, 0], "rotation": [0, 0, -26.5], "uv": [78, 16]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.serphealer_lights",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "lights",
+					"pivot": [2.5, 12, 2],
+				"locators": {
+		"ball": [2.5, 18, -0],
+		"ball2": [-2.5, 18, -0],
+		"ball3": [2.5, 18, 6.5],
+		"ball4": [-2.5, 18, 6.5],
+		"ball5": [2.5, 18, -8.5],
+		"ball6": [-2.5, 18, -8.5]
+					}
+				},
+				{
+					"name": "1",
+					"parent": "lights",
+					"pivot": [2.5, 18, 1],
+					"cubes": [
+					{"origin": [0.5, 18, -1], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "2",
+					"parent": "lights",
+					"pivot": [-2.5, 18, 1],
+					"cubes": [
+					{"origin": [-4.5, 18, -1], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "3",
+					"parent": "lights",
+					"pivot": [2.5, 18, 8.5],
+					"cubes": [
+					{"origin": [0.5, 18, 6.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "4",
+					"parent": "lights",
+					"pivot": [-2.5, 18, 8.5],
+					"cubes": [
+					{"origin": [-4.5, 18, 6.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "5",
+					"parent": "lights",
+					"pivot": [2.5, 18, -6.5],
+					"cubes": [
+					{"origin": [0.5, 18, -8.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "6",
+					"parent": "lights",
+					"pivot": [-2.5, 18, -6.5],
+					"cubes": [
+					{"origin": [-4.5, 18, -8.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.serphealer_sparks",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "healing_machine",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

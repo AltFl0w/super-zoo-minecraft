@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.benelli_m4.shoot.explosive": {
+      "loop": true,
+      "animation_length": 0.35,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.benelli_m4 @a[r=25]",
+			"/scoreboard players remove @s benelli_m4 1",
+			"/event entity @s guns:benelli_m4.explosive",
+			"/function benelli_m4/benelli_m4",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.benelli_m4.shoot.fire": {
+      "loop": true,
+      "animation_length": 0.35,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.benelli_m4 @a[r=25]",
+			"/scoreboard players remove @s benelli_m4 1",
+			"/event entity @s guns:benelli_m4.fire",
+			"/function benelli_m4/benelli_m4",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.benelli_m4.shoot": {
+      "loop": true,
+      "animation_length": 0.35,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.benelli_m4 @a[r=25]",
+			"/scoreboard players remove @s benelli_m4 1",
+			"/event entity @s guns:benelli_m4",
+			"/function benelli_m4/benelli_m4",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.benelli_m4.reload": {
+      "loop": true,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.benelli_m4_reload @a[r=25]", "/scoreboard players set @s benelli_m4_fire 0", "/scoreboard players set @s benelli_m4_explosive 0", "/function benelli_m4/benelli_m4"
+        ],
+        "0.45": [
+			"/scoreboard players add @s benelli_m4 1",
+			"/clear @s gunsaddon:cartucho 0 1"
+        ],
+        "0.475": [
+			"/function benelli_m4/benelli_m4"
+        ]
+      }
+    }
+  }
+}

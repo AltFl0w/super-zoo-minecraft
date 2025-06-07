@@ -1,0 +1,325 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.benelli_m4.idle": {
+			"loop": true,
+			"bones": {
+				"weapon": {
+					"position": [0, 1, 0],
+					"scale": 0.8
+				},
+				"laser": {
+					"scale": 1
+				},
+				"red_laser": {
+					"scale": [1, 1, 250]
+				},
+				"blue_laser": {
+					"scale": [1, 1, 250]
+				},
+				"green_laser": {
+					"scale": [1, 1, 250]
+				}
+			}
+		},
+		"animation.benelli_m4.third": {
+			"loop": true,
+			"bones": {
+				"base_attachable": {
+					"rotation": [90, 0, 0],
+					"position": [0, 3.5, 0.25],
+					"scale": 0.55
+				}
+			}
+		},
+		"animation.player.benelli_m4.shoot.third": {
+			"loop": true,
+			"animation_length": 0.35,
+			"bones": {
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [-5, 0, 0],
+						"0.23": [0, 0, 0],
+						"0.35": [0, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [-12.5, 0, 0],
+						"0.23": [0, 0, 0],
+						"0.35": [0, 0, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.12": [-12.5, 0, 0],
+						"0.23": [0, 0, 0],
+						"0.35": [0, 0, 0]
+					}
+				},
+				"right_bullet_particle": {
+					"position": [-1, -6, -3]
+				},
+				"right_shoot_particle": {
+					"position": [0.25, -23, -3.1]
+				}
+			},
+			"particle_effects": {
+				"0.11": {
+					"effect": "smoke_fire",
+					"locator": "lead_hold"
+				},
+				"0.12": {
+					"effect": "shoot_effect",
+					"locator": "right_shoot_particle"
+				},
+				"0.13": {
+					"effect": "shoot_light",
+					"locator": "right_shoot_particle"
+				},
+				"0.14": {
+					"effect": "cartridge",
+					"locator": "right_bullet_particle"
+				},
+				"0.15": {
+					"effect": "smoke_fire",
+					"locator": "lead_hold"
+				},
+				"0.16": {
+					"effect": "smoke_fire",
+					"locator": "lead_hold"
+				},
+				"0.2": {
+					"effect": "smoke_fire",
+					"locator": "lead_hold"
+				}
+			}
+		},
+		"animation.player.benelli_m4.first": {
+			"loop": true,
+			"bones": {
+				"base_brazoes": {
+					"rotation": [-2.5, 60, -47.5],
+					"position": [-10.5, 2.75, -4.8]
+				},
+				"second_arm": {
+					"rotation": [-32.5, -27.5, 60],
+					"position": [-5, -12, 4]
+				}
+			}
+		},
+		"animation.player.benelli_m4.shoot": {
+			"loop": true,
+			"animation_length": 0.35,
+			"bones": {
+				"base_brazoes": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.04": [-17.5, 0, 0],
+						"0.13": [-20, 0, 0],
+						"0.26": [0, 0, 0],
+						"0.35": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.04": [1.79007, 4.41675, 2.50758],
+						"0.13": [1.79007, 4.41675, 2.50758],
+						"0.26": [0, 0, 0],
+						"0.35": [0, 0, 0]
+					}
+				},
+				"right_bullet_particle": {
+					"position": [-2.06116, -5.94331, -4.39681]
+				},
+				"shoot_particle": {
+					"position": {
+						"0.0": [18.83055, -24.39111, -8.16663],
+						"0.04": [10.31703, -25.49225, -12.11518],
+						"0.12": [9.03532, -26.69542, -13.06891],
+						"0.25": [18.83055, -24.39111, -8.16663]
+					}
+				}
+			},
+			"particle_effects": {
+				"0.12": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				},
+				"0.13": {
+					"effect": "shoot_light",
+					"locator": "shoot_particle"
+				},
+				"0.14": {
+					"effect": "shoot_effect",
+					"locator": "shoot_particle"
+				},
+				"0.15": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				},
+				"0.16": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				},
+				"0.2": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				}
+			}
+		},
+		"animation.player.benelli_m4.reload": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"base_brazoes": {
+					"rotation": {
+						"0.0": [-27.5, 32.5, -10],
+						"0.3333": [-25, 32.5, -10],
+						"0.4167": [-34, 32.5, -10],
+						"0.5": [-27.5, 32.5, -10]
+					},
+					"position": [3.11791, 3.31151, -2.07666]
+				},
+				"second_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [60, 0, 0],
+						"0.4167": [0, 0, 0],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2083": [0, 3, 12],
+						"0.4167": [0, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.benelli_m4.reload.end": {
+			"animation_length": 0.5,
+			"bones": {
+				"base_brazoes": {
+					"rotation": {
+						"0.0": [-27.5, 32.5, -10],
+						"0.0833": [0, 0, 0],
+						"0.25": [-2.5, -22.5, 0],
+						"0.3333": [-10, -22.5, 0],
+						"0.4167": [-2.5, -22.5, 0],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.25": [1.28171, 1.20317, 0.95373],
+						"0.3333": [3.84343, 3.60634, 2.85746],
+						"0.4167": [1.28171, 1.20317, 0.95373],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"second_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.4167": [0, 0, 0],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.4167": [0, 0, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"rightArm_model": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.1667": [-10, 0, 0],
+						"0.25": [-17.5, 0, -5],
+						"0.4167": [-17.5, 0, -5],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [0, 0, 0],
+						"0.1667": [-4, 0, 0],
+						"0.25": [-4, -9, -1],
+						"0.3333": [-4, -5, -1],
+						"0.4167": [-4, -9, -1],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.benelli_m4.reload.third": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"waist": {
+					"rotation": {
+						"0.0": [2.5, 0, 0],
+						"0.25": [0, 0, 0],
+						"0.5": [2.5, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 27.5],
+						"0.25": [27.5, 0, 7.5],
+						"0.5": [0, 0, 27.5]
+					},
+					"position": {
+						"0.0": [0, 1, 0],
+						"0.25": [0, 1, 0],
+						"0.5": [0, 1, 0]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [-7.5, 10, 0],
+						"0.25": [-12.5, 10, 2.5],
+						"0.5": [-7.5, 10, 0]
+					}
+				},
+				"rightItem": {
+					"rotation": {
+						"0.0": [0, 42.5, 0],
+						"0.25": [0, 42.5, 0],
+						"0.5": [0, 42.5, 0]
+					},
+					"position": [1.5, 0, 1]
+				}
+			}
+		},
+		"animation.benelli_m4.flashlight": {
+			"loop": true,
+			"animation_length": 1,
+			"bones": {
+				"right_flashlight": {
+					"position": [-0.8, -22.5, -2.3]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "flashlight",
+					"locator": "right_flashlight"
+				}
+			}
+		},
+		"animation.player.benelli_m4.apuntar": {
+			"loop": true,
+			"bones": {
+				"base_brazoes": {
+					"rotation": [-2.5, 0, -3.5],
+					"position": [-1.85914, 4.43966, -7.28332]
+				},
+				"shoot_particle": {
+					"position": [2.54011, 3.20186, -7.45292]
+				}
+			}
+		}
+	}
+}

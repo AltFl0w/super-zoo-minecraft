@@ -1,0 +1,33 @@
+{
+  "pools":[
+	{
+      "rolls":1,
+      "entries":[
+{"type":"item","name":"serp:poke","functions":[{"function":"set_count","count":{"min":100,"max":250}}]}
+      ]
+    },
+    {
+      "rolls":1,
+      "entries":[
+{"type":"item","weight":5,"name":"serp:silver_powder"},
+{"type":"item","weight":5,"name":"serp:black_glasses"},
+{"type":"item","weight":5,"name":"serp:dragon_fang"},
+{"type":"item","weight":5,"name":"serp:magnet"},
+{"type":"item","weight":5,"name":"serp:fairy_feather"},
+{"type":"item","weight":5,"name":"serp:black_belt"},
+{"type":"item","weight":5,"name":"serp:charcoal"},
+{"type":"item","weight":5,"name":"serp:sharp_beak"},
+{"type":"item","weight":5,"name":"serp:spell_tag"},
+{"type":"item","weight":5,"name":"serp:miracle_seed"},
+{"type":"item","weight":5,"name":"serp:soft_sand"},
+{"type":"item","weight":5,"name":"serp:never_melt_ice"},
+{"type":"item","weight":5,"name":"serp:silk_scarf"},
+{"type":"item","weight":5,"name":"serp:poison_barb"},
+{"type":"item","weight":5,"name":"serp:twisted_spoon"},
+{"type":"item","weight":5,"name":"serp:hard_stone"},
+{"type":"item","weight":5,"name":"serp:metal_coat"},
+{"type":"item","weight":5,"name":"serp:mystic_water"}
+      ]
+    }
+  ]
+}

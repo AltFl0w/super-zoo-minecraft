@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.storm_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'storm_sword' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'storm_sword' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'storm_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_cast_storm_wave"
+					]
+				}
+			}
+		},
+		"controller.animation.storm.effect": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"effect": "!query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/execute @s[tag=!bedrock] ~~~ fill ~-2~~-1 ~2~~1 air"
+					]
+				},
+				"effect": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/tp @s ~~~ 0",
+						"/execute @s ~~~ detect ~~-1~ bedrock 0 tag @s add bedrock",
+						"/execute @s[tag=!bedrock] ~~~ fill ~-2~~-1 ~2~~1 flowing_water",
+						"/execute @e[type=!item,type=!wep:storm_wave,tag=!storm_sword,r=5,c=3] ~~~ summon lightning_bolt ~~~"
+					]
+				}
+			}
+		}
+	}
+}

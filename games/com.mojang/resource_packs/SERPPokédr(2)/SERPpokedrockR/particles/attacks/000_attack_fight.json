@@ -1,0 +1,50 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "serp:attack_fight",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/attacks"
+			}
+		},
+		"components": {
+	"minecraft:emitter_rate_instant": {
+	"num_particles": "math.random(10,20)"
+			},
+	"minecraft:emitter_lifetime_once": {
+		"active_time": 1
+			},
+	"minecraft:emitter_shape_point": {
+		"offset": ["Math.random(-0.7, 0.7)", 0, "Math.random(-0.7, 0.7)"],
+		"direction": ["Math.random(-0.5,0.5)", "Math.random(10,20)", "Math.random(-0.5,0.5)"]
+			},
+	"minecraft:particle_lifetime_expression": {
+		"max_lifetime": "Math.random(0.1, 0.6)"
+			},
+	"minecraft:particle_initial_spin": {
+		"rotation": "Math.random(0,500)"
+			},
+	"minecraft:particle_initial_speed": "Math.random(1, 5)",
+	"minecraft:particle_motion_dynamic": {
+		"linear_acceleration": [0, -3, 0],
+		"linear_drag_coefficient": 3
+			},
+	"minecraft:particle_appearance_billboard": {
+		"size": ["(0.2 + variable.particle_random_1*0.2) - (0.3 * variable.particle_age)", "(0.2 + variable.particle_random_1*0.2) - (0.3 * variable.particle_age)"],
+		"facing_camera_mode": "lookat_xyz",
+		"uv": {
+			"texture_width": 17,
+			"texture_height": 1,
+			"uv": [5, 0],
+			"uv_size": [1, 1]
+				}
+			},
+	"minecraft:particle_motion_collision": {
+		"collision_drag": 20,
+		"coefficient_of_restitution": 0.2,
+		"collision_radius": 0.01
+			}
+		}
+	}
+}

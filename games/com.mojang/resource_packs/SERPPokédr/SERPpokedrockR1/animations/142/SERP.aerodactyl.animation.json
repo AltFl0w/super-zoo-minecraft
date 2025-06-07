@@ -1,0 +1,378 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.aerodactyl.direction": {
+			"loop": true,
+			"bones": {
+				"aerodactyl": {
+					"rotation": [0, 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				},
+				"tail": {
+					"rotation": [0, "-math.max(-35,math.min(35,query.yaw_speed))", 0]
+				}
+			}
+		},
+		"animation.aerodactyl.quiet": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, "0.5+(Math.cos(q.anim_time*180)*-1.5)", "0.5+(Math.cos(q.anim_time*180)*-1)"]
+				},
+				"mouth": {
+					"rotation": ["10+(Math.cos(q.anim_time*180)*-5)", 0, 0]
+				},
+				"neck": {
+					"rotation": ["-15+(Math.cos(q.anim_time*180)*5)", 0, 0],
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"rotation": ["Math.cos(q.anim_time*180)*5", 0, 0]
+				},
+				"tail": {
+					"rotation": [0, "35+(Math.cos(q.anim_time*180)*-15)", 0]
+				},
+				"arms": {
+					"position": [0, "-0.5+(Math.cos(q.anim_time*180)*-0.5)", 0]
+				},
+				"right_arm": {
+					"rotation": [0, 0, "-31+(Math.cos(q.anim_time*180)*5)"]
+				},
+				"right_wing": {
+					"rotation": [0, 0, "20+(Math.cos(q.anim_time*180)*-10)"]
+				},
+				"right_leg": {
+					"rotation": [0, 15, 0]
+				},
+				"tail2": {
+					"rotation": ["Math.cos(q.anim_time*180)*15", "Math.cos(q.anim_time*240)*15", 0]
+				},
+				"tail3": {
+					"rotation": ["Math.cos(q.anim_time*180)*15", 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, "31+(Math.cos(q.anim_time*180)*-5)"]
+				},
+				"left_wing": {
+					"rotation": [0, 0, "-20+(Math.cos(q.anim_time*180)*10)"]
+				},
+				"left_leg": {
+					"rotation": [0, -15, 0]
+				}
+			}
+		},
+		"animation.aerodactyl.walk": {
+			"loop": true,
+			"animation_length": 1.28,
+			"bones": {
+				"head": {
+					"position": [0, "-0.5+(Math.cos(q.anim_time*270)*-0.5)", 0]
+				},
+				"neck": {
+					"rotation": ["Math.cos(q.anim_time*270)*-10", 0, 0],
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"rotation": ["Math.cos(q.anim_time*270)*5", 0, 0]
+				},
+				"tail": {
+					"rotation": ["Math.cos(q.anim_time*270)*15", 0, 0]
+				},
+				"arms": {
+					"position": [0, "-0.5+(Math.cos(q.anim_time*270)*-0.5)", 0]
+				},
+				"right_arm": {
+					"rotation": [0, 0, "Math.cos(q.anim_time*270)*25"]
+				},
+				"right_wing": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 35],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [0, 0, -50],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [0, 0, -50],
+							"lerp_mode": "catmullrom"
+						},
+						"1.3": {
+							"post": [0, 0, 35],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"legs": {
+					"rotation": ["65+(Math.cos(q.anim_time*270)*-10)", 0, 0],
+					"position": [0, -1, -2]
+				},
+				"tail2": {
+					"rotation": {
+						"0.0": {
+							"post": [-35, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4": {
+							"post": [30, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.3": {
+							"post": [-35, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"tail3": {
+					"rotation": {
+						"0.0": {
+							"post": [-20, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [-35, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [25, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [-35, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.3": {
+							"post": [-20, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"left_arm": {
+					"rotation": [0, 0, "Math.cos(q.anim_time*270)*-25"]
+				},
+				"left_wing": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, -35],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [0, 0, 50],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [0, 0, 50],
+							"lerp_mode": "catmullrom"
+						},
+						"1.3": {
+							"post": [0, 0, -35],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.aerodactyl.sitting": {
+			"loop": true,
+			"bones": {
+				"aerodactyl": {
+					"position": [0, -3, 0]
+				},
+				"head": {
+					"position": [0, 5.5, 3]
+				},
+				"neck": {
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"rotation": [-25, 0, 0]
+				},
+				"tail": {
+					"rotation": [25, 20, 15],
+					"position": [-1, -1, 0]
+				},
+				"arms": {
+					"position": [0, 2, 2]
+				},
+				"right_arm": {
+					"rotation": [0, 0, 20]
+				},
+				"right_wing": {
+					"rotation": [0, 0, -105]
+				},
+				"legs": {
+					"position": [0, 2, 1],
+					"scale": [1, 0.85, 1]
+				},
+				"right_leg": {
+					"position": [1, 0, 0]
+				},
+				"tail2": {
+					"rotation": [0, 45, 0]
+				},
+				"tail3": {
+					"rotation": [0, 45, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, -20]
+				},
+				"left_wing": {
+					"rotation": [0, 0, 105]
+				},
+				"left_leg": {
+					"position": [-1, 0, 0]
+				}
+			}
+		},
+		"animation.aerodactyl.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 8, 6.5]
+				},
+				"mouth": {
+					"rotation": [25, 0, 0]
+				},
+				"neck": {
+					"rotation": [15, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"rotation": [-45, 0, 0]
+				},
+				"tail": {
+					"rotation": [-5, 65, -55]
+				},
+				"arms": {
+					"rotation": [-60, 0, 0],
+					"position": [0, 3, 5]
+				},
+				"right_arm": {
+					"rotation": [0, 0, -30]
+				},
+				"right_wing": {
+					"rotation": [0, 0, -35]
+				},
+				"right_leg": {
+					"rotation": [0, 15, 0]
+				},
+				"tail2": {
+					"rotation": [-45, 0, 0]
+				},
+				"tail3": {
+					"rotation": [-45, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, 30]
+				},
+				"left_wing": {
+					"rotation": [0, 0, 35]
+				},
+				"left_leg": {
+					"rotation": [0, -15, 0]
+				}
+			}
+		},
+		"animation.aerodactyl.attack2": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 4, 2.5]
+				},
+				"mouth": {
+					"rotation": [45, 0, 0]
+				},
+				"neck": {
+					"rotation": [15, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"rotation": [-25, 0, 0]
+				},
+				"tail": {
+					"rotation": [-15, 40, -65]
+				},
+				"arms": {
+					"rotation": [-30, 0, 0],
+					"position": [0, 2, 3]
+				},
+				"right_arm": {
+					"rotation": [0, 0, 35]
+				},
+				"right_wing": {
+					"rotation": [0, 0, -35]
+				},
+				"right_leg": {
+					"rotation": [0, 15, 0]
+				},
+				"tail2": {
+					"rotation": [-45, 0, 0]
+				},
+				"tail3": {
+					"rotation": [-45, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, -35]
+				},
+				"left_wing": {
+					"rotation": [0, 0, 35]
+				},
+				"left_leg": {
+					"rotation": [0, -15, 0]
+				}
+			}
+		},
+		"animation.aerodactyl.defeated": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -5.5, 1]
+				},
+				"neck": {
+					"rotation": [25, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"body": {
+					"position": [0, -3, 0]
+				},
+				"tail": {
+					"rotation": [-25, -35, 10]
+				},
+				"arms": {
+					"position": [0, -3, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 0, -25]
+				},
+				"right_wing": {
+					"rotation": [0, 0, 19]
+				},
+				"legs": {
+					"position": [0, -2, -1]
+				},
+				"right_leg": {
+					"rotation": [0, 0, 50]
+				},
+				"tail2": {
+					"rotation": [20, 40, 10]
+				},
+				"tail3": {
+					"rotation": [0, 50, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, 25]
+				},
+				"left_wing": {
+					"rotation": [0, 0, -19]
+				},
+				"left_leg": {
+					"rotation": [0, 0, -50]
+				}
+			}
+		}
+	}
+}

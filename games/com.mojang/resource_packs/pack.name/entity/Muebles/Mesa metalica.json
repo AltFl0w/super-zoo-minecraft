@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:mesa_metalica",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_mesa_metalica"
+
+      },
+      "geometry": {
+        "default": "geometry.df_mesa_metalica"
+
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_mesa_metalica",
+        "texture_index": 0
+      }
+    }
+  }
+}

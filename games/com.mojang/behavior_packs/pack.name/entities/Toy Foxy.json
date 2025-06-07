@@ -1,0 +1,190 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "df:toy_foxy",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false
+        },
+		"component_groups": {
+			"minecraft:is_dead": {
+                "minecraft:transformation": {
+                    "into": "df:toy_foxy_m"
+                }
+            }
+    },
+		"components": {
+			"minecraft:navigation.walk":{
+				"avoid_water":true,
+				"can_float":true,
+				"can_open_doors":true,
+				"can_pass_doors":true,
+				"can_path_over_water":true
+			},
+			"minecraft:health": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:collision_box": {
+				"width": 2.5,
+				"height": 6.5
+			},
+			"minecraft:attack": {
+				"damage": 15
+			},
+            	"minecraft:movement": {
+				"value": 0.16
+			},
+			"minecraft:hunter_mode": {
+				"minecraft:navigation.generic": {
+				  "is_amphibious": true,
+				  "can_break_doors": true,
+				  "can_walk": true,
+				  "avoid_sun": true
+				}
+			  },
+            	"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:scale": {
+				"value": 0.44
+            },
+            "minecraft:loot": {
+				"table": "loot_tables/entities/peluchetoyfoxy.json"
+			},
+			"minecraft:damage_sensor": [{
+				"on_damage": {
+					"filters": {
+						"all_of": [{
+								"test": "has_damage",
+								"value": "fatal"
+							}
+						]
+					},
+					"event": "minecraft:event_spawn_dead"
+				}
+			}
+		],
+            "minecraft:behavior.melee_attack": {
+				"priority":1,
+				"target_dist": 3.0,
+				"speed_multiplier": 2.5,
+				"track_target": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 1,
+				"speed_multiplier": 1.2
+			},
+			"minecraft:knockback_resistance": {
+                "value": 2.0
+            },
+			"minecraft:behavior.look_at_player": {
+				"priority": 5,
+				"look_distance": 50
+			},
+			"minecraft:type_family": {
+				"family": ["DanyFox","ToyFoxy","Toy"]
+			},
+			"minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:nameable": {},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:fire_immune": false,
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"reselect_targets": true,
+				"entity_types": [{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 1000
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "irongolem"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "evocation_illager"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "vindicator"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "witch"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "villager"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "pillager"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "wandering_trader"
+						},
+
+						"max_dist": 100
+					}
+				],
+				"must_see": false
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:event_spawn_dead": {
+                "add": {
+					"component_groups": ["minecraft:is_dead"]				
+                }
+			}
+        }
+	}
+}

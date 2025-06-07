@@ -1,0 +1,43 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.df_puerta_parts_service_fnaf2",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 2.5, 0]
+			},
+			"bones": [
+				{
+					"name": "waist",
+					"pivot": [4, 1, 12]
+				},
+				{
+					"name": "Puerta2",
+					"parent": "waist",
+					"pivot": [-35, 1, 12],
+					"rotation": [0, 25, 0],
+					"cubes": [
+						{"origin": [-8, 1, 11], "size": [27, 78, 2], "uv": [0, 0]},
+						{"origin": [11, 40, 10], "size": [5, 9, 2], "uv": [63, 23]},
+						{"origin": [-35, 1, 11], "size": [27, 78, 2], "uv": [0, 0]},
+						{"origin": [-20, 55, 10.8], "size": [24, 15, 1], "uv": [7, 97]}
+					]
+				},
+				{
+					"name": "Marco",
+					"parent": "waist",
+					"pivot": [-35, 1, 12],
+					"cubes": [
+						{"origin": [-36, 0, 11], "size": [1, 80, 2], "inflate": 0.1, "uv": [63, 0]},
+						{"origin": [-35, 79, 11], "size": [53, 1, 2], "inflate": 0.1, "uv": [12, 82]},
+						{"origin": [18, 0, 11], "size": [1, 80, 2], "inflate": 0.1, "uv": [62, 0]}
+					]
+				}
+			]
+		}
+	]
+}

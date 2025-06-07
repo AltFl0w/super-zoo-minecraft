@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:repeatball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "oao",
+      "ono"
+    ],
+    "key": {
+      "o": {
+        "item": "serp:apricorn_orange"
+      },
+      "n": {
+        "item": "serp:apricorn_black"
+      },
+      "a": {
+        "item": "serp:apricorn_yellow"
+      }
+    },
+    "result": {
+      "item": "serp:repeatball_up",
+      "count": 6
+    }
+  }
+}

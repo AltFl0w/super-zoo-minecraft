@@ -1,0 +1,163 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.dragon.move": {
+			"states": {
+				"default": {
+					"animations": [
+						{
+							"walking": "query.is_on_ground*query.modified_move_speed"
+						},
+						{
+							"idle": "query.is_on_ground&&query.mark_variant==0"
+						}
+					],
+					"transitions": [
+						{
+							"fly": "!query.is_on_ground&&query.head_x_rotation(0)<0&&query.ground_speed>4"
+						},
+						{
+							"glide": "!query.is_on_ground&&query.head_x_rotation(0)>=0&&query.ground_speed>4"
+						},
+						{
+							"flyRest": "!query.is_on_ground&&query.ground_speed<4"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"fly": {
+					"animations": [
+						"flying",
+						"hrotation"
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						},
+						{
+							"glide": "!query.is_on_ground&&query.head_x_rotation(0)>=0&&query.ground_speed>4"
+						},
+						{
+							"flyRest": "!query.is_on_ground&&query.ground_speed<4"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"glide": {
+					"animations": [
+						"fly_open",
+						"hrotation"
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						},
+						{
+							"flyRest": "!query.is_on_ground&&query.ground_speed<4"
+						},
+						{
+							"fly": "!query.is_on_ground&&query.head_x_rotation(0)<0&&query.ground_speed>4"
+						}
+					],
+					"blend_transition": 0.5
+				},
+				"flyRest": {
+					"animations": [
+						"fly_rest",
+						"hrotation"
+					],
+					"transitions": [
+						{
+							"default": "query.is_on_ground"
+						},
+						{
+							"fly": "!query.is_on_ground&&query.head_x_rotation(0)<0&&query.ground_speed>4"
+						},
+						{
+							"glide": "!query.is_on_ground&&query.head_x_rotation(0)>=0&&query.ground_speed>4"
+						}
+					],
+					"blend_transition": 0.5
+				}
+			}
+		},
+		"controller.animation.dragon.rest": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"resting": "query.is_sleeping"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"resting": {
+					"animations": [
+						"resting"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_sleeping"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.dragon.sit": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"sitting": "query.is_sitting"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"sitting": {
+					"animations": [
+						"sitting"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_sitting"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.dragon.tempt": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"tempted": "query.is_interested"
+						}
+					],
+					"blend_transition": 0.2
+				},
+				"tempted": {
+					"animations": [
+						"temped"
+					],
+					"transitions": [
+						{
+							"default": "!query.is_interested"
+						}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.dragon.look_at_target": {
+			"states": {
+				"default": {
+					"animations": [
+						"look_at_target"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:button_a"
+    },
+    "components": {
+    "minecraft:hand_equipped": false,
+    "minecraft:use_duration": 99999,
+    "minecraft:food": {
+    "can_always_eat": true,
+    "cooldown_type": "sweet_berries",
+    "cooldown_time": 0
+      }
+    }
+  }
+}

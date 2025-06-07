@@ -1,0 +1,12 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:pokemon_egg",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "pokemon_egg"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.aligatorg"
+      },
+      "identifier": "fauna:aligatorg",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.salmon"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "aligatorg",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/aligator"
+      },
+      "animations": {
+        "attack": "animation.aligatorg.attack",
+        "idle": "animation.aligatorg.idle",
+        "swim": "animation.aligatorg.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:piso_mojado",
+      "materials": {
+        "default": "slime_outer"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/aviso_piso_mojado"
+      },
+      "geometry": {
+        "default": "geometry.df_piso_mojado"
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_aviso_piso_mojado",
+        "texture_index": 0
+      }
+    }
+  }
+}

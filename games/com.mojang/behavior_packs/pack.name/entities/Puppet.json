@@ -1,0 +1,250 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "df:puppet",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+                "animate": [
+                    "music",
+					"dead"
+                ]
+            },
+            "animations": {
+                "music": "controller.animation.puppet.music",
+				"dead": "controller.animation.dead"
+			}
+        },
+		"component_groups": {
+			"minecraft:is_dead": {
+                "minecraft:transformation": {
+                    "into": "df:puppet_m"
+                }
+            },
+			"minecraft:sound": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"minecraft:testfor": {
+				 "minecraft:target_nearby_sensor": {
+					"inside_range": 15,
+					"outside_range": 15,
+					"must_see": false,
+					"on_inside_range": {
+						"event": "minecraft:play_sound",
+						"target": "self"
+					},
+					"on_outside_range": {
+						"event": "minecraft:removing",
+						"target": "self"
+					}
+                }
+			},
+			"minecraft:stop_sound": {
+				"minecraft:variant": {
+					"value": 1
+				}
+			}
+        },
+		"components": {
+			"minecraft:behavior.stalk_and_pounce_on_target": {
+				"priority": -1,
+				"stalk_speed": 4,
+				"max_stalk_dist": 20.0,
+				"leap_height": 0.8,
+				"leap_dist": 1.5,
+				"pounce_max_dist": 11.0,
+				"interest_time": 0.0001,
+				"strike_dist": 3.0
+			  },
+			"minecraft:damage_sensor": [{
+				"on_damage": {
+					"filters": {
+						"all_of": [{
+								"test": "has_damage",
+								"value": "fatal"
+							}
+						]
+					},
+					"event": "minecraft:event_spawn_dead"
+				}
+			}
+		],
+			"minecraft:navigation.walk":{
+				"avoid_water":true,
+				"can_float":true,
+				"can_open_doors":true,
+				"can_pass_doors":true,
+				"can_path_over_water":true
+			},
+			"minecraft:health": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:collision_box": {
+				"width": 2.5,
+				"height": 6.2
+			},
+			"minecraft:attack": {
+				"damage": 50
+			},
+			"minecraft:knockback_resistance": {
+                "value": 1.0
+            },
+            	"minecraft:movement": {
+				"value": 0.12
+			},
+			"minecraft:hunter_mode": {
+				"minecraft:navigation.generic": {
+				  "is_amphibious": true,
+				  "can_break_doors": true,
+				  "can_walk": true,
+				  "avoid_sun": true
+				}
+			  },
+            	"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:can_climb": {},
+			"minecraft:scale": {
+				"value": 0.61
+            },
+            "minecraft:loot": {
+				"table": "loot_tables/entities/empty.json"
+			},
+            "minecraft:behavior.melee_attack": {
+				"priority":1,
+				"target_dist": 3.0,
+				"speed_multiplier": 2.5,
+				"track_target": true
+			},
+			"minecraft:behavior.random_stroll": {
+				"priority": 1,
+				"speed_multiplier": 1.2
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 10,
+				"look_distance": 50
+			},
+			"minecraft:type_family": {
+				"family": ["DanyFox","Puppet","Toy"]
+			},
+			"minecraft:pushable": {
+                "is_pushable": true,
+                "is_pushable_by_piston": true
+            },
+            "minecraft:nameable": {},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:fire_immune": false,
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"reselect_targets": true,
+				"entity_types": [{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						},
+						"max_dist": 1000
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "irongolem"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "evocation_illager"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "vindicator"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "witch"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "villager"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "pillager"
+						},
+
+						"max_dist": 100
+					},
+					{
+						"filters": {
+							"test": "is_family",
+							"subject": "other",
+							"value": "wandering_trader"
+						},
+
+						"max_dist": 100
+					}
+				],
+				"must_see": false
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:event_spawn_dead": {
+                "add": {
+					"component_groups": ["minecraft:is_dead"]				
+                }
+            },
+			"minecraft:entity_spawned": {
+                "add": {
+					"component_groups": ["minecraft:testfor"]				
+                }
+            },
+			"minecraft:play_sound": {
+				"add": {
+					"component_groups": ["minecraft:sound"]
+				}
+			},
+			"minecraft:removing": {
+				"add": {
+					"component_groups": ["minecraft:stop_sound"]
+				}
+			}
+        }
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:healing_machine",
+      "materials": {
+          "default": "entity_emissive_alpha",
+          "lights": "charged_creeper",
+          "sparks": "charged_creeper"
+          },
+      "textures": {
+    "off": "textures/entity/healing_machine/healing_machine_off",
+    "on": "textures/entity/healing_machine/healing_machine_on",
+    "lights_off": "textures/entity/healing_machine/lights_off",
+    "lights_on": "textures/entity/healing_machine/lights_on",
+    "sparks": "textures/entity/healing_machine/sparks"
+      },
+      "geometry": {
+        "default": "geometry.serphealer",
+        "lights": "geometry.serphealer_lights",
+        "sparks": "geometry.serphealer_sparks"
+      },
+      "particle_effects": {
+        "heal": "serp:heal",
+        "heal_ball": "serp:heal_ball"
+            },
+      "scripts": {
+        "scale": "1.3",
+        "animate": [
+            "slots",
+            "heal"
+        ]
+      },
+      "animations": {
+    "slots": "animation.healer.lights",
+    "heal": "controller.animation.heal"
+    },
+      "render_controllers": [ "controller.render.healer", "controller.render.healer_lights", "controller.render.healer_sparks" ]
+    }
+  }
+}

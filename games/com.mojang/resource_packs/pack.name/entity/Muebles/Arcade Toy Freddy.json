@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:arcade_toy_freddy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/arcade/df_arcade_toy_freddy"
+      },
+      "geometry": {
+        "default": "geometry.df_arcade_fnaf2"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_arcade_toy_freddy",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.19.30",
+    "minecraft:block": {
+    "description": {
+    "identifier": "serp:berry_log",
+	"register_to_creative_menu": true,
+	"is_experimental": false
+        },
+    "components": {
+    "minecraft:block_light_filter": 0,
+	"minecraft:breathability": "solid",
+    "minecraft:destructible_by_mining": {
+      "seconds_to_destroy": 0.5
+    },
+    "minecraft:loot": "loot_tables/berry/berry_log.json",
+    "minecraft:flammable": {
+      "catch_chance_modifier": 5,
+      "destroy_chance_modifier": 20
+      }
+    }
+  }
+}

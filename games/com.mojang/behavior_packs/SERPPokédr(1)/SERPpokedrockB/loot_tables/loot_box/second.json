@@ -1,0 +1,88 @@
+{
+    "pools": [
+		{
+    "rolls": 1,
+    "entries": [
+        {
+            "type": "item",
+            "name": "serp:bike_pass",
+            "weight": 2
+        },
+        {
+            "type": "item",
+            "name": "serp:ride_pass",
+            "weight": 2
+        },
+        {
+            "type": "item",
+            "name": "serp:clothing_ticket",
+            "weight": 2
+        },
+        {
+            "type": "item",
+            "name": "serp:poke",
+            "weight": 3,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 2,
+                        "max": 4
+                    }
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "serp:potion",
+            "weight": 3
+        },
+        {
+            "type": "item",
+            "name": "serp:soda_pop",
+            "weight": 2,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": 2
+                }
+            ]
+        },
+
+        {
+            "type": "item",
+            "name": "serp:super_potion",
+            "weight": 2
+        },
+        {
+            "type": "item",
+            "name": "serp:pokeball",
+            "weight": 3,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ]
+        },
+        {
+            "type": "item",
+            "name": "serp:superball",
+            "weight": 2,
+            "functions": [
+                {
+                    "function": "set_count",
+                    "count": {
+                        "min": 1,
+                        "max": 2
+                    }
+                }
+            ]
+        }
+            ]
+        }
+    ]
+}

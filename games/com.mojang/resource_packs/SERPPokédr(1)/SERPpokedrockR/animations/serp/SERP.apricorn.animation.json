@@ -1,0 +1,63 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.apricorn.phase2": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.24,
+			"bones": {
+				"apricorn_tree": {
+					"scale": {
+						"0.0": [0.7, 0.7, 0.7],
+						"0.08": [0.7, 0.8, 0.7],
+						"0.24": [0.7, 0.7, 0.7]
+					}
+				}
+			}
+		},
+		"animation.apricorn.phase3": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.24,
+			"bones": {
+				"apricorn_tree": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.08": [1, 1.1, 1],
+						"0.24": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.apricorn.fruit": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.44,
+			"bones": {
+				"foliage": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.08": [1, 1.1, 1],
+						"0.24": [1, 1, 1],
+						"0.32": [1, 1.1, 1],
+						"0.44": [1, 1, 1]
+					}
+				},
+				"fruit": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.08": [0, 1, 0],
+						"0.24": [0, 0, 0],
+						"0.32": [0, 1, 0],
+						"0.44": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+            "0.08":{
+					"effect": "wiggle"
+                },
+            "0.32":{
+					"effect": "wiggle"
+                }
+			}
+		}
+	}
+}

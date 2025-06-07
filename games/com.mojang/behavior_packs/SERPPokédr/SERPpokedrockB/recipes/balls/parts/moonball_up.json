@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:moonball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ayn",
+      "ayn"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_blue"
+      },
+      "n": {
+        "item": "serp:apricorn_black"
+      },
+      "y": {
+        "item": "serp:apricorn_yellow"
+      }
+    },
+    "result": {
+      "item": "serp:moonball_up",
+      "count": 6
+    }
+  } 
+}

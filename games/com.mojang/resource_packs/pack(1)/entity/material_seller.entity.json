@@ -1,0 +1,37 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wep:material_seller",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/material_seller"
+			},
+			"geometry": {
+				"default": "geometry.seller"
+			},
+			"animations": {
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"humanoid_base_pose": "animation.humanoid.base_pose",
+				"bob": "animation.player.bob"
+			},
+			"scripts": {
+				"animate": [
+					"look_at_target_default",
+					"humanoid_base_pose",
+					"bob"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#0087DF",
+				"overlay_color": "#747474"
+			}
+		}
+	}
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:escritorio_fnaf2",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_escritorio_fnaf2",
+        "ventilador_fnaf2": "textures/entity/danyfox/muebles/df_ventilador_fnaf2"
+      },
+      "geometry": {
+        "default": "geometry.df_escritorio_fnaf2",
+        "ventilador_fnaf2": "geometry.df_ventilador_fnaf2"
+      },
+      "animations": {
+        "df_mesa_base": "animation.df_escritorio_fnaf2.base",
+        "df_ventilador_base": "animation.df_ventilador_fnaf2.base"
+  
+      },
+      "scripts": {
+        "animate": [
+         "df_mesa_base",
+         "df_ventilador_base"
+        ]
+      },
+      "render_controllers": [
+         "controller.render.fnaf",
+         "controller.render.ventilador_fnaf2"
+         ],
+      "spawn_egg": {
+        "texture": "df_escritorio_fnaf2",
+        "texture_index": 0
+      }
+    }
+  }
+}

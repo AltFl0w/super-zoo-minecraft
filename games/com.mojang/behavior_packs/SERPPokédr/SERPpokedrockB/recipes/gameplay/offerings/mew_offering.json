@@ -1,0 +1,21 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:mew_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      "ldg",
+      "dpd",
+      "llg"
+    ],
+    "key":{
+      "l":{"item":"minecraft:leather"},
+      "d":{"item":"serp:mew_dna"},
+      "g":{"item":"minecraft:gold_block"},
+      "p":{"item":"minecraft:paper"}
+    },
+    "result":{"item":"serp:mew_offering"}
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.windy_greataxe": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'windy_greataxe' && query.is_using_item"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'windy_greataxe' && !query.is_using_item) || query.get_equipped_item_name('main_hand') != 'windy_greataxe'"
+						}
+					],
+					"animations": [
+						"windy_greataxe"
+					]
+				}
+			}
+		}
+	}
+}

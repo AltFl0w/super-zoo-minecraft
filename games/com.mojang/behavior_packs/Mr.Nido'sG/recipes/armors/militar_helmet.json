@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "gunsaddon:militar_helmet"
+      },
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "BBB",
+        "C C"
+      ],
+      "key": {
+        "B": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "minecraft:coal"
+        }
+      },
+      "result": {
+        "item": "gunsaddon:militar_helmet",
+        "count": 1
+      }
+    }
+  }

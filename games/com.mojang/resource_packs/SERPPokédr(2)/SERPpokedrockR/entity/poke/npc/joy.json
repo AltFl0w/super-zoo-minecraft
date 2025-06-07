@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:joy",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/npc/joy"
+      },
+      "geometry": {
+        "default": "geometry.serp_joy"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "animate": [
+          "root",
+          "music",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+    "root": "controller.animation.pokemon_ground",
+    "music":"animation.joy.music",
+    "quiet":"animation.rocket.quiet",
+    "walk":"animation.rocket.walk",
+    "look_at_target": "animation.common.look_at_target"
+    },
+      "sound_effects": {
+        "music": "mob.center.idle"
+      },
+      "spawn_egg": {
+          "texture": "pokeitems",
+        "texture_index": 0
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "enable_attachables": true
+    }
+  }
+}

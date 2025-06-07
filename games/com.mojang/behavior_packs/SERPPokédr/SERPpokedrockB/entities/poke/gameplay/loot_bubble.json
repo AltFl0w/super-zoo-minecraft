@@ -1,0 +1,33 @@
+{
+  "format_version":"1.16.0",
+  "minecraft:entity":{
+    "description":{
+      "identifier":"serp:loot_bubble",
+      "is_spawnable":false,
+      "is_summonable":true,
+      "is_experimental":false
+    },
+      "component_groups":{
+      "serp:pop":{"minecraft:instant_despawn":{}}
+      },
+    "components":{
+      "minecraft:type_family":{"family":["inanimated"]},
+      "minecraft:loot":{"table":"loot_tables/loot_bubbles.json"},
+      "minecraft:knockback_resistance":{"value":100},
+      "minecraft:breathable":{"total_supply":15,"suffocate_time":0},
+      "minecraft:collision_box":{"width":0.6,"height":1},
+      "minecraft:damage_sensor":{"triggers":[{"on_damage":{"filters":{"test":"has_damage","operator":"!=","value":"attack"}},"deals_damage":false}]},
+      "minecraft:movement":{"value":0.1},
+      "minecraft:navigation.float":{"can_path_over_water":true},
+      "minecraft:behavior.float":{"priority":0},
+      "minecraft:behavior.float_wander":{"xz_dist":10,"y_dist":7,"y_offset":-2.0,"random_reselect":true,"float_duration":[0.1,0.35]},
+      "minecraft:timer":{"time":6,"randomInterval":false,"looping":false,"time_down_event":{"event":"serp:pop"}},
+      "minecraft:can_fly":{},
+      "minecraft:health":{"value":1},
+      "minecraft:physics":{"has_collision":false}
+    },
+      "events":{
+"serp:pop":{"add":{"component_groups":["serp:pop"]}}
+    }
+  }
+}

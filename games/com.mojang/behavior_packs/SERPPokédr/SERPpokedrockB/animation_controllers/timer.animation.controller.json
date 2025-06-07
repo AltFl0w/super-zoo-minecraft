@@ -1,0 +1,34 @@
+{
+	"format_version":"1.10.0",
+	"animation_controllers":{
+"controller.animation.player_ride":{
+  "initial_state":"default",
+  "states":{
+    "default":{
+      "transitions":[{"ride1":"query.has_rider>0"}],
+      "on_entry":["/execute at @s[scores={CombatRandom=..5}] run fill ~2~2~2 ~-2~-2~-2 air replace light_block","/tag @s remove time1","/tag @s remove time2"]
+    },
+    "ride1":{
+      "transitions":[{"default":"query.has_rider==0"},{"ride2":"query.has_rider>0"}]
+    },
+    "ride2":{
+      "transitions":[{"default":"query.has_rider==0"},{"ride1":"(1.0)"}],
+      "on_entry":["/scoreboard players add @s CombatRandom 0","/function spawn/ride"]
+        }
+      }
+    },
+"controller.animation.heal":{
+  "initial_state":"normal",
+  "states":{
+    "normal":{
+      "animations":["timer"],
+      "transitions":[{"heal":"query.has_owner && query.anim_time >= 10"}]
+   },
+    "heal":{
+      "transitions":[{"normal":"(1.0)"}],
+      "on_exit":["/effect @a[r=5] regeneration 1 2","/effect @s regeneration 1 2"]
+        }
+      }
+    }
+  }
+}

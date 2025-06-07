@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:withered_foxy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_withered_foxy"
+      },
+      "geometry": {
+        "default": "geometry.df_withered_foxy"
+      },
+      "animations": {
+        "df_withered_foxy_general": "animation.df_withered_foxy.base",
+        "df_caminando_withered_foxy": "animation.df_withered_foxy.walk",
+        "df_corriendo_withered_foxy": "animation.df_withered_foxy.run",
+        "df_seleccion_withered_foxy": "animation.df_withered_foxy.casting",
+        "df_ataque_withered_foxy": "animation.df_withered_foxy.attack",
+        "df_salto_withered_foxy": "animation.df_withered_foxy.salto",
+        "df_parpadeo_withered_foxy": "animation.df_withered_foxy.parpadeo",
+        "look_at_target": "animation.common.look_at_target",
+
+        "movimiento": "controller.animation.df_withered_foxy.movimiento",
+        "seleccion": "controller.animation.df_withered_foxy.seleccion",
+        "salto": "controller.animation.df_withered_foxy.salto",
+        "ataque": "controller.animation.df_withered_foxy.ataque"
+      },
+      "scripts": {
+        "animate": [
+          "movimiento", "ataque","salto", "seleccion"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_withered_foxy",
+        "texture_index": 0
+      }
+    }
+  }
+}

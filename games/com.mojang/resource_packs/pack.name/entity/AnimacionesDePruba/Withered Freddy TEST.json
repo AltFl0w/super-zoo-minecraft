@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:withered_freddy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_withered_freddy"
+      },
+      "geometry": {
+        "default": "geometry.df_withered_freddy"
+      },
+      "animations": {
+        "default_pose": "animation.df_withered_freddy.base",
+        "no_pose": "animation.testdf_withered_freddy.walk",
+        "solemn_pose": "animation.df_withered_freddy.casting",
+        "athena_pose": "animation.testdf_withered_freddy.attack",
+        "brandish_pose": "animation.df_withered_freddy.parpadeo",
+        "honor_pose": "animation.df_withered_freddy.pose1",
+        "entertain_pose": "animation.df_withered_freddy.pose2",
+        "riposte_pose": "animation.df_withered_freddy.pose3",
+        "salute_pose": "animation.df_withered_freddy.pose4",
+        "zombie_pose": "animation.df_withered_freddy.muerte",
+        "cancan_a_pose": "animation.df_withered_freddy.base",
+        "cancan_b_pose": "animation.df_withered_freddy.walk",
+        "hero_pose": "animation.testdf_withered_freddy.casting",
+        "wiggle": "animation.df_withered_freddy.attack"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_withered_freddy",
+		"texture_index": 0
+      }
+    }
+  }
+}

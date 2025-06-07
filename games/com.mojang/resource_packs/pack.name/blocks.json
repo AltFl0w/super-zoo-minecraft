@@ -1,0 +1,435 @@
+{
+    "format_version":{
+        "1.10.0":{}
+    },
+    "df:white_wall_up_fnaf2":{
+        "textures":"df_pared_blanca_arriba_fnaf2",
+        "sound": "df"
+	},
+	"df:white_wall_fnaf2":{
+        "textures":"df_pared_blanca_fnaf2",
+        "sound": "df"
+	},
+        "df:wall_with_stripe_with_signal_fnaf2": {
+                "textures": {
+                  "up": "df_borde_fnaf2",
+                  "down": "df_borde_fnaf2",
+                  "north": "df_pared_con_franja_con_senal_fnaf2",
+                  "south": "df_pared_con_franja_con_senal_fnaf2",
+                  "west": "df_pared_con_franja_fnaf2",
+                  "east": "df_pared_con_franja_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:wall_with_frange_fnaf2": {
+                "textures": {
+                  "up": "df_borde_fnaf2",
+                  "down": "df_borde_fnaf2",
+                  "north": "df_pared_con_franja_fnaf2",
+                  "south": "df_pared_con_franja_fnaf2",
+                  "west": "df_pared_con_franja_fnaf2",
+                  "east": "df_pared_con_franja_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:wall_with_frange2_fnaf2": {
+                "textures": {
+                  "up": "df_borde_fnaf2",
+                  "down": "df_borde_fnaf2",
+                  "north": "df_pared_con_franja2_fnaf2",
+                  "south": "df_pared_con_franja2_fnaf2",
+                  "west": "df_pared_con_franja2_fnaf2",
+                  "east": "df_pared_con_franja2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_top_edge_fnaf2": {
+                "textures": {
+                  "up": "df_borde_fnaf2",
+                  "down": "df_borde_fnaf2",
+                  "north": "df_pared_blanca_con_borde_superior_fnaf2",
+                  "south": "df_pared_blanca_con_borde_superior_fnaf2",
+                  "west": "df_pared_blanca_con_borde_superior_fnaf2",
+                  "east": "df_pared_blanca_con_borde_superior_fnaf2"
+                },
+                "sound": "df"
+              },
+              "df:white_wall_with_top_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_borde2_fnaf2",
+                  "down": "df_borde2_fnaf2",
+                  "north": "df_pared_blanca_con_borde_superior2_fnaf2",
+                  "south": "df_pared_blanca_con_borde_superior2_fnaf2",
+                  "west": "df_pared_blanca_con_borde_superior2_fnaf2",
+                  "east": "df_pared_blanca_con_borde_superior2_fnaf2"
+                },
+                "sound": "df"
+              },
+	"df:wall_with_mosaic_with_frange_fnaf2":{
+        "textures":"df_pared_de_mosaico_con_franja_fnaf2",
+        "sound": "df"
+	},
+	"df:mosaic_wall_fnaf2":{
+        "textures":"df_pared_de_mosaico_fnaf2",
+        "sound": "df"
+        },
+        "df:wall_with_mosaic_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_fnaf2",
+                  "south": "df_pared_con_mosaico_fnaf2",
+                  "west": "df_pared_con_mosaico_fnaf2",
+                  "east": "df_pared_con_mosaico_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:wall_with_mosaic_with_right_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_con_borde_derecho_fnaf2",
+                  "south": "df_pared_con_mosaico_con_borde_izquierdo_fnaf2",
+                  "west": "df_pared_con_mosaico_fnaf2",
+                  "east": "df_borde_fnaf2"
+                },
+                "sound": "df"
+              },
+            "df:dirty_wall_with_mosaic_with_right_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_sucio_con_borde_derecho_fnaf2",
+                  "south": "df_pared_con_mosaico_sucio_con_borde_izquierdo_fnaf2",
+                  "west": "df_pared_con_mosaico_fnaf2",
+                  "east": "df_borde_fnaf2"
+                },
+                "sound": "df"
+              },
+              "df:dirty_wall_with_mosaic_with_right_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_sucio_con_borde_izquierdo2_fnaf2",
+                  "south": "df_pared_con_mosaico_sucio_con_borde_derecho2_fnaf2",
+                  "west": "df_borde2_fnaf2",
+                  "east": "df_pared_con_mosaico_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:wall_with_mosaic_with_right_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_con_borde_derecho2_fnaf2",
+                  "south": "df_pared_con_mosaico_con_borde_izquierdo2_fnaf2",
+                  "west": "df_pared_con_mosaico_fnaf2",
+                  "east": "df_borde2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:dirty_wall_with_mosaic_with_left_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_sucio_con_borde_izquierdo_fnaf2",
+                  "south": "df_pared_con_mosaico_sucio_con_borde_derecho_fnaf2",
+                  "west": "df_borde_fnaf2",
+                  "east": "df_pared_con_mosaico_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:dirty_wall_with_mosaic_with_left_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_sucio_con_borde_derecho2_fnaf2",
+                  "south": "df_pared_con_mosaico_sucio_con_borde_izquierdo2_fnaf2",
+                  "west": "df_pared_con_mosaico_fnaf2",
+                  "east": "df_borde2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:wall_with_mosaic_with_left_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_con_borde_izquierdo_fnaf2",
+                  "south": "df_pared_con_mosaico_con_borde_derecho_fnaf2",
+                  "west": "df_borde_fnaf2",
+                  "east": "df_pared_con_mosaico_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:wall_with_mosaic_with_left_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_con_borde_izquierdo2_fnaf2",
+                  "south": "df_pared_con_mosaico_con_borde_derecho2_fnaf2",
+                  "west": "df_borde2_fnaf2",
+                  "east": "df_pared_con_mosaico_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:mosaic_floor_fnaf2":{
+        "textures":"df_piso_mosaico_fnaf2",
+        "sound": "df"
+        },
+        "df:ceiling_fnaf2":{
+        "textures":"df_techo_fnaf2",
+        "sound": "df"
+        },
+        "df:ventilation_fnaf2":{
+        "textures":"df_ventilacion_fnaf2",
+        "sound": "df"
+        },
+        "df:clear_ceiling_fnaf2":{
+        "textures":"df_techo_claro_fnaf2",
+        "sound": "df"
+        },
+        "df:women_bathroom_fnaf2": {
+          "textures": {
+            "up": "df_pared_blanca_fnaf2",
+            "down": "df_pared_blanca_fnaf2",
+            "north": "df_pared_blanca_con_borde_derecho2_fnaf2",
+            "south": "df_tocador_mujeres",
+            "west": "df_borde2_fnaf2",
+            "east": "df_pared_blanca_fnaf2"
+          },
+          "sound": "df"
+        },
+        "df:mens_bathroom_fnaf2": {
+          "textures": {
+            "up": "df_pared_blanca_fnaf2",
+            "down": "df_pared_blanca_fnaf2",
+            "north": "df_pared_blanca_con_borde_derecho2_fnaf2",
+            "south": "df_tocador_hombres",
+            "west": "df_borde2_fnaf2",
+            "east": "df_pared_blanca_fnaf2"
+          },
+          "sound": "df"
+        },
+        "df:white_wall_with_papers_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_hojas_fnaf2",
+                  "south": "df_pared_blanca_con_hojas_fnaf2",
+                  "west": "df_pared_blanca_con_hojas_fnaf2",
+                  "east": "df_pared_blanca_con_hojas_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_confetti_fnaf2":{
+        "textures":"df_pared_blanca_con_confeti_fnaf2",
+        "sound": "df"
+        },
+        "df:dirty_white_wall_fnaf2":{
+        "textures":"df_pared_blanca_sucia_fnaf2",
+        "sound": "df"
+        },
+        "df:dirty_wall_with_mosaic_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_con_mosaico_sucio_fnaf2",
+                  "south": "df_pared_con_mosaico_sucio_fnaf2",
+                  "west": "df_pared_con_mosaico_sucio_fnaf2",
+                  "east": "df_pared_con_mosaico_sucio_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_up_with_confetti_fnaf2":{
+        "textures":"df_pared_blanca_arriba_con_confeti_fnaf2",
+        "sound": "df"
+        },
+        "df:white_wall_for_button_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_para_boton_fnaf2",
+                  "south": "df_pared_blanca_para_boton_fnaf2",
+                  "west": "df_pared_blanca_para_boton_fnaf2",
+                  "east": "df_pared_blanca_para_boton_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_right_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_derecho_fnaf2",
+                  "south": "df_pared_blanca_con_borde_izquierdo_fnaf2",
+                  "west": "df_borde_fnaf2",
+                  "east": "df_pared_blanca_fnaf2"
+                },
+                "sound": "df"
+              },
+          "df:white_wall_with_right_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_derecho2_fnaf2",
+                  "south": "df_pared_blanca_con_borde_izquierdo2_fnaf2",
+                  "west": "df_borde2_fnaf2",
+                  "east": "df_pared_blanca_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_left_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_izquierdo_fnaf2",
+                  "south": "df_pared_blanca_con_borde_derecho_fnaf2",
+                  "west": "df_pared_blanca_fnaf2",
+                  "east": "df_borde_fnaf2"
+                },
+                "sound": "df"
+              },
+          "df:white_wall_with_left_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_izquierdo2_fnaf2",
+                  "south": "df_pared_blanca_con_borde_derecho2_fnaf2",
+                  "west": "df_pared_blanca_fnaf2",
+                  "east": "df_borde2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_left_top_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_superior_izquierdo_fnaf2",
+                  "south": "df_pared_blanca_con_borde_superior_derecho_fnaf2",
+                  "west": "df_pared_blanca_fnaf2",
+                  "east": "df_pared_blanca_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_left_top_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_superior_izquierdo2_fnaf2",
+                  "south": "df_pared_blanca_con_borde_superior_derecho2_fnaf2",
+                  "west": "df_pared_blanca_fnaf2",
+                  "east": "df_pared_blanca_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_right_top_edge_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_superior_derecho_fnaf2",
+                  "south": "df_pared_blanca_con_borde_superior_izquierdo_fnaf2",
+                  "west": "df_pared_blanca_fnaf2",
+                  "east": "df_pared_blanca_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_right_top_edge2_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_con_borde_superior_derecho2_fnaf2",
+                  "south": "df_pared_blanca_con_borde_superior_izquierdo2_fnaf2",
+                  "west": "df_pared_blanca_fnaf2",
+                  "east": "df_pared_blanca_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:counter_fnaf2": {
+                "textures": {
+                  "up": "df_mostrador2",
+                  "down": "df_mostrador",
+                  "north": "df_mostrador1",
+                  "south": "df_mostrador1",
+                  "west": "df_mostrador1",
+                  "east": "df_mostrador1"
+                },
+                "sound": "df"
+              },
+        "df:counter_with_poster_fnaf2": {
+                "textures": {
+                  "up": "df_mostrador2",
+                  "down": "df_mostrador",
+                  "north": "df_mostrador1",
+                  "south": "df_mostrador1",
+                  "west": "df_mostrador3",
+                  "east": "df_mostrador1"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_right_edge_rotated_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_borde2_fnaf2",
+                  "south": "df_pared_blanca_fnaf2",
+                  "west": "df_pared_blanca_con_borde_izquierdo2_fnaf2",
+                  "east": "df_pared_blanca_con_borde_derecho2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_left_edge_rotated_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_fnaf2",
+                  "south": "df_borde2_fnaf2",
+                  "west": "df_pared_blanca_con_borde_derecho2_fnaf2",
+                  "east": "df_pared_blanca_con_borde_izquierdo2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_left_top_edge_rotated_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_fnaf2",
+                  "south": "df_pared_blanca_fnaf2",
+                  "west": "df_pared_blanca_con_borde_superior_izquierdo2_fnaf2",
+                  "east": "df_pared_blanca_con_borde_superior_derecho2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_right_top_edge_rotated_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_fnaf2",
+                  "south": "df_pared_blanca_fnaf2",
+                  "west": "df_pared_blanca_con_borde_superior_derecho2_fnaf2",
+                  "east": "df_pared_blanca_con_borde_superior_izquierdo2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_mosaic_with_right_edge_rotated_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_pared_blanca_fnaf2",
+                  "south": "df_borde2_fnaf2",
+                  "west": "df_pared_con_mosaico_con_borde_izquierdo2_fnaf2",
+                  "east": "df_pared_con_mosaico_con_borde_derecho2_fnaf2"
+                },
+                "sound": "df"
+              },
+        "df:white_wall_with_mosaic_with_left_edge_rotated_fnaf2": {
+                "textures": {
+                  "up": "df_pared_blanca_fnaf2",
+                  "down": "df_pared_blanca_fnaf2",
+                  "north": "df_borde2_fnaf2",
+                  "south": "df_pared_blanca_fnaf2",
+                  "west": "df_pared_con_mosaico_con_borde_derecho2_fnaf2",
+                  "east": "df_pared_con_mosaico_con_borde_izquierdo2_fnaf2"
+                },
+                "sound": "df"
+              }
+        
+}

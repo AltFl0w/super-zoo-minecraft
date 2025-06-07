@@ -1,0 +1,261 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.micro_uzi" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : { "on_entry" : [ "/scoreboard objectives add micro_uzi_explosive dummy", "/scoreboard players add @s micro_uzi_explosive 0", "/scoreboard objectives add micro_uzi_fire dummy", "/scoreboard players add @s micro_uzi_fire 0", "/scoreboard objectives add micro_uzi_shotgun dummy", "/scoreboard players add @s micro_uzi_shotgun 0", "/scoreboard objectives add micro_uzi_m203 dummy", "/scoreboard players add @s micro_uzi_m203 0", "/scoreboard objectives add micro_uzi dummy", "/scoreboard players add @s micro_uzi 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [ { "default" : "(1.0)" } ]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add micro_uzi_explosive dummy", "/scoreboard players add @s micro_uzi_explosive 0", "/scoreboard objectives add micro_uzi_fire dummy", "/scoreboard players add @s micro_uzi_fire 0","/scoreboard objectives add micro_uzi_shotgun dummy", "/scoreboard players add @s micro_uzi_shotgun 0", "/scoreboard objectives add micro_uzi_m203 dummy", "/scoreboard players add @s micro_uzi_m203 0", "/scoreboard objectives add micro_uzi dummy", "/scoreboard players add @s micro_uzi 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"micro_uzi" : "q.scoreboard('micro_uzi') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('micro_uzi') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.is_using_item && q.scoreboard('second_gun') == 0 && q.is_alive"
+						},
+						{
+							"m203.reload" : "q.scoreboard('micro_uzi_m203') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.is_using_item && q.scoreboard('second_gun') == 1 && q.is_alive"
+						},
+						{
+							"shotgun.reload" : "q.scoreboard('micro_uzi_shotgun') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.is_using_item && q.scoreboard('second_gun') == 2 && q.is_alive"
+						},
+						{
+							"m203" : "q.is_using_item && !q.is_sneaking && q.scoreboard('second_gun') == 1 && q.scoreboard('micro_uzi_m203') > 0 && q.is_alive"
+						},
+						{
+							"shotgun" : "q.is_using_item && !q.is_sneaking && q.scoreboard('second_gun') == 2 && q.scoreboard('micro_uzi_shotgun') > 0 && q.is_alive"
+						}
+					]
+				},
+				"micro_uzi" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('micro_uzi') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('micro_uzi') < 0 && q.is_using_item"
+						},
+						{
+							"m203.reload" : "q.scoreboard('micro_uzi_m203') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.is_using_item && q.scoreboard('second_gun') == 1"
+						},
+						{
+							"shotgun.reload" : "q.scoreboard('micro_uzi_shotgun') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.is_using_item && q.scoreboard('second_gun') == 2"
+						},
+						{
+							"shoot" : "q.is_using_item && !q.is_sneaking && q.scoreboard('second_gun') == 0 && q.scoreboard('micro_uzi_fire') == 0 && q.scoreboard('micro_uzi_explosive') == 0"
+						},
+						{
+							"m203" : "q.is_using_item && !q.is_sneaking && q.scoreboard('second_gun') == 1 && q.scoreboard('micro_uzi_m203') > 0"
+						},
+						{
+							"shotgun" : "q.is_using_item && !q.is_sneaking && q.scoreboard('second_gun') == 2 && q.scoreboard('micro_uzi_shotgun') > 0"
+						},
+						{
+							"shoot_apuntar" : "q.is_using_item && q.is_sneaking && q.scoreboard('second_gun') == 0 && q.scoreboard('micro_uzi_fire') == 0 && q.scoreboard('micro_uzi_explosive') == 0"
+						},
+						{
+							"shoot.fire" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('micro_uzi_fire') > 0"
+						},
+						{
+							"shoot.explosive" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('micro_uzi_explosive') == 1"
+						}
+					]
+				},
+				"shoot.explosive" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "micro_uzi.shoot.explosive" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"micro_uzi" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('micro_uzi') < 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot.fire" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "micro_uzi.shoot.fire" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"micro_uzi" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('micro_uzi') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shotgun" : {
+					"on_entry" : [ "/event entity @s guns:shoot.shotgun" ],
+					"animations" : [ "guns.shotgun.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') || !q.is_using_item) && q.any_animation_finished || !q.is_alive"
+						}
+					]
+				},
+				"m203" : {
+					"on_entry" : [ "/event entity @s guns:shoot.m203" ],
+					"animations" : [ "guns.m203.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') || !q.is_using_item) && q.any_animation_finished || !q.is_alive"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "micro_uzi.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"micro_uzi" : "!q.is_using_item || q.is_sneaking"
+						},
+						{
+							"no_ammo" : "q.scoreboard('micro_uzi') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot_apuntar" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "micro_uzi.apuntar.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"micro_uzi" : "!q.is_using_item || !q.is_sneaking"
+						},
+						{
+							"no_ammo" : "q.scoreboard('micro_uzi') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off", "/function micro_uzi/micro_uzi" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				//Reload
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:micro_uzi_ammo}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "micro_uzi.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') || !q.is_alive"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.micro_uzi_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				//M203Reload
+				"m203.reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:grenade_bullet}] guns:reload.m203" ],
+					"transitions" : [
+						{
+							"no.bullets" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')"
+						},
+						{
+							"m203.reload.on" : "q.property('arathnido:animation') == 18"
+						}
+					]
+				},
+				"m203.reload.on" : {
+					"animations" : [ "micro_uzi.m203.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"m203.stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') || !q.is_alive"
+						}
+					]
+				},
+				"m203.stop" : {
+					"on_entry" : [ "/stopsound @s gun.micro_uzi_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				//ShotgunReload
+				"shotgun.reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:cartucho}] guns:reload.shotgun" ],
+					"transitions" : [
+						{
+							"no.bullets" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')"
+						},
+						{
+							"shotgun.reload.on" : "q.property('arathnido:animation') == 19"
+						}
+					]
+				},
+				"shotgun.reload.on" : {
+					"animations" : [ "micro_uzi.shotgun.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"shotgun.stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') || !q.is_alive"
+						}
+					]
+				},
+				"shotgun.stop" : {
+					"on_entry" : [ "/stopsound @s gun.micro_uzi_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				"no.bullets" : {
+					"on_entry" : [ "/scoreboard players set @s second_gun 0" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

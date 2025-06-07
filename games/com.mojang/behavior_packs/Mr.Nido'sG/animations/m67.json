@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.m67.time": {
+      "loop": true,
+      "animation_length": 4.0,
+      "timeline": {
+        "0.0": [
+
+        ]
+      }
+    },
+    "animation.m67.shoot": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.4": [
+			"/event entity @s guns:m67",
+			"/playsound armor.equip_leather @s ~ ~ ~ 1 1 1",
+			"/clear @s gunsaddon:m67 0 1"
+        ]
+      }
+    }
+  }
+}

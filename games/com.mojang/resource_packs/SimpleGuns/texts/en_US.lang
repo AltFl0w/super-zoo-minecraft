@@ -1,0 +1,9 @@
+##ITEMS
+item.true:melted_copper.name=Melted Copper
+item.true:steel_ingot.name=Steel Ingot
+
+##CRAFTING TABLES
+tile.true:ammunition_bench.name=Ammunition Bench
+
+##DEATH CRATE
+tile.true:death_crate.name=Death Crate

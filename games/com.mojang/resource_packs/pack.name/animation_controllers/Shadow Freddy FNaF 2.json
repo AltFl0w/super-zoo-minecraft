@@ -1,0 +1,75 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+ "controller.animation.df_shadow_freddy_fnaf2.base": {
+      "states": {
+        "default": {
+          "animations": [
+            "df_shadow_freddy_fnaf2_general",
+            "look_at_target"
+          ]
+        }
+      }
+    },
+    "controller.animation.df_shadow_freddy_fnaf2.movimiento": {
+      "states": {
+          "default": {
+              "animations": [
+                      "df_shadow_freddy_fnaf2_general"
+              ],
+              "transitions": [{
+                      "df_caminando_df_shadow_freddy_fnaf2": "query.ground_speed"
+                  },
+      {
+        "df_shadow_freddy_fnaf2_general": "query.ground_speed"
+      }
+              ],
+              "blend_transition": 0.1
+          },
+  "df_shadow_freddy_fnaf2_general": {
+              "animations": [
+                  "df_shadow_freddy_fnaf2_general"
+              ],
+              "transitions": [{
+                      "default": "!query.ground_speed"
+                  }
+              ],
+              "blend_transition": 0.1
+          },
+          "df_caminando_df_shadow_freddy_fnaf2": {
+              "animations": [
+                  "df_caminando_df_shadow_freddy_fnaf2"
+              ],
+              "transitions": [{
+                      "default": "!query.ground_speed"
+                  }
+              ],
+              "blend_transition": 0.1
+          }
+      }
+  },
+  "controller.animation.df_shadow_freddy_fnaf2.seleccion": {
+    "states": {
+      "default": {
+        "transitions": [
+          {
+            "cast": "query.is_casting"
+          }
+        ],
+        "blend_transition": 0.2
+      },
+      "cast": {
+        "animations": [
+          "df_shadow_freddy_fnaf2_pose"
+        ],
+        "transitions": [
+          {
+            "default": "!query.is_casting"
+          }
+        ],
+        "blend_transition": 0.2
+      }
+    }
+  }
+}
+}

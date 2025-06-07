@@ -1,0 +1,16 @@
+{
+  "format_version":2,
+  "header":{
+    "name":"§2SERP §ePokédrock §4R",
+    "description":"pack.description",
+    "uuid":"bff02548-6ef9-4c69-a527-b9b0b58eeba6",
+    "version":[1,26,4],
+    "min_engine_version":[1,20,20]
+  },
+  "modules":[
+    {"description":"pack.description","type":"resources","uuid":"202e855e-1006-4fc1-bbdd-e00aa990a11e","version":[1,0,0]}
+  ],
+  "dependencies":[
+	{"uuid":"807bf5b4-6ecd-4b36-9265-0db03b5816fe","version":[1,26,4]}
+  ]
+}

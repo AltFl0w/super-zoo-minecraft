@@ -1,0 +1,19 @@
+{
+  "format_version":2,
+  "header":{
+    "name":"§2SERP §ePokédrock §4B",
+    "description":"pack.description",
+    "uuid":"807bf5b4-6ecd-4b36-9265-0db03b5816fe",
+    "version":[1,26,4],
+    "min_engine_version":[1,21,40]
+  },
+  "modules":[
+    {"description":"pack.description","type":"data","uuid":"55bd5a8e-7268-48a9-9c77-fab5128ad4aa","version":[1,0,0]},
+    {"type":"script","language":"javascript","uuid":"1485f315-23a2-4e3a-af73-f687c0fc5c64","entry":"scripts/serproot.js","version":[1,0,0]}
+  ],
+  "dependencies":[
+    {"module_name":"@minecraft/server","version":"1.18.0"},
+    {"module_name":"@minecraft/server-ui","version":"1.3.0"},
+    {"uuid":"bff02548-6ef9-4c69-a527-b9b0b58eeba6","version":[1,26,4]}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:m67",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"mira": "slime",
+				"laser": "outline_light"
+			},
+			"textures": {
+				"default": "textures/3d_guns/m67"
+			},
+			"geometry": {
+				"default": "geometry.m67",
+				"first": "geometry.m67_first"
+			},
+			"render_controllers": [
+				{ "controller.render.gun.first": "c.is_first_person" },
+				{ "controller.render.gun.third": "!c.is_first_person" }
+			],
+			"scripts": {
+                "animate": [
+				  "idle.c"
+                ]
+			},
+            "animations": {
+				"idle.c": "animation.m67.idle"
+            }
+		}
+	}
+}

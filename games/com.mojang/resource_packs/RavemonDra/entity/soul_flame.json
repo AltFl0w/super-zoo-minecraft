@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "keke:soul_flame_projectile",
+			"materials": {
+				"default": "snowball"
+			},
+			"textures": {
+				"default": "textures/items/soul_flame"
+			},
+			"geometry": {
+				"default": "geometry.item_sprite"
+			},
+			"render_controllers": [
+				"controller.render.item_sprite"
+			],
+			"animations": {
+				"default": "controller.animation.flame_effects",
+				"flying": "animation.actor.billboard"
+			},
+			"scripts": {
+				"animate": [
+					"default",
+					"flying"
+				]
+			},
+			"particle_effects": {
+				"flames": "keke:soul_flame_effect"
+			}
+		}
+	}
+}

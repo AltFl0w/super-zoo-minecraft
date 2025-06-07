@@ -1,0 +1,18 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:jirachi_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      "ere",
+      "rer"
+    ],
+    "key":{
+      "e":{"item":"minecraft:end_stone"},
+      "r":{"item":"serp:blue_ribbon"}
+    },
+    "result":{"item":"serp:jirachi_offering"}
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.m32.shoot.explosive": {
+      "loop": true,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.grenade_shot @a[r=25]",
+			"/scoreboard players remove @s m32 1",
+			"/event entity @s guns:grenade_launcher.explosive",
+			"/function m32/m32",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.m32.shoot.fire": {
+      "loop": true,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.grenade_shot @a[r=25]",
+			"/scoreboard players remove @s m32 1",
+			"/event entity @s guns:grenade_launcher.fire",
+			"/function m32/m32",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.m32.shoot": {
+      "loop": true,
+      "animation_length": 1.5,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.grenade_shot @a[r=25]",
+			"/scoreboard players remove @s m32 1",
+			"/event entity @s guns:grenade_launcher",
+			"/function m32/m32",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.m32.reload": {
+      "loop": false,
+      "animation_length": 4.0,
+      "timeline": {
+        "0.25": [
+			"/playsound gun.m32_reload @a[r=25]", "/scoreboard players set @s m32_fire 0", "/scoreboard players set @s m32_explosive 0", "/function m32/m32"
+        ],
+        "3.9": [
+			"/scoreboard players add @s m32 6",
+			"/clear @s gunsaddon:grenade_bullet 0 6"
+        ],
+        "3.925": [
+			"/function m32/m32"
+        ]
+      }
+    }
+  }
+}

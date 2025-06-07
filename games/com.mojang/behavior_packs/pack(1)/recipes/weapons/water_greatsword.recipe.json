@@ -1,0 +1,31 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:water_greatsword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"## ",
+			"## ",
+			"ss "
+		],
+		"key": {
+			"#": {
+				"item": "wep:water_ingot"
+			},
+			"s": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:water_greatsword",
+				"count": 1
+			}
+		]
+	}
+}

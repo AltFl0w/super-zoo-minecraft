@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.rockfall_axe": {
+			"geometry": "Geometry.rockfall_axe",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.rockfall_axe"
+			]
+		}
+	}
+}

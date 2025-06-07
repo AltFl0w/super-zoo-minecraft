@@ -1,0 +1,20 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:kyogre_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      "ggg",
+      "lgl",
+      "fff"
+    ],
+    "key":{
+      "g":{"item":"minecraft:gold_ingot"},
+      "l":{"item":"minecraft:lapis_lazuli"},
+      "f":{"item":"serp:kyogre_fang"}
+    },
+    "result":{"item":"serp:kyogre_offering"}
+  }
+}

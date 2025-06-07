@@ -1,0 +1,222 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:communicator",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+		},
+    "component_groups": {
+	"serp:off": {
+		"minecraft:variant": {"value": 0}},
+	"serp:boot_on": {
+		"minecraft:variant": {"value": 1},
+        "minecraft:timer": {
+    "time": 7,"randomInterval": false,
+    "looping": false,"time_down_event": {
+    "event":"serp:trainer","target":"self"}}
+	},
+	"serp:reset": {
+		"minecraft:variant": {"value": 1},
+        "minecraft:timer": {
+    "time": 7,"randomInterval": false,
+    "looping": false,"time_down_event": {
+    "event":"serp:off","target":"self"}}
+	},
+	"serp:trainer1": {
+		"minecraft:variant": {"value": 2}},
+	"serp:trainer2": {
+		"minecraft:variant": {"value": 3}},
+	"serp:prof": {
+		"minecraft:variant": {"value": 4}},
+	"serp:goh": {
+		"minecraft:variant": {"value": 5}},
+      "serp:despawn": {
+    "minecraft:health": {
+    "value": 0,"min": 0 },
+    "minecraft:instant_despawn":{}
+      }
+    },
+    "components": {
+      "minecraft:is_stackable": {},
+      "minecraft:persistent": {},
+      "minecraft:damage_sensor": {
+        "triggers":[{"on_damage":{"event":"serp:rotate"},"deals_damage":false}]},
+        "minecraft:interact":{
+          "interactions": [
+{"on_interact":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"minecraft:bedrock"},
+"event":"serp:despawn","target":"self"},
+"use_item":true,"interact_text":"structure_block.save",
+"swing":true},
+{"on_interact":{"filters":{"test":"is_variant","value":0},"event":"serp:boot_on","target":"self"},"cooldown":5,"interact_text":"hbui.PackListItem.activateButtonText"},
+{"on_interact":{"filters":{"all_of":[ {"test":"is_sneaking","subject":"other"},{"any_of":[{"test":"is_variant","value":2},{"test":"is_variant","value":3}]}]},"event":"serp:prof","target":"self"},"cooldown":5,"interact_text":"codeScreen.changeEditorModal.change"},
+{"on_interact":{"filters":{"all_of":[ {"test":"is_sneaking","subject":"other"},{"test":"is_variant","value":4}]},"event":"serp:goh","target":"self"},"cooldown":5,"interact_text":"codeScreen.changeEditorModal.change"},
+{"on_interact":{"filters":{"all_of":[ {"test":"is_sneaking","subject":"other"},{"test":"is_variant","value":5}]},"event":"serp:trainer","target":"self"},"cooldown":5,"interact_text":"codeScreen.changeEditorModal.change"},
+{"on_interact":{"filters":{"all_of":[{"any_of":[{"test":"is_variant","value":2},{"test":"is_variant","value":3}]},{"any_of":[{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:key_stone"},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:wishing_star"},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:candy_bowl"}]}]},"event":"serp:trainer_reset","target":"self"},"add_items":{"table":"loot_tables/mission/trainer.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":4},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:key_stone"}]},"event":"serp:mega","target":"self"},"add_items":{"table":"loot_tables/mission/mega.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":4},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:wishing_star"}]},"event":"serp:dynamax_band","target":"self"},"add_items":{"table":"loot_tables/mission/max.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":4},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:bad_egg"}]},"event":"serp:egg","target":"self"},"add_items":{"table":"loot_tables/mission/egg.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":5},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:frozen_feather"}]},"event":"serp:articuno","target":"self"},"add_items":{"table":"loot_tables/mission/articuno.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":5},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:electric_feather"}]},"event":"serp:zapdos","target":"self"},"add_items":{"table":"loot_tables/mission/zapdos.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":5},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:fire_feather"}]},"event":"serp:moltres","target":"self"},"add_items":{"table":"loot_tables/mission/moltres.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":5},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:thunder_fang"}]},"event":"serp:raikou","target":"self"},"add_items":{"table":"loot_tables/mission/raikou.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":5},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:lava_rock"}]},"event":"serp:entei","target":"self"},"add_items":{"table":"loot_tables/mission/entei.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"},
+{"on_interact":{"filters":{"all_of":[{"test":"is_variant","value":5},{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:spring_lock"}]},"event":"serp:suicune","target":"self"},"add_items":{"table":"loot_tables/mission/suicune.json"},"use_item":true,"interact_text":"store.toast.autofulfillment.title"}
+        ]
+      },
+      "minecraft:scheduler": {
+        "min_delay_secs": 0,
+        "max_delay_secs": 0,
+        "scheduled_events": [
+{"filters":
+{"test":"distance_to_nearest_player","operator":">","value": 5 },
+"event":"serp:off"}
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 9999999999,
+        "suffocate_time": false
+      },
+      "minecraft:collision_box": {
+    "width": 0.6,"height": 1.98},
+      "minecraft:health": {
+    "value": 400000,"min": 4000000 },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+{"filters":{"test":"in_lava","subject": "self","operator":"==","value":true}, "cause": "lava","damage_per_tick": 0}]},
+      "minecraft:movement":{"value":0},
+	    "minecraft:physics":{},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+	  "minecraft:entity_spawned":{
+        "run_command":{
+    "command":["tp @s ~~~ 0"]},
+		"add": {
+	"component_groups":["serp:off"]}},
+	  "serp:rotate":{
+		"run_command": {
+    "command":["tp @s ~~0.2~~45~"]}
+	  },
+	  "serp:off":{
+		"add": {
+	"component_groups":["serp:off"]},
+		"remove": {
+	"component_groups":["serp:boot_on","serp:reset","serp:prof","serp:trainer1","serp:trainer2","serp:goh"]}},
+	  "serp:boot_on":{
+        "run_command":{
+    "command":["function mission/boot_on"]},
+		"add": {
+	"component_groups":["serp:boot_on"]},
+		"remove": {
+	"component_groups":["serp:off"]}},
+	  "serp:trainer":{
+        "randomize":[
+{
+    "run_command":{
+"command":["function mission/trainer1"]},
+    "add": {
+"component_groups":["serp:trainer1"]}},
+{
+    "run_command":{
+"command":["function mission/trainer1"]},
+    "add": {
+"component_groups":["serp:trainer2"]}}],
+        "remove": {
+	"component_groups":["serp:goh","serp:boot_on"]}
+	},
+	  "serp:trainer_reset":{
+        "run_command":{
+    "command":["function mission/trainer_thanks"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:boot_on","serp:trainer1","serp:trainer2"]}
+	},
+	  "serp:prof":{
+        "run_command":{
+    "command":["function mission/prof1"]},
+		"add": {
+	"component_groups":["serp:prof"]},
+		"remove": {
+	"component_groups":["serp:boot_on","serp:trainer1","serp:trainer2"]}},
+	  "serp:mega":{
+        "run_command":{
+    "command":["function mission/prof_mega"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:prof"]}},
+	  "serp:dynamax_band":{
+        "run_command":{
+    "command":["function mission/prof_max"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:prof"]}},
+	  "serp:egg":{
+        "run_command":{
+    "command":["function mission/prof_egg"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:prof"]}},
+	  "serp:goh":{
+        "run_command":{
+    "command":["function mission/goh1"]},
+		"add": {
+	"component_groups":["serp:goh"]},
+		"remove": {
+	"component_groups":["serp:boot_on","serp:prof"]}},
+	  "serp:articuno":{
+        "run_command":{
+    "command":["function mission/goh_articuno"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:goh"]}},
+	  "serp:zapdos":{
+        "run_command":{
+    "command":["function mission/goh_zapdos"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:goh"]}},
+	  "serp:moltres":{
+        "run_command":{
+    "command":["function mission/goh_moltres"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:goh"]}},
+	  "serp:raikou":{
+        "run_command":{
+    "command":["function mission/goh_raikou"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:goh"]}},
+	  "serp:entei":{
+        "run_command":{
+    "command":["function mission/goh_entei"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:goh"]}},
+	  "serp:suicune":{
+        "run_command":{
+    "command":["function mission/goh_suicune"]},
+		"add": {
+	"component_groups":["serp:reset"]},
+		"remove": {
+	"component_groups":["serp:goh"]}},
+	  "serp:despawn":{
+		"add": {
+	"component_groups":["serp:despawn"]}}
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version":"1.16.0", 
+  "minecraft:entity":{
+    "description":{
+      "identifier":"serp:healing_machine",
+      "is_spawnable":false,
+      "is_summonable":true,
+      "is_experimental":false
+    },
+    "component_groups":{
+    "serp:tamed":{"minecraft:is_tamed":{}},
+    "serp:using":{"minecraft:is_saddled":{},"minecraft:timer":{"time":2.1,"randomInterval":false,"looping":true,"time_down_event":{"event":"serp:reset"}}},
+    "serp:despawn":{"minecraft:instant_despawn":{}}
+    },
+    "components":{
+      "minecraft:type_family":{"family":["serp","inanimated"]},
+      "minecraft:is_charged":{},
+      "minecraft:interact":{"interactions":[{"on_interact":{"filters":{"all_of":[{"test":"is_sneaking","subject":"other"},{"test":"is_owner","subject":"other"}]},"event":"serp:despawn"},"add_items":{"table":"loot_tables/machines/healing_machine.json"},"interact_text":"structure_block.save"}]},
+      "minecraft:knockback_resistance":{"value":1},
+      "minecraft:is_stackable":{},
+      "minecraft:damage_sensor":{"triggers":[{"on_damage":{"filters":{"test":"has_equipment","subject":"other","operator":"!=","domain":"hand","value":"serp:pokedex"},"event":"serp:rotate"},"deals_damage":false},{"on_damage":{"filters":{"test":"has_damage","value":"fatal"}},"deals_damage":false}]},
+      "minecraft:collision_box":{"width":0.7,"height":1.25},
+      "minecraft:health":{"value":1},
+      "minecraft:physics":{},
+      "minecraft:pushable":{"is_pushable":false,"is_pushable_by_piston":true}
+    },
+    "events":{
+"minecraft:entity_transformed":{"add":{"component_groups":["serp:tamed"]},"queue_command":{"command":["tp @s ~~0.2~ 0 0"]}},
+"serp:using":{"add":{"component_groups":["serp:using"]},"queue_command":{"command":["tag @s add using"]}},
+"serp:rotate":{"queue_command":{"command":["tp @s ~~0.25~~90~"]}},
+"serp:despawn":{"add":{"component_groups":["serp:despawn"]}},
+"serp:reset":{"remove":{"component_groups":["serp:using"]},"queue_command":{"command":["tag @s remove using"]}}
+    }
+  }
+}

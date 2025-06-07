@@ -1,0 +1,131 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.df_estanteria_fnaf2.base": {
+			"loop": true,
+			"bones": {
+				"Endo02": {
+					"position": [0, 0, 0],
+					"scale": 0.8
+				},
+				"head": {
+					"rotation": [27.5, 0, -90],
+					"position": [-7, -32, 0]
+				},
+				"GloboOcular2": {
+					"rotation": [-52.5, 0, 0],
+					"position": [-33.5, -16, 0]
+				},
+				"Pupila2": {
+					"rotation": [-52.5, 0, 0],
+					"position": [-33.4, -14.8, 0.4]
+				},
+				"BocaEAbajo": {
+					"rotation": [-5, 0, 0]
+				},
+				"ParteOreja2": {
+					"rotation": [-90, 150, 0],
+					"position": [22, -10.8, -12]
+				},
+				"Oreja1": {
+					"rotation": [90, 0, 0],
+					"position": [-26, -8, 0]
+				},
+				"Cuerpo": {
+					"rotation": [-22.5, -75, -60],
+					"position": [12, 18, -3]
+				},
+				"CuerpoE2": {
+					"rotation": [30, 0, 0],
+					"position": [-9.3, 12.4, 0]
+				},
+				"Cuello": {
+					"rotation": [-10, -12.5, 0],
+					"position": [-21.7, 0, 1]
+				},
+				"BrazoDerecho": {
+					"rotation": [-122.5, -2.5, 70],
+					"position": [0, 23, 2]
+				},
+				"Mano": {
+					"rotation": [10, 37.5, -50]
+				},
+				"Pulgar2": {
+					"rotation": [32.5, -27.5, -10]
+				},
+				"Dedo21": {
+					"rotation": [0, 0, 15]
+				},
+				"BrazoIzquierdo": {
+					"rotation": [-100, 0, -85],
+					"position": [0, -3, 0]
+				},
+				"Brazo3": {
+					"position": [0, 16, -7]
+				},
+				"Mano2": {
+					"rotation": [0, -180, 5],
+					"position": [-2.9, 17, 16]
+				},
+				"Dedo2": {
+					"rotation": [0, 0, 37.5]
+				},
+				"Dedo5": {
+					"rotation": [0, 0, 37.5]
+				},
+				"Dedo8": {
+					"rotation": [0, 0, 37.5]
+				},
+				"Pulgar": {
+					"rotation": [0, 55, 0]
+				},
+				"Cadera": {
+					"rotation": [0, -15, 0],
+					"position": [4.9, -4, -1.5]
+				},
+				"PiernaDerecha": {
+					"rotation": [-90, 0, 0],
+					"position": [-10, 48, 1]
+				},
+				"Pierna1": {
+					"rotation": [87.5, 0, 0]
+				},
+				"Pie": {
+					"rotation": [0, 0, 75],
+					"position": [-1.1, -55, 20]
+				},
+				"Dedo1Pie4": {
+					"rotation": [2.5, -2.5, -77.5],
+					"position": [9.8, 8.5, 0]
+				},
+				"Dedo1Pie6": {
+					"rotation": [0, 7.5, 0]
+				},
+				"PiernaIzquierda": {
+					"rotation": [-87.5, -10, 0],
+					"position": [5.6, 49.8, 2]
+				},
+				"Pierna3": {
+					"rotation": [22.5, 0, 0]
+				},
+				"Pie2": {
+					"rotation": [82.5, 25, 60],
+					"position": [1.8, 0, 76.2]
+				},
+				"DedoEPie2": {
+					"position": [1.5, 0, -8.7]
+				},
+				"DedoEPie3": {
+					"position": [-9, 0, -4.5]
+				},
+				"Dedo1Pie3": {
+					"position": [2.5, 25.9, 13.6]
+				},
+				"Dedo1Pie7": {
+					"rotation": [0, -2.5, 0],
+					"position": [4.3, 0, 6.4]
+				}
+			}
+		}
+	}
+}

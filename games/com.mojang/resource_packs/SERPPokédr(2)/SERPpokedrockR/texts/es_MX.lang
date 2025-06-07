@@ -1,0 +1,367 @@
+pack.description=§fDiviértete capturando, criando y combatiendo junto a los Pokémon con éste addon para Minecraft bedrock! §2creado por Zacek el Serpentín, §cNinguna aplicación de Play store ni ninguna página además de Mcpedl y www.serpzacek.com tienen permiso de distribuciónde éste proyecto, no fomentes la piratería. Los nombres de las especies y los de varios objetos son propiedad de Pokémon company y éste proyecto no está relacionado a la saga de videojuegos Pokémon
+
+intro######################################
+
+item.serp:button_a.name=Botón A
+ball.catch=Bien hecho! Atrapé un Pokémon!
+ball.free=Oh no! Casi lo tenía!
+skill.1=Habilidad 1
+skill.2=Habilidad 2
+skill.3=Habilidad 3
+attack.main=Ataque principal
+attack.secondary=Contraataque/Ataque secundario
+attack.bold=Ataque Osado
+serp.intro1=Hola! Y Bienvenido al mundo de Pokémon!
+serp.intro2=En éste lugar habitan extrañas y fascinantes criaturas llamadas Pokémon!
+serp.intro3=Algunos los ven como mascotas, otros como compañeros de combate
+serp.intro4=Ahora veamos, tú te llamas 
+serp.intro4.1=, verdad?
+serp.choosing_gen=¿Qué generación elegirás?
+serp.choosing_poke=¿Qué inicial elegirás?
+serp.choosed_poke=Buena elección!
+serp.intro5=Te hago entrega de tu Pokémon inicial junto con un kit de principiante
+serp.intro6=Te esperan muchas aventuras con los Pokémon!
+serp.intro7=Éste addon fué hecho por Zacek el Serpentín
+joy.1=Bienvenido al Centro Pokémon! aquí pueden descansar tú y tus Pokémon hasta que se repongan!
+joy.2=Puedes curar q tus Pokémon debilitados con la máquina que está al lado mío, es gratis!
+joy.3=Conforme viajes podrás encontrar otros Centros Pokémon iguales a éste, no te preocupes si vas muy lejos!
+joy.4=En cada Centro Pokémon habrá una enfermera igualita a mí, no te asustes, somos familia uWu
+joy.5=Si no tienes un Centro Pokémon cerca puedes fabricar tu propia máquina de curación!
+jenny.1=Sección de objetos perdidos, reconoces alguno?
+jenny.2=Toma, parece que ésto te pertenece!
+jenny.3=Uy... me temo que Éste objeto no te pertenece. Nos vemos pronto!
+jenny.4=Gracias por tu colaboración! Cuando el dueño de éste objeto venga por él se lo entregaremos!
+prof.1=Estudiar a los Pokémon es una labor agotadora... Pero fascinante!
+prof.2=Cuántos Pokémon has capturado hoy?
+prof.3=Cada cierto tiempo vendrá un profesor distinto a tomar mi lugar, pero hasta entonces seguiré trabajando!
+prof.4=No olvides que si necesitas descansar, puedes ir a cualquier centro Pokémon!
+prof.5=Nuestra investigación avanzará mucho más rápido gracias a tu ayuda!
+
+Store######################################
+
+store.bike=Déjame ver... Anda! un Cupón Bici? Muy bien, Disfrútala!
+store.ride=Ésto es... Un Cupón Montura?? Aquí lo tienes, Ve con cuidado!
+
+Mission####################################
+
+communicator.on=Bienvenido al Rotom-Comunicador! Agáchate e interactúa para cambiar de contacto.
+trainer.mission=Hola! Ésto pasa, necesito una estrella deseo, una piedra llave o un Tazón de Caramelos Raros. si me ayudas te daré algo de lo que tenga en mi mochila!
+trainer.thanks=Muchas gracias! Aquí está tu recompensa.
+prof.mission=Saludos! Necesitas que inspeccione algo?
+prof.mega=Ohh, una Piedra Llave! De acuerdo, éste dispositivo te ayudará a utilizar adecuadamente su energía. se llama Mega Aro!
+prof.dynamax=Ésto es... una estrella deseo?! increíble! Con éste dispositivo podrás liberar la energía Dynamax de tus Pokémon, se llama Maximuñequera!
+prof.egg=Un huevo malo... Aunque está en mal estado, aún puedo recuperarlo. Toma! llévalo al Laboratorio Personal para hacerlo nacer!
+mission.legendary=Muéstrame tu habilidad como entrenador Pokémon y te daré a cambio la evidencia de la existencia de los Pokémon Legendarios!
+goh.mission=Hola! tienes algún objeto relacionado con un Pokémon Legendario? de ser así muéstramelo, y yo te daré las herramientas necesarias para invocarlos!
+goh.articuno=Wow, una Pluma Congelada! Con ésto puedo comprobar los gustos de Articuno y... Vamos! Si le das ésta ofrenda a un anillo de Hoopa seguro que Articuno es quien  aparecerá!
+goh.zapdos=Wow, una Pluma Eléctrica! Con ésto puedo comprobar los gustos de Zapdos y... Vamos! Si le das ésta ofrenda a un anillo de Hoopa seguro que Zapdos es quien  aparecerá!
+goh.moltres=Wow, una Pluma En llamas! Con ésto puedo comprobar los gustos de Moltres y... Vamos! Si le das ésta ofrenda a un anillo de Hoopa seguro que Moltres es quien  aparecerá!
+
+Battle#####################################
+
+combat.received=!El Pokémon ha recibido 
+combat.receivedd=!El Pokémon ha recibido §l§c
+combat.receivedm=!El Pokémon ha recibido §l§d
+combat.damage=§r de daño!
+combat.not_received=¡El Pokémon no recibió daño!
+combat.ineffective=¡El ataque fué poco eficaz!
+combat.immunity=¡El Pokémon es inmune!
+combat.miss=¡El ataque falló!
+combat.effective=¡El ataque fué súpereficaz!
+combat.critic=¡Un golpe crítico!
+
+Rotodialogs################################
+
+entity.serp:pc_description.name=¡Bienvenido al Rotomercado!
+entity.serp:rotomarket_buy.name=¡Hola-roto! Tienes algo para mí??
+entity.serp:rotomarket_potions.name=¡Hola-roto! Quieres un consumible??
+entity.serp:rotomarket_pokeballs.name=¡Hola-roto! Quieres algunas Pokéballs??
+entity.serp:rotomarket_stuff.name=¡Hola-roto! Quieres algún objeto??
+entity.serp:rotomarket_suits.name=¡Hola-roto! Quieres comprar ropa??
+entity.pokedrock.pilot.name=Veamos, Qué tienes hoy para mí?
+
+Bonguri###################################
+
+item.serp:apricorn_red.name=Bonguri Rojo
+item.serp:apricorn_blue.name=Bonguri Azul
+item.serp:apricorn_white.name=Bonguri Blanco
+item.serp:apricorn_yellow.name=Bonguri Amarillo
+item.serp:apricorn_black.name=Bonguri Negro
+item.serp:apricorn_green.name=Bonguri Verde
+item.serp:apricorn_cyan.name=Bonguri Celeste
+item.serp:apricorn_pink.name=Bonguri Rosa
+item.serp:apricorn_orange.name=Bonguri Naranja
+tile.serp:berry_top.name=Copa de Árbol de bayas
+tile.serp:berry_leaves_dark.name=Hojas de Árbol de bayas
+tile.serp:berry_leaves_light.name=Hojas de Árbol de bayas
+tile.serp:berry_log.name=Tronco de Árbol de bayas
+tile.serp:apricorn_stem.name=Tallo de Bonguri
+tile.serp:apricorn_black_block.name=Bonguri Negro
+tile.serp:apricorn_blue_block.name=Bonguri Azul
+tile.serp:apricorn_cyan_block.name=Bonguri Celeste
+tile.serp:apricorn_green_block.name=Bonguri Verde
+tile.serp:apricorn_orange_block.name=Bonguri Naranja
+tile.serp:apricorn_red_block.name=Bonguri Rojo
+tile.serp:apricorn_white_block.name=Bonguri Blanco
+tile.serp:apricorn_yellow_block.name=Bonguri Amarillo
+
+Items######################################
+
+item.serp:dynamax_band.name=Maximuñequera
+item.serp:revive.name=Revivir
+item.serp:max_revive.name=Revivir Máximo
+item.serp:repel.name=Repelente
+item.serp:super_repel.name=Superrepelente
+item.serp:max_repel.name=Repelente Máximo
+item.compass.name=Pokédex
+item.lodestonecompass.name=Pokédex Magneto
+item.serp:mulch.name=Abono
+item.serp:candy_bowl.name=Tazón de Caramelos raros
+item.serp:vs_seeker.name=Buscapelea
+item.serp:poke_ride.name=Buscamontura
+item.serp:rare_candy.name=Caramelo raro
+item.serp:poke.name=Poke Dólar
+item.serp:fluffy_tail.name=Cola Skitty
+item.serp:poke_toy.name=Poké Señuelo
+item.serp:key_shard_natural.name=Mega fragmentos naturales
+item.serp:key_shard_processed.name=Mega fragmentos refinados
+item.serp:x_factor.name=Factor X
+item.serp:y_factor.name=Factor Y
+item.serp:key_stone.name=Piedra llave
+item.serp:mega_ring.name=Mega Aro
+item.serp:mega_ring_empty.name=Mega Aro vacío
+item.serp:mega_ring_x.name=Mega Aro X
+item.serp:mega_ring_y.name=Mega Aro Y
+item.serp:berry_seeds.name=Semillas de Árbol de Bayas
+item.serp:poke_ore.name=Poké Mineral
+item.serp:key_ore.name=Piedra llave Silvestre
+item.serp:wish_ore.name=Meteorito Deseo
+item.serp:wishing_star.name=Estrella Deseo
+item.serp:bad_egg.name=Huevo Malo
+item.serp:pokemon_egg.name=Huevo Pokémon
+item.serp:bike_pass.name=Cupón Bici
+item.serp:ride_pass.name=Cupón montura
+item.serp:clothing_ticket.name=Boleto Prenda
+
+Suits######################################
+
+item.serp:ash_helmet.name=Gorra de Ash
+item.serp:ash_chestplate.name=Chaqueta de Ash
+item.serp:ash_leggings.name=Pantalones de Ash
+item.serp:ash_boots.name=Zapatos de Ash
+item.serp:red_helmet.name=Gorra de Rojo
+item.serp:red_chestplate.name=Chaqueta de Rojo
+item.serp:red_leggings.name=Pantalones de Rojo
+item.serp:red_boots.name=Zapatos de Rojo
+item.serp:green_helmet.name=Sombrero de Verde
+item.serp:green_chestplate.name=Blusa de Verde
+item.serp:green_leggings.name=Falda de Verde
+item.serp:green_boots.name=Zapatos de Verde
+item.serp:rocket_helmet.name=Gorra de Recluta Rocket
+item.serp:rocket_chestplate.name=Traje de Recluta Rocket
+item.serp:rocketm_leggings.name=Pantalones de Recluta Rocket
+item.serp:rocketf_leggings.name=Falda de Recluta Rocket
+item.serp:rocket_boots.name=Botas de Recluta Rocket
+
+Balls######################################
+
+item.serp:pokeball.name=Poké ball
+item.serp:greatball.name=Súper ball
+item.serp:ultraball.name=Ultra ball
+item.serp:masterball.name=Máster ball
+item.serp:diveball.name=Buceo ball
+item.serp:duskball.name=Ocaso ball
+item.serp:fastball.name=Rapid ball
+item.serp:heavyball.name=Peso ball
+item.serp:lureball.name=Cebo ball
+item.serp:moonball.name=Luna ball
+item.serp:nestball.name=Nido ball
+item.serp:netball.name=Red ball
+item.serp:parkball.name=Parque ball
+item.serp:premierball.name=Honor ball
+item.serp:safariball.name=Safari ball
+item.serp:timerball.name=Turno ball
+
+Ball Parts#################################
+
+item.serp:down_part.name=Poké ball Base
+item.serp:pokeball_up.name=Pokéball (Tapa)
+item.serp:greatball_up.name=Super ball (Tapa)
+item.serp:ultraball_up.name=Ultra ball (Tapa)
+item.serp:diveball_up.name=Buceo ball (Tapa)
+item.serp:duskball_up.name=Ocaso ball (Tapa)
+item.serp:fastball_up.name=Rapid ball (Tapa)
+item.serp:heavyball_up.name=Peso ball (Tapa)
+item.serp:lureball_up.name=Cebo ball (Tapa)
+item.serp:moonball_up.name=Luna ball (Tapa)
+item.serp:nestball_up.name=Nido ball (Tapa)
+item.serp:netball_up.name=Red ball (Tapa)
+item.serp:parkball_up.name=Parque ball (Tapa)
+item.serp:premierball_up.name=Honor ball (Tapa)
+item.serp:safariball_up.name=Safari ball (Tapa)
+item.serp:timerball_up.name=Turno ball (Tapa)
+
+Stones#####################################
+
+item.serp:fire_stone.name=Piedra Fuego
+item.serp:leaf_stone.name=Piedra Hoja
+item.serp:water_stone.name=Piedra Agua
+item.serp:thunder_stone.name=Piedra Trueno
+item.serp:moon_stone.name=Piedra Lunar
+
+Berries####################################
+
+item.serp:oran_berry.name=Baya Aranja
+item.serp:sitrus_berry.name=Baya Zidra
+item.serp:mago_berry.name=Baya Ango
+item.serp:enigma_berry.name=Baya Enigma
+item.serp:chery_berry.name=Baya Zreza
+item.serp:leppa_berry.name=Baya zanama
+item.serp:lum_berry.name=Baya ziuela
+item.serp:nanab_berry.name=Baya Latano
+item.serp:razz_berry.name=Baya Franbu
+item.serp:hondew_berry.name=Baya Meluce
+item.serp:pamtre_berry.name=Baya Plama
+item.serp:rindo_berry.name=Baya Tamar
+item.serp:pinap_berry.name=Baya Pinia
+item.serp:tamato_berry.name=Baya Tamate
+
+Potions####################################
+
+item.serp:potion.name=Poción
+item.serp:super_potion.name=Súper Poción
+item.serp:hyper_potion.name=Híper Poción
+item.serp:max_potion.name=Poción Máxima
+item.serp:fresh_water.name=Agua fresca
+item.serp:lemonade.name=Limonada
+item.serp:soda_pop.name=Refresco
+
+Actions####################################
+
+action.interact.rotochange=Cambiar Categoría
+action.interact.take_pokemon=Tomar Pokémon
+action.interact.destroy=Desarmar
+action.interact.fossil_revive=Revivir fósil
+action.interact.amber_revive=Extraer ADN
+action.interact.grow=Usar Abono
+action.interact.take_Bonguri=Tomar Bonguri
+action.interact.bet=¡Apostar!
+action.interact.store=Guardar
+action.interact.activate=¡Activar!
+
+Spawn Eggs#################################
+
+item.spawn_egg.entity.serp:bike.name=Bicicleta
+item.spawn_egg.entity.serp:poke_stop.name=Poké Parada
+item.spawn_egg.entity.serp:key_spawn.name=Mesa de Desarme
+item.spawn_egg.entity.serp:slot_spawn.name=Máquina Tragaperras
+item.spawn_egg.entity.serp:healer_spawn.name=Máquina de Curación
+item.spawn_egg.entity.serp:pc_box_spawn.name=PC de Almacenamiento
+item.spawn_egg.entity.serp:lab_spawn.name=Laboratorio Personal
+item.spawn_egg.entity.serp:rotomarket.name=Rotomercado
+item.spawn_egg.entity.serp:trader_spawn.name=Máquina de Intercambiamos
+item.spawn_egg.entity.serp:joy.name=Enfermera Joy
+item.spawn_egg.entity.serp:jenny.name=Oficial Jenny
+item.spawn_egg.entity.serp:store.name=Pokétienda
+item.spawn_egg.entity.serp:communicator_spawn.name=Rotom-Comunicador
+
+Trade//////////////////////////////////////
+
+item.serp:trading_kadabra.name=Intercambiaré a kadabra
+item.serp:trading_kadabras.name=Intercambiaré a kadabra
+item.serp:trading_machoke.name=Intercambiaré a machoke
+item.serp:trading_machokes.name=Intercambiaré a machoke
+item.serp:trading_graveler.name=Intercambiaré a graveler
+item.serp:trading_gravelers.name=Intercambiaré a graveler
+item.serp:trading_haunter.name=Intercambiaré a haunter
+item.serp:trading_haunters.name=Intercambiaré a haunter
+item.serp:trading_onix.name=Intercambiaré a onix
+item.serp:trading_onixs.name=Intercambiaré a onix
+item.serp:trading_seadra.name=Intercambiaré a seadra
+item.serp:trading_seadras.name=Intercambiaré a seadra
+item.serp:trading_scyther.name=Intercambiaré a scyther
+item.serp:trading_scythers.name=Intercambiaré a scyther
+item.serp:trading_poliwhirl.name=Intercambiaré a poliwhirl
+item.serp:trading_poliwhirls.name=Intercambiaré a poliwhirl
+item.serp:trading_slowpoke.name=Intercambiaré a slowpoke
+item.serp:trading_slowpokes.name=Intercambiaré a slowpoke
+item.serp:trading_porygon.name=Intercambiaré a porygon
+item.serp:trading_porygons.name=Intercambiaré a porygon
+item.serp:trading_clamperl1.name=Intercambiaré a clamperl1
+item.serp:trading_clamperl1s.name=Intercambiaré a clamperl1
+item.serp:trading_clamperl2.name=Intercambiaré a clamperl2
+item.serp:trading_clamperl2s.name=Intercambiaré a clamperl2
+item.serp:trading_rhydon.name=Intercambiaré a rhydon
+item.serp:trading_rhydons.name=Intercambiaré a rhydon
+item.serp:trading_porygon2.name=Intercambiaré a porygon2
+item.serp:trading_porygon2s.name=Intercambiaré a porygon2
+item.serp:trading_dusclops.name=Intercambiaré a dusclops
+item.serp:trading_dusclopss.name=Intercambiaré a dusclops
+item.serp:trading_magmar.name=Intercambiaré a magmar
+item.serp:trading_magmars.name=Intercambiaré a magmar
+item.serp:trading_electabuzz.name=Intercambiaré a electabuzz
+item.serp:trading_electabuzzs.name=Intercambiaré a electabuzz
+item.serp:trading_feebas.name=Intercambiaré a feebas
+item.serp:trading_feebass.name=Intercambiaré a feebas
+item.serp:trading_boldore.name=Intercambiaré a boldore
+item.serp:trading_boldores.name=Intercambiaré a boldore
+item.serp:trading_gurdurr.name=Intercambiaré a gurdurr
+item.serp:trading_gurdurrs.name=Intercambiaré a gurdurr
+item.serp:trading_karrablast.name=Intercambiaré a karrablast
+item.serp:trading_karrablasts.name=Intercambiaré a karrablast
+item.serp:trading_shellmet.name=Intercambiaré a shellmet
+item.serp:trading_shellmets.name=Intercambiaré a shellmet
+item.serp:trading_spritzee.name=Intercambiaré a spritzee
+item.serp:trading_spritzees.name=Intercambiaré a spritzee
+item.serp:trading_swirlix.name=Intercambiaré a swirlix
+item.serp:trading_swirlixs.name=Intercambiaré a swirlix
+item.serp:trading_phantump.name=Intercambiaré a phantump
+item.serp:trading_phantumps.name=Intercambiaré a phantump
+item.serp:trading_pumpkaboo.name=Intercambiaré a pumpkaboo
+item.serp:trading_pumpkaboos.name=Intercambiaré a pumpkaboo
+item.serp:trading_gravelera.name=Intercambiaré a graveler Alola
+item.serp:trading_graveleras.name=Intercambiaré a graveler Alola
+
+Pokedex####################################
+
+serp.height=§lAltura:§r 
+serp.weight=§lPeso:§r 
+serp.type=§lTipo(s):§r 
+serp.biome=§lLocalización(es):§r 
+serp.getting=§lObtención:§r 
+serp.bug=Bicho 
+serp.dark=Siniestro 
+serp.dragon=Dragón 
+serp.electric=Eléctrico 
+serp.fairy=Hada 
+serp.fight=Lucha 
+serp.fire=Fuego 
+serp.flying=Volador 
+serp.ghost=Fantasma 
+serp.grass=Planta 
+serp.ground=Tierra 
+serp.ice=Hielo 
+serp.normal=Normal 
+serp.poison=Veneno 
+serp.psychic=Psíquico 
+serp.rock=Roca 
+serp.steel=Acero 
+serp.water=Agua 
+serp.evolve=Evolución 
+serp.unknown=Desconocido 
+serp.mission=Misión 
+serp.any=Todas partes 
+serp.cave=Cuevas 
+serp.night=En la noche 
+serp.desert=Desierto 
+serp.ocean=Océano 
+serp.frozen_ocean=Océano congelado 
+serp.river=Río 
+serp.plains=Planicie 
+serp.forest=Bosques 
+serp.birch=Bosque de Abedul 
+serp.dark_f=Bosque oscuro 
+serp.mesa=Meseta 
+serp.beach=Playa 
+serp.savanna=Sabana 
+serp.sunflower=Campo de Girasoles 

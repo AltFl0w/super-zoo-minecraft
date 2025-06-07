@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:dragon_fang",
+      "menu_category":{"category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"equippable.28"},
+      "minecraft:icon":"dragon_fang"
+    }
+  }
+}

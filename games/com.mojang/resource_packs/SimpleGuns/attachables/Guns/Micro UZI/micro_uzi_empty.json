@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:micro_uzi_empty",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/guns/micro_uzi/micro_uzi"
+         },
+         "scripts":{
+            "animate":[
+               "wielding"
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.micro_uzi.wield_first_person",
+            "wield_third_person":"animation.micro_uzi.wield_third_person",
+            "wielding":"controller.animation.gun.wielding"
+         },
+         "geometry":{
+            "default":"geometry.micro_uzi_empty"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

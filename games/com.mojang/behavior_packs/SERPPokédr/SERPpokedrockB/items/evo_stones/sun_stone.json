@@ -1,0 +1,14 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:sun_stone",
+	    "menu_category":{"group":"itemGroup.name.stone","category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:sun_stone.name"},
+      "minecraft:max_stack_size":1,
+	    "minecraft:icon":"sun_stone"
+    }
+  }
+}

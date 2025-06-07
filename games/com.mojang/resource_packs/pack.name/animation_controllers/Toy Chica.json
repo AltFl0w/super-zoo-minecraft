@@ -1,0 +1,114 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+  "controller.animation.df_toy_chica.general": {
+      "states": {
+        "default": {
+          "animations": [
+            "df_toy_chica_general",
+            "df_parpadeo_toy_chica",
+            "df_sin_pico_toy_chica",
+            "look_at_target"
+          ]
+        }
+      }
+    },
+    "controller.animation.df_toy_chica.move": {
+      "states": {
+          "default": {
+              "animations": [{
+                      "df_caminando_toy_chica": "query.ground_speed *0.25"
+                  }
+              ],
+              "transitions": [{
+                      "df_corriendo_foxdee": "query.is_moving > 2"
+                  },
+      {
+        "df_caminando_toy_chica": "query.is_moving"
+      }
+              ],
+              "blend_transition": 0.2
+          },
+  "df_caminando_toy_chica": {
+              "animations": [
+                  "df_caminando_toy_chica"
+              ],
+              "transitions": [{
+                      "default": "!query.is_moving"
+                  }
+              ],
+              "blend_transition": 0.2
+          },
+  "df_corriendo_toy_chica": {
+              "animations": [
+                  "df_corriendo_toy_chica"
+              ],
+              "transitions": [{
+                      "default": "query.ground_speed"
+                  }
+              ],
+              "blend_transition": 0.3
+          }
+      }
+  },
+  "controller.animation.df_toy_chica.salto": {
+    "states": {
+      "default": {
+          "animations": [{
+                  "df_preparacion_toy_chica": "query.is_interested"
+              }
+          ],
+          "transitions": [
+            {
+              "df_salto2_toy_chica": "!query.is_on_ground"
+          }
+          ],
+          "blend_transition": 0.5
+      },
+      "df_preparacion_toy_chica": {
+        "animations": [
+            "df_preparacion_toy_chica"
+        ],
+        "transitions": [{
+                "default": "!query.is_interested"
+            }
+        ],
+        "blend_transition": 0.5
+      },
+      "df_salto2_toy_chica": {
+        "animations": [
+            "df_salto2_toy_chica"
+        ],
+        "transitions": [{
+                "default": "query.is_on_ground"
+            }
+        ],
+        "blend_transition": 0.1
+      }
+    }      
+  },
+    "controller.animation.df_toy_chica.ataque": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "variable.attack>0"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "attack": {
+          "animations": [
+            "df_ataque_toy_chica"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}

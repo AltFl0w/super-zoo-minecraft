@@ -1,0 +1,14 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.tornado": {
+			"animation_length": 0.3,
+			"loop": true,
+			"timeline": {
+				"0.0": [
+					"/tp @e[family=mob,r=6] @s"
+				]
+			}
+		}
+	}
+}

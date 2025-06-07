@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:regalo4",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/regalos/df_regalo_morado_fnaf2"
+      },
+      "geometry": {
+        "default": "geometry.df_regalo3_fnaf2"
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_regalo_morado",
+        "texture_index": 0
+      }
+    }
+  }
+}

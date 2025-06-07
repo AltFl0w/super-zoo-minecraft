@@ -1,0 +1,41 @@
+{
+  "format_version":"1.21.10",
+      "minecraft:block":{
+    "description":{
+      "identifier":"serp:berry_block",
+	  "states":{"serp:phase":[0,1,2],"serp:berry":{"values":{"min":0,"max":15}}}
+    },
+    "components":{
+      "minecraft:material_instances":{"*":{"texture":"apricorn_stem","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},
+      "minecraft:geometry":"geometry.apricorn_stem",
+      "minecraft:placement_filter":{"conditions":[{"allowed_faces":["up"],"block_filter":["farmland"]}]},
+      "minecraft:destructible_by_explosion":{"explosion_resistance":0},
+      "minecraft:destructible_by_mining":{"seconds_to_destroy":1},
+      "minecraft:flammable":{"catch_chance_modifier":5,"destroy_chance_modifier":20},
+      "minecraft:tick":{"interval_range":[3500,4500],"looping":true},
+      "minecraft:custom_components":["serp:plant_tick"],
+  	  "minecraft:collision_box":false,
+      "minecraft:light_dampening":0,
+      "minecraft:loot":"loot_tables/poke_ore/crop_break.json",
+      "tag:minecraft:crop":{}
+    },
+	"permutations":[
+{"condition":"q.block_state('serp:phase')==1","components":{"minecraft:material_instances":{"*":{"texture":"empty_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==1","components":{"minecraft:material_instances":{"*":{"texture":"aspear_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==2","components":{"minecraft:material_instances":{"*":{"texture":"cheri_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==3","components":{"minecraft:material_instances":{"*":{"texture":"chesto_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==4","components":{"minecraft:material_instances":{"*":{"texture":"enigma_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==5","components":{"minecraft:material_instances":{"*":{"texture":"lum_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==6","components":{"minecraft:material_instances":{"*":{"texture":"nanab_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==7","components":{"minecraft:material_instances":{"*":{"texture":"oran_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==8","components":{"minecraft:material_instances":{"*":{"texture":"pamtre_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==9","components":{"minecraft:material_instances":{"*":{"texture":"pecha_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==10","components":{"minecraft:material_instances":{"*":{"texture":"persim_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==11","components":{"minecraft:material_instances":{"*":{"texture":"pinap_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==12","components":{"minecraft:material_instances":{"*":{"texture":"rawst_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==13","components":{"minecraft:material_instances":{"*":{"texture":"razz_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==14","components":{"minecraft:material_instances":{"*":{"texture":"rindo_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}},
+{"condition":"q.block_state('serp:phase')==2&&q.block_state('serp:berry')==15","components":{"minecraft:material_instances":{"*":{"texture":"sitrus_berry","render_method":"alpha_test","ambient_occlusion":true,"face_dimming":true}},"minecraft:geometry":"geometry.berry_plant"}}
+	]
+  }
+}

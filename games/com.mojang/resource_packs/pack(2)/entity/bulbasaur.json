@@ -1,0 +1,38 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:bulbasaur",
+        "materials": { "default": "entity_alphatest" },
+        "textures": {
+          "default": "textures/entity/bulbasaur"
+        },
+        "render_controllers": [ "controller.render.skeleton" ],
+        "spawn_egg": {
+          "base_color": "#15b39e",
+          "overlay_color": "#01383f"
+        },
+        "geometry": {
+          "default": "geometry.bulbasaur"
+        },
+        "animation_controllers": [
+          {"bulbasaur.baby": "controller.animation.bulbasaur.baby"},
+          {"bulbasaur": "controller.animation.bulbasaur"}
+        ],
+        "animations": {
+          "general": "animation.bulbasaur.general",
+          "run": "animation.bulbasaur.run",
+          "walk": "animation.bulbasaur.walk",
+          "swimm": "animation.bulbasaur.swimm",
+          "look_at_target": "animation.common.look_at_target",
+          "sitting": "animation.bulbasaur.sitting",
+          "bulbasaur_baby": "animation.bulbasaur.baby",
+          "attack1": "animation.bulbasaur.attack1",
+          "attack2": "animation.bulbasaur.attack2"
+        },
+        "sound_effects": {
+          "whoosh": "bulbasaur.whoosh"
+        }
+    } 
+  }
+}

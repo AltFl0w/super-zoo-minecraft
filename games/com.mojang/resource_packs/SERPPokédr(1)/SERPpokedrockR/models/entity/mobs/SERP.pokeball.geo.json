@@ -1,0 +1,72 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serppokeball",
+				"texture_width": 96,
+				"texture_height": 96,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "body",
+					"pivot": [0, 5.5, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "body",
+					"pivot": [0, 6, 0]
+				},
+				{
+					"name": "pokeball",
+					"parent": "rightItem",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "top",
+					"parent": "pokeball",
+					"pivot": [0, 5.5, 5],
+					"cubes": [
+						{"origin": [-5, 5.5, -5], "size": [10, 1, 10], "uv": [49, 20]},
+						{"origin": [-6, 6.5, -6], "size": [12, 3, 12], "uv": [0, 16]},
+						{"origin": [-8, 9.5, -7], "size": [7, 0, 14], "pivot": [-5, 9.5, 0], "rotation": [0, 0, 45], "uv": [1, 32]},
+						{"origin": [1, 9.5, -7], "size": [7, 0, 14], "pivot": [5, 9.5, 0], "rotation": [0, 0, -45], "uv": [1, 32], "mirror": true},
+						{"origin": [6, 9.5, -6], "size": [0, 3.535, 12], "pivot": [6, 9.5, 0], "rotation": [0, 180, -45], "uv": [0, 39]},
+						{"origin": [6, 9.5, -4], "size": [1, 2, 2], "pivot": [6, 9.5, -3], "rotation": [0, 0, -45], "uv": [37, 0]},
+						{"origin": [-7, 9.5, -4], "size": [1, 2, 2], "pivot": [-6, 9.5, -3], "rotation": [0, 0, 45], "uv": [37, 0]},
+						{"origin": [-6, 9.5, -6], "size": [0, 3.535, 12], "pivot": [-6, 9.5, 0], "rotation": [0, 0, 45], "uv": [0, 47]},
+						{"origin": [-6.5, 8.9, -3], "size": [2, 5, 6], "pivot": [-6, 10, 0], "rotation": [0, 0, 45], "uv": [77, 0]},
+						{"origin": [4.5, 8.9, -3], "size": [2, 5, 6], "pivot": [6, 10, 0], "rotation": [0, 0, -45], "uv": [77, 0], "mirror": true},
+						{"origin": [-7, 9.9, -5], "size": [3, 3, 10], "pivot": [-6, 10, 0], "rotation": [0, 0, 45], "uv": [50, 0]},
+						{"origin": [4, 9.9, -5], "size": [3, 3, 10], "pivot": [6, 10, 0], "rotation": [0, 0, -45], "uv": [50, 0], "mirror": true},
+						{"origin": [-3, 7, -7], "size": [1, 1, 1], "uv": [0, 9]},
+						{"origin": [2, 7, -7], "size": [1, 1, 1], "uv": [0, 9]},
+						{"origin": [-6, 9.5, -6], "size": [12, 3.535, 0], "pivot": [0, 9.5, -6], "rotation": [-45, 0, 0], "uv": [0, 47]},
+						{"origin": [-1.5, 8.9, -6.5], "size": [3, 6, 2], "pivot": [0, 10, -6], "rotation": [-45, 0, 0], "uv": [0, 0]},
+						{"origin": [-6, 9.5, 6], "size": [12, 3.535, 0], "pivot": [0, 9.5, 6], "rotation": [-45, 180, 0], "uv": [0, 55]},
+						{"origin": [-1, 5, -6.5], "size": [2, 2, 1.5], "uv": [0, 16]},
+						{"origin": [-3.5, 12, -3.5], "size": [7, 0, 7], "uv": [30, 20]}
+					]
+				},
+				{
+					"name": "base",
+					"parent": "pokeball",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{"origin": [-3.5, 0, -6], "size": [0, 3.535, 12], "pivot": [-3.5, 0, 0], "rotation": [0, 0, -45], "uv": [25, 47]},
+						{"origin": [3.5, 0, -6], "size": [0, 3.535, 12], "pivot": [3.5, 0, 0], "rotation": [0, 180, 45], "uv": [25, 39]},
+						{"origin": [-8, 2.5, -7], "size": [7, 0, 14], "pivot": [-5, 2.5, 0], "rotation": [0, 0, -45], "uv": [1, 32]},
+						{"origin": [1, 2.5, -7], "size": [7, 0, 14], "pivot": [5, 2.5, 0], "rotation": [0, 0, 45], "uv": [1, 32], "mirror": true},
+						{"origin": [-6, 0, -3.5], "size": [12, 3.535, 0], "pivot": [0, 0, -3.5], "rotation": [45, 0, 0], "uv": [25, 47]},
+						{"origin": [-6, 0, 3.5], "size": [12, 3.535, 0], "pivot": [0, 0, 3.5], "rotation": [45, 180, 0], "uv": [25, 55]},
+						{"origin": [-6, 2.5, -6], "size": [12, 3, 12], "uv": [0, 0]},
+						{"origin": [-3.5, 0, -3.5], "size": [7, 0, 7], "uv": [-7, 32]}
+					]
+				}
+			]
+		}
+	]
+}

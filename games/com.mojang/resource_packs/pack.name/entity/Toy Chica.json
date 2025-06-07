@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:toy_chica",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_toy_chica"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_chica"
+      },
+      "animations": {
+        "df_toy_chica_general": "animation.df_toy_chica.base",
+        "df_caminando_toy_chica": "animation.df_toy_chica.walk",
+        "df_corriendo_toy_chica": "animation.df_toy_chica.run",
+        "df_ataque_toy_chica": "animation.df_toy_chica.attack",
+        "df_parpadeo_toy_chica": "animation.df_toy_chica.parpadeo",
+        "df_preparacion_toy_chica": "animation.df_toy_chica.salto",
+        "df_salto2_toy_chica": "animation.df_toy_chica.salto2",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_toy_chica.move",
+        "salto": "controller.animation.df_toy_chica.salto",
+        "general": "controller.animation.df_toy_chica.general",
+        "ataque": "controller.animation.df_toy_chica.ataque",
+        "corriendo": "controller.animation.df_toy_chica.corriendo"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general", "ataque", "corriendo", "salto"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_toy_chica",
+        "texture_index": 0
+      }
+    }
+  }
+}

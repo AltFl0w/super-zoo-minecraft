@@ -1,0 +1,252 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.dodrio.quiet": {
+			"loop": true,
+			"bones": {
+				"dodrio": {
+					"position": [0, "-0.3+(Math.cos(q.anim_time*360)*-0.37)", "Math.cos(q.anim_time*360)*-0.5"]
+				},
+				"head1": {
+					"position": [0, -0.5, "Math.cos(q.anim_time*180)*2"]
+				},
+				"head2": {
+					"position": [-3.5, -1.5, "Math.cos(q.anim_time*180)*-1.5"]
+				},
+				"body": {
+					"rotation": [0, "Math.cos(q.anim_time*180)*5", 0]
+				},
+				"neck1": {
+					"rotation": ["Math.cos(q.anim_time*180)*-15", 0, 0]
+				},
+				"neck2": {
+					"rotation": ["Math.cos(q.anim_time*180)*15", 0, -25]
+				},
+				"right_leg": {
+					"rotation": ["10+(Math.cos(q.anim_time*360)*5)", 15, 0],
+					"position": ["-0.5+(Math.cos(q.anim_time*360)*-0.1)", 0, 0]
+				},
+				"right_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*360)*-5)", 0, 0]
+				},
+				"left_leg": {
+					"rotation": ["10+(Math.cos(q.anim_time*360)*5)", -15, 0],
+					"position": ["0.5+(Math.cos(q.anim_time*360)*0.1)", 0, 0]
+				},
+				"left_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*360)*-5)", 0, 0]
+				},
+				"neck3": {
+					"rotation": ["Math.cos(q.anim_time*180)*15", 0, 25]
+				},
+				"head3": {
+					"position": [3.5, -1.5, "Math.cos(q.anim_time*180)*-2.5"]
+				},
+				"tail": {
+					"rotation": ["-35+(Math.cos(q.anim_time*360)*10)", 0, 0]
+				}
+			}
+		},
+		"animation.dodrio.walk": {
+			"loop": true,
+			"bones": {
+				"dodrio": {
+					"position": [0, "Math.cos(q.anim_time*720)*1", 0]
+				},
+				"head1": {
+					"position": ["Math.cos(q.anim_time*360)*1", -7, "-10+(Math.cos(q.anim_time*720)*0.5)"]
+				},
+				"head2": {
+					"position": ["-4+(Math.cos(q.anim_time*360)*1)", -6, "-7.5+(Math.cos(q.anim_time*360)*-0.5)"]
+				},
+				"body": {
+					"rotation": [0, "Math.cos(q.anim_time*360)*5", 0]
+				},
+				"neck1": {
+					"rotation": [60, "Math.cos(q.anim_time*360)*-15", 0],
+					"position": [0, 0, -1]
+				},
+				"neck2": {
+					"rotation": [60, "35+(Math.cos(q.anim_time*360)*-15)", 0]
+				},
+				"right_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*-35", 0, 0]
+				},
+				"right_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*720)*25)", 0, 0]
+				},
+				"left_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*35", 0, 0]
+				},
+				"left_foot": {
+					"rotation": ["-10+(Math.cos(q.anim_time*720)*25)", 0, 0]
+				},
+				"neck3": {
+					"rotation": [60, "-35+(Math.cos(q.anim_time*360)*-15)", 0]
+				},
+				"head3": {
+					"position": ["4+(Math.cos(q.anim_time*360)*1)", -6, "-7.5+(Math.cos(q.anim_time*360)*0.5)"]
+				},
+				"tail": {
+					"rotation": ["Math.cos(q.anim_time*720)*-25", 0, 0]
+				}
+			}
+		},
+		"animation.dodrio.sitting": {
+			"loop": true,
+			"bones": {
+				"dodrio": {
+					"position": [0, -6.2, 0]
+				},
+				"head1": {
+					"position": [0, -1, -3]
+				},
+				"head2": {
+					"position": [-3.5, -3, 4]
+				},
+				"neck1": {
+					"rotation": [20, 0, 0]
+				},
+				"neck2": {
+					"rotation": [-35, 0, -35]
+				},
+				"legs": {
+					"position": [0, 1, -2],
+					"scale": [1, 0.8, 1]
+				},
+				"right_leg": {
+					"rotation": [45, 1, 0]
+				},
+				"right_foot": {
+					"rotation": [-45, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [45, -1, 0]
+				},
+				"left_foot": {
+					"rotation": [-45, 0, 0]
+				},
+				"neck3": {
+					"rotation": [-35, 0, 35]
+				},
+				"head3": {
+					"position": [4, -3, 4]
+				},
+				"tail": {
+					"rotation": [-45, 0, 0]
+				}
+			}
+		},
+		"animation.dodrio.attack": {
+			"loop": true,
+			"bones": {
+				"head1": {
+					"position": [0, -15, -10]
+				},
+				"head2": {
+					"position": [-2, -8, -11]
+				},
+				"body": {
+					"position": [0, -1, 0]
+				},
+				"neck1": {
+					"rotation": [120, 0, 0],
+					"position": [0, 0, -1]
+				},
+				"neck2": {
+					"rotation": [60, 0, -35],
+					"position": [0, 0, -1]
+				},
+				"right_leg": {
+					"rotation": [0, 30, 0],
+					"position": [-1, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [0, -30, 0],
+					"position": [1, 0, 0]
+				},
+				"neck3": {
+					"rotation": [60, 0, 35],
+					"position": [0, 0, -1]
+				},
+				"head3": {
+					"position": [2, -8, -10]
+				},
+				"tail": {
+					"rotation": [45, 0, 0]
+				}
+			}
+		},
+		"animation.dodrio.attack2": {
+			"loop": true,
+			"bones": {
+				"head1": {
+					"position": [0, 0, 0]
+				},
+				"head2": {
+					"position": [-3, -1, 0]
+				},
+				"neck1": {
+					"rotation": [0, 0, 0]
+				},
+				"neck2": {
+					"rotation": [0, 0, -25]
+				},
+				"right_leg": {
+					"rotation": [0, 15, 0]
+				},
+				"left_leg": {
+					"rotation": [0, -15, 0]
+				},
+				"neck3": {
+					"rotation": [0, 0, 25]
+				},
+				"head3": {
+					"position": [3, -1, 0]
+				},
+				"tail": {
+					"rotation": [45, 0, 0]
+				}
+			}
+		},
+		"animation.dodrio.defeated": {
+			"loop": true,
+			"bones": {
+				"dodrio": {
+					"position": [0, -0.5, 0]
+				},
+				"head1": {
+					"position": [-2, -12, -9]
+				},
+				"head2": {
+					"position": [2, -12, -9]
+				},
+				"neck1": {
+					"rotation": [120, 30, 0],
+					"position": [0, -1, -2]
+				},
+				"neck2": {
+					"rotation": [120, -30, 0],
+					"position": [0, -1, -2]
+				},
+				"right_leg": {
+					"rotation": [15, 15, 0],
+					"position": [-0.5, 0, 0]
+				},
+				"right_foot": {
+					"rotation": [-15, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [15, -15, 0],
+					"position": [0.5, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [-15, 0, 0]
+				},
+				"tail": {
+					"rotation": [-60, 0, 0]
+				}
+			}
+		}
+	}
+}

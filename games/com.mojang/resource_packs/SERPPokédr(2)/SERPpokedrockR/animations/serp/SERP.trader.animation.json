@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.trader.trading": {
+			"animation_length": 1,
+			"loop": false,
+			"sound_effects": {
+            "0":{
+					"effect": "trading"
+                }
+			}
+		},
+		"animation.trader.general": {
+			"animation_length": 3,
+			"bones": {
+				"trader": {
+					"rotation": 0
+				}
+			}
+		},
+		"animation.trader.admire": {
+			"loop": true,
+			"bones": {
+				"ball": {
+					"position":[42, 5, 0]
+				},
+				"lever": {
+					"rotation": [90, 0, 0]
+				}
+			}
+		}
+	}
+}

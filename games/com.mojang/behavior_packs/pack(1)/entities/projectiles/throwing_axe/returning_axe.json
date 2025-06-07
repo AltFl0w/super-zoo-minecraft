@@ -1,0 +1,124 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:returning_axe",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"boomerang_returning": "controller.animation.axe_returning"
+			},
+			"scripts": {
+				"animate": [
+					"boomerang_returning"
+				]
+			}
+		},
+		"component_groups": {
+			"minecraft:returned": {
+				"minecraft:type_family": {
+					"family": [
+						"despawns"
+					]
+				},
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"min_wait_time": 0,
+							"max_wait_time": 0,
+							"single_use": true,
+							"num_to_spawn": 1,
+							"spawn_item": "wep:throwing_axe"
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"inanimate"
+				]
+			},
+			"minecraft:despawn": {
+				"filters": {
+					"all_of": [
+						{
+							"test": "is_family",
+							"subject": "self",
+							"value": "despawns"
+						}
+					]
+				}
+			},
+			"minecraft:entity_sensor": {
+				"sensor_range": 0.2,
+				"minimum_count": 1,
+				"event_filters": {
+					"all_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						}
+					]
+				},
+				"event": "minecraft:event_returned"
+			},
+			"minecraft:push_through": {
+				"value": 1
+			},
+			"minecraft:collision_box": {
+				"width": 0.4,
+				"height": 0.4
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1
+			},
+			"minecraft:health": {
+				"value": 1000
+			},
+			"minecraft:behavior.float": {
+				"priority": 0
+			},
+			"minecraft:physics": {
+				"has_collision": false,
+				"has_gravity": false
+			},
+			"minecraft:pushable": {
+				"is_pushable": true,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:area_attack": {
+				"damage_range": 0.7,
+				"damage_per_tick": 2,
+				"entity_filter": {
+					"none_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						}
+					]
+				}
+			}
+		},
+		"events": {
+			"minecraft:event_returned": {
+				"add": {
+					"component_groups": [
+						"minecraft:returned"
+					]
+				}
+			}
+		}
+	}
+}

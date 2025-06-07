@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:shadow_bonnie",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_shadow_bonnie2"
+      },
+      "geometry": {
+        "default": "geometry.df_shadow_bonnie2"
+      },
+      "animations": {
+        "df_shadow_bonnie2_general": "animation.df_shadow_bonnie2.base",
+        "df_shadow_bonnie2_glicht": "animation.df_shadow_bonnie2.glicht",
+        "df_caminando_df_shadow_bonnie2": "animation.df_shadow_bonnie2.walk",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_shadow_bonnie2.movimiento",
+        "general": "controller.animation.df_shadow_bonnie2.base"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_shadow_bonnie",
+        "texture_index": 0
+      }
+    }
+  }
+}

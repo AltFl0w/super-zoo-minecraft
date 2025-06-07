@@ -1,0 +1,40 @@
+{
+  "format_version": 1,
+  "header": {
+    "description": "pls support by clicking §csubscribe , thank you §every much for support by §eMonsterbaby0409 , §dendercreeper , §cdinojeff , §6sparkler kid",
+    "name": "§fMBcreature §cPLUS §ev4.0 §fOCEAN PACK",
+    "uuid": "6fd21c47-4f23-4a88-b93b-a3e39d12b5a5",
+    "version": [
+      0,
+      0,
+      4
+    ],
+    "min_engine_version": [
+      1,
+      8,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "pls support by clicking §csubscribe , thank you §every much for support by §eMonsterbaby0409 , §dendercreeper , §cdinojeff , §6sparkler kid",
+      "type": "data",
+      "uuid": "fc0a7951-f7f5-4065-ae39-e7126905d7b7",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "25bff4c9-063e-4e1d-8908-b1b0f0142fbc",
+      "version": [
+        0,
+        0,
+        4
+      ]
+    }
+  ]
+}

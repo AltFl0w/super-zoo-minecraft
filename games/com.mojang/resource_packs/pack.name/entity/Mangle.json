@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:mangle",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_mangle"
+      },
+      "geometry": {
+        "default": "geometry.df_mangle"
+      },
+      "animations": {
+        "df_mangle_general": "animation.df_mangle.base",
+        "df_caminando_mangle": "animation.df_mangle.walk",
+        "df_ataque_mangle": "animation.df_mangle.attack",
+        "df_escalando_mangle": "animation.df_mangle.escalando",
+        "df_parpadeo_mangle": "animation.df_toy_foxy.parpadeo",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_mangle.move",
+        "general": "controller.animation.df_mangle.general",
+        "ataque": "controller.animation.df_mangle.ataque",
+        "corriendo": "controller.animation.df_mangle.corriendo"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general", "ataque", "corriendo"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_mangle",
+        "texture_index": 0
+      }
+    }
+  }
+}

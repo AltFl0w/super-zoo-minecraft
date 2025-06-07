@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:mp40_empty",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/guns/mp40/mp40"
+         },
+         "scripts":{
+            "animate":[
+               "wielding"
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.mp40.wield_first_person",
+            "wield_third_person":"animation.mp40.wield_third_person",
+            "wielding":"controller.animation.gun.wielding"
+         },
+         "geometry":{
+            "default":"geometry.mp40_empty"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

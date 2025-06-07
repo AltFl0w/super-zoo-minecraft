@@ -1,0 +1,394 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mewtwo.quiet": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 0, "-1+(math.cos(q.anim_time*180)*-1)"]
+				},
+				"body": {
+					"rotation": ["5+(math.cos(q.anim_time*180)*3)", 0, 0]
+				},
+				"tail": {
+					"rotation": [-20, "-55+(math.cos(q.anim_time*100)*15)", 0]
+				},
+				"tail2": {
+					"rotation": [40, "30+(math.cos(q.anim_time*150)*15)", 2]
+				},
+				"tail3": {
+					"rotation": [35, "30+(math.cos(q.anim_time*200)*15)", 20]
+				},
+				"arms": {
+					"rotation": [15, 0, 0],
+					"position": [0, 0, "-1+(math.cos(q.anim_time*180)*-0.75)"]
+				},
+				"right_arm": {
+					"rotation": [0, 0, -60]
+				},
+				"right_hand": {
+					"rotation": [0, -25, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 10, 0],
+					"position": [-1, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, 60]
+				},
+				"left_hand": {
+					"rotation": [0, 25, 0]
+				},
+				"left_leg": {
+					"rotation": [0, -30, 0],
+					"position": [1, 0, 1]
+				}
+			}
+		},
+		"animation.mewtwo.walk": {
+			"loop": true,
+			"animation_length": 0.98,
+			"bones": {
+				"mewtwo": {
+					"position": [0, "math.cos(q.anim_time*360)*0.5", 0]
+				},
+				"head": {
+					"position": [0, -1, -7]
+				},
+				"body": {
+					"rotation": [25, 0, 0]
+				},
+				"tail": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [-45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"tail2": {
+					"rotation": {
+						"0.0": {
+							"post": [30, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [-25, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [30, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"tail3": {
+					"rotation": {
+						"0.0": {
+							"post": [25, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [15, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [-25, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [25, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"arms": {
+					"rotation": {
+						"0.0": {
+							"post": [50, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.5": {
+							"post": [65, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [50, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": [0, -1, -5]
+				},
+				"right_arm": {
+					"rotation": [-20, 0, -65]
+				},
+				"right_hand": {
+					"rotation": {
+						"0.0": {
+							"post": [0, -15, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [0, -30, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [0, -15, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"left_arm": {
+					"rotation": [-20, 0, 65]
+				},
+				"left_hand": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 15, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [0, 30, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [0, 15, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"legs": {
+					"rotation": ["25+(math.cos(q.anim_time*360)*5)", 0, 0]
+				},
+				"right_foot": {
+					"rotation": [40, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [40, 0, 0]
+				}
+			}
+		},
+		"animation.mewtwo.sitting": {
+			"loop": true,
+			"bones": {
+				"mewtwo": {
+					"position": [0, -10, 0]
+				},
+				"tail": {
+					"rotation": [-10, -60, 0],
+					"position": [0, 0, 0]
+				},
+				"tail2": {
+					"rotation": [0, -60, 0]
+				},
+				"tail3": {
+					"rotation": [-5, -60, 0]
+				},
+				"arms": {
+					"rotation": [75, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [-60, -60, 0]
+				},
+				"right_hand": {
+					"rotation": [0, -60, 0]
+				},
+				"left_arm": {
+					"rotation": [-60, 60, 0]
+				},
+				"left_hand": {
+					"rotation": [0, 60, 0]
+				},
+				"legs": {
+					"position": [0, 2, 0]
+				},
+				"right_leg": {
+					"rotation": [-45, 0, 0]
+				},
+				"right_foot": {
+					"rotation": [5, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"left_leg": {
+					"rotation": [-45, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [5, 0, 0],
+					"position": [0, 2, 0]
+				}
+			}
+		},
+		"animation.mewtwo.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [-2, -1, -5]
+				},
+				"body": {
+					"rotation": [20, 25, 0]
+				},
+				"tail": {
+					"rotation": [-30, 25, -25]
+				},
+				"tail2": {
+					"rotation": [0, 35, 0]
+				},
+				"tail3": {
+					"rotation": [0, 45, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 45, -55],
+					"position": [-2, -1, -2]
+				},
+				"right_hand": {
+					"rotation": [0, -65, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 55, 30],
+					"position": [-2, -1, -5]
+				},
+				"left_hand": {
+					"rotation": [0, 45, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 45, 0],
+					"position": [-1, 0, 1]
+				},
+				"left_leg": {
+					"rotation": [0, -25, 0],
+					"position": [-1, 0, -3]
+				}
+			}
+		},
+		"animation.mewtwo.attack2": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 0, -4]
+				},
+				"body": {
+					"rotation": [15, 0, 0]
+				},
+				"tail": {
+					"rotation": [-50, 0, 0],
+					"position": [0, -1, -1]
+				},
+				"tail2": {
+					"rotation": [30, 0, 0]
+				},
+				"tail3": {
+					"rotation": [35, 0, 0]
+				},
+				"arms": {
+					"position": [0, 0, -2]
+				},
+				"right_arm": {
+					"rotation": [0, -35, -45]
+				},
+				"right_hand": {
+					"rotation": [0, -60, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 35, 45]
+				},
+				"left_hand": {
+					"rotation": [0, 60, 0]
+				},
+				"legs": {
+					"rotation": [-30, 0, 0],
+					"position": [0, -1, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 0, 15],
+					"position": [-1, 0, 0]
+				},
+				"right_foot": {
+					"rotation": [-20, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [0, 0, -15],
+					"position": [1, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [-20, 0, 0]
+				}
+			}
+		},
+		"animation.mewtwo.defeated": {
+			"loop": true,
+			"bones": {
+				"mewtwo": {
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"position": [0, -3, -10]
+				},
+				"body": {
+					"rotation": [35, 0, 0]
+				},
+				"tail": {
+					"rotation": [-80, 0, 0]
+				},
+				"tail2": {
+					"rotation": [20, 0, 0]
+				},
+				"tail3": {
+					"rotation": [20, 0, 0]
+				},
+				"arms": {
+					"position": [0, -2, -7]
+				},
+				"right_arm": {
+					"rotation": [90, 0, -80]
+				},
+				"right_hand": {
+					"rotation": [0, -10, 0]
+				},
+				"left_arm": {
+					"rotation": [90, 0, 80]
+				},
+				"left_hand": {
+					"rotation": [0, 10, 0]
+				},
+				"right_leg": {
+					"rotation": [-15, 35, 0]
+				},
+				"right_foot": {
+					"rotation": [15, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"left_leg": {
+					"rotation": [-15, -35, 0]
+				},
+				"left_foot": {
+					"rotation": [15, 0, 0],
+					"position": [0, 1, 0]
+				}
+			}
+		},
+		"animation.mewtwo.direction": {
+			"loop": true,
+			"bones": {
+				"mewtwo": {
+					"rotation": ["query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				},
+				"tail": {
+					"rotation": [0, 0, "math.max(-35,math.min(35,query.yaw_speed))"]
+				}
+			}
+		}
+	}
+}

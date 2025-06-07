@@ -1,0 +1,31 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "serp:slot_machine",
+			"textures": {
+        "default": "textures/entity/slot1"
+      },
+			"geometry": {
+				"default": "geometry.serpslot"
+			},
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+			"render_controllers": [
+		"controller.render.serp_general" 
+			],
+      "scripts": {
+        "animate": [
+          { "pull": "query.is_saddled" }
+        ]
+      },
+      "animations": {
+        "pull": "animation.slot.pull"
+      },
+      "sound_effects": {
+        "clap": "serp.slot.clap"
+      }
+	}
+  }
+}

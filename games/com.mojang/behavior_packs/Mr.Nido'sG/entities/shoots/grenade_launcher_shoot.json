@@ -1,0 +1,232 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "gunsaddon:grenade_launcher_shoot",
+			"runtime_identifier": "minecraft:snowball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"animations": {
+				"rocket": "controller.animation.rocket"
+			},
+			"scripts": {
+				"animate": [
+					"rocket"
+				]
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.25,
+				"height": 0.25
+			},
+			"minecraft:physics": {},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": false
+			},
+			"minecraft:navigation.float": {},
+			"minecraft:type_family": {
+				"family": [
+					"bullet"
+				]
+			},
+			"minecraft:timer": {
+			  "looping": true,
+			  "time": 1.5,
+			  "randomInterval": false,
+			  "time_down_event": {
+				"event": "hit"
+				}
+			}
+		},
+		"component_groups": {
+			"explosive": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit_explosive",
+								"target": "self"
+							}
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 4.5,
+					"gravity": 0.1,
+					"anchor": 1,
+					"destroy_on_hurt": true,
+					"uncertainty_base": 1,
+					"uncertainty_multiplier": 1,
+					"should_bounce": false,
+					"inertia": 1,
+					"offset": [
+						0,
+						-0.25,
+						0.5
+					],
+					"multiple_targets": true
+				}
+			},			
+			"fire": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit_fire",
+								"target": "self"
+							}
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 4.5,
+					"gravity": 0.1,
+					"anchor": 1,
+					"destroy_on_hurt": true,
+					"uncertainty_base": 1,
+					"uncertainty_multiplier": 1,
+					"should_bounce": false,
+					"inertia": 1,
+					"offset": [
+						0,
+						-0.25,
+						0.5
+					],
+					"multiple_targets": true
+				}
+			},
+			"normal": {
+				"minecraft:projectile": {
+					"on_hit": {
+						"definition_event": {
+							"event_trigger": {
+								"event": "hit",
+								"target": "self"
+							}
+						},
+						"stick_in_ground":{
+							"shake_time":0.1
+						}
+					},
+					"power": 4.5,
+					"gravity": 0.1,
+					"anchor": 1,
+					"destroy_on_hurt": true,
+					"uncertainty_base": 1,
+					"uncertainty_multiplier": 1,
+					"should_bounce": false,
+					"inertia": 1,
+					"offset": [
+						0,
+						-0.25,
+						0.5
+					],
+					"multiple_targets": true
+				}
+			},
+			"hit": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 2,
+					"causes_fire": false,
+					"fire_affected_by_griefing": false,
+					"breaks_blocks": false,
+					"destroy_affected_by_griefing": true
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"hit_explosive": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 4,
+					"causes_fire": false,
+					"fire_affected_by_griefing": false,
+					"breaks_blocks": false,
+					"destroy_affected_by_griefing": true
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			},
+			"hit_fire": {
+				"minecraft:explode": {
+					"fuse_length": 0,
+					"fuse_lit": true,
+					"power": 2,
+					"breaks_blocks": false,
+					"causes_fire": true,
+					"fire_affected_by_griefing": false,
+					"destroy_affected_by_griefing": false
+				},
+				"minecraft:instant_despawn": {
+					"remove_child_entities": true
+				}
+			}
+		},
+		"events": {
+			"explosive": {
+				"add": {
+					"component_groups": [
+						"explosive"
+					]
+				}
+			},
+			"fire": {
+				"add": {
+					"component_groups": [
+						"fire"
+					]
+				}
+			},
+			"normal": {
+				"add": {
+					"component_groups": [
+						"normal"
+					]
+				}
+			},
+			"hit": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"hit"
+							]
+						}
+					}
+				]
+			},
+			"hit_fire": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"hit_fire"
+							]
+						}
+					}
+				]
+			},
+			"hit_explosive": {
+				"sequence": [
+					{
+						"add": {
+							"component_groups": [
+								"hit_explosive"
+							]
+						}
+					}
+				]
+			}
+		}
+	}
+}

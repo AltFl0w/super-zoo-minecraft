@@ -1,0 +1,36 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:earth_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ddd",
+			"cic",
+			"bbb"
+		],
+		"key": {
+			"d": {
+				"item": "minecraft:dirt"
+			},
+			"c": {
+				"item": "minecraft:cobblestone"
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"b": {
+				"item": "minecraft:coal_block"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:earth_ingot",
+				"count": 3
+			}
+		]
+	}
+}

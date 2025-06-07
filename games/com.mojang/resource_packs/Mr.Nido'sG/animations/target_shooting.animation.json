@@ -1,0 +1,13 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.target_shooting.shoot": {
+			"loop": true,
+			"bones": {
+				"target_shooting": {
+					"rotation": [-90, 0, 0]
+				}
+			}
+		}
+	}
+}

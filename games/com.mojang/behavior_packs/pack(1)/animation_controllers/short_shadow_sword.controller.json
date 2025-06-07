@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.short_shadow_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'short_shadow_sword' && query.is_using_item"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'short_shadow_sword' && !query.is_using_item) || query.get_equipped_item_name('main_hand') != 'short_shadow_sword'"
+						}
+					],
+					"on_entry": [
+						"/playsound mob.shulker.bullet.hit @a ~~~ 1 1.3",
+						"/effect @s invisibility 20 1 true"
+					]
+				}
+			}
+		}
+	}
+}

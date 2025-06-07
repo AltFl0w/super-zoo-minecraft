@@ -1,0 +1,89 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+        "controller.animation.pikachu.baby":{
+			"initial_state": "adult",
+			"states": {
+				"baby": {
+					"animations": ["pikachu_baby"],
+					"transitions": [{"adult": "!query.is_baby"}],
+                    "blend_transition": 0.2
+				},
+				"adult" : {
+					"transitions" : [{"baby": "query.is_baby"}]
+				}
+			}
+        },
+		"controller.animation.pikachu": {
+			"initial_state" : "general",
+			"states": {
+				"general": {
+					"animations":["general","look_at_target"],
+					"transitions": [
+                        {"walk": "query.ground_speed < 1.5 && query.ground_speed > 0.2"},
+                        {"run": "query.ground_speed > 1.5"},
+                        {"swimm": "query.is_in_water"},
+                        {"sitting": "query.is_sitting"},
+                        {"attack1": "variable.attack_time > 0 && !query.facing_target_to_range_attack"},
+                        {"attack2": "query.has_target && query.facing_target_to_range_attack"}
+					],
+					"blend_transition": 0.2
+				},
+                "run":{
+                    "animations":["run"],
+                    "transitions":[
+                        {"general": "!query.ground_speed"},
+                        {"swimm": "query.is_in_water"},
+                        {"walk": "query.ground_speed < 1.5 && query.ground_speed > 0.2"},
+                        {"sitting": "query.is_sitting"},
+                        {"attack1": "variable.attack_time > 0 && !query.facing_target_to_range_attack"},
+                        {"attack2": "query.has_target && query.facing_target_to_range_attack"}
+                    ],
+                    "blend_transition": 0.4
+                },
+                "walk":{
+                    "animations":["walk","look_at_target"],
+                    "transitions":[
+                        {"general": "!query.ground_speed"},
+                        {"run": "query.ground_speed > 1.5"},
+                        {"swimm": "query.is_in_water"},
+                        {"sitting": "query.is_sitting"},
+                        {"attack1": "variable.attack_time > 0 && !query.facing_target_to_range_attack"},
+                        {"attack2": "query.has_target && query.facing_target_to_range_attack"}
+                    ],
+                    "blend_transition": 0.4
+                },
+                "swimm":{
+                    "animations":["swimm","look_at_target"],
+                    "transitions":[
+                        {"general": "!query.is_in_water"},
+                        {"attack1": "variable.attack_time > 0 && !query.facing_target_to_range_attack"},
+                        {"attack2": "query.has_target && query.facing_target_to_range_attack"}
+                    ],
+                    "blend_transition": 0.4
+                },
+                "sitting":{
+                    "animations":["sitting","look_at_target"],
+                    "transitions":[
+                        {"general": "!query.is_sitting"}
+                    ],
+                    "blend_transition": 0.2
+                },
+                "attack1":{
+                    "animations":["attack1"],
+                    "transitions":[
+                        {"general": "query.all_animations_finished"}
+                    ],
+                    "blend_transition": 0.2
+                },
+                "attack2":{
+                    "animations":["attack2"],
+                    "transitions":[
+                        {"general": "query.all_animations_finished"}
+                    ],
+                    "blend_transition": 0.2
+                }
+			}
+		}
+	}
+}

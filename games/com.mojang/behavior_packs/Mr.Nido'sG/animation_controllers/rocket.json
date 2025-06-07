@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.rocket": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "rocket": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:campfire_smoke_particle ~ ~ ~"
+
+
+          ]
+        },
+        "rocket": {
+          "transitions": [
+            {
+              "default": "(1.0)"
+            }
+          ],
+          "on_entry": [
+			"/particle minecraft:campfire_smoke_particle ~ ~ ~"
+          ]
+        }
+      }
+    }
+  }
+}

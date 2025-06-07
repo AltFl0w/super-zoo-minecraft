@@ -1,0 +1,157 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.communicator": {
+      "arrays": {
+        "textures": {
+"Array.skins": ["Texture.off","Texture.on","Texture.on","Texture.on","Texture.on","Texture.on"]
+        }
+      },
+"geometry": "Geometry.default",
+"materials": [ { "*": "Material.default" }],
+      "textures": [ "Array.skins[query.variant]" ],
+"is_hurt_color": {
+    "r": 0.0,
+    "b": 0.0, 
+    "g": 0.0, 
+    "a": 0.0
+      }
+    },
+    "controller.render.video_screen": {
+      "arrays": {
+        "textures": {
+"Array.skins": ["Texture.call0","Texture.call1","Texture.call2","Texture.call3","Texture.call4","Texture.call5"]
+        }
+      },
+"geometry": "Geometry.screen",
+"materials": [ { "*": "Material.default" }],
+      "textures": [ "Array.skins[query.variant]" ],
+"is_hurt_color": {
+    "r": 0.0,
+    "b": 0.0, 
+    "g": 0.0, 
+    "a": 0.0
+      }
+    },
+    "controller.render.lab": {
+      "arrays": {
+        "textures": {
+"Array.skins": ["Texture.normal","Texture.normal","Texture.normal","Texture.failed"]
+        }
+      },
+      "part_visibility": [
+        { "egg": "query.skin_id == 1" },
+        { "helix": "query.skin_id == 2" },
+        { "dome": "query.skin_id == 3" },
+        { "amber": "query.skin_id == 4" },
+        { "dna": "query.skin_id == 5" },
+        { "root": "query.skin_id == 6" },
+        { "claw": "query.skin_id == 7" },
+        { "skull": "query.skin_id == 8" },
+        { "armor": "query.skin_id == 9" },
+        { "shell": "query.skin_id == 10" },
+        { "plume": "query.skin_id == 11" },
+        { "jaw": "query.skin_id == 12" },
+        { "sail": "query.skin_id == 13" },
+        { "bird": "query.skin_id == 14" },
+        { "fish": "query.skin_id == 15" },
+        { "drake": "query.skin_id == 16" },
+        { "dino": "query.skin_id == 17" }
+        ],
+"geometry": "Geometry.default",
+"materials": [ { "*": "Material.default" }],
+      "textures": [ "Array.skins[query.variant]" ],
+"is_hurt_color": {
+    "r": 0.0,
+    "b": 0.0, 
+    "g": 0.0, 
+    "a": 0.0
+      }
+    },
+    "controller.render.lab_glass": {
+"geometry": "Geometry.glass",
+"materials": [ { "*": "Material.glass" }],
+      "textures": [ "Array.skins[query.variant]" ],
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.glass", "Texture.glass", "Texture.glass", "Texture.glass_failed" ]
+        }
+      },
+"is_hurt_color": {
+    "r": 0.0,
+    "b": 0.0, 
+    "g": 0.0, 
+    "a": 0.0
+      },
+      "uv_anim": {
+          "offset": [ "(query.is_powered) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.0 : 0.0", 
+                      "(query.is_powered) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.005 : 0.0" ],
+          "scale": [ 1.0, 1.0 ]
+      },
+      "light_color_multiplier": 0.2,
+      "ignore_lighting" : true
+    },
+    "controller.render.healer": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.off", "Texture.on" ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.skins[query.is_saddled]" ],
+      "is_hurt_color": {
+    "r": 0.0,
+    "b": 0.0, 
+    "g": 0.0, 
+    "a": 0.0
+      }
+    },
+    "controller.render.healer_lights": {
+"geometry": "Geometry.lights",
+"materials": [ { "*": "Material.lights" }],
+      "textures": [ "Array.skins[query.is_saddled]" ],
+      "arrays": {
+        "textures": {
+          "Array.skins": [ "Texture.lights_off", "Texture.lights_on" ]
+        }
+      },
+"is_hurt_color": {
+    "r": 0.0,
+    "b": 0.0, 
+    "g": 0.0, 
+    "a": 0.0
+      },
+      "light_color_multiplier": 0.2,
+      "ignore_lighting" : true
+    },
+    "controller.render.healer_sparks": {
+"geometry": "Geometry.sparks",
+"materials": [ { "*": "Material.sparks" }],
+      "textures": [ "Texture.sparks" ],
+"is_hurt_color": {
+    "r": 0.0,
+    "b": 0.0, 
+    "g": 0.0, 
+    "a": 0.0
+      },
+      "uv_anim": {
+          "offset": [ "(query.is_powered) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.001 : 0.0", 
+                      "(query.is_powered) ? (Math.floor(query.life_time * 20.0) + query.frame_alpha) * 0.0 : 0.0" ],
+          "scale": [ 1.0, 1.0 ]
+      },
+      "light_color_multiplier": 0.2,
+      "ignore_lighting" : true
+    },
+"controller.render.pc_box": {
+"arrays": {"textures":{"Array.skins":["Texture.off","Texture.tame"]}},
+"geometry":"Geometry.default",
+"materials":[{ "*":"Material.default"}],
+"textures":["Array.skins[query.variant]"],"is_hurt_color":{"r":0.0,"b":0.0,"g":0.0,"a":0.0}},
+    "controller.render.pc_box_parts": {
+"arrays": {"textures":{"Array.skins":["Texture.parts_off","Texture.parts_tame"]}},
+"geometry":"Geometry.parts",
+"materials":[{ "*":"Material.parts"}],
+"textures":["Array.skins[query.variant]"],"is_hurt_color":{"r":0.0,"b":0.0,"g":0.0,"a":0.0},"light_color_multiplier":1,"ignore_lighting":true}
+  }
+}

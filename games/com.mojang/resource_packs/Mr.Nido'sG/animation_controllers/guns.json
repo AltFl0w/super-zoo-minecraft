@@ -1,0 +1,958 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.player.m67.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"player.m67.idle" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm67') && variable.is_first_person"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.m67" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"m67" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm67') && q.is_using_item"
+						}
+					]
+				},
+				"m67" : {
+					"animations" : [ { "player.m67.on": "variable.is_first_person" }, { "player.m67.third.on": "!variable.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm67') || !q.is_using_item"
+						},
+						{
+							"player.m67.shoot" : "q.any_animation_finished"
+						}
+					]
+				},
+				"player.m67.shoot" : {
+					"animations" : [ { "player.m67.shoot": "variable.is_first_person" }, { "player.m67.third.shoot": "!variable.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm67')"
+						},
+						{
+							"player.m67.end" : "!q.is_using_item"
+						}
+					]
+				},
+				"player.m67.end" : {
+					"animations" : [ { "player.m67.end": "variable.is_first_person" }, { "player.m67.third.end": "!variable.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.guns.flashlight" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{ "m16.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm16') && q.is_sheared" },
+						{ "m4a1.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm4a1') && q.is_sheared" },
+						{ "m249.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm249') && q.is_sheared" },
+						{ "glock_17.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') && q.is_sheared" },
+						{ "glock_17.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'desert_eagle') && q.is_sheared" },
+						{ "glock_17.silencer": "q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') && q.property('nido:item.attachments.3') == 1" },
+						{ "benelli_m4.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4') && q.is_sheared" },
+						{ "glock_17.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17') && q.is_sheared" },
+						{ "remington_870.flashlight": "q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870') && q.is_sheared" },
+						{ "micro_uzi.flashlight": "(q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') || q.equipped_item_any_tag('slot.weapon.mainhand', 'double_micro_uzi')) && q.is_sheared" }
+					]
+				}
+			}
+		},
+		"controller.animation.guns.apuntar.attachable" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"apuntar" : "q.is_sneaking && c.is_first_person"
+						}
+					]
+				},
+				"apuntar" : {
+					"animations" : [ 
+						{ "sniper.sneaking": "q.property('nido:item.attachments.1') == 2 || q.property('nido:item.attachments.1') == 3" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || !c.is_first_person"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.guns.apuntar" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"apuntar" : "q.is_sneaking && variable.is_first_person"
+						}
+					],"blend_transition":0.25
+				},
+				"apuntar" : {
+					"animations" : [
+						{"player.sniper.sneaking": "q.property('nido:item.attachments.1') == 2 || q.property('nido:item.attachments.1') == 3 || q.equipped_item_any_tag('slot.weapon.mainhand', 'trs26') || q.equipped_item_any_tag('slot.weapon.mainhand', 'sniper')" },
+						{"benelli_m4.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4') && q.property('nido:item.attachments.1') == 0" },
+						{"remington_870.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870') && q.property('nido:item.attachments.1') == 0" },
+						{"m16.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm16') && q.property('nido:item.attachments.1') == 0" },
+						{"m16.apuntar.eotech": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm16') && q.property('nido:item.attachments.1') == 1" },
+						{"micro_uzi.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61') && q.property('nido:item.attachments.1') == 0" },
+						{"micro_uzi.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.property('nido:item.attachments.1') == 0" },
+						{"micro_uzi.apuntar.eotech": "q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && q.property('nido:item.attachments.1') == 1" },
+						{"glock_17.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') && q.property('nido:item.attachments.1') == 0" },
+						{"glock_17.apuntar.eotech": "q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') && q.property('nido:item.attachments.1') == 1" },
+						{"glock_17.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'desert_eagle') && q.property('nido:item.attachments.1') == 0" },
+						{"glock_17.apuntar.eotech": "q.equipped_item_any_tag('slot.weapon.mainhand', 'desert_eagle') && q.property('nido:item.attachments.1') == 1" },
+						{"m249.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm249') && q.property('nido:item.attachments.1') == 0" },
+						{"m249.apuntar.eotech": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm249') && q.property('nido:item.attachments.1') == 1" },
+						{"m4a1.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm4a1') && q.property('nido:item.attachments.1') == 0" },
+						{"m4a1.apuntar.eotech": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm4a1') && q.property('nido:item.attachments.1') == 1" },
+						{"m32.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm32') && q.property('nido:item.attachments.1') == 0" },
+						{"m32.apuntar.eotech": "q.equipped_item_any_tag('slot.weapon.mainhand', 'm32') && q.property('nido:item.attachments.1') == 1" },
+						{"barret_m82a1.apuntar": "q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && q.property('nido:item.attachments.1') == 0" }
+					],
+					"transitions" : [
+						{
+							"default" : "!q.is_sneaking || !variable.is_first_person"
+						}
+					],"blend_transition":0.25
+				}
+			}
+		},
+		"controller.animation.player.guns.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"m16" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm16')"
+						},
+						{
+							"double_micro_uzi" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'double_micro_uzi')"
+						},
+						{
+							"micro_uzi" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')"
+						},
+						{
+							"remington_870" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')"
+						},
+						{
+							"double_glock_17" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17')"
+						},
+						{
+							"benelli_m4" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')"
+						},
+						{
+							"glock_17" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17')"
+						},
+						{
+							"desert_eagle" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'desert_eagle')"
+						},
+						{
+							"barret_m82a1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1')"
+						},
+						{
+							"m249" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')"
+						},
+						{
+							"m4a1" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm4a1')"
+						},
+						{
+							"m32" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm32')"
+						},
+						{
+							"m202" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm202')"
+						},
+						{
+							"skorpion_vz61" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61')"
+						},
+						{
+							"double_skorpion_vz61" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'double_skorpion_vz61')"
+						}
+					]
+				},
+				"skorpion_vz61" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61')"
+						},
+						{
+							"skorpion_vz61.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"skorpion_vz61.shoot" : {
+					"animations" : [ {"player.micro_uzi.shoot":"variable.is_first_person"}, {"player.micro_uzi.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"m32" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm32')"
+						},
+						{
+							"m32.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"m32.shoot" : {
+					"animations" : [ {"player.m32.shoot":"variable.is_first_person"}, {"player.assault_rifle.m203.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"m4a1" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm4a1')"
+						},
+						{
+							"m4a1.shoot" : "q.property('arathnido:animation') == 2"
+						},
+						{
+							"m203.shoot" : "q.property('arathnido:animation') == 16"
+						},
+						{
+							"shotgun.shoot" : "q.property('arathnido:animation') == 17"
+						}
+					]
+				},
+				"m16" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm16')"
+						},
+						{
+							"m16.shoot" : "q.property('arathnido:animation') == 2"
+						},
+						{
+							"m203.shoot" : "q.property('arathnido:animation') == 16"
+						},
+						{
+							"shotgun.shoot" : "q.property('arathnido:animation') == 17"
+						}
+					]
+				},
+				"m4a1.shoot" : {
+					"animations" : [ {"player.m4a1.shoot":"variable.is_first_person"}, {"player.assault_rifle.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"shotgun.shoot" : {
+					"animations" : [ {"player.assault_rifle.shotgun.shoot":"variable.is_first_person"}, {"player.assault_rifle.shotgun.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"m203.shoot" : {
+					"animations" : [ {"player.assault_rifle.m203.shoot":"variable.is_first_person"}, {"player.assault_rifle.m203.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"m16.shoot" : {
+					"animations" : [ {"player.assault_rifle.shoot":"variable.is_first_person"}, {"player.assault_rifle.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"double_skorpion_vz61" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'double_skorpion_vz61')"
+						},
+						{
+							"double_skorpion_vz61.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"double_skorpion_vz61.shoot" : {
+					"animations" : [ {"player.double_micro_uzi.shoot":"variable.is_first_person"}, {"player.double_micro_uzi.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"double_micro_uzi" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'double_micro_uzi')"
+						},
+						{
+							"double_micro_uzi.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"double_micro_uzi.shoot" : {
+					"animations" : [ {"player.double_micro_uzi.shoot":"variable.is_first_person"}, {"player.double_micro_uzi.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"micro_uzi" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi')"
+						},
+						{
+							"micro_uzi.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"micro_uzi.shoot" : {
+					"animations" : [ {"player.micro_uzi.shoot":"variable.is_first_person"}, {"player.micro_uzi.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"benelli_m4" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')"
+						},
+						{
+							"benelli_m4.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"benelli_m4.shoot" : {
+					"animations" : [ {"player.benelli_m4.shoot":"variable.is_first_person"}, {"player.benelli_m4.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"remington_870" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')"
+						},
+						{
+							"remington_870.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"remington_870.shoot" : {
+					"animations" : [ {"player.remington_870.shoot":"variable.is_first_person"}, {"player.remington_870.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"double_glock_17" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17')"
+						},
+						{
+							"double_glock_17.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"double_glock_17.shoot" : {
+					"animations" : [ {"player.double_glock_17.shoot":"variable.is_first_person"}, {"player.double_glock_17.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item)"
+						}
+					]
+				},
+				"glock_17" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17')"
+						},
+						{
+							"glock_17.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"glock_17.shoot" : {
+					"animations" : [ {"player.glock_17.shoot":"variable.is_first_person"}, {"player.glock_17.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"desert_eagle" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'desert_eagle')"
+						},
+						{
+							"desert_eagle.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"desert_eagle.shoot" : {
+					"animations" : [ {"player.desert_eagle.shoot":"variable.is_first_person"}, {"player.desert_eagle.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"barret_m82a1" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1')"
+						},
+						{
+							"barret_m82a1.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"barret_m82a1.shoot" : {
+					"animations" : [ {"player.barret_m82a1.shoot":"variable.is_first_person"}, {"player.barret_m82a1.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"m249" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')"
+						},
+						{
+							"m249.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"m249.shoot" : {
+					"animations" : [ {"player.m249.shoot":"variable.is_first_person"}, {"player.m249.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				},
+				"m202" : {
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm202')"
+						},
+						{
+							"m202.shoot" : "q.property('arathnido:animation') == 2 && q.is_using_item"
+						}
+					]
+				},
+				"m202.shoot" : {
+					"animations" : [ {"player.m202.shoot":"variable.is_first_person"}, {"player.m202.shoot.third":"!variable.is_first_person"} ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 || !q.is_using_item) && q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.guns.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shoot" : "q.property('arathnido:animation') == 2"
+						},
+						{
+							"shotgun.shoot" : "q.property('arathnido:animation') == 17"
+						}
+					]
+				},
+				"shoot" : {
+					"animations" : [ { "shoot": "c.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 && q.any_animation_finished"
+						}
+					]
+				},
+				"shotgun.shoot" : {
+					"animations" : [ { "shotgun.shoot": "c.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 && q.any_animation_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.guns.reload" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"reload" : "q.property('arathnido:animation') == 3 && c.is_first_person"
+						},
+						{
+							"reload.m203" : "q.property('arathnido:animation') == 18 && c.is_first_person"
+						}
+					],"blend_transition":0.25
+				},
+				"reload" : {
+					"animations" : [ { "reload": "c.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 && q.any_animation_finished)"
+						}
+					],"blend_transition":0.25
+				},
+				"reload.m203" : {
+					"animations" : [ { "reload.m203": "c.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "(q.property('arathnido:animation') == 0 && q.any_animation_finished)"
+						}
+					],"blend_transition":0.25
+				}
+			}
+		},
+		"controller.animation.player.guns.reload" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"m16.reload" : "q.property('arathnido:animation') == 3 && !q.equipped_item_any_tag('slot.weapon.mainhand', 'shotgun.reload')"
+						},
+						{
+							"m203.reload" : "q.property('arathnido:animation') == 18"
+						},
+						{
+							"shotgun.reload" : "q.property('arathnido:animation') == 19"
+						},
+						{
+							"benelli_m4.reload" : "q.property('arathnido:animation') == 3 && q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')"
+						},
+						{
+							"remington_870.reload" : "q.property('arathnido:animation') == 3 && q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')"
+						}
+					],"blend_transition":0.25
+				},
+				"remington_870.reload" : {
+					"animations" : [ 
+						{"player.remington_870.reload":"variable.is_first_person"}, {"player.remington_870.reload.third":"!variable.is_first_person"}
+					],
+					"transitions" : [
+						{
+							"remington_870.reload.end" : "q.property('arathnido:animation') == 0 && q.any_animation_finished"
+						},
+						{
+							"default" : "q.property('arathnido:animation') == 2"
+						}
+					],"blend_transition":0.25
+				},
+				"remington_870.reload.end" : {
+					"animations" : [ 
+						{"player.remington_870.reload.end":"variable.is_first_person"}
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 2 || q.any_animation_finished"
+						}
+					],"blend_transition":0.25
+				},
+				"benelli_m4.reload" : {
+					"animations" : [ 
+						{"player.benelli_m4.reload":"variable.is_first_person"}, {"player.benelli_m4.reload.third":"!variable.is_first_person"}
+					],
+					"transitions" : [
+						{
+							"benelli_m4.reload.end" : "q.property('arathnido:animation') == 0 && q.any_animation_finished"
+						},
+						{
+							"default" : "q.property('arathnido:animation') == 2"
+						}
+					],"blend_transition":0.25
+				},
+				"benelli_m4.reload.end" : {
+					"animations" : [ 
+						{"player.benelli_m4.reload.end":"variable.is_first_person"}
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 2 || q.any_animation_finished"
+						}
+					],"blend_transition":0.25
+				},
+				"m16.reload" : {
+					"animations" : [ 
+						{"player.m16.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'm16') && variable.is_first_person"},
+						{"player.m4a1.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'm4a1') && variable.is_first_person"},
+						{"player.double_micro_uzi.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'double_micro_uzi') && variable.is_first_person"},
+						{"player.double_skorpion_vz61.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'double_skorpion_vz61') && variable.is_first_person"},
+						{"player.micro_uzi.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'micro_uzi') && variable.is_first_person"},
+						{"player.skorpion_vz61.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'skorpion_vz61') && variable.is_first_person"},
+						{"player.glock_17.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') && variable.is_first_person"},
+						{"player.desert_eagle.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'desert_eagle') && variable.is_first_person"},
+						{"player.barret_m82a1.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'barret_m82a1') && variable.is_first_person"},
+						{"player.m249.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'm249') && variable.is_first_person"},
+						{"player.double_glock_17.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17') && variable.is_first_person"},
+						{"player.m32.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'm32') && variable.is_first_person"},
+						{"player.m202.reload":"q.equipped_item_any_tag('slot.weapon.mainhand', 'm202') && variable.is_first_person"}
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || q.any_animation_finished || q.equipped_item_any_tag('slot.weapon.mainhand', 'shotgun.reload')"
+						}
+					],"blend_transition":0.25
+				},
+				"m203.reload" : {
+					"animations" : [ 
+						{"player.m203.reload":"variable.is_first_person"}
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || q.any_animation_finished"
+						}
+					],"blend_transition":0.25
+				},
+				"shotgun.reload" : {
+					"animations" : [ 
+						{"player.shotgun.reload":"variable.is_first_person"}
+					],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || q.any_animation_finished"
+						}
+					],"blend_transition":0.25
+				}
+			}
+		},
+		"controller.animation.guns.accesorios" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ 
+						{"mira_off":"q.property('nido:item.attachments.1') == 0"},
+						{"eotech":"q.property('nido:item.attachments.1') == 1"},
+						{"trs26":"q.property('nido:item.attachments.1') == 2"},
+						{"sniper":"q.property('nido:item.attachments.1') == 3"},
+
+						{"flashlight_off":"!q.is_sheared"},
+						{"laser.off":"q.property('nido:item.attachments.2') == 0"},
+						{"laser.red":"q.property('nido:item.attachments.2') == 1"},
+						{"laser.blue":"q.property('nido:item.attachments.2') == 2"},
+						{"laser.green":"q.property('nido:item.attachments.2') == 3"},
+						{"flashlight":"q.is_sheared"},
+
+						{"silencer_off":"q.property('nido:item.attachments.3') == 0"},
+						{"silencer":"q.property('nido:item.attachments.3') == 1"},
+						{"bayonet":"q.property('nido:item.attachments.3') == 2"},
+
+						{"m203_off":"q.property('nido:item.attachments.4') == 0"},
+						{"m203":"q.property('nido:item.attachments.4') == 1"},
+						{"shotgun":"q.property('nido:item.attachments.4') == 2"}
+					]
+				}
+			}
+		},
+		"controller.animation.player.guns.apuntar.third" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"assault_rifle.apuntar" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle.pose') && !variable.is_first_person && (q.is_using_item || q.is_sneaking)"
+						},
+						{
+							"assault_rifle.apuntar" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun') && !variable.is_first_person && (q.is_using_item || q.is_sneaking)"
+						},
+						{
+							"double_weapon.apuntar" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon') && !variable.is_first_person && (q.is_using_item || q.is_sneaking)"
+						},
+						{
+							"one_gun.apuntar" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'one_gun') && !variable.is_first_person && (q.is_using_item || q.is_sneaking)"
+						},
+						{
+							"pistol.apuntar" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && !variable.is_first_person && (q.is_using_item || q.is_sneaking)"
+						}
+					],"blend_transition":0.2
+				},
+				"assault_rifle.apuntar" : {
+					"animations" : [ {"player.assault_rifle.apuntar": "!q.is_swimming" }, { "player.assault_rifle.apuntar.rot": "!q.is_swimming" } ],
+					"transitions" : [
+						{
+							"assault_rifle.apuntar.timer" : "((!q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle.pose') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun')) || variable.is_first_person || (!q.is_using_item && !q.is_sneaking)) && q.any_animation_finished"
+						}
+					],"blend_transition":0.2
+				},
+				"assault_rifle.apuntar.timer" : {
+					"animations" : [ "player.assault_rifle.apuntar.timer", {"player.assault_rifle.apuntar": "!q.is_swimming" }, { "player.assault_rifle.apuntar.rot": "!q.is_swimming" } ],
+					"transitions" : [
+						{
+							"default" : "((!q.is_using_item && !q.is_sneaking) && q.all_animations_finished) || (!q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle.pose') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun')) || variable.is_first_person"
+						}
+					],"blend_transition":0.2
+				},
+				"double_weapon.apuntar" : {
+					"animations" : [ {"player.double_weapon.apuntar": "!q.is_swimming" }, { "player.double_weapon.apuntar.rot": "!q.is_swimming && !q.is_gliding" }, { "player.double_weapon.apuntar.rot.gliding": "q.is_gliding" } ],
+					"transitions" : [
+						{
+							"double_weapon.apuntar.timer" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon') || variable.is_first_person || (!q.is_using_item && !q.is_sneaking)) && q.any_animation_finished"
+						}
+					],"blend_transition":0.2
+				},
+				"double_weapon.apuntar.timer" : {
+					"animations" : [ "player.assault_rifle.apuntar.timer", {"player.double_weapon.apuntar": "!q.is_swimming" }, { "player.double_weapon.apuntar.rot": "!q.is_swimming" } ],
+					"transitions" : [
+						{
+							"default" : "((!q.is_using_item && !q.is_sneaking) && q.all_animations_finished) || !q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon') || variable.is_first_person"
+						}
+					],"blend_transition":0.2
+				},
+				"one_gun.apuntar" : {
+					"animations" : [ {"player.one_gun.apuntar": "!q.is_swimming" }, { "player.one_gun.apuntar.rot": "!q.is_swimming" } ],
+					"transitions" : [
+						{
+							"one_gun.apuntar.timer" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'one_gun') || variable.is_first_person || (!q.is_using_item && !q.is_sneaking)) && q.any_animation_finished"
+						}
+					],"blend_transition":0.2
+				},
+				"one_gun.apuntar.timer" : {
+					"animations" : [ "player.assault_rifle.apuntar.timer", { "player.one_gun.apuntar": "!q.is_swimming" }, { "player.one_gun.apuntar.rot": "!q.is_swimming" } ],
+					"transitions" : [
+						{
+							"default" : "((!q.is_using_item && !q.is_sneaking) && q.all_animations_finished) || !q.equipped_item_any_tag('slot.weapon.mainhand', 'one_gun') || variable.is_first_person"
+						}
+					],"blend_transition":0.2
+				},
+				"pistol.apuntar" : {
+					"animations" : [ { "player.pistol.apuntar": "!q.is_swimming" }, { "player.pistol.apuntar.rot": "!q.is_swimming" } ],
+					"transitions" : [
+						{
+							"pistol.apuntar.timer" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') || variable.is_first_person || (!q.is_using_item && !q.is_sneaking)) && q.any_animation_finished"
+						}
+					],"blend_transition":0.2
+				},
+				"pistol.apuntar.timer" : {
+					"animations" : [ "player.assault_rifle.apuntar.timer", { "player.pistol.apuntar": "!q.is_swimming" }, { "player.pistol.apuntar.rot": "!q.is_swimming" } ],
+					"transitions" : [
+						{
+							"default" : "((!q.is_using_item && !q.is_sneaking) && q.all_animations_finished) || !q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') || variable.is_first_person"
+						}
+					],"blend_transition":0.2
+				}
+			}
+		},
+		"controller.animation.player.guns.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"assault_rifle.pose" : "(q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun') || q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle.pose')) && !variable.is_first_person && q.modified_move_speed > 0.1 && !q.is_using_item"
+						}
+					],"blend_transition":0.25
+				},
+				"assault_rifle.pose" : {
+					"animations" : [ "player.assault_rifle.walk" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle.pose') && !q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun')) || variable.is_first_person || q.modified_move_speed < 0.1 || q.is_using_item"
+						}
+					],"blend_transition":0.25
+				}
+			}
+		},
+		"controller.animation.player.assault_rifle.reload.third" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"reload" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle') && (q.property('arathnido:animation') == 3 || q.property('arathnido:animation') == 18 || q.property('arathnido:animation') == 19) && !variable.is_first_person"
+						},
+						{
+							"double_weapon.reload" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon') && q.property('arathnido:animation') == 3 && !variable.is_first_person"
+						},
+						{
+							"micro_uzi.reload" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'one_gun') && q.property('arathnido:animation') == 3 && !variable.is_first_person"
+						},
+						{
+							"pistol.reload" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') && q.property('arathnido:animation') == 3 && !variable.is_first_person"
+						},
+						{
+							"sniper.reload" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'sniper') && q.property('arathnido:animation') == 3 && !variable.is_first_person"
+						}
+					]
+				},
+				"sniper.reload" : {
+					"animations" : [ "player.assault_rifle.reload.third" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'sniper') || (q.property('arathnido:animation') == 0 && q.any_animation_finished) || q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"pistol.reload" : {
+					"animations" : [ "player.assault_rifle.reload.third" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol') || (q.property('arathnido:animation') == 0 && q.any_animation_finished) || q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"micro_uzi.reload" : {
+					"animations" : [ "player.assault_rifle.reload.third" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'one_gun') || (q.property('arathnido:animation') == 0 && q.any_animation_finished) || q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"reload" : {
+					"animations" : [ "player.assault_rifle.reload.third" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle') || (q.property('arathnido:animation') == 0 && q.any_animation_finished) || q.property('arathnido:animation') == 2"
+						}
+					]
+				},
+				"double_weapon.reload" : {
+					"animations" : [ "player.double_weapon.reload.third" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon') || (q.property('arathnido:animation') == 0 && q.any_animation_finished) || q.property('arathnido:animation') == 2"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.player.guns.third" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"assault_rifle.pose" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') && !variable.is_first_person"
+						}
+					],"blend_transition":0.2
+				},
+				"assault_rifle.pose" : {
+					"animations" : [ {"player.assault_rifle.pose":"q.equipped_item_any_tag('slot.weapon.mainhand', 'assault_rifle.pose')"}, {"player.assault_rifle.pose":"q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun')"}, {"move.arms":"q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon')"} ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') || variable.is_first_person"
+						}
+					],"blend_transition":0.2
+				}
+			}
+		},
+		"controller.animation.player.guns.idle" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{ "m16" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun')" },
+						{ "double_weapon" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon')" },
+						{ "one_gun" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'one_gun')" },
+						{ "benelli_m4" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')" },
+						{ "remington_870" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')" },
+						{ "pistol" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol')" },
+						{ "m202" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm202')" }
+					],"blend_transition":0.2
+				},
+				"m16" : {
+					"animations" : [ { "player.m16.idle": "!variable.is_first_person && !q.is_swimming" }, "player.assault_rifle.idle", "player.m16.on" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'big_gun')"
+						}
+					],"blend_transition":0.2
+				},
+				"double_weapon" : {
+					"animations" : [ "player.double_weapon.idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'double_weapon')"
+						}
+					],"blend_transition":0.2
+				},
+				"one_gun" : {
+					"animations" : [ "player.one_gun.idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'one_gun')"
+						}
+					],"blend_transition":0.2
+				},
+				"benelli_m4" : {
+					"animations" : [ "player.benelli_m4.idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')"
+						}
+					],"blend_transition":0.2
+				},
+				"remington_870" : {
+					"animations" : [ "player.remington_870.idle" ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')"
+						}
+					],"blend_transition":0.2
+				},
+				"pistol" : {
+					"animations" : [ { "player.pistol.idle": "variable.is_first_person" }, { "player.pistol.third": "!variable.is_first_person && !q.is_swimming" } ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'pistol')"
+						}
+					],"blend_transition":0.2
+				},
+				"m202" : {
+					"animations" : [ { "player.m202.idle": "variable.is_first_person" }, { "player.m202.third": "!variable.is_first_person && !q.is_swimming" }, { "player.m202.apuntar.rot": "!variable.is_first_person" } ],
+					"transitions" : [
+						{
+							"default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm202')"
+						}
+					],"blend_transition":0.2
+				}
+			}
+		}
+	}
+}

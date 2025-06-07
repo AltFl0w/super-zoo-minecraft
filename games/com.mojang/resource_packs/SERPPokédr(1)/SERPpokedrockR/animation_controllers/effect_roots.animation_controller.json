@@ -1,0 +1,10 @@
+{
+    "format_version":"1.10.0",
+    "animation_controllers":{
+    "controller.animation.effects":{
+        "states":{
+  "default":{"particle_effects":[{"effect":"shiny"}],"animations":["eyes_controller"]}
+      }
+    }
+  }
+}

@@ -1,0 +1,369 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.df_shadow_freddy_fnaf2.base": {
+			"loop": true,
+			"animation_length": 20,
+			"bones": {
+				"Parte1": {
+					"rotation": {
+						"1.2": [0, 0, 0],
+						"5.36": ["0+Math.sin(query.life_time * 6000.0) *1", "0+Math.sin(query.life_time * 4000.0) *1", "0+Math.sin(query.life_time * 8000.0) *2"],
+						"5.76": [0, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"4.16": ["0+Math.sin(query.life_time * 8000.0) *1", "0+Math.sin(query.life_time * 4000.0) *2", "0+Math.sin(query.life_time * 3000.0) *2"],
+						"5.32": ["0+Math.sin(query.life_time * 8000.0) *1", "0+Math.sin(query.life_time * 4000.0) *2", "0+Math.sin(query.life_time * 3000.0) *2"],
+						"5.64": ["0+Math.sin(query.life_time * 3000.0) *1", "0+Math.sin(query.life_time * 2000.0) *2", "0+Math.sin(query.life_time * 1000.0) *2"],
+						"5.88": [0, 0, 0]
+					}
+				},
+				"Ceja1": {
+					"rotation": {
+						"1.24": [0, 0, 0],
+						"4.52": [0, 0, 12.5],
+						"5.52": [0, 0, 12.5],
+						"5.6": [0, 0, 0]
+					}
+				},
+				"Ceja2": {
+					"rotation": {
+						"1.24": [0, 0, 0],
+						"4.52": [0, 0, -12.5],
+						"5.52": [0, 0, -12.5],
+						"5.6": [0, 0, 0]
+					}
+				},
+				"Boca": {
+					"rotation": {
+						"0.8": [0, 0, 0],
+						"3.88": ["0+Math.sin(query.life_time * 8000.0) *1", 0, 0],
+						"5.2": ["0+Math.sin(query.life_time * 8000.0) *10", 0, 0],
+						"5.36": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.df_shadow_freddy_fnaf2.walk": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": ["-10+Math.sin(query.life_time * 8000.0) *0.5", "12.5+Math.sin(query.life_time * 4000.0) *1", "-15+Math.sin(query.life_time * 8000.0) *0.5"],
+					"position": [0, 11, 0],
+					"scale": 3
+				},
+				"Boca": {
+					"rotation": ["27.5+Math.sin(query.life_time * 8000.0) *1", 0, 0]
+				},
+				"Cuerpo": {
+					"scale": 0
+				},
+				"BrazoDerecho": {
+					"scale": 0
+				},
+				"BrazoIzquierdo": {
+					"scale": 0
+				},
+				"Parte2": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.df_shadow_freddy_fnaf2.pose1": {
+			"loop": true,
+			"animation_length": 10,
+			"bones": {
+				"Parte1": {
+					"rotation": ["2.5+Math.sin(query.life_time * 100.0) *1", 12.5, -5]
+				},
+				"head": {
+					"rotation": ["7.5+Math.sin(query.life_time * 100.0) *2", 0, -10],
+					"position": {
+						"0.0": [0, 2, 4],
+						"1.0": [0, 2, 4],
+						"1.04": [-31, 2, 4],
+						"1.16": [-31, 2, 4],
+						"1.2": [5, 2, 4],
+						"1.28": [5, 2, 4],
+						"1.32": [0, 2, 0]
+					}
+				},
+				"Boca": {
+					"rotation": ["-20+Math.sin(query.life_time * 100.0) *5", 0, 0]
+				},
+				"Cuello": {
+					"rotation": [-25, 0, 0]
+				},
+				"BrazoDerecho": {
+					"rotation": ["0+Math.sin(query.life_time * 100.0) *5", 0, "17.5+Math.sin(query.life_time * 100.0) *10"],
+					"position": {
+						"1.68": [0, 0, 0],
+						"1.72": [-6, -8, 0],
+						"1.84": [-6, -8, 0],
+						"1.88": [-10, 5, 0],
+						"1.96": [-10, 5, 0],
+						"2.0": [0, 0, 0]
+					}
+				},
+				"Brazo1": {
+					"rotation": ["-12.5+Math.sin(query.life_time * 50.0) *20", "-32.5+Math.sin(query.life_time * 50.0) *20", "0+Math.sin(query.life_time * 50.0) *20"],
+					"position": {
+						"0.68": [0, 0, 0],
+						"0.72": [0, -22, 6],
+						"0.88": [0, -22, 6],
+						"0.92": [0, -4, -13],
+						"1.16": [0, -4, -13],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"Mano": {
+					"rotation": [-10, -2.5, 27.5]
+				},
+				"Dedo1": {
+					"rotation": [17.5, 0, 40]
+				},
+				"Dedo2": {
+					"rotation": [0, 0, 52.5]
+				},
+				"Dedo3": {
+					"rotation": [0, 0, 20]
+				},
+				"Dedo4": {
+					"rotation": [0, 0, 25]
+				},
+				"Dedo5": {
+					"rotation": [0, 0, 67.5]
+				},
+				"Dedo7": {
+					"rotation": [0, 0, 30]
+				},
+				"Dedo8": {
+					"rotation": [0, 0, 35]
+				},
+				"Dedo9": {
+					"rotation": [0, 0, 25]
+				},
+				"Dedo11": {
+					"rotation": [0, 0, 10]
+				},
+				"Dedo12": {
+					"rotation": [0, 0, 50]
+				},
+				"Microfono": {
+					"rotation": ["35+Math.sin(query.life_time * 200.0) *5", "-12.5+Math.sin(query.life_time * 70.0) *5", "15+Math.sin(query.life_time * 50.0) *5"],
+					"position": ["10+Math.sin(query.life_time * 40.0) *5", 0, "-18+Math.sin(query.life_time * 60.0) *5"]
+				},
+				"BrazoIzquierdo": {
+					"rotation": ["0+Math.sin(query.life_time * 50.0) *-10", "0+Math.sin(query.life_time * 70.0) *-10", "-12.5+Math.sin(query.life_time * 50.0) *-5"],
+					"position": {
+						"0.8": [0, 0, 0],
+						"0.84": [25, 0, 0],
+						"1.0": [25, 0, 0],
+						"1.04": [25, -16, 0],
+						"1.24": [25, -16, 0],
+						"1.28": [0, 0, 0]
+					}
+				},
+				"Brazo3": {
+					"rotation": [-10, 42.5, 0]
+				},
+				"Dedo10": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo13": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo14": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo15": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo16": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo17": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo18": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo19": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo20": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Pulgar2": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo21": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Dedo22": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-10"]
+				},
+				"Parte2": {
+					"rotation": [0, 0, "0+Math.sin(query.life_time * 100.0) *-1"]
+				},
+				"PiernaDerecha": {
+					"rotation": ["127.5+Math.sin(query.life_time * 100.0) *-5", 0, 0],
+					"position": {
+						"0.0": [1, 1, 5],
+						"0.96": [1, 1, 5],
+						"1.0": [-7, -2, 5],
+						"1.2": [-7, -2, 5],
+						"1.24": [-7, 5, 5],
+						"1.4": [-7, 5, 5],
+						"1.44": [1, 1, 5]
+					}
+				},
+				"Pierna1": {
+					"rotation": ["-75+Math.sin(query.life_time * 50.0) *10", 0, 0],
+					"position": {
+						"0.44": [0, 0, 0],
+						"0.48": [-21, 83, 0],
+						"1.0": [-21, 83, 0],
+						"1.08": [-21, 8, 0],
+						"1.6": [-21, 8, 0],
+						"1.64": [0, 0, 0]
+					}
+				},
+				"Pie": {
+					"rotation": [-20, 10, 17.5]
+				},
+				"PiernaIzquierda": {
+					"rotation": ["142.5+Math.sin(query.life_time * 100.0) *-5", 0, -20],
+					"position": {
+						"0.0": [-1, 1, 4],
+						"1.24": [-1, 1, 4],
+						"1.28": [1, -18, 4],
+						"1.64": [1, -18, 4],
+						"1.68": [-1, 1, 4]
+					}
+				},
+				"ParteCable26": {
+					"rotation": [-42.5, 0, 0]
+				},
+				"ParteCable50": {
+					"rotation": [-70, 0, 0]
+				},
+				"ParteCable52": {
+					"rotation": [0, 0, 40]
+				},
+				"ParteCable55": {
+					"rotation": [-22.5, 0, 7.5]
+				},
+				"Pierna3": {
+					"rotation": ["-82.5+Math.sin(query.life_time * 40.0) *-15", 0, 0]
+				},
+				"Pie2": {
+					"rotation": [-47.5, 0, 17.5]
+				},
+				"ShadowFreddyFNaF2": {
+					"position": [0, 60, 0]
+				},
+				"Cuerpo": {
+					"position": {
+						"0.44": [0, 0, 0],
+						"0.48": [5, 12, 0],
+						"0.72": [5, 12, 0],
+						"0.76": [-35, 2, 0],
+						"0.92": [-35, 2, 0],
+						"0.96": [0, 0, 0]
+					}
+				},
+				"Brazo0": {
+					"position": {
+						"0.8": [0, 0, 0],
+						"0.84": [0, 30, 29],
+						"1.24": [0, 30, 29],
+						"1.28": [0, 0, 0]
+					}
+				},
+				"Brazo2": {
+					"position": {
+						"0.2": [0, 0, 0],
+						"0.24": [0, 0, -22],
+						"0.52": [0, 0, -22],
+						"0.56": [0, -33, 7],
+						"0.76": [0, -33, 7],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"Mano2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.04": [24, 0, 7],
+						"0.28": [24, 0, 7],
+						"0.32": [-27, 64, 7],
+						"0.8": [-27, 64, 7],
+						"0.84": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.df_shadow_freddy_fnaf2.pose2": {
+			"loop": true,
+			"bones": {
+				"Parte1": {
+					"rotation": [12.5, 0, 0]
+				},
+				"head": {
+					"rotation": [0, 12.5, -15],
+					"position": [0, 1, 6]
+				},
+				"Boca": {
+					"rotation": [-25, 0, 0]
+				},
+				"Cuello": {
+					"rotation": [-17.5, 0, -7.5]
+				},
+				"BrazoDerecho": {
+					"rotation": [0, 0, 10]
+				},
+				"Brazo1": {
+					"rotation": [60, -137.5, -20]
+				},
+				"Mano": {
+					"rotation": [0, 0, 27.5]
+				},
+				"BrazoIzquierdo": {
+					"rotation": [5, -5, -17.5]
+				},
+				"Brazo3": {
+					"rotation": [-2.5, 82.5, -27.5]
+				},
+				"Mano2": {
+					"rotation": [75, 70, -82.5]
+				},
+				"PiernaDerecha": {
+					"rotation": [130, 10, 0],
+					"position": [1, 1, 5]
+				},
+				"Pierna1": {
+					"rotation": [-75, 0, 0]
+				},
+				"Pie": {
+					"rotation": [-55, 0, 15]
+				},
+				"PiernaIzquierda": {
+					"rotation": [127.5, -7.5, -15],
+					"position": [-1, 1, 5]
+				},
+				"Pierna3": {
+					"rotation": [-77.5, 0, 0]
+				},
+				"Pie2": {
+					"rotation": [-47.5, 0, 17.5]
+				},
+				"ShadowFreddyFNaF2": {
+					"position": [0, 42, 0]
+				}
+			}
+		}
+	}
+}

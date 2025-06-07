@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "serp:mulch"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "serp:oran_berry"
+      },
+      {
+        "item": "serp:sitrus_berry"
+      },
+      {
+        "item": "serp:mago_berry"
+      },
+      {
+        "item": "minecraft:dye",
+        "data": 15
+      }
+    ],
+
+    "result": {
+      "item": "serp:mulch",
+      "count": 4
+    }
+  }
+}

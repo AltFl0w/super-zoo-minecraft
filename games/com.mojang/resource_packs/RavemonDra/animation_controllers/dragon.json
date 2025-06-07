@@ -1,0 +1,209 @@
+//bridge-file-version: #29
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.coavern.movement": {
+			"initial_state": "land_idle",
+			"states": {
+				"land_idle": {
+					"blend_transition": 0.2,
+					"animations": [
+						"land_idle"
+					],
+					"transitions": [
+						{
+							"walk": "query.modified_move_speed > 0.1"
+						},
+						{
+							"fly_idle": "!query.is_on_ground && !query.is_in_water && !query.has_rider"
+						},
+						{
+							"rider_fly": "query.has_rider && !query.is_on_ground"
+						}
+					]
+				},
+				"walk": {
+					"blend_transition": 0.2,
+					"animations": [
+						"walk"
+					],
+					"transitions": [
+						{
+							"land_idle": "!(query.modified_move_speed > 0.1)"
+						},
+						{
+							"fly_idle": "!query.is_on_ground && !query.is_in_water && !query.has_rider"
+						},
+						{
+							"rider_fly": "query.has_rider && !query.is_on_ground"
+						}
+					]
+				},
+				"fly_idle": {
+					"blend_transition": 0.2,
+					"animations": [
+						"fly_idle"
+					],
+					"transitions": [
+						{
+							"fly": "query.modified_move_speed > 0.1"
+						},
+						{
+							"land_idle": "query.is_on_ground || query.is_in_water"
+						},
+						{
+							"rider_fly": "query.has_rider && !query.is_on_ground"
+						}
+					]
+				},
+				"fly": {
+					"blend_transition": 0.2,
+					"animations": [
+						"fly"
+					],
+					"transitions": [
+						{
+							"fly_idle": "!(query.modified_move_speed > 0.1)"
+						},
+						{
+							"land_idle": "query.is_on_ground || query.is_in_water"
+						},
+						{
+							"rider_fly": "query.has_rider && !query.is_on_ground"
+						}
+					]
+				},
+				"rider_fly": {
+					"animations": [
+						{
+							"fly": "query.is_levitating"
+						},
+						{
+							"glide": "!query.is_levitating"
+						}
+					],
+					"transitions": [
+						{
+							"land_idle": "query.is_on_ground"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.coavern.attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"breath": "query.is_charged"
+						},
+						{
+							"bite": "variable.attack_time > 0.1"
+						}
+					]
+				},
+				"breath": {
+					"blend_transition": 0.2,
+					"animations": [
+						"breath"
+					],
+					"transitions": [
+						{
+							"default": "(q.life_time - v.t) > 1 && !q.is_charged"
+						}
+					],
+					"particle_effects": [
+						{
+							"effect": "breath",
+							"locator": "fire"
+						}
+					],
+					"on_entry": [
+						"variable.t = q.life_time;"
+					]
+				},
+				"bite": {
+					"blend_transition": 0.2,
+					"animations": [
+						{
+							"claw": "v.random_attack_anim == 2"
+						},
+						{
+							"bite": "v.random_attack_anim == 1"
+						}
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"on_entry": [
+						"v.random_attack_anim = Math.random_integer(1, 2);"
+					]
+				}
+			}
+		},
+		"controller.animation.skullgrey.attack": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"breath": "query.is_charged"
+						},
+						{
+							"bite": "variable.attack_time > 0.1"
+						},
+						{
+							"roar": "query.is_roaring"
+						}
+					]
+				},
+				"breath": {
+					"blend_transition": 0.2,
+					"animations": [
+						"breath"
+					],
+					"transitions": [
+						{
+							"default": "(q.life_time - v.t) > 1 && !q.is_charged"
+						}
+					],
+					"on_entry": [
+						"variable.t = q.life_time;"
+					]
+				},
+				"bite": {
+					"blend_transition": 0.2,
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"animations": [
+						"tail"
+					]
+				},
+				"roar": {
+					"blend_transition": 0.2,
+					"animations": [
+						"roar"
+					],
+					"transitions": [
+						{
+							"default": "query.any_animation_finished"
+						}
+					],
+					"particle_effects": [
+						{
+							"effect": "poison"
+						}
+					]
+				}
+			}
+		}
+	}
+}

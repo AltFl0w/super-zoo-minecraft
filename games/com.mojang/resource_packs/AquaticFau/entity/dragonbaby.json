@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.dragonbaby"
+      },
+      "identifier": "fauna:dragonbaby",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "dragonbaby",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/dragon/baby"
+      },
+      "animations": {
+        "attack": "animation.dragonbaby.attack",
+        "idle": "animation.dragonbaby.idle",
+        "sit": "animation.dragonbaby.sit",
+        "move": "controller.animation.dragon.move",
+        "walk": "animation.dragonbaby.walk",
+        "swim": "animation.dragonbaby.swim",
+        "swim_attack": "animation.dragonbaby.swimattack",
+        "default": "animation.dragonbaby.default",
+        "look_at_target": "animation.dinosaur.look_at_target"
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.dragonegg"
+      },
+      "identifier": "fauna:dragonegg",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "textures": {
+        "default": "textures/entity/dragon/egg"
+      },
+      "spawn_egg": {
+        "texture": "dragonegg",
+        "texture_index": 0
+      }
+    }
+  }
+}

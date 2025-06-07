@@ -1,0 +1,17 @@
+import './attachments_bench/m16.js';
+import './attachments_bench/m32.js';
+import './attachments_bench/skorpion_vz61.js';
+import './attachments_bench/m4a1.js';
+import './attachments_bench/desert_eagle.js';
+import './attachments_bench/m249.js';
+import './attachments_bench/glock_17.js';
+import './attachments_bench/double_glock_17.js';
+import './attachments_bench/remington_870.js';
+import './attachments_bench/barret_m82a1.js';
+import './attachments_bench/double_micro_uzi.js';
+import './attachments_bench/micro_uzi.js';
+import './attachments_bench/benelli_m4.js';
+import './fire_ammo.js';
+import './weapons_bench.js';
+import './bullets_box.js';
+import './explosive_ammo.js';

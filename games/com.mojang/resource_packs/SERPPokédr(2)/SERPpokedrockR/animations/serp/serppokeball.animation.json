@@ -1,0 +1,108 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pokeball.spawn": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"sound_effects": {
+            "0":{
+					"effect": "spawn"
+                }
+			}
+		},
+		"animation.pokeball.free": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"sound_effects": {
+            "0":{
+					"effect": "free"
+                }
+			}
+		},
+		"animation.pokeball.enter": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 1,
+			"sound_effects": {
+            "0":{
+					"effect": "enter"
+                }
+			}
+		},
+		"animation.pokeball.direction": {
+			"loop": true,
+			"bones": {
+        "body": {
+          "rotation": [ "query.vertical_speed * -7.0", "-query.target_y_rotation", 0.0 ]
+        }
+			}
+		},
+		"animation.pokeball.capture": {
+			"animation_length": 4.5,
+			"bones": {
+				"pokeball": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.57": [-20, 0, -10],
+						"0.64": [20, 0, -10],
+						"0.71": [20, 0, 10],
+						"0.78": [-20, 0, 10],
+						"0.85": [-10, 0, -5],
+						"0.92": [10, 0, -5],
+						"0.99": [10, 0, 5],
+						"1.06": [-10, 0, 5],
+						"1.13": [0, 0, 0],
+						"1.4": [0, 0, 0],
+						"1.47": [-7, 0, 7],
+						"1.54": [7, 0, 5],
+						"1.61": [7, 0, -7],
+						"1.68": [-7, 0, -5],
+						"1.75": [0, 0, 0],
+						"2.3": [0, 0, 0],
+						"2.4": [0, 0, -5],
+						"2.5": [0, 0, 5],
+						"2.6": [0, 0, -5],
+						"2.7": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 8, 0],
+						"0.1": [0, 0, 0],
+						"0.2": [0, 5, 0],
+						"0.25": [0, 0, 0],
+						"0.35": [0, 2, 0],
+						"0.4": [0, 0, 0]
+					}
+				},
+				"top": {
+					"rotation": {
+						"0.0": [-130, 0, 0],
+						"0.2": [0, 0, 0]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.1": {
+					"effect": "pop"
+				},
+				"0.25": {
+					"effect": "pop"
+				},
+				"0.4": {
+					"effect": "pop"
+				},
+				"0.6": {
+					"effect": "wiggle"
+				},
+				"1.5": {
+					"effect": "wiggle"
+				},
+				"2.4": {
+					"effect": "wiggle"
+				},
+				"4.2": {
+					"effect": "catch"
+				}
+			}
+		}
+	}
+}

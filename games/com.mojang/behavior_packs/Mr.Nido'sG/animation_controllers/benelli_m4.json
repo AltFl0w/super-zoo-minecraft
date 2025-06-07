@@ -1,0 +1,141 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.benelli_m4" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : { "on_entry" : [ "/scoreboard objectives add benelli_m4_explosive dummy", "/scoreboard players add @s benelli_m4_explosive 0", "/scoreboard objectives add benelli_m4_fire dummy", "/scoreboard players add @s benelli_m4_fire 0", "/scoreboard objectives add benelli_m4 dummy", "/scoreboard players add @s benelli_m4 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [ { "default" : "(1.0)" } ]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add benelli_m4_explosive dummy", "/scoreboard players add @s benelli_m4_explosive 0", "/scoreboard objectives add benelli_m4_fire dummy", "/scoreboard players add @s benelli_m4_fire 0", "/scoreboard objectives add benelli_m4 dummy", "/scoreboard players add @s benelli_m4 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"benelli_m4" : "q.scoreboard('benelli_m4') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('benelli_m4') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4') && q.is_using_item && q.scoreboard('second_gun') == 0 && q.is_alive"
+						}
+					]
+				},
+				"benelli_m4" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "((q.scoreboard('benelli_m4') < 1 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')) && !q.is_using_item) || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('benelli_m4') < 0 && q.is_using_item"
+						},
+						{
+							"shoot" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('benelli_m4_fire') == 0 && q.scoreboard('benelli_m4_explosive') == 0"
+						},
+						{
+							"shoot.fire" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('benelli_m4_fire') > 0"
+						},
+						{
+							"shoot.explosive" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('benelli_m4_explosive') == 1"
+						}
+					]
+				},
+				"shoot.explosive" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "benelli_m4.shoot.explosive" ],
+					"transitions" : [
+						{
+							"default" : "((!q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')) && !q.is_using_item) || !q.is_alive"
+						},
+						{
+							"benelli_m4" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('benelli_m4') < 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot.fire" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "benelli_m4.shoot.fire" ],
+					"transitions" : [
+						{
+							"default" : "((!q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')) && !q.is_using_item) || !q.is_alive"
+						},
+						{
+							"benelli_m4" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('benelli_m4') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "benelli_m4.shoot" ],
+					"transitions" : [
+						{
+							"default" : "((!q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4')) && !q.is_using_item) || !q.is_alive"
+						},
+						{
+							"benelli_m4" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('benelli_m4') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off", "/function benelli_m4/benelli_m4" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				//Reload
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:cartucho}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "benelli_m4.reload" ],
+					"transitions" : [
+						{
+							"reload.end" : "q.any_animation_finished && (q.scoreboard('benelli_m4') == 10 || q.scoreboard('benelli_m4') == 11 || q.scoreboard('benelli_m4') > 11)"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'benelli_m4') || !q.is_alive"
+						},
+						{
+							"shoot" : "q.scoreboard('benelli_m4') > 0 && q.is_using_item && q.scoreboard('benelli_m4_fire') == 0 && q.scoreboard('benelli_m4_explosive') == 0"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.benelli_m4_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				"reload.end" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/playsound gun.benelli_m4_reload_end @s", "/event entity @s guns:reload.off", "/function benelli_m4/benelli_m4" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished || !q.is_alive"
+						}
+					]
+				}
+			}
+		}
+	}
+}

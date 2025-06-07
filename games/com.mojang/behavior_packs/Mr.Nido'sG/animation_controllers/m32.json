@@ -1,0 +1,93 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.m32" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : { "on_entry" : [ "/scoreboard objectives add m32 dummy", "/scoreboard players add @s m32 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [ { "default" : "(1.0)" } ]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add m32 dummy", "/scoreboard players add @s m32 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"m32" : "q.scoreboard('m32') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'm32') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('m32') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'm32') && q.is_using_item && q.scoreboard('second_gun') == 0 && q.is_alive"
+						}
+					]
+				},
+				"m32" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('m32') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'm32')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('m32') < 0 && q.is_using_item"
+						},
+						{
+							"shoot" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('m32_fire') == 0 && q.scoreboard('m32_explosive') == 0"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "m32.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'm32')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"m32" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('m32') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off", "/function m32/m32" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				//Reload
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:grenade_bullet,quantity=6..}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'm32') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "m32.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm32') || !q.is_alive"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.m32_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

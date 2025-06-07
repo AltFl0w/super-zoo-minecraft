@@ -1,0 +1,16 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "minecraft:furnace_raw_swamp_eel"
+    },
+    "tags": [
+      "furnace",
+      "smoker",
+      "campfire",
+      "soul_campfire"
+    ],
+    "input": "fauna:raw_swamp_eel",
+    "output": "fauna:cooked_swamp_eel"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.remington_870.shoot.explosive": {
+      "loop": true,
+      "animation_length": 1.33,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.remington_870 @a[r=25]",
+			"/scoreboard players remove @s remington_870 1",
+			"/event entity @s guns:remington_870.explosive",
+			"/function remington_870/remington_870",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.remington_870.shoot.fire": {
+      "loop": true,
+      "animation_length": 1.33,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.remington_870 @a[r=25]",
+			"/scoreboard players remove @s remington_870 1",
+			"/event entity @s guns:remington_870.fire",
+			"/function remington_870/remington_870",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.remington_870.shoot": {
+      "loop": true,
+      "animation_length": 1.33,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.remington_870 @a[r=25]",
+			"/scoreboard players remove @s remington_870 1",
+			"/event entity @s guns:remington_870",
+			"/function remington_870/remington_870",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.remington_870.reload": {
+      "loop": true,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.benelli_m4_reload @a[r=25]", "/scoreboard players set @s remington_870_fire 0", "/scoreboard players set @s remington_870_explosive 0", "/function remington_870/remington_870"
+        ],
+        "0.45": [
+			"/scoreboard players add @s remington_870 1",
+			"/clear @s gunsaddon:cartucho 0 1"
+        ],
+        "0.475": [
+			"/function remington_870/remington_870"
+        ]
+      }
+    }
+  }
+}

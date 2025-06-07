@@ -1,0 +1,208 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.growlithe.quiet": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": [0, -1, -1],
+						"0.8": [0, 0, 0],
+						"1.6": [0, -1, -1]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.8": [-5, 0, 0],
+						"1.6": [5, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [0, 10, 0],
+						"0.8": [0, -10, 0],
+						"1.6": [0, 10, 0]
+					}
+				}
+			}
+		},
+		"animation.growlithe.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"growlithe": {
+					"rotation": {
+						"0.0": [-10, 0, 0],
+						"0.32": [10, 0, 0],
+						"0.8": [-10, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [30, 0, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"front_legs": {
+					"rotation": {
+						"0.0": [-50, 0, 0],
+						"0.52": [30, 0, 0],
+						"0.8": [-50, 0, 0]
+					},
+					"position": [0, 1, 0]
+				},
+				"back_legs": {
+					"rotation": {
+						"0.0": [50, 0, 0],
+						"0.52": [-25, 0, 0],
+						"0.8": [50, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.growlithe.sitting": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -1, 2]
+				},
+				"body": {
+					"rotation": [-45, 0, 0],
+					"position": [0, -2, 0],
+					"scale": [1, 1, 0.8]
+				},
+				"tail": {
+					"rotation": [90, 0, 0]
+				},
+				"front_legs": {
+					"position": [0, 1, 1],
+					"scale": [1, 1.2, 1]
+				},
+				"left_front_leg": {
+					"position": [0, 0, 1]
+				},
+				"right_front_leg": {
+					"position": [0, 0, 1]
+				},
+				"back_legs": {
+					"rotation": [-90, 0, 0],
+					"position": [0, -5, -2]
+				},
+				"right_back_leg": {
+					"rotation": [0, 0, 30],
+					"scale": [1, 0.7, 1]
+				},
+				"left_back_leg": {
+					"rotation": [0, 0, -30],
+					"scale": [1, 0.8, 1]
+				}
+			}
+		},
+		"animation.growlithe.jump": {
+			"loop": true,
+			"bones": {
+				"tail": {
+					"rotation": [-30, 0, 0]
+				},
+				"front_legs": {
+					"rotation": [-65, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"back_legs": {
+					"rotation": [57.5, 0, 0]
+				}
+			}
+		},
+		"animation.growlithe.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -5, 0]
+				},
+				"body": {
+					"rotation": [20, 0, 0],
+					"position": [0, -2, 1]
+				},
+				"tail": {
+					"rotation": [0, 35, 0]
+				},
+				"neck": {
+					"position": [0, 0, 0]
+				},
+				"left_front_leg": {
+					"position": [0, -1, 0],
+					"scale": [1, 0.8, 1]
+				},
+				"right_front_leg": {
+					"position": [0, -1, 0],
+					"scale": [1, 0.8, 1]
+				}
+			}
+		},
+		"animation.growlithe.swimming": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"body": {
+					"rotation": [-62.5, 0, 0],
+					"position": [0, -1, -2]
+				},
+				"front_legs": {
+					"rotation": [-90, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"left_front_leg": {
+					"rotation": {
+						"0.0": [-20, 0, 0],
+						"0.4": [17.5, 0, 0],
+						"0.8": [-22.5, 0, 0]
+					}
+				},
+				"right_front_leg": {
+					"rotation": {
+						"0.0": [20, 0, 0],
+						"0.4": [-17.5, 0, 0],
+						"0.8": [20, 0, 0]
+					}
+				},
+				"back_legs": {
+					"rotation": [-55, 0, 0],
+					"position": [0, -5, -6]
+				},
+				"right_back_leg": {
+					"rotation": {
+						"0.0": [20, 0, 0],
+						"0.4": [-20, 0, 0],
+						"0.8": [20, 0, 0]
+					}
+				},
+				"left_back_leg": {
+					"rotation": {
+						"0.0": [-20, 0, 0],
+						"0.4": [20, 0, 0],
+						"0.8": [-20, 0, 0]
+					}
+				}
+			}
+		},
+        "animation.growlithe.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,23,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

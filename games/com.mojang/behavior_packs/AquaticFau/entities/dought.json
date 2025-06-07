@@ -1,0 +1,197 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "fauna:dought",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:dinosaur_adult": {
+        "minecraft:behavior.breed": {
+          "priority": 1
+        },
+        "minecraft:breedable": {
+          "breed_items": [
+            "wheat"
+          ],
+          "breeds_with": {
+            "baby_type": "fauna:dought",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            },
+            "mate_type": "fauna:dought"
+          },
+          "require_tame": false
+        },
+        "minecraft:scale": {
+          "value": 1.8
+        },
+        "minecraft:knockback_resistance": {
+          "value": 50
+        }
+      },
+      "minecraft:dinosaur_baby": {
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "wheat"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up_wild",
+            "target": "self"
+          }
+        },
+        "minecraft:is_baby": {},
+        "minecraft:scale": {
+          "value": 0.6
+        },
+        "minecraft:health": {
+          "max": 50,
+          "value": 50
+        }
+      }
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "\u003d\u003d",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(3,5) : 0"
+      },
+      "minecraft:scale": {
+        "value": 1.8
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/dought.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "mob",
+          "dought"
+        ]
+      },
+      "minecraft:breathable": {
+        "totalSupply": 50,
+        "suffocateTime": 0,
+        "breathesAir": false,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.2,
+        "height": 0.35
+      },
+      "minecraft:health": {
+        "value": 155,
+        "max": 155
+      },
+      "minecraft:behavior.delayed_attack": {
+        "priority": 3,
+        "speed_multiplier": 1.2,
+        "track_target": true,
+        "hit_delay_pct": 0.3,
+        "attack_duration": 1.76,
+        "reach_multiplier": 2
+      },
+      "minecraft:movement": {
+        "value": 0.13
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.3
+      },
+      "minecraft:behavior.random_swim": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "xz_dist": 36,
+        "interval": 12
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": false,
+        "can_path_over_water": true,
+        "can_swim": true,
+        "can_walk": false,
+        "can_breach": true,
+        "can_sink": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.sway": {
+        "sway_amplitude": 0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:attack": {},
+      "minecraft:behavior.look_at_target": {
+        "priority": 7
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 6
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:behavior.move_to_water": {
+        "priority": 1,
+        "search_range": 64,
+        "search_height": 5
+      },
+      "minecraft:physics": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:dinosaur_adult"
+              ]
+            },
+            "remove": {},
+            "weight": 4
+          },
+          {
+            "add": {
+              "component_groups": [
+                "minecraft:dinosaur_baby"
+              ]
+            },
+            "remove": {},
+            "weight": 1
+          }
+        ]
+      },
+      "minecraft:entity_transformed": {
+        "add": {
+          "component_groups": [
+            "minecraft:dinosaur_baby"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "minecraft:dinosaur_baby"
+          ]
+        }
+      }
+    }
+  }
+}

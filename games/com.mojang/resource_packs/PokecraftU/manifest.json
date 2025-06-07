@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": { 
+    "name": "§2Pokecraft Unite ADDON §1Resource",
+    "description": "§b§lCreated by 7INDORAPTOR7",
+    "uuid": "7c4d3b90-c727-424d-84bf-a1f51bd6523e",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0 
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "3cc4857c-55f8-4102-a076-a61dc2a0ab10",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

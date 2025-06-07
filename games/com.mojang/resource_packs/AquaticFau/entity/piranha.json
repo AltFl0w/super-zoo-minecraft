@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.piranha"
+      },
+      "identifier": "fauna:piranha",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.salmon"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "piranha",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/piranha"
+      },
+      "animations": {
+        "attack": "animation.piranha.attack",
+        "idle": "animation.piranha.idle",
+        "swim": "animation.piranha.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

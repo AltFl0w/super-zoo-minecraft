@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "showtime:toy_bonnie",
+      "materials": {
+        "default": "base",
+        "outer": "guitarra"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_toy_bonnie",
+        "guitarra": "textures/entity/danyfox/df_guitarra2"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_bonnie",
+        "guitarra": "geometry.df_guitarra2"
+      },
+      "animations": {
+        "showtime": "animation.toybonnie.guitarra",
+
+        "general": "controller.animation.showtime"
+      },
+      "scripts": {
+        "animate": [
+         "general"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf", "controller.render.guitarra" ],
+      "spawn_egg": {
+        "texture": "df_toy_bonnie_showtime",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:mega_ring_empty",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon": "mega_ring_empty"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:thunder_forged_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" a ",
+			"aia",
+			" a "
+		],
+		"key": {
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"a": {
+				"item": "wep:electric_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:thunder_forged_ingot",
+				"count": 3
+			}
+		]
+	}
+}

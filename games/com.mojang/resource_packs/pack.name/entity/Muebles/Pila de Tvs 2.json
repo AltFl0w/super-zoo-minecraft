@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:tvs2_fnaf2",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_pila_de_tvs"
+      },
+      "geometry": {
+        "default": "geometry.df_pila_de_tvs2"
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_tvs2",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+execute at @s[scores={m4a1_shotgun=5}] run title @s actionbar §l§6[§45§6/§45§6]
+execute at @s[scores={m4a1_shotgun=4}] run title @s actionbar §l§6[§44§6/§45§6]
+execute at @s[scores={m4a1_shotgun=3}] run title @s actionbar §l§6[§43§6/§45§6]
+execute at @s[scores={m4a1_shotgun=2}] run title @s actionbar §l§6[§42§6/§45§6]
+execute at @s[scores={m4a1_shotgun=1}] run title @s actionbar §l§6[§41§6/§45§6]
+execute at @s[scores={m4a1_shotgun=0}] run title @s actionbar §l§6[§40§6/§45§6]

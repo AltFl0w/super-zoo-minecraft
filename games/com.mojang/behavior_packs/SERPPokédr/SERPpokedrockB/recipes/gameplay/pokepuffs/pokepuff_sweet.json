@@ -1,0 +1,22 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+        "identifier":"serp:pokepuff_sweet"
+    },
+    "tags":["crafting_table"],
+    "group":"mega",
+    "pattern":[
+      "wbw",
+      "sos",
+      "wbw"
+    ],
+    "key":{
+      "b":{"item":"serp:pecha_berry"},
+      "s":{"item":"minecraft:sugar"},
+      "o":{"item":"serp:oran_berry"},
+      "w":{"item":"minecraft:wheat"}
+    },
+    "result":{"item":"serp:pokepuff_sweet"}
+  }
+}

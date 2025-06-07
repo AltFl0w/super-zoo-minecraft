@@ -1,0 +1,12 @@
+{
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"fire bomb": {
+			"textures": "textures/items/fire bomb"
+		},
+		"snow bomb": {
+			"textures": "textures/items/snow bomb"
+		}
+    }
+}

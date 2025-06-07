@@ -1,0 +1,66 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ravemon:ravemon",
+			"materials": {
+				"default": "ravemon"
+			},
+			"textures": {
+				"charging1": "textures/ravemon",
+				"charging2": "textures/ravemon",
+				"charging3": "textures/ravemon",
+				"charging4": "textures/ravemon",
+				"var1": "textures/ravemon",
+				"var2": "textures/ravemon",
+				"var3": "textures/ravemon",
+				"var4": "textures/ravemon"
+			},
+			"geometry": {
+				"default": "geometry.ravemon"
+			},
+			"animations": {
+				"look_at_target": "animation.dragon.look_at_target",
+				"hrotation": "animation.dragon.rot",
+				"pose": "animation.monstrous_nightmare.pose",
+				"attack0": "animation.ravemon.attack",
+				"tempted": "animation.ravemon.tempted",
+				"attack1": "animation.ravemon.attack",
+				"idle": "animation.ravemon.idle",
+				"sitting": "animation.ravemon.sit",
+				"walking": "animation.ravemon.walk",
+				"resting": "animation.ravemon.sit",
+				"flying": "animation.ravemon.fly",
+				"fly_rest": "animation.ravemon.glide",
+				"fly_open": "animation.ravemon.glide",
+				"look": "controller.animation.dragon.look_at_target",
+				"move": "controller.animation.dragon.move",
+				"rest": "controller.animation.dragon.rest",
+				"sit": "controller.animation.dragon.sit",
+				"tempt": "controller.animation.dragon.tempt",
+				"attack": "controller.animation.ravemon.attack"
+			},
+			"scripts": {
+				"animate": [
+					"move",
+					"look",
+					"rest",
+					"sit",
+					"tempt",
+					"attack"
+				],
+				"pre_animation": [
+					"variable.attack = Math.sin(variable.attack_time * 30.0);",
+					"variable.attack_num = Math.round(Math.random(1, 4));"
+				]
+			},
+			"render_controllers": [
+				"controller.render.ravemon"
+			],
+			"spawn_egg": {
+				"base_color": "#861212",
+				"overlay_color": "#C89657"
+			}
+		}
+	}
+}

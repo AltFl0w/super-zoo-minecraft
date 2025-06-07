@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:estrellas_colgantes2",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_estrellas"
+      },
+      "geometry": {
+        "default": "geometry.df_estrellas_colgantes2"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_estrellas2",
+        "texture_index": 0
+      }
+    }
+  }
+}

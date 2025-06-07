@@ -1,0 +1,44 @@
+{
+  "individual_event_sounds" : {
+     "events" :{
+        "remedy": {"sound": "mob.zombie.remedy","volume": 1,"pitch": 1},
+        "tripod": {"sound": "serp.pokedex","volume": 1,"pitch": 1}
+     }
+  },
+  "entity_sounds": {
+    "entities": {
+    "serp:ball_thrown":{"volume":0,"events":{"death":"empty"}},
+    "serp:trade_machine":{"volume":1,"pitch": 1,"events":{"death":"mob.pc.boot_off","spawn": "mob.pc.boot_on"}},
+    "serp:despawn": {"volume": 0, "pitch":0, "events":{"death":"mob.empty"}},
+    "serp:rotomarket": {"volume": 0.5, "pitch":1,"events":{"spawn":"serp.market.spawn"}},
+    "serp:rotomarket_spawned": {"volume": 0.5, "pitch":1,"events":{"death":"serp.market.store","haggle": "serp.market.trade"}},
+    "serp:bike": {"volume": 0.5, "pitch":1,"events":{"spawn":"serp.bike_bell","death":"mob.pc.boot_off"}},
+    "serp:mini_lab":{"volume":1,"pitch": 1,"events":{"death":"mob.pc.boot_off","spawn": "mob.pc.boot_on"}},
+    "serp:apricorn": {"volume":0.5,"pitch" :1,"events":{"hurt":"dig.grass","spawn": {"sound":"mob.chicken.plop","volume": 1},"death": {"sound":"mob.pc.boot_off","volume": 0.5,"pitch" : 1.5}}},
+    "serp:loot_bubble": {"volume":2,"pitch":1,"events":{"death":"mob.chicken.plop"}},
+    "serp:berry_tree1":{"volume": 0.5,"pitch":1,"events":{"spawn":{"sound": "mob.chicken.plop","volume": 1},"hurt": "dig.grass","death": "mob.berry_tree.item"}},
+    "serp:evo_ore": {"volume": 0.3,"pitch" : 1.0,"events": {"hurt": "dig.stone","death": "mob.berry_tree.item"}},
+    "serp:fossil_ore": {"volume": 0.3,"pitch" : 1.0,"events": {"hurt": "dig.stone","death": "mob.berry_tree.item"}},
+    "serp:pc_box": {"volume":1,"pitch":1,"events": {"death": "mob.pc.boot_off","spawn": "mob.pc.boot_on"}},
+    "serp:slot_machine":{"volume":1,"pitch": 1,"events":{"death":"mob.pc.boot_off","spawn": "mob.pc.boot_on"}},
+    "serp:healing_machine":{"volume":1,"pitch": 1,"events":{"death":"mob.pc.boot_off","spawn": "mob.pc.boot_on"}},
+    "serp:pokeball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:greatball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:ultraball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:masterball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:diveball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:duskball":{"volume": 0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:fastball":{"volume": 0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:heavyball": {"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:lureball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:moonball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:nestball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:netball": {"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:parkball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:premiereball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:quickball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:safariball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}},
+    "serp:timerball":{"volume":0.5,"pitch":1,"events":{"death":"serp.pokeball.capture"}}
+    }
+  }
+}

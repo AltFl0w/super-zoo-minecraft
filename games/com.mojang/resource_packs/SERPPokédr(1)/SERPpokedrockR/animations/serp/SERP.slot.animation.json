@@ -1,0 +1,55 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.slot.pull": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.38,
+			"bones": {
+				"lever": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1": {
+							"post": [75, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [60, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [-15, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.slot.rotation": {
+			"loop": true,
+			"animation_length": 0.2,
+			"bones": {
+				"1": {
+					"rotation": ["q.property('serp:rot1')*45", 0, 0]
+				},
+				"2": {
+					"rotation": ["q.property('serp:rot2')*45", 0, 0]
+				},
+				"3": {
+					"rotation": ["q.property('serp:rot3')*45", 0, 0]
+				}
+			},
+			"sound_effects": {
+				"0.1": {
+					"effect": "clap"
+				}
+			}
+		}
+	}
+}

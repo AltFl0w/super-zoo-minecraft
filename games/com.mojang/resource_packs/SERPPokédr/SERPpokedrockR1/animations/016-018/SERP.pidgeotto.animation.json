@@ -1,0 +1,369 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pidgeotto.quiet": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": {
+							"post": [0, -2, -6],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9": {
+							"post": [0, -4, -8],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [0, -2, -6],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body_root": {
+					"position": [0, -1, 0]
+				},
+				"quiet_wings": {
+					"rotation": {
+						"0.0": {
+							"post": [50, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [75, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [50, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, -4, -7],
+							"lerp_mode": "catmullrom"
+						},
+						"0.7": {
+							"post": [0, -6, -9],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [0, -4, -7],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"right_wing_quiet": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [0, 0, 15],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": [60, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [70, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [60, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 2],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wings": {
+					"position": {
+						"0.0": {
+							"post": [0, -2, -4],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": 0
+				},
+				"right_leg": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 20, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"left_wing_quiet": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [0, 0, -15],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"0.0": {
+							"post": [0, -20, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				}
+			}
+		},
+		"animation.pidgeotto.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"pidgeotto": {
+					"position": {
+						"0.0": {
+							"post": [0, 4, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [0, 5, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [0, 4, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"head": {
+					"position": {
+						"0.0": {
+							"post": [0, -14, -11],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wings": {
+					"position": {
+						"0.0": {
+							"post": [0, -8, -5],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wing_right": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 30],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [0, 0, -30],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [0, 0, 30],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": {
+						"0.0": {
+							"post": [1.5, 1, 1.8],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"legs": {
+					"rotation": {
+						"0.0": {
+							"post": [45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4": {
+							"post": [25, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [45, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, -3, 5],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wing_left": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, -30],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [0, 0, 30],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [0, 0, -30],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": {
+						"0.0": {
+							"post": [1.5, 1, 1.8],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": {
+							"post": [90, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, -3, 4],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"quiet_wings": {
+					"rotation": {
+						"0.0": {
+							"post": [60, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, -10, -8],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": 0
+				}
+			}
+		},
+		"animation.pidgeotto.sitting": {
+			"loop": true,
+			"bones": {
+				"pidgeotto": {
+					"position": [0, -2, 0]
+				},
+				"head": {
+					"position": [0, -6, -7]
+				},
+				"body_root": {
+					"scale": [1, 0.9, 1]
+				},
+				"body": {
+					"rotation": [90, 0, 0],
+					"position": [0, 0, 4]
+				},
+				"right_wing_quiet": {
+					"position": [0, 0, -1]
+				},
+				"legs": {
+					"position": [0, 2, 0]
+				},
+				"left_wing_quiet": {
+					"position": [0, 0, -1]
+				},
+				"quiet_wings": {
+					"rotation": [65, 0, 0],
+					"position": [0, -6, -7]
+				},
+				"flying_wings": {
+					"position": [0, -5, -6],
+					"scale": 0
+				}
+			}
+		},
+		"animation.pidgeotto.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -1, -7]
+				},
+				"flying_wings": {
+					"rotation": [-50, 0, 0],
+					"position": [0, 0, -3],
+					"scale": [1, 1, 1.8]
+				},
+				"flying_wing_right": {
+					"rotation": [-45, -10, -55],
+					"scale": [1.6, 1, 1]
+				},
+				"legs": {
+					"rotation": [-65, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 0, 35],
+					"position": [0, 0, 0]
+				},
+				"flying_wing_left": {
+					"rotation": [-45, 10, 55],
+					"scale": [1.6, 1, 1]
+				},
+				"left_leg": {
+					"rotation": [0, 0, -35],
+					"position": [0, 0, 0]
+				},
+				"body": {
+					"rotation": [35, 0, 0]
+				},
+				"quiet_wings": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.pidgeotto.direction": {
+			"loop": true,
+			"bones": {
+				"pidgeotto": {
+					"rotation": ["query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+		"animation.pidgeotto.health_bar": {
+			"loop": true,
+			"bones": {
+				"health_hover": {
+					"rotation": ["q.camera_rotation(0)", "q.camera_rotation(1)-q.body_y_rotation", 0],
+					"position": [0, 34, 0],
+					"scale": "query.is_in_ui?0:1.5"
+				},
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:foxdee",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/foxdee/df_foxdee"
+      },
+      "geometry": {
+        "default": "geometry.df_foxdee"
+      },
+      "animations": {
+        "df_foxdee_general": "animation.df_foxdee.base",
+        "df_foxdee_cola1": "animation.df_foxdee.cola",
+        "df_foxdee_cola2": "animation.df_foxdee.cola2",
+        "df_caminando_foxdee": "animation.df_foxdee.walk",
+        "df_corriendo_foxdee": "animation.df_foxdee.run",
+        "df_ataque_foxdee": "animation.df_foxdee.attack",
+        "df_parpadeo_foxdee": "animation.df_foxdee.parpadeo",
+        "df_escalando_foxdee": "animation.df_foxdee.escalando",
+        "df_seleccion_foxdee": "animation.df_foxdee.casting",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_foxdee.movimiento",
+        "salto": "controller.animation.df_foxdee.salto",
+        "general": "controller.animation.df_foxdee.general",
+        "ataque": "controller.animation.df_foxdee.ataque",
+        "corriendo": "controller.animation.df_foxdee.corriendo"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general", "ataque"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.foxdee" ],
+      "spawn_egg": {
+        "texture": "df_foxdee",
+        "texture_index": 0
+      }
+    }
+  }
+}

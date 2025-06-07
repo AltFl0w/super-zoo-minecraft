@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:timerball",
+      "materials": { "default": "entity_emissive_alpha" },
+      "textures": {
+        "default": "textures/entity/pokeballs/timerball"
+      },
+      "geometry": {
+        "default": "geometry.serppokeball"
+      },
+      "animations": {
+  "capture": "animation.pokeball.capture",
+  "free": "animation.pokeball.free",
+  "enter": "animation.pokeball.enter",
+  "capture_controller": "controller.animation.capture"
+      },
+      "scripts": {
+        "animate": ["enter","capture","capture_controller"]
+      },
+      "sound_effects": {
+        "pop": "serp.pokeball.pop",
+        "wiggle": "serp.pokeball.wiggle",
+        "catch": "serp.pokeball.catch",
+        "enter": "serp.pokeball.enter",
+        "free": "serp.pokeball.free"
+      },
+      "particle_effects": {
+        "capture1": "serp:capture1",
+        "capture2": "serp:capture2",
+        "capture3": "serp:capture3",
+        "free": "serp:free"
+            },
+      "render_controllers": [ "controller.render.serp_general" ]
+    }
+  }
+}

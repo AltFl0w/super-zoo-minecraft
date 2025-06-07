@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:mystic_water",
+      "menu_category":{"category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"equippable.43"},
+      "minecraft:icon":"mystic_water"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{"minecraft:entity":
+	{"component_groups":{
+	},
+	"components":
+  {
+  "minecraft:collision_box": {
+	  "width": 1.8,
+	  "height": 2.5
+  },
+		"minecraft:fire_immune":true,
+		"minecraft:health":
+		{"mass":0.0,"max":10.0,"value":10.0},
+		"minecraft:input_ground_controlled":{
+		},
+		"minecraft:jump.static":{
+		},
+		"minecraft:movement":
+		{"mass":0.0,"max":0.01,"value":0.01},
+		"minecraft:movement.basic":{
+  
+		},"minecraft:nameable":
+		{
+		},
+		"minecraft:navigation.walk":
+		{"avoid_water":false,
+			"can_float":false,
+			"can_open_doors":false,
+			"can_pass_doors":false,
+			"can_path_over_water":true
+		},
+			"minecraft:physics":
+			{"has_gravity":true
+			},
+			"minecraft:rideable":
+			{"crouching_skip_interact":true,
+				"family_types":["player"],
+				"interact_text":"Drive",
+				"priority":0,"seat_count":1,
+				"seats":[{"max_rider_count":0.0,"min_rider_count":0.0,"position":[0.0,1.0,0.1],
+					"rotate_rider_by":0.0}]
+					},
+					"minecraft:scale":
+					{"mass":0.0,"max":0.7,"value":0.7},
+					"minecraft:type_family":
+					{"family":["muebles"]}
+				},
+					"description":
+					{"identifier":"df:silla_escritorio",
+						"is_experimental":false,
+						"is_spawnable":true,
+						"is_summonable":true
+					},
+						"events":{}
+						},
+						"format_version":"1.8.0"}

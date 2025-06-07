@@ -1,0 +1,14 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.charizard_proyectil": {
+     "animation_length": 11.0,
+      "loop": true,
+      "timeline": {
+        "10.0": [
+"/kill @s"
+            ]
+      }
+    }
+  } 
+}

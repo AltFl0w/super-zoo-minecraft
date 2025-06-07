@@ -1,0 +1,16 @@
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:tornado_forged_metal"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.iron"
+			},
+			"minecraft:icon": "tornado_forged_metal",
+			"minecraft:render_offsets": "ingots",
+			"minecraft:display_name": {}
+		}
+	}
+}

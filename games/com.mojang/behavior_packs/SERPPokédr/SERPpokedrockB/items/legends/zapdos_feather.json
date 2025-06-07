@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:zapdos_feather",
+	    "menu_category":{"category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:zapdos_feather.name"},
+	    "minecraft:icon":"zapdos_feather"
+    }
+  }
+}

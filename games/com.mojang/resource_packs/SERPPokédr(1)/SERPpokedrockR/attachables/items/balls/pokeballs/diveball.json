@@ -1,0 +1,14 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:attachable":{
+    "description":{
+      "identifier":"serp:diveball",
+      "materials":{"default":"entity_alphatest"},
+      "textures":{"default":"textures/entity/pokeballs/diveball"},
+      "geometry":{"default":"geometry.serppokeball"},
+      "animations":{"fm":"animation.pokeball_item.fm","tm":"animation.pokeball_item.tm"},
+      "scripts":{"animate":[{"fm":"c.is_first_person"},{"tm":"!c.is_first_person"}]},
+      "render_controllers":["controller.render.default"]
+    }
+  }
+}

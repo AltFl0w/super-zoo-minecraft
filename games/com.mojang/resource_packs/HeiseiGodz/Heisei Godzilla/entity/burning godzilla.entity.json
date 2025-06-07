@@ -1,0 +1,44 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "heiseigodzilla:burning_godzilla",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"normal": "textures/entities/burning godzilla",
+				"soiled": "textures/entities/burning godzilla",
+				"atomic": "textures/entities/burning godzilla"
+			},
+			"geometry": {
+				"default": "geometry.heiseigodzilla.burning_godzilla"
+			},
+            "animations": {
+                "animIdle": "animation.burning_godzilla.idle",
+                "animMove": "animation.burning_godzilla.walk",
+                "animRoar": "animation.burning_godzilla.roar",
+                "animAttack": "animation.burning_godzilla.attack",
+                "animAtomicBreath": "animation.burning_godzilla.atomic_breath",
+                "contMovement": "controller.animation.heisei_godzilla_movement",
+                "contAttack": "controller.animation.heisei_godzilla_attack"
+            },
+            "scripts": {
+                "animate": [
+                    "contMovement",
+                    "contAttack"
+                ]
+            },
+			"render_controllers": [
+				"controller.render.heisei_godzilla"
+			],
+			"spawn_egg": {
+				"base_color": "#111111",
+				"overlay_color": "#b63d18"
+			},
+            "sound_effects": {
+                "atomicBreathSound": "mob.heisei_godzilla.atomic_breath"
+            }
+        }
+    }
+}

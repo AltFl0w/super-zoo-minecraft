@@ -1,0 +1,15 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.poisonous_hammer_axe": {
+			"animation_length": 1,
+			"loop": true,
+			"timeline": {
+				"0.5": [
+					"/event entity @s wep:on_cast_poison_ball",
+					"/playsound dig.ancient_debris @a ~~~ 1 0.7"
+				]
+			}
+		}
+	}
+}

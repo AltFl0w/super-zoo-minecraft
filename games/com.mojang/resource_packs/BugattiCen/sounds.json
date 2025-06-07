@@ -1,0 +1,446 @@
+{
+	"entity_sounds": {
+		"entities": {
+			"bugatti:centodieci_black_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_black_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_blue_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_blue_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_bronze_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_bronze_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_green_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_green_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_orange_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_orange_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_pink_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_pink_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_purple_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_purple_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_red_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_red_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_white_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_white_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_yellow_1": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			},
+			"bugatti:centodieci_yellow_2": {
+				"volume": 1,
+				"pitch": [
+					1,
+					1
+				],
+				"events": {
+					"step": {
+						"sound": "vehicle.bugatti_cen.drive",
+						"volume": 1.2,
+						"pitch": 1.1
+					},
+					"hurt": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					},
+					"death": {
+						"sound": "vehicle.bugatti_cen.hit",
+						"volume": 1
+					}
+				}
+			}
+		}
+	}
+}

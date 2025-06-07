@@ -1,0 +1,49 @@
+{
+    "format_version": "1.17.0",
+    "minecraft:block": {
+    "description": {
+    "identifier": "serp:sign_bug",
+    "category": "Construction",
+	"register_to_creative_menu": true,
+	"is_experimental": false,
+    "properties":{"serp:facing":[2,3,4,5]}
+        },
+    "components": {
+        "minecraft:pick_collision": {
+    "origin": [-8,0,0],"size": [16,16,2]
+            },
+        "minecraft:entity_collision": {
+    "origin": [-8,0,0],"size": [16,16,2]
+            },
+    "minecraft:block_light_absorption": 0,
+    "minecraft:block_light_emission": 0.7,
+    "minecraft:unwalkable": true,
+    "minecraft:preventsjumping": true,
+        "minecraft:material_instances": {
+            "*": {
+                "texture": "sign_bug",
+                "render_method": "blend",
+                "face_dimming": false
+            }
+        },
+    "minecraft:geometry":"geometry.serpgymsign",
+        "minecraft:destroy_time": 999,
+        "minecraft:on_player_placing": {
+            "event": "serp:put"
+        },
+        "minecraft:friction": 0.5,
+        "minecraft:map_color": "#ffffff",
+        "minecraft:flammable": {
+    "flame_odds": 0,"burn_odds": 0
+        }
+    },
+    "events": {
+    "serp:put": {"set_block_property": {"serp:facing": "(query.cardinal_facing_2d)"}}},
+        "permutations": [
+{"condition":"query.block_property('serp:facing')==2","components":{"minecraft:rotation":[0,180,0]}},
+{"condition":"query.block_property('serp:facing')==3","components":{"minecraft:rotation":[0,0,0]}},
+{"condition":"query.block_property('serp:facing')==4","components":{"minecraft:rotation":[0,270,0]}},
+{"condition":"query.block_property('serp:facing')==5","components":{"minecraft:rotation":[0,90,0]}}
+        ]
+    }
+}

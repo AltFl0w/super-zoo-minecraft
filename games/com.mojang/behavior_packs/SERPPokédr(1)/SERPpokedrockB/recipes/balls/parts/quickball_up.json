@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:quickball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "aca",
+      "aca"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_yellow"
+      },
+      "c": {
+        "item": "serp:apricorn_cyan"
+      }
+    },
+    "result": {
+      "item": "serp:quickball_up",
+      "count": 6
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:asian_swamp_eel",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "asian_swamp_eel",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

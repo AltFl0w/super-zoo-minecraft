@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:loveball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "aba",
+      "aba"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_pink"
+      },
+      "b": {
+        "item": "serp:apricorn_white"
+      }
+    },
+    "result": {
+      "item": "serp:loveball_up",
+      "count": 6
+    }
+  }
+}

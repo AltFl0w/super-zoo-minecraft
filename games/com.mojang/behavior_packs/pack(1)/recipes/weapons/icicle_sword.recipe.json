@@ -1,0 +1,27 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:icicle_sword"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"   ",
+			" # ",
+			" # "
+		],
+		"key": {
+			"#": {
+				"item": "wep:ice_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:icicle_sword",
+				"count": 1
+			}
+		]
+	}
+}

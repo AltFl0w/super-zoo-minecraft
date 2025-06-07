@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:peluchetoybonnie",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/peluches/toybonniepeluche"
+      },
+      "geometry": {
+        "default": "geometry.toybonniepeluche"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_peluche_toy_bonnie",
+        "texture_index": 0
+      }
+    }
+  }
+}

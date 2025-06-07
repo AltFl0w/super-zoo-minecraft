@@ -1,0 +1,73 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+"controller.render.serp_general": {
+"geometry": "Geometry.default",
+"materials": [{ "*": "Material.default" }],
+"textures": ["Texture.default"],
+"is_hurt_color": { "r": 0.0,"b": 0.0, "g": 0.0, "a": 0.0 } },
+    "controller.render.profs": {
+      "arrays": {
+"textures":{"Array.variants":["Texture.oak","Texture.elm","Texture.kapok"]},
+"geometries":{"Array.geos":["Geometry.oak","Geometry.elm","Geometry.kapok"]}},
+"geometry":"Array.geos[query.variant]",
+"materials":[{"*":"Material.default"}],
+"textures":["Array.variants[query.variant]"]},
+    "controller.render.pokestop": {
+      "arrays": {
+        "textures": {
+"Array.variants": ["Texture.normal","Texture.phase1","Texture.phase2","Texture.phase3"]}},
+"geometry": "Geometry.default",
+"materials": [ { "*": "Material.default" }],
+"textures":["Array.variants[query.variant]"],
+"is_hurt_color":{"r":0.0,"b":0.0,"g":0.0,"a":0.0}},
+"controller.render.pc": {
+"arrays": {
+"textures": {
+"Array.variants": ["Texture.default","Texture.potions","Texture.pokeballs","Texture.stuff", "Texture.suits"]}},
+"geometry": "Geometry.default",
+"materials": [ { "*": "Material.default" }],
+"textures":["Array.variants[query.variant]"],
+"is_hurt_color": { "r": 0.0,"b": 0.0, "g": 0.0, "a": 0.0 } },
+    "controller.render.berry_tree": {
+"geometry": "Geometry.default",
+"materials": [ { "*": "Material.default" }],
+"textures":["Texture.default"],
+"part_visibility": [{"fruit": "query.variant == 3" },{"log": "!query.variant == 0" }],
+"is_hurt_color": { "r": 0.0,"b": 0.0, "g": 0.0, "a": 0.0 } },
+    "controller.render.apricorn": {
+"geometry": "Geometry.default",
+"part_visibility":[
+{"stem": "query.variant == 0"},
+{"foliage": "!query.variant == 0"},
+{"log":"!query.variant == 0"},
+{"red": "query.skin_id == 1"},
+{"blue": "query.skin_id == 2"},
+{"yellow": "query.skin_id == 3"},
+{"green": "query.skin_id == 4"},
+{"pink": "query.skin_id == 5"},
+{"orange": "query.skin_id == 6"},
+{"cyan": "query.skin_id == 7"},
+{"black": "query.skin_id == 8"},
+{"white": "query.skin_id == 9"} ],
+"materials": [ { "*": "Material.default" }],
+"textures":["Texture.default"],
+"is_hurt_color": { "r": 0.0,"b": 0.0, "g": 0.0, "a": 0.0 } },
+
+    "controller.render.ball_thrown": {
+      "arrays": {
+        "textures": {
+"Array.variants": ["Texture.pokeball","Texture.greatball","Texture.ultraball","Texture.masterball","Texture.diveball","Texture.duskball","Texture.fastball","Texture.heavyball","Texture.lureball","Texture.moonball","Texture.nestball","Texture.netball","Texture.parkball","Texture.premierball","Texture.safariball","Texture.timerball"] } },
+"geometry": "Geometry.default",
+"materials": [ { "*": "Material.default" }],
+"textures":["Array.variants[query.variant]"],
+"is_hurt_color": { "r": 0.0,"b": 0.0, "g": 0.0, "a": 0.0 } },
+    "controller.render.pokedex": {
+      "arrays": {
+"textures":{"Array.variants":["Texture.data_0","Texture.data_1","Texture.data_2","Texture.data_3","Texture.data_4","Texture.data_5","Texture.data_6","Texture.data_7","Texture.data_8","Texture.data_9","Texture.data_10","Texture.data_11","Texture.data_12","Texture.data_13","Texture.data_14","Texture.data_15","Texture.data_16","Texture.data_17","Texture.data_18","Texture.data_19","Texture.data_20","Texture.data_21","Texture.data_22","Texture.data_23","Texture.data_24","Texture.data_25","Texture.data_26","Texture.data_27","Texture.data_28","Texture.data_29","Texture.data_30","Texture.data_31","Texture.data_32","Texture.data_33","Texture.data_34","Texture.data_35","Texture.data_36","Texture.data_37","Texture.data_38","Texture.data_39","Texture.data_40","Texture.data_41","Texture.data_42","Texture.data_43","Texture.data_44","Texture.data_45","Texture.data_46","Texture.data_47","Texture.data_48","Texture.data_49","Texture.data_50","Texture.data_51","Texture.data_52","Texture.data_53","Texture.data_54","Texture.data_55","Texture.data_56","Texture.data_57","Texture.data_58","Texture.data_59","Texture.data_60","Texture.data_61","Texture.data_62","Texture.data_63","Texture.data_64","Texture.data_65","Texture.data_66","Texture.data_67","Texture.data_68","Texture.data_69","Texture.data_70","Texture.data_71","Texture.data_72","Texture.data_73","Texture.data_74","Texture.data_75","Texture.data_76","Texture.data_77","Texture.data_78","Texture.data_79","Texture.data_80","Texture.data_81","Texture.data_82","Texture.data_83","Texture.data_84","Texture.data_85","Texture.data_86","Texture.data_87","Texture.data_88","Texture.data_89","Texture.data_90","Texture.data_91","Texture.data_92","Texture.data_93","Texture.data_94","Texture.data_95","Texture.data_96","Texture.data_97","Texture.data_98","Texture.data_99","Texture.data_100","Texture.data_101","Texture.data_102","Texture.data_103","Texture.data_104","Texture.data_105","Texture.data_106","Texture.data_107","Texture.data_108","Texture.data_109","Texture.data_110","Texture.data_111","Texture.data_112","Texture.data_113","Texture.data_114","Texture.data_115","Texture.data_116","Texture.data_117","Texture.data_118","Texture.data_119","Texture.data_120","Texture.data_121","Texture.data_122","Texture.data_123","Texture.data_124","Texture.data_125","Texture.data_126","Texture.data_127","Texture.data_128","Texture.data_129","Texture.data_130","Texture.data_131","Texture.data_132","Texture.data_133","Texture.data_134","Texture.data_135","Texture.data_136","Texture.data_137","Texture.data_138","Texture.data_139","Texture.data_140","Texture.data_141","Texture.data_142","Texture.data_143","Texture.data_144","Texture.data_145","Texture.data_146","Texture.data_147","Texture.data_148","Texture.data_149","Texture.data_150","Texture.data_151","Texture.data_152","Texture.data_153","Texture.data_154","Texture.data_155","Texture.data_156","Texture.data_157","Texture.data_158","Texture.data_159","Texture.data_160","Texture.data_161","Texture.data_162","Texture.data_163","Texture.data_164","Texture.data_165","Texture.data_166","Texture.data_167","Texture.data_168","Texture.data_169","Texture.data_170","Texture.data_171","Texture.data_172","Texture.data_173","Texture.data_174","Texture.data_175","Texture.data_176","Texture.data_177","Texture.data_178","Texture.data_179","Texture.data_180","Texture.data_181","Texture.data_182","Texture.data_183","Texture.data_184","Texture.data_185","Texture.data_186","Texture.data_187","Texture.data_188","Texture.data_189","Texture.data_190","Texture.data_191","Texture.data_192","Texture.data_193","Texture.data_194","Texture.data_195","Texture.data_196","Texture.data_197","Texture.data_198","Texture.data_199","Texture.data_200"]}},
+"geometry": "Geometry.default",
+"materials":[{"*":"Material.default"}],
+"textures":["Array.variants[query.variant]"]
+    }
+  }
+}

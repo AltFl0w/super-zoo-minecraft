@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:shadow_freddy2",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_shadow_freddy_fnaf2"
+      },
+      "geometry": {
+        "default": "geometry.df_shadow_freddy_fnaf2"
+      },
+      "animations": {
+        "default_pose": "animation.df_shadow_freddy_fnaf2.base",
+        "no_pose": "animation.df_shadow_freddy_fnaf2.walk",
+        "solemn_pose": "animation.df_shadow_freddy_fnaf2.pose1",
+        "athena_pose": "animation.df_shadow_freddy_fnaf2.pose2",
+        "brandish_pose": "animation.df_shadow_freddy_fnaf2.base",
+        "honor_pose": "animation.df_shadow_freddy_fnaf2.walk",
+        "entertain_pose": "animation.df_shadow_freddy_fnaf2.pose1",
+        "riposte_pose": "animation.df_shadow_freddy_fnaf2.pose2",
+        "zombie_pose": "animation.df_shadow_freddy_fnaf2.base",
+        "cancan_a_pose": "animation.df_shadow_freddy_fnaf2.walk",
+        "cancan_b_pose": "animation.df_shadow_freddy_fnaf2.pose1",
+        "hero_pose": "animation.df_shadow_freddy_fnaf2.pose2",
+        "wiggle": "animation.df_shadow_freddy_fnaf2.general"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_shadow_freddy2",
+		"texture_index": 0
+      }
+    }
+  }
+}

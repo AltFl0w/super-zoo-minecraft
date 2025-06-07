@@ -1,0 +1,125 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.m4a1.shoot.explosive": {
+      "loop": true,
+      "animation_length": 0.09,
+      "timeline": {
+        "0.01": [
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.m4a1 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.m4a1 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			"/event entity @s guns:m4a1.explosive",
+			"/scoreboard players remove @s m4a1 1",
+			"/function m4a1/m4a1"
+        ]
+      }
+    },
+    "animation.m4a1.shoot.fire": {
+      "loop": true,
+      "animation_length": 0.09,
+      "timeline": {
+        "0.01": [
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.m4a1 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.m4a1 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			"/event entity @s guns:m4a1.fire",
+			"/scoreboard players remove @s m4a1 1",
+			"/function m4a1/m4a1"
+        ]
+      }
+    },
+    "animation.m4a1.shoot": {
+      "loop": true,
+      "animation_length": 0.09,
+      "timeline": {
+        "0.01": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.m4a1 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.m4a1 @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:m4a1",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:m4a1",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:m4a1_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:m4a1_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:m4a1_silenciador",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:m4a1_silenciador_laser",
+			
+			"/scoreboard players remove @s m4a1 1",
+			"/function m4a1/m4a1"
+        ]
+      }
+    },
+    "animation.m4a1.apuntar.shoot": {
+      "loop": true,
+      "animation_length": 0.2,
+      "timeline": {
+        "0.01": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.m4a1 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.m4a1 @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:m4a1_apuntar",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:m4a1_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:m4a1_apuntar_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:m4a1_apuntar_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:m4a1_silenciador_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:m4a1_silenciador_apuntar_laser",
+			
+			"/function m4a1/m4a1",
+			"/scoreboard players remove @s m4a1 1"
+        ]
+      }
+    },
+    "animation.m4a1.shotgun.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.shotgun_reload @a[r=25]"
+        ],
+        "1.85": [
+			"/event entity @s guns:reload.off",
+			"/function m4a1/m4a1_shotgun_reload"
+        ]
+      }
+    },
+    "animation.m4a1.m203.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.m203_reload @a[r=25]"
+        ],
+        "1.85": [
+			"/event entity @s guns:reload.off",
+			"/function m4a1/m4a1_m203_reload"
+        ]
+      }
+    },
+    "animation.m4a1.reload": {
+      "loop": false,
+      "animation_length": 1.8,
+      "timeline": {
+        "0.2": [
+			"/playsound gun.m4a1_reload @a[r=25]", "/scoreboard players set @s m4a1_fire 0", "/scoreboard players set @s m4a1_explosive 0"
+        ],
+        "1.7": [
+			"/scoreboard players set @s m4a1 30",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:m4a1_ammo 0 1"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+	"vehicle.bugatti_cen.drive": {
+		"category": "neutral",
+		"sounds": [
+			"sounds/bugatti_cen/drive"
+		]
+	},
+	"vehicle.bugatti_cen.startup": {
+		"category": "neutral",
+		"sounds": [
+			"sounds/bugatti_cen/startup"
+		]
+	},
+	"vehicle.bugatti_cen.hit": {
+		"__use_legacy_max_distance": "true",
+		"category": "neutral",
+		"sounds": [
+			"sounds/bugatti_cen/hit1",
+			"sounds/bugatti_cen/hit2",
+			"sounds/bugatti_cen/hit3"
+		]
+	},
+	"vehicle.bugatti_cen.dooropen": {
+		"category": "neutral",
+		"sounds": [
+			"sounds/bugatti_cen/dooropen"
+		]
+	},
+	"vehicle.bugatti_cen.doorclose": {
+		"category": "neutral",
+		"sounds": [
+			"sounds/bugatti_cen/doorclose"
+		]
+	}
+}

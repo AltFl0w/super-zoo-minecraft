@@ -1,0 +1,30 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.df_escritorio_fnaf2.base": {
+			"loop": true,
+			"bones": {
+				"Papel1": {
+					"position": [-1.8, 0, 0.2],
+					"scale": [0.35, 1, 0.35]
+				},
+				"Papel2": {
+					"position": [-2.9, 0, -2.5],
+					"scale": [0.35, 1, 0.35]
+				},
+				"Papel3": {
+					"position": [3, 0, -1],
+					"scale": [0.35, 1, 0.35]
+				},
+				"Bola3": {
+					"position": [16, 0, 0]
+				},
+				"Ventilador": {
+					"rotation": [0, 22.5, 0],
+					"position": [8, 21, 0],
+					"scale": 0.65
+				}
+			}
+		}
+	}
+}

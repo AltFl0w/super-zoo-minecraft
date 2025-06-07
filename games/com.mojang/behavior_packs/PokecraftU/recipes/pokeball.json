@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "pokemon_unite:pokeball"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [ 
+            "IoI",
+            "ISI",
+            "III"
+        ],
+    "key": { 
+      "I": {
+        "item": "minecraft:iron_ingot"
+      },
+      "S": {
+        "item": "minecraft:redstone"
+      },
+      "o": {
+        "item": "minecraft:red_dye"
+      }
+        },  
+        "result": {
+            "item": "pokemon_unite:pokeball",
+            "count": 3
+        }
+    }
+}

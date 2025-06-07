@@ -1,0 +1,40 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:poke_stop",
+      "materials": { "default": "entity_emissive_alpha" },
+      "textures": {
+        "normal": "textures/entity/item/off",
+        "phase1": "textures/entity/item/on",
+        "phase2": "textures/entity/item/on2"
+      },
+      "geometry": {
+        "default": "geometry.serpitem"
+      },
+      "animations": {
+    "quiet": "animation.poke_stop.quiet",
+    "open": "animation.poke_stop.open",
+    "closed": "animation.poke_stop.closed",
+    "loot_controller": "controller.animation.loot"
+      },
+      "particle_effects": {
+        "bubbles": "serp:bubbles"
+            },
+      "sound_effects": {
+        "open": "serp.open"
+      },
+      "scripts": {
+        "animate": [
+        "quiet",
+        "loot_controller"
+        ]
+      },
+      "render_controllers": [ "controller.render.pokestop" ],
+      "spawn_egg": {
+          "texture": "pokeitems",
+        "texture_index": 12
+      }
+    }
+  }
+}

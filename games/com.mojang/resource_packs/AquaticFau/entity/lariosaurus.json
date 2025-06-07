@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.lariosaurus"
+      },
+      "identifier": "fauna:lariosaurus",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.lariosaurusvariant"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "lariosaurus",
+        "texture_index": 0
+      },
+      "textures": {
+        "lariosaurus": "textures/entity/lariosaurus/lariosaurus",
+        "lariosaurus_ancient": "textures/entity/lariosaurus/lariosaurus_ancient",
+        "lariosaurus_albino": "textures/entity/lariosaurus/lariosaurus_albino"
+      },
+      "animations": {
+        "idle": "animation.lariosaurus.idle",
+        "swim": "animation.lariosaurus.swim",
+        "walk": "animation.lariosaurus.walk",
+        "move": "controller.animation.ancientfish.move"
+      }
+    }
+  }
+}

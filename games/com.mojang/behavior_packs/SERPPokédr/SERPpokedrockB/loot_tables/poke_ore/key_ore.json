@@ -1,0 +1,36 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+{"type":"item","name":"serp:key_shard_natural","weight":20,"functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"type":"item","name":"serp:venusaurite","weight":1},
+{"type":"item","name":"serp:charizardite_x","weight":1},
+{"type":"item","name":"serp:charizardite_y","weight":1},
+{"type":"item","name":"serp:blastoisinite","weight":1},
+{"type":"item","name":"serp:beedrillite","weight":1},
+{"type":"item","name":"serp:pidgeotite","weight":1},
+{"type":"item","name":"serp:slowbronite","weight":1},
+{"type":"item","name":"serp:gengarite","weight":1},
+{"type":"item","name":"serp:kangaskhanite","weight":1},
+{"type":"item","name":"serp:gyaradosite","weight":1},
+{"type":"item","name":"serp:mewtwonite_x","weight":1},
+{"type":"item","name":"serp:mewtwonite_y","weight":1},
+{"type":"item","name":"serp:ampharosite","weight":1},
+{"type":"item","name":"serp:scizorite","weight":1},
+{"type":"item","name":"serp:heracronite","weight":1},
+{"type":"item","name":"serp:sceptilite","weight":1},
+{"type":"item","name":"serp:blazikenite","weight":1},
+{"type":"item","name":"serp:swampertite","weight":1},
+{"type":"item","name":"serp:sablenite","weight":1},
+{"type":"item","name":"serp:salamencite","weight":1},
+{"type":"item","name":"serp:gardevoirite","weight":1},
+{"type":"item","name":"serp:garchompite","weight":1},
+{"type":"item","name":"serp:galladite","weight":1},
+{"type":"item","name":"serp:lucarionite","weight":1},
+{"type":"item","name":"serp:green_prism","weight":1},
+{"type":"item","name":"minecraft:sand","weight":50,"functions":[{"function":"set_count","count":{"min":2,"max":4}}]}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:deoxys_virus",
+	    "menu_category":{"category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:deoxys_virus.name"},
+	    "minecraft:icon":"deoxys_virus"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.deepdragonvariant": {
+      "arrays": {
+        "textures": {
+          "Array.skins": [
+            "Texture.choco",
+            "Texture.deep",
+            "Texture.shark",
+            "Texture.zombie",
+            "Texture.albino"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "textures": [
+        "Array.skins[query.variant]"
+      ]
+    }
+  }
+}

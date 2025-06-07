@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.rocky_greatsword": {
+			"geometry": "Geometry.rocky_greatsword",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.rocky_greatsword"
+			]
+		}
+	}
+}

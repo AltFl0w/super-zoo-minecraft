@@ -1,0 +1,31 @@
+item.spawn_egg.entity.pokemon_unite:crustle.name=Crustle
+entity.pokemon_unite:crustle.name=Crustle
+%entity.pokemon_unite:crustle.name=Crustle
+action.hint.exit.pokemon_unite:crustle=Taming...
+item.spawn_egg.entity.pokemon_unite:snorlax.name=Snorlax
+entity.pokemon_unite:snorlax.name=Snorlax
+%entity.pokemon_unite:snorlax.name=Snorlax
+action.hint.exit.pokemon_unite:snorlax=Taming...
+item.spawn_egg.entity.pokemon_unite:charizard.name=Charizard
+entity.pokemon_unite:charizard.name=Charizard
+%entity.pokemon_unite:charizard.name=Charizard
+action.hint.exit.pokemon_unite:charizard=Taming...
+item.spawn_egg.entity.pokemon_unite:mamoswine.name=Mamoswine
+entity.pokemon_unite:mamoswine.name=Mamoswine
+%entity.pokemon_unite:mamoswine.name=Mamoswine
+action.hint.exit.pokemon_unite:mamoswine=Taming...
+item.spawn_egg.entity.pokemon_unite:wigglytuff.name=Wigglytuff
+entity.pokemon_unite:wigglytuff.name=Wigglytuff
+%entity.pokemon_unite:wigglytuff.name=Wigglytuff
+action.hint.exit.pokemon_unite:mamoswine=Taming...
+item.spawn_egg.entity.pokemon_unite:trevenant.name=Trevenant
+entity.pokemon_unite:trevenant.name=Trevenant
+%entity.pokemon_unite:trevenant.name=Trevenant
+action.hint.exit.pokemon_unite:trevenant=Taming...
+
+
+entity.pokemon_unite:charizard_proyectil.name=Fire Attack
+%entity.pokemon_unite:charizard_proyectil.name=Fire Attack
+
+entity.pokemon_unite:pokeball_entity.name=Pokeball
+%entity.pokemon_unite:pokeball_entity.name=Pokeball

@@ -1,0 +1,45 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.starfish",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Starfish",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Body",
+					"parent": "Starfish",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 25, 0],
+					"cubes": [
+						{"origin": [-2, 0, -2], "size": [4, 2.2, 4], "pivot": [0, 0, 0], "rotation": [0, 45, 0], "uv": [0, 0]},
+						{"origin": [-1.5, 0, -4], "size": [3, 2, 3], "uv": [9, 13]},
+						{"origin": [-1, 0, -7], "size": [2, 1.5, 3], "uv": [14, 19]},
+						{"origin": [-0.5, 0, -8], "size": [1, 1, 1], "uv": [12, 2]},
+						{"origin": [-2, 0, -4], "size": [3, 2, 3], "pivot": [0, 0, 0], "rotation": [0, -85, 0], "uv": [0, 11]},
+						{"origin": [-1.5, 0, -7], "size": [2, 1.5, 3], "pivot": [0, 0, 0], "rotation": [0, -85, 0], "uv": [18, 15]},
+						{"origin": [-1, 0, -8], "size": [1, 1, 1], "pivot": [0, 0, 0], "rotation": [0, -85, 0], "uv": [12, 0]},
+						{"origin": [-1, 0, -4], "size": [3, 2, 3], "pivot": [0, 0, 0], "rotation": [0, -135, 0], "uv": [0, 6]},
+						{"origin": [-0.5, 0, -7], "size": [2, 1.5, 3], "pivot": [0, 0, 0], "rotation": [0, -135, 0], "uv": [0, 16]},
+						{"origin": [0, 0, -8], "size": [1, 1, 1], "pivot": [0, 0, 0], "rotation": [0, -135, 0], "uv": [9, 6]},
+						{"origin": [-1, 0, -4], "size": [3, 2, 3], "pivot": [0, 0, 0], "rotation": [0, 85, 0], "uv": [13, 3]},
+						{"origin": [-0.5, 0, -7], "size": [2, 1.5, 3], "pivot": [0, 0, 0], "rotation": [0, 85, 0], "uv": [18, 10]},
+						{"origin": [0, 0, -8], "size": [1, 1, 1], "pivot": [0, 0, 0], "rotation": [0, 85, 0], "uv": [0, 0]},
+						{"origin": [-2, 0, -4], "size": [3, 2, 3], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [9, 8]},
+						{"origin": [-1.5, 0, -7], "size": [2, 1.5, 3], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [7, 18]},
+						{"origin": [-1, 0, -8], "size": [1, 1, 1], "pivot": [0, 0, 0], "rotation": [0, 135, 0], "uv": [0, 2]}
+					]
+				}
+			]
+		}
+	]
+}

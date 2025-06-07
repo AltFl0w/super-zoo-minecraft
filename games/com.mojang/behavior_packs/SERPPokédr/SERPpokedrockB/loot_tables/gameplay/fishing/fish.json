@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "serp:magikarp_spawn_egg",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "serp:goldeen_spawn_egg",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "serp:tentacool_spawn_egg",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "serp:magikarps_spawn_egg",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "serp:goldeens_spawn_egg",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "serp:tentacools_spawn_egg",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fish",
+          "weight": 40
+        },
+        {
+          "type": "item",
+          "name": "minecraft:salmon",
+          "weight": 15
+        },
+        {
+          "type": "item",
+          "name": "minecraft:clownfish",
+          "weight": 4
+        },
+        {
+          "type": "item",
+          "name": "minecraft:pufferfish",
+          "weight": 13
+        }
+      ]
+    }
+  ]
+}

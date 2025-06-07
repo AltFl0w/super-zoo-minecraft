@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:cooked_mackerel",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "cooked_mackerel",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

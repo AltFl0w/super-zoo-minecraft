@@ -1,0 +1,35 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.charizard.general" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [
+						{
+							"walk" : "(query.modified_move_speed)"},
+							"idle",
+							"look_at_target"
+					],
+					"transitions" : [
+						{
+							"volando" : "(!query.is_on_ground) && (!query.is_in_water)"
+						}
+					],
+					"blend_transition": 0.2
+				},
+			"volando" : {
+					"animations" : [
+	"idle" ,"fly"
+					],
+					"transitions" : [
+ 
+						{
+							"default" : "  (query.is_on_ground)  || (query.is_in_water)"}
+					]
+				}
+			}
+		}
+	}
+}
+

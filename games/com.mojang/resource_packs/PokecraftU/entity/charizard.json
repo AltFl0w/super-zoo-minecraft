@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pokemon_unite:charizard",
+      "materials": { "default": "skeleton" },
+      "textures": {
+        "default": "textures/entity/pokemon_unite/charizard",
+        "pokeball": "textures/entity/pokemon_unite/pokeball"
+      },
+      "geometry": { 
+        "default": "geometry.charizard",
+        "pokeball": "geometry.pokeball"
+      },
+ 
+      "animations": { 
+          "pokeball_v1": "animation.pokeballv1",
+ 
+
+       "controlator": "controller.animation.charizard.general",
+        "walk": "animation.charizard.walk",
+        "attack": "animation.charizard.attack",
+        "fly": "animation.charizard.fly",
+        "idle": "animation.charizard.idle",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          { "pokeball_v1": "query.variant == 1" },
+
+          { "attack": "query.skin_id == 1" },
+            
+           "controlator"
+        ]
+      },
+      "render_controllers": [
+          "controller.render.pokemon_n",
+          "controller.render.pokeball"
+      
+      ],
+      "spawn_egg": {
+        "base_color": "#E0A66C",
+        "overlay_color": "#28718B"
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+//bridge-file-version: #37
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/skullgrey"
+			},
+			"geometry": {
+				"default": "geometry.skullgrey"
+			},
+			"animations": {
+				"land_idle": "animation.skullgrey.idle",
+				"walk": "animation.skullgrey.walk",
+				"fly_idle": "animation.skullgrey.fly",
+				"fly": "animation.skullgrey.fly",
+				"sit": "animation.skullgrey.sit",
+				"breath": "animation.skullgrey.shoot",
+				"tail": "animation.skullgrey.tail_attack",
+				"glide": "animation.skullgrey.fly",
+				"look": "animation.common.look_at_target",
+				"movement": "controller.animation.coavern.movement",
+				"attack": "controller.animation.skullgrey.attack",
+				"roar": "animation.skullgrey.roar_attack",
+				"dead": "animation.skullgrey.dead_body"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"movement": "!query.is_sitting && !query.is_sheared"
+					},
+					{
+						"sit": "query.is_sitting"
+					},
+					"attack",
+					"look",
+					{
+						"dead": "query.is_sheared"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#793535",
+				"overlay_color": "#BABAA2"
+			},
+			"particle_effects": {
+				"poison": "it:poison"
+			},
+			"identifier": "it:skullgrey"
+		}
+	}
+}

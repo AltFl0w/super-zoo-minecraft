@@ -1,0 +1,16 @@
+{
+  "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+{"type":"item","name":"minecraft:porkchop_raw","functions":[{"function":"set_count","count":{"min":0,"max":2}}]}
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+{"type":"item","name":"serp:slowpoke_tail"}
+            ]
+        }
+    ]
+}

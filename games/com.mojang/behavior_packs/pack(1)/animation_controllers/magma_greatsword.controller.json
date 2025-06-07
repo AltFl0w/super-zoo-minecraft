@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.magma_greatsword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'magma_greatsword' && query.is_using_item"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'magma_greatsword' && !query.is_using_item) || query.get_equipped_item_name('main_hand') != 'magma_greatsword'"
+						}
+					],
+					"animations": [
+						"magma_greatsword"
+					]
+				}
+			}
+		},
+		"controller.animation.magma_greatsword.effect": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"effect": "!query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/execute @s[tag=!bedrock] ~~~ fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 cobblestone 0 hollow",
+						"/tag @s remove bedrock"
+					]
+				},
+				"effect": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/tp @s ~~~ 0",
+						"/execute @s ~~~ detect ~~-1~ bedrock 0 tag @s add bedrock",
+						"/execute @s[tag=!bedrock] ~~~ fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 magma 0 hollow"
+					]
+				}
+			}
+		}
+	}
+}

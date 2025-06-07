@@ -1,0 +1,10 @@
+{
+  "pools":[
+        {
+            "rolls":1,
+            "entries":[
+{"type":"item","name":"serp:badge","functions":[{"function":"set_count","count":{"min":2,"max":5}}]}
+            ]
+        }
+    ]
+}

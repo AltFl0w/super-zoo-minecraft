@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+ "controller.animation.df_withered_golden_freddy.base": {
+      "states": {
+        "default": {
+          "animations": [
+            "df_withered_golden_freddy_general",
+            "look_at_target"
+          ]
+        }
+      }
+    },
+    "controller.animation.df_withered_golden_freddy.movimiento": {
+      "states": {
+          "default": {
+              "animations": [
+                      "df_withered_golden_freddy_general"
+              ],
+              "transitions": [{
+                      "df_caminando_withered_golden_freddy": "query.ground_speed"
+                  },
+      {
+        "df_withered_golden_freddy_general": "query.ground_speed"
+      }
+              ],
+              "blend_transition": 0.1
+          },
+  "df_withered_golden_freddy_general": {
+              "animations": [
+                  "df_withered_golden_freddy_general"
+              ],
+              "transitions": [{
+                      "default": "!query.ground_speed"
+                  }
+              ],
+              "blend_transition": 0.1
+          },
+          "df_caminando_withered_golden_freddy": {
+              "animations": [
+                  "df_caminando_withered_golden_freddy"
+              ],
+              "transitions": [{
+                      "default": "!query.ground_speed"
+                  }
+              ],
+              "blend_transition": 0.1
+          }
+      }
+  }
+}
+}

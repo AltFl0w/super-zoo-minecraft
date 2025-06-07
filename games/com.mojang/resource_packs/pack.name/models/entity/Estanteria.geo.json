@@ -1,0 +1,1007 @@
+///Dany Fox 2020///
+///Si te lo robas eres gay///
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.df_estanteria_fnaf2",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 8,
+				"visible_bounds_offset": [0, 3, 0]
+			},
+			"bones": [
+				{
+					"name": "Estanteria",
+					"pivot": [0, 10, 0]
+				},
+				{
+					"name": "Estante",
+					"parent": "Estanteria",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-21, 32, -9], "size": [42, 1, 1], "uv": [37, 60]},
+						{"origin": [-21, 32, 8], "size": [42, 1, 1], "uv": [30, 101]},
+						{"origin": [-21, 73, -9], "size": [42, 1, 18], "uv": [8, 79]},
+						{"origin": [-21, 74, -9], "size": [42, 1, 1], "uv": [0, 0]},
+						{"origin": [-21, 74, 8], "size": [42, 1, 1], "uv": [0, 0]},
+						{"origin": [-21, 10, -9], "size": [42, 1, 18], "uv": [0, 104]},
+						{"origin": [-22, 0, -9], "size": [1, 85, 18], "inflate": 0.1, "uv": [0, 0], "mirror": true},
+						{"origin": [21, 0, -9], "size": [1, 85, 18], "inflate": 0.1, "uv": [42, 25]},
+						{"origin": [-21, 11, -9], "size": [42, 1, 1], "uv": [0, 0]},
+						{"origin": [-21, 11, 8], "size": [42, 1, 1], "uv": [12, 71]},
+						{"origin": [-21, 52, -9], "size": [42, 1, 18], "uv": [1, 24]},
+						{"origin": [-21, 53, -9], "size": [42, 1, 1], "uv": [39, 46]},
+						{"origin": [-21, 53, 8], "size": [42, 1, 1], "uv": [37, 60]},
+						{"origin": [-21, 31, -9], "size": [42, 1, 18], "uv": [0, 93]}
+					]
+				},
+				{
+					"name": "Endo02",
+					"pivot": [0, 0, -35]
+				},
+				{
+					"name": "Parte1",
+					"parent": "Endo02",
+					"pivot": [0, 50.5, -29]
+				},
+				{
+					"name": "head",
+					"parent": "Parte1",
+					"pivot": [0, 77.5, -29]
+				},
+				{
+					"name": "CabezaE",
+					"parent": "head",
+					"pivot": [0.5, 78.5, -37]
+				},
+				{
+					"name": "CabezaE2",
+					"parent": "CabezaE",
+					"pivot": [0.5, 78.5, -37]
+				},
+				{
+					"name": "Ojos",
+					"parent": "CabezaE",
+					"pivot": [0.5, 80.2, -37]
+				},
+				{
+					"name": "OjosT",
+					"parent": "Ojos",
+					"pivot": [0, 86.2, -35]
+				},
+				{
+					"name": "GlobosOculares",
+					"parent": "OjosT",
+					"pivot": [0.1, 86.2, -37]
+				},
+				{
+					"name": "GloboOcular1",
+					"parent": "GlobosOculares",
+					"pivot": [-3.4, 86.2, -35.1]
+				},
+				{
+					"name": "GloboOcular2",
+					"parent": "GlobosOculares",
+					"pivot": [3.4, 86.2, -35.1]
+				},
+				{
+					"name": "OjosE",
+					"parent": "Ojos",
+					"pivot": [0.5, 80.2, -37]
+				},
+				{
+					"name": "GlobosOcularesE",
+					"parent": "OjosE",
+					"pivot": [0.1, 86.2, -37]
+				},
+				{
+					"name": "Pupilas",
+					"parent": "Ojos",
+					"pivot": [0.5, 86.2, -36.6]
+				},
+				{
+					"name": "PupilasE",
+					"parent": "Pupilas",
+					"pivot": [0.1, 85.8, -36.5]
+				},
+				{
+					"name": "Pupila3",
+					"parent": "PupilasE",
+					"pivot": [-2.6, 85.8, -36.7]
+				},
+				{
+					"name": "Pupila4",
+					"parent": "PupilasE",
+					"pivot": [3.8, 85.8, -36.7]
+				},
+				{
+					"name": "PupilasT",
+					"parent": "Pupilas",
+					"pivot": [0, 86.2, -35.5]
+				},
+				{
+					"name": "Pupila2",
+					"parent": "PupilasT",
+					"pivot": [3.1, 86.2, -36.5]
+				},
+				{
+					"name": "Pupila1",
+					"parent": "PupilasT",
+					"pivot": [-3.2, 86.2, -36.5]
+				},
+				{
+					"name": "Parpados",
+					"parent": "CabezaE",
+					"pivot": [0.8, 81.2, -37]
+				},
+				{
+					"name": "ParpadosArriba",
+					"parent": "Parpados",
+					"pivot": [0.3, 88.2, -35],
+					"rotation": [-20, 0, 0]
+				},
+				{
+					"name": "Parpado1",
+					"parent": "ParpadosArriba",
+					"pivot": [-3.2, 88.2, -35]
+				},
+				{
+					"name": "Parpado1E",
+					"parent": "Parpado1",
+					"pivot": [-3.2, 88.2, -33]
+				},
+				{
+					"name": "Parpado2",
+					"parent": "ParpadosArriba",
+					"pivot": [3.2, 88.2, -35]
+				},
+				{
+					"name": "Parpado2E",
+					"parent": "Parpado2",
+					"pivot": [3.2, 88.2, -33]
+				},
+				{
+					"name": "ParpadosAbajo",
+					"parent": "Parpados",
+					"pivot": [0.3, 86.2, -35],
+					"rotation": [62.5, 0, 0]
+				},
+				{
+					"name": "Parpado3",
+					"parent": "ParpadosAbajo",
+					"pivot": [-3.2, 86.2, -35]
+				},
+				{
+					"name": "Parpado1E2",
+					"parent": "Parpado3",
+					"pivot": [-3.2, 86.2, -33]
+				},
+				{
+					"name": "Parpado4",
+					"parent": "ParpadosAbajo",
+					"pivot": [3.2, 86.2, -35]
+				},
+				{
+					"name": "Parpado2E2",
+					"parent": "Parpado4",
+					"pivot": [3.2, 86.2, -33]
+				},
+				{
+					"name": "BocaE",
+					"parent": "CabezaE",
+					"pivot": [0.5, 83.2, -37]
+				},
+				{
+					"name": "BocaEArriba",
+					"parent": "BocaE",
+					"pivot": [0, 81.4, -30.875]
+				},
+				{
+					"name": "DientesEArriba",
+					"parent": "BocaEArriba",
+					"pivot": [0, 80, -42]
+				},
+				{
+					"name": "DienteE1",
+					"parent": "DientesEArriba",
+					"pivot": [-1, 80.8, -39.5]
+				},
+				{
+					"name": "DienteE3",
+					"parent": "DientesEArriba",
+					"pivot": [-2.5, 80.8, -39],
+					"rotation": [0, 45, 0]
+				},
+				{
+					"name": "DienteE6",
+					"parent": "DientesEArriba",
+					"pivot": [-3.5, 80.8, -38],
+					"rotation": [0, 55, 0]
+				},
+				{
+					"name": "DienteE7",
+					"parent": "DientesEArriba",
+					"pivot": [-3.8, 80.8, -36.5],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE8",
+					"parent": "DientesEArriba",
+					"pivot": [-3.8, 80.8, -35],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE9",
+					"parent": "DientesEArriba",
+					"pivot": [3.8, 80.8, -35],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE21",
+					"parent": "DientesEArriba",
+					"pivot": [3.8, 80.8, -33.5],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE22",
+					"parent": "DientesEArriba",
+					"pivot": [-3.8, 80.8, -33.5],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE10",
+					"parent": "DientesEArriba",
+					"pivot": [3.8, 80.8, -36.5],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE4",
+					"parent": "DientesEArriba",
+					"pivot": [2.5, 80.8, -39],
+					"rotation": [0, -45, 0]
+				},
+				{
+					"name": "DienteE5",
+					"parent": "DientesEArriba",
+					"pivot": [3.5, 80.8, -38],
+					"rotation": [0, -55, 0]
+				},
+				{
+					"name": "DienteE2",
+					"parent": "DientesEArriba",
+					"pivot": [1, 80.8, -39.5]
+				},
+				{
+					"name": "BocaEAbajo",
+					"parent": "BocaE",
+					"pivot": [0, 78.2, -31.875],
+					"rotation": [5, 0, 0]
+				},
+				{
+					"name": "DientesEArriba2",
+					"parent": "BocaEAbajo",
+					"pivot": [0, 79.15798, -42.06031],
+					"rotation": [0, 0, -180]
+				},
+				{
+					"name": "DienteE11",
+					"parent": "DientesEArriba2",
+					"pivot": [-1, 79.95798, -39.56031]
+				},
+				{
+					"name": "DienteE12",
+					"parent": "DientesEArriba2",
+					"pivot": [-2.5, 79.95798, -39.06031],
+					"rotation": [0, 45, 0]
+				},
+				{
+					"name": "DienteE13",
+					"parent": "DientesEArriba2",
+					"pivot": [-3.5, 79.95798, -38.06031],
+					"rotation": [0, 55, 0]
+				},
+				{
+					"name": "DienteE14",
+					"parent": "DientesEArriba2",
+					"pivot": [-3.8, 79.95798, -36.56031],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE15",
+					"parent": "DientesEArriba2",
+					"pivot": [-3.8, 79.95798, -35.06031],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE16",
+					"parent": "DientesEArriba2",
+					"pivot": [3.8, 79.95798, -35.06031],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE17",
+					"parent": "DientesEArriba2",
+					"pivot": [3.8, 79.95798, -33.56031],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE18",
+					"parent": "DientesEArriba2",
+					"pivot": [-3.8, 79.95798, -33.56031],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE19",
+					"parent": "DientesEArriba2",
+					"pivot": [3.8, 79.95798, -36.56031],
+					"rotation": [0, 90, 0]
+				},
+				{
+					"name": "DienteE20",
+					"parent": "DientesEArriba2",
+					"pivot": [2.5, 79.95798, -39.06031],
+					"rotation": [0, -45, 0]
+				},
+				{
+					"name": "DienteE23",
+					"parent": "DientesEArriba2",
+					"pivot": [3.5, 79.95798, -38.06031],
+					"rotation": [0, -55, 0]
+				},
+				{
+					"name": "DienteE24",
+					"parent": "DientesEArriba2",
+					"pivot": [1, 79.95798, -39.56031]
+				},
+				{
+					"name": "Oreja2",
+					"parent": "CabezaE",
+					"pivot": [4.5, 89.5, -30],
+					"rotation": [0, 0, 90]
+				},
+				{
+					"name": "ParteOreja2",
+					"parent": "Oreja2",
+					"pivot": [4.5, 91, -29.8]
+				},
+				{
+					"name": "Oreja1",
+					"parent": "CabezaE",
+					"pivot": [-4.5, 89.5, -30],
+					"rotation": [0, 0, -90]
+				},
+				{
+					"name": "ParteOreja3",
+					"parent": "Oreja1",
+					"pivot": [-4.5, 91, -29.8]
+				},
+				{
+					"name": "Cuerpo",
+					"parent": "Parte1",
+					"pivot": [0, 45, -23]
+				},
+				{
+					"name": "CuerpoE",
+					"parent": "Cuerpo",
+					"pivot": [-5.5, 45, -30]
+				},
+				{
+					"name": "CuerpoE2",
+					"parent": "CuerpoE",
+					"pivot": [-0.5, 50, -29]
+				},
+				{
+					"name": "Cuello",
+					"parent": "CuerpoE",
+					"pivot": [0, 74, -29]
+				},
+				{
+					"name": "BrazoDerecho",
+					"parent": "Parte1",
+					"pivot": [-12.5, 72, -29],
+					"rotation": [2.5, 0, 12.5]
+				},
+				{
+					"name": "Brazo0",
+					"parent": "BrazoDerecho",
+					"pivot": [-12.5, 62.5, -28.5]
+				},
+				{
+					"name": "BrazoE2",
+					"parent": "Brazo0",
+					"pivot": [-12.5, 62.5, -28.5]
+				},
+				{
+					"name": "EsferaE5",
+					"parent": "BrazoE2",
+					"pivot": [2.5, -23, -27]
+				},
+				{
+					"name": "EsferaE6",
+					"parent": "BrazoE2",
+					"pivot": [4.5, -8, -27]
+				},
+				{
+					"name": "BaraMetalica3",
+					"parent": "BrazoE2",
+					"pivot": [3, -11, -26.5]
+				},
+				{
+					"name": "AroBrazo10",
+					"parent": "BrazoE2",
+					"pivot": [-12.5, 63, -28]
+				},
+				{
+					"name": "AroBrazo11",
+					"parent": "BrazoE2",
+					"pivot": [-12.5, 66, -28]
+				},
+				{
+					"name": "AroBrazo12",
+					"parent": "BrazoE2",
+					"pivot": [-12.5, 68.5, -28.5]
+				},
+				{
+					"name": "AroBrazo13",
+					"parent": "BrazoE2",
+					"pivot": [-12.5, 60, -28.5]
+				},
+				{
+					"name": "Brazo1",
+					"parent": "BrazoDerecho",
+					"pivot": [-12.5, 57, -29],
+					"rotation": [-15, 0, 0]
+				},
+				{
+					"name": "BrazoE3",
+					"parent": "Brazo1",
+					"pivot": [-12.5, 47.5, -28.5]
+				},
+				{
+					"name": "EsferaE7",
+					"parent": "BrazoE3",
+					"pivot": [3, -36.5, -27.5]
+				},
+				{
+					"name": "EsferaE8",
+					"parent": "BrazoE3",
+					"pivot": [4.5, -23, -27]
+				},
+				{
+					"name": "BaraMetalica4",
+					"parent": "BrazoE3",
+					"pivot": [3, -26, -26.5]
+				},
+				{
+					"name": "AroBrazo14",
+					"parent": "BrazoE3",
+					"pivot": [-12.5, 53.5, -28.5]
+				},
+				{
+					"name": "AroBrazo15",
+					"parent": "BrazoE3",
+					"pivot": [-12.5, 51.5, -28.5]
+				},
+				{
+					"name": "AroBrazo16",
+					"parent": "BrazoE3",
+					"pivot": [-12.5, 49.5, -28.5]
+				},
+				{
+					"name": "AroBrazo17",
+					"parent": "BrazoE3",
+					"pivot": [-12.5, 47.5, -28.5]
+				},
+				{
+					"name": "AroBrazo18",
+					"parent": "BrazoE3",
+					"pivot": [-12.5, 45.5, -28.5]
+				},
+				{
+					"name": "Mano",
+					"parent": "Brazo1",
+					"pivot": [-12.5, 43, -29]
+				},
+				{
+					"name": "Palma2",
+					"parent": "Mano",
+					"pivot": [-12.5, 43, -29]
+				},
+				{
+					"name": "PalmaE2",
+					"parent": "Palma2",
+					"pivot": [-12.5, 43, -29]
+				},
+				{
+					"name": "Dedo10",
+					"parent": "Mano",
+					"pivot": [-12.5, 38, -26.8],
+					"rotation": [15, 0, -10]
+				},
+				{
+					"name": "Dedo13",
+					"parent": "Dedo10",
+					"pivot": [-12.5, 34.5, -26.8],
+					"rotation": [0, 0, -20]
+				},
+				{
+					"name": "Dedo14",
+					"parent": "Dedo13",
+					"pivot": [-12.5, 31, -26.8],
+					"rotation": [0, 0, -17.5]
+				},
+				{
+					"name": "Dedo15",
+					"parent": "Mano",
+					"pivot": [-12.5, 37.5, -29],
+					"rotation": [0, 0, -10]
+				},
+				{
+					"name": "Dedo16",
+					"parent": "Dedo15",
+					"pivot": [-12.5, 34, -29],
+					"rotation": [0, 0, -20]
+				},
+				{
+					"name": "Dedo17",
+					"parent": "Dedo16",
+					"pivot": [-12.5, 30.5, -29],
+					"rotation": [0, 0, -17.5]
+				},
+				{
+					"name": "Dedo18",
+					"parent": "Mano",
+					"pivot": [-12.5, 38, -31.2],
+					"rotation": [-15, 0, -10]
+				},
+				{
+					"name": "Dedo19",
+					"parent": "Dedo18",
+					"pivot": [-12.5, 34.5, -31.2],
+					"rotation": [0, 0, -20]
+				},
+				{
+					"name": "Dedo20",
+					"parent": "Dedo19",
+					"pivot": [-12.5, 31, -31.2],
+					"rotation": [0, 0, -17.5]
+				},
+				{
+					"name": "Pulgar2",
+					"parent": "Mano",
+					"pivot": [-12.5, 41, -31.5],
+					"rotation": [-102.5, -20, 45]
+				},
+				{
+					"name": "Dedo21",
+					"parent": "Pulgar2",
+					"pivot": [-12.5, 37.5, -31.5],
+					"rotation": [0, 0, -50]
+				},
+				{
+					"name": "Dedo22",
+					"parent": "Dedo21",
+					"pivot": [-12.5, 34, -31.5],
+					"rotation": [0, 0, -15]
+				},
+				{
+					"name": "BrazoIzquierdo",
+					"parent": "Parte1",
+					"pivot": [12.5, 72, -29],
+					"rotation": [2.5, 0, -12.5]
+				},
+				{
+					"name": "Brazo2",
+					"parent": "BrazoIzquierdo",
+					"pivot": [12.5, 62.5, -28.5]
+				},
+				{
+					"name": "BrazoE0",
+					"parent": "Brazo2",
+					"pivot": [12.5, 62.5, -28.5]
+				},
+				{
+					"name": "EsferaE1",
+					"parent": "BrazoE0",
+					"pivot": [27.5, -23, -27]
+				},
+				{
+					"name": "EsferaE2",
+					"parent": "BrazoE0",
+					"pivot": [29.5, -8, -27]
+				},
+				{
+					"name": "BaraMetalica",
+					"parent": "BrazoE0",
+					"pivot": [28, -11, -26.5]
+				},
+				{
+					"name": "AroBrazo1",
+					"parent": "BrazoE0",
+					"pivot": [12.5, 63, -28]
+				},
+				{
+					"name": "AroBrazo2",
+					"parent": "BrazoE0",
+					"pivot": [12.5, 66, -28]
+				},
+				{
+					"name": "AroBrazo3",
+					"parent": "BrazoE0",
+					"pivot": [12.5, 68.5, -28.5]
+				},
+				{
+					"name": "AroBrazo4",
+					"parent": "BrazoE0",
+					"pivot": [12.5, 60, -28.5]
+				},
+				{
+					"name": "Brazo3",
+					"parent": "BrazoIzquierdo",
+					"pivot": [12.5, 57, -29],
+					"rotation": [-15, 0, 0]
+				},
+				{
+					"name": "BrazoE1",
+					"parent": "Brazo3",
+					"pivot": [12.5, 47.5, -28.5]
+				},
+				{
+					"name": "EsferaE3",
+					"parent": "BrazoE1",
+					"pivot": [28, -36.5, -27.5]
+				},
+				{
+					"name": "EsferaE4",
+					"parent": "BrazoE1",
+					"pivot": [29.5, -23, -27]
+				},
+				{
+					"name": "BaraMetalica2",
+					"parent": "BrazoE1",
+					"pivot": [28, -26, -26.5]
+				},
+				{
+					"name": "AroBrazo7",
+					"parent": "BrazoE1",
+					"pivot": [12.5, 53.5, -28.5]
+				},
+				{
+					"name": "AroBrazo5",
+					"parent": "BrazoE1",
+					"pivot": [12.5, 51.5, -28.5]
+				},
+				{
+					"name": "AroBrazo6",
+					"parent": "BrazoE1",
+					"pivot": [12.5, 49.5, -28.5]
+				},
+				{
+					"name": "AroBrazo8",
+					"parent": "BrazoE1",
+					"pivot": [12.5, 47.5, -28.5]
+				},
+				{
+					"name": "AroBrazo9",
+					"parent": "BrazoE1",
+					"pivot": [12.5, 45.5, -28.5]
+				},
+				{
+					"name": "Mano2",
+					"parent": "Brazo3",
+					"pivot": [12.5, 43, -29]
+				},
+				{
+					"name": "Palma",
+					"parent": "Mano2",
+					"pivot": [12.5, 43, -29]
+				},
+				{
+					"name": "PalmaE",
+					"parent": "Palma",
+					"pivot": [12.5, 43, -29]
+				},
+				{
+					"name": "Dedo1",
+					"parent": "Mano2",
+					"pivot": [12.5, 38, -26.8],
+					"rotation": [15, 0, 10]
+				},
+				{
+					"name": "Dedo2",
+					"parent": "Dedo1",
+					"pivot": [12.5, 34.5, -26.8],
+					"rotation": [0, 0, 20]
+				},
+				{
+					"name": "Dedo3",
+					"parent": "Dedo2",
+					"pivot": [12.5, 31, -26.8],
+					"rotation": [0, 0, 17.5]
+				},
+				{
+					"name": "Dedo4",
+					"parent": "Mano2",
+					"pivot": [12.5, 37.5, -29],
+					"rotation": [0, 0, 10]
+				},
+				{
+					"name": "Dedo5",
+					"parent": "Dedo4",
+					"pivot": [12.5, 34, -29],
+					"rotation": [0, 0, 20]
+				},
+				{
+					"name": "Dedo6",
+					"parent": "Dedo5",
+					"pivot": [12.5, 30.5, -29],
+					"rotation": [0, 0, 17.5]
+				},
+				{
+					"name": "Dedo7",
+					"parent": "Mano2",
+					"pivot": [12.5, 38, -31.2],
+					"rotation": [-15, 0, 10]
+				},
+				{
+					"name": "Dedo8",
+					"parent": "Dedo7",
+					"pivot": [12.5, 34.5, -31.2],
+					"rotation": [0, 0, 20]
+				},
+				{
+					"name": "Dedo9",
+					"parent": "Dedo8",
+					"pivot": [12.5, 31, -31.2],
+					"rotation": [0, 0, 17.5]
+				},
+				{
+					"name": "Pulgar",
+					"parent": "Mano2",
+					"pivot": [12.5, 41, -31.5],
+					"rotation": [-102.5, 20, -45]
+				},
+				{
+					"name": "Dedo11",
+					"parent": "Pulgar",
+					"pivot": [12.5, 37.5, -31.5],
+					"rotation": [0, 0, 50]
+				},
+				{
+					"name": "Dedo12",
+					"parent": "Dedo11",
+					"pivot": [12.5, 34, -31.5],
+					"rotation": [0, 0, 15]
+				},
+				{
+					"name": "Parte2",
+					"parent": "Endo02",
+					"pivot": [0, 49.5, -29]
+				},
+				{
+					"name": "Cadera",
+					"parent": "Parte2",
+					"pivot": [0, 46.5, -29]
+				},
+				{
+					"name": "CaderaE",
+					"parent": "Cadera",
+					"pivot": [-6, 67.5, -23]
+				},
+				{
+					"name": "PiernaDerecha",
+					"parent": "Parte2",
+					"pivot": [-6, 46.5, -29],
+					"rotation": [-5, 2.5, 2.5]
+				},
+				{
+					"name": "Pierna0",
+					"parent": "PiernaDerecha",
+					"pivot": [-6, 41, -29]
+				},
+				{
+					"name": "PiernaE0",
+					"parent": "Pierna0",
+					"pivot": [-6, 41, -29]
+				},
+				{
+					"name": "Pierna1",
+					"parent": "PiernaDerecha",
+					"pivot": [-6, 27, -29],
+					"rotation": [7.5, 0, 0]
+				},
+				{
+					"name": "PiernaE1",
+					"parent": "Pierna1",
+					"pivot": [-6, 2.5, -29]
+				},
+				{
+					"name": "Pie",
+					"parent": "Pierna1",
+					"pivot": [-6, 5, -29],
+					"rotation": [-2.5, 2.5, -2.5]
+				},
+				{
+					"name": "PieE1",
+					"parent": "Pie",
+					"pivot": [-6, 5, -29]
+				},
+				{
+					"name": "DedosPie2",
+					"parent": "Pie",
+					"pivot": [-6, 1, -39.5]
+				},
+				{
+					"name": "Dedo1Pie4",
+					"parent": "DedosPie2",
+					"pivot": [-9, 1, -39],
+					"rotation": [0, 15, 0]
+				},
+				{
+					"name": "DedoEPie6",
+					"parent": "Dedo1Pie4",
+					"pivot": [-8.5, 1, -41]
+				},
+				{
+					"name": "ParteDedo1Pie4",
+					"parent": "Dedo1Pie4",
+					"pivot": [-9, 1, -43]
+				},
+				{
+					"name": "DedoEPie7",
+					"parent": "ParteDedo1Pie4",
+					"pivot": [-9.5, 0.5, -43.5]
+				},
+				{
+					"name": "Dedo1Pie5",
+					"parent": "DedosPie2",
+					"pivot": [-5.7, 1, -39.5]
+				},
+				{
+					"name": "DedoEPie8",
+					"parent": "Dedo1Pie5",
+					"pivot": [-5.2, 1, -41.5]
+				},
+				{
+					"name": "ParteDedo1Pie5",
+					"parent": "Dedo1Pie5",
+					"pivot": [-5.7, 1, -43.5]
+				},
+				{
+					"name": "DedoEPie9",
+					"parent": "ParteDedo1Pie5",
+					"pivot": [-6.2, 0.5, -44]
+				},
+				{
+					"name": "Dedo1Pie6",
+					"parent": "DedosPie2",
+					"pivot": [-2.5, 1, -39],
+					"rotation": [0, -15, 0]
+				},
+				{
+					"name": "DedoEPie10",
+					"parent": "Dedo1Pie6",
+					"pivot": [-2, 1, -41]
+				},
+				{
+					"name": "ParteDedo1Pie6",
+					"parent": "Dedo1Pie6",
+					"pivot": [-2.5, 1, -43]
+				},
+				{
+					"name": "DedoEPie11",
+					"parent": "ParteDedo1Pie6",
+					"pivot": [-3, 0.5, -43.5]
+				},
+				{
+					"name": "PiernaIzquierda",
+					"parent": "Parte2",
+					"pivot": [6, 46.5, -29],
+					"rotation": [-5, -2.5, -2.5]
+				},
+				{
+					"name": "Pierna2",
+					"parent": "PiernaIzquierda",
+					"pivot": [6, 41, -29]
+				},
+				{
+					"name": "PiernaE2",
+					"parent": "Pierna2",
+					"pivot": [6, 41, -29]
+				},
+				{
+					"name": "Pierna3",
+					"parent": "PiernaIzquierda",
+					"pivot": [6, 27, -29],
+					"rotation": [7.5, 0, 0]
+				},
+				{
+					"name": "PiernaE3",
+					"parent": "Pierna3",
+					"pivot": [6, 2.5, -29]
+				},
+				{
+					"name": "Pie2",
+					"parent": "Pierna3",
+					"pivot": [6, 5, -29],
+					"rotation": [-2.5, -2.5, 2.5]
+				},
+				{
+					"name": "PieE2",
+					"parent": "Pie2",
+					"pivot": [6, 5, -29]
+				},
+				{
+					"name": "DedosPie3",
+					"parent": "Pie2",
+					"pivot": [6, 1, -39.5]
+				},
+				{
+					"name": "Dedo1Pie2",
+					"parent": "DedosPie3",
+					"pivot": [3, 1, -39],
+					"rotation": [0, 15, 0]
+				},
+				{
+					"name": "DedoEPie2",
+					"parent": "Dedo1Pie2",
+					"pivot": [3.5, 1, -41]
+				},
+				{
+					"name": "ParteDedo1Pie2",
+					"parent": "Dedo1Pie2",
+					"pivot": [3, 1, -43]
+				},
+				{
+					"name": "DedoEPie3",
+					"parent": "ParteDedo1Pie2",
+					"pivot": [2.5, 0.5, -43.5]
+				},
+				{
+					"name": "Dedo1Pie3",
+					"parent": "DedosPie3",
+					"pivot": [6.3, 1, -39.5]
+				},
+				{
+					"name": "DedoEPie4",
+					"parent": "Dedo1Pie3",
+					"pivot": [6.8, 1, -41.5]
+				},
+				{
+					"name": "ParteDedo1Pie3",
+					"parent": "Dedo1Pie3",
+					"pivot": [6.3, 1, -43.5]
+				},
+				{
+					"name": "DedoEPie5",
+					"parent": "ParteDedo1Pie3",
+					"pivot": [5.8, 0.5, -44]
+				},
+				{
+					"name": "Dedo1Pie7",
+					"parent": "DedosPie3",
+					"pivot": [9.5, 1, -39],
+					"rotation": [0, -15, 0]
+				},
+				{
+					"name": "DedoEPie12",
+					"parent": "Dedo1Pie7",
+					"pivot": [10, 1, -41]
+				},
+				{
+					"name": "ParteDedo1Pie7",
+					"parent": "Dedo1Pie7",
+					"pivot": [9.5, 1, -43]
+				},
+				{
+					"name": "DedoEPie13",
+					"parent": "ParteDedo1Pie7",
+					"pivot": [9, 0.5, -43.5]
+				}
+			]
+		}
+	]
+}

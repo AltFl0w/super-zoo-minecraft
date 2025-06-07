@@ -1,0 +1,1 @@
+tellraw @a[r=5] {"rawtext":[{"translate":"prof.egg"}]}

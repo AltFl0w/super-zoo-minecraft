@@ -1,0 +1,16 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:cooked_slowpoke_tail",
+	    "menu_category":{"group":"itemGroup.name.cookedFood","category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:cooked_slowpoke_tail.name"},
+      "minecraft:icon":"cooked_slowpoke_tail",
+      "minecraft:food":{"nutrition":10,"saturation_modifier":1},
+	    "minecraft:use_modifiers":{"use_duration":1.6,"movement_modifier":0.35},
+	    "minecraft:use_animation":"eat"
+    }
+  }
+}

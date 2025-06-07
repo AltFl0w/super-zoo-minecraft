@@ -1,0 +1,45 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.new_sniper_ui",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "sniper_ui",
+					"parent": "head",
+					"pivot": [-0.125, 28, -13.5]
+				},
+				{
+					"name": "huesos_ui",
+					"parent": "sniper_ui",
+					"pivot": [0.1, 23.95, 0],
+					"cubes": [
+						{"origin": [-11.925, 19.35, -14], "size": [24, 16, 1], "uv": [0, 0]},
+						{"origin": [-27.925, 19.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [-27.925, 35.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [12.075, 19.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [12.075, 35.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [4.075, 35.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [-11.925, 35.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [12.075, 3.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [4.075, 3.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [-11.925, 3.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [-27.925, 3.35, -14], "size": [16, 16, 1], "uv": [0, 17]},
+						{"origin": [-7.675, 19.35, -14], "size": [15, 16, 1], "uv": [0, 34]}
+					]
+				}
+			]
+		}
+	]
+}

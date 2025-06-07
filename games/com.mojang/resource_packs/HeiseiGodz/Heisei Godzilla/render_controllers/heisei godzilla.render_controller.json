@@ -1,0 +1,19 @@
+{
+    "format_version": "1.8.0",
+    "render_controllers": {
+        "controller.render.heisei_godzilla": {
+			"arrays": {
+				"textures": {
+					"Array.skins": [
+						"Texture.normal",
+						"Texture.soiled"
+					]
+				}
+			},
+            "textures": [
+                "query.is_powered ? Texture.atomic : Array.skins[query.variant]"
+            ],
+            "geometry": "Geometry.default"
+        }
+    }
+}

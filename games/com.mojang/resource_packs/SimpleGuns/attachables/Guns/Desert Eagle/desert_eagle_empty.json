@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:desert_eagle_empty",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/guns/desert_eagle/desert_eagle"
+         },
+         "scripts":{
+            "animate":[
+               "wielding"
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.desert_eagle.wield_first_person",
+            "wield_third_person":"animation.desert_eagle.wield_third_person",
+            "wielding":"controller.animation.gun.wielding"
+         },
+         "geometry":{
+            "default":"geometry.desert_eagle_empty"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

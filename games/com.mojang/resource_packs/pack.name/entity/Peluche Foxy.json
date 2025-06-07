@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:peluchefoxy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/peluches/foxypeluche"
+      },
+      "geometry": {
+        "default": "geometry.foxypeluche"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "peluchefoxy",
+        "texture_index": 0
+      }
+    }
+  }
+}

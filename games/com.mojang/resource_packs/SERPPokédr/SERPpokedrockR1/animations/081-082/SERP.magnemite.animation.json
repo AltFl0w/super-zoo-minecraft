@@ -1,0 +1,145 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.magnemite.quiet": {
+			"loop": true,
+			"animation_length": 1.2,
+			"bones": {
+				"magnemite": {
+					"position": {
+						"0.0": [0, 1, 0],
+						"0.3": [0, 2, 0],
+						"0.6": [0, 1, 0],
+						"0.9": [0, 2, 0],
+						"1.2": [0, 1, 0]
+					}
+				},
+				"screw1": {
+					"position": {
+						"0.0": [0, -1, 0],
+						"0.6": [0, 0, 0],
+						"1.2": [0, -1, 0]
+					}
+				},
+				"screw2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.6": [1, 0, 1],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"screw3": {
+					"position": {
+						"0.0": [-1, 0, 1],
+						"0.6": [0, 0, 0],
+						"1.2": [-1, 0, 1]
+					}
+				},
+				"right_magnet": {
+					"rotation": {
+						"0.0": [0, 0, -15],
+						"0.7": [360, 0, 30],
+						"1.2": [360, 0, -15]
+					}
+				},
+				"left_magnet": {
+					"rotation": {
+						"0.0": [0, 0, 15],
+						"0.7": [360, 0, -30],
+						"1.2": [360, 0, 15]
+					}
+				}
+			}
+		},
+		"animation.magnemite.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"magnemite": {
+					"rotation": {
+						"0.0": [25, 0, 0],
+						"0.2": [35, 0, 0],
+						"0.6": [25, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 3, 0],
+						"0.3": [0, 2, 0],
+						"0.6": [0, 3, 0]
+					}
+				},
+				"right_magnet": {
+					"rotation": {
+						"0.0": [-45, 45, -55],
+						"0.4": [-75, 30, -70],
+						"0.6": [-45, 45, -55]
+					}
+				},
+				"left_magnet": {
+					"rotation": {
+						"0.0": [-45, -45, 55],
+						"0.4": [-75, -30, 70],
+						"0.6": [-45, -45, 55]
+					}
+				}
+			}
+		},
+		"animation.magnemite.sitting": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-25, 0, 25],
+					"position": [-1, 1, -1]
+				},
+				"right_magnet": {
+					"rotation": [-90, 55, 0],
+					"position": [1, -3, -3]
+				},
+				"left_magnet": {
+					"rotation": [-90, 50, 0],
+					"position": [0, -3, 0]
+				}
+			}
+		},
+		"animation.magnemite.attack": {
+			"loop": true,
+			"bones": {
+				"magnemite": {
+					"rotation": [40, 0, 0],
+					"position": [0, 4, 0]
+				},
+				"right_magnet": {
+					"rotation": [-80, -30, 75],
+					"position": [0, 1, -2]
+				},
+				"left_magnet": {
+					"rotation": [-80, 30, -75],
+					"position": [0, 1, -2]
+				}
+			}
+		},
+		"animation.magnemite.direction": {
+			"loop": true,
+			"bones": {
+				"magnemite": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+        "animation.magnemite.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,20,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

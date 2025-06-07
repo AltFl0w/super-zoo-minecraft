@@ -1,0 +1,147 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.mimikyu.quiet": {
+			"loop": true,
+			"animation_length": 1.2,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.6": [0, -1, 0],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [0, 5, 0],
+						"0.6": [0, -10, 0],
+						"1.2": [0, 5, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.6": [1, 0.9, 1],
+						"1.2": [1, 1, 1]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [-20, 45, 0],
+						"0.8": [-20, 60, 0],
+						"1.2": [-20, 45, 0]
+					},
+					"position": [2, 0, 0]
+				},
+				"arms": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mimikyu.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": [-10, 0, 0],
+						"0.4": [0, 0, 0],
+						"0.6": [-10, 0, 0]
+					}
+				},
+				"body": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.3": [1, 1, 1.1],
+						"0.6": [1, 1, 1]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [-15, 0, 0],
+						"0.2": [-5, 0, 0],
+						"0.6": [-15, 0, 0]
+					}
+				},
+				"arms": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mimikyu.sitting": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -3, 0]
+				},
+				"body": {
+					"scale": [1, 0.6, 1]
+				},
+				"tail": {
+					"rotation": [40, 0, -90],
+					"position": [2, 0.5, 1]
+				},
+				"arms": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mimikyu.jump": {
+			"loop": true,
+			"bones": {
+				"mimikyu": {
+					"position": [0, 7, 0]
+				},
+				"head": {
+					"rotation": [-25, 0, -20],
+					"position": [0, 3, 0]
+				},
+				"body": {
+					"scale": [1, 1.4, 1]
+				},
+				"tail": {
+					"rotation": [-75, 0, 0]
+				},
+				"arms": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.mimikyu.attack": {
+			"loop": true,
+			"bones": {
+				"mimikyu": {
+					"position": [0, 2, 0]
+				},
+				"head": {
+					"position": [0, -1, 2]
+				},
+				"body": {
+					"rotation": [-15, 0, 0]
+				},
+				"tail": {
+					"rotation": [-35, 0, 0]
+				},
+				"arms": {
+					"rotation": [90, 0, 0],
+					"scale": [1, 2.5, 1]
+				}
+			}
+		},
+        "animation.mimikyu.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,28,0],
+    "scale":"query.is_in_ui?0:1.6"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

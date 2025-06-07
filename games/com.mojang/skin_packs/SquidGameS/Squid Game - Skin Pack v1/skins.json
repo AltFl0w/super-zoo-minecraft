@@ -1,0 +1,55 @@
+{
+  "geometry": "skinpacks/skins.json",
+  "skins": [
+	{
+      "localization_name": "Abdul-Ali",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Abdul-Ali.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Cho-Sang-woo",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Cho-Sang-woo.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Kang-Sae_Byeok",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Kang-Sae_Byeok.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Seong-Gi_Hun",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Seong-Gi_Hun.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Guard Circle",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Guard Circle.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Guard Square",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Guard Square.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Guard Triangle",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Guard Triangle.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Squid Game - P",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Squid Game - P.png",
+      "type": "free"
+    }
+  ],
+  "serialize_name": "§4§lSquid §cGame §f| Skin Pack v1",
+  "localization_name": "§4§lSquid §cGame §f| Skin Pack v1"
+}

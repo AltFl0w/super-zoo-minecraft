@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.gun.trs26": {
+      "geometry": "Geometry.sniper_ui",
+      "materials": [ { "*": "Material.mira" } ],
+      "textures": [ "Texture.trs26" ]
+    },
+    "controller.render.gun.sniper": {
+      "geometry": "Geometry.sniper_ui",
+      "materials": [ { "*": "Material.mira" } ],
+      "textures": [ "Texture.sniper" ]
+    },
+    "controller.render.gun.first": {
+      "geometry": "Geometry.first",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.gun.third": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.shoot_effect": {
+      "geometry": "Geometry.shoot_effect",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.shoot_effect" } ],
+      "textures": [ "Texture.shoot_effect" ]
+    },
+    "controller.render.shoot_effect_first": {
+      "geometry": "Geometry.shoot_effect_first",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.shoot_effect" } ],
+      "textures": [ "Texture.shoot_effect" ]
+    },
+    "controller.render.gun.laser": {
+      "geometry": "Geometry.laser",
+      "materials": [ { "*": "Material.laser" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.gun.laser_first": {
+      "geometry": "Geometry.laser_first",
+      "materials": [ { "*": "Material.laser" } ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+   "format_version":2,
+   "header":{
+      "description":"§7§oCreated by Four Worlds Studios",
+      "name":"§6Simple Guns V1.7 [Resource Pack]",
+      "uuid":"2005131b-06da-4c49-898e-2993de4f2959",
+      "version":[
+         0,
+         0,
+         1
+      ],
+      "min_engine_version":[
+         1,
+         21,
+         0
+      ]
+   },
+   "modules":[
+      {
+         "description":"§7§oCreated by Four Worlds Studios",
+         "type":"resources",
+         "uuid":"29ce8a0e-834c-4f2d-b98f-2dce5c620d3c",
+         "version":[
+            0,
+            0,
+            1
+         ]
+      }
+   ]
+}

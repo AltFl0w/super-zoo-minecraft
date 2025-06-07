@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.tornado_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'tornado_sword' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'tornado_sword' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'tornado_sword'"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=!item,tag=!tornado_sword,type=!wep:tornado,type=!wep:tornado_summon,r=4.5,c=1] ~~~ summon wep:tornado_summon ~~~"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,230 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tauros.quiet": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, -1, 0],
+						"0.8": [0, 0, 0]
+					},
+					"scale": 0.9
+				},
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [5, 0, 0],
+						"0.8": [0, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [0, -20, 0],
+						"0.3": [-30, -45, 0],
+						"0.8": [0, -20, 0]
+					}
+				}
+			}
+		},
+		"animation.tauros.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": [0, 1, 0],
+						"0.3": [0, -1, -1],
+						"0.6": [0, 1, 0]
+					},
+					"scale": 0.9
+				},
+				"body": {
+					"rotation": {
+						"0.0": [-5, 0, 0],
+						"0.3": [5, 0, 0],
+						"0.6": [-5, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [-45, 0, 0],
+						"0.4": [-15, 0, 0],
+						"0.6": [-45, 0, 0]
+					}
+				},
+				"front_legs": {
+					"rotation": {
+						"0.0": [-55, 0, 0],
+						"0.4": [35, 0, 0],
+						"0.6": [-55, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, -2],
+						"0.3": [0, -1, 0],
+						"0.6": [0, 0, -2]
+					}
+				},
+				"back_legs": {
+					"rotation": {
+						"0.0": [35, 0, 0],
+						"0.2": [-35, 0, 0],
+						"0.6": [35, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.3": [0, 0, -1],
+						"0.6": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.tauros.sitting": {
+			"loop": true,
+			"bones": {
+				"tauros": {
+					"position": [0, -5, 0]
+				},
+				"head": {
+					"position": [0, 8, 3],
+					"scale": 0.9
+				},
+				"body": {
+					"rotation": [-30, 0, 0]
+				},
+				"tail": {
+					"rotation": [0, 45, 35],
+					"position": [-2, -1, 0]
+				},
+				"front_legs": {
+					"position": [0, 5, 0]
+				},
+				"back_legs": {
+					"rotation": [-90, 0, 0],
+					"position": [0, -1, 0]
+				}
+			}
+		},
+		"animation.tauros.jump": {
+			"loop": true,
+			"bones": {
+				"tauros": {
+					"position": [0, -1, 0]
+				},
+				"head": {
+					"position": [0, 1, 0],
+					"scale": 0.9
+				},
+				"body": {
+					"rotation": [-5, 0, 0]
+				},
+				"tail": {
+					"rotation": [-60, 0, 0]
+				},
+				"front_legs": {
+					"rotation": [-60, 0, 0],
+					"position": [0, 0, -2]
+				},
+				"back_legs": {
+					"rotation": [40, 0, 0]
+				}
+			}
+		},
+		"animation.tauros.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 8, 3],
+					"scale": 0.9
+				},
+				"body": {
+					"rotation": [-30, 0, 0]
+				},
+				"tail": {
+					"rotation": [-45, -60, 0],
+					"position": [-1, -1, 1]
+				},
+				"front_legs": {
+					"rotation": [-45, 0, 0],
+					"position": [0, 5, 0]
+				},
+				"right_front_leg": {
+					"rotation": [20, 0, 0]
+				},
+				"left_front_leg": {
+					"rotation": [-20, 0, 0]
+				}
+			}
+		},
+		"animation.tauros.swimming": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"tauros": {
+					"position": {
+						"0.0": [0, -3, -2],
+						"0.3": [0, -2, -2],
+						"0.6": [0, -3, -2]
+					}
+				},
+				"head": {
+					"position": [0, 6, 2],
+					"scale": 0.9
+				},
+				"body": {
+					"rotation": [-25, 0, 0]
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [-60, 0, 0],
+						"0.4": [-40, 0, 0],
+						"0.6": [-60, 0, 0]
+					},
+					"position": [0, -2, 0]
+				},
+				"front_legs": {
+					"position": [0, 4, 0]
+				},
+				"right_front_leg": {
+					"rotation": {
+						"0.0": [-55, 0, 0],
+						"0.3": [20, 0, 0],
+						"0.6": [-55, 0, 0]
+					}
+				},
+				"left_front_leg": {
+					"rotation": {
+						"0.0": [20, 0, 0],
+						"0.3": [-55, 0, 0],
+						"0.6": [20, 0, 0]
+					}
+				},
+				"back_legs": {
+					"rotation": {
+						"0.0": [-25, 0, 0],
+						"0.2": [20, 0, 0],
+						"0.6": [-25, 0, 0]
+					}
+				}
+			}
+		},
+        "animation.tauros.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,22,0],
+    "scale":"query.is_in_ui?0:1.2"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

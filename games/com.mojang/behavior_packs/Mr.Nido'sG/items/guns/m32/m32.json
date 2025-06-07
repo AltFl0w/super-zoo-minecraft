@@ -1,0 +1,39 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:m32",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"gun",
+                    "item_hand",
+					"m32",
+					"item_using",
+					"assault_rifle",
+					"big_gun"
+                ]
+            },
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 0.8
+			},
+			"minecraft:cooldown": {
+				"duration": 1.5,
+				"category": "m32"
+			},
+			"minecraft:icon": {
+				"texture": "m32"
+			},
+			"minecraft:hand_equipped": true
+		}
+	}
+}

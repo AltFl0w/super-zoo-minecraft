@@ -1,0 +1,33 @@
+{
+  "name": "super-zoo-ai-caretaker",
+  "version": "1.0.0",
+  "description": "AI-powered caretaker bot for Super Zoo Minecraft server",
+  "main": "zoo-caretaker.js",
+  "scripts": {
+    "start": "node zoo-caretaker.js",
+    "dev": "nodemon zoo-caretaker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "minecraft",
+    "bedrock",
+    "ai",
+    "bot",
+    "zoo",
+    "automation"
+  ],
+  "author": "Super Zoo Team",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.14.2",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 

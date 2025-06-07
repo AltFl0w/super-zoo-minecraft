@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.windy_greataxe": {
+			"geometry": "Geometry.windy_greataxe",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.windy_greataxe"
+			]
+		}
+	}
+}

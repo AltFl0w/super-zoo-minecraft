@@ -1,0 +1,24 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:wish_ore",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:display_name":{
+        "value":"item.serp:wish_ore.name"
+         },
+	  "minecraft:creative_category": {
+		"parent": "itemGroup.name.seed"
+			},
+      "minecraft:max_stack_size": 64,
+      "minecraft:block_placer":{
+    "block" : "serp:wish_ore_block"
+      },
+	  "minecraft:icon": {
+		"texture": "wish_ore"
+	  }
+    }
+  }
+}

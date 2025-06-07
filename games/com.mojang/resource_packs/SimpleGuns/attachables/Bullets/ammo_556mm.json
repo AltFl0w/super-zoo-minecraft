@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:ammo_556mm",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/ammunition/bullet_small"
+         },
+         "scripts":{
+            "animate":[
+               "wielding"
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.bullet.wield_first_person",
+            "wield_third_person":"animation.bullet.wield_third_person",
+            "wielding":"controller.animation.gun.wielding"
+         },
+         "geometry":{
+            "default":"geometry.bullet_medium"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

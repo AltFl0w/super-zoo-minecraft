@@ -1,0 +1,196 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zubat.quiet": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"zubat": {
+					"rotation": {
+						"0.0": [25, 0, 0],
+						"0.2": [45, 0, -10],
+						"0.4": [25, 0, 0],
+						"0.6": [45, 0, 10],
+						"0.8": [25, 0, 0]
+					},
+					"position": {
+						"0.0": [-2, 9, 0],
+						"0.2": [0, 6, 0],
+						"0.4": [2, 9, 0],
+						"0.6": [0, 6, 0],
+						"0.8": [-2, 9, 0]
+					}
+				},
+				"right_wing": {
+					"rotation": {
+						"0.0": [0, -30, 0],
+						"0.2": [0, 30, 0],
+						"0.4": [0, -30, 0],
+						"0.6": [0, 30, 0],
+						"0.8": [0, -30, 0]
+					}
+				},
+				"right_wing_tip": {
+					"rotation": {
+						"0.0": [0, -30, 0],
+						"0.2": [0, 30, 0],
+						"0.4": [0, -30, 0],
+						"0.6": [0, 30, 0],
+						"0.8": [0, -30, 0]
+					}
+				},
+				"left_wing": {
+					"rotation": {
+						"0.0": [0, 30, 0],
+						"0.2": [0, -30, 0],
+						"0.4": [0, 30, 0],
+						"0.6": [0, -30, 0],
+						"0.8": [0, 30, 0]
+					}
+				},
+				"left_wing_tip": {
+					"rotation": {
+						"0.0": [0, 30, 0],
+						"0.2": [0, -30, 0],
+						"0.4": [0, 30, 0],
+						"0.6": [0, -30, 0],
+						"0.8": [0, 30, 0]
+					}
+				}
+			}
+		},
+		"animation.zubat.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"zubat": {
+					"rotation": {
+						"0.0": [45, -12.5, 0],
+						"0.3": [45, 12.5, 0],
+						"0.6": [45, -12.5, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.15": [0, 2, 0],
+						"0.3": [0, 0, 0],
+						"0.45": [0, 2, 0],
+						"0.6": [0, 0, 0]
+					}
+				},
+				"right_wing": {
+					"rotation": {
+						"0.0": [0, 35, 0],
+						"0.15": [0, -25, 0],
+						"0.3": [0, 35, 0],
+						"0.45": [0, -25, 0],
+						"0.6": [0, 35, 0]
+					}
+				},
+				"right_wing_tip": {
+					"rotation": {
+						"0.0": [0, 30, 0],
+						"0.15": [0, -30, 0],
+						"0.3": [0, 30, 0],
+						"0.45": [0, -30, 0],
+						"0.6": [0, 30, 0]
+					}
+				},
+				"left_wing": {
+					"rotation": {
+						"0.0": [0, -35, 0],
+						"0.15": [0, 25, 0],
+						"0.3": [0, -35, 0],
+						"0.45": [0, 25, 0],
+						"0.6": [0, -35, 0]
+					}
+				},
+				"left_wing_tip": {
+					"rotation": {
+						"0.0": [0, -30, 0],
+						"0.15": [0, 30, 0],
+						"0.3": [0, -30, 0],
+						"0.45": [0, 30, 0],
+						"0.6": [0, -30, 0]
+					}
+				}
+			}
+		},
+		"animation.zubat.sitting": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"zubat": {
+					"rotation": {
+						"0.0": [-5, 0, 0],
+						"0.4": [5, 0, 0],
+						"0.8": [-5, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 8, 1],
+						"0.4": [0, 8, -1],
+						"0.8": [0, 8, 1]
+					}
+				},
+				"right_wing": {
+					"rotation": [0, -87.5, 0]
+				},
+				"right_wing_tip": {
+					"rotation": [0, -100, 0]
+				},
+				"left_wing": {
+					"rotation": [0, 82.5, 0]
+				},
+				"left_wing_tip": {
+					"rotation": [0, 85, 0]
+				}
+			}
+		},
+		"animation.zubat.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -3, -5]
+				},
+				"body": {
+					"rotation": [57.5, 0, 0]
+				},
+				"right_wing": {
+					"rotation": [0, 35, 0]
+				},
+				"right_wing_tip": {
+					"rotation": [0, 30, 0]
+				},
+				"left_wing": {
+					"rotation": [0, -35, 0]
+				},
+				"left_wing_tip": {
+					"rotation": [0, -30, 0]
+				}
+			}
+		},
+		"animation.zubat.direction": {
+			"loop": true,
+			"bones": {
+				"zubat": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+        "animation.zubat.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,30,0],
+    "scale":"query.is_in_ui?0:1.75"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

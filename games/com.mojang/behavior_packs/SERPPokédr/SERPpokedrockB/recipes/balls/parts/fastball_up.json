@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:fastball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "nan",
+      "ana"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_yellow"
+      },
+      "n": {
+        "item": "serp:apricorn_orange"
+      }
+    },
+    "result": {
+      "item": "serp:fastball_up",
+      "count": 6
+    }
+  }
+}

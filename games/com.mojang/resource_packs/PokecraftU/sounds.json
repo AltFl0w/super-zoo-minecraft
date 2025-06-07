@@ -1,0 +1,106 @@
+{
+  "entity_sounds": {
+    "entities": {
+"pokemon_unite:pokeball_entity": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "",
+          "hurt": "",
+          "death": "",
+          "step": {
+            "sound": "",
+            "volume": 0.65,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        } 
+      }, 
+"pokemon_unite:snorlax": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "sound.snorlax",
+          "hurt": "sound.snorlax",
+          "death": "sound.snorlax",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.65,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      }, 
+"pokemon_unite:wigglytuff": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "sound.wigglytuff",
+          "hurt": "sound.wigglytuff",
+          "death": "sound.wigglytuff",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.65,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      }, 
+"pokemon_unite:mamoswine": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "sound.mamoswine",
+          "hurt": "sound.mamoswine",
+          "death": "sound.mamoswine",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.65,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      }, 
+        
+     "pokemon_unite:crustle": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "sound.crustle",
+          "hurt": "sound.crustle",
+          "death": "sound.crustle",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.65,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      }, 
+         
+      "pokemon_unite:trevenant": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "sound.trevenant",
+          "hurt": "sound.trevenant",
+          "death": "sound.trevenant",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.65,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      }, 
+      "pokemon_unite:charizard": {
+        "volume": 1.0,
+        "pitch": [ 0.8, 1.2 ],
+        "events": {
+          "ambient": "sound.charizard",
+          "hurt": "sound.charizard",
+          "death": "sound.charizard",
+          "step": {
+            "sound": "mob.cow.step",
+            "volume": 0.65,
+            "pitch": [ 0.9, 1.1 ]
+          }
+        }
+      }
+}
+  }
+}

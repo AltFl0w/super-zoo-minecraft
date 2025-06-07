@@ -1,0 +1,30 @@
+{
+    "resource_pack_name" : "vanilla",
+    "texture_name": "atlas.items",
+    "texture_data" : {
+       "leppa_berry" : {
+          "textures" : "textures/items/leppa_berry"
+       },
+       "knursp" : {
+          "textures" : "textures/items/knursp"
+       },
+       "cornn_berry" : {
+          "textures" : "textures/items/cornn_berry"
+       },
+       "pokeball_pikachu" : {
+          "textures" : "textures/items/pokeball_pikachu"
+       },
+       "pokeball_eevee" : {
+          "textures" : "textures/items/pokeball_eevee"
+       },
+       "pokeball_bulbasaur" : {
+          "textures" : "textures/items/pokeball_bulbasaur"
+       },
+       "pokeball_squirtle" : {
+          "textures" : "textures/items/pokeball_squirtle"
+       },
+       "pokeball_piplup" : {
+          "textures" : "textures/items/pokeball_piplup"
+       }
+    }
+}

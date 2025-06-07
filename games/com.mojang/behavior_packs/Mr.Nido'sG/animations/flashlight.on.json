@@ -1,0 +1,23 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.flashlight.on": {
+      "loop": true,
+      "animation_length": 0.51,
+      "timeline": {
+        "0.0": [
+			"/summon gunsaddon:flashlight_effect ^-0.5 ^2 ^2 ~ ~ place_lightblock"
+        ]
+      }
+    },
+    "animation.flashlight.off": {
+      "loop": true,
+      "animation_length": 0.5,
+      "timeline": {
+        "0.0": [
+			"/event entity @e[type=gunsaddon:flashlight_effect, r=15] remove_wait"
+        ]
+      }
+    }
+  }
+}

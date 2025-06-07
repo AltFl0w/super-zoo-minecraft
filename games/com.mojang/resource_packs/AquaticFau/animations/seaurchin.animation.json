@@ -1,0 +1,55 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.seaurchin.idle": {
+      "loop": true,
+      "animation_length": 7.08333,
+      "bones": {
+        "Body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "3.5": [
+              0,
+              0,
+              -2.5
+            ],
+            "7.0833": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    },
+    "animation.seaurchin.move": {
+      "loop": true,
+      "animation_length": 7.08333,
+      "bones": {
+        "Body": {
+          "rotation": {
+            "0.0": [
+              0,
+              0,
+              0
+            ],
+            "3.5": [
+              0,
+              0,
+              -2.5
+            ],
+            "7.0833": [
+              0,
+              0,
+              0
+            ]
+          }
+        }
+      }
+    }
+  }
+}

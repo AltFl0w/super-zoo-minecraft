@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:bubble_ball",
+        "render_controllers": [ "controller.render.skeleton" ],
+        "materials": { "default": "entity_alphatest" },
+        "textures": {"default": "textures/entity/bubble_ball"},
+        "geometry": {"default": "geometry.bubble_ball"},
+        "animation_controllers": [{"water_splash": "controller.animation.bubble_ball"}],
+        "animations": {"general": "animation.bubble_ball.general"},
+        "particle_effects": {
+          "bubbles": "nw:piplup_bubbles"
+        }
+      }
+    }
+  }

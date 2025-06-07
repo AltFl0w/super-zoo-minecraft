@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:cooked_decapterus",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "cooked_decapterus",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

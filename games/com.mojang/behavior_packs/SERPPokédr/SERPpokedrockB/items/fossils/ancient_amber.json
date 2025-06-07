@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:ancient_amber",
+	    "menu_category":{"group":"itemGroup.name.stone","category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:ancient_amber.name"},
+      "minecraft:icon":"ancient_amber"
+    }
+  }
+}

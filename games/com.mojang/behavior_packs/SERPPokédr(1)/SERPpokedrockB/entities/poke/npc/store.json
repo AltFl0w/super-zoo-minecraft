@@ -1,0 +1,112 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:store",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["serp_npc"]
+      },
+        "minecraft:timer": {"time": 40, "randomInterval": false,"looping": true, "time_down_event": {"event": "serp:change", "target": "self"}},
+"minecraft:interact": {
+"interactions": [
+{"on_interact":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"minecraft:bedrock"},
+"event":"serp:despawn","target":"self"},
+"interact_text":"structure_block.save",
+"use_item":true,"swing":true},
+{"on_interact":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:bike_pass"},
+"event":"serp:bike","target":"self"},"cooldown":5,"add_items":{"table": "loot_tables/jenny/bike.json"},"interact_text":"store.toast.autofulfillment.title",
+"use_item":true,"swing":true},
+{"on_interact":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:ride_pass"},
+"event":"serp:ride","target":"self"},"cooldown":5,"add_items":{"table": "loot_tables/jenny/poke_ride.json"},"interact_text":"store.toast.autofulfillment.title",
+"use_item":true,"swing":true}
+        ]
+    },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.98
+      },
+      "minecraft:health": {
+        "value": 10000,
+        "max": 10000
+      },
+"minecraft:damage_sensor":{"triggers":[{"cause":"all","deals_damage":false}]},
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [{"filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },"cause": "lava","damage_per_tick": 0}]},
+      "minecraft:navigation.walk":{
+        "can_path_over_water":true},
+      "minecraft:movement": {"value": 0.3},
+      "minecraft:movement.basic": {},
+      "minecraft:can_climb":{"value":false},
+    "minecraft:behavior.random_stroll": {
+    "priority": 6,"speed_multiplier": 0.7},
+      "minecraft:behavior.float": {
+        "priority": 0 },
+	"minecraft:behavior.move_towards_restriction": {
+			"priority": 7 },
+      "minecraft:behavior.look_at_player": {
+        "priority": 2,
+        "target_distance": 20,
+        "probability": 1
+      },
+	    "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+        "component_groups": {
+            "serp:buy": {
+      "minecraft:economy_trade_table": {
+"table": "trading/rotomarket/buy.json","new_screen": true,"display_name": "item.spawn_egg.entity.serp:store.name"}
+},
+            "serp:potions": {
+      "minecraft:economy_trade_table": {
+"table": "trading/rotomarket/potions.json","new_screen": true,"display_name": "entity.serp:rotomarket_potions.name"}
+},
+            "serp:pokeballs": {
+      "minecraft:economy_trade_table": {
+"table": "trading/rotomarket/pokeballs.json","new_screen": true,"display_name": "item.spawn_egg.entity.serp:store.name"}
+},
+            "serp:stuff": {
+      "minecraft:economy_trade_table": {
+"table": "trading/rotomarket/stuff.json","new_screen": true,"display_name": "item.spawn_egg.entity.serp:store.name"}
+},
+            "serp:suits": {
+      "minecraft:economy_trade_table": {
+"table": "trading/rotomarket/suits.json","new_screen": true,"display_name": "item.spawn_egg.entity.serp:store.name"}
+},
+    "serp:despawn": {
+      "minecraft:despawn":{"filters":{"test": "distance_to_nearest_player","operator":">", "value":0}}}
+        },
+"events":{
+"serp:change":{
+    "sequence":[
+{"remove":{"component_groups":["serp:buy","serp:potions","serp:pokeballs","serp:stuff","serp:suits"]}},
+{"randomize": [
+{"add":{"component_groups":["serp:buy"]}},
+{"add":{"component_groups":["serp:potions"]}},
+{"add":{"component_groups":["serp:pokeballs"]}},
+{"add":{"component_groups":["serp:stuff"]}},
+{"add":{"component_groups":["serp:suits"]}}
+      ]
+    }
+  ]
+},
+"serp:bike":{
+"run_command":{"command":["function dialog/store_bike"]}},
+"serp:ride":{
+"run_command":{"command":["function dialog/store_ride"]}},
+"serp:despawn":{
+"add":{"component_groups":["serp:despawn"]}}
+    }
+  }
+}

@@ -1,0 +1,71 @@
+# Minecraft Bedrock Server with AI Bot for Super Zoo
+FROM ubuntu:22.04
+
+# Prevent interactive prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install dependencies
+RUN apt-get update && apt-get install -y \
+    wget \
+    unzip \
+    curl \
+    nodejs \
+    npm \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
+
+# Create minecraft user
+RUN useradd -m -s /bin/bash minecraft
+WORKDIR /home/minecraft
+
+# Download Bedrock Server (latest stable version)
+RUN wget https://minecraft.azureedge.net/bin-linux/bedrock-server-1.20.81.01.zip \
+    && unzip bedrock-server-1.20.81.01.zip \
+    && rm bedrock-server-1.20.81.01.zip \
+    && chmod +x bedrock_server \
+    && chown -R minecraft:minecraft /home/minecraft
+
+# Create necessary directories
+RUN mkdir -p worlds behavior_packs resource_packs zoo-ai-bot logs backups
+
+# Setup AI Bot directory and dependencies
+WORKDIR /home/minecraft/zoo-ai-bot
+COPY zoo-ai-bot/package*.json ./
+RUN npm install
+
+# Copy AI Bot source code
+COPY zoo-ai-bot/ ./
+RUN chown -R minecraft:minecraft /home/minecraft/zoo-ai-bot
+
+# Back to main directory
+WORKDIR /home/minecraft
+
+# Copy world and packs (these will be mounted as volumes in production)
+COPY worlds/ ./worlds/
+COPY behavior_packs/ ./behavior_packs/
+COPY resource_packs/ ./resource_packs/
+
+# Copy server configuration files
+COPY server.properties ./
+COPY permissions.json ./
+COPY allowlist.json ./
+
+# Copy startup script
+COPY start.sh ./
+RUN chmod +x start.sh
+
+# Set ownership
+RUN chown -R minecraft:minecraft /home/minecraft
+
+# Expose ports
+EXPOSE 19132/udp 8080
+
+# Switch to minecraft user
+USER minecraft
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
+    CMD curl -f http://localhost:8080/health || exit 1
+
+# Start the server
+CMD ["./start.sh"] 

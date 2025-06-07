@@ -1,0 +1,75 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.desert_eagle.apuntar.shoot": {
+      "loop": true,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.1": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.desert_eagle @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.desert_eagle @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:desert_eagle_apuntar",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:desert_eagle_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:desert_eagle_apuntar_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:desert_eagle_apuntar_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:desert_eagle_silenciador_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:desert_eagle_silenciador_apuntar_laser",
+			
+			"/scoreboard players remove @s desert_eagle 1",
+			"/event entity @s guns:desert_eagle",
+			"/function desert_eagle/desert_eagle",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.desert_eagle.shoot": {
+      "loop": true,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.1": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.desert_eagle @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.desert_eagle @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:desert_eagle",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:desert_eagle",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:desert_eagle_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:desert_eagle_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:desert_eagle_silenciador",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:desert_eagle_silenciador_laser",
+			
+			"/scoreboard players remove @s desert_eagle 1",
+			"/event entity @s guns:desert_eagle",
+			"/function desert_eagle/desert_eagle",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.desert_eagle.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.desert_eagle_reload @a[r=25]"
+        ],
+        "1.9": [
+			"/scoreboard players add @s desert_eagle 9",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:desert_eagle_ammo 0 1"
+        ]
+      }
+    }
+  }
+}

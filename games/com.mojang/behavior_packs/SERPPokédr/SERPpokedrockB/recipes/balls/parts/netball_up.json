@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:netball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "nan",
+      "nan"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_blue"
+      },
+      "n": {
+        "item": "serp:apricorn_black"
+      }
+    },
+    "result": {
+      "item": "serp:netball_up",
+      "count": 6
+    }
+  }
+}

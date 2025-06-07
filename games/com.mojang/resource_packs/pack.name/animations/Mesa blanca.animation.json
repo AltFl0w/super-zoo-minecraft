@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.df_mesa_blanca1.base": {
+			"loop": true,
+			"bones": {
+				"Mesa": {
+					"position": [-7, 0, -3],
+					"scale": 0.5
+				}
+			}
+		}
+	}
+}

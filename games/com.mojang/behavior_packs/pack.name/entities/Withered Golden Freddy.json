@@ -1,0 +1,541 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "df:withered_golden_freddy",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"scripts": {
+                "animate": [
+                    "df_withered_golden_freddy"
+                ]
+            },
+            "animations": {
+                "df_withered_golden_freddy": "controller.animation.Withered_Golden_Freddy.efecto",
+                "df_aparicion": "animation.animation.attack_anim"
+			}
+        },
+		"component_groups": {
+		  "minecraft:environment_sensor": {
+			"triggers": [
+			  {
+				"filters": {
+				  "all_of": [
+					{ "test": "is_daytime", "value": true },
+					{ "test": "has_target", "operator": "==", "value": false }
+				  ]
+				},
+				"event": "minecraft:fox_configure_docile_day"
+			  },
+			  {
+				"filters": {
+				  "all_of": [
+					{ "test": "is_daytime", "value": false },
+					{ "test": "has_target", "operator": "==", "value": false }
+				  ]
+				},
+				"event": "minecraft:fox_configure_docile_night"
+			  }
+			]
+		  },
+		  "minecraft:fox_thunderstorm": {
+			"minecraft:environment_sensor": {
+			  "triggers": [
+				{
+				  "filters": {
+					"all_of": [
+					  { "test": "is_weather", "operator": "!=", "value": "thunderstorm" },
+					  { "test": "is_daytime", "value": true }
+					]
+				  },
+				  "event": "minecraft:fox_configure_day"
+				},
+				{
+				  "filters": {
+					"all_of": [
+					  { "test": "is_weather", "operator": "!=", "value": "thunderstorm" },
+					  { "test": "is_daytime", "value": false }
+					]
+				  },
+				  "event": "minecraft:fox_configure_night"
+				}
+			  ]
+			},
+	  
+			"minecraft:behavior.find_cover": {
+			  "priority": 0,
+			  "speed_multiplier": 1,
+			  "cooldown_time": 0.0
+			}
+		  },
+		  "minecraft:fox_day": {
+			"minecraft:environment_sensor": {
+			  "triggers": [
+		  {
+				  "filters": { "test" : "is_weather", "value" : "thunderstorm" },
+				  "event": "minecraft:fox_configure_thunderstorm"
+				},
+				{
+				  "filters": { "test": "is_daytime", "value": false },
+				  "event": "minecraft:fox_configure_night"
+				}
+			  ]
+	  },
+			"minecraft:behavior.nap": {
+			  "priority": 8,
+			  "cooldown_min": 2.0,
+			  "cooldown_max": 7.0,
+			  "mob_detect_dist": 12.0,
+			  "mob_detect_height": 100.0,
+			  "can_nap_filters": {
+				"all_of": [
+				  {
+					"test": "in_water",
+					"subject": "self",
+					"operator": "==",
+					"value": false
+				  },
+				  {
+					"test": "on_ground",
+					"subject": "self",
+					"operator": "==",
+					"value": true
+				  },
+				  {
+					"test": "is_underground",
+					"subject": "self",
+					"operator": "==",
+					"value": true
+				  },
+				  {
+					"test": "is_weather",
+					"subject": "self",
+					"operator": "!=",
+					"value": "thunderstorm"
+				  }
+				]
+			  }
+			},
+			"minecraft:behavior.find_cover": {
+			  "priority": 50,
+			  "speed_multiplier": 1,
+			  "cooldown_time": 5.0
+			}
+		  },
+		  "minecraft:fox_night": {
+			"minecraft:environment_sensor": {
+			  "triggers": [
+		  {
+				  "filters": { "test" : "is_weather", "value" : "thunderstorm" },
+				  "event": "minecraft:fox_configure_thunderstorm"
+				},
+				{
+				  "filters": { "test": "is_daytime", "value": true },
+				  "event": "minecraft:fox_configure_day"
+				}
+			  ]
+	  },
+			"minecraft:behavior.stroll_towards_village": {
+			  "priority": 11,
+			  "speed_multiplier": 1.0,
+			  "goal_radius": 3.0,
+			  "cooldown_time": 10.0,
+			  "search_range": 32,
+			  "start_chance": 0.005
+			}
+		  },
+		  "minecraft:fox_ambient_sleep": {
+			"minecraft:ambient_sound_interval": {
+			  "event_name": "sleep"
+			}
+		  },
+	
+		  "minecraft:fox_ambient_night": {
+			"minecraft:ambient_sound_interval": {
+			  "event_name": "screech",
+			  "value": 80,
+			  "range": 160
+			}
+		  },
+			"minecraft:roar": {
+  
+				"minecraft:on_target_acquired": {},
+				"minecraft:behavior.summon_entity": {
+					"priority": 0,
+					"probability": 100.0,
+					"summon_choices": [{
+							"weight": 1,
+							"cooldown_time": 100.0,
+							"cast_duration": 0.0,
+							"start_sound_event": "plop",
+							"sequence": [{
+									"shape": "circle",
+									"target": "self",
+									"base_delay": 0.0,
+									"delay_per_summon": 0.0,
+									"num_entities_spawned": 0,
+									"entity_type": "",
+									"entity_lifespan": 10.0,
+									"size": 10.0,
+									"sound_event": "plop"
+								}
+							]
+						}
+					]
+				}
+			},
+			"minecraft:animatronico_adult": {
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			},
+			"minecraft:animatronico_angry": {
+				"minecraft:variant": {
+					"value": 1
+				},
+				"minecraft:angry": {
+  
+					"duration": 100,
+					"broadcastAnger": false,
+					"broadcastRange": 2,
+  
+					"calm_event": {
+						"event": "minecraft:on_calm",
+						"target": "self"
+					}
+				},
+				"minecraft:on_target_acquired": {}
+			},
+			"minecraft:animatronico_closed": {
+				"minecraft:variant": {
+					"value": 0
+				}
+			},
+			"minecraft:animatronico_calm": {
+				"minecraft:variant": {
+					"value": 0
+				},
+		"minecraft:is_sheared": {},
+				"minecraft:on_target_acquired": {
+					"event": "minecraft:become_angry",
+					"target": "self"
+				}
+			}
+		},
+  
+		"components": {
+			"minecraft:scale": {
+			"value": 0.67
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:behavior.nearest_attackable_target": {
+				"priority": 1,
+				"within_radius": 60,
+				"entity_types": [{
+						"filters": {
+							"other_with_families": ["player","villager", "irongolem","evocation_illager", "vindicator", "witch"]
+						},
+						"max_dist": 60,
+						"sprint_speed_multiplier": 1.5
+					}
+				],
+				"must_see": true,
+				"must_see_forget_duration": 10
+			},
+			"minecraft:collision_box": {
+				"width": 3.6,
+				"height": 3.5
+			  },
+			"minecraft:nameable": {},
+			"minecraft:follow_range": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			},
+			"minecraft:hunter_mode": {
+		"minecraft:navigation.generic": {
+		  "is_amphibious": true,
+		  "can_break_doors": true,
+		  "can_walk": true,
+		  "avoid_sun": true
+		}
+		},
+  
+			"minecraft:type_family": {
+				"family": ["danyfox", "WitheredGoldenFreddy", "Withered"]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/empty.json"
+			},
+			"minecraft:health": {
+				"value": 150,
+				"max": 150
+			},
+			"minecraft:movement": {
+				"value": 0.15
+			},
+			"minecraft:attack": {
+				"damage": 100
+			},
+			"minecraft:knockback_resistance": {
+				"value": 5.0
+			},
+			"minecraft:behavior.break_door": {
+				"priority": 1
+			},
+      "minecraft:movement.basic": {
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_walk": true,
+        "can_break_doors": true
+      },
+			"minecraft:behavior.melee_attack": {
+				"priority": 1,
+				"probability":6.0,
+				"speed_multiplier": 3.0,
+				"track_target": false
+			},
+			"minecraft:behavior.move_towards_restriction": {
+				"priority": 2,
+				"speed_multiplier": 1.5
+			},
+			"minecraft:behavior.look_at_player": {
+				"priority": 8,
+				"look_distance": 20.0,
+				"probability":5.0
+			},
+			"minecraft:behavior.hurt_by_target": {
+				"priority": 1
+			},
+			"minecraft:physics": {}
+  
+		},
+		"minecraft:scheduler": {
+		  "min_delay_secs": 0,
+		  "max_delay_secs": 0,
+		  "scheduled_events": [
+			{
+			  "filters": [
+				{ "test": "is_sleeping", "value": true }
+			  ],
+			  "event": "minecraft:ambient_sleep"
+			},
+			{
+			  "filters": {
+				"all_of":[
+				  { "test" : "is_daytime", "value" : false },
+				  { "test": "distance_to_nearest_player", "operator": ">", "value": 50 }
+				]
+			  },
+			  "event": "minecraft:ambient_night"
+			},
+			{
+			  "filters": {
+				"all_of":[
+				  { "test" : "is_sleeping", "value" : false },
+				  {
+					"any_of":[
+					  { "test" : "is_daytime", "value" : true },
+					  { "test": "distance_to_nearest_player", "operator": "<=", "value": 50 }
+					]
+				  }
+				]
+			  },
+			  "event": "minecraft:ambient_normal"
+			}
+		  ]
+		},
+		"minecraft:environment_sensor": {
+		  "triggers": [
+			{
+			  "filters": { "test" : "is_daytime", "value" : false },
+			  "event": "minecraft:fox_configure_night"
+			},
+			{
+			  "filters": { "test" : "is_daytime", "value" : true },
+			  "event": "minecraft:fox_configure_day"
+			}
+		  ]
+		},
+		"events": {
+  
+			"minecraft:entity_spawned": {
+				"randomize": [{
+						"weight": 95,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"minecraft:animatronico_adult",
+								"minecraft:animatronico_calm"
+  
+							]
+						}
+					}
+				]
+			},
+	  "minecraft:entity_transformed": {
+				"randomize": [{
+						"weight": 95,
+						"remove": {},
+						"add": {
+							"component_groups": [
+								"minecraft:animatronico_adult",
+								"minecraft:animatronico_calm"
+  
+							]
+						}
+					}
+				]
+			},
+			"minecraft:on_calm": {
+				"remove": {
+					"component_groups": [
+						"minecraft:animatronico_angry",
+						"minecraft:roar"
+  
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:animatronico_calm",
+						"minecraft:animatronico_closed"
+					]
+				}
+			},
+			"minecraft:become_angry": {
+				"remove": {
+					"component_groups": [
+						"minecraft:animatronico_calm",
+						"minecraft:animatronico_closed"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"minecraft:animatronico_angry",
+						"minecraft:roar"
+					]
+				}
+			}
+		},
+		"minecraft:fox_configure_thunderstorm": {
+		  "remove": {
+			"component_groups": [
+			  "minecraft:fox_night",
+			  "minecraft:fox_day"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "minecraft:fox_thunderstorm"
+			]
+		  }
+		},
+  
+		"minecraft:fox_configure_day": {
+		  "remove": {
+			"component_groups": [
+			  "minecraft:fox_night",
+			  "minecraft:fox_thunderstorm"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "minecraft:fox_day"
+			]
+		  }
+		},
+  
+		"minecraft:fox_configure_night": {
+		  "remove": {
+			"component_groups": [
+			  "minecraft:fox_day",
+			  "minecraft:fox_thunderstorm"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "minecraft:fox_night"
+			]
+		  }
+		},
+  
+		"minecraft:ambient_normal": {
+		  "add": {
+			"component_groups": [
+			  "minecraft:fox_ambient_normal"
+			]
+		  }
+		},
+		"minecraft:ambient_sleep": {
+		  "add": {
+			"component_groups": [
+			  "minecraft:fox_ambient_sleep"
+			]
+		  }
+		},
+		"minecraft:ambient_night": {
+		  "add": {
+			"component_groups": [
+			  "minecraft:fox_ambient_night"
+			]
+		  }
+		},
+		
+		"minecraft:fox_configure_defending": {
+		  "remove": {
+			"component_groups": [
+			  "minecraft:docile_fox",
+			  "minecraft:fox_day",
+			  "minecraft:fox_night"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "minecraft:defending_fox"
+			]
+		  }
+		},
+  
+		"minecraft:fox_configure_docile_day": {
+		  "remove": {
+			"component_groups": [
+			  "minecraft:defending_fox",
+			  "minecraft:fox_night"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "minecraft:docile_fox",
+			  "minecraft:fox_day"
+			]
+		  }
+		},
+  
+		"minecraft:fox_configure_docile_night": {
+		  "remove": {
+			"component_groups": [
+			  "minecraft:defending_fox",
+			  "minecraft:fox_day"
+			]
+		  },
+		  "add": {
+			"component_groups": [
+			  "minecraft:docile_fox",
+			  "minecraft:fox_night"
+			]
+		  }
+		}
+	}
+  }
+  

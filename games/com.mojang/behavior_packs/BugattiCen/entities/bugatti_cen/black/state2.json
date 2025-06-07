@@ -1,0 +1,122 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "bugatti:centodieci_black_2",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"startup",
+					"seat"
+				]
+			},
+			"animations": {
+				"startup": "controller.animation.bugatti_cen_startup",
+				"seat": "controller.animation.ashminggu_dmc_seat"
+			}
+		},
+		"component_groups": {
+			"door_close": {
+				"minecraft:transformation": {
+					"into": "bugatti:centodieci_black_1",
+					"delay": 0.1
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"cars",
+					"letsstar",
+					"bugatti"
+				]
+			},
+			"minecraft:knockback_resistance": {
+				"value": 1,
+				"max": 1
+			},
+			"minecraft:scale": {
+				"value": 1.59
+			},
+			"minecraft:collision_box": {
+				"width": 1,
+				"height": 1
+			},
+			"minecraft:health": {
+				"value": 30
+			},
+			"minecraft:movement": {
+				"value": 0.7
+			},
+			"minecraft:movement.basic": {},
+			"minecraft:jump.static": {},
+			"minecraft:input_ground_controlled": {},
+			"minecraft:physics": {},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"crouching_skip_interact": true,
+				"interact_text": "Drive",
+				"family_types": [
+					"player",
+					"villager"
+				],
+				"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [
+							0.3,
+							0,
+							0.1
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2
+					},
+					{
+						"position": [
+							-0.3,
+							0,
+							0.1
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2
+					}
+				]
+			},
+			"minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+								"all_of": [
+									{
+										"test": "is_sneaking",
+										"subject": "player",
+										"value": true
+									}
+								]
+							},
+							"event": "door_close"
+						},
+						"use_item": false,
+						"interact_text": "Close Door"
+					}
+				]
+			},
+			"minecraft:pushable": {
+				"is_pushable": false,
+				"is_pushable_by_piston": true
+			}
+		},
+		"events": {
+			"door_close": {
+				"add": {
+					"component_groups": [
+						"door_close"
+					]
+				}
+			}
+		}
+	}
+}

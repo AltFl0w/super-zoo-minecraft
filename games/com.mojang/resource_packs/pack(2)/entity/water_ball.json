@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:water_ball",
+        "render_controllers": [ "controller.render.skeleton" ],
+        "materials": { "default": "entity_alphatest" },
+        "textures": {"default": "textures/entity/water_ball"},
+        "geometry": {"default": "geometry.water_ball"},
+        "animation_controllers": [{"water_splash": "controller.animation.water_ball"}],
+        "animations": {"general": "animation.water_ball.general"},
+        "particle_effects": {
+          "water_splash": "nw:water_splash"
+        }
+      }
+    }
+  }

@@ -1,0 +1,1254 @@
+{
+  "skins": [
+	{
+      "localization_name": "Captain America 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Captain America 1.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Captain America 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Captain America 2.png",
+      "type": "free"
+    },
+	{
+      "localization_name": "Captain America 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Captain America 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Captain America 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Captain America 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Iron Man 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Iron Man 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Iron Man 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Iron Man 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Iron Man 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Iron Man 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Iron Man 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Iron Man 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Tony Stark 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Tony Stark 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Tony Stark 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Tony Stark 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Tony Stark 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Tony Stark 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Tony Stark 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Tony Stark 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thor 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thor 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thor 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Thor 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thor 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thor 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thor 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thor 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hulk 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hulk 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hulk 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hulk 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hulk 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hulk 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hulk 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hulk 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Bruce Banner 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Bruce Banner 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Bruce Banner 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Bruce Banner 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Nick Fury 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Nick Fury 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Nick Fury 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Nick Fury 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Widow 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Black Widow 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Widow 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Black Widow 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Widow 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Black Widow 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Widow 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Black Widow 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "War Machine 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "War Machine 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "War Machine 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "War Machine 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "War Machine 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "War Machine 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "War Machine 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "War Machine 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hawkeye 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hawkeye 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hawkeye 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hawkeye 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hawkeye 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Hawkeye 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hawkeye 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hawkeye 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Loki 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Loki 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Loki 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Loki 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Loki 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Loki 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Loki 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Loki 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Valkyrie",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Valkyrie.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Korg",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Korg.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Hela",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Hela.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Odin",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Odin.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Red Skull",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Red Skull.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Peggy Carter",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Peggy Carter.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Steve Rogers",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Steve Rogers.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Crossbones",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Crossbones.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ultron 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Ultron 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ultron 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Ultron 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Falcon 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Falcon 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Falcon 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Falcon 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Doctor Strange 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Doctor Strange 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Doctor Strange 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Doctor Strange 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Doctor Strange 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Doctor Strange 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Doctor Strange 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Doctor Strange 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Winter Soldier 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Winter Soldier 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Winter Soldier 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Winter Soldier 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Winter Soldier 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Winter Soldier 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Winter Soldier 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Winter Soldier 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Vision 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Vision 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Vision 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Vision 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Vision 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Vision 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Vision 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Vision 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wanda Maximoff 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Wanda Maximoff 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wanda Maximoff 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Wanda Maximoff 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wanda Maximoff 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Wanda Maximoff 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wanda Maximoff 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Wanda Maximoff 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quicksilver 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Quicksilver 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quicksilver 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Quicksilver 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quicksilver 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quicksilver 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quicksilver 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quicksilver 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ant Man 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Ant Man 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ant Man 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Ant Man 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ant Man 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Ant Man 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Scott Lang",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Scott Lang.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wasp 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Wasp 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wasp 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Wasp 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ghost 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Ghost 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ghost 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Ghost 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Panther 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Black Panther 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Panther 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Black Panther 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Panther 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Black Panther 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Black Panther 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Black Panther 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Okoye",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Okoye.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "M’Baku",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "M’Baku.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Erik Killmonger",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Erik Killmonger.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Shuri",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Shuri.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Captain Marvel 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Captain Marvel 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Captain Marvel 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Captain Marvel 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Captain Marvel 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Captain Marvel 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Captain Marvel 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Captain Marvel 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Carol Danvers",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Carol Danvers.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Kree",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Kree.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Talos",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Talos.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Yon-Rogg",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Yon-Rogg.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Star Lord 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Star Lord 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Star Lord 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Star Lord 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Peter Quill 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Peter Quill 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Peter Quill 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Peter Quill 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Gamora 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Gamora 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Gamora 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Gamora 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Drax 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Drax 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Drax 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Drax 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Groot 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Groot 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Groot 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Groot 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Rocket Racoon 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Rocket Racoon 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Rocket Racoon 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Rocket Racoon 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Mantis",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Mantis.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Nebula",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Nebula.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Yondu",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Yondu.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "The Collector",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "The Collector.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Spider man 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Spider man 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Spider man 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Spider man 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 5",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Spider man 5.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 6",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Spider man 6.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 7",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Spider man 7.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider man 8",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Spider man 8.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Peter Parker 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Peter Parker 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Peter Parker 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Peter Parker 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Mysterio 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Mysterio 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Mysterio 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Mysterio 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Happy Hogan",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Happy Hogan.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "J. Jonah Jameson",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "J. Jonah Jameson.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "MJ",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "MJ.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ned",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Ned.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thanos 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thanos 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thanos 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thanos 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thanos 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thanos 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thanos 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thanos 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Yellow Jacket",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Yellow Jacket.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Kaecilius",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Kaecilius.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Extremis",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Extremis.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Whiplash",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Whiplash.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Mr Fantastic",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Mr Fantastic.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Invisible Woman",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Invisible Woman.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Thing",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Thing.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Human Torch",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Human Torch.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Silver Surfer",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Silver Surfer.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Deadpool",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Deadpool.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Colossus",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Colossus.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Cable",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Cable.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wolverine 1",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Wolverine 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wolverine 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Wolverine 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Wolverine 3",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Wolverine 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Logan",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Logan.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Cyclops 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Cyclops 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Cyclops 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Cyclops 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Magneto 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Magneto 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Magneto 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Magneto 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Mystique",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Mystique.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Professor-X",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Professor-X.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Beast",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Beast.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Nightcrawler",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Nightcrawler.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Jean Grey",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Jean Grey.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Storm",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Storm.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Shadowcat",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Shadowcat.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Iceman",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Iceman.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Carnage",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Carnage.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Venom",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Venom.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Lizard",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Lizard.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Sandman",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Sandman.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Kingpin",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Kingpin.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Doctor Octopus",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Doctor Octopus.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Dr Doom",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Dr Doom.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Green Goblin",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Green Goblin.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Vulture",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Vulture.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Electro",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Electro.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider-Man Noir",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Spider-Man Noir.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Scarlet Spider",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Scarlet Spider.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider Gwen",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Spider Gwen.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Superior Spider-Man",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Superior Spider-Man.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Spider-Punk",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Spider-Punk.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Riot",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Riot.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Miles Morales 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Miles Morales 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Miles Morales 2",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Miles Morales 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Miles Morales 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Miles Morales 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Miles Morales 4",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Miles Morales 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Punisher",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Punisher.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Luke Cage",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Luke Cage.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Jessica Jones",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Jessica Jones.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Daredevil",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Daredevil.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 1",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quantum Realm Suit 1.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 2",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Quantum Realm Suit 2.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 3",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quantum Realm Suit 3.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 4",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quantum Realm Suit 4.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 5",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quantum Realm Suit 5.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 6",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quantum Realm Suit 6.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 7",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quantum Realm Suit 7.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Quantum Realm Suit 8",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Quantum Realm Suit 8.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Kamala Khan",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Kamala Khan.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Adam Warlock",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Adam Warlock.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Galactus",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Galactus.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Celestial",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Celestial.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Nova",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Nova.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Ghost Rider",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Ghost Rider.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "Moon Knight",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Moon Knight.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Hyperion",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Hyperion.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Agnes",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Agnes.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Agatha Harkness",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Agatha Harkness.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Wanda",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Wanda.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Vision",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Vision.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "She-Hulk",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "She-Hulk.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Ayesha",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Ayesha.png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Thor (Jane Foster)",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "Thor (Jane Foster).png",
+      "type": "free"
+   },
+    {
+      "localization_name": "Stan Lee",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "Stan Lee.png",
+      "type": "free"
+    }
+  ],
+  "serialize_name": "Marvel",
+  "localization_name": "Marvel"
+}

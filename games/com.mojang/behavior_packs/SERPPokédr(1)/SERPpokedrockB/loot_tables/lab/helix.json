@@ -1,0 +1,19 @@
+{
+  "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:omanyte"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:omanytes"
+                }
+            ]
+        }
+    ]
+}

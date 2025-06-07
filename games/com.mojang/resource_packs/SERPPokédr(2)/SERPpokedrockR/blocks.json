@@ -1,0 +1,56 @@
+{
+	"format_version": "1.16.0",
+   "serp:berry_log" : {
+      "sound" : "wood",
+      "textures" : {
+         "down" : "berry_log_top",
+         "side" : "berry_log_side",
+         "up" : "berry_log_top"
+      }
+   },
+   "serp:apricorn_black_block" : {
+      "sound" : "grass",
+      "textures" : {
+         "down" : "berry_log_top",
+         "side" : "berry_log_side",
+         "up" : "berry_log_top"
+      }
+   },
+   "serp:apricorn_blue_block" : {
+      "sound" : "grass"
+   },
+   "serp:apricorn_cyan_block" : {
+      "sound" : "grass"
+   },
+   "serp:apricorn_green_block" : {
+      "sound" : "grass"
+   },
+   "serp:apricorn_orange_block" : {
+      "sound" : "grass"
+   },
+   "serp:apricorn_red_block" : {
+      "sound" : "grass"
+   },
+   "serp:apricorn_white_block" : {
+      "sound" : "grass"
+   },
+   "serp:apricorn_yellow_block" : {
+      "sound" : "grass"
+   },
+   "serp:berry_sapling" : {
+      "sound" : "grass",
+      "textures" : "textures/blocks/plants/berry_sapling"
+   },
+   "serp:berry_top" : {
+      "sound" : "grass",
+      "textures" : "textures/blocks/plants/berry_top"
+   },
+   "serp:berry_leaves_dark" : {
+      "sound" : "grass",
+      "textures" : "textures/blocks/plants/berry_leaves_dark"
+   },
+   "serp:berry_leaves_light" : {
+      "sound" : "grass",
+      "textures" : "textures/blocks/plants/berry_leaves_light"
+   }
+}

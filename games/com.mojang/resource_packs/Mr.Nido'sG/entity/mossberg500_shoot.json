@@ -1,0 +1,37 @@
+{
+    "format_version": "1.19.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "gunsaddon:mossberg500_shoot",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "geometry": {
+                "default": "geometry.bullet_shoot"
+            },
+            "textures": {
+                "default": "textures/bullet_shoot"
+            },
+            "animations": {
+                "shoot_effect": "animation.bullet.effect",
+				"move": "animation.bullet.move"
+            },
+            "particle_effects": {
+                "shoot_effect": "gunsaddon:shoot_effect"
+            },
+            "scripts": {
+                "animate": [
+                    "shoot_effect",
+					"move"
+                ]
+            },
+            "spawn_egg": {
+                "base_color": "#ffffff",
+                "overlay_color": "#ffffff"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

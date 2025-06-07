@@ -1,0 +1,28 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": {
+"identifier": "serp:green_leggings",
+			"item": {
+				"serp:bone_leggings": "query.owner_identifier == 'minecraft:player'"
+			},
+			"materials": {
+				"default": "armor",
+				"enchanted": "armor_enchanted"
+			},
+			"textures": {
+				"default": "textures/models/green/leggings",
+				"enchanted": "textures/misc/enchanted_item_glint"
+			},
+			"geometry": {
+"default": "geometry.serp_green_armor"
+			},
+			"scripts": {
+				"parent_setup": "variable.leg_layer_visible = 0.0;"
+			},
+			"render_controllers": [
+				"controller.render.armor"
+			]
+		}
+	}
+}

@@ -1,0 +1,134 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.venomoth.quiet": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"body2": {
+					"rotation": {
+						"0.0": [10, 0, 0],
+						"0.8": [0, 0, 0],
+						"1.6": [10, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.venomoth.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"venomoth": {
+					"rotation": [-20, 0, 0],
+					"position": {
+						"0.0": [0, 5, -4],
+						"0.2": [0, 7, -4],
+						"0.6": [0, 5, -4]
+					}
+				},
+				"head": {
+					"position": [0, 0, 0]
+				},
+				"right_wing": {
+					"rotation": {
+						"0.0": [0, 0, 40],
+						"0.2": [0, 0, -40],
+						"0.6": [0, 0, 40]
+					}
+				},
+				"left_wing": {
+					"rotation": {
+						"0.0": [0, 0, -40],
+						"0.2": [0, 0, 40],
+						"0.6": [0, 0, -40]
+					}
+				},
+				"body2": {
+					"rotation": {
+						"0.0": [-10, 0, 0],
+						"0.2": [-20, 0, 0],
+						"0.6": [-10, 0, 0]
+					}
+				},
+				"right_leg": {
+					"rotation": [0, 0, -50]
+				},
+				"left_leg": {
+					"rotation": [0, 0, 50]
+				}
+			}
+		},
+		"animation.venomoth.sitting": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"right_wing": {
+					"rotation": {
+						"0.0": [0, 0, 45],
+						"0.8": [0, 0, 40],
+						"1.6": [0, 0, 45]
+					}
+				},
+				"left_wing": {
+					"rotation": {
+						"0.0": [0, 0, -45],
+						"0.8": [0, 0, -40],
+						"1.6": [0, 0, -45]
+					}
+				},
+				"body2": {
+					"rotation": {
+						"0.0": [-10, 0, 0],
+						"0.8": [5, 0, 0],
+						"1.6": [-10, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.venomoth.attack": {
+			"loop": true,
+			"bones": {
+				"venomoth": {
+					"rotation": [-60, 0, 0],
+					"position": [0, 10, 0]
+				},
+				"head": {
+					"position": [0, -4, 0]
+				},
+				"body2": {
+					"rotation": [-80, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 0, 30]
+				},
+				"left_leg": {
+					"rotation": [0, 0, -30]
+				}
+			}
+		},
+		"animation.venomoth.direction": {
+			"loop": true,
+			"bones": {
+				"venomoth": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+        "animation.venomoth.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,28,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

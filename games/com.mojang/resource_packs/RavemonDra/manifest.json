@@ -1,0 +1,49 @@
+{
+	"format_version": 2,
+	"metadata": {
+		"authors": [
+			"kekemods"
+		],
+		"generated_with": {
+			"bridge": [
+				"2.1.5"
+			]
+		}
+	},
+	"header": {
+		"name": "Ravemon Dragon Addon",
+		"description": "Team : KAI, NoahHeart, Toi Panther, KekeMods",
+		"min_engine_version": [
+			1,
+			17,
+			0
+		],
+		"uuid": "52c25f28-9d01-4908-b98f-78193b9156db",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "7a9ee5c1-8629-4d3d-ae45-d779321a1bdf",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "9f7c7148-899a-4714-9402-7f64d4538ba0",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	]
+}

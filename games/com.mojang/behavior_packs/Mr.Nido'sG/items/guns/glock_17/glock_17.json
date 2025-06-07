@@ -1,0 +1,38 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:glock_17",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"gun",
+                    "item_hand",
+					"glock_17",
+					"item_using",
+					"pistol"
+                ]
+            },
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 0.85
+			},
+			"minecraft:cooldown": {
+				"duration": 0.33,
+				"category": "glock_17"
+			},
+			"minecraft:icon": {
+				"texture": "glock_17"
+			},
+			"minecraft:hand_equipped": true
+		}
+	}
+}

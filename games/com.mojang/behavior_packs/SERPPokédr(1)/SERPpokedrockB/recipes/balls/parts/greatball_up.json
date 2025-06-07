@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:greatball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "rtr"
+    ],
+    "key": {
+      "r": {
+        "item": "serp:apricorn_red"
+      },
+      "t": {
+        "item": "serp:apricorn_blue"
+      }
+    },
+    "result": {
+      "item": "serp:greatball_up",
+      "count": 3
+    }
+  }
+}

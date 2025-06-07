@@ -1,0 +1,197 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.m4a1.third": {
+			"loop": true,
+			"bones": {
+				"base_attachable": {
+					"rotation": [90, 0, 0],
+					"position": [0.5, 6, 1.5],
+					"scale": 0.5
+				},
+				"red_laser": {
+					"scale": [1, 1, 250]
+				},
+				"blue_laser": {
+					"scale": [1, 1, 250]
+				},
+				"green_laser": {
+					"scale": [1, 1, 250]
+				}
+			}
+		},
+		"animation.m4a1.first": {
+			"loop": true,
+			"bones": {
+				"base_attachable": {
+					"position": [0, 9, -4],
+					"scale": 0.6
+				},
+				"red_laser": {
+					"scale": [1, 1, 250]
+				},
+				"blue_laser": {
+					"scale": [1, 1, 250]
+				},
+				"green_laser": {
+					"scale": [1, 1, 250]
+				}
+			}
+		},
+		"animation.m4a1.reload": {
+			"animation_length": 1.7917,
+			"bones": {
+				"cargador_attachable": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5": [0, 0, 0],
+						"0.625": [0, -22, 0],
+						"0.9167": [0, -22, 0],
+						"1.0417": [0, 0, 0],
+						"1.2917": [0, 0, 0],
+						"1.7917": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.m4a1.first.shoot": {
+			"loop": true,
+			"animation_length": 0.12,
+			"bones": {
+				"base_brazoes": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.07": [-5, 0, 0],
+						"0.12": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.07": [-0.06625, 1.306, 0.53849],
+						"0.12": [0, 0, 0]
+					}
+				},
+				"shoot_particle": {
+					"position": [11.62484, -18.80307, -8.678]
+				}
+			},
+			"particle_effects": {
+				"0.03": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				},
+				"0.04": {
+					"effect": "shoot_effect",
+					"locator": "shoot_particle"
+				},
+				"0.05": {
+					"effect": "shoot_light",
+					"locator": "shoot_particle"
+				},
+				"0.08": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				},
+				"0.1": {
+					"effect": "smoke_fire",
+					"locator": "shoot_particle"
+				}
+			}
+		},
+		"animation.player.m4a1.first.reload": {
+			"animation_length": 1.7917,
+			"bones": {
+				"base_brazoes": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2083": [-7.5, 10, 0],
+						"0.4583": [-7.5, 10, 5],
+						"0.625": [-20, 10, 0],
+						"0.7917": [-7.5, 22.5, 0],
+						"0.9583": [2.5, 22.5, 0],
+						"1.0417": [-15, 22.5, 0],
+						"1.2917": [0, 0, 0],
+						"1.375": [2.5, -20, -12.5],
+						"1.4167": [-2.75, -18, -11.25],
+						"1.5": [2.86, -14, -8.75],
+						"1.7917": [0, 0, 0]
+					}
+				},
+				"second_arm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.2917": [20, 25, 27.5],
+						"0.5": [27.5, 25, 27.5],
+						"1.0417": [27.5, 25, 27.5],
+						"1.2917": [0, 0, 0],
+						"1.7917": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2917": [4, 0, 0],
+						"0.5": [4, 0, 0],
+						"0.625": [4, 0, 12],
+						"0.9167": [4, 0, 12],
+						"1.0417": [4, 0, 0],
+						"1.2917": [0, 0, 0],
+						"1.7917": [0, 0, 0]
+					}
+				},
+				"rightArm_model": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"1.25": [0, 0, 0],
+						"1.3333": [-3, 0, 0],
+						"1.4167": [-4, -7, -3],
+						"1.5": [-4, -3, -3],
+						"1.7917": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.player.m4a1.apuntar": {
+			"loop": true,
+			"bones": {
+				"base_brazoes": {
+					"rotation": [-3.41384, 1.31334, -3.90468],
+					"position": [-1.72674, 4.54663, -6.87529]
+				},
+				"rightItem": {
+					"position": [2.41988, 3.04767, -7.09768]
+				},
+				"shoot_particle": {
+					"position": [2.39069, 3.01351, -7.01451]
+				}
+			}
+		},
+		"animation.player.m4a1.apuntar.eotech": {
+			"loop": true,
+			"bones": {
+				"base_brazoes": {
+					"rotation": [-1.66096, 1.31082, -3.90139],
+					"position": [-2.09524, 4.20071, -7.14949]
+				},
+				"rightItem": {
+					"position": [2.41988, 3.04767, -7.09768]
+				},
+				"shoot_particle": {
+					"position": [2.39069, 3.01351, -7.01451]
+				}
+			}
+		},
+		"animation.player.m4a1.flashlight": {
+			"loop": true,
+			"animation_length": 0.9833,
+			"bones": {
+				"right_flashlight": {
+					"position": [1.55, -13.5, -3.25]
+				}
+			},
+			"particle_effects": {
+				"0.0": {
+					"effect": "flashlight",
+					"locator": "right_flashlight"
+				}
+			}
+		}
+	}
+}

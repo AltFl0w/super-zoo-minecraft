@@ -1,0 +1,53 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.rockfall_axe": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'rockfall_axe' && query.is_using_item"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'rockfall_axe' && !query.is_using_item) || query.get_equipped_item_name('main_hand') != 'rockfall_axe'"
+						}
+					],
+					"animations": [
+						"rockfall_axe"
+					]
+				}
+			}
+		},
+		"controller.animation.rockfall_axe.effect": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"effect": "!query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/tag @s remove bedrock"
+					]
+				},
+				"effect": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/tp @s ~~~ 0"
+					],
+					"animations": [
+						"rockfall"
+					]
+				}
+			}
+		}
+	}
+}

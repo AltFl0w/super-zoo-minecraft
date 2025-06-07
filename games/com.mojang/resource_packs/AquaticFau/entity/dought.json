@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.dought"
+      },
+      "identifier": "fauna:dought",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "dought",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/dought"
+      },
+      "animations": {
+        "idle": "animation.dought.idle",
+        "look_at_target": "animation.common.look_at_target",
+        "baby": "animation.dought.baby",
+        "swim": "animation.dought.swim",
+        "swimidle": "animation.dought.swimidle",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

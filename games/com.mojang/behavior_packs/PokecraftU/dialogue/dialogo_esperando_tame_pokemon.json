@@ -1,0 +1,22 @@
+{
+	"format_version": "1.14",
+	"minecraft:npc_dialogue":
+	{
+		"scenes":
+		[
+			{
+				"scene_tag": "dialogo_esperando_tame_pokemon",
+				"npc_name": { "rawtext": [ { "translate": "Pokemon" } ] },
+				"text": { "rawtext": [ { "translate": "Waiting Owner...", "with": ["\n"] } ] },
+				"buttons": [
+					{ 
+						"name": { "rawtext": [ { "translate": "§1Take" } ] },
+						"commands": [
+							"/event entity @s minecraft:on_tame"
+						]
+					}
+				]  
+			}
+		]
+	}
+}

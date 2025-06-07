@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.df_papel_con_cara": {
+      "arrays": {
+        "materials": {
+          "Array.materials": [ "Material.default", "Material.invisible" ]
+        }
+      },
+      "geometry": "Geometry.df_papel_con_cara",
+      "materials": [ { "*": "Array.materials[query.is_invisible]" } ],
+      "textures": [ "Texture.df_papel_con_cara" ]
+    }
+  }
+}

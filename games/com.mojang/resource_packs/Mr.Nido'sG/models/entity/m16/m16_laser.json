@@ -1,0 +1,105 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.m16_laser",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 9,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [2, 12, 0]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [-2, 12, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "hat",
+					"parent": "head",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-7, 18, 0]
+				},
+				{
+					"name": "base_attachable",
+					"parent": "rightItem",
+					"pivot": [-5.5, 8, 0]
+				},
+				{
+					"name": "laser",
+					"parent": "base_attachable",
+					"pivot": [-6.35355, 13.64645, -41.9]
+				},
+				{
+					"name": "red_laser",
+					"parent": "laser",
+					"pivot": [-6.35355, 13.64645, -41.9],
+					"cubes": [
+						{"origin": [-6.5, 13, -56.4], "size": [1, 1, 29], "inflate": -0.4, "pivot": [-6, 14, -34.1], "rotation": [0, 0, 45], "uv": [196, 0]}
+					]
+				},
+				{
+					"name": "blue_laser",
+					"parent": "laser",
+					"pivot": [-6.35355, 13.64645, -41.9],
+					"cubes": [
+						{"origin": [-6.5, 13, -56.4], "size": [1, 1, 29], "inflate": -0.4, "pivot": [-6, 14, -34.1], "rotation": [0, 0, 45], "uv": [196, 30]}
+					]
+				},
+				{
+					"name": "green_laser",
+					"parent": "laser",
+					"pivot": [-6.35355, 13.64645, -41.9],
+					"cubes": [
+						{"origin": [-6.5, 13, -56.4], "size": [1, 1, 29], "inflate": -0.4, "pivot": [-6, 14, -34.1], "rotation": [0, 0, 45], "uv": [196, 60]}
+					]
+				}
+			]
+		}
+	]
+}

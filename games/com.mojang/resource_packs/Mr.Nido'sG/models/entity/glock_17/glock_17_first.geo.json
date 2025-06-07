@@ -1,0 +1,176 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.glock_17_first",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve2",
+					"parent": "second_arm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightSleeve",
+					"parent": "rightArm_model",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_attachable",
+					"parent": "rightArm_model",
+					"pivot": [-5.5, 4.3, -0.2],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-6.5, 1.40249, 5.0213], "size": [2, 2, 1], "inflate": -0.1, "pivot": [-5.5, 2.65249, 5.2963], "rotation": [-12.5, 0, 0], "uv": [20, 43]},
+						{"origin": [-6.5, 3.30249, 4.1213], "size": [2, 2, 1], "inflate": -0.1, "pivot": [-5.5, 2.65249, 5.2963], "rotation": [-12.5, 0, 0], "uv": [48, 34]},
+						{"origin": [-6.5, 2.60249, 4.6213], "size": [2, 2, 1], "inflate": -0.1, "pivot": [-5.5, 2.65249, 5.2963], "rotation": [-12.5, 0, 0], "uv": [6, 49]},
+						{"origin": [-6.5, 1.6, 4.8], "size": [2, 5, 3], "pivot": [-5.5, 3.9, 5.8], "rotation": [20, 0, 0], "uv": [36, 37]},
+						{"origin": [-6.5, 1.5, 5.55], "size": [2, 1, 3], "inflate": -0.075, "uv": [46, 37]},
+						{"origin": [-6.5, 6.075, 3.925], "size": [2, 1, 3], "inflate": -0.025, "uv": [46, 41]},
+						{"origin": [-6.5, 6.675, 5.55], "size": [2, 3, 2], "inflate": -0.05, "pivot": [-5.5, 8.075, 5.925], "rotation": [-36, 0, 0], "uv": [48, 10]},
+						{"origin": [-6.5, 7.075, -5.075], "size": [2, 2, 11], "inflate": 0.025, "uv": [0, 30]},
+						{"origin": [-5.3, 7.075, -1.075], "size": [1, 2, 8], "inflate": -0.075, "uv": [30, 10]},
+						{"origin": [-6.7, 7.075, -1.075], "size": [1, 2, 8], "inflate": -0.075, "uv": [30, 20]},
+						{"origin": [-6.5, 8.575, -4.975], "size": [2, 2, 13], "inflate": -0.025, "uv": [0, 0]},
+						{"origin": [-6.5, 9.575, 0.025], "size": [1, 1, 3], "inflate": 0.15, "uv": [48, 18]},
+						{"origin": [-6.5, 8.575, -5.6], "size": [2, 2, 1], "inflate": -0.225, "uv": [12, 49]},
+						{"origin": [-6.5, 6.675, -5.8], "size": [2, 2, 2], "inflate": -0.6, "uv": [48, 22]},
+						{"origin": [-6.5, 4.5, 0.3], "size": [2, 3, 4], "inflate": -0.3, "uv": [36, 30]},
+						{"origin": [-6.25, 4.5, 0.3], "size": [1, 3, 4], "inflate": -0.25, "uv": [0, 54]}
+					]
+				},
+				{
+					"name": "ammo_glock",
+					"parent": "base_attachable",
+					"pivot": [-5.5, 4.7, 7.15],
+					"rotation": [15.5, 0, 0],
+					"cubes": [
+						{"origin": [-6.5, 0.4, 4.75], "size": [2, 8, 3], "inflate": -0.35, "uv": [26, 30]},
+						{"origin": [-6.5, 0, 4.75], "size": [2, 1, 3], "inflate": -0.2, "uv": [20, 47]}
+					]
+				},
+				{
+					"name": "mira_1_attachable",
+					"parent": "base_attachable",
+					"pivot": [-5.5, 8.8, 2.7]
+				},
+				{
+					"name": "eotech_attachable",
+					"parent": "mira_1_attachable",
+					"pivot": [-5.5, 11, 5],
+					"cubes": [
+						{"origin": [-6.5, 9.6, 4.5], "size": [2, 2, 3], "inflate": -0.15, "uv": [36, 45]},
+						{"origin": [-5, 9.4, 4.25], "size": [1, 2, 3], "inflate": -0.35, "uv": [27, 42]},
+						{"origin": [-7, 9.4, 4.25], "size": [1, 2, 3], "inflate": -0.35, "uv": [1, 44]},
+						{"origin": [-7, 10.7, 4.3], "size": [1, 3, 2], "inflate": -0.325, "uv": [30, 47]},
+						{"origin": [-5, 10.7, 4.3], "size": [1, 3, 2], "inflate": -0.325, "uv": [0, 49]},
+						{"origin": [-6, 11.7, 4.7], "size": [1, 1, 1], "inflate": -0.425, "uv": [50, 5]},
+						{"origin": [-7, 12.725, 4.3], "size": [3, 1, 2], "inflate": -0.3, "uv": [48, 15]}
+					]
+				},
+				{
+					"name": "flashlight_attachable",
+					"parent": "base_attachable",
+					"pivot": [-5.5, 5.575, -2.23333],
+					"cubes": [
+						{"origin": [-6.5, 4.675, -5.7], "size": [2, 2, 2], "inflate": -0.25, "uv": [48, 26]},
+						{"origin": [-6, 4.675, -4.45], "size": [1, 2, 4], "inflate": 0.45, "uv": [10, 43]}
+					]
+				},
+				{
+					"name": "silencer_attachable",
+					"parent": "base_attachable",
+					"pivot": [-5.5, 9.6, -6.26875],
+					"cubes": [
+						{"origin": [-6.5, 8.6, -7.6], "size": [2, 2, 2], "inflate": 0.25, "uv": [48, 30]},
+						{"origin": [-6.5, 8.6, -16.3], "size": [2, 2, 8], "inflate": 0.2, "uv": [30, 0]},
+						{"origin": [-6, 9.1, -16.475], "size": [1, 1, 1], "inflate": 0.05, "uv": [50, 7]},
+						{"origin": [-6.5, 8.6, -8.4], "size": [2, 2, 1], "inflate": 0.15, "uv": [46, 49]}
+					]
+				},
+				{
+					"name": "reload_attachable",
+					"parent": "base_attachable",
+					"pivot": [-5.136, 9.865, 4.377],
+					"cubes": [
+						{"origin": [-6.5, 8.575, -5.075], "size": [2, 2, 13], "inflate": 0.2, "uv": [0, 15]},
+						{"origin": [-6.5, 10.575, 6.925], "size": [2, 1, 1], "uv": [50, 3]},
+						{"origin": [-6.5, 8.575, 0.025], "size": [2, 1, 3], "inflate": 0.175, "uv": [46, 45]},
+						{"origin": [-6, 10.35, -5.075], "size": [1, 1, 2], "inflate": -0.35, "uv": [50, 0]}
+					]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				},
+				{
+					"name": "shoot_particle",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"shoot_particle": [-6, 15, 1]
+					}
+				}
+			]
+		}
+	]
+}

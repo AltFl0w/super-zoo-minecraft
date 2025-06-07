@@ -1,0 +1,26 @@
+
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.puerta.pose": {
+			"initial_state": "abierta",
+			"states": {
+				"default": {},
+				"abierta": {
+					"animations": [
+						{
+							"abierta": "(2.08)"
+						}
+					]
+				},
+				"cerrada": {
+					"animations": [
+						{
+							"cerrada": "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

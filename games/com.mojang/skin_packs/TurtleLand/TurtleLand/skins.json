@@ -1,0 +1,157 @@
+{
+	"geometry": "skinpacks/skins.json",
+	"skins": [
+		{
+			"localization_name": "OrangeTurtle",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "skin1.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "BlueTurtle",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "skin2.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "RedTurtle",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "skin3.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "PurpleTurtle",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "skin4.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Sensei",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "skin5.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Emy",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "skin6.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Villain",
+			"geometry": "geometry.humanoid.custom",
+			"texture": "skin7.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_8",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "8.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_9",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "9.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_10",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "10.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_11",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "11.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_12",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "12.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_13",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "13.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_14",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "14.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_15",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "15.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_16",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "16.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_17",
+			"geometry": "geometry.humanoid.custom",
+			"texture": "17.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_18",
+			"geometry": "geometry.humanoid.custom",
+			"texture": "18.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_19",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "19.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_20",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "20.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_21",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "21.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_22",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "22.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_23",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "23.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_24",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "24.png",
+			"type": "free"
+		},
+		{
+			"localization_name": "Unknown_25",
+			"geometry": "geometry.humanoid.customSlim",
+			"texture": "25.png",
+			"type": "free"
+		}
+	],
+	"serialize_name": "TurtleLand",
+	"localization_name": "TurtleLand"
+}

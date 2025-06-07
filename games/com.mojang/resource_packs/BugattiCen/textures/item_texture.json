@@ -1,0 +1,56 @@
+{
+	"resource_pack_name": "bridgeRP",
+	"texture_name": "atlas.items",
+	"texture_data": {
+		"bugatti_cen_black_item": {
+			"textures": [
+				"textures/items/bugatti_cen/black"
+			]
+		},
+		"bugatti_cen_blue_item": {
+			"textures": [
+				"textures/items/bugatti_cen/blue"
+			]
+		},
+		"bugatti_cen_bronze_item": {
+			"textures": [
+				"textures/items/bugatti_cen/bronze"
+			]
+		},
+		"bugatti_cen_green_item": {
+			"textures": [
+				"textures/items/bugatti_cen/green"
+			]
+		},
+		"bugatti_cen_orange_item": {
+			"textures": [
+				"textures/items/bugatti_cen/orange"
+			]
+		},
+		"bugatti_cen_pink_item": {
+			"textures": [
+				"textures/items/bugatti_cen/pink"
+			]
+		},
+		"bugatti_cen_purple_item": {
+			"textures": [
+				"textures/items/bugatti_cen/purple"
+			]
+		},
+		"bugatti_cen_red_item": {
+			"textures": [
+				"textures/items/bugatti_cen/red"
+			]
+		},
+		"bugatti_cen_white_item": {
+			"textures": [
+				"textures/items/bugatti_cen/white"
+			]
+		},
+		"bugatti_cen_yellow_item": {
+			"textures": [
+				"textures/items/bugatti_cen/yellow"
+			]
+		}
+	}
+}

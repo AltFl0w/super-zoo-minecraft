@@ -1,0 +1,1 @@
+give @s fauna:poisonous_seaurchin

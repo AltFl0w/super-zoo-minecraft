@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ravemontod:agni_tamed",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/agni_dragon"
+      },
+      "geometry": {
+        "default": "geometry.agni_dragon"
+      },
+      "animations": {
+        "fly": "animation.Flame.Fly",
+        "idle": "animation.Flame.Idle",
+        "walk": "animation.Flame.walk",
+        "fly_target": "animation.Flame.Fly2",
+        "dead": "animation.Flame.dead",
+        "sit": "animation.Flame.Sit",
+        "shoot": "animation.Flame.Breath",
+        "shoot_flying": "animation.Flame.Fly_breath",
+        "shoot_controller": "controller.animation.agni.breath"
+      },
+      "scripts": {
+        "animate": [
+          { "fly": "!query.is_on_ground && query.is_moving" },
+          { "fly_target": "!query.is_on_ground && !query.is_moving" },
+          { "idle": "query.is_on_ground && query.ground_speed <= 1" },
+          { "walk": "query.is_on_ground && query.ground_speed >= 1" },
+          { "sit": "query.is_sitting" },
+          "shoot_controller"
+        ]
+      },
+      "sound_effects": {
+        "dragon_breath": "mob.phantom.flap",
+	    "dragon_flap": "mob.enderdragon.flap"
+	  },
+      "render_controllers": [ "controller.render.skeleton" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+	    "base_color": "#316200",
+        "overlay_color": "#80FF00"
+	  }
+    }
+  }
+}

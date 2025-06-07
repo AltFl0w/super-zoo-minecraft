@@ -1,0 +1,107 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.glock_17" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add glock_17 dummy", "/scoreboard players add @s glock_17 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"glock_17" : "q.scoreboard('glock_17') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('glock_17') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') && q.is_using_item && q.is_alive"
+						}
+					]
+				},
+				"glock_17" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('glock_17') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('glock_17') < 0 && q.is_using_item"
+						},
+						{
+							"shoot" : "q.is_using_item && !q.is_sneaking"
+						},
+						{
+							"shoot_apuntar" : "q.is_using_item && q.is_sneaking"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "glock_17.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('glock_17') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"glock_17" : "!q.is_using_item && q.any_animation_finished"
+						},
+						{
+							"no_ammo" : "q.scoreboard('glock_17') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot_apuntar" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "glock_17.apuntar.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"glock_17" : "!q.is_using_item || !q.is_sneaking"
+						},
+						{
+							"no_ammo" : "q.scoreboard('glock_17') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:glock_17_ammo}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "glock_17.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'glock_17') || !q.is_alive"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.glock_17_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

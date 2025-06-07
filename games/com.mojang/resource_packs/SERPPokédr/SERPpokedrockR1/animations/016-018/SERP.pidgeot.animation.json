@@ -1,0 +1,293 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.pidgeot.quiet": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"head": {
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.9": {
+							"post": [0, -1, -1],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body_root": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.8": {
+							"post": [5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"quiet_wings": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.0": {
+							"post": [-10, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"1.6": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wing_right": {
+					"scale": {
+						"0.0": {
+							"post": [0.7, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wing_left": {
+					"scale": {
+						"0.0": {
+							"post": [0.7, 1, 1],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wings": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.pidgeot.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"pidgeot": {
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.3": {
+							"post": [0, 1, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"head": {
+					"position": {
+						"0.0": {
+							"post": [0, -3, -4],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"body_root": {
+					"rotation": {
+						"0.0": {
+							"post": [10, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wing_right": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 25],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [0, 0, -35],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [0, 0, 25],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": {
+						"0.0": {
+							"post": [1.9, 1, 1.3],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wing_right_top": {
+					"rotation": {
+						"0.0": [0, 0, 25],
+						"0.3": [0, 0, -25],
+						"0.6": [0, 0, 25]
+					}
+				},
+				"flying_wing_left": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, -25],
+							"lerp_mode": "catmullrom"
+						},
+						"0.2": {
+							"post": [0, 0, 35],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [0, 0, -25],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"scale": {
+						"0.0": {
+							"post": [1.9, 1, 1.3],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"flying_wing_left_top": {
+					"rotation": {
+						"0.0": [0, 0, -25],
+						"0.3": [0, 0, 25],
+						"0.6": [0, 0, -25]
+					}
+				},
+				"legs": {
+					"rotation": {
+						"0.0": {
+							"post": [45, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.4": {
+							"post": [35, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.6": {
+							"post": [45, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 2],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"quiet_wings": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.pidgeot.sitting": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, -4, 0]
+				},
+				"body_root": {
+					"rotation": [10, 0, 0],
+					"position": [0, -2, 0]
+				},
+				"flying_wings": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.pidgeot.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 2, 2]
+				},
+				"body_root": {
+					"rotation": [-20, 0, 0]
+				},
+				"flying_wings": {
+					"rotation": [-25, 0, 0],
+					"position": [0, -2, 0]
+				},
+				"flying_wing_right": {
+					"rotation": [0, 0, -35]
+				},
+				"flying_wing_right_top": {
+					"rotation": [0, 0, -45]
+				},
+				"flying_wing_left": {
+					"rotation": [0, 0, 35]
+				},
+				"flying_wing_left_top": {
+					"rotation": [0, 0, 45]
+				},
+				"legs": {
+					"rotation": [-35, 0, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 0, 17.5]
+				},
+				"left_leg": {
+					"rotation": [0, 0, -20]
+				},
+				"quiet_wings": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.pidgeot.direction": {
+			"loop": true,
+			"bones": {
+				"pidgeot": {
+					"rotation": ["query.vertical_speed * -4.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+		"animation.pidgeot.health_bar": {
+			"loop": true,
+			"bones": {
+				"health_hover": {
+					"rotation": ["q.camera_rotation(0)", "q.camera_rotation(1)-q.body_y_rotation", 0],
+					"position": [0, 34, 0],
+					"scale": "query.is_in_ui?0:1.5"
+				},
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+		},
+		"animation.pidgeot.health_bar_mega": {
+			"loop": true,
+			"bones": {
+				"health_hover": {
+					"rotation": ["q.camera_rotation(0)", "q.camera_rotation(1)-q.body_y_rotation", 0],
+					"position": [0, 37, 0],
+					"scale": "query.is_in_ui?0:1.5"
+				},
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+		}
+	}
+}

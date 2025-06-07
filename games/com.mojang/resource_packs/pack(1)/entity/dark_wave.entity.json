@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wep:dark_wave",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/dummy"
+			},
+			"geometry": {
+				"default": "geometry.dummy"
+			},
+			"animations": {
+				"tornado.particle": "controller.animation.tornado"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"tornado.particle": "query.is_on_ground"
+					}
+				]
+			},
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"particle_effects": {
+				"tornado": "wep:dark_wave"
+			}
+		}
+	}
+}

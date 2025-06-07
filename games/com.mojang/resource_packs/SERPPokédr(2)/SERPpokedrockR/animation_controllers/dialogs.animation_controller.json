@@ -1,0 +1,227 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+"controller.animation.jenny": {
+			"initial_state" : "not",
+            "states": {
+        "not": {
+            "transitions": [{"pokedex": "query.skin_id == 1"},{"vs_seeker": "query.skin_id == 2"},{"poke_ride": "query.skin_id == 3"},{"dynamax_band": "query.skin_id == 4"},{"mega_ring": "query.skin_id == 5"}]
+        },
+        "pokedex": {
+            "particle_effects": [
+{"effect": "pokedex","locator": "dialog"
+                        }
+                    ],
+            "transitions": [{"not": "query.skin_id == 0"},{"vs_seeker": "query.skin_id == 2"},{"poke_ride": "query.skin_id == 3"},{"dynamax_band": "query.skin_id == 4"},{"mega_ring": "query.skin_id == 5"}]
+        },
+        "vs_seeker": {
+            "particle_effects": [
+{"effect": "vs_seeker","locator": "dialog"
+                        }
+                    ],
+            "transitions": [{"not": "query.skin_id == 0"},{"pokedex": "query.skin_id == 1"},{"poke_ride": "query.skin_id == 3"},{"dynamax_band": "query.skin_id == 4"},{"mega_ring": "query.skin_id == 5"}]
+        },
+        "poke_ride": {
+            "particle_effects": [
+{"effect": "poke_ride","locator": "dialog"
+                        }
+                    ],
+            "transitions": [{"not": "query.skin_id == 0"},{"pokedex": "query.skin_id == 1"},{"vs_seeker": "query.skin_id == 2"},{"dynamax_band": "query.skin_id == 4"},{"mega_ring": "query.skin_id == 5"}]
+        },
+        "dynamax_band": {
+            "particle_effects": [
+{"effect": "dynamax_band","locator": "dialog"
+                        }
+                    ],
+            "transitions": [{"not": "query.skin_id == 0"},{"pokedex": "query.skin_id == 1"},{"vs_seeker": "query.skin_id == 2"},{"poke_ride": "query.skin_id == 3"},{"mega_ring": "query.skin_id == 5"}]
+        },
+        "mega_ring": {
+            "particle_effects": [
+{"effect": "mega_ring","locator": "dialog"
+                        }
+                    ],
+            "transitions": [{"not": "query.skin_id == 0"},{"pokedex": "query.skin_id == 1"},{"vs_seeker": "query.skin_id == 2"},{"poke_ride": "query.skin_id == 3"},{"dynamax_band": "query.skin_id == 4"}]
+        }
+      }
+    },
+"controller.animation.npc_dialog": {
+			"initial_state" : "root",
+            "states": {
+                "root": {
+                    "transitions": [
+{"root": "query.skin_id == 0"},
+{"dialog1": "query.skin_id == 1"},
+{"dialog2": "query.skin_id == 2"},
+{"dialog3": "query.skin_id == 3"},
+{"dialog4": "query.skin_id == 4"},
+{"dialog5": "query.skin_id == 5"}
+                    ]
+                },
+
+                "dialog1": {
+        "particle_effects": [
+{"effect": "dialog1","locator": "dialog"}
+                    ],
+        "transitions": [
+{"root": "query.skin_id == 0"},
+{"dialog1": "query.skin_id == 1"},
+{"dialog2": "query.skin_id == 2"},
+{"dialog3": "query.skin_id == 3"},
+{"dialog4": "query.skin_id == 4"},
+{"dialog5": "query.skin_id == 5"}
+                    ]
+                },
+                "dialog2": {
+        "particle_effects": [
+{"effect": "dialog2","locator": "dialog"}
+                    ],
+        "transitions": [
+{"root": "query.skin_id == 0"},
+{"dialog1": "query.skin_id == 1"},
+{"dialog2": "query.skin_id == 2"},
+{"dialog3": "query.skin_id == 3"},
+{"dialog4": "query.skin_id == 4"},
+{"dialog5": "query.skin_id == 5"}
+                    ]
+                },
+                "dialog3": {
+        "particle_effects": [
+{"effect": "dialog3","locator": "dialog"}
+                    ],
+        "transitions": [
+{"root": "query.skin_id == 0"},
+{"dialog1": "query.skin_id == 1"},
+{"dialog2": "query.skin_id == 2"},
+{"dialog3": "query.skin_id == 3"},
+{"dialog4": "query.skin_id == 4"},
+{"dialog5": "query.skin_id == 5"}
+                    ]
+                },
+                "dialog4": {
+        "particle_effects": [
+{"effect": "dialog4","locator": "dialog"}
+                    ],
+        "transitions": [
+{"root": "query.skin_id == 0"},
+{"dialog1": "query.skin_id == 1"},
+{"dialog2": "query.skin_id == 2"},
+{"dialog3": "query.skin_id == 3"},
+{"dialog4": "query.skin_id == 4"},
+{"dialog5": "query.skin_id == 5"}
+                    ]
+                },
+                "dialog5": {
+        "particle_effects": [
+{"effect": "dialog5","locator": "dialog"}
+                    ],
+        "transitions": [
+{"root": "query.skin_id == 0"},
+{"dialog1": "query.skin_id == 1"},
+{"dialog2": "query.skin_id == 2"},
+{"dialog3": "query.skin_id == 3"},
+{"dialog4": "query.skin_id == 4"},
+{"dialog5": "query.skin_id == 5"}
+                    ]
+                }
+            }
+        },
+"controller.animation.rotomarket_dialog": {
+			"initial_state" : "not",
+            "states": {
+                "not": {
+                    "transitions": [{"say1": "query.skin_id == 2"},{"say2": "query.skin_id == 3"},{"say3": "query.skin_id == 4"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say1": {
+                    "particle_effects": [
+                        {
+                    "effect": "say1",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say2": "query.skin_id == 3"},{"say3": "query.skin_id == 4"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say2": {
+                    "particle_effects": [
+                        {
+                    "effect": "say2",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say1": "query.skin_id == 2"},{"say3": "query.skin_id == 4"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say3": {
+                    "particle_effects": [
+                        {
+                    "effect": "say3",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say2": "query.skin_id == 3"},{"say1": "query.skin_id == 2"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say4": {
+                    "particle_effects": [
+                        {
+                    "effect": "say4",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say2": "query.skin_id == 3"},{"say3": "query.skin_id == 4"},{"say1": "query.skin_id == 2"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say5": {
+                    "particle_effects": [
+                        {
+                    "effect": "say5",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say1": "query.skin_id == 2"},{"say3": "query.skin_id == 4"},{"say4": "query.skin_id == 5"},{"say1": "query.skin_id == 2"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say6": {
+                    "particle_effects": [
+                        {
+                    "effect": "say6",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say2": "query.skin_id == 3"},{"say1": "query.skin_id == 2"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say1": "query.skin_id == 2"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say7": {
+                    "particle_effects": [
+                        {
+                    "effect": "say7",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say2": "query.skin_id == 3"},{"say3": "query.skin_id == 4"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say1": "query.skin_id == 2"},{"say8": "query.skin_id == 9"},{"say9": "query.skin_id == 10"}]
+                },
+                "say8": {
+                    "particle_effects": [
+                        {
+                    "effect": "say8",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say1": "query.skin_id == 2"},{"say3": "query.skin_id == 4"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say1": "query.skin_id == 2"},{"say9": "query.skin_id == 10"}]
+                },
+                "say9": {
+                    "particle_effects": [
+                        {
+                    "effect": "say9",
+                    "locator": "say"
+                        }
+                    ],
+					"animations" : [ "say" ],
+                    "transitions": [{"not": "query.skin_id == 0"},{"say2": "query.skin_id == 3"},{"say1": "query.skin_id == 2"},{"say4": "query.skin_id == 5"},{"say5": "query.skin_id == 6"},{"say6": "query.skin_id == 7"},{"say7": "query.skin_id == 8"},{"say8": "query.skin_id == 9"},{"say1": "query.skin_id == 2"}]
+                }
+            }
+        }
+    }
+}

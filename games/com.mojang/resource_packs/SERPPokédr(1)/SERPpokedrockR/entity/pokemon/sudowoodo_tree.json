@@ -1,0 +1,27 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:sudowoodo_tree",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{
+    "default":"textures/entity/sudowoodo_tree"
+      },
+      "geometry":{
+    "default":"geometry.sudowoodo_tree"
+      },
+      "animations":{
+    "shaking":"animation.sudowoodo_tree.shaking"
+      },
+      "sound_effects":{
+        "shaking":"serp.apricorn.wiggle"
+      },
+      "scripts":{
+        "animate":[
+        {"shaking":"query.is_shaking"}
+        ]
+      },
+      "render_controllers":["controller.render.default"]
+    }
+  }
+}

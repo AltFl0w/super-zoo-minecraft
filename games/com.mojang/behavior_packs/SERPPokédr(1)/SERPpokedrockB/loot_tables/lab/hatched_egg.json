@@ -1,0 +1,219 @@
+{
+  "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+        {
+    "type": "item",
+    "name": "minecraft:dye",
+    "functions": [
+        {
+    "function": "set_data",
+    "data": 15
+        },
+        {
+    "function": "set_count",
+    "count": {"min":2,"max":4}
+                }
+              ]
+            }
+          ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:bulbasaur"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:bulbasaurs"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:charmander"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:charmanders"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:squirtle"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:squirtles"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:caterpie"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:caterpies"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:weedle"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:weedles"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:rattata"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:rattatas"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:spearow"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:spearows"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:clefairy"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:clefairys"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:jigglypuff"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:jigglypuffs"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:chikorita"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:chikoritas"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:cyndaquil"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:cyndaquils"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:totodile"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:totodiles"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:sentret"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:sentrets"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:hoothoot"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:hoothoots"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:ledyba"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:ledybas"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:spinarak"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:spinaraks"
+                },
+                {
+  "weight": 100,
+  "type": "item",
+  "name": "serp:pichu"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:pichus"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:togepi"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:togepis"
+                },
+                {
+  "weight": 10,
+  "type": "item",
+  "name": "serp:riolu"
+                },
+                {
+  "weight": 1,
+  "type": "item",
+  "name": "serp:riolus"
+                }
+
+            ]
+        }
+    ]
+}

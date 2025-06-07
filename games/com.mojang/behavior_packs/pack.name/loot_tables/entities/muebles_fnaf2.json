@@ -1,0 +1,436 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:spawn_egg",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_actor_id",
+              "id": "df:cables_colgantes1"
+            }
+          ]
+        }
+	  ]
+  },
+  {
+    "rolls": 1,
+    "entries": [
+      {
+        "type": "item",
+        "name": "minecraft:spawn_egg",
+        "weight": 1,
+        "functions": [
+          {
+            "function": "set_actor_id",
+            "id": "df:cables_colgantes2"
+          }
+        ]
+      }
+  ]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:cables_colgantes3"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:escritorio_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:estanteria_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:foco_colgante"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:foco_colgante2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:foco_colgante3"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:mesa_blanca_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:mesa_blanca2_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:panel_de_luz"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:tvs1_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:tvs2_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:ventilador_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:mesa_metalica"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:bocina"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:caja_de_puppet"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:cartel_happy_birthday"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:cartel_lets_party"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:arcade_toy_bonnie"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:arcade_toy_chica"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:arcade_toy_foxy"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:arcade_toy_freddy"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:estrellas_colgantes1"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:estrellas_colgantes2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:mesa_roja_fnaf2"
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "minecraft:spawn_egg",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:recorte_toy_foxy"
+        }
+      ]
+    }
+]
+}
+]
+}

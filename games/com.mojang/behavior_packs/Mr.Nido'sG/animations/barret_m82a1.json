@@ -1,0 +1,60 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.barret_m82a1.shoot.explosive": {
+      "loop": true,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.barret_m82a1 @a[r=25]",
+			"/scoreboard players remove @s barret_m82a1 1",
+			"/event entity @s guns:barret_m82a1.explosive",
+			"/function barret_m82a1/barret_m82a1",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.barret_m82a1.shoot.fire": {
+      "loop": true,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.barret_m82a1 @a[r=25]",
+			"/scoreboard players remove @s barret_m82a1 1",
+			"/event entity @s guns:barret_m82a1.fire",
+			"/function barret_m82a1/barret_m82a1",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.barret_m82a1.shoot": {
+      "loop": true,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.barret_m82a1 @a[r=25]",
+			"/scoreboard players remove @s barret_m82a1 1",
+			"/event entity @s guns:barret_m82a1",
+			"/function barret_m82a1/barret_m82a1",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.barret_m82a1.reload": {
+      "loop": false,
+      "animation_length": 2.25,
+      "timeline": {
+        "0.25": [
+			"/playsound gun.barret_m82a1_reload @a[r=25]", "/scoreboard players set @s barret_m82a1_fire 0", "/scoreboard players set @s barret_m82a1_explosive 0", "/function barret_m82a1/barret_m82a1"
+        ],
+        "2.2": [
+			"/scoreboard players add @s barret_m82a1 10",
+			"/clear @s gunsaddon:barret_m82a1_ammo 0 1"
+        ],
+        "2.225": [
+			"/function barret_m82a1/barret_m82a1"
+        ]
+      }
+    }
+  }
+}

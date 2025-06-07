@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:revive",
+	    "menu_category":{"group":"itemGroup.name.potion","category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:revive.name"},
+      "minecraft:icon":"revive"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ravemontod:amethyst_tamed",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/amethyst"
+      },
+      "geometry": {
+        "default": "geometry.amethyst"
+      },
+      "animations": {
+        "fly": "animation.Amethyst.Fly",
+        "idle": "animation.Amethyst.idle",
+        "walk": "animation.Amethyst.walk",
+        "attack": "animation.Amethyst.attack",
+        "attack_controller": "controller.animation.ravemon.attack",
+        "shoot": "animation.Amethyst.breath",
+        "shoot_controller": "controller.animation.ravemon.breath"
+      },
+      "scripts": {
+        "animate": [
+          { "fly": "!query.is_on_ground" },
+          { "idle": "query.is_on_ground && query.ground_speed <= 1" },
+          { "walk": "query.is_on_ground && query.ground_speed >= 1" },
+          "shoot_controller",
+          "attack_controller"
+        ]
+      },
+      "sound_effects": {
+        "dragon_breath": "mob.phantom.flap",
+	    "dragon_flap": "mob.enderdragon.flap"
+	  },
+      "render_controllers": [ "controller.render.skeleton" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+	    "base_color": "#861212",
+        "overlay_color": "#C89657"
+	  }
+    }
+  }
+}

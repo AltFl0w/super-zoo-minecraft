@@ -1,0 +1,31 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"pokemon:p256",
+      "materials":{"default":"pokemon","aura":"aura"},
+      "textures":{
+    "evo_aura":"textures/entity/aura/evolve",
+    "max_aura":"textures/entity/aura/max",
+    "default":"pokeitems/items/icons/256",
+    "default_s":"pokeitems/items/icons/256s",
+    "mega1":"pokeitems/items/icons/256",
+    "mega_s1":"pokeitems/items/icons/256s",
+    "mega2":"pokeitems/items/icons/256",
+    "mega_s2":"pokeitems/items/icons/256s",
+    "gigamax":"pokeitems/items/icons/256",
+    "gigamax_s":"pokeitems/items/icons/256s"
+      },
+      "geometry":{
+    "default":"geometry.serpsprite",
+    "mega1":"geometry.serpsprite",
+    "mega2":"geometry.serpsprite",
+    "gigamax":"geometry.serpsprite"
+      },
+      "scripts":{
+    "scale":"2"
+      },
+      "render_controllers":["controller.render.pokemon","controller.render.aura"]
+    }
+  }
+}

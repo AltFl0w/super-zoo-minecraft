@@ -1,0 +1,17 @@
+{
+    "format_version": "1.8.0",
+    "minecraft:client_entity": {
+      "description": {
+        "identifier": "nw:leaf",
+        "render_controllers": [ "controller.render.skeleton" ],
+        "materials": { "default": "entity_alphatest" },
+        "textures": {"default": "textures/entity/leaf"},
+        "geometry": {"default": "geometry.leaf"},
+        "animation_controllers": [{"water_splash": "controller.animation.leaf"}],
+        "animations": {"general": "animation.leaf.general"},
+        "particle_effects": {
+          "leaf": "nw:leaf"
+        }
+      }
+    }
+  }

@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.item_drop.spin": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [0, "-query.life_time * 64", 0],
+					"position": [0, "((math.cos(query.life_time * 103.2) * 2) + 4)", 0]
+				}
+			}
+		},
+		"animation.item_drop.drop": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"position": [5, -11, 11]
+				}
+			}
+		}
+	}
+}

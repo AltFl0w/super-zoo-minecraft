@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.blacktip"
+      },
+      "identifier": "fauna:blacktip",
+      "materials": {
+        "default": "dolphin"
+      },
+      "render_controllers": [
+        "controller.render.salmon"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "blacktip",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/shark/blacktip"
+      },
+      "animations": {
+        "attack": "animation.blacktip.attack",
+        "idle": "animation.blacktip.flop",
+        "swim": "animation.blacktip.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

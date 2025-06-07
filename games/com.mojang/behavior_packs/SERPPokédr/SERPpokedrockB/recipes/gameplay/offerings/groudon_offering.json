@@ -1,0 +1,20 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:groudon_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      "ccc",
+      "grg",
+      "rgr"
+    ],
+    "key":{
+      "r":{"item":"minecraft:redstone"},
+      "g":{"item":"minecraft:gold_ingot"},
+      "c":{"item":"serp:groudon_claw"}
+    },
+    "result":{"item":"serp:groudon_offering"}
+  }
+}

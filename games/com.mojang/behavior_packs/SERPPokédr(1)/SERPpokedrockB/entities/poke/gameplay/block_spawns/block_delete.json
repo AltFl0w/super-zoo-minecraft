@@ -1,0 +1,20 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "serp:block_deleter",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+        "minecraft:instant_despawn": {}
+    },
+        "events": {
+    "minecraft:entity_spawned": {
+"run_command":{
+"command":["fill~~~~~-1~air","fill~~~~~1~air"]}
+      }
+    }
+  }
+}

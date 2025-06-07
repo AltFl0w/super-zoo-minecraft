@@ -1,0 +1,71 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:m4a1",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"mira": "slime",
+				"laser": "outline_light"
+			},
+			"textures": {
+				"default": "textures/3d_guns/m4a1/m4a1",
+				"trs26": "textures/trs26_scope.png",
+				"sniper": "textures/advanced_scope.png"
+			},
+			"geometry": {
+				"default": "geometry.m4a1",
+				"first": "geometry.m4a1_first",
+				"laser": "geometry.m4a1_laser",
+				"laser_first": "geometry.m4a1_laser_first",
+				"sniper_ui": "geometry.new_sniper_ui"
+			},
+			"render_controllers": [
+				{ "controller.render.gun.first": "c.is_first_person" },
+				{ "controller.render.gun.third": "!c.is_first_person" },
+				{ "controller.render.gun.laser": "!c.is_first_person" },
+				{ "controller.render.gun.laser_first": "c.is_first_person" },
+				{ "controller.render.gun.trs26": "c.is_first_person && q.is_sneaking && q.property('nido:item.attachments.1') == 2" },
+				{ "controller.render.gun.sniper": "c.is_first_person && q.is_sneaking && q.property('nido:item.attachments.1') == 3" }
+			],
+			"scripts": {
+                "animate": [
+				  { "gun": "c.is_first_person" },
+				  { "third": "!c.is_first_person" },
+				  "accesorios",
+				  "reload.c",
+				  "shoot.c",
+				  "sniper_ui.c"
+                ]
+			},
+            "animations": {
+				"sniper_ui.c": "animation.new_guns.sniper_ui",
+				"shoot.c": "controller.animation.guns.shoot",
+				"shoot": "animation.double_micro_uzi_first.shoot",
+				"shotgun.shoot": "animation.assault_rifle.shotgun.shoot",
+				"reload.c": "controller.animation.guns.reload",
+				"reload": "animation.m4a1.reload",
+				"reload.m203": "animation.assault_rifle.m203.reload",
+				"accesorios": "controller.animation.guns.accesorios",
+				"mira_off": "animation.gun.attachable.mira_off",
+				"eotech": "animation.gun.attachable.eotech",
+				"trs26": "animation.gun.attachable.trs26",
+				"sniper": "animation.gun.attachable.sniper",
+				"flashlight_off": "animation.gun.attachable.flashlight_off",
+				"laser.off": "animation.gun.attachable.laser.off",
+				"laser.red": "animation.gun.attachable.laser.red",
+				"laser.blue": "animation.gun.attachable.laser.blue",
+				"laser.green": "animation.gun.attachable.laser.green",
+				"flashlight": "animation.gun.attachable.flashlight",
+				"silencer_off": "animation.gun.attachable.silencer_off",
+				"silencer": "animation.gun.attachable.silencer",
+				"bayonet": "animation.gun.attachable.bayonet",
+				"m203_off": "animation.gun.attachable.m203_off",
+				"m203": "animation.gun.attachable.m203",
+				"shotgun": "animation.gun.attachable.shotgun",
+				"gun": "animation.m4a1.first",
+				"third": "animation.m4a1.third"
+            }
+		}
+	}
+}

@@ -1,0 +1,88 @@
+services:
+  super-zoo-server:
+    build: 
+      context: .
+      args:
+        - BUILDKIT_INLINE_CACHE=1
+    container_name: super-zoo-minecraft
+    ports:
+      - "19132:19132/udp"  # Minecraft Bedrock
+      - "8080:8080"        # AI Bot Websocket
+    volumes:
+      # Persistent data volumes
+      - ./data/worlds:/home/minecraft/worlds
+      - ./data/logs:/home/minecraft/logs
+      - ./data/backups:/home/minecraft/backups
+      # Configuration volumes (read-only)
+      - ./config/server.properties:/home/minecraft/server.properties:ro
+      - ./config/permissions.json:/home/minecraft/permissions.json:ro
+      - ./config/allowlist.json:/home/minecraft/allowlist.json:ro
+    environment:
+      - SERVER_NAME=Super Zoo Server
+      - GAMEMODE=creative
+      - DIFFICULTY=peaceful
+      - MAX_PLAYERS=10
+      - ALLOW_CHEATS=true
+      - ONLINE_MODE=true
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+      - 1.1.1.1
+    restart: unless-stopped
+    networks:
+      - zoo-network
+    depends_on:
+      - backup-service
+    
+  # Automated backup service
+  backup-service:
+    image: alpine:latest
+    container_name: zoo-backup
+    volumes:
+      - ./data/worlds:/data/worlds:ro
+      - ./data/backups:/backups
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - BACKUP_INTERVAL=86400  # 24 hours in seconds
+      - RETENTION_DAYS=7
+    command: |
+      sh -c "
+      echo 'Starting backup service for Super Zoo...'
+      while true; do
+        echo 'Creating backup at $(date)'
+        tar -czf /backups/zoo-backup-$$(date +%Y%m%d-%H%M%S).tar.gz -C /data worlds
+        echo 'Backup created successfully'
+        
+        echo 'Cleaning old backups (older than ${RETENTION_DAYS} days)'
+        find /backups -name '*.tar.gz' -mtime +${RETENTION_DAYS} -delete
+        
+        echo 'Next backup in ${BACKUP_INTERVAL} seconds'
+        sleep ${BACKUP_INTERVAL}
+      done"
+    restart: unless-stopped
+    networks:
+      - zoo-network
+
+  # Optional: Web dashboard for monitoring
+  zoo-dashboard:
+    image: nginx:alpine
+    container_name: zoo-dashboard
+    ports:
+      - "8081:80"
+    volumes:
+      - ./dashboard:/usr/share/nginx/html:ro
+      - ./data/logs:/var/log/minecraft:ro
+    restart: unless-stopped
+    networks:
+      - zoo-network
+
+networks:
+  zoo-network:
+    driver: bridge
+    driver_opts:
+      com.docker.network.bridge.name: zoo-bridge
+
+volumes:
+  zoo-worlds:
+  zoo-logs:
+  zoo-backups: 

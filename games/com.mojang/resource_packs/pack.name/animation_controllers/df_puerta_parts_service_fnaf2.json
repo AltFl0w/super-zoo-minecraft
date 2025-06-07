@@ -1,0 +1,98 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.door.spin": {
+            "states": {
+                "default": {
+					"transitions": [{
+                            "east": "query.variant == 1"
+                        },
+						{
+                            "north": "query.variant == 2"
+                        },
+						{
+                            "south": "query.variant == 3"
+                        },
+						{
+                            "west": "query.variant == 4"
+                        }
+                    ],
+					"blend_transition": 0.2
+				},
+				"east": {
+					"animations": [
+						"east"
+					],
+					"transitions": [{
+							"default": "query.variant != 1"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"north": {
+					"animations": [
+						"north"
+					],
+					"transitions": [{
+							"default": "query.variant != 2"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"south": {
+					"animations": [
+						"south"
+					],
+					"transitions": [{
+							"default": "query.variant != 3"
+						}
+					],
+					"blend_transition": 0.1
+				},
+				"west": {
+					"animations": [
+						"west"
+					],
+					"transitions": [{
+							"default": "query.variant != 4"
+						}
+					],
+					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.door.use": {
+            "states": {
+                "default": {
+					"transitions": [{
+                            "close": "query.mark_variant == 1"
+                        },
+						{
+                            "open": "query.mark_variant == 2"
+                        }
+                    ]
+				},
+				"close": {
+					"animations": [
+						"close"
+					],
+					"transitions": [{
+							"default": "query.mark_variant != 1"
+						}
+					],
+					"blend_transition": 0.4
+				},
+				"open": {
+					"animations": [
+						"open"
+					],
+					"transitions": [{
+							"default": "query.mark_variant != 2"
+						}
+					],
+					"blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

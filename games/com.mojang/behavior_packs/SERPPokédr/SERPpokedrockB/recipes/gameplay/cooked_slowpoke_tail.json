@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "minecraft:cooked_slowpoke_tail"
+    },
+
+    
+    "tags": ["furnace", "smoker", "campfire"],
+    "group": "poke_food",
+    "input": "serp:slowpoke_tail",
+    "output": "serp:cooked_slowpoke_tail"
+  }
+}

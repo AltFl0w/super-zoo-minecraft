@@ -1,0 +1,50 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 15}],
+    "gives": [{"item": "serp:potion"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 20}],
+    "gives": [{"item": "serp:super_potion"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 25}],
+    "gives": [{"item": "serp:hyper_potion"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 30}],
+    "gives": [{"item": "serp:max_potion"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 18}],
+    "gives": [{"item": "serp:fresh_water"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 23}],
+    "gives": [{"item": "serp:soda_pop"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:poke",
+    "quantity": 28}],
+    "gives": [{"item": "serp:lemonade"}],
+        "max_uses": 256
+        }
+      ]
+    }
+  ]
+}

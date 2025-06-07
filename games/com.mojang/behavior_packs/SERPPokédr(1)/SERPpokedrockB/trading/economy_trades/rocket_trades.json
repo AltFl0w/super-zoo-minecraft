@@ -1,0 +1,36 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "serp:slowpoke_tail"
+            }
+          ],
+          "gives": [
+            {
+               "item": "serp:poke",
+              "quantity": 32
+            }
+          ],
+              "max_uses": 2
+        },
+        {
+          "wants": [
+            {
+              "item": "serp:shellder_shell"
+            }
+          ],
+          "gives": [
+            {
+               "item": "serp:poke",
+              "quantity": 16
+            }
+          ],
+              "max_uses": 4
+        }
+      ]
+    }
+  ]
+}

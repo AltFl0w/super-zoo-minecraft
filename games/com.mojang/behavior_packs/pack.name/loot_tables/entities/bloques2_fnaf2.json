@@ -1,0 +1,164 @@
+{
+  "pools": [
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:counter_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:counter_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:counter_with_poster_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:counter_with_poster_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:white_wall_with_left_edge_rotated_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:white_wall_with_left_edge_rotated_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:white_wall_with_right_edge_rotated_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:white_wall_with_right_edge_rotated_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:white_wall_with_left_top_edge_rotated_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:white_wall_with_left_top_edge_rotated_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:white_wall_with_right_top_edge_rotated_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:white_wall_with_right_top_edge_rotated_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:white_wall_with_mosaic_with_right_edge_rotated_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:white_wall_with_mosaic_with_right_edge_rotated_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+},
+{
+  "rolls": 1,
+  "entries": [
+    {
+      "type": "item",
+      "name": "df:white_wall_with_mosaic_with_left_edge_rotated_fnaf2",
+      "weight": 1,
+      "functions": [
+        {
+          "function": "set_actor_id",
+          "id": "df:white_wall_with_mosaic_with_left_edge_rotated_fnaf2",
+          "count": {
+            "min": 10,
+            "max": 10
+        }
+        }
+      ]
+    }
+]
+}
+  ]
+}

@@ -1,0 +1,42 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:double_skorpion_vz61",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"shoot_effect": "shoot_effect"
+			},
+			"textures": {
+				"default": "textures/3d_guns/skorpion_vz61/skorpion_vz61",
+				"shoot_effect": "textures/particle/gunfire"
+			},
+			"geometry": {
+				"default": "geometry.double_skorpion_vz61",
+				"first": "geometry.double_skorpion_vz61_first"
+			},
+			"render_controllers": [
+				{ "controller.render.gun.first": "c.is_first_person" },
+				{ "controller.render.gun.third": "!c.is_first_person" }
+			],
+			"scripts": {
+                "animate": [
+				  { "gun": "c.is_first_person" },
+				  { "third": "!c.is_first_person" },
+				  { "accesorios": "!q.is_sheared" },
+				  "reload.c",
+				  "shoot.c"
+                ]
+			},
+            "animations": {
+				"shoot": "animation.double_skorpion_vz61_first.shoot",
+				"shoot.c": "controller.animation.guns.shoot",
+				"reload.c": "controller.animation.guns.reload",
+				"reload": "animation.double_skorpion_vz61.reload",
+				"accesorios": "animation.gun.attachable.flashlight_off",
+				"third": "animation.double_skorpion_vz61.third",
+				"gun": "animation.skorpion_vz61.double.first"
+            }
+		}
+	}
+}

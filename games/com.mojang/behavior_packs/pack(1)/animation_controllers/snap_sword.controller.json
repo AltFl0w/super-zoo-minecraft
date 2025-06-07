@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.snap_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'snap_sword' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'snap_sword' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'snap_sword'"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=!item,tag=!snap_sword,r=5,c=3] ~~~ summon wep:snap_orb ~~~"
+					]
+				}
+			}
+		}
+	}
+}

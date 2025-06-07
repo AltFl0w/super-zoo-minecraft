@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:cartel_lets_party",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_lets_party"
+      },
+      "geometry": {
+        "default": "geometry.df_cartel_colgante"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_cartel_lets_party",
+        "texture_index": 0
+      }
+    }
+  }
+}

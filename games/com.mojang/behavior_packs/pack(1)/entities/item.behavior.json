@@ -1,0 +1,495 @@
+ {
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:item",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"animations": {
+				"default": "animation.item.drop"
+			},
+			"scripts": {
+				"animate": [
+					"default"
+				]
+			}
+		},
+		"component_groups": {
+			"wep:burning_double_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_burning_double_axe"
+				}
+			},
+			"wep:fiery_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_fiery_sword"
+				}
+			},
+			"wep:lava_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_lava_sword"
+				}
+			},
+			"wep:magma_greatsword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_magma_greatsword"
+				}
+			},
+			"wep:meteorite_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_meteorite_sword"
+				}
+			},
+			"wep:air_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_air_sword"
+				}
+			},
+			"wep:windy_double_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_windy_double_sword"
+				}
+			},
+			"wep:windy_greataxe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_windy_greataxe"
+				}
+			},
+			"wep:tornado_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_tornado_sword"
+				}
+			},
+			"wep:throwing_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_throwing_axe"
+				}
+			},
+			"wep:void_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_void_sword"
+				}
+			},
+			"wep:battle_void_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_battle_void_axe"
+				}
+			},
+			"wep:short_shadow_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_short_shadow_sword"
+				}
+			},
+			"wep:dark_broadsword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_dark_broadsword"
+				}
+			},
+			"wep:storm_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_storm_sword"
+				}
+			},
+			"wep:water_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_water_axe"
+				}
+			},
+			"wep:water_greatsword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_water_greatsword"
+				}
+			},
+			"wep:geyser_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_geyser_axe"
+				}
+			},
+			"wep:boulder_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_boulder_axe"
+				}
+			},
+			"wep:rocky_greatsword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_rocky_greatsword"
+				}
+			},
+			"wep:ground_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_ground_axe"
+				}
+			},
+			"wep:rockfall_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_rockfall_axe"
+				}
+			},
+			"wep:snap_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:snap_sword"
+				}
+			},
+			"wep:electric_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_electric_axe"
+				}
+			},
+			"wep:lightning_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_lightning_sword"
+				}
+			},
+			"wep:bolt_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_bolt_sword"
+				}
+			},
+			"wep:poison_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_poison_sword"
+				}
+			},
+			"wep:poisonous_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_poisonous_axe"
+				}
+			},
+			"wep:poisonous_hammer_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_poisonous_hammer_axe"
+				}
+			},
+			"wep:frost_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_frost_sword"
+				}
+			},
+			"wep:ice_battleaxe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_ice_battleaxe"
+				}
+			},
+			"wep:icicle_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_icicle_sword"
+				}
+			},
+			"wep:reverse_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_reverse_sword"
+				}
+			},
+			"wep:timelapse_axe": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_timelapse_axe"
+				}
+			},
+			"wep:fast_sword": {
+				"minecraft:addrider": {
+					"entity_type": "wep:item_drop",
+					"spawn_event": "wep:on_fast_sword"
+				}
+			}
+		},
+		"components": {
+			"minecraft:rideable": {
+				"family_types": [
+					"item_drop"
+				],
+				"controlling_seat": 0,
+				"seat_count": 1,
+				"seats": [
+					{
+						"position": [
+							0,
+							0,
+							0
+						]
+					}
+				]
+			}
+		},
+		"events": {
+			"wep:on_burning_double_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:burning_double_axe"
+					]
+				}
+			},
+			"wep:on_fiery_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:fiery_sword"
+					]
+				}
+			},
+			"wep:on_lava_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:lava_sword"
+					]
+				}
+			},
+			"wep:on_magma_greatsword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:magma_greatsword"
+					]
+				}
+			},
+			"wep:on_meteorite_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:meteorite_sword"
+					]
+				}
+			},
+			"wep:on_air_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:air_sword"
+					]
+				}
+			},
+			"wep:on_windy_double_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:windy_double_sword"
+					]
+				}
+			},
+			"wep:on_windy_greataxe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:windy_greataxe"
+					]
+				}
+			},
+			"wep:on_tornado_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:tornado_sword"
+					]
+				}
+			},
+			"wep:on_throwing_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:throwing_axe"
+					]
+				}
+			},
+			"wep:on_void_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:void_sword"
+					]
+				}
+			},
+			"wep:on_battle_void_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:battle_void_axe"
+					]
+				}
+			},
+			"wep:on_short_shadow_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:short_shadow_sword"
+					]
+				}
+			},
+			"wep:on_dark_broadsword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:dark_broadsword"
+					]
+				}
+			},
+			"wep:on_storm_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:storm_sword"
+					]
+				}
+			},
+			"wep:on_water_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:water_axe"
+					]
+				}
+			},
+			"wep:on_water_greatsword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:water_greatsword"
+					]
+				}
+			},
+			"wep:on_geyser_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:geyser_axe"
+					]
+				}
+			},
+			"wep:on_boulder_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:boulder_axe"
+					]
+				}
+			},
+			"wep:on_rocky_greatsword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:rocky_greatsword"
+					]
+				}
+			},
+			"wep:on_ground_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:ground_axe"
+					]
+				}
+			},
+			"wep:on_rockfall_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:rockfall_axe"
+					]
+				}
+			},
+			"wep:on_snap_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:snap_sword"
+					]
+				}
+			},
+			"wep:on_electric_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:electric_axe"
+					]
+				}
+			},
+			"wep:on_lightning_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:lightning_sword"
+					]
+				}
+			},
+			"wep:on_bolt_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:bolt_sword"
+					]
+				}
+			},
+			"wep:on_poison_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:poison_sword"
+					]
+				}
+			},
+			"wep:on_poisonous_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:poisonous_axe"
+					]
+				}
+			},
+			"wep:on_poisonous_hammer_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:poisonous_hammer_axe"
+					]
+				}
+			},
+			"wep:on_frost_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:frost_sword"
+					]
+				}
+			},
+			"wep:on_ice_battleaxe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:ice_battleaxe"
+					]
+				}
+			},
+			"wep:on_icicle_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:icicle_sword"
+					]
+				}
+			},
+			"wep:on_reverse_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:reverse_sword"
+					]
+				}
+			},
+			"wep:on_timelapse_axe_drop": {
+				"add": {
+					"component_groups": [
+						"wep:timelapse_axe"
+					]
+				}
+			},
+			"wep:on_fast_sword_drop": {
+				"add": {
+					"component_groups": [
+						"wep:fast_sword"
+					]
+				}
+			}
+		}
+	}
+}

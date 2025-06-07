@@ -1,0 +1,26 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:tamato_berry",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:use_duration": 32,
+      "minecraft:hand_equipped": false,
+      "minecraft:food": {
+        "nutrition": 6,
+        "saturation_modifier": "normal",
+        "can_always_eat": true,
+        "effects": [
+          {
+            "name": "strength",
+            "chance": 1.0,
+            "duration": 10,
+            "amplifier": 0
+          }
+        ]
+      }
+    }
+  }
+}

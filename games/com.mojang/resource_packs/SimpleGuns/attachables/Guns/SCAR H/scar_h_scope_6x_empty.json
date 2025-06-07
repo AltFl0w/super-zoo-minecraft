@@ -1,0 +1,31 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:scar_h_scope_6x_empty",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/guns/scar_h/scar_h"
+         },
+         "scripts":{
+            "animate":[
+               "wielding"
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.scar_h.wield_first_person",
+            "wield_third_person":"animation.scar_h.wield_third_person",
+            "wielding":"controller.animation.gun.wielding"
+         },
+         "geometry":{
+            "default":"geometry.scar_h_scope_6x_empty"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

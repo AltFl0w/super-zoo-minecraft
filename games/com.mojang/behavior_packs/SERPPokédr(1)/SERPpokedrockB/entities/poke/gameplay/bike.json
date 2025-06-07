@@ -1,0 +1,105 @@
+//what is this? do you want to steal my codes? It's sad
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:bike",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [ "bike" ]
+      },
+      "animations": {
+    "bike": "controller.animation.bike"
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "bike", "inanimated" ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 1.5,
+        "height": 1
+      },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "interact_text": "action.interact.ride.boat",
+          "family_types": [
+            "player",
+            "tiny"
+          ],
+        "pull_in_entities": true,
+        "seats": [
+          {
+            "position": [ 0.0, 0.8, -0.2 ],
+            "min_rider_count": 0,
+            "max_rider_count": 1
+          },
+          {
+            "position": [ 0, 0.8, -0.2 ],
+            "min_rider_count": 2,
+            "max_rider_count": 2
+          },
+          {
+            "position": [ 0, 0.7, 0.7 ],
+            "min_rider_count": 2,
+            "max_rider_count": 2
+          }
+        ]
+      },
+  "minecraft:input_ground_controlled": {},
+  "minecraft:behavior.player_ride_tamed": {},
+      "minecraft:can_power_jump": {},
+      "minecraft:horse.jump_strength": {
+        "value": 1
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+        },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "cause": "fall",
+          "deals_damage": false
+        }
+      },
+        "minecraft:scale": {
+          "value": 1
+        },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 0
+          }
+        ]
+      },
+        "minecraft:loot": {
+"table": "loot_tables/entities/000bike.json"
+        },
+      "minecraft:movement": {
+        "value": 0.25
+      },
+      "minecraft:navigation.walk": {
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+	    "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

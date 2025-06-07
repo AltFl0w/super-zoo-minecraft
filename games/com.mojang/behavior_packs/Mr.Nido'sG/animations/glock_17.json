@@ -1,0 +1,75 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.glock_17.apuntar.shoot": {
+      "loop": true,
+      "animation_length": 0.33,
+      "timeline": {
+        "0.1": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.glock_17 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.glock_17 @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:glock_17_apuntar",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:glock_17_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:glock_17_apuntar_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:glock_17_apuntar_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:glock_17_silenciador_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:glock_17_silenciador_apuntar_laser",
+
+			"/scoreboard players remove @s glock_17 1",
+			"/event entity @s guns:glock_17",
+			"/function glock_17/glock_17",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.glock_17.shoot": {
+      "loop": true,
+      "animation_length": 0.33,
+      "timeline": {
+        "0.1": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.glock_17 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.glock_17 @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:glock_17",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:glock_17",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:glock_17_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:glock_17_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:glock_17_silenciador",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:glock_17_silenciador_laser",
+			
+			"/scoreboard players remove @s glock_17 1",
+			"/event entity @s guns:glock_17",
+			"/function glock_17/glock_17",
+			"/event entity @s guns:shoot"
+        ]
+      }
+    },
+    "animation.glock_17.reload": {
+      "loop": false,
+      "animation_length": 3.25,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.glock_reload @a[r=25]"
+        ],
+        "3.1": [
+			"/scoreboard players add @s glock_17 15",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:glock_17_ammo 0 1"
+        ]
+      }
+    }
+  }
+}

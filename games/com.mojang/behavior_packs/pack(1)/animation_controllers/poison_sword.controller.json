@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.poison_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'poison_sword' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'poison_sword' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'poison_sword'"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=!item,tag=!poison_sword,r=5,c=3] ~~~ effect @s poison 2 3"
+					]
+				}
+			}
+		}
+	}
+}

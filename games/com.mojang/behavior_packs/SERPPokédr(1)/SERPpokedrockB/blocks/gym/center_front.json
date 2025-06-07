@@ -1,0 +1,36 @@
+{
+    "format_version": "1.19.30",
+    "minecraft:block": {
+    "description": {
+    "identifier": "serp:center_front",
+	"register_to_creative_menu": true,
+	"is_experimental": false,
+    "properties":{"serp:facing":[2,3,4,5]}
+        },
+    "components": {
+	"minecraft:collision_box": false,
+    "minecraft:material_instances": {
+        "*": {
+        "texture": "center_front",
+        "render_method": "alpha_test",
+        "face_dimming": false
+        }
+    },
+    "minecraft:geometry":"geometry.centerfront",
+    "minecraft:destructible_by_mining": false,
+    "minecraft:on_player_placing": {
+        "condition": "1",
+        "event": "serp:put",
+        "target": "self"
+        }
+    },
+    "events": {
+    "serp:put": {"set_block_property": {"serp:facing": "(query.cardinal_facing_2d)"}}},
+        "permutations": [
+{"condition":"query.block_property('serp:facing')==2","components":{"minecraft:rotation":[0,180,0]}},
+{"condition":"query.block_property('serp:facing')==3","components":{"minecraft:rotation":[0,0,0]}},
+{"condition":"query.block_property('serp:facing')==4","components":{"minecraft:rotation":[0,270,0]}},
+{"condition":"query.block_property('serp:facing')==5","components":{"minecraft:rotation":[0,90,0]}}
+        ]
+    }
+}

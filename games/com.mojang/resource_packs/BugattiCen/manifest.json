@@ -1,0 +1,39 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Bugatti Centodieci (RP)",
+		"description": "Bugatti Centodieci resource pack. Specially made for MCPEDL\nCode: ashminggu",
+		"uuid": "ab5ca10b-b5f9-46b9-ad9a-aabf71c1d545",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			13,
+			0
+		]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "7d2f26c2-20ef-4d14-b674-456b1b7e9b67",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.6.1"
+			],
+			"dash": [
+				"0.10.10"
+			]
+		}
+	}
+}

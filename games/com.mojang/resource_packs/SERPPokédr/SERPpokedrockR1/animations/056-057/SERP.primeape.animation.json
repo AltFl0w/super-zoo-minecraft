@@ -1,0 +1,236 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.primeape.quiet": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [10, 0, 0],
+						"0.2": [0, 0, 0],
+						"0.4": [10, 0, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [10, 0, 0]
+					}
+				},
+				"arms": {
+					"rotation": {
+						"0.0": [127.5, 0, 0],
+						"0.4": [112.5, 0, 0],
+						"0.8": [127.5, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": [0, 0, 25]
+				},
+				"left_arm": {
+					"rotation": [0, 0, -25]
+				}
+			}
+		},
+		"animation.primeape.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"primeape": {
+					"position": {
+						"0.0": [0, 2, 0],
+						"0.2": [0, 0, 0],
+						"0.4": [0, 2, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [0, 2, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.2": [0, 0, 0],
+						"0.4": [5, 0, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [5, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [0, 20, 0],
+						"0.4": [0, -20, 0],
+						"0.8": [0, 20, 0]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"0.0": [30, 0, 0],
+						"0.4": [-20, 0, 0],
+						"0.8": [30, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 2],
+						"0.4": [0, 0, -2],
+						"0.8": [0, 0, 2]
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"0.0": [-20, 0, 0],
+						"0.4": [35, 0, 0],
+						"0.8": [-20, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, -2],
+						"0.4": [0, 0, 2],
+						"0.8": [0, 0, -2]
+					}
+				}
+			}
+		},
+		"animation.primeape.jump": {
+			"loop": true,
+			"bones": {
+				"primeape": {
+					"position": [0, 9, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 0, 40]
+				},
+				"right_hand": {
+					"rotation": [0, 0, -32.5]
+				},
+				"left_arm": {
+					"rotation": [0, 0, -40]
+				},
+				"left_hand": {
+					"rotation": [0, 0, 35]
+				},
+				"tail": {
+					"rotation": [55, 0, 180],
+					"position": [0, 0, -1]
+				},
+				"legs": {
+					"rotation": [45, 0, 0]
+				}
+			}
+		},
+		"animation.primeape.attack": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [20, -30, 0]
+				},
+				"right_arm": {
+					"rotation": [90, -55, 0],
+					"position": [3, 0, -8]
+				},
+				"right_hand": {
+					"rotation": [0, 0, -40]
+				},
+				"left_arm": {
+					"rotation": [115, -50, 0],
+					"position": [-3, 0, 4]
+				},
+				"left_hand": {
+					"rotation": [0, 0, -10]
+				}
+			}
+		},
+		"animation.primeape.swimming": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [5, 0, 0],
+						"0.2": [0, 0, 0],
+						"0.4": [5, 0, 0],
+						"0.6": [0, 0, 0],
+						"0.8": [5, 0, 0]
+					}
+				},
+				"right_arm": {
+					"rotation": {
+						"0.0": [80, 0, 0],
+						"0.2": [55, 0, 0],
+						"0.4": [80, 0, 0],
+						"0.6": [55, 0, 0],
+						"0.8": [80, 0, 0]
+					}
+				},
+				"left_arm": {
+					"rotation": {
+						"0.0": [80, 0, 0],
+						"0.2": [55, 0, 0],
+						"0.4": [80, 0, 0],
+						"0.6": [55, 0, 0],
+						"0.8": [80, 0, 0]
+					}
+				},
+				"tail": {
+					"rotation": {
+						"0.0": [0, 20, 0],
+						"0.4": [0, -20, 0],
+						"0.8": [0, 20, 0]
+					}
+				},
+				"right_leg": {
+					"rotation": {
+						"0.0": [30, 0, 0],
+						"0.4": [-20, 0, 0],
+						"0.8": [30, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 2],
+						"0.4": [0, 0, -2],
+						"0.8": [0, 0, 2]
+					}
+				},
+				"left_leg": {
+					"rotation": {
+						"0.0": [-20, 0, 0],
+						"0.4": [35, 0, 0],
+						"0.8": [-20, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, -2],
+						"0.4": [0, 0, 2],
+						"0.8": [0, 0, -2]
+					}
+				}
+			}
+		},
+		"animation.primeape.sitting": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"primeape": {
+					"position": [0, -8, 0]
+				},
+				"right_arm": {
+					"rotation": [115, -35, 0]
+				},
+				"legs": {
+					"rotation": [-60, 0, 0],
+					"position": [0, 1, 0]
+				},
+				"left_arm": {
+					"rotation": [115, 35, 0]
+				}
+			}
+		},
+        "animation.primeape.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,33,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

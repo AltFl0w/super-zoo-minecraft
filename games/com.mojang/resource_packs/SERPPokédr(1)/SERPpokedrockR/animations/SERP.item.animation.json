@@ -1,0 +1,35 @@
+{
+  "format_version":"1.8.0",
+  "animations":{
+    "animation.serpitem.fm":{
+      "loop":true,
+      "bones":{
+        "rightitem":{"rotation":[60,0,15],"position":[0,-2,0],"scale":1}
+      }
+    },
+    "animation.serpitem.tm":{
+      "loop":true,
+      "bones":{
+        "rightitem":{"rotation":[-15,0,15],"position":[2.5,0,-6],"scale":0.65}
+      }
+    },
+    "animation.serpitem.b":{
+      "loop":true,
+      "bones":{
+        "bracelet":{"rotation":[0,0,0],"position":[-1,-8,0],"scale":1}
+      }
+    },
+    "animation.pokeball_item.fm":{
+      "loop":true,
+      "bones":{
+        "rightitem":{"rotation":[30,-10,-150],"position":[0,-2,0],"scale":0.45}
+      }
+    },
+    "animation.pokeball_item.tm":{
+      "loop":true,
+      "bones":{
+        "rightitem":{"rotation":[45,0,0],"position":[0,-2,-4.5],"scale":0.3}
+      }
+    }
+  }
+}

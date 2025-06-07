@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:charizardite_x",
+	    "menu_category":{"group":"itemGroup.name.stone","category":"nature"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"equippable.77"},
+      "minecraft:icon":"charizardite_x"
+    }
+  }
+}

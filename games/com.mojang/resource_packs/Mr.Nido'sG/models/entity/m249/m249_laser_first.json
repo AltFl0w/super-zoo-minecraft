@@ -1,0 +1,144 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.m249_laser_first",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 9,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightSleeve",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve2",
+					"parent": "second_arm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightSleeve2",
+					"parent": "rightArm_model",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_attachable",
+					"parent": "base_brazoes",
+					"pivot": [-5.5, 8, 0]
+				},
+				{
+					"name": "b_attachable",
+					"parent": "base_attachable",
+					"pivot": [-6, 9, 4]
+				},
+				{
+					"name": "laser",
+					"parent": "b_attachable",
+					"pivot": [-6.00355, 12.99645, -21]
+				},
+				{
+					"name": "red_laser",
+					"parent": "laser",
+					"pivot": [-6.00355, 12.99645, -20.9],
+					"cubes": [
+						{"origin": [-6.15, 12.35, -21.5], "size": [1, 1, 1], "inflate": -0.4, "pivot": [-5.65, 13.35, 0.8], "rotation": [0, 0, 45], "uv": [4, 0]}
+					]
+				},
+				{
+					"name": "blue_laser",
+					"parent": "laser",
+					"pivot": [-6.00355, 12.99645, -20.9],
+					"cubes": [
+						{"origin": [-6.15, 12.35, -21.5], "size": [1, 1, 1], "inflate": -0.4, "pivot": [-5.65, 13.35, 0.8], "rotation": [0, 0, 45], "uv": [8, 0]}
+					]
+				},
+				{
+					"name": "green_laser",
+					"parent": "laser",
+					"pivot": [-6.00355, 12.99645, -20.9],
+					"cubes": [
+						{"origin": [-6.15, 12.35, -21.5], "size": [1, 1, 1], "inflate": -0.4, "pivot": [-5.65, 13.35, 0.8], "rotation": [0, 0, 45], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "right_shoot_particle",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_shoot_particle": [-6, 15, 0]
+					}
+				},
+				{
+					"name": "right_flashlight",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_flashlight": [-6, 15, 0]
+					}
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				}
+			]
+		}
+	]
+}

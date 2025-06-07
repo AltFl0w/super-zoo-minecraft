@@ -1,0 +1,106 @@
+//Seafoods\\
+item.fauna:cooked_seaurchin.name=Cooked Seaurchin
+item.fauna:raw_seaurchin.name=Raw Seaurchin
+item.fauna:poisonous_seaurchin.name=Poisonous Seaurchin
+item.fauna:cooked_sardinella.name=Cooked Sardinella
+item.fauna:raw_sardinella.name=Raw Sardinella
+item.fauna:raw_todak.name=Raw Todak
+item.fauna:ancient_ammonite_shell.name=Ancient Ammonite Shell
+item.fauna:cooked_todak.name=Cooked Todak
+item.fauna:cooked_tuna.name=Cooked Tuna
+item.fauna:raw_tuna.name=Raw Tuna
+item.fauna:blacktip_fin.name=Blacktip Fin
+item.fauna:cooked_mackerel.name=Cooked Mackerel
+item.fauna:raw_mackerel.name=Raw Mackerel
+item.fauna:cooked_sardine.name=Cooked Sardine
+item.fauna:raw_sardine.name=Raw Sardine
+item.fauna:cooked_spade.name=Cooked Spade
+item.fauna:raw_spade.name=Raw Spade
+item.fauna:cooked_swamp_eel.name=Cooked Swamp Eel
+item.fauna:asian_swamp_eel.name= Asian Swamp Eel
+item.fauna:raw_swamp_eel.name=Raw Swamp Eel
+item.fauna:iron_knife.name=Iron Knife
+item.fauna:raw_decapterus.name=Raw Decapterus
+item.fauna:cooked_decapterus.name=Cooked Decapterus
+item.fauna:raw_ammonite.name=Raw Ammonite Tentacle
+item.fauna:cooked_ammonite.name=Cooked Ammonite Tentacle
+
+•EGG•
+item.spawn_egg.entity.fauna:aligatorg.name=Spawn §eAligator Gar
+item.spawn_egg.entity.fauna:sardine.name=Spawn §aSardine (Sardina Pilchardus)
+item.spawn_egg.entity.fauna:mackerel.name=Spawn §aMackerel (Scomber Scombrus)
+item.spawn_egg.entity.fauna:sardinella.name=Spawn §aSardinella (Sardinella Aurita)
+item.spawn_egg.entity.fauna:piranha.name=Spawn §4Piranha
+item.spawn_egg.entity.fauna:tuna.name=Spawn §eBig Eye Tuna
+item.spawn_egg.entity.fauna:madidihang.name=Spawn §eMadidihang (Yellow Tuna)
+item.spawn_egg.entity.fauna:barracuda.name=Spawn §4Barracuda
+item.spawn_egg.entity.fauna:skipjack.name=Spawn §eSkipjack (Black Tuna)
+item.spawn_egg.entity.fauna:dragon.name=Spawn §4Dragon Fish
+item.spawn_egg.entity.fauna:dragonegg.name=Spawn §eDragon Fish Egg
+item.spawn_egg.entity.fauna:serpint.name=Spawn §4Serpint
+item.spawn_egg.entity.fauna:dought.name=Spawn §aDought
+item.spawn_egg.entity.fauna:Todak.name=Spawn §aTodak (Sword Fish)
+item.spawn_egg.entity.fauna:sepat.name=Spawn §aSpade Fish (Sepat)
+item.spawn_egg.entity.fauna:lungfish.name=Spawn §aAfrican Lungfish
+
+item.spawn_egg.entity.fauna:lungfish1.name=Spawn §aAustralian Lungfish
+
+item.spawn_egg.entity.fauna:lungfish2.name=Spawn §aSouth American Lungfish
+
+item.spawn_egg.entity.fauna:lungfish3.name=Spawn §aDevonian Lungfish
+
+item.spawn_egg.entity.fauna:lariosaurus.name=Spawn §eAncient Lariosaurus (3 variants)
+item.spawn_egg.entity.fauna:starfish.name=Spawn §aStar Fish
+item.spawn_egg.entity.fauna:seaurchin.name=Spawn §eSea Urchin
+item.spawn_egg.entity.fauna:blacktip.name=Spawn §4Blacktip Shark
+item.spawn_egg.entity.fauna:tropical_urchin.name=Spawn §eTropical Seaurchin
+item.spawn_egg.entity.fauna:frilled.name=Spawn §4Frilled Shark
+item.spawn_egg.entity.fauna:catshark.name=Spawn §eCatshark (4 Variants)
+item.spawn_egg.entity.fauna:seasnake.name=Spawn §eSeasnake (3 Variants)
+item.spawn_egg.entity.fauna:deepdragon.name=Spawn §4Deep Dragon (5 Variants)
+item.spawn_egg.entity.fauna:ammonite.name=Spawn §eAncient Ammomite
+item.spawn_egg.entity.fauna:swamp_eel.name=Spawn §eAsian Swamp Eel
+item.spawn_egg.entity.fauna:decapterus.name=Spawn §aDecapterus (Lajang Fish)
+item.spawn_egg.entity.fauna:stingray.name=Spawn §eGiant Ocean Stingray
+item.spawn_egg.entity.fauna:gopy.name=Spawn §eGopy Fish
+
+•ENTITY•
+entity.fauna:aligatorg.name=§eAligator Gar
+entity.fauna:sardine.name=§aSardine (Sardina Pilchardus)
+entity.fauna:mackerel.name=§aMackerel (Scomber Scombrus)
+entity.fauna:sardinella.name=§aSardinella (sardinella aurita)
+entity.fauna:piranha.name=§4Piranha
+entity.fauna:tuna.name=§eBig Eye Tuna
+entity.fauna:madidihang.name=§eMadidihang
+entity.fauna:barracuda.name=§4Barracuda
+entity.fauna:skipjack.name=Spawn §eSkipjack
+entity.fauna:dragon.name=Spawn §4Dragon Fish
+entity.fauna:dragonegg.name=Spawn §eDragon Fish Egg
+entity.fauna:serpint.name=Spawn §4Serpint
+entity.fauna:dought.name=Spawn §aDought
+entity.fauna:Todak.name=Spawn §aTodak (Sword Fish)
+entity.fauna:sepat.name=Spawn §aSpade Fish (Sepat)
+
+entity.fauna:lungfish.name=Spawn §aAfrican Lungfish
+
+entity.fauna:lungfish1.name=Spawn §aAustralian Lungfish
+
+entity.fauna:lungfish2.name=Spawn §aSouth American Lungfish
+
+entity.fauna:lungfish3.name=Spawn §aDevonian Lungfish
+
+entity.fauna:lariosaurus.name=Spawn §eAncient Lariosaurus (3 variants)
+
+entity.fauna:starfish.name=Spawn §aStar Fish
+entity.fauna:seaurchin.name=Spawn §eSea Urchin
+entity.fauna:blacktip.name=Spawn §4Blacktip Shark
+entity.fauna:tropical_urchin.name=Spawn §eTropical Seaurchin
+entity.fauna:frilled.name=Spawn §4Frilled Shark
+entity.fauna:catshark.name=Spawn §eCatshark (4 Variants)
+entity.fauna:seasnake.name=Spawn §eSeasnake (3 Variants)
+entity.fauna:deepdragon.name=Spawn §4Deep Dragon (5 Variants)
+entity.fauna:ammonite.name=Spawn §eAncient Ammomite
+entity.fauna:swamp_eel.name=Spawn §eAsian Swamp Eel
+entity.fauna:decapterus.name=Spawn §aDecapterus (Lajang Fish)
+entity.fauna:stingray.name=Spawn §eGiant Ocean Stingray
+entity.fauna:gopy.name=Spawn §eGopy Fish

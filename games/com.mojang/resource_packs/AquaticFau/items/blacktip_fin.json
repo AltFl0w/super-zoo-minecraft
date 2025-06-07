@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:blacktip_fin",
+      "category": "Equipment"
+    },
+    "components": {
+      "minecraft:use_animation": "eat",
+      "minecraft:icon": "blacktip_fin",
+      "minecraft:render_offsets": "miscellaneous"
+    }
+  }
+}

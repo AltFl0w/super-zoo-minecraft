@@ -1,0 +1,57 @@
+{
+  "animation_controllers": {
+    "controller.animation.stingray.attack": {
+      "states": {
+        "attack": {
+          "animations": [
+            "attack"
+          ],
+          "blend_transition": 1,
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        },
+        "default": {
+          "blend_transition": 0,
+          "transitions": [
+            {
+              "attack": "variable.attack_time\u003e0\u0026\u0026variable.random\u003d\u003d0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.stingray.move": {
+      "initial_state": "default",
+      "states": {
+        "climb": {
+          "animations": [
+            "climbing"
+          ],
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "default": "!query.is_wall_climbing"
+            }
+          ]
+        },
+        "default": {
+          "animations": [
+            {
+              "walk": "query.modified_move_speed"
+            }
+          ],
+          "blend_transition": 0.2,
+          "transitions": [
+            {
+              "climb": "query.is_wall_climbing"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "format_version": "1.10.0"
+}

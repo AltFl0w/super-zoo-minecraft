@@ -1,0 +1,35 @@
+///Dany Fox 2020///
+///Si te lo robas eres gay///
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.df_panel_de_luz",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "PanelDeLuz",
+					"pivot": [9, 4, 0],
+					"cubes": [
+						{"origin": [-14, 4.5, -7], "size": [46, 1, 14], "uv": [0, 0]},
+						{"origin": [-15, 5, -7], "size": [1, 2, 14], "uv": [0, 20]},
+						{"origin": [32, 5, -7], "size": [1, 2, 14], "uv": [0, 20]},
+						{"origin": [31, 6, -7], "size": [1, 24, 1], "inflate": -0.25, "pivot": [31.5, 6.5, -6.5], "rotation": [-5, 0, -5], "uv": [0, 20]},
+						{"origin": [31, 6, 6], "size": [1, 24, 1], "inflate": -0.25, "pivot": [31.5, 6.5, 6.5], "rotation": [5, 0, -5], "uv": [0, 20]},
+						{"origin": [-14, 6, -7], "size": [1, 24, 1], "inflate": -0.25, "pivot": [-13.5, 6.5, -6.5], "rotation": [-5, 0, 5], "uv": [0, 20]},
+						{"origin": [-14, 6, 6], "size": [1, 24, 1], "inflate": -0.25, "pivot": [-13.5, 6.5, 6.5], "rotation": [5, 0, 5], "uv": [0, 20]},
+						{"origin": [-14, 6, -7], "size": [46, 1, 14], "uv": [0, 20]},
+						{"origin": [-15, 5, -8], "size": [48, 2, 1], "uv": [0, 20]},
+						{"origin": [-15, 5, 7], "size": [48, 2, 1], "uv": [0, 20]}
+					]
+				}
+			]
+		}
+	]
+}

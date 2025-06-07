@@ -1,0 +1,21 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+      "identifier":"serp:rare_candy"
+    },
+    "tags":["crafting_table"],
+    "group":"mega",
+    "pattern":[
+      "dsd",
+      "sbs",
+      "dsd"
+    ],
+    "key":{
+      "d":{"item":"minecraft:dye","data":12},
+      "s":{"item":"minecraft:sugar"},
+      "b":{"item":"serp:enigma_berry"}
+    },
+    "result":{"item":"serp:rare_candy"}
+  }
+}

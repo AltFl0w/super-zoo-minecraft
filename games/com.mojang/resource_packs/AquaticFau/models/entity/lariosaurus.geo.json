@@ -1,0 +1,156 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.lariosaurus",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Lariosaurus",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Body",
+					"parent": "Lariosaurus",
+					"pivot": [0, 2, 0],
+					"cubes": [
+						{"origin": [-3, 0, -4], "size": [6, 5, 9], "uv": [0, 0]},
+						{"origin": [0, 5, -4], "size": [0, 1, 9], "uv": [12, 14]}
+					]
+				},
+				{
+					"name": "Neck",
+					"parent": "Body",
+					"pivot": [0, 2.5, -4],
+					"cubes": [
+						{"origin": [-2.5, 0.5, -8], "size": [5, 4, 5], "uv": [21, 0]},
+						{"origin": [0, 4.5, -8], "size": [0, 1, 4], "uv": [0, 4]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "Neck",
+					"pivot": [0, 2.5, -8],
+					"cubes": [
+						{"origin": [-2, 1, -10], "size": [4, 3, 3], "uv": [32, 17]},
+						{"origin": [0, 4, -10], "size": [0, 1, 2], "uv": [12, 16]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "bone",
+					"pivot": [0, 2.5, -10],
+					"cubes": [
+						{"origin": [-1, 1.5, -15], "size": [2, 2, 6], "uv": [27, 9]},
+						{"origin": [0, 3.5, -15], "size": [0, 1, 5], "pivot": [0, 4.5, -10], "rotation": [2.5, 0, 0], "uv": [0, 10]}
+					],
+					"locators": {
+						"lead": [0, 0, 0]
+					}
+				},
+				{
+					"name": "head",
+					"parent": "bone2",
+					"pivot": [0, 2.5, -15],
+					"cubes": [
+						{"origin": [-1, 1.5, -17], "size": [2, 2, 2], "uv": [0, 0]},
+						{"origin": [-0.8, 1.7, -19], "size": [1.6, 1.4, 2], "uv": [0, 25]}
+					],
+					"locators": {
+						"held_item": [-1, 2, -18]
+					}
+				},
+				{
+					"name": "held_item",
+					"parent": "head",
+					"pivot": [-1, 2.5, -18]
+				},
+				{
+					"name": "Fin",
+					"parent": "Neck",
+					"pivot": [2.5, 2, -6.5],
+					"rotation": [0, -10, 0],
+					"cubes": [
+						{"origin": [2, 1.5, -7], "size": [3, 1, 1], "uv": [0, 18]},
+						{"origin": [5, 2, -7], "size": [2, 0, 2], "pivot": [5, 2.5, -7], "rotation": [0, -12.5, 0], "uv": [10, 16]},
+						{"origin": [2, 2, -6], "size": [3, 0, 1.2], "uv": [0, 21]}
+					]
+				},
+				{
+					"name": "Fin2",
+					"parent": "Neck",
+					"pivot": [-2.5, 2, -6.5],
+					"rotation": [0, 12.5, 0],
+					"cubes": [
+						{"origin": [-5, 1.5, -7], "size": [3, 1, 1], "uv": [0, 16]},
+						{"origin": [-7, 2, -7], "size": [2, 0, 2], "pivot": [-5, 2.5, -7], "rotation": [0, 12.5, 0], "uv": [10, 14]},
+						{"origin": [-5, 2, -6], "size": [3, 0, 1.2], "uv": [0, 20]}
+					]
+				},
+				{
+					"name": "Tail",
+					"parent": "Body",
+					"pivot": [0, 2.5, 5],
+					"cubes": [
+						{"origin": [-2.5, 0.5, 4], "size": [5, 4, 5], "uv": [12, 14]},
+						{"origin": [0, 4.5, 5], "size": [0, 1, 4], "uv": [0, 3]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "Tail",
+					"pivot": [0, 2.5, 9],
+					"cubes": [
+						{"origin": [-1.5, 1, 8], "size": [3, 3, 6], "uv": [0, 25]},
+						{"origin": [0, 4, 9], "size": [0, 1, 5], "uv": [0, 9]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "bone3",
+					"pivot": [0, 2.5, 14],
+					"cubes": [
+						{"origin": [-1, 1.5, 13], "size": [2, 2, 7], "uv": [23, 23]},
+						{"origin": [0, 3.5, 14], "size": [0, 1, 6], "uv": [0, 28]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "bone4",
+					"pivot": [0, 2.5, 20],
+					"cubes": [
+						{"origin": [-0.5, 2, 19], "size": [1, 1, 10], "uv": [0, 14]},
+						{"origin": [0, 3, 20], "size": [0, 1, 7], "uv": [12, 18]},
+						{"origin": [0, 1, 28], "size": [0, 3, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "Leg",
+					"parent": "Tail",
+					"pivot": [-2.5, 2.5, 7],
+					"rotation": [0, 45, 0],
+					"cubes": [
+						{"origin": [-6, 1, 6], "size": [6, 2, 2], "uv": [36, 36]},
+						{"origin": [-9, 1, 5], "size": [4, 0, 4], "uv": [16, 26]}
+					]
+				},
+				{
+					"name": "Leg2",
+					"parent": "Tail",
+					"pivot": [2, 2.5, 7],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{"origin": [0, 1, 6], "size": [6, 2, 2], "uv": [16, 32]},
+						{"origin": [5, 1, 5], "size": [4, 0, 4], "uv": [8, 26]}
+					]
+				}
+			]
+		}
+	]
+}

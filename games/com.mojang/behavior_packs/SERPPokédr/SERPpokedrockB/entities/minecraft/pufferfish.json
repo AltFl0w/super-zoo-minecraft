@@ -1,0 +1,20 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:entity":{
+    "description":{
+      "identifier":"minecraft:pufferfish",
+      "is_spawnable":false,
+      "is_summonable":false,
+      "is_experimental":false
+    },
+    "components":{"minecraft:despawn":{}},
+    "events":{
+      "minecraft:entity_spawned":{},
+      "minecraft:to_full_puff":{},
+      "minecraft:on_full_puff":{},
+      "minecraft:from_full_puff":{},
+      "minecraft:on_deflate":{},
+      "minecraft:on_normal_puff":{}
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "df:caja_bloques_fnaf2",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+		"component_groups": {
+			"minecraft:is_dead": {
+                "minecraft:transformation": {
+                    "into": "df:caja_de_objetos"
+                }
+		    	}
+		},
+    "components": {
+      "minecraft:type_family": {
+        "family": [ "DanyFox", "Mueble" ]
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+			"minecraft:damage_sensor": [{
+				"on_damage": {
+					"filters": {
+						"all_of": [{
+								"test": "has_damage",
+								"value": "fatal"
+							}
+						]
+					},
+					"event": "minecraft:event_spawn_dead"
+				}
+			}
+		],
+      "minecraft:scale": {
+        "value": 0.8
+      },
+      "minecraft:loot": {
+				"table": "loot_tables/entities/bloques_fnaf2.json"
+			},
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:nameable": {
+      },
+      "minecraft:persistent": {
+      },
+      "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+		"events": {
+			"minecraft:event_spawn_dead": {
+                "add": {
+                    "component_groups": ["minecraft:is_dead"]
+                }
+            }
+		}
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:battle_void_axe"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:icon": "battle_void_axe",
+			"minecraft:render_offsets": "tools",
+			"minecraft:display_name": {}
+		}
+	}
+}

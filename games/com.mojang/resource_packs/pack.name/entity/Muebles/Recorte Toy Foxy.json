@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:recorte_toy_foxy",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/recortes/df_toy_foxy"
+      },
+      "geometry": {
+        "default": "geometry.df_recorte_toy_foxy"
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_recorte_toy_foxy",
+        "texture_index": 0
+      }
+    }
+  }
+}

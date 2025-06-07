@@ -1,0 +1,33 @@
+{
+   "format_version":"1.10",
+   "minecraft:attachable":{
+      "description":{
+         "identifier":"true:scope_6x",
+         "materials":{
+            "default":"entity_alphatest",
+            "enchanted":"entity_alphatest_glint"
+         },
+         "textures":{
+            "default":"textures/gun_attachments/scope"
+         },
+         "scripts":{
+            "animate":[
+               "wielding"
+            ]
+         },
+         "animations":{ 
+            "wield_first_person":"animation.scope.wield_first_person",
+            "wield_third_person":"animation.scope.wield_third_person",
+            "wielding":"controller.animation.gun.wielding",
+            "default":"animation.scope.default"
+
+         },
+         "geometry":{
+            "default":"geometry.scope_6x"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

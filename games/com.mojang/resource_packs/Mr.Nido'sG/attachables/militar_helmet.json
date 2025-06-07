@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:militar_helmet",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/militar_helmet"
+			},
+			"geometry": {
+				"default": "geometry.militar_helmet"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

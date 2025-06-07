@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pokemon_unite:mamoswine",
+      "materials": { "default": "skeleton" },
+      "textures": { 
+        "default": "textures/entity/pokemon_unite/mamoswine",
+        "pokeball": "textures/entity/pokemon_unite/pokeball"
+      },
+      "geometry": { 
+        "default": "geometry.mamoswine",
+        "pokeball": "geometry.pokeball"
+      },
+ 
+      "animations": { 
+          "pokeball_v1": "animation.pokeballv1",
+ 
+
+        "walk": "animation.mamoswine.walk",
+        "attack": "animation.mamoswine.attack",
+
+
+
+        "idle": "animation.mamoswine.idle"
+      },
+      "scripts": { 
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+
+"idle",
+          { "pokeball_v1": "query.variant == 1" },
+
+          { "attack": "query.is_delayed_attacking == 1" }
+        ] 
+      },
+      "render_controllers": [
+          "controller.render.pokemon_n",
+          "controller.render.pokeball"
+      
+      ],
+      "spawn_egg": {
+        "base_color": "#8C6635",
+        "overlay_color": "#A9A98B"
+      }
+    }
+  }
+}

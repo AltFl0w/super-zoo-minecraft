@@ -1,0 +1,108 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.seasnake",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 7,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Seasnake",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "Body",
+					"parent": "Seasnake",
+					"pivot": [0, 2, -2],
+					"cubes": [
+						{"origin": [-1.5, 0.5, -8], "size": [3, 3, 6], "inflate": 0.3, "uv": [22, 33]}
+					]
+				},
+				{
+					"name": "Head",
+					"parent": "Body",
+					"pivot": [0, 2, -8]
+				},
+				{
+					"name": "Upperjaw",
+					"parent": "Head",
+					"pivot": [0, 1.5, -8],
+					"cubes": [
+						{"origin": [-2, 1.5, -13], "size": [4, 2, 5], "uv": [34, 19]},
+						{"origin": [-1.5, 0.5, -12], "size": [0, 1, 1], "pivot": [0, 1.5, -12], "rotation": [27.5, 0, 0], "uv": [0, 1]},
+						{"origin": [1.5, 0.5, -12], "size": [0, 1, 1], "pivot": [0, 1.5, -12], "rotation": [27.5, 0, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "Jaw",
+					"parent": "Head",
+					"pivot": [0, 1.5, -8],
+					"cubes": [
+						{"origin": [-2, 0.5, -13], "size": [4, 1, 5], "inflate": -0.01, "uv": [16, 0]}
+					]
+				},
+				{
+					"name": "bone6",
+					"parent": "Jaw",
+					"pivot": [0, 1.5, -9],
+					"cubes": [
+						{"origin": [-1.5, 1.5, -13], "size": [3, 0, 4], "uv": [6, 45]}
+					]
+				},
+				{
+					"name": "bone5",
+					"parent": "Body",
+					"pivot": [0, 2, -2],
+					"cubes": [
+						{"origin": [-2, 0, -2], "size": [4, 4, 9], "uv": [19, 6]}
+					]
+				},
+				{
+					"name": "bone",
+					"parent": "bone5",
+					"pivot": [0, 2, 7],
+					"cubes": [
+						{"origin": [-2, 0, 7], "size": [4, 4, 8], "uv": [18, 21]}
+					]
+				},
+				{
+					"name": "Tail",
+					"parent": "bone",
+					"pivot": [0, 2, 15],
+					"cubes": [
+						{"origin": [-1.5, 0, 15], "size": [3, 4, 10], "uv": [0, 15]}
+					]
+				},
+				{
+					"name": "bone2",
+					"parent": "Tail",
+					"pivot": [0, 2, 25],
+					"cubes": [
+						{"origin": [-1, 0.5, 25], "size": [2, 3, 12], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "bone3",
+					"parent": "bone2",
+					"pivot": [0, 2, 37],
+					"cubes": [
+						{"origin": [-0.5, 1, 37], "size": [1, 2, 10], "uv": [0, 29]}
+					]
+				},
+				{
+					"name": "bone4",
+					"parent": "bone3",
+					"pivot": [0, 2, 46],
+					"cubes": [
+						{"origin": [0, 0.5, 45], "size": [0, 3, 6], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

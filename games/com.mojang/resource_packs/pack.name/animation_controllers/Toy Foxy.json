@@ -1,0 +1,78 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+  "controller.animation.df_toy_foxy.general": {
+      "states": {
+        "default": {
+          "animations": [
+            "t.foxy_general",
+            "parpadeo",
+            "cola",
+            "look_at_target"
+          ]
+        }
+      }
+    },
+    "controller.animation.df_toy_foxy.move": {
+      "states": {
+          "default": {
+              "animations": [{
+                      "moving": "query.ground_speed *0.25"
+                  }
+              ],
+              "transitions": [{
+                      "run": "query.ground_speed > 3"
+                  },
+      {
+        "moving": "query.is_moving"
+      }
+              ],
+              "blend_transition": 0.3
+          },
+  "moving": {
+              "animations": [
+                  "moving"
+              ],
+              "transitions": [{
+                      "default": "!query.is_moving"
+                  }
+              ],
+              "blend_transition": 0.2
+          },
+          "run": {
+              "animations": [
+                  "run"
+              ],
+              "transitions": [{
+                      "default": "!query.ground_speed"
+                  }
+              ],
+              "blend_transition": 0.3
+          }
+      }
+  },
+    "controller.animation.df_toy_foxy.ataque": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "attack": "variable.attack>0"
+            }
+          ],
+          "blend_transition": 0.2
+        },
+        "attack": {
+          "animations": [
+            "attacking"
+          ],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}

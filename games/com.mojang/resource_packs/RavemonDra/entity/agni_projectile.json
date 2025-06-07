@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "ravemontod:agni_projectile",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/flame_atlas"
+      },
+      "geometry": {
+        "default": "geometry.item_sprite"
+      },
+      "animations": {
+        "spiral": "controller.animation.particle_effects",
+        "flying": "animation.actor.billboard"
+      },
+      "scripts": {
+        "animate": [
+          "spiral",
+          "flying"
+        ]
+      },
+      "particle_effects": {
+	    "particle": "ravemontod:agni_fire"
+	  },
+      "render_controllers": [ "controller.render.skeleton" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+	    "base_color": "#FF00BB",
+        "overlay_color": "#FF77D6"
+	  }
+    }
+  }
+}

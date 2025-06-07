@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.double_micro_uzi.shoot": {
+      "loop": true,
+      "animation_length": 0.09,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.micro_uzi @a[r=25]",
+			"/function double_micro_uzi",
+			"/scoreboard players remove @s double_micro_uzi 1",
+			"/event entity @s guns:micro_uzi"
+        ]
+      }
+    },
+    "animation.double_micro_uzi.reload": {
+      "loop": false,
+      "animation_length": 3.83,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.double_micro_uzi_reload @a[r=25]"
+        ],
+        "3.75": [
+			"/scoreboard players add @s double_micro_uzi 40",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:micro_uzi_ammo 0 2"
+        ]
+      }
+    }
+  }
+}

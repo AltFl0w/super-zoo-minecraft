@@ -1,0 +1,31 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"pokemon:p182",
+      "materials":{"default":"pokemon","aura":"aura"},
+      "textures":{
+    "evo_aura":"textures/entity/aura/evolve",
+    "max_aura":"textures/entity/aura/max",
+    "default":"pokeitems/items/icons/182",
+    "default_s":"pokeitems/items/icons/182s",
+    "mega1":"pokeitems/items/icons/182",
+    "mega_s1":"pokeitems/items/icons/182s",
+    "mega2":"pokeitems/items/icons/182",
+    "mega_s2":"pokeitems/items/icons/182s",
+    "gigamax":"pokeitems/items/icons/182",
+    "gigamax_s":"pokeitems/items/icons/182s"
+      },
+      "geometry":{
+    "default":"geometry.serpsprite",
+    "mega1":"geometry.serpsprite",
+    "mega2":"geometry.serpsprite",
+    "gigamax":"geometry.serpsprite"
+      },
+      "scripts":{
+    "scale":"1.5"
+      },
+      "render_controllers":["controller.render.pokemon","controller.render.aura"]
+    }
+  }
+}

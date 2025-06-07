@@ -1,0 +1,43 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:toy_freddy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_toy_freddy"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_freddy"
+      },
+      "animations": {
+        "moving": "animation.df_toy_freddy.walk",
+        "run": "animation.df_toy_freddy.run",
+        "t.freddy_general": "animation.df_toy_freddy.base",
+        "attacking": "animation.df_toy_freddy.attack",
+        "parpadeo": "animation.df_toy_freddy.parpadeo",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_toy_freddy.move",
+        "general": "controller.animation.df_toy_freddy.general",
+        "ataque": "controller.animation.df_toy_freddy.ataque",
+        "corriendo": "controller.animation.df_toy_freddy.corriendo"
+      },
+      "scripts": {
+        "animate": [
+          "move", "general", "ataque", "corriendo"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_toy_freddy",
+        "texture_index": 0
+      }
+    }
+  }
+}

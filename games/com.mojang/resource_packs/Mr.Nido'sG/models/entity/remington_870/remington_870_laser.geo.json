@@ -1,0 +1,117 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.remington_870_laser",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 7,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightItem",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 1],
+					"locators": {
+						"lead_hold": [-6, 15, 1]
+					}
+				},
+				{
+					"name": "base_attachable",
+					"parent": "rightItem",
+					"pivot": [-5.5, 5, 0]
+				},
+				{
+					"name": "laser",
+					"parent": "base_attachable",
+					"pivot": [-6.00355, 8.49645, -37]
+				},
+				{
+					"name": "red_laser",
+					"parent": "laser",
+					"pivot": [-6.00355, 8.49645, -36.9],
+					"cubes": [
+						{"origin": [-6.15, 7.85, -37.5], "size": [1, 1, 1], "inflate": -0.4, "pivot": [-5.65, 8.85, -15.2], "rotation": [0, 0, 45], "uv": [24, 74]}
+					]
+				},
+				{
+					"name": "blue_laser",
+					"parent": "laser",
+					"pivot": [-6.00355, 8.49645, -36.9],
+					"cubes": [
+						{"origin": [-6.15, 7.85, -37.5], "size": [1, 1, 1], "inflate": -0.4, "pivot": [-5.65, 8.85, -15.2], "rotation": [0, 0, 45], "uv": [28, 74]}
+					]
+				},
+				{
+					"name": "green_laser",
+					"parent": "laser",
+					"pivot": [-6.00355, 8.49645, -36.9],
+					"cubes": [
+						{"origin": [-6.15, 7.85, -37.5], "size": [1, 1, 1], "inflate": -0.4, "pivot": [-5.65, 8.85, -15.2], "rotation": [0, 0, 45], "uv": [20, 74]}
+					]
+				},
+				{
+					"name": "right_shoot_particle",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_shoot_particle": [-6, 15, 0]
+					}
+				},
+				{
+					"name": "right_flashlight",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_flashlight": [-6, 15, 0]
+					}
+				},
+				{
+					"name": "right_bullet_particle",
+					"parent": "rightArm",
+					"pivot": [-6, 15, 0],
+					"locators": {
+						"right_bullet_particle": [-6, 15, 0]
+					}
+				}
+			]
+		}
+	]
+}

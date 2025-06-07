@@ -1,0 +1,59 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.m67" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/stopsound @s gun.bomb_timer" ],
+					"transitions" : [
+						{
+							"m67" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'm67') && q.is_using_item && q.is_alive"
+						}
+					]
+				},
+				"m67" : {
+					"animations" : [ "m67.time", "reload.time" ],
+					"on_entry" : [ "/playsound gun.bomb_timer @s ~ ~ ~ 0.1 1.3", "/playsound gun.grenade_on @s ~ ~ ~ 1" ],
+					"transitions" : [
+						{
+							"m67.down" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm67') || (!q.is_using_item && !q.any_animation_finished)"
+						},
+						{
+							"shoot" : "!q.is_using_item && q.any_animation_finished"
+						},
+						{
+							"explosion" : "q.all_animations_finished || !q.is_alive"
+						}
+					]
+				},
+				"m67.down" : {
+					"on_entry" : [ "/summon gunsaddon:grenade_m67_explode ~ ~1.5 ~", "/clear @s gunsaddon:m67 0 1" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/stopsound @s gun.bomb_timer" ],
+					"animations" : [ "m67.shoot" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						}
+					]
+				},
+				"explosion" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/stopsound @s gun.bomb_timer", "/summon gunsaddon:grenade_m67_explode ~ ~ ~ ~ ~ minecraft:dont_eat", "/clear @s gunsaddon:m67 0 1" ],
+					"transitions" : [
+						{
+							"default" : "(!q.is_using_item && q.any_animation_finished) || !q.is_alive"
+						}
+					]
+				}
+			}
+		}
+	}
+}

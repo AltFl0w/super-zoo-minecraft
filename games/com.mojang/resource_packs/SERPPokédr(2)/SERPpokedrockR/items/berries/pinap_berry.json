@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:pinap_berry",
+      "category": "Nature"
+    },
+    
+    "components": {
+		"minecraft:creative_category": {
+			"parent": "itemGroup.name.berries"
+		},
+      "minecraft:icon": "pinap",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

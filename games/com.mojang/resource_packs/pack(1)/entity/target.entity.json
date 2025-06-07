@@ -1,0 +1,25 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wep:target",
+			"materials": {
+				"default": "skeleton"
+			},
+			"textures": {
+				"default": "textures/entity/target"
+			},
+			"geometry": {
+				"default": "geometry.target"
+			},
+			"spawn_egg": {
+				"base_color": "#FCD59B",
+				"overlay_color": "#1778D2"
+			},
+			"render_controllers": [
+				"controller.render.skeleton"
+			]
+		}
+	}
+}

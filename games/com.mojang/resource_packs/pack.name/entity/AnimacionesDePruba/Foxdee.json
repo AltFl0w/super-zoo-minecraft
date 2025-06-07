@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "testdf:foxdee",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/foxdee/df_foxdee"
+      },
+      "geometry": {
+        "default": "geometry.df_foxdee"
+      },
+      "animations": {
+        "default_pose": "animation.df_foxdee.base",
+        "no_pose": "animation.testdf_foxdee.walk",
+        "solemn_pose": "animation.df_foxdee.run",
+        "athena_pose": "animation.df_foxdee.pose1",
+        "brandish_pose": "animation.df_foxdee.sin_sueter",
+        "honor_pose": "animation.testdf_foxdee.attack",
+        "entertain_pose": "animation.df_foxdee.cola",
+        "salute_pose": "animation.df_foxdee.cola2",
+        "riposte_pose": "animation.testdf_foxdee.casting",
+        "zombie_pose": "animation.df_foxdee.muerte",
+        "cancan_a_pose": "animation.df_foxdee.nice",
+        "cancan_b_pose": "animation.df_foxdee.tara",
+        "hero_pose": "animation.df_foxdee.saludando",
+        "wiggle": "animation.df_foxdee.pose1"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_foxdee",
+		"texture_index": 0
+      }
+    }
+  }
+}

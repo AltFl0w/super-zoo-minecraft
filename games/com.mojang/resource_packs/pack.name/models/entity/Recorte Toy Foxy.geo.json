@@ -1,0 +1,25 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.df_recorte_toy_foxy",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 5.5,
+				"visible_bounds_offset": [0, 2.25, 0]
+			},
+			"bones": [
+				{
+					"name": "Recorte",
+					"pivot": [0, -0.4, 0],
+					"cubes": [
+						{"origin": [-21, -0.4, 0], "size": [41, 59, 0], "pivot": [0, 0.1, 0], "rotation": [-5, 0, 0], "uv": [7, 12]},
+						{"origin": [3, -0.4, 7.6], "size": [2, 35, 1], "pivot": [4, 0.1, 8.1], "rotation": [7.5, 0, 0], "uv": [0, 101]}
+					]
+				}
+			]
+		}
+	]
+}

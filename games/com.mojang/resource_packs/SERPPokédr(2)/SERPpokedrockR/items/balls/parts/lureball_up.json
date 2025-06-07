@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:lureball_up",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "lureball_up"
+    }
+  }
+}

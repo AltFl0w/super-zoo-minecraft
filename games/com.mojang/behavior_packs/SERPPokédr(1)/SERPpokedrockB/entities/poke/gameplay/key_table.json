@@ -1,0 +1,184 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "serp:key_table",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:physics": {},
+            "minecraft:scale": {"value":1},
+         "minecraft:collision_box": {
+            "height":1.3,
+            "width": 0.6
+         },
+      "minecraft:is_stackable": {},
+	"minecraft:interact": [
+{"on_interact":{"filters":{"test":"is_family","subject":"other","value":"player"},"event":"serp:using","target":"self"},"interact_text":"inventory.binSlot"},
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_kadabra"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_kadabra.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_kadabras"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_kadabras.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_machoke"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_machoke.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_machokes"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_machokes.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_graveler"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_graveler.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_gravelers"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_gravelers.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_haunter"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_haunter.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_haunters"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_haunters.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_onix"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_onix.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_onixs"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_onixs.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_seadra"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_seadra.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_seadras"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_seadras.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_scyther"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_scyther.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_scythers"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_scythers.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_poliwhirl"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_poliwhirl.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_poliwhirls"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_poliwhirls.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_slowpoke"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_slowpoke.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_slowpokes"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_slowpokes.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_porygon"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_porygon.json"},
+"interact_text": "inventory.binSlot"
+            },
+            {
+              "on_interact": {
+"filters": {"test": "has_equipment", "subject": "other", "domain": "hand", "value": "serp:trading_porygons"},"target": "self"},"use_item": true,"add_items": {
+"table": "loot_tables/table/back_porygons.json"},
+"interact_text": "inventory.binSlot"
+            }
+        ],
+        "minecraft:damage_sensor": [
+        {
+        "on_damage": {
+            "filters": {
+                "any_of": [
+{"test":"has_equipment","domain":"hand", "subject":"other", "value":"wooden_axe"},
+{"test":"has_equipment","domain":"hand", "subject":"other", "value":"stone_axe"},
+{"test":"has_equipment","domain":"hand", "subject":"other", "value":"iron_axe"},
+{"test":"has_equipment","domain":"hand", "subject":"other","value":"golden_axe"},
+{"test":"has_equipment","domain":"hand", "subject":"other","value":"diamond_axe"},
+{"test":"has_equipment","domain":"hand", "subject":"other","value":"netherite_axe"}
+                        ]
+                    },
+            "event": "serp:store"
+                },
+        "deals_damage": false
+            },
+            {
+        "deals_damage": false
+            }
+        ],
+          "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100
+      }
+    },
+        "component_groups": {
+            "serp:store": {
+    "minecraft:health":{"value":0,"max":0},
+            "minecraft:loot": {
+"table":"loot_tables/entities/key.json"},
+        "minecraft:despawn": {}}
+        },
+        "events": {
+    "serp:using": {
+"run_command":{"command":["function mission/key"]}},
+    "serp:store": {
+"add":{"component_groups":["serp:store"]}}
+        }
+    }
+}

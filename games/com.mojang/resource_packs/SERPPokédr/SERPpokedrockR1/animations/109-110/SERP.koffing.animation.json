@@ -1,0 +1,82 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.koffing.quiet": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, -10],
+						"0.2": [-10, 0, 0],
+						"0.4": [0, 0, 10],
+						"0.6": [10, 0, 0],
+						"0.8": [0, 0, -10]
+					},
+					"position": [0, 2, 0]
+				}
+			}
+		},
+		"animation.koffing.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"koffing": {
+					"position": {
+						"0.0": [0, 2, 0],
+						"0.2": [-1, 1.5, 0],
+						"0.4": [0, 1, 0],
+						"0.6": [1, 1.5, 0],
+						"0.8": [0, 2, 0]
+					}
+				}
+			}
+		},
+		"animation.koffing.sitting": {
+			"loop": true,
+			"bones": {
+				"koffing": {
+					"rotation": [-20, -5, -15],
+					"position": [1, 0, -1]
+				}
+			}
+		},
+		"animation.koffing.attack": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"koffing": {
+					"rotation": {
+						"0.0": [0, -15, 0],
+						"0.4": [0, 50, 0],
+						"0.6": [0, -15, 0]
+					}
+				}
+			}
+		},
+		"animation.koffing.direction": {
+			"loop": true,
+			"bones": {
+				"koffing": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+        "animation.koffing.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,23,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

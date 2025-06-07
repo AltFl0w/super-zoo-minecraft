@@ -1,0 +1,16 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:soda_pop",
+	    "menu_category":{"group":"itemGroup.name.potion","category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:soda_pop.name"},
+      "minecraft:icon":"soda_pop",
+      "minecraft:food":{"nutrition":7,"saturation_modifier":0.8},
+	    "minecraft:use_modifiers":{"use_duration":1.6,"movement_modifier":0.35},
+	    "minecraft:use_animation":"drink"
+    }
+  }
+}

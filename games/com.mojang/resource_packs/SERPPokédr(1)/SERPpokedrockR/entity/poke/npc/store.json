@@ -1,0 +1,28 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:store",
+      "materials":{"default":"entity_alphatest"},
+      "textures":{
+        "default":"textures/entity/npc/store"
+      },
+      "geometry":{
+        "default":"geometry.serp_store"
+      },
+      "scripts":{
+        "scale":"0.9375",
+        "pre_animation":["variable.tcos0=(Math.cos(query.modified_distance_moved*38.17)*query.modified_move_speed/variable.gliding_speed_value)*57.3;"],
+        "animate":["humanoid_base_pose","move","bob","look_at_target"]
+      },
+      "animations":{
+        "humanoid_base_pose":"animation.humanoid.base_pose",
+        "move":"animation.humanoid.move",
+        "bob":"animation.humanoid.bob",
+        "look_at_target":"animation.common.look_at_target"
+      },
+      "spawn_egg":{"texture":"pokeitems","texture_index":3},
+      "render_controllers":["controller.render.default"]
+    }
+  }
+}

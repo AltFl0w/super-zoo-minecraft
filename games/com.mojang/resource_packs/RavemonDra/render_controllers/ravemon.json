@@ -1,0 +1,58 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.ravemon": {
+			"arrays": {
+				"textures": {
+					"Array.variants": [
+						"Texture.charging1",
+						"Texture.charging2",
+						"Texture.charging3",
+						"Texture.charging4"
+					],
+					"Array.skins": [
+						"Texture.var1",
+						"Texture.var2",
+						"Texture.var3",
+						"Texture.var4"
+					]
+				}
+			},
+			"geometry": "geometry.default",
+			"part_visibility": [
+				{
+					"chest": "query.is_chested"
+				},
+				{
+					"saddle": "query.is_saddled"
+				},
+				{
+					"tongue": "query.is_interested"
+				},
+				{
+					"angreMouth": "!query.is_charged"
+				},
+				{
+					"leftWing2": "query.is_charged"
+				},
+				{
+					"rightWing2": "query.is_charged"
+				},
+				{
+					"leftWing2": "!query.is_on_ground"
+				},
+				{
+					"rightWing2": "!query.is_on_ground"
+				}
+			],
+			"materials": [
+				{
+					"*": "material.default"
+				}
+			],
+			"textures": [
+				"query.is_charged?array.variants[query.variant]:array.skins[query.variant]"
+			]
+		}
+	}
+}

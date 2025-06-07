@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "§2Pokecraft Unite ADDON §1Behavior",
+    "description": "§b§lCreated by 7INDORAPTOR7",
+    "uuid": "3682c992-b17e-40c4-a03f-60e9b549ab0f",
+    "version": [
+      1,
+      0,
+      0 
+    ],
+    "min_engine_version": [
+      1,
+      17,
+      0 
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "54a7a575-bc44-417d-a1e6-a3eadae76f0c",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ]
+}

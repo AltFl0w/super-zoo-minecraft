@@ -1,0 +1,88 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.diglett.quiet": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"body": {
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.8": [1, 0.95, 1],
+						"1.6": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.diglett.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"override_previous_animation": true,
+			"bones": {
+				"rocks2": {
+					"rotation": {
+						"0.0": [0, -10, 0],
+						"0.2": [0, 10, 0],
+						"0.4": [0, -10, 0],
+						"0.6": [0, 10, 0],
+						"0.8": [0, -10, 0]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [10, 0, -10],
+						"0.2": [0, 0, 0],
+						"0.4": [10, 0, 10],
+						"0.6": [0, 0, 0],
+						"0.8": [10, 0, -10]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.2": [1, 0.9, 1],
+						"0.4": [1, 1, 1],
+						"0.6": [1, 0.9, 1],
+						"0.8": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.diglett.sitting": {
+			"loop": true,
+			"animation_length": 1.6,
+			"bones": {
+				"body": {
+					"scale": {
+						"0.0": [1, 0.95, 1],
+						"0.8": [1, 0.90, 1],
+						"1.6": [1, 0.95, 1]
+					}
+				}
+			}
+		},
+		"animation.diglett.attack": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [25, 0, 0],
+					"scale": [1, 1.2, 1]
+				}
+			}
+		},
+        "animation.diglett.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,19,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

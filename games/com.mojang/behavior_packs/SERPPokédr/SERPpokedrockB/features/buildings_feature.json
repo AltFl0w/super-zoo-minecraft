@@ -1,0 +1,12 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+        "description": {
+    "identifier": "serp:buildings_feature"
+    },
+    "features": [
+      ["serp:pokecenter_mcstructure",20],
+      ["serp:game_corner_mcstructure",1]
+    ]
+  }
+}

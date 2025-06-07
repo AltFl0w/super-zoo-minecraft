@@ -1,0 +1,54 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.ice_battleaxe": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'ice_battleaxe' && query.is_using_item"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'ice_battleaxe' && !query.is_using_item) || query.get_equipped_item_name('main_hand') != 'ice_battleaxe'"
+						}
+					],
+					"animations": [
+						"ice_battleaxe"
+					]
+				}
+			}
+		},
+		"controller.animation.ice_battleaxe.effect": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"effect": "!query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/execute @s[tag=!bedrock] ~~~ fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 water 0 hollow",
+						"/tag @s remove bedrock"
+					]
+				},
+				"effect": {
+					"transitions": [
+						{
+							"default": "query.is_sheared"
+						}
+					],
+					"on_entry": [
+						"/tp @s ~~~ 0",
+						"/execute @s ~~~ detect ~~-1~ bedrock 0 tag @s add bedrock",
+						"/execute @s[tag=!bedrock] ~~~ fill ~-2 ~-1 ~-2 ~2 ~-1 ~2 packed_ice 0 hollow",
+						"/summon wep:ice_spike ~~~"
+					]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.electric_axe": {
+			"geometry": "Geometry.electric_axe",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.electric_axe"
+			]
+		}
+	}
+}

@@ -1,0 +1,133 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serphealer",
+				"texture_width": 112,
+				"texture_height": 112,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 3,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "machine",
+					"pivot": [0, 0, -8],
+					"cubes": [
+						{"origin": [-8, 8, 8], "size": [16, 8, 7], "uv": [66, 0]},
+						{"origin": [6.00111, 15.99889, 8], "size": [2, 2.83, 7], "pivot": [8.00111, 15.99889, 11], "rotation": [0, 0, -45], "uv": [0, 0]},
+						{"origin": [-8.00111, 15.99889, 8], "size": [2, 2.83, 7], "pivot": [-8.00111, 15.99889, 11], "rotation": [0, 0, 45], "uv": [0, 0]},
+						{"origin": [-6, 16, 8], "size": [12, 2, 7], "uv": [66, 16]},
+						{"origin": [-5, 0, -12], "size": [10, 12, 20], "uv": [0, 0]},
+						{"origin": [5, 7, -12], "size": [2, 7, 24], "uv": [37, 9]},
+						{"origin": [-7, 7, -12], "size": [2, 7, 24], "uv": [0, 33]},
+						{"origin": [5, 0, -5], "size": [3, 7, 10], "uv": [27, 81]},
+						{"origin": [-8, 0, -5], "size": [3, 7, 10], "uv": [27, 81]},
+						{"origin": [-6, 14, -14], "size": [12, 2, 2], "uv": [41, 0]},
+						{"origin": [-6, 13, -14], "size": [12, 1, 2], "uv": [41, 0]},
+						{"origin": [5, 16, -14], "size": [1, 2.25, 2], "pivot": [6, 16, -12], "rotation": [0, 0, -64], "uv": [0, 0]},
+						{"origin": [-6, 16, -14], "size": [1, 2.25, 2], "pivot": [-6, 16, -12], "rotation": [0, 0, 64], "uv": [0, 0]},
+						{"origin": [6, 13, -14], "size": [2, 3.6, 2], "pivot": [8, 13, -13], "rotation": [0, 0, -33.6], "uv": [41, 5]},
+						{"origin": [-8, 13, -14], "size": [2, 3.6, 2], "pivot": [-8, 13, -13], "rotation": [0, 0, 33.6], "uv": [41, 5], "mirror": true},
+						{"origin": [-4, 16, -14], "size": [8, 1, 2], "uv": [0, 39]},
+						{"origin": [-8, 0, -14], "size": [16, 13, 2], "uv": [0, 65]},
+						{"origin": [-9, 0, -16], "size": [18, 8, 11], "uv": [53, 41]},
+						{"origin": [-8, 8, -14.05], "size": [16, 9, 0], "uv": [29, 41]},
+						{"origin": [-5, 12, 7.95], "size": [10, 5, 0], "uv": [0, 33]},
+						{"origin": [-5, 12, -11.95], "size": [10, 5, 0], "uv": [0, 33]},
+						{"origin": [-9, 0, 5], "size": [18, 8, 11], "uv": [53, 41]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.serphealer_lights",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "lights",
+					"pivot": [2.5, 12, 2],
+				"locators": {
+		"ball": [2.5, 12, -2],
+		"ball2": [-2.5, 12, -2],
+		"ball3": [2.5, 12, 4.5],
+		"ball4": [-2.5, 12, 4.5],
+		"ball5": [2.5, 12, -8.5],
+		"ball6": [-2.5, 12, -8.5]
+					}
+				},
+				{
+					"name": "1",
+					"parent": "lights",
+					"pivot": [2.5, 12, -2],
+					"cubes": [
+					{"origin": [0.5, 12, -4], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "2",
+					"parent": "lights",
+					"pivot": [-2.5, 12, -2],
+					"cubes": [
+					{"origin": [-4.5, 12, -4], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "3",
+					"parent": "lights",
+					"pivot": [2.5, 12, 4.5],
+					"cubes": [
+					{"origin": [0.5, 12, 2.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "4",
+					"parent": "lights",
+					"pivot": [-2.5, 12, 4.5],
+					"cubes": [
+					{"origin": [-4.5, 12, 2.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "5",
+					"parent": "lights",
+					"pivot": [2.5, 12, -8.5],
+					"cubes": [
+					{"origin": [-0.5, 12, -10.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "6",
+					"parent": "lights",
+					"pivot": [-2.5, 12, -8.5],
+					"cubes": [
+					{"origin": [-4.5, 12, -10.5], "size": [4, 5, 4], "uv": [0, 0]}
+					]
+				}
+			]
+		},
+		{
+			"description": {
+				"identifier": "geometry.serphealer_sparks",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "healing_machine",
+					"pivot": [0, 0, 0]
+				}
+			]
+		}
+	]
+}

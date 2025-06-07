@@ -1,0 +1,53 @@
+{
+    "permissionLevels": {
+        "admin": [
+            "YourMinecraftUsername",
+            "ServerOwner"
+        ],
+        "manager": [
+            "ZooManager1", 
+            "HeadKeeper"
+        ],
+        "builder": [
+            "Architect1",
+            "Constructor1"
+        ],
+        "visitor": []
+    },
+    "commandPermissions": {
+        "help": ["admin", "manager", "builder", "visitor"],
+        "feed": ["admin", "manager", "builder", "visitor"],
+        "count": ["admin", "manager", "builder", "visitor"],
+        "health": ["admin", "manager", "builder", "visitor"],
+        "stats": ["admin", "manager", "builder", "visitor"],
+        "clean": ["admin", "manager"],
+        "schedule": ["admin", "manager"],
+        "emergency": ["admin"],
+        "authorize": ["admin"],
+        "tnt-auth": ["admin"],
+        "tnt-list": ["admin", "manager"],
+        "perm": ["admin"]
+    },
+    "feedingSchedule": {
+        "enabled": true,
+        "times": ["08:00", "12:00", "16:00", "20:00"]
+    },
+    "emergencyProtocols": {
+        "clearWeather": true,
+        "setDayTime": true,
+        "giveSupplies": true,
+        "lockEnclosures": true
+    },
+    "animalTypes": [
+        "lions",
+        "tigers", 
+        "elephants",
+        "penguins",
+        "dolphins",
+        "giraffes",
+        "monkeys",
+        "bears",
+        "wolves",
+        "pandas"
+    ]
+} 

@@ -1,0 +1,75 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:lightning_wave",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball",
+			"animations": {
+				"lightning_wave": "animation.lightning_wave"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"lightning_wave": "query.is_alive"
+					}
+				]
+			}
+		},
+		"component_groups": {
+			"wep:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"despawns"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.3,
+				"height": 0.3
+			},
+			"minecraft:attack": {
+				"damage": 8
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 0,
+						"knockback": true
+					}
+				},
+				"power": 0.9,
+				"gravity": 0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": 3,
+				"time_down_event": {
+					"event": "wep:on_despawn"
+				}
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"wep:on_despawn": {
+				"add": {
+					"component_groups": [
+						"wep:despawn"
+					]
+				}
+			}
+		}
+	}
+}

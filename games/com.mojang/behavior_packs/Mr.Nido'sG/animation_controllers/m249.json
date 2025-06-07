@@ -1,0 +1,147 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.m249" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : { "on_entry" : [ "/scoreboard objectives add m249_explosive dummy", "/scoreboard players add @s m249_explosive 0", "/scoreboard objectives add m249_fire dummy", "/scoreboard players add @s m249_fire 0", "/scoreboard objectives add m249_shotgun dummy", "/scoreboard players add @s m249_shotgun 0", "/scoreboard objectives add m249_m203 dummy", "/scoreboard players add @s m249_m203 0", "/scoreboard objectives add m249 dummy", "/scoreboard players add @s m249 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [ { "default" : "(1.0)" } ]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add m249_explosive dummy", "/scoreboard players add @s m249_explosive 0", "/scoreboard objectives add m249_fire dummy", "/scoreboard players add @s m249_fire 0","/scoreboard objectives add m249_shotgun dummy", "/scoreboard players add @s m249_shotgun 0", "/scoreboard objectives add m249_m203 dummy", "/scoreboard players add @s m249_m203 0", "/scoreboard objectives add m249 dummy", "/scoreboard players add @s m249 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"m249" : "q.scoreboard('m249') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'm249') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('m249') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'm249') && q.is_using_item && q.scoreboard('second_gun') == 0 && q.is_alive"
+						}
+					]
+				},
+				"m249" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('m249') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('m249') < 0 && q.is_using_item"
+						},
+						{
+							"shoot" : "q.is_using_item && !q.is_sneaking && q.scoreboard('second_gun') == 0 && q.scoreboard('m249_fire') == 0 && q.scoreboard('m249_explosive') == 0"
+						},
+						{
+							"shoot_apuntar" : "q.is_using_item && q.is_sneaking && q.scoreboard('second_gun') == 0 && q.scoreboard('m249_fire') == 0 && q.scoreboard('m249_explosive') == 0"
+						},
+						{
+							"shoot.fire" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('m249_fire') > 0"
+						},
+						{
+							"shoot.explosive" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('m249_explosive') == 1"
+						}
+					]
+				},
+				"shoot.explosive" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "m249.shoot.explosive" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"m249" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('m249') < 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot.fire" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "m249.shoot.fire" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"m249" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('m249') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "m249.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"m249" : "!q.is_using_item || q.is_sneaking"
+						},
+						{
+							"no_ammo" : "q.scoreboard('m249') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot_apuntar" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "m249.apuntar.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"m249" : "!q.is_using_item || !q.is_sneaking"
+						},
+						{
+							"no_ammo" : "q.scoreboard('m249') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off", "/function m249/m249" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				//Reload
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:m249_ammo}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'm249')"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "m249.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'm249') || !q.is_alive"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.m249_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

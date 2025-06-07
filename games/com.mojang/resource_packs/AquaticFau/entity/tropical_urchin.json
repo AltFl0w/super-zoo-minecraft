@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.urchin"
+      },
+      "identifier": "fauna:tropical_urchin",
+      "materials": {
+        "default": "iron_golem"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "tropical_urchin",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/seaurchin/tropical_urchin"
+      },
+      "animations": {
+        "idle": "animation.urchin.idle",
+        "swimidle": "animation.urchin.idle",
+        "move": "controller.animation.ancientfish.move"
+      }
+    }
+  }
+}

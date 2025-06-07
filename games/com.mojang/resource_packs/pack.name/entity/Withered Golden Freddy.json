@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:withered_golden_freddy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/withered/df_withered_golden_freddy"
+      },
+      "geometry": {
+        "default": "geometry.df_withered_golden_freddy"
+      },
+      "animations": {
+        "df_withered_golden_freddy_general": "animation.df_withered_golden_freddy.base",
+        "df_caminando_withered_golden_freddy": "animation.df_withered_golden_freddy.walk",
+        "look_at_target": "animation.common.look_at_target",
+
+        "move": "controller.animation.df_withered_golden_freddy.movimiento",
+        "base": "controller.animation.df_withered_golden_freddy.base"
+      },
+      "scripts": {
+        "animate": [
+          "move", "base"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_withered_golden_freddy",
+        "texture_index": 0
+      }
+    }
+  }
+}

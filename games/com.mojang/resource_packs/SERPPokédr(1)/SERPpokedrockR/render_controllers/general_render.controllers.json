@@ -1,0 +1,39 @@
+{
+  "format_version":"1.8.0",
+  "render_controllers":{
+"controller.render.serp_general":{"geometry":"Geometry.default","materials":[{"*":"Material.default"}],"textures":["Texture.default"],"is_hurt_color":{"r":"0","g":"0","b":"0","a":"0"},"on_fire_color":{"r":"0","g":"0","b":"0","a":"0"}},
+"controller.render.bracelets":{"geometry":"Geometry.equipped","materials":[{"*":"Material.default"}],"textures":["Texture.equipped"]},
+"controller.render.trainers":{
+  "arrays":{
+"textures":{"Array.variants":["Texture.empty","Texture.trainer1","Texture.trainer2","Texture.trainer3","Texture.trainer4","Texture.trainer5","Texture.trainer6","Texture.trainer7","Texture.trainer8","Texture.trainer9","Texture.trainer10","Texture.trainer11","Texture.trainer12","Texture.trainer13","Texture.trainer14","Texture.trainer15","Texture.trainer16","Texture.trainer17","Texture.trainer18","Texture.trainer19","Texture.trainer20","Texture.trainer21","Texture.trainer22","Texture.trainer23","Texture.trainer24","Texture.trainer25","Texture.trainer26","Texture.trainer27","Texture.trainer28","Texture.trainer29","Texture.trainer30","Texture.leader1","Texture.leader2","Texture.leader3","Texture.leader4","Texture.leader5","Texture.leader6","Texture.leader7","Texture.leader8","Texture.leader9","Texture.leader10","Texture.leader11","Texture.leader12","Texture.leader13","Texture.leader14","Texture.leader15","Texture.leader16","Texture.leader17","Texture.leader18","Texture.rocket1","Texture.rocket2","Texture.nrocket1","Texture.nrocket2","Texture.aqua1","Texture.aqua2","Texture.magma1","Texture.magma2"]},
+"geometries":{"Array.geos":["Geometry.empty","Geometry.youngster","Geometry.trainer","Geometry.ace_male","Geometry.trainer","Geometry.school_kid_male","Geometry.trainer","Geometry.trainer","Geometry.picnicker","Geometry.sailor","Geometry.bug_catcher","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.leader","Geometry.rocket_male","Geometry.rocket_female","Geometry.rocket_male","Geometry.rocket_female","Geometry.trainer","Geometry.trainer","Geometry.trainer","Geometry.trainer"]}},
+"geometry":"Array.geos[q.variant]",
+"materials":[{"*":"Material.default"}],
+"textures":["Array.variants[q.variant]"]},
+    "controller.render.profs":{
+      "arrays":{
+"textures":{"Array.variants":["Texture.oak","Texture.elm","Texture.kapok"]},
+"geometries":{"Array.geos":["Geometry.oak","Geometry.elm","Geometry.kapok"]}},
+"geometry":"Array.geos[q.variant]",
+"materials":[{"*":"Material.default"}],
+"textures":["Array.variants[q.variant]"]},
+    "controller.render.pokestop":{"geometry":"Geometry.default","materials":[{"*":"Material.default"}],"textures":["Texture.default"],"part_visibility":[{"ring1":"q.variant>0"},{"ring2":"q.variant>1"},{"ring3":"q.variant>2"}],"is_hurt_color":{"r":"0","g":"0","b":"0","a":"0"},"on_fire_color":{"r":"0","g":"0","b":"0","a":"0"}},
+"controller.render.pc":{
+"arrays":{
+"textures":{
+"Array.variants":["Texture.default","Texture.potions","Texture.pokeballs","Texture.stuff", "Texture.suits"]}},
+"geometry":"Geometry.default",
+"materials":[{"*":"Material.default"}],
+"textures":["Array.variants[q.variant]"],
+"is_hurt_color":{"r":"0","g":"0","b":"0","a":"0"},"on_fire_color":{"r":"0","g":"0","b":"0","a":"0"}},
+
+    "controller.render.ball_thrown":{
+      "arrays":{
+        "textures":{
+"Array.variants":["Texture.pokeball","Texture.greatball","Texture.ultraball","Texture.masterball","Texture.beastball","Texture.diveball","Texture.dreamball","Texture.duskball","Texture.fastball","Texture.friendball","Texture.healball","texture.heavyball","Texture.lureball","Texture.luxuryball","Texture.moonball","Texture.nestball","Texture.netball","Texture.parkball","Texture.premierball","Texture.safariball","Texture.timerball"]}},
+"geometry":"Geometry.default",
+"materials":[{"*":"Material.default"}],
+"textures":["Array.variants[q.property('serp:pokeball')-1]"],
+"is_hurt_color":{"r":"0","g":"0","b":"0","a":"0"},"on_fire_color":{"r":"0","g":"0","b":"0","a":"0"}}
+}
+}

@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.bolt_sword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'bolt_sword' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'bolt_sword' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'bolt_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_cast_bolt",
+						"/playsound conduit.attack @a ~~~ 2 2"
+					]
+				}
+			}
+		}
+	}
+}

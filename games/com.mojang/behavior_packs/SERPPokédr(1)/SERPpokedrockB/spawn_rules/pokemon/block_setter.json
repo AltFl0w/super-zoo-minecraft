@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "serp:block_setter",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_underground": {},
+        "minecraft:world_age_filter": {
+          "min": 3000
+        },
+        "minecraft:delay_filter": {
+          "min": 30,
+          "max": 60,
+          "identifier": "serp:block_setter",
+          "spawn_chance": 100
+        },
+        "minecraft:spawns_on_block_filter":
+        ["minecraft:stone","minecraft:deepslate","minecraft:diorite","minecraft:andesite","minecraft:granite"],
+        "minecraft:weight": {
+          "default": 50
+        },
+        "minecraft:biome_filter": [
+{"test":"has_biome_tag","operator":"==","value":"monster"}
+        ]
+      },
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:world_age_filter": {
+          "min": 9000
+        },
+        "minecraft:delay_filter": {
+          "min": 300,
+          "max": 600,
+          "identifier": "serp:block_setter",
+          "spawn_chance": 50
+        },
+        "minecraft:spawns_on_block_filter":
+        ["minecraft:sand"],
+        "minecraft:weight": {
+          "default": 60
+        },
+        "minecraft:biome_filter": [
+{"test":"has_biome_tag","operator":"==","value":"desert"}
+        ]
+      }
+    ]
+  }
+}

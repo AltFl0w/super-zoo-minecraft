@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "serp:trader"
+        },
+
+
+        "tags": [ "crafting_table" ],
+    "group": "vehicle",
+    "pattern": [
+      " r ",
+      "qbq",
+      "rqr"
+    ],
+    "key": {
+      "b": {
+        "item": "serp:badge"
+      },
+      "r": {
+        "item": "minecraft:redstone"
+      },
+      "q": {
+        "item": "minecraft:quartz_block"
+      }
+    },
+        "result": {
+            "item": "serp:trader_spawn_spawn_egg"
+        }
+    }
+}

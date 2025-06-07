@@ -1,0 +1,1 @@
+/Users/cloudtest/vss/_work/1/s/handheld/src-client/common/client/gui/gui/FontHandle.cpp::34   SDL Parse:   Could not find font alias #chat_font_type

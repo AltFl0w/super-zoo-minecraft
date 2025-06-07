@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:vs_seeker",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon": "vs_seeker"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+      "identifier":"serp:dynamax_candy"
+    },
+    "tags":["crafting_table"],
+    "group":"mega",
+    "pattern":[
+      "dsd",
+      "sws",
+      "dsd"
+    ],
+    "key":{
+      "d":{"item":"minecraft:pink_dye"},
+      "s":{"item":"minecraft:sugar"},
+      "w":{"item":"serp:wishing_star"}
+    },
+    "result":{"item":"serp:dynamax_candy"}
+  }
+}

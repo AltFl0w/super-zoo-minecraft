@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:poisonous_axe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"#s#",
+			" s "
+		],
+		"key": {
+			"#": {
+				"item": "wep:poison_ingot"
+			},
+			"s": {
+				"item": "minecraft:stick"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:poisonous_axe",
+				"count": 1
+			}
+		]
+	}
+}

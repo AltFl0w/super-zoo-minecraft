@@ -1,0 +1,23 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:loot_bubble",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{
+        "default":"textures/entity/loot_bubble"
+    },
+      "geometry":{
+        "default":"geometry.fireball"
+      },
+      "animations":{
+        "face_player":"animation.loot_bubbles.billboard"
+      },
+      "scripts":{
+        "scale":"0.75",
+        "animate":["face_player"]
+      },
+      "render_controllers":[{"controller.render.serp_general":"q.is_alive"}]
+    }
+  }
+}

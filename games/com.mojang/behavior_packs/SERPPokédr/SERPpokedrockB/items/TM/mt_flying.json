@@ -1,0 +1,14 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:tm_8",
+	    "menu_category":{"category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:tm_8.name"},
+      "minecraft:max_stack_size":1,
+      "minecraft:icon":"tm_8"
+    }
+  }
+}

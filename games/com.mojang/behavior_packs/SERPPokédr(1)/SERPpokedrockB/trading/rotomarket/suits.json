@@ -1,0 +1,110 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:ash_helmet"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:ash_chestplate"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:ash_leggings"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:ash_boots"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:red_helmet"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:red_chestplate"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:red_leggings"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:red_boots"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:green_helmet"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:green_chestplate"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:green_leggings"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:green_boots"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:rocket_helmet"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:rocket_chestplate"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:rocketm_leggings"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:rocketf_leggings"}],
+        "max_uses": 256
+        },
+        {
+    "wants": [{"item": "serp:clothing_ticket",
+    "quantity": 10}],
+    "gives": [{"item": "serp:rocket_boots"}],
+        "max_uses": 256
+        }
+      ]
+    }
+  ]
+}

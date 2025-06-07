@@ -1,0 +1,104 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "wep:item_drop",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/dummy",
+				"burning_double_axe": "textures/entity/3d_items/burning_double_axe",
+				"fiery_sword": "textures/entity/3d_items/fiery_sword",
+				"lava_sword": "textures/entity/3d_items/lava_sword",
+				"magma_greatsword": "textures/entity/3d_items/magma_greatsword",
+				"meteorite_sword": "textures/entity/3d_items/meteorite_sword",
+				"air_sword": "textures/entity/3d_items/air_sword",
+				"windy_double_sword": "textures/entity/3d_items/windy_double_sword",
+				"windy_greataxe": "textures/entity/3d_items/windy_greataxe",
+				"tornado_sword": "textures/entity/3d_items/tornado_sword",
+				"throwing_axe": "textures/entity/3d_items/throwing_axe",
+				"void_sword": "textures/entity/3d_items/void_sword",
+				"battle_void_axe": "textures/entity/3d_items/battle_void_axe",
+				"short_shadow_sword": "textures/entity/3d_items/short_shadow_sword",
+				"dark_broadsword": "textures/entity/3d_items/short_shadow_sword",
+				"storm_sword": "textures/entity/3d_items/storm_sword",
+				"water_axe": "textures/entity/3d_items/water_axe",
+				"water_greatsword": "textures/entity/3d_items/water_greatsword",
+				"geyser_axe": "textures/entity/3d_items/geyser_axe",
+				"boulder_axe": "textures/entity/3d_items/boulder_axe",
+				"rocky_greatsword": "textures/entity/3d_items/rocky_greatsword",
+				"ground_axe": "textures/entity/3d_items/ground_axe",
+				"rockfall_axe": "textures/entity/3d_items/rockfall_axe",
+				"snap_sword": "textures/entity/3d_items/snap_sword",
+				"electric_axe": "textures/entity/3d_items/electric_axe",
+				"lightning_sword": "textures/entity/3d_items/lightning_sword",
+				"bolt_sword": "textures/entity/3d_items/bolt_sword",
+				"poison_sword": "textures/entity/3d_items/poison_sword",
+				"poisonous_axe": "textures/entity/3d_items/poisonous_axe",
+				"poisonous_hammer_axe": "textures/entity/3d_items/poisonous_hammer_axe",
+				"frost_sword": "textures/entity/3d_items/frost_sword",
+				"ice_battleaxe": "textures/entity/3d_items/ice_battleaxe",
+				"icicle_sword": "textures/entity/3d_items/icicle_sword",
+				"reverse_sword": "textures/entity/3d_items/reverse_sword",
+				"timelapse_axe": "textures/entity/3d_items/timelapse_axe",
+				"fast_sword": "textures/entity/3d_items/fast_sword"
+			},
+			"geometry": {
+				"default": "geometry.dummy",
+				"burning_double_axe": "geometry.burning_double_axe",
+				"fiery_sword": "geometry.fiery_sword",
+				"lava_sword": "geometry.lava_sword",
+				"magma_greatsword": "geometry.magma_greatsword",
+				"meteorite_sword": "geometry.meteorite_sword",
+				"air_sword": "geometry.air_sword",
+				"windy_double_sword": "geometry.windy_double_sword",
+				"windy_greataxe": "geometry.windy_greataxe",
+				"tornado_sword": "geometry.tornado_sword",
+				"throwing_axe": "geometry.throwing_axe",
+				"void_sword": "geometry.void_sword",
+				"battle_void_axe": "geometry.battle_void_axe",
+				"short_shadow_sword": "geometry.short_shadow_sword",
+				"dark_broadsword": "geometry.dark_broadsword",
+				"storm_sword": "geometry.storm_sword",
+				"water_axe": "geometry.water_axe",
+				"water_greatsword": "geometry.water_greatsword",
+				"geyser_axe": "geometry.geyser_axe",
+				"boulder_axe": "geometry.boulder_axe",
+				"rocky_greatsword": "geometry.rocky_greatsword",
+				"ground_axe": "geometry.ground_axe",
+				"rockfall_axe": "geometry.rockfall_axe",
+				"snap_sword": "geometry.snap_sword",
+				"electric_axe": "geometry.electric_axe",
+				"lightning_sword": "geometry.lightning_sword",
+				"bolt_sword": "geometry.bolt_sword",
+				"poison_sword": "geometry.poison_sword",
+				"poisonous_axe": "geometry.poisonous_axe",
+				"poisonous_hammer_axe": "geometry.poisonous_hammer_axe",
+				"frost_sword": "geometry.frost_sword",
+				"ice_battleaxe": "geometry.ice_battleaxe",
+				"icicle_sword": "geometry.icicle_sword",
+				"reverse_sword": "geometry.reverse_sword",
+				"timelapse_axe": "geometry.timelapse_axe",
+				"fast_sword": "geometry.fast_sword"
+			},
+			"render_controllers": [
+				"controller.render.item_drop"
+			],
+			"animations": {
+				"drop.animation": "animation.item_drop.spin",
+				"model_position.animation": "animation.item_drop.drop"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"drop.animation": "query.is_on_ground"
+					},
+					{
+						"model_position.animation": "query.is_on_ground"
+					}
+				]
+			}
+		}
+	}
+}

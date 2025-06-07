@@ -1,0 +1,436 @@
+{
+  "toyfreddy.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/toy_freddy/Toy_Freddy0",
+      "sounds/voces/toy_freddy/Toy_Freddy1",
+      "sounds/voces/toy_freddy/Toy_Freddy2",
+      "sounds/voces/toy_freddy/Toy_Freddy3",
+      "sounds/voces/toy_freddy/Toy_Freddy4",
+      "sounds/voces/toy_freddy/Toy_Freddy5",
+      "sounds/voces/toy_freddy/Toy_Freddy6",
+      "sounds/voces/toy_freddy/Toy_Freddy7",
+      "sounds/voces/toy_freddy/Toy_Freddy8",
+      "sounds/voces/toy_freddy/Toy_Freddy9",
+      "sounds/voces/toy_freddy/Toy_Freddy10",
+      "sounds/voces/toy_freddy/Toy_Freddy11",
+      "sounds/voces/toy_freddy/Toy_Freddy12",
+      "sounds/voces/toy_freddy/Toy_Freddy13",
+      "sounds/voces/toy_freddy/Toy_Freddy14",
+      "sounds/voces/toy_freddy/Toy_Freddy15",
+      "sounds/voces/toy_freddy/Toy_Freddy16",
+      "sounds/voces/toy_freddy/Toy_Freddy17",
+      "sounds/voces/toy_freddy/Toy_Freddy18",
+      "sounds/voces/toy_freddy/Toy_Freddy19",
+      "sounds/voces/toy_freddy/Toy_Freddy20",
+      "sounds/voces/toy_freddy/Toy_Freddy21",
+      "sounds/voces/toy_freddy/Toy_Freddy22",
+      "sounds/voces/toy_freddy/Toy_Freddy23"
+    ]
+  }, 
+  "toychica.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/toy_chica/Toy_Chica0",
+      "sounds/voces/toy_chica/Toy_Chica1",
+      "sounds/voces/toy_chica/Toy_Chica2",
+      "sounds/voces/toy_chica/Toy_Chica3",
+      "sounds/voces/toy_chica/Toy_Chica4",
+      "sounds/voces/toy_chica/Toy_Chica5",
+      "sounds/voces/toy_chica/Toy_Chica6",
+      "sounds/voces/toy_chica/Toy_Chica7",
+      "sounds/voces/toy_chica/Toy_Chica8",
+      "sounds/voces/toy_chica/Toy_Chica9",
+      "sounds/voces/toy_chica/Toy_Chica10",
+      "sounds/voces/toy_chica/Toy_Chica11",
+      "sounds/voces/toy_chica/Toy_Chica12",
+      "sounds/voces/toy_chica/Toy_Chica13",
+      "sounds/voces/toy_chica/Toy_Chica14",
+      "sounds/voces/toy_chica/Toy_Chica15",
+      "sounds/voces/toy_chica/Toy_Chica16",
+      "sounds/voces/toy_chica/Toy_Chica17",
+      "sounds/voces/toy_chica/Toy_Chica18",
+      "sounds/voces/toy_chica/Toy_Chica19",
+      "sounds/voces/toy_chica/Toy_Chica20",
+      "sounds/voces/toy_chica/Toy_Chica21",
+      "sounds/voces/toy_chica/Toy_Chica22",
+      "sounds/voces/toy_chica/Toy_Chica23",
+      "sounds/voces/toy_chica/Toy_Chica24",
+      "sounds/voces/toy_chica/Toy_Chica25",
+      "sounds/voces/toy_chica/Toy_Chica26",
+      "sounds/voces/toy_chica/Toy_Chica27",
+      "sounds/voces/toy_chica/Toy_Chica28",
+      "sounds/voces/toy_chica/Toy_Chica29",
+      "sounds/voces/toy_chica/Toy_Chica30",
+      "sounds/voces/toy_chica/Toy_Chica31",
+      "sounds/voces/toy_chica/Toy_Chica32",
+      "sounds/voces/toy_chica/Toy_Chica33",
+      "sounds/voces/toy_chica/Toy_Chica34",
+      "sounds/voces/toy_chica/Toy_Chica35",
+      "sounds/voces/toy_chica/Toy_Chica36",
+      "sounds/voces/toy_chica/Toy_Chica37",
+      "sounds/voces/toy_chica/Toy_Chica38",
+
+      "sounds/voces/toy_chica/Toy_Chica40",
+      "sounds/voces/toy_chica/Toy_Chica41",
+      "sounds/voces/toy_chica/Toy_Chica42"
+
+
+    ]
+  }, 
+  "toybonnie.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/toy_bonnie/ToyBonnie0",
+      "sounds/voces/toy_bonnie/ToyBonnie1",
+      "sounds/voces/toy_bonnie/ToyBonnie2",
+      "sounds/voces/toy_bonnie/ToyBonnie3",
+      "sounds/voces/toy_bonnie/ToyBonnie4",
+      "sounds/voces/toy_bonnie/ToyBonnie5",
+      "sounds/voces/toy_bonnie/ToyBonnie5",
+      "sounds/voces/toy_bonnie/ToyBonnie7",
+      "sounds/voces/toy_bonnie/ToyBonnie8",
+      "sounds/voces/toy_bonnie/ToyBonnie9",
+      "sounds/voces/toy_bonnie/ToyBonnie10",
+      "sounds/voces/toy_bonnie/ToyBonnie11",
+      "sounds/voces/toy_bonnie/ToyBonnie12",
+      "sounds/voces/toy_bonnie/ToyBonnie13",
+      "sounds/voces/toy_bonnie/ToyBonnie14",
+      "sounds/voces/toy_bonnie/ToyBonnie15",
+      "sounds/voces/toy_bonnie/ToyBonnie16",
+      "sounds/voces/toy_bonnie/ToyBonnie17",
+      "sounds/voces/toy_bonnie/ToyBonnie18",
+      "sounds/voces/toy_bonnie/ToyBonnie19",
+      "sounds/voces/toy_bonnie/ToyBonnie20",
+      "sounds/voces/toy_bonnie/ToyBonnie21"
+   
+    ]
+  }, 
+  "toychica_sin_pico.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/toy_chica/Toy_Chica0",
+      "sounds/voces/toy_chica/Toy_Chica1",
+      "sounds/voces/toy_chica/Toy_Chica2",
+      "sounds/voces/toy_chica/Toy_Chica3",
+      "sounds/voces/toy_chica/Toy_Chica4",
+      "sounds/voces/toy_chica/Toy_Chica5",
+      "sounds/voces/toy_chica/Toy_Chica6",
+      "sounds/voces/toy_chica/Toy_Chica7",
+      "sounds/voces/toy_chica/Toy_Chica8",
+      "sounds/voces/toy_chica/Toy_Chica9",
+      "sounds/voces/toy_chica/Toy_Chica10",
+      "sounds/voces/toy_chica/Toy_Chica11",
+      "sounds/voces/toy_chica/Toy_Chica12",
+      "sounds/voces/toy_chica/Toy_Chica13",
+      "sounds/voces/toy_chica/Toy_Chica14",
+      "sounds/voces/toy_chica/Toy_Chica15",
+      "sounds/voces/toy_chica/Toy_Chica16",
+      "sounds/voces/toy_chica/Toy_Chica17",
+      "sounds/voces/toy_chica/Toy_Chica18",
+      "sounds/voces/toy_chica/Toy_Chica19",
+      "sounds/voces/toy_chica/Toy_Chica20",
+      "sounds/voces/toy_chica/Toy_Chica21",
+      "sounds/voces/toy_chica/Toy_Chica22",
+      "sounds/voces/toy_chica/Toy_Chica23",
+      "sounds/voces/toy_chica/Toy_Chica24",
+      "sounds/voces/toy_chica/Toy_Chica25",
+      "sounds/voces/toy_chica/Toy_Chica26",
+      "sounds/voces/toy_chica/Toy_Chica27",
+      "sounds/voces/toy_chica/Toy_Chica28",
+      "sounds/voces/toy_chica/Toy_Chica29",
+      "sounds/voces/toy_chica/Toy_Chica30",
+      "sounds/voces/toy_chica/Toy_Chica31",
+      "sounds/voces/toy_chica/Toy_Chica32",
+      "sounds/voces/toy_chica/Toy_Chica33",
+      "sounds/voces/toy_chica/Toy_Chica34",
+      "sounds/voces/toy_chica/Toy_Chica35",
+      "sounds/voces/toy_chica/Toy_Chica36",
+      "sounds/voces/toy_chica/Toy_Chica37",
+      "sounds/voces/toy_chica/Toy_Chica38",
+      "sounds/voces/toy_chica/Toy_Chica39",
+      "sounds/voces/toy_chica/Toy_Chica40",
+      "sounds/voces/toy_chica/Toy_Chica41",
+      "sounds/voces/toy_chica/Toy_Chica42"
+    ]
+  }, 
+  "toyfoxy.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/mangle/Mangle0",
+      "sounds/voces/mangle/Mangle1",
+      "sounds/voces/mangle/Mangle2",
+      "sounds/voces/mangle/Mangle3",
+      "sounds/voces/mangle/Mangle4",
+      "sounds/voces/mangle/Mangle5",
+      "sounds/voces/mangle/Mangle6",
+      "sounds/voces/mangle/Mangle7",
+      "sounds/voces/mangle/Mangle8",
+      "sounds/voces/mangle/Mangle9",
+      "sounds/voces/mangle/Mangle10",
+      "sounds/voces/mangle/Mangle11",
+      "sounds/voces/mangle/Mangle12",
+      "sounds/voces/mangle/Mangle13",
+      "sounds/voces/mangle/Mangle14",
+      "sounds/voces/mangle/Mangle15",
+      "sounds/voces/mangle/Mangle16",
+      "sounds/voces/mangle/Mangle17",
+      "sounds/voces/mangle/Mangle18",
+      "sounds/voces/mangle/Mangle19",
+      "sounds/voces/mangle/Mangle20",
+      "sounds/voces/mangle/Mangle21",
+      "sounds/voces/mangle/Mangle22",
+      "sounds/voces/mangle/Mangle23",
+      "sounds/voces/mangle/Mangle24",
+      "sounds/voces/mangle/Mangle25",
+      "sounds/voces/mangle/Mangle26",
+      "sounds/voces/mangle/Mangle27",
+      "sounds/voces/mangle/Mangle28",
+      "sounds/voces/mangle/Mangle29",
+      "sounds/voces/mangle/Mangle30",
+      "sounds/voces/mangle/Mangle31",
+      "sounds/voces/mangle/Mangle32",
+      "sounds/voces/mangle/Mangle33",
+      "sounds/voces/mangle/Mangle34",
+      "sounds/voces/mangle/Mangle35",
+      "sounds/voces/mangle/Mangle36",
+      "sounds/voces/mangle/Mangle37",
+      "sounds/voces/mangle/Mangle38",
+     
+      "sounds/voces/mangle/Mangle49",
+      "sounds/voces/mangle/Mangle40",
+      "sounds/voces/mangle/Mangle51",
+      "sounds/voces/mangle/Mangle52",
+      "sounds/voces/mangle/Mangle53"
+    ]
+  }, 
+  "bb.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/risa",
+      "sounds/sonidos/hi",
+      "sounds/sonidos/hello"
+    ]
+  }, 
+  "puppet.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/Puppet1",
+      "sounds/voces/Puppet2",
+      "sounds/voces/Puppet3",
+      "sounds/voces/Puppet4",
+      "sounds/voces/Puppet5" 
+    ]
+  }, 
+   "witheredbonnie.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/withered_bonnie/Withered_Bonnie0",
+      "sounds/voces/withered_bonnie/Withered_Bonnie1",
+      "sounds/voces/withered_bonnie/Withered_Bonnie2",
+      "sounds/voces/withered_bonnie/Withered_Bonnie3",
+      "sounds/voces/withered_bonnie/Withered_Bonnie3",
+      "sounds/voces/withered_bonnie/Withered_Bonnie4"
+    ]
+  }, 
+  "witheredchica.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/withered_chica/Withered_Chica0",
+      "sounds/voces/withered_chica/Withered_Chica1",
+      "sounds/voces/withered_chica/Withered_Chica2",
+      "sounds/voces/withered_chica/Withered_Chica3",
+      "sounds/voces/withered_chica/Withered_Chica4"
+    ]
+  }, 
+  "animatronicos.scream.fnaf2": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/jumpscare/scream.fnaf2"
+    ]
+  }, 
+ "BB": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/risa",
+      "sounds/sonidos/hi",
+      "sounds/sonidos/hello"
+    ]
+  },
+ "mangle.voz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/voces/mangle/Mangle0",
+      "sounds/voces/mangle/Mangle1",
+      "sounds/voces/mangle/Mangle2",
+      "sounds/voces/mangle/Mangle3",
+      "sounds/voces/mangle/Mangle4",
+      "sounds/voces/mangle/Mangle5",
+      "sounds/voces/mangle/Mangle6",
+      "sounds/voces/mangle/Mangle7",
+      "sounds/voces/mangle/Mangle8",
+      "sounds/voces/mangle/Mangle9",
+      "sounds/voces/mangle/Mangle10",
+      "sounds/voces/mangle/Mangle11",
+      "sounds/voces/mangle/Mangle12",
+      "sounds/voces/mangle/Mangle13",
+      "sounds/voces/mangle/Mangle14",
+      "sounds/voces/mangle/Mangle15",
+      "sounds/voces/mangle/Mangle16",
+      "sounds/voces/mangle/Mangle17",
+      "sounds/voces/mangle/Mangle18",
+      "sounds/voces/mangle/Mangle19",
+      "sounds/voces/mangle/Mangle20",
+      "sounds/voces/mangle/Mangle21",
+      "sounds/voces/mangle/Mangle22",
+      "sounds/voces/mangle/Mangle23",
+      "sounds/voces/mangle/Mangle24",
+      "sounds/voces/mangle/Mangle25",
+      "sounds/voces/mangle/Mangle26",
+      "sounds/voces/mangle/Mangle27",
+      "sounds/voces/mangle/Mangle28",
+      "sounds/voces/mangle/Mangle29",
+      "sounds/voces/mangle/Mangle30",
+      "sounds/voces/mangle/Mangle31",
+      "sounds/voces/mangle/Mangle32",
+      "sounds/voces/mangle/Mangle33",
+      "sounds/voces/mangle/Mangle34",
+      "sounds/voces/mangle/Mangle35",
+      "sounds/voces/mangle/Mangle36",
+      "sounds/voces/mangle/Mangle37",
+      "sounds/voces/mangle/Mangle38",
+      "sounds/voces/mangle/Mangle39",
+      "sounds/voces/mangle/Mangle40",
+      "sounds/voces/mangle/Mangle41",
+      "sounds/voces/mangle/Mangle42",
+      "sounds/voces/mangle/Mangle43",
+      "sounds/voces/mangle/Mangle44",
+      "sounds/voces/mangle/Mangle45",
+      "sounds/voces/mangle/Mangle46",
+      "sounds/voces/mangle/Mangle47",
+      "sounds/voces/mangle/Mangle48",
+      "sounds/voces/mangle/Mangle49",
+      "sounds/voces/mangle/Mangle40",
+      "sounds/voces/mangle/Mangle51",
+      "sounds/voces/mangle/Mangle52",
+      "sounds/voces/mangle/Mangle53"
+    ]
+  },
+  "toyfreddy.showtime": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/showtime/ToyFreddy1",
+      "sounds/showtime/ToyFreddy2",
+      "sounds/showtime/ToyFreddy3",
+      "sounds/showtime/ToyFreddy4",
+      "sounds/showtime/ToyFreddy5"
+    ]
+  }, 
+  "toybonnie.showtime": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/showtime/ToyBonnie1",
+      "sounds/showtime/ToyBonnie2",
+      "sounds/showtime/ToyBonnie3"
+    ]
+  }, 
+  "toychica.showtime": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/showtime/ToyChica1",
+      "sounds/showtime/ToyChica2",
+      "sounds/showtime/ToyChica3",
+      "sounds/showtime/ToyChica4",
+      "sounds/showtime//oyChica5",
+      "sounds/showtime/ToyChica6"
+    ]
+  }, 
+  "toyfoxy.showtime": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/showtime/Mangle1"
+    ]
+  },
+  "muerte": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/muerte1"
+    ]
+  },
+  "animatronicos.pasos": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/pasos/paso1",
+      "sounds/sonidos/pasos/paso2",
+      "sounds/sonidos/pasos/paso3",
+      "sounds/sonidos/pasos/paso4",
+      "sounds/sonidos/pasos/paso5"
+    ]
+  },
+  "mangle.pasos": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/pasos/mangle_paso1",
+      "sounds/sonidos/pasos/mangle_paso2",
+      "sounds/sonidos/pasos/mangle_paso3",
+      "sounds/sonidos/pasos/mangle_paso4"
+    ]
+  },
+  "mala_conexion": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/mala_conexion"
+    ]
+  },
+  "fnaf.peligro": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/peligro"
+    ]
+  },
+  "nariz": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/nariz"
+    ]
+  },
+  "squish": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/squish"
+    ]
+  },
+  "showtime.musica.fnaf2": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/showtime/ItsBeenSoLong",
+      "sounds/showtime/MyGrandfathers Clock",
+      "sounds/showtime/SurviveTheNight"
+    ]
+  },
+  "puppet.musica": {
+    "category": "music",
+    "sounds": [
+      "sounds/sonidos/ambiente/My_Grandfathers_Clock"
+    ]
+  },
+  "ScareScrape": {
+    "category": "music",
+    "sounds": [
+      "sounds/sonidos/ScareScrape1Saw",
+      "sounds/sonidos/ScareScrape2Saw"
+    ]
+  },
+  "ambiente.presion": {
+    "category": "music",
+    "sounds": [
+      "sounds/sonidos/ambiente/Timer1Saw"
+    ]
+  },
+  "uuf": {
+    "category": "hostile",
+    "sounds": [
+      "sounds/sonidos/uuf"
+    ]
+  }
+}

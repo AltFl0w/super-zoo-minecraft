@@ -1,0 +1,27 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pokemon_unite:pokeball_entity",
+      "materials": {
+        "default": "fireball"
+      },
+      "textures": {
+        "default": "textures/entity/pokemon_unite/pokeball"
+      },
+      "geometry": {
+        "default": "geometry.pokeball"
+      },
+      "animations": {
+        "face_player": "animation.actor.billboard"
+      },
+      "scripts": {
+        "scale": "1.0",
+        "animate": [
+          "face_player" 
+        ]
+      },
+      "render_controllers": [ "controller.render.cow" ]
+    }
+  }
+}

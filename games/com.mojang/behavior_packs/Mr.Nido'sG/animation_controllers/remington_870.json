@@ -1,0 +1,141 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.remington_870" : {
+			"initial_state" : "on",
+			"states" : {
+				"on" : { "on_entry" : [ "/scoreboard objectives add remington_870_explosive dummy", "/scoreboard players add @s remington_870_explosive 0", "/scoreboard objectives add remington_870_fire dummy", "/scoreboard players add @s remington_870_fire 0", "/scoreboard objectives add remington_870 dummy", "/scoreboard players add @s remington_870 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [ { "default" : "(1.0)" } ]
+				},
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add remington_870_explosive dummy", "/scoreboard players add @s remington_870_explosive 0", "/scoreboard objectives add remington_870_fire dummy", "/scoreboard players add @s remington_870_fire 0", "/scoreboard objectives add remington_870 dummy", "/scoreboard players add @s remington_870 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"remington_870" : "q.scoreboard('remington_870') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('remington_870') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870') && q.is_using_item && q.scoreboard('second_gun') == 0 && q.is_alive"
+						}
+					]
+				},
+				"remington_870" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('remington_870') < 1 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('remington_870') < 0 && q.is_using_item"
+						},
+						{
+							"shoot" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('remington_870_fire') == 0 && q.scoreboard('remington_870_explosive') == 0"
+						},
+						{
+							"shoot.fire" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('remington_870_fire') > 0"
+						},
+						{
+							"shoot.explosive" : "q.is_using_item && q.scoreboard('second_gun') == 0 && q.scoreboard('remington_870_explosive') == 1"
+						}
+					]
+				},
+				"shoot.explosive" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "remington_870.shoot.explosive" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"remington_870" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('remington_870') < 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot.fire" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "remington_870.shoot.fire" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"remington_870" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('remington_870') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "remington_870.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(!q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"remington_870" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('remington_870') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off", "/function remington_870/remington_870" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				//Reload
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:cartucho}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "remington_870.reload" ],
+					"transitions" : [
+						{
+							"reload.end" : "q.any_animation_finished && (q.scoreboard('remington_870') == 10 || q.scoreboard('remington_870') == 8 || q.scoreboard('remington_870') > 8)"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'remington_870') || !q.is_alive"
+						},
+						{
+							"shoot" : "q.scoreboard('remington_870') > 0 && q.is_using_item && q.scoreboard('remington_870_fire') == 0 && q.scoreboard('remington_870_explosive') == 0"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.remington_870_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				},
+				"reload.end" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/playsound gun.benelli_m4_reload_end @s", "/event entity @s guns:reload.off", "/function remington_870/remington_870" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished || !q.is_alive"
+						}
+					]
+				}
+			}
+		}
+	}
+}

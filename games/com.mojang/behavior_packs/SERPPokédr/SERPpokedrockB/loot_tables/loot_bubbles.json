@@ -1,0 +1,24 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+{"type":"item","name":"serp:linking_cord","weight":1},
+{"type":"item","name":"serp:bad_egg","weight":2},
+{"type":"item","name":"serp:poke","weight":15,"functions":[{"function":"set_count","count":{"min":64,"max":120}}]},
+{"type":"item","name":"serp:potion","weight":10},
+{"type":"item","name":"serp:super_potion","weight":8},
+{"type":"item","name":"serp:hyper_potion","weight":6},
+{"type":"item","name":"serp:lemonade","weight":2,"functions":[{"function":"set_count","count":2}]},
+{"type":"item","name":"serp:revive","weight":5,"functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"type":"item","name":"serp:repel","weight":10,"functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"type":"item","name":"serp:pokeball","weight":10,"functions":[{"function":"set_count","count":{"min":3,"max":6}}]},
+{"type":"item","name":"serp:greatball","weight":8,"functions":[{"function":"set_count","count":{"min":2,"max":4}}]},
+{"type":"item","name":"serp:ultraball","weight":6,"functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"type":"item","name":"serp:leftovers","weight":5},
+{"type":"item","name":"serp:focus_band","weight":5},
+{"type":"item","name":"serp:kings_rock","weight":5}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "format_version":"1.12",
+    "minecraft:recipe_shaped":{
+    "description":{
+      "identifier":"serp:tm_machine"
+    },
+    "tags":["crafting_table"],
+    "group":"poke_machines",
+    "pattern":[
+      "   ",
+      "rqr",
+      "rbr"
+    ],
+    "key":{
+      "r":{
+        "item":"minecraft:redstone"
+      },
+      "q":{
+      "item":"minecraft:quartz"
+      },
+      "b":{
+        "item":"minecraft:redstone_block"
+      }
+    },
+    "result":{
+      "item":"serp:tm_machine"
+    }
+  }
+}

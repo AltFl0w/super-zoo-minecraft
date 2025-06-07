@@ -1,0 +1,169 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:jenny",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": ["serp_npc"]
+      },
+"minecraft:interact": {
+"interactions": [
+{"on_interact":{"filters":{"test":"has_equipment","subject":"other","domain":"hand","value":"minecraft:bedrock"},
+"event":"serp:despawn","target":"self"},
+"interact_text":"structure_block.save",
+"swing":true},
+{"on_interact":{"filters":{"any_of":[{"test":"has_equipment","subject":"other","domain":"hand","value":"compass"},{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:vs_seeker"},{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:poke_ride"},{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:dynamax_band"},{"test":"has_equipment","subject":"other","domain":"hand","value":"serp:mega_ring_empty"}]},
+"event":"serp:receive","target":"self"},
+"interact_text":"store.toast.autofulfillment.title",
+"swing":true,"use_item":true},
+{"on_interact": {"filters":{"all_of":[{"test":"has_component","operator":"=","value":"minecraft:is_saddled"},{"test":"is_skin_id","operator":"=","value":0}]},
+"event":"serp:search","target":"self"},
+    "interact_text":"action.interact.talk"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"has_component","operator":"!=","value":"minecraft:is_saddled"},{"test":"is_sneaking","subject":"other"}]},
+"event":"serp:change","target":"self"},
+    "interact_text":"codeScreen.changeEditorModal.change"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":1},{"test":"has_tag","subject":"other","value":"pokedex"}]},
+"event":"serp:take","target":"self"},"add_items":{"table": "loot_tables/jenny/pokedex.json"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":1},{"test":"has_tag","subject":"other","operator":"!=","value":"pokedex"}]},
+"event":"serp:reject","target":"self"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":2},{"test":"has_tag","subject":"other","value":"vs_seeker"}]},
+"event":"serp:take","target":"self"},"add_items":{"table": "loot_tables/jenny/vs_seeker.json"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":2},{"test":"has_tag","subject":"other","operator":"!=","value":"vs_seeker"}]},
+"event":"serp:reject","target":"self"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":3},{"test":"has_tag","subject":"other","value":"poke_ride"}]},
+"event":"serp:take","target":"self"},"add_items":{"table": "loot_tables/jenny/poke_ride.json"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":3},{"test":"has_tag","subject":"other","operator":"!=","value":"poke_ride"}]},
+"event":"serp:reject","target":"self"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":4},{"test":"has_tag","subject":"other","value":"dynamax_band"}]},
+"event":"serp:take","target":"self"},"add_items":{"table": "loot_tables/jenny/dynamax_band.json"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":4},{"test":"has_tag","subject":"other","operator":"!=","value":"dynamax_band"}]},
+"event":"serp:reject","target":"self"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":5},{"test":"has_tag","subject":"other","value":"mega_ring"}]},
+"event":"serp:take","target":"self"},"add_items":{"table": "loot_tables/jenny/mega_ring.json"},
+"interact_text":"controller.buttonTip.take"
+            },
+{"on_interact": {"filters":{"all_of":[{"test":"is_skin_id","operator":"=","value":5},{"test":"has_tag","subject":"other","operator":"!=","value":"mega_ring"}]},
+"event":"serp:reject","target":"self"},
+"interact_text":"controller.buttonTip.take"
+            }
+        ]
+    },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.98
+      },
+      "minecraft:health": {
+        "value": 10000,
+        "max": 10000
+      },
+"minecraft:damage_sensor":{"triggers":[{"cause":"all","deals_damage":false}]},
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [{"filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },"cause": "lava","damage_per_tick": 0}]},
+      "minecraft:navigation.walk":{
+        "can_path_over_water":true},
+      "minecraft:movement": {"value": 0.3},
+      "minecraft:movement.basic": {},
+      "minecraft:can_climb":{"value":false},
+    "minecraft:behavior.random_stroll": {
+    "priority": 6,"speed_multiplier": 0.7},
+      "minecraft:behavior.float": {
+        "priority": 0 },
+	"minecraft:behavior.move_towards_restriction": {
+			"priority": 7 },
+      "minecraft:behavior.look_at_player": {
+        "priority": 2,
+        "target_distance": 20,
+        "probability": 1
+      },
+	    "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+        "component_groups": {
+            "serp:nothing": {
+        "minecraft:is_saddled": {},
+        "minecraft:skin_id": {"value": 0}
+    },
+            "serp:pokedex": {
+        "minecraft:skin_id": {"value": 1}
+    },
+            "serp:vs_seeker": {
+        "minecraft:skin_id": {"value": 2}
+    },
+            "serp:poke_ride": {
+        "minecraft:skin_id": {"value": 3}
+    },
+            "serp:dynamax_band": {
+        "minecraft:skin_id": {"value": 4}
+    },
+            "serp:mega_ring": {
+        "minecraft:skin_id": {"value": 5}
+    },
+    "serp:despawn": {
+      "minecraft:despawn":{"filters":{"test": "distance_to_nearest_player","operator":">", "value":0}}}
+        },
+"events":{
+"minecraft:entity_spawned":{
+"add":{"component_groups":["serp:nothing"]}},
+"serp:despawn":{
+"add":{"component_groups":["serp:despawn"]}},
+"serp:search":{
+"run_command":{"command":["function dialog/jenny_search"]},
+"add":{"component_groups":["serp:pokedex"]},
+"remove":{"component_groups":["serp:nothing"]}},
+"serp:change":{
+    "sequence":[
+{"filters":{"test":"is_skin_id","value":1},
+"add":{"component_groups":["serp:vs_seeker"]},"remove":{"component_groups":["serp:pokedex"]}},
+{"filters":{"test":"is_skin_id","value":2},
+"add":{"component_groups":["serp:poke_ride"]},"remove":{"component_groups":["serp:vs_seeker"]}},
+{"filters":{"test":"is_skin_id","value":3},
+"add":{"component_groups":["serp:dynamax_band"]},"remove":{"component_groups":["serp:poke_ride"]}},
+{"filters":{"test":"is_skin_id","value":4},
+"add":{"component_groups":["serp:mega_ring"]},"remove":{"component_groups":["serp:dynamax_band"]}},
+{"filters":{"test":"is_skin_id","value":5},
+"add":{"component_groups":["serp:pokedex"]},"remove":{"component_groups":["serp:mega_ring"]}}
+  ]
+},
+      "serp:take":{
+"run_command":{"command":["function dialog/jenny_take"]},
+"add":{"component_groups":["serp:nothing"]},
+"remove":{"component_groups":["serp:pokedex","serp:vs_seeker","serp:poke_ride","serp:dynamax_band","mega_ring"]}},
+      "serp:reject":{
+"run_command":{"command":["function dialog/jenny_reject"]},
+"add":{"component_groups":["serp:nothing"]},
+"remove":{"component_groups":["serp:pokedex","serp:vs_seeker","serp:poke_ride","serp:dynamax_band","mega_ring"]}},
+      "serp:receive":{
+"run_command":{"command":["function dialog/jenny_receive"]}}
+    }
+  }
+}

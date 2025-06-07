@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:poison_sword"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:icon": "poison_sword",
+			"minecraft:render_offsets": "tools",
+			"minecraft:display_name": {}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+    "mob.heisei_godzilla.footstep": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/footstep",
+                "load_on_low_memory": true
+            }
+        ]
+    },
+    "mob.heisei_godzilla.hurt": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/heisei godzilla/heisei godzilla hurt"
+        ]
+    },
+    "mob.heisei_godzilla.death": {
+        "category": "neutral",
+        "sounds": [
+            "sounds/heisei godzilla/heisei godzilla death"
+        ]
+    },
+    "mob.heisei_godzilla.roar": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/heisei godzilla/heisei godzilla roar",
+                "load_on_low_memory": true
+            }
+        ]
+    },
+    "mob.heisei_godzilla.atomic_breath": {
+        "category": "neutral",
+        "sounds": [
+            {
+                "name": "sounds/heisei godzilla/heisei godzilla atomic breath",
+                "load_on_low_memory": true
+            }
+        ]
+    }
+}

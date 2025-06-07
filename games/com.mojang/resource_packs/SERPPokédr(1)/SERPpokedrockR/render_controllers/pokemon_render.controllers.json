@@ -1,0 +1,29 @@
+{
+"format_version":"1.8.0",
+"render_controllers":{
+"controller.render.pokemon_add":{
+"arrays":{"textures":{"Array.variants":["Texture.default","Texture.default_s"]}},
+"materials":[{"*":"Material.add"}],
+"geometry":"Geometry.add",
+"textures":["Array.variants[q.property('serp:v')>2]"]
+},
+"controller.render.aura":{
+"part_visibility":[{"*":"q.life_time<2||q.life_time>=2&&q.variant>2"}],
+"arrays":{"geometries":{"Array.models":["Geometry.default","Geometry.default","Geometry.gigamax"]}},
+"materials":[{"*":"Material.aura"}],
+"geometry":"Array.models[q.life_time<2?0:q.variant-2]",
+"textures":["Texture.evo_aura"],
+"overlay_color": {"r":"q.life_time<2?1-q.life_time:q.property('c:r')","g":"q.life_time<2?1.25-q.life_time:q.property('c:g')","b":"q.life_time<2?1.5-q.life_time:q.property('c:b')","a":0.85},
+"uv_anim":{"offset":["(q.life_time*20+q.frame_alpha)*0.015","(q.life_time*20+q.frame_alpha)*0.015"],"scale":[5,5]},
+"light_color_multiplier":1,"ignore_lighting":true,
+"is_hurt_color":{"r":0,"g":0,"b":0,"a":0.35},"on_fire_color":{"r":0,"g":0,"b":0,"a":0.35}
+},
+"controller.render.pokemon":{
+"arrays":{"textures":{"Array.normal":["Texture.default","Texture.mega1","Texture.mega2","Texture.default","Texture.gigamax"],"Array.shiny":["Texture.default_s","Texture.mega_s1","Texture.mega_s2","Texture.default_s","Texture.gigamax_s"]},"geometries":{"Array.geos":["Geometry.default","Geometry.mega1","Geometry.mega2","Geometry.default","Geometry.gigamax"]}},
+"materials":[{"*":"Material.default"}],
+"textures":["q.property('serp:v')<3?Array.normal[q.variant]:Array.shiny[q.variant]"],
+"geometry":"Array.geos[q.variant]",
+"is_hurt_color":{"r":0,"g":0,"b":0,"a":0.35},"on_fire_color":{"r":0,"g":0,"b":0,"a":0.35}
+}
+  }
+}

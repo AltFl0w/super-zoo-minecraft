@@ -1,0 +1,21 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.geyser_axe": {
+			"animation_length": 1,
+			"loop": true,
+			"timeline": {
+				"0.3": [
+					"/summon wep:geyser ^^^2",
+					"/tp @e[tag=!geyser_axe,r=7] @e[type=wep:geyser,r=7,c=1]"
+				],
+				"0.32": [
+					"/execute @e[type=!wep:geyser,tag=!geyser_axe,r=7] ~~~ tp @e[type=!wep:geyser,tag=!geyser_axe,r=7] ~~4~"
+				],
+				"0.5": [
+					"/playsound random.explode @a ~~~ 1 1.8"
+				]
+			}
+		}
+	}
+}

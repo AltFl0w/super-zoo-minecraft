@@ -1,0 +1,33 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "serp:rare_candy"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "group": "rare_candy",
+    "ingredients": [
+      {
+        "item": "serp:oran_berry"
+      },
+      {
+        "item": "serp:sitrus_berry"
+      },
+      {
+        "item": "serp:mago_berry"
+      },
+      {
+        "item": "serp:enigma_berry"
+      },
+      {
+        "item": "serp:badge"
+      }
+      ],
+
+    "result": {
+      "item": "serp:rare_candy"
+    }
+  }
+}

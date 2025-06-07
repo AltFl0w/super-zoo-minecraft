@@ -1,0 +1,183 @@
+{
+  "resource_pack_name": "vanilla",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "aligatorg": {
+      "textures": "textures/items/egg/aligatorg"
+    },
+    "serpint": {
+      "textures": "textures/items/egg/serpint"
+    },
+    "sardine": {
+      "textures": "textures/items/egg/sardine"
+    },
+    "mackerel": {
+      "textures": "textures/items/egg/mackerel"
+    },
+    "sardinella": {
+      "textures": "textures/items/egg/sardinella"
+    },
+    "piranha": {
+      "textures": "textures/items/egg/piranha"
+    },
+    "tuna": {
+      "textures": "textures/items/egg/tuna"
+    },
+    "barracuda": {
+      "textures": "textures/items/egg/barracuda"
+    },
+    "madidihang": {
+      "textures": "textures/items/egg/madidihang"
+    },
+    "skipjack": {
+      "textures": "textures/items/egg/skipjack"
+    },
+    "dragon": {
+      "textures": "textures/items/egg/dragon"
+    },
+    "dragonegg": {
+      "textures": "textures/items/egg/dragonegg"
+    },
+    "dragonbaby": {
+      "textures": "textures/items/egg/dragonbaby"
+    },
+    "dought": {
+      "textures": "textures/items/egg/dought"
+    },
+    "todak": {
+      "textures": "textures/items/egg/todak"
+    },
+    "sepat": {
+      "textures": "textures/items/egg/sepat"
+    },
+    "lungfish0": {
+      "textures": "textures/items/egg/lungfish0"
+    },
+    "lungfish1": {
+      "textures": "textures/items/egg/lungfish1"
+    },
+    "lungfish2": {
+      "textures": "textures/items/egg/lungfish2"
+    },
+    "lungfish3": {
+      "textures": "textures/items/egg/lungfish3"
+    },
+    "lariosaurus": {
+      "textures": "textures/items/egg/lariosaurus"
+    },
+    "starfish": {
+      "textures": "textures/items/egg/starfish"
+    },
+    "seaurchin": {
+      "textures": "textures/items/egg/seaurchin"
+    },
+    "tropical_urchin": {
+      "textures": "textures/items/egg/tropical_urchin"
+    },
+    "blacktip": {
+      "textures": "textures/items/egg/blacktip"
+    },
+    "frilled": {
+      "textures": "textures/items/egg/frilled"
+    },
+    "poisonous_seaurchin": {
+      "textures": "textures/items/seafoods/poisonous_seaurchin"
+    },
+    "raw_sardinella": {
+      "textures": "textures/items/seafoods/raw_sardinella"
+    },
+    "cooked_sardinella": {
+      "textures": "textures/items/seafoods/cooked_sardinella"
+    },
+    "raw_tuna": {
+      "textures": "textures/items/seafoods/raw_tuna"
+    },
+    "raw_swamp_eel": {
+      "textures": "textures/items/seafoods/raw_swamp_eel"
+    },
+    "asian_swamp_eel": {
+      "textures": "textures/items/seafoods/asian_swamp_eel"
+    },
+    "cooked_tuna": {
+      "textures": "textures/items/seafoods/cooked_tuna"
+    },
+    "cooked_swamp_eel": {
+      "textures": "textures/items/seafoods/cooked_swamp_eel"
+    },
+    "raw_todak": {
+      "textures": "textures/items/seafoods/raw_todak"
+    },
+    "raw_ammonite": {
+      "textures": "textures/items/seafoods/raw_ammonite"
+    },
+    "raw_decapterus": {
+      "textures": "textures/items/seafoods/raw_decapterus"
+    },
+    "cooked_todak": {
+      "textures": "textures/items/seafoods/cooked_todak"
+    },
+    "cooked_decapterus": {
+      "textures": "textures/items/seafoods/cooked_decapterus"
+    },
+    "cooked_mackerel": {
+      "textures": "textures/items/seafoods/cooked_mackerel"
+    },
+    "cooked_sardine": {
+      "textures": "textures/items/seafoods/cooked_sardine"
+    },
+    "cooked_ammonite": {
+      "textures": "textures/items/seafoods/cooked_ammonite"
+    },
+    "cooked_spade": {
+      "textures": "textures/items/seafoods/cooked_spade"
+    },
+    "blacktip_fin": {
+      "textures": "textures/items/seafoods/blacktip_fin"
+    },
+    "raw_seaurchin": {
+      "textures": "textures/items/seafoods/raw_seaurchin"
+    },
+    "raw_sardine": {
+      "textures": "textures/items/seafoods/raw_sardine"
+    },
+    "raw_spade": {
+      "textures": "textures/items/seafoods/raw_spade"
+    },
+    "raw_mackerel": {
+      "textures": "textures/items/seafoods/raw_mackerel"
+    },
+    "cooked_seaurchin": {
+      "textures": "textures/items/seafoods/cooked_seaurchin"
+    },
+    "catshark": {
+      "textures": "textures/items/egg/catshark"
+    },
+    "seasnake": {
+      "textures": "textures/items/egg/seasnake"
+    },
+    "ammonite": {
+      "textures": "textures/items/egg/ammonite"
+    },
+    "deepdragon": {
+      "textures": "textures/items/egg/deepdragon"
+    },
+    "swamp_eel": {
+      "textures": "textures/items/egg/swamp_eel"
+    },
+    "stingray": {
+      "textures": "textures/items/egg/stingray"
+    },
+    "decapterus": {
+      "textures": "textures/items/egg/decapterus"
+    },
+    "iron_knife": {
+      "textures": "textures/items/tools/iron_knife"
+    },
+    "gopy": {
+      "textures": "textures/items/egg/gopy"
+    },
+    "ancient_ammonite_shell": {
+      "textures": "textures/items/tools/ancient_ammonite_shell"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Zoo Server Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f0f0f0; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .card { background: white; padding: 20px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .status { display: inline-block; padding: 4px 8px; border-radius: 4px; color: white; }
+        .online { background: #4CAF50; }
+        .offline { background: #f44336; }
+        h1 { color: #333; text-align: center; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🦁 Super Zoo Server Dashboard</h1>
+        
+        <div class="card">
+            <h2>Server Status</h2>
+            <p>Status: <span class="status online">Online</span></p>
+            <p>Players: <span id="players">0/10</span></p>
+            <p>Uptime: <span id="uptime">Loading...</span></p>
+        </div>
+
+        <div class="stats">
+            <div class="card">
+                <h3>🦁 Animals</h3>
+                <p>Total: <span id="animal-count">70+</span></p>
+                <p>Species: <span id="species-count">15+</span></p>
+            </div>
+            
+            <div class="card">
+                <h3>🍽️ Feedings Today</h3>
+                <p>Count: <span id="feeding-count">0</span></p>
+                <p>Last: <span id="last-feeding">Never</span></p>
+            </div>
+            
+            <div class="card">
+                <h3>🏥 Health Status</h3>
+                <p>All animals: <span class="status online">Healthy</span></p>
+                <p>Last check: <span id="last-health">Never</span></p>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Quick Actions</h2>
+            <button onclick="feedAll()">🍽️ Feed All Animals</button>
+            <button onclick="healthCheck()">🏥 Health Check</button>
+            <button onclick="cleanAll()">🧹 Clean All Enclosures</button>
+        </div>
+
+        <div class="card">
+            <h2>Recent Activity</h2>
+            <div id="activity-log">
+                <p>Server started successfully</p>
+                <p>AI Caretaker online</p>
+                <p>All systems operational</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple dashboard functionality
+        function feedAll() {
+            fetch('/api/feed/all', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => alert('Feeding all animals!'));
+        }
+
+        function healthCheck() {
+            alert('Health check initiated!');
+        }
+
+        function cleanAll() {
+            alert('Cleaning all enclosures!');
+        }
+
+        // Update stats periodically
+        setInterval(() => {
+            fetch('/health')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('uptime').textContent = Math.floor(data.uptime / 3600) + ' hours';
+                })
+                .catch(() => {
+                    // Server might not be running
+                });
+        }, 30000);
+    </script>
+</body>
+</html>

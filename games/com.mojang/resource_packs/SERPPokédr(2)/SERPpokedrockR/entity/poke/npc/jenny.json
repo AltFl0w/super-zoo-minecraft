@@ -1,0 +1,45 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:jenny",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/npc/jenny"
+      },
+      "geometry": {
+        "default": "geometry.serp_jenny"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "animate": [
+          "root",
+          "jenny",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+    "root": "controller.animation.pokemon_ground",
+    "jenny": "controller.animation.jenny",
+    "quiet":"animation.rocket.quiet",
+    "walk":"animation.rocket.walk",
+    "look_at_target": "animation.common.look_at_target"
+    },
+      "particle_effects": {
+        "pokedex": "serp:pokedex",
+        "vs_seeker": "serp:vs_seeker",
+        "poke_ride": "serp:poke_ride",
+        "dynamax_band": "serp:dynamax_band",
+        "mega_ring": "serp:mega_ring"
+      },
+      "spawn_egg": {
+          "texture": "pokeitems",
+        "texture_index": 14
+      },
+      "render_controllers": [ "controller.render.default" ],
+      "enable_attachables": true
+    }
+  }
+}

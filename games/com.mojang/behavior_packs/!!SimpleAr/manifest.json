@@ -1,0 +1,36 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Simple Arsenal - 3D and Easy to Use!\nYT: §b§lWarden Creations, §rWebsite: §b§lXLiteMC.com",
+        "name": "!!§e§lSimple Arsenal [BP] v0.6 §h[Base Pack]",
+		"uuid": "d2b2bf54-92b5-489a-a57e-516dc8769041",
+        "version": [ 0, 6, 0 ],
+        "min_engine_version": [ 1, 19, 70 ]
+    },
+    "modules": [
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "636508ed-f6ba-4a86-bf4e-6c80bf32a3b6",
+			"entry": "scripts/Main.js",
+			"version": [ 0, 6, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "638a8e70-6c22-407a-9644-9206f20286e3",
+			"version": [ 0, 6, 0 ]
+		},
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.12.0"
+		},
+		{
+		  "module_name": "@minecraft/server-ui",
+		  "version": "1.0.0"
+		}    
+	], 
+    "metadata": {
+        "product_type": "addon"
+    }  
+}      

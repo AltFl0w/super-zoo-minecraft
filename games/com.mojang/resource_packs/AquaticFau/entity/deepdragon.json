@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.deepdragon"
+      },
+      "identifier": "fauna:deepdragon",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.deepdragonvariant"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "deepdragon",
+        "texture_index": 0
+      },
+      "textures": {
+        "deep": "textures/entity/seadragon/deep",
+        "choco": "textures/entity/seadragon/choco",
+        "albino": "textures/entity/seadragon/albino",
+        "shark": "textures/entity/seadragon/shark",
+        "zombie": "textures/entity/seadragon/zombie"
+      },
+      "animations": {
+        "attack": "animation.deepdragon.attack",
+        "idle": "animation.deepdragon.idle",
+        "swim": "animation.deepdragon.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

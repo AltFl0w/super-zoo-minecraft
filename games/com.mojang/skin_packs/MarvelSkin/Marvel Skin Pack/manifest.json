@@ -1,0 +1,24 @@
+{
+  "header": {
+    "version": [
+      1,
+      0,
+      5
+    ],
+    "description": "§cMarvel§r Skin Pack by §bPixell Studio",
+    "name": "§cMarvel§r Skin Pack",
+    "uuid": "4b6dd8ac-1d34-4a4a-8e27-f273912b04ee"
+  },
+  "modules": [
+    {
+      "version": [
+        1,
+        0,
+        5
+      ],
+      "type": "skin_pack",
+      "uuid": "9643b6d2-1079-4ee3-a759-7dc26859fc0f"
+    }
+  ],
+  "format_version": 1
+}

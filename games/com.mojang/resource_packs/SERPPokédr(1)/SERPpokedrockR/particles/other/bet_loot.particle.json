@@ -1,0 +1,49 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "serp:bet_loot",
+			"basic_render_parameters": {
+				"material": "particles_alpha",
+				"texture": "textures/particle/pokedrock_particles"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_instant": {
+				"num_particles": 25
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 1
+			},
+			"minecraft:emitter_shape_point": {
+				"direction": ["Math.random(-1,1)", 6, "Math.random(-1,1)"]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "Math.random(0.75,1.5)"
+			},
+			"minecraft:particle_initial_spin": {
+				"rotation": "Math.random(-270,270)"
+			},
+			"minecraft:particle_initial_speed": "Math.random(3,6)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [0, "Math.random(-10,-20)", 0],
+				"linear_drag_coefficient": 1
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [0.15, 0.15],
+				"facing_camera_mode": "lookat_xyz",
+				"uv": {
+					"texture_width": 8,
+					"texture_height": 8,
+					"uv": [6, 0],
+					"uv_size": [1, 1]
+				}
+			},
+			"minecraft:particle_motion_collision": {
+				"collision_drag": 1,
+				"coefficient_of_restitution": 0.2,
+				"collision_radius": 0.01
+			}
+		}
+	}
+}

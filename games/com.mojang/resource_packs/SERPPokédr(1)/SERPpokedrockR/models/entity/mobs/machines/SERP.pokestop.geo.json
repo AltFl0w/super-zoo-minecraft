@@ -1,0 +1,83 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.pokestop",
+				"texture_width": 48,
+				"texture_height": 48,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "pokestop",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "base",
+					"parent": "pokestop",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-2, 7, -2], "size": [4, 1, 4], "uv": [21, 9]},
+						{"origin": [-0.5, 2, -0.5], "size": [1, 5, 1], "uv": [25, 0]}
+					]
+				},
+				{
+					"name": "ring1",
+					"parent": "base",
+					"pivot": [0, 6.5, 0],
+					"cubes": [
+						{"origin": [-2.5, 6.5, -2.5], "size": [5, 0, 5], "uv": [16, 19]}
+					]
+				},
+				{
+					"name": "ring2",
+					"parent": "base",
+					"pivot": [0, 7.5, 0],
+					"cubes": [
+						{"origin": [-2.5, 7.5, -2.5], "size": [5, 0, 5], "uv": [16, 19]}
+					]
+				},
+				{
+					"name": "ring3",
+					"parent": "base",
+					"pivot": [0, 8.5, 0],
+					"cubes": [
+						{"origin": [-2.5, 8.5, -2.5], "size": [5, 0, 5], "uv": [16, 19]}
+					]
+				},
+				{
+					"name": "circles",
+					"parent": "pokestop",
+					"pivot": [0, 15, 0]
+				},
+				{
+					"name": "circle1",
+					"parent": "circles",
+					"pivot": [0, 15, 0],
+					"cubes": [
+						{"origin": [-6, 9, 0], "size": [12, 12, 0], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "circle2",
+					"parent": "circles",
+					"pivot": [0, 15, 0],
+					"cubes": [
+						{"origin": [-5, 10, 0], "size": [10, 10, 0], "uv": [0, 13]}
+					]
+				},
+				{
+					"name": "circle3",
+					"parent": "circles",
+					"pivot": [0, 15, 0],
+					"cubes": [
+						{"origin": [-3, 12, 0], "size": [6, 6, 0], "uv": [0, 24]}
+					]
+				}
+			]
+		}
+	]
+}

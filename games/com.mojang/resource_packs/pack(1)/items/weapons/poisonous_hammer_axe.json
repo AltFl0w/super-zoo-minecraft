@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:poisonous_hammer_axe"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:icon": "poisonous_hammer_axe",
+			"minecraft:render_offsets": "tools",
+			"minecraft:display_name": {}
+		}
+	}
+}

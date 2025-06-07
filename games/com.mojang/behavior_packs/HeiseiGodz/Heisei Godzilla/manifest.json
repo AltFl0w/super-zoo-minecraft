@@ -1,0 +1,24 @@
+{
+    "format_version": 1,
+    "header": {
+        "name": "Heisei Godzilla Addon Behaviors",
+        "description": "yeet",
+        "uuid": "ef66e492-29da-481c-8734-758d730378e0",
+        "version": [1, 1, 0],
+        "min_engine_version": [1, 2, 6]
+    },
+    "modules": [
+        {
+            "description": "heisei godzilla addon behaviors",
+            "type": "data",
+            "uuid": "f0c9b581-3c17-4448-9576-641d6b33970b",
+            "version": [1, 1, 0]
+        }
+    ],
+    "dependencies": [
+        {
+            "uuid": "fb1b1ef4-611a-4b2d-b932-d6c2d2024979",
+            "version": [1, 1, 0]
+        }
+    ]
+}

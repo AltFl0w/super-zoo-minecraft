@@ -1,0 +1,20 @@
+{
+   "format_version":"1.20.80",
+   "minecraft:client_entity":{
+      "description":{
+         "identifier":"true:death_crate_storage",
+         "materials":{
+            "default":"entity_alphatest"
+         },
+         "textures":{
+            "default":"textures/ui/death_crate_storage"
+         },
+         "geometry":{
+            "default":"geometry.death_crate_storage"
+         },
+         "render_controllers":[
+            "controller.render.default"
+         ]
+      }
+   }
+}

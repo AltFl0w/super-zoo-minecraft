@@ -1,0 +1,62 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.guns.second_gun" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add second_gun dummy", "/scoreboard players set @s second_gun 0", "/title @s actionbar §l§bMain weapon" ],
+					"transitions" : [
+						{
+							"is_sneaking" : "q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') && q.is_sneaking && (q.property('nido:item.attachments.4') == 1 || q.property('nido:item.attachments.4') == 2) && q.is_alive"
+						}
+					]
+				},
+				"is_sneaking" : {
+					"on_entry" : [ "/scoreboard objectives add second_gun dummy", "/scoreboard players set @s second_gun 0" ],
+					"transitions" : [
+						{
+							"on" : "!q.is_sneaking"
+						}
+					]
+				},
+				"on" : {
+					"animations" : [ "reload.time" ],
+					"transitions" : [
+						{ "default" : "q.any_animation_finished || !q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') || !q.is_alive" },
+						{ "m203" : "q.is_sneaking && q.property('nido:item.attachments.4') == 1" },
+						{ "shotgun" : "q.is_sneaking && q.property('nido:item.attachments.4') == 2" }
+					]
+				},
+				"m203" : {
+					"on_entry" : [ "/scoreboard players set @s second_gun 1", "/title @s actionbar §l§cUsing M203" ],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') || q.property('nido:item.attachments.4') == 0 || q.property('nido:item.attachments.4') == 2 || !q.is_alive" },
+						{ "m203.2" : "!q.is_sneaking" }
+					]
+				},
+				"m203.2" : {
+					"on_entry" : ["/scoreboard players set @s second_gun 1", "/title @s actionbar §l§cUsing M203" ],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') || q.property('nido:item.attachments.4') == 0 || q.property('nido:item.attachments.4') == 2 || q.scoreboard('second_gun') == 0 || !q.is_alive" },
+						{ "default" : "q.is_sneaking" }
+					]
+				},
+				"shotgun" : {
+					"on_entry" : [ "/scoreboard players set @s second_gun 2", "/title @s actionbar §l§cUsing Shotgun" ],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') || q.property('nido:item.attachments.4') == 0 || q.property('nido:item.attachments.4') == 1 || !q.is_alive" },
+						{ "shotgun.2" : "!q.is_sneaking" }
+					]
+				},
+				"shotgun.2" : {
+					"on_entry" : ["/scoreboard players set @s second_gun 2", "/title @s actionbar §l§cUsing Shotgun" ],
+					"transitions" : [
+						{ "default" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'gun') || q.property('nido:item.attachments.4') == 0 || q.property('nido:item.attachments.4') == 1 || q.scoreboard('second_gun') == 0 || !q.is_alive" },
+						{ "default" : "q.is_sneaking" }
+					]
+				}
+			}
+		}
+	}
+}

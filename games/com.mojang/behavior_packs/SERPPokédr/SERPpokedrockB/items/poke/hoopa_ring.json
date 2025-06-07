@@ -1,0 +1,16 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:hoopa_ring_item",
+      "menu_category":{"category":"items"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.spawn_egg.entity.serp:hoopa_ring.name"},
+      "minecraft:icon":"hoopa_ring",
+      "minecraft:food":{"nutrition":0,"saturation_modifier":0},
+	    "minecraft:use_modifiers":{"use_duration":0.5,"movement_modifier":0.35},
+	    "minecraft:use_animation":"drink"
+    }
+  }
+}

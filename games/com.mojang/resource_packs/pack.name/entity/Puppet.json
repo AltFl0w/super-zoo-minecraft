@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:puppet",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_puppet"
+      },
+      "geometry": {
+        "default": "geometry.df_puppet"
+      },
+      "animations": {
+        "df_puppet_general": "animation.df_puppet.base",
+        "df_caminando_puppet": "animation.df_puppet.walk",
+        "df_ataque_puppet": "animation.df_puppet.attack",
+        "df_salto_puppet": "animation.df_puppet.salto",
+        "look_at_target": "animation.common.look_at_target",
+
+        "movimiento": "controller.animation.df_puppet.movimiento",
+        "general": "controller.animation.df_puppet.general",
+        "ataque": "controller.animation.df_puppet.ataque"
+      },
+      "scripts": {
+        "animate": [
+          "movimiento", "general", "ataque"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_puppet",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Mr. Nido's Guns 3 BehaviorPack",
+    "description": "Created by @MrNIDOMC (Youtube)",
+    "uuid": "909928c4-52a5-f69d-eb1d-d8a00cf1f704",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      20,
+      30
+    ]
+  },
+  "modules": [
+		{
+			"type": "script",
+			"language": "javascript",
+			"uuid": "001ac128-a5d1-6dfd-b429-500b8ca46b12",
+			"entry": "scripts/index.js",
+			"version": [
+				0,
+				1,
+				0
+			]
+		}
+  ],
+	"capabilities": [
+		"script_eval"
+	],
+  "dependencies": [
+    {
+      "uuid": "59aa2505-ff6b-555e-531e-454339a7dfc0",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    },
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.11.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.1.0"
+		}
+  ],
+  "metadata": {
+    "authors": [
+      "Add-on Website"
+    ],
+    "url": "https://www.nido-de-addons.com"
+  }
+}

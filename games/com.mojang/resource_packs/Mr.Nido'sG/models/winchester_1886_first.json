@@ -1,0 +1,124 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.winchester_1886_first",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 8,
+				"visible_bounds_height": 9,
+				"visible_bounds_offset": [0, 0.5, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "waist",
+					"parent": "root",
+					"pivot": [0, 12, 0]
+				},
+				{
+					"name": "body",
+					"parent": "waist",
+					"pivot": [0, 24, 0]
+				},
+				{
+					"name": "leftArm",
+					"parent": "body",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve",
+					"parent": "leftArm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftItem",
+					"parent": "leftArm",
+					"pivot": [6, 15, 1]
+				},
+				{
+					"name": "rightArm",
+					"parent": "body",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "base_brazoes",
+					"parent": "rightArm",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightSleeve",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "second_arm",
+					"parent": "base_brazoes",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "leftSleeve2",
+					"parent": "second_arm",
+					"pivot": [5, 22, 0]
+				},
+				{
+					"name": "rightArm_model",
+					"parent": "base_brazoes",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "rightSleeve2",
+					"parent": "rightArm_model",
+					"pivot": [-5, 22, 0]
+				},
+				{
+					"name": "weapon",
+					"parent": "base_brazoes",
+					"pivot": [-6, 8.2, -7.9],
+					"rotation": [90, 0, 0],
+					"cubes": [
+						{"origin": [-7, 2.1, -5.925], "size": [2, 3, 3], "inflate": 0.125, "pivot": [-6, 3.3, -4.5], "rotation": [-17.5, 0, 0], "uv": [52, 44]},
+						{"origin": [-7, -5.2, -6.55], "size": [2, 12, 3], "inflate": 0.075, "pivot": [-6, 5.25, -4.5], "rotation": [65, 0, 0], "uv": [28, 51]},
+						{"origin": [-6.5, 2, -6.25], "size": [1, 4, 3], "inflate": -0.1, "pivot": [-6, 5.25, -4.5], "rotation": [75, 0, 0], "uv": [56, 5]},
+						{"origin": [-6.75, 4, -5], "size": [1, 5, 5], "inflate": -0.25, "uv": [0, 52]},
+						{"origin": [-7, 0.15, 2.975], "size": [2, 2, 3], "inflate": 0.05, "pivot": [-6, 1.7, 3.45], "rotation": [10, 0, 0], "uv": [56, 0]},
+						{"origin": [-7, -17.35, -6.55], "size": [2, 12, 4], "inflate": 0.075, "pivot": [-6, 5.25, -4.5], "rotation": [65, 0, 0], "uv": [44, 0]},
+						{"origin": [-7, 2.5, -6.4], "size": [2, 2, 2], "inflate": 0.025, "uv": [56, 17]},
+						{"origin": [-6.5, 0.5, -8.4], "size": [1, 3, 3], "uv": [68, 0]},
+						{"origin": [-7, 3.775, -15.65], "size": [2, 3, 10], "inflate": 0.1, "uv": [28, 38]},
+						{"origin": [-7, 3.9, -15.65], "size": [2, 3, 1], "inflate": 0.075, "uv": [52, 56]},
+						{"origin": [-7, 6, -20], "size": [2, 2, 4], "inflate": -0.3, "uv": [52, 38]},
+						{"origin": [-7, 5.15, -35.45], "size": [2, 2, 20], "inflate": -0.25, "uv": [0, 0]},
+						{"origin": [-7, 3.75, -33.3], "size": [2, 2, 4], "inflate": -0.35, "uv": [44, 16]},
+						{"origin": [-7, 3.75, -29.65], "size": [2, 2, 14], "inflate": 0, "uv": [0, 22]},
+						{"origin": [-7, 2.775, -11.65], "size": [2, 3, 3], "inflate": 0.025, "pivot": [-6, 4.275, -9.65], "rotation": [-27.5, 0, 0], "uv": [52, 50]},
+						{"origin": [-7, 2.775, -9.75], "size": [2, 3, 4], "pivot": [-6, 4.275, -7.75], "rotation": [10, 0, 0], "uv": [12, 52]}
+					]
+				},
+				{
+					"name": "short",
+					"parent": "weapon",
+					"pivot": [-6, 5.3, -40.275],
+					"cubes": [
+						{"origin": [-7, 3.75, -46.6], "size": [2, 2, 14], "inflate": -0.35, "uv": [32, 22]},
+						{"origin": [-7, 5.15, -46.95], "size": [2, 2, 12], "inflate": -0.25, "uv": [0, 38]},
+						{"origin": [-6.5, 6.15, -44.95], "size": [1, 2, 2], "inflate": -0.3, "uv": [58, 56]}
+					]
+				},
+				{
+					"name": "gatillo",
+					"parent": "weapon",
+					"pivot": [-6, 1.775, -7.65],
+					"cubes": [
+						{"origin": [-7, 0, -9.5], "size": [2, 4, 5], "pivot": [-6, 1.775, -7.65], "rotation": [-17.5, 0, 0], "uv": [38, 51]},
+						{"origin": [-7, 0, -4.775], "size": [2, 2, 4], "inflate": -0.25, "pivot": [-6, 1.775, -7.65], "rotation": [-17.5, 0, 0], "uv": [0, 0]}
+					]
+				}
+			]
+		}
+	]
+}

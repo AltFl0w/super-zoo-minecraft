@@ -1,0 +1,31 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:apricorn_orange",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:display_name":{
+    "value":"item.serp:apricorn_orange.name"
+         },
+	  "minecraft:creative_category": {
+	"parent": "itemGroup.name.seed"
+			},
+  "minecraft:render_offsets": {
+        "main_hand": {
+"first_person":{"scale":[0.01,0.01,0.01]},
+"third_person":{"scale":[0.03,0.03,0.03]}
+        }
+      },
+      "minecraft:max_stack_size": 64,
+      "minecraft:block_placer":{
+    "block" : "serp:apricorn_orange_block",
+    "use_on" : ["farmland"]
+      },
+	  "minecraft:icon": {
+		"texture": "orange_apricorn"
+	  }
+    }
+  }
+}

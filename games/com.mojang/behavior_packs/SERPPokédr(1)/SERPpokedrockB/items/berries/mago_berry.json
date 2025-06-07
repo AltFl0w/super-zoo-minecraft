@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:mago_berry",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:use_duration": 32,
+      "minecraft:hand_equipped": false,
+      "minecraft:food": {
+        "nutrition": 8,
+        "saturation_modifier": "normal",
+        "can_always_eat": false
+      }
+    }
+  }
+}

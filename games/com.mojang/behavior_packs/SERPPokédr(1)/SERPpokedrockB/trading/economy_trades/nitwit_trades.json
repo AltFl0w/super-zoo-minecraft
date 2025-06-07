@@ -1,0 +1,63 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+    "wants":[{"item":"serp:poke","quantity":25}],
+    "gives":[{"item":"serp:berry_seeds"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_black"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_blue"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_cyan"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_green"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_orange"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_red"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_white"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:poke","quantity":15}],
+    "gives":[{"item":"serp:apricorn_yellow"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:badge","quantity":45}],
+    "gives":[{"item":"serp:legendary_gen1"}],
+    "max_uses": 9999
+        },
+        {
+    "wants":[{"item":"serp:badge","quantity":45}],
+    "gives":[{"item":"serp:legendary_gen2"}],
+    "max_uses": 9999
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.skorpion_vz61.shoot.explosive": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.01": [
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.skorpion_vz61 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.skorpion_vz61 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			"/event entity @s guns:skorpion_vz61.explosive",
+			"/function skorpion_vz61/skorpion_vz61",
+			"/scoreboard players remove @s skorpion_vz61 1"
+        ]
+      }
+    },
+    "animation.skorpion_vz61.shoot.fire": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.01": [
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.skorpion_vz61 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.skorpion_vz61 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			"/event entity @s guns:skorpion_vz61.fire",
+			"/function skorpion_vz61/skorpion_vz61",
+			"/scoreboard players remove @s skorpion_vz61 1"
+        ]
+      }
+    },
+    "animation.skorpion_vz61.shoot": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.01": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.skorpion_vz61 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.skorpion_vz61 @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:skorpion_vz61",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:skorpion_vz61",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:skorpion_vz61_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:skorpion_vz61_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:skorpion_vz61_silenciador",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:skorpion_vz61_silenciador_laser",
+			
+			"/function skorpion_vz61/skorpion_vz61",
+			"/scoreboard players remove @s skorpion_vz61 1"
+        ]
+      }
+    },
+    "animation.skorpion_vz61.apuntar.shoot": {
+      "loop": true,
+      "animation_length": 0.2,
+      "timeline": {
+        "0.01": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.skorpion_vz61 @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.skorpion_vz61 @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:skorpion_vz61_apuntar",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:skorpion_vz61_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:skorpion_vz61_apuntar_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:skorpion_vz61_apuntar_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:skorpion_vz61_silenciador_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:skorpion_vz61_silenciador_apuntar_laser",
+			
+			"/function skorpion_vz61/skorpion_vz61",
+			"/scoreboard players remove @s skorpion_vz61 1"
+        ]
+      }
+    },
+    "animation.skorpion_vz61.shotgun.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.shotgun_reload @a[r=25]"
+        ],
+        "1.85": [
+			"/event entity @s guns:reload.off",
+			"/function skorpion_vz61/skorpion_vz61_shotgun_reload"
+        ]
+      }
+    },
+    "animation.skorpion_vz61.m203.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.m203_reload @a[r=25]"
+        ],
+        "1.85": [
+			"/event entity @s guns:reload.off",
+			"/function skorpion_vz61/skorpion_vz61_m203_reload"
+        ]
+      }
+    },
+    "animation.skorpion_vz61.reload": {
+      "loop": false,
+      "animation_length": 1.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.skorpion_vz61_reload @a[r=25]", "/scoreboard players set @s skorpion_vz61_fire 0", "/scoreboard players set @s skorpion_vz61_explosive 0"
+        ],
+        "0.95": [
+			"/scoreboard players set @s skorpion_vz61 20",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:skorpion_vz61_ammo 0 1"
+        ]
+      }
+    }
+  }
+}

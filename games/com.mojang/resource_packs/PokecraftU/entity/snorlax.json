@@ -1,0 +1,48 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pokemon_unite:snorlax",
+      "materials": { "default": "skeleton" },
+      "textures": {
+        "default": "textures/entity/pokemon_unite/snorlax",
+        "pokeball": "textures/entity/pokemon_unite/pokeball"
+      },
+      "geometry": { 
+        "default": "geometry.snorlax",
+        "pokeball": "geometry.pokeball"
+      },
+ 
+      "animations": { 
+          "pokeball_v1": "animation.pokeballv1",
+ 
+
+        "walk": "animation.snorlax.walk",
+        "attack": "animation.snorlax.attack",
+        "sleep": "animation.snorlax.sleep",
+        "idle": "animation.snorlax.idle"
+      },
+      "scripts": {
+        "animate": [
+          { "sleep": "query.skin_id == 1" },
+
+          { "walk": "query.modified_move_speed" },
+
+"idle",
+          { "pokeball_v1": "query.variant == 1" },
+
+          { "attack": "variable.attack_time > 0.0" }
+        ]
+      },
+      "render_controllers": [
+          "controller.render.pokemon_n",
+          "controller.render.pokeball"
+      
+      ],
+      "spawn_egg": {
+        "base_color": "#549097",
+        "overlay_color": "#FAFAFA"
+      }
+    }
+  }
+}

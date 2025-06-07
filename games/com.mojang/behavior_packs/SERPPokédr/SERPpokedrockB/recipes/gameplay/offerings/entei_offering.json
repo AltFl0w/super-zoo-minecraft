@@ -1,0 +1,19 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:entei_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      "klk",
+      "lsl"
+    ],
+    "key":{
+      "k":{"item":"minecraft:dried_kelp"},
+      "l":{"item":"serp:entei_lock"},
+      "s":{"item":"minecraft:warped_slab"}
+    },
+    "result":{"item":"serp:entei_offering"}
+  }
+}

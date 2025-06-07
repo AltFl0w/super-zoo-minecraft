@@ -1,0 +1,30 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "serp:rotomarket"
+        },
+
+
+        "tags": [ "crafting_table" ],
+    "pattern": [
+      "ccc",
+      "cgc",
+      "cic"
+    ],
+    "key": {
+      "c": {
+        "item": "minecraft:copper_ingot"
+      },
+      "g": {
+        "item": "minecraft:glass"
+      },
+      "i": {
+        "item": "serp:poke"
+    }
+},
+        "result": {
+            "item": "serp:rotomarket_spawn_egg"
+        }
+    }
+}

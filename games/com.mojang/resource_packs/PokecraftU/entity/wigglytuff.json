@@ -1,0 +1,46 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "pokemon_unite:wigglytuff",
+      "materials": { "default": "skeleton" },
+      "textures": { 
+        "default": "textures/entity/pokemon_unite/wigglytuff",
+        "pokeball": "textures/entity/pokemon_unite/pokeball"
+      },
+      "geometry": { 
+        "default": "geometry.wigglytuff",
+        "pokeball": "geometry.pokeball"
+      },
+ 
+      "animations": { 
+          "pokeball_v1": "animation.pokeballv1",
+ 
+
+        "walk": "animation.wigglytuff.walk",
+        "attack": "animation.wigglytuff.attack",
+ 
+
+
+        "idle": "animation.wigglytuff.idle"
+      },
+      "scripts": { 
+        "animate": [
+          { "walk": "query.modified_move_speed" },
+
+"idle",
+          { "pokeball_v1": "query.variant == 1" }
+        ] 
+      },
+      "render_controllers": [
+          "controller.render.pokemon_n",
+          "controller.render.pokeball"
+      
+      ],
+      "spawn_egg": {
+        "base_color": "#E1BBDF",
+        "overlay_color": "#497784"
+      }
+    }
+  }
+}

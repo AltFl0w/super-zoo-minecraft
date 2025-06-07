@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:communicator",
+      "materials": {
+        "default": "entity_emissive_alpha"
+          },
+      "textures": {
+    "on": "textures/entity/communicator/on",
+    "off": "textures/entity/communicator/off",
+    "call0": "textures/entity/communicator/call0",
+    "call1": "textures/entity/communicator/call1",
+    "call2": "textures/entity/communicator/call2",
+    "call3": "textures/entity/communicator/call3",
+    "call4": "textures/entity/communicator/call4",
+    "call5": "textures/entity/communicator/call5"
+      },
+      "geometry": {
+        "default": "geometry.serpcommunicator",
+        "screen": "geometry.video_screen"
+      },
+      "animations": {
+    "root": "controller.animation.communicator",
+    "on": "animation.communicator.on",
+    "off": "animation.communicator.off"
+    },
+      "scripts": {
+        "animate": ["root"]
+      },
+      "sound_effects": {
+        "on": "mob.pc.boot_on"
+      },
+      "render_controllers": ["controller.render.communicator", "controller.render.video_screen"]
+    }
+  }
+}

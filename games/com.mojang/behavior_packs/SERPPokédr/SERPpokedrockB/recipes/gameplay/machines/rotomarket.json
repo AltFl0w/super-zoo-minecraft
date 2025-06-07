@@ -1,0 +1,21 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+      "identifier":"serp:rotomarket"
+    },
+    "tags":["crafting_table"],
+    "group":"poke_machines",
+    "pattern":[
+      "###",
+      "#X#",
+      "#B#"
+    ],
+    "key":{
+      "B":{"item":"minecraft:redstone"},
+      "#":{"item":"minecraft:copper_ingot"},
+      "X":{"item":"minecraft:stained_glass","data":11}
+    },
+    "result":{"item":"serp:rotomarket"}
+  }
+}

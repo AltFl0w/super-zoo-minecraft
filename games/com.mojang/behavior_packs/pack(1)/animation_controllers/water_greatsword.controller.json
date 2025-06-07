@@ -1,0 +1,26 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.water_greatsword": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'water_greatsword' && query.is_using_item"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'water_greatsword' && !query.is_using_item) || query.get_equipped_item_name('main_hand') != 'water_greatsword'"
+						}
+					],
+					"animations": [
+						"water_greatsword"
+					]
+				}
+			}
+		}
+	}
+}

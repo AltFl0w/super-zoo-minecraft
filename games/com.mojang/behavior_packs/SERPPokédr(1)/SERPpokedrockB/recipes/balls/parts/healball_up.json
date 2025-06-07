@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:healball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "rrr",
+      "ara"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_yellow"
+      },
+      "r": {
+        "item": "serp:apricorn_pink"
+      }
+    },
+    "result": {
+      "item": "serp:healball_up",
+      "count": 6
+    }
+  }
+}

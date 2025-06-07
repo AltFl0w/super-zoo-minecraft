@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "minecraft:compass"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "###",
+      "#X#",
+      "#B#"
+    ],
+    "key": {
+      "#": {
+        "item": "minecraft:redstone"
+      },
+      "B": {
+        "item": "serp:badge"
+      },
+      "X": {
+      "item": "minecraft:stained_glass",
+      "data": 11
+    }
+    },
+    "result": {
+      "item": "minecraft:compass"
+    }
+  }
+}

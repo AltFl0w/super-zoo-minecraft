@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "showtime:toy_chica",
+      "materials": {
+        "default": "spider",
+        "outer": "cupcake"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_toy_chica",
+        "cupcake": "textures/entity/danyfox/df_cupcake2"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_chica",
+        "cupcake": "geometry.df_cupcake2"
+      },
+      "animations": {
+        "showtime": "animation.toychica.cupcake",
+
+        "general": "controller.animation.showtime"
+      },
+      "scripts": {
+        "animate": [
+         "general"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf", "controller.render.cupcake2" ],
+      "spawn_egg": {
+        "texture": "df_toy_chica_showtime",
+        "texture_index": 0
+      }
+    }
+  }
+}

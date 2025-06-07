@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "gunsaddon:bulletproof_helmet"
+      },
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "BBB",
+        "BAB"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:diamond"
+        },
+        "B": {
+          "item": "minecraft:iron_ingot"
+        }
+      },
+      "result": {
+        "item": "gunsaddon:bulletproof_helmet",
+        "count": 1
+      }
+    }
+  }

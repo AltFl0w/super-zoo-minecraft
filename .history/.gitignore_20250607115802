@@ -1,0 +1,46 @@
+# Minecraft Server Data
+data/
+logs/
+crash/
+worlds/*/db/
+*.log
+
+# Docker volumes
+volumes/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules (if any)
+node_modules/
+
+# Environment files
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+
+# Game files that shouldn't be in repo
+games/com.mojang/minecraftWorlds/
+games/com.mojang/logs/
+internal/
+Inbox/
+
+# Keep structure but ignore content of certain directories
+behavior_packs/*/
+resource_packs/*/
+!behavior_packs/.gitkeep
+!resource_packs/.gitkeep 

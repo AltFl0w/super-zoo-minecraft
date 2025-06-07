@@ -1,0 +1,49 @@
+{
+    "format_version": "1.20.41",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "gunsaddon:target_shooting_collision",
+            "runtime_identifier": "minecraft:boat"
+        },
+        "components": {
+			"minecraft:type_family": { "family": [ "target_shooting_collision" ] },
+            "minecraft:health": {
+                "value": 1,
+                "max": 1
+            },
+            "minecraft:custom_hit_test": {
+                "hitboxes": [
+                    {
+                        "width": 0,
+                        "height": 0,
+                        "pivot": [ 0, 0, 0 ]
+                    }
+                ]
+            },
+            "minecraft:fire_immune": {},
+            "minecraft:damage_sensor": {
+                "triggers": { "cause": "all", "deals_damage": false }
+            },
+            "minecraft:collision_box": {
+                "width": 0.15,
+                "height": 1.5
+            },
+            "minecraft:physics": {
+                "has_collision": true,
+                "has_gravity": false
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:rideable": { "seat_count": 0 },
+            "minecraft:despawn": {
+                "filters": {
+                    "test": "is_riding",
+                    "value": false
+                }
+            },
+            "minecraft:conditional_bandwidth_optimization": {}
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:x_factor",
+      "category": "Nature"
+    },
+    
+    "components": {
+      "minecraft:icon": "x_factor"
+    }
+  }
+}

@@ -1,0 +1,481 @@
+{
+	"entity_sounds": {
+		"entities": {	
+	   		"df:toy_freddy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"hurt": "random.anvil_land",
+					"ambient": "toyfreddy.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"showtime:toy_freddy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"ambient": "toyfreddy.showtime",
+					"hurt": "random.anvil_land",
+					"death": "muerte"
+               }
+			},
+			"df:toy_bonnie": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"hurt": "random.anvil_land",
+					"ambient": "toybonnie.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"showtime:toy_bonnie": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"ambient": "toybonnie.showtime",
+					"hurt": "random.anvil_land",
+					"death": "muerte"
+               }
+			},
+			"df:toy_chica": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"hurt": "random.anvil_land",
+					"ambient": "toychica.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"showtime:toy_chica": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"ambient": "toychica.showtime",
+					"hurt": "random.anvil_land",
+					"death": "muerte"
+               }
+			},
+			"df:toy_chica_sin_pico": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"hurt": "random.anvil_land",
+					"ambient": "toychica_sin_pico.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:toy_foxy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"hurt": "random.anvil_land",
+					"ambient": "toyfoxy.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"showtime:toy_foxy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"ambient": "toyfoxy.showtime",
+					"hurt": "random.anvil_land",
+					"death": "muerte"
+               }
+			},
+			"df:mangle": {
+				"volume":2,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"hurt": "random.anvil_land",
+					"ambient": "mangle.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "mangle.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:balloon_boy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"ambient": "bb.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:jj": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"ambient": "bb.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:puppet": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"ambient": "puppet.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:withered_freddy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"plop": "fnaf.peligro",
+					"attack": "animatronicos.scream.fnaf2",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:withered_bonnie": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"ambient": "witheredbonnie.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:withered_bonnie_con_cara": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"plop": "fnaf.peligro",
+					"ambient": "witheredbonnie.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:withered_chica": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"attack": "animatronicos.scream.fnaf2",
+					"hurt": "random.anvil_land",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"plop": "fnaf.peligro",
+					"ambient": "witheredchica.voz",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:withered_foxy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"plop": "fnaf.peligro",
+					"attack": "animatronicos.scream.fnaf2",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:withered_golden_freddy": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"sleep": "mala_conexion",
+					"screech": "mala_conexion",
+					"plop": "fnaf.peligro",
+					"death": "muerte"
+               }
+			},
+			"df:shadow_freddy2": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"death": "animatronicos.scream.fnaf2"
+               }
+			},
+			"df:shadow_bonnie": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"death": "animatronicos.scream.fnaf2"
+               }
+			},
+			"df:endo02": {
+				"volume":3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "random.anvil_land",
+					"attack": "animatronicos.scream.fnaf2",
+					"death": "muerte",
+					"step": {
+						"sound": "animatronicos.pasos",
+						"volume": 2.5,
+						"pitch": 1.0
+					  }
+               }
+			},
+			"df:peluchetoyfreddy": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluchetoybonnie": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluchetoychica": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluchetoyfoxy": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluchebonnie": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluchefoxy": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluchefreddy": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluchechica": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz"
+				}
+			},
+			"df:peluche_de_foxdee": {
+				"volume": 3,
+				"pitch": [
+				1,
+				1
+				],
+				"events": {
+					"hurt": "nariz",
+					"Lose_Temp": "Lose_Temp"
+				}
+			}
+		}
+	}
+}
+		
+				    

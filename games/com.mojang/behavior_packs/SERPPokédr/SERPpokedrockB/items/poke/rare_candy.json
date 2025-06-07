@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:rare_candy",
+	    "menu_category":{"category":"items"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:rare_candy.name"},
+      "minecraft:icon":"rare_candy"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.bullet_shoot": {
+            "states": {
+                "default": {
+                    "sound_effects": [
+                        {
+                            "effect": "shoot"
+                        }
+                    ]
+                }
+            }
+        }
+     
+    }
+}

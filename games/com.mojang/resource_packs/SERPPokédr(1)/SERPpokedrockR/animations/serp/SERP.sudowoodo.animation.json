@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sudowoodo_tree.shaking": {
+			"loop": true,
+			"bones": {
+				"top": {
+					"rotation": [0, 0, "Math.sin(q.anim_time*480)*10"],
+					"scale": [1, "1+(Math.sin(q.anim_time*960)*0.1)", 1]
+				},
+				"bottom": {
+					"rotation": [0, 0, "Math.cos(q.anim_time*480)*15"]
+				}
+			}
+		}
+	}
+}

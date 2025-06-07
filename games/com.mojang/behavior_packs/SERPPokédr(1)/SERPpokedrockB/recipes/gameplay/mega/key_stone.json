@@ -1,0 +1,25 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "serp:key_stone"
+        },
+
+
+        "tags": [ "crafting_table" ],
+    "group": "mega",
+    "pattern": [
+      "kkk",
+      "kkk",
+      "kkk"
+    ],
+    "key": {
+      "k": {
+        "item": "serp:key_shard_processed"
+      }
+},
+        "result": {
+            "item": "serp:key_stone"
+        }
+    }
+}

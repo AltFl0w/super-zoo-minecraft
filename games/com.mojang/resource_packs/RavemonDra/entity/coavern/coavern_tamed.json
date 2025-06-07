@@ -1,0 +1,54 @@
+//bridge-file-version: #26
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "it:coavern_tamed",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/coavern"
+			},
+			"geometry": {
+				"default": "geometry.coavern"
+			},
+			"animations": {
+				"land_idle": "animation.coavern.idle",
+				"walk": "animation.coavern.walk",
+				"fly_idle": "animation.coavern.idle_fly",
+				"fly": "animation.coavern.fly",
+				"sit": "animation.coavern.sit",
+				"breath": "animation.coavern.breath_attack",
+				"bite": "animation.coavern.bite_attack",
+				"claw": "animation.coavern.claw_attack",
+				"glide": "animation.coavern.glide",
+				"look": "animation.common.look_at_target",
+				"movement": "controller.animation.coavern.movement",
+				"attack": "controller.animation.coavern.attack"
+			},
+			"scripts": {
+				"animate": [
+					{
+						"movement": "!query.is_sitting"
+					},
+					{
+						"sit": "query.is_sitting"
+					},
+					"attack",
+					"look"
+				]
+			},
+			"render_controllers": [
+				"controller.render.default"
+			],
+			"spawn_egg": {
+				"base_color": "#4DA466",
+				"overlay_color": "#EBCE8A"
+			},
+			"particle_effects": {
+				"breath": "it:poison_breath"
+			}
+		}
+	}
+}

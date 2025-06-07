@@ -1,0 +1,65 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:skorpion_vz61",
+			"materials": {
+				"default": "entity_emissive_alpha",
+				"shoot_effect": "shoot_effect",
+				"laser": "outline_light"
+			},
+			"textures": {
+				"default": "textures/3d_guns/skorpion_vz61/skorpion_vz61",
+				"shoot_effect": "textures/particle/gunfire"
+			},
+			"geometry": {
+				"default": "geometry.skorpion_vz61",
+				"first": "geometry.skorpion_vz61_first",
+				"laser": "geometry.skorpion_vz61_laser",
+				"laser_first": "geometry.skorpion_vz61_laser_first"
+			},
+			"render_controllers": [
+				{ "controller.render.gun.first": "c.is_first_person" },
+				{ "controller.render.gun.third": "!c.is_first_person" },
+				{ "controller.render.gun.laser": "!c.is_first_person" },
+				{ "controller.render.gun.laser_first": "c.is_first_person" }
+			],
+			"scripts": {
+                "animate": [
+				  { "gun": "c.is_first_person" },
+				  { "third": "!c.is_first_person" },
+				  "accesorios",
+				  "reload.c",
+				  "shoot.c"
+                ]
+			},
+            "animations": {
+				"shoot": "animation.double_skorpion_vz61_first.shoot",
+				"shoot.c": "controller.animation.guns.shoot",
+				"reload.c": "controller.animation.guns.reload",
+				"reload": "animation.skorpion_vz61.reload",
+				//Accesorios
+				"accesorios": "controller.animation.guns.accesorios",
+				"mira_off": "animation.gun.attachable.mira_off",
+				"eotech": "animation.gun.attachable.eotech",
+				"trs26": "animation.gun.attachable.trs26",
+				"sniper": "animation.gun.attachable.sniper",
+				"flashlight_off": "animation.gun.attachable.flashlight_off",
+				"laser.off": "animation.gun.attachable.laser.off",
+				"laser.red": "animation.gun.attachable.laser.red",
+				"laser.blue": "animation.gun.attachable.laser.blue",
+				"laser.green": "animation.gun.attachable.laser.green",
+				"flashlight": "animation.gun.attachable.flashlight",
+				"silencer_off": "animation.gun.attachable.silencer_off",
+				"silencer": "animation.gun.attachable.silencer",
+				"bayonet": "animation.gun.attachable.bayonet",
+				"m203_off": "animation.gun.attachable.m203_off",
+				"m203": "animation.gun.attachable.m203",
+				"shotgun": "animation.gun.attachable.shotgun",
+				//End
+				"third": "animation.skorpion_vz61.third",
+				"gun": "animation.skorpion_vz61.first"
+            }
+		}
+	}
+}

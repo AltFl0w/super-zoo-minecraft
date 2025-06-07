@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:skorpion_vz61_ammo",
+			  "menu_category": {
+				"category": "items"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "skorpion_vz61_ammo"
+                ]
+            },
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 16,
+			"minecraft:hand_equipped": false,
+			"minecraft:icon": {
+				"texture": "skorpion_vz61_ammo"
+			}
+		}
+	}
+}

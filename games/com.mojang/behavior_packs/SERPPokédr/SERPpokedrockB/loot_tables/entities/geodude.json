@@ -1,0 +1,14 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+{"weight":40,"type":"item","name":"stone","functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"weight":15,"type":"item","name":"coal","functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"weight":15,"type":"item","name":"raw_iron","functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"weight":15,"type":"item","name":"raw_gold","functions":[{"function":"set_count","count":{"min":1,"max":2}}]},
+{"weight":15,"type":"item","name":"raw_copper","functions":[{"function":"set_count","count":{"min":1,"max":2}}]}
+      ]
+    }
+  ]
+}

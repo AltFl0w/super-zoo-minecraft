@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "df:cupcake2",
+			"is_spawnable": true,
+			"is_summonable": false,
+			"is_experimental": false
+		},
+		"components": {
+			"minecraft:nameable": {},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": 0,
+				"breathesWater": true
+			},
+			"minecraft:health": {
+				"value": 30,
+				"max": 30
+			},
+			"minecraft:collision_box": {
+				"width": 0.9,
+				"height": 0.9
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/entities/empty.json"
+			},
+			"minecraft:scale": {
+				"value": 0.475
+			},
+			"minecraft:type_family": {
+				"family": ["DanyFox","ToyChica"]
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+
+			}
+		}
+	}
+}

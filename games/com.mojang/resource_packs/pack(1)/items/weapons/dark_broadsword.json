@@ -1,0 +1,16 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:dark_broadsword"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sword"
+			},
+			"minecraft:icon": "dark_broadsword",
+			"minecraft:render_offsets": "tools",
+			"minecraft:display_name": {}
+		}
+	}
+}

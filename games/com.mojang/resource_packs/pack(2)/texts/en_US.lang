@@ -1,0 +1,24 @@
+pack.name=§ePokemon§f §lAddon§f R
+pack.description=This Addon brings five brand new Pokemons in your Minecraft-World. All of them are tamable, healable and breedable. I wish you a lot of fun ... §l§4NightWolf_7§f.
+
+item.nw:leppa_berry=Leppa Berry §o§7"Use to breed"§f
+item.nw:knursp=Knursp §o§7"Use to tame"§f
+item.nw:cornn_berry=Cornn Berry §o§7"Use to heal"§f
+
+item.nw:pokeball_pikachu=Pokeball §ePikachu§f
+item.nw:pokeball_eevee=Pokeball §7Eevee§f
+item.nw:pokeball_bulbasaur=Pokeball §bBulbasaur§f
+item.nw:pokeball_squirtle=Pokeball §3Squirtle§f
+item.nw:pokeball_piplup=Pokeball §1Piplup§1
+
+item.spawn_egg.entity.nw:pikachu.name=§ePikachu§f
+item.spawn_egg.entity.nw:eevee.name=§7Eevee§f
+item.spawn_egg.entity.nw:bulbasaur.name=§bBulbasaur§f
+item.spawn_egg.entity.nw:squirtle.name=§3Squirtle§f
+item.spawn_egg.entity.nw:piplup.name=§1Piplup§1
+
+entity.nw:pikachu.name=§ePikachu§f
+entity.nw:eevee.name=§7Eevee§f
+entity.nw:bulbasaur.name=§bBulbasaur§f
+entity.nw:squirtle.name=§3Squirtle§f
+entity.nw:piplup.name=§1Piplup§1

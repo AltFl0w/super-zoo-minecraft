@@ -1,0 +1,342 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "fauna:tuna": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:decapterus": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:catshark": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:frilled": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:blacktip": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:piranha": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:sepat": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:skipjack": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:madidihang": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:todak": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:aligatorg": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:barracuda": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:sardine": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:mackerel": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:sardinella": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      },
+      "fauna:goby": {
+        "volume": 1.0,
+        "pitch": [
+          0.8,
+          1.2
+        ],
+        "events": {
+          "hurt": "mob.fish.hurt",
+          "hurt.in.water": "mob.fish.hurt",
+          "flop": {
+            "sound": "mob.fish.flop",
+            "volume": 1.0,
+            "pitch": 1.0
+          },
+          "step": {
+            "sound": "mob.fish.step",
+            "volume": 0.15,
+            "pitch": 1.0
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:foxdee_c",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/foxdee/df_foxdee",
+        "df_pizza_fnaf2": "textures/entity/danyfox/df_pizza",
+        "df_silla_fnaf2": "textures/entity/danyfox/muebles/df_silla_de_escritorio"
+      },
+      "geometry": {
+        "default": "geometry.df_foxdee",
+        "df_pizza_fnaf2": "geometry.df_pizza3_fnaf2",
+        "df_silla_fnaf2": "geometry.df_silla_de_escritorio"
+      },
+      "animations": {
+        "df_foxdee_comiendo_pizza": "animation.df_foxdee.comiendo_pizza"
+      },
+      "scripts": {
+        "animate": [
+         "df_foxdee_comiendo_pizza"
+        ]
+      },
+      "render_controllers": [
+         "controller.render.fnaf",
+         "controller.render.df_pizza_fnaf2",
+         "controller.render.df_silla_fnaf2"
+         ],
+      "spawn_egg": {
+        "texture": "df_foxdee",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.cupcake.base": {
+			"loop": true,
+			"bones": {
+				"Cupcake": {
+					"position": [-14, -30, -6],
+					"scale": [0.37, 0.4, 0.37]
+				}
+			}
+		}
+	}
+}

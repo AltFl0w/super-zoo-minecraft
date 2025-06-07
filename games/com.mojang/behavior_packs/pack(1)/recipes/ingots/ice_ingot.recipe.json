@@ -1,0 +1,30 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:ice_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" a ",
+			"aia",
+			" a "
+		],
+		"key": {
+			"i": {
+				"item": "wep:forged_wave_ingot"
+			},
+			"a": {
+				"item": "minecraft:blue_ice"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:ice_ingot",
+				"count": 3
+			}
+		]
+	}
+}

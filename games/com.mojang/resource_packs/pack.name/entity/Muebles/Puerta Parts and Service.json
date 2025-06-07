@@ -1,0 +1,55 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "df:puerta_parts_and_service",
+            "materials": {
+                "default": "npc"
+            },
+            "textures": {
+                "default": "textures/entity/danyfox/muebles/df_puerta_parts_service_fnaf2"
+            },
+            "geometry": {
+                "default": "geometry.df_puerta_parts_service_fnaf2"
+            },
+            "animations": {
+                "close": "animation.df_puerta_parts_service_fnaf2.close",
+                "open": "animation.df_puerta_parts_service_fnaf2.open",
+                "east": "animation.door.east",
+                "north": "animation.door.north",
+                "south": "animation.door.south",
+                "west": "animation.door.west",
+
+                "use": "controller.animation.door.use",
+                "spin": "controller.animation.door.spin"
+            },
+            "scripts": {
+                "animate": [
+                    "use",
+                    "spin", {
+                        "east": "variable.is_facing_east"
+                    }, {
+                        "north": "variable.is_facing_north"
+                    }, {
+                        "south": "variable.is_facing_south"
+                    }, {
+                        "west": "variable.is_facing_west"
+                    }
+                ],
+                "pre_animation": [
+                    "variable.random = math.round(math.random(0,2));",
+                    "variable.entity_cardinal_direction = math.round(query.body_y_rotation / 90.0) * 90.0;",
+                    "variable.is_facing_south = variable.entity_cardinal_direction == 0.0 || variable.entity_cardinal_direction == 360.0;",
+                    "variable.is_facing_west = variable.entity_cardinal_direction == 90.0;",
+                    "variable.is_facing_north = variable.entity_cardinal_direction == 180.0;",
+                    "variable.is_facing_east = variable.entity_cardinal_direction == 270.0;"
+                ]
+            },
+            "render_controllers": ["controller.render.fnaf"],
+            "spawn_egg": {
+                "texture": "df_puerta_parts_and_service_fnaf2",
+                "texture_index": 0
+            }
+        }
+    }
+}

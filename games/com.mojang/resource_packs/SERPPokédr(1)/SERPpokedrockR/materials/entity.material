@@ -1,0 +1,9 @@
+//how long will it be until the curry's team steals this file too?
+{
+  "materials":{
+    "version":"1.0.0",
+    "aura:entity_static":{"+defines":["USE_UV_ANIM","ALPHA_TEST","USE_OVERLAY","USE_COLOR_MASK"],"+states":["Blending","DisableCulling"],"+samplerStates":[{"samplerIndex":0,"textureWrap":"Repeat"}],"depthFunc":"Equal","blendSrc":"One","blendDst":"One"},
+    "pokemon:entity_emissive_alpha":{},
+    "pokemon2:entity_custom":{"+states":["DisableCulling"]}
+  }
+}

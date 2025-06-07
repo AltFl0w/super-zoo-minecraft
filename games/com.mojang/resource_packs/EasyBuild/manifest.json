@@ -1,0 +1,27 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Easy Build",
+		"description": "",
+		"min_engine_version": [
+			1,
+			21,
+			80
+		],
+		"uuid": "a22f334e-33e4-4e19-adb2-6efc190a42f9",
+		"version": [ 1, 2, 0 ]
+	},
+	"modules": [
+		{
+			"type": "resources",
+			"uuid": "a4fd0ad4-bbb6-40a4-a287-428c7ccffd00",
+			"version": [ 1, 2, 0 ]
+		}
+	],
+	"dependencies": [
+		{
+			"uuid": "07f4ac65-145c-494e-b628-4c9474c31b3a",
+			"version": [ 1, 2, 0 ]
+		}
+	]
+}

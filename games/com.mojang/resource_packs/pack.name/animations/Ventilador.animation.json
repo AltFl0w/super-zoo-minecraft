@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.df_ventilador_fnaf2.base": {
+			"loop": true,
+			"animation_length": 0.36,
+			"bones": {
+				"Helices": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.36": [0, 0, 360]
+					}
+				}
+			}
+		}
+	}
+}

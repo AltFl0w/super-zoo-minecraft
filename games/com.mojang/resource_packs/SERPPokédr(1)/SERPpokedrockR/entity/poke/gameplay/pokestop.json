@@ -1,0 +1,28 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:poke_stop",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{
+        "default":"textures/entity/pokestop"
+      },
+      "geometry":{
+    "default":"geometry.pokestop"
+      },
+      "animations":{
+    "quiet":"animation.pokestop.quiet",
+    "activate":"animation.pokestop.activate"
+      },
+      "sound_effects":{
+    "open":"serp.open"
+      },
+      "scripts":{
+    "scale":"1.75",
+    "animate":["quiet",{"activate":"query.is_saddled"}]
+      },
+      "render_controllers":["controller.render.pokestop"],
+      "spawn_egg":{"texture":"pokeitems","texture_index":6}
+    }
+  }
+}

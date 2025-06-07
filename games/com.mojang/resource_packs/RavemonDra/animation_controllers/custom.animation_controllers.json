@@ -1,0 +1,127 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+	    "controller.animation.particle_effects": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"particle_effects": [
+						{
+							"effect": "particle"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.agni.breath" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shooting" : "query.variant == 1 && query.is_on_ground"
+						},
+						{
+							"shooting_fly" : "query.variant == 1 && !query.is_on_ground"
+						}
+					]
+				},
+				"shooting" : {
+					"animations" : [ "shoot" ],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				},
+				"shooting_fly" : {
+					"animations" : [ "shoot_flying" ],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ravemon.breath" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shooting" : "query.variant == 1"
+						}
+					]
+				},
+				"shooting" : {
+					"animations" : [ "shoot" ],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.ravemon.attack" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"is_attack" : "query.is_delayed_attacking"
+						}
+					]
+				},
+				"is_attack" : {
+					"animations" : [ "attack" ],
+					"transitions" : [
+						{
+							"default" : "query.all_animations_finished"
+						}
+					]
+				}
+			}
+		},
+		"controller.animation.agni.death" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"falling" : "!query.is_on_ground"
+						},
+						{
+							"death_set_position" : "query.is_on_ground"
+						}
+					]
+				},
+				"falling" : {
+					"animations" : [ "on_air" ],
+					"transitions" : [
+						{
+							"death_set_position" : "query.is_on_ground"
+						}
+					]
+				},
+				"death_set_position" : {
+					"animations" : [ "death_set" ],
+					"transitions" : [
+						{
+							"to_death_body" : "query.all_animations_finished"
+						}
+					]
+				},
+				"to_death_body" : {
+					"animations" : [ "death" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_on_ground"
+						}
+					]
+				}
+			}
+		}
+	}
+}

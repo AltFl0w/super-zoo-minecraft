@@ -1,0 +1,95 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:pc_box",
+      "is_spawnable": false,
+      "is_summonable": false,
+      "is_experimental": false
+		},
+    "component_groups": {
+	"serp:off": {
+		"minecraft:variant": {"value": 0}},
+	"serp:on": {
+		"minecraft:variant": {"value": 1}},
+      "serp:return": {
+    "minecraft:health": {
+    "value": 0,"min": 0 },
+    "minecraft:instant_despawn":{}
+      }
+    },
+    "components": {
+      "minecraft:is_stackable": {},
+      "minecraft:persistent": {},
+      "minecraft:inventory": {
+    "container_type": "container",
+    "additional_slots_per_strength": 12,
+    "inventory_size": 64,
+	"restrict_to_owner": true },
+        "minecraft:strength": {
+          "value": 10,
+          "max": 10
+        },
+        "minecraft:interact":{
+          "interactions": [
+{"on_interact":{"filters":{"all_of":[ {"test":"is_sneaking","subject":"other"},{"test":"is_owner","subject":"other"},{"test":"distance_to_nearest_player","operator":"<=","value": 5 }]},
+	"event":"serp:return","target":"self"},
+"add_items":{"table":"loot_tables/entities/000pc_box.json"},"interact_text": "structure_block.save"}]},
+      "minecraft:damage_sensor": {
+        "triggers":[{"on_damage":{"event":"serp:rotate"},"deals_damage":false}]},
+      "minecraft:scheduler": {
+        "scheduled_events": [
+{"filters":{"test":"distance_to_nearest_player","operator":">","value":5},
+"event":"serp:off"},
+{"filters":{"test":"distance_to_nearest_player","operator":"<=","value":5},
+"event":"serp:on"}
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 9999999999,
+        "suffocate_time": false
+      },
+      "minecraft:collision_box": {
+    "width": 0.6,"height": 1.98},
+      "minecraft:health": {
+    "value": 400000,"min": 4000000 },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+{"filters":{"test":"in_lava","subject": "self","operator":"==","value":true}, "cause": "lava","damage_per_tick": 0}]},
+      "minecraft:movement":{"value":0},
+	    "minecraft:physics":{},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+	  "minecraft:entity_transformed":{
+        "run_command":{
+    "command":["tp @s ~~~ 0"]}},
+	  "serp:on":{
+		"add": {
+	"component_groups":["serp:on"]},
+		"remove": {
+	"component_groups":["serp:off"]},
+		"run_command": {
+	"command":["tag @s add on","function spawn/team"]}
+	  },
+	  "serp:off":{
+		"add": {
+	"component_groups":["serp:off"]},
+		"remove": {
+	"component_groups":["serp:on"]},
+		"run_command": {
+	"command":["tag @s add off","function spawn/team"]}
+	  },
+	  "serp:rotate":{
+		"run_command": {
+    "command":["tp @s ~~0.2~~45~"]}
+	  },
+      "serp:return": {
+        "add": {
+    "component_groups": ["serp:return"]}}
+    }
+  }
+}

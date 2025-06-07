@@ -1,0 +1,250 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.gun.attachable.silencer_off": {
+			"loop": true,
+			"bones": {
+				"silencer_attachable": {
+					"scale": 0
+				},
+				"silencer": {
+					"scale": 0
+				},
+				"bayonet_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.flashlight_off": {
+			"loop": true,
+			"bones": {
+				"flashlight_attachable": {
+					"scale": 0
+				},
+				"flashlight": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.bayonet": {
+			"loop": true,
+			"bones": {
+				"bayonet": {
+					"scale": 0
+				},
+				"silencer_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.shotgun": {
+			"loop": true,
+			"bones": {
+				"m203_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.mira_off": {
+			"loop": true,
+			"bones": {
+				"mira_1_attachable": {
+					"scale": 0
+				},
+				"mira_at308": {
+					"scale": 0
+				},
+				"mira_1": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.eotech": {
+			"loop": true,
+			"bones": {
+				"mira_default_attachable": {
+					"scale": 0
+				},
+				"sniper_attachable": {
+					"scale": 0
+				},
+				"trs26_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.sniper": {
+			"loop": true,
+			"bones": {
+				"mira_default_attachable": {
+					"scale": 0
+				},
+				"eotech_attachable": {
+					"scale": 0
+				},
+				"trs26_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.trs26": {
+			"loop": true,
+			"bones": {
+				"mira_default_attachable": {
+					"scale": 0
+				},
+				"eotech_attachable": {
+					"scale": 0
+				},
+				"sniper_attachable": {
+					"scale": 0
+				},
+				"trs26_attachable": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.gun.attachable.laser.red": {
+			"loop": true,
+			"bones": {
+				"blue_laser": {
+					"scale": 0
+				},
+				"green_laser": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.laser.blue": {
+			"loop": true,
+			"bones": {
+				"green_laser": {
+					"scale": 0
+				},
+				"red_laser": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.laser.green": {
+			"loop": true,
+			"bones": {
+				"red_laser": {
+					"scale": 0
+				},
+				"blue_laser": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.flashlight": {
+			"loop": true
+		},
+		"animation.gun.attachable.silencer": {
+			"loop": true,
+			"bones": {
+				"bayonet_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.m203": {
+			"loop": true,
+			"bones": {
+				"shotgun_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.mira_on": {
+			"loop": true,
+			"bones": {
+				"iam_basic_attachable": {
+					"scale": 0
+				},
+				"mira_default_attachable": {
+					"scale": 0
+				},
+				"mira_at308": {
+					"position": [0, 0.5, 0],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.gun.attachable.bayonet_off": {
+			"loop": true,
+			"bones": {
+				"silencer_attachable": {
+					"scale": 0
+				},
+				"bayonet_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.m203_off": {
+			"loop": true,
+			"bones": {
+				"m203_attachable": {
+					"scale": 0
+				},
+				"m203": {
+					"scale": 0
+				},
+				"shotgun_attachable": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.idle": {
+			"loop": true,
+			"bones": {
+				"base_attachable": {
+					"rotation": [90, 0, 0],
+					"position": [0, 6, 0],
+					"scale": 0.65
+				},
+				"crossbow_attachable": {
+					"position": [0, 0.3, -2],
+					"scale": 0.75
+				},
+				"huecos_attachable": {
+					"position": [0, 0, 2.3],
+					"scale": 1.5
+				},
+				"rpg_misil_attachable": {
+					"scale": [1, 1, 0.75]
+				},
+				"double_gun_attachable": {
+					"rotation": [90, 0, 0],
+					"position": [0, 6, 0],
+					"scale": 0.65
+				},
+				"base_attachable2": {
+					"rotation": [90, 0, 0],
+					"position": [0, 6, 0],
+					"scale": 0.65
+				}
+			}
+		},
+		"animation.gun.attachable.laser": {
+			"loop": true
+		},
+		"animation.gun.attachable.sniper.sneaking": {
+			"loop": true,
+			"bones": {
+				"base_brazoes": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.gun.attachable.laser.off": {
+			"loop": true,
+			"bones": {
+				"laser": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

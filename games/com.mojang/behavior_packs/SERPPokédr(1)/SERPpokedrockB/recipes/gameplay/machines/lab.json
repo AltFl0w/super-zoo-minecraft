@@ -1,0 +1,32 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "serp:personal_lab"
+        },
+
+
+        "tags": [ "crafting_table" ],
+    "group": "poke_machines",
+    "pattern": [
+      "bbb",
+      "ggg",
+      "iii"
+    ],
+    "key": {
+      "b": {
+        "item": "minecraft:iron_block"
+      },
+      "g": {
+      "item": "minecraft:stained_glass",
+      "data": 13
+    },
+      "i": {
+        "item": "minecraft:iron_ingot"
+      }
+},
+        "result": {
+            "item": "serp:lab_spawn_spawn_egg"
+        }
+    }
+}

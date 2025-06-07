@@ -1,0 +1,23 @@
+{
+	"namespace": "start",
+
+	"danyfox_panel":{
+		"type": "stack_panel",
+		"orientation": "horizontal",
+		"controls": [
+			{"ico": {"type": "image","texture": "dany_fox","size": [25,25]}},
+			{"ver": {"type": "label","text": "§lFNaF 2"}},
+			{"ver2": {"type": "label","font_scale_factor": 0.5,"text": "v1.5"}}
+		]
+	},
+
+	"copyright@common_buttons.light_content_button": {
+		"anchor_from": "bottom_left",
+		"anchor_to": "bottom_left",
+		"size": [90,25],
+		"$pressed_button_name": "button.menu_buy_game",
+		"$button_content": "start.danyfox_panel",
+		"$default_button_alpha": 0.5,
+		"$default_hover_alpha": 0.5
+	}
+}

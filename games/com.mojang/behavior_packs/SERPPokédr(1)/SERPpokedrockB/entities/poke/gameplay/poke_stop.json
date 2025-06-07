@@ -1,0 +1,325 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "serp:poke_stop",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "runtime_identifier": "minecraft:shulker"
+        },
+        "components": {
+    "minecraft:physics": {},
+    "minecraft:scale": {"value":1},
+         "minecraft:collision_box": {
+            "height":1.3,
+            "width": 0.6
+         },
+      "minecraft:is_stackable": {},
+"minecraft:damage_sensor": {
+"triggers": [{"on_damage": {
+"filters":{ "test":"is_family","subject": "other", "value" :  "player" }},"deals_damage": false}]},
+          "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100
+      },
+        "minecraft:timer": {
+            "time": 1200,
+            "randomInterval": false,
+            "looping": true,
+            "time_down_event": {
+                "event": "serp:despawn",
+                "target": "self"
+            }
+        }
+    },
+    "component_groups": {
+    "serp:off": {
+        "minecraft:variant": {"value": 0},
+        "minecraft:timer": {
+            "time": 300,
+            "randomInterval": false,
+            "looping": false,
+            "time_down_event": {
+                "event": "serp:first",
+                "target": "self"
+            }
+        }
+    },
+            "serp:first": {
+        "minecraft:variant": {"value": 1},
+	"minecraft:interact": [
+                    {
+        "on_interact": {
+            "event": "serp:first_spawn",
+            "target": "self"
+        },
+        "swing": true,
+    "interact_text": "action.interact.opencontainer"
+          }
+        ],
+        "minecraft:timer": {
+            "time": 600,
+            "randomInterval": false,
+            "looping": false,
+            "time_down_event": {
+                "event": "serp:second",
+                "target": "self"
+          }
+        }
+      },
+            "serp:first_spawn": {
+        "minecraft:variant": {
+            "value": 2
+        },
+      "minecraft:spawn_entity": [
+        {
+          "min_wait_time": 0,
+          "max_wait_time": 0,
+          "spawn_entity": "serp:loot_bubble",
+          "spawn_event": "serp:first",
+          "single_use": true,
+          "num_to_spawn": 3,
+          "should_leash": false
+        }
+      ],
+        "minecraft:timer": {
+            "time": 2,
+            "randomInterval": false,
+            "looping": false,
+            "time_down_event": {
+                "event": "serp:reset",
+                "target": "self"
+          }
+        }
+      },
+            "serp:second": {
+        "minecraft:variant": {
+            "value": 1
+        },
+	"minecraft:interact": [
+                    {
+        "on_interact": {
+            "event": "serp:second_spawn",
+            "target": "self"
+        },
+        "swing": true,
+    "interact_text": "action.interact.opencontainer"
+          }
+        ],
+        "minecraft:timer": {
+            "time": 1200,
+            "randomInterval": false,
+            "looping": false,
+            "time_down_event": {
+                "event": "serp:third",
+                "target": "self"
+          }
+        }
+      },
+            "serp:second_spawn": {
+        "minecraft:variant": {
+            "value": 2
+        },
+      "minecraft:spawn_entity": [
+        {
+          "min_wait_time": 0,
+          "max_wait_time": 0,
+          "spawn_entity": "serp:loot_bubble",
+          "spawn_event": "serp:second",
+          "single_use": true,
+          "num_to_spawn": 7,
+          "should_leash": false
+        },
+        {
+          "min_wait_time": 0,
+          "max_wait_time": 0,
+          "spawn_entity": "serp:loot_bubble2",
+          "single_use": true,
+          "num_to_spawn": 1,
+          "should_leash": false
+        }
+      ],
+        "minecraft:timer": {
+            "time": 2,
+            "randomInterval": false,
+            "looping": false,
+            "time_down_event": {
+                "event": "serp:reset",
+                "target": "self"
+          }
+        }
+      },
+            "serp:third": {
+        "minecraft:variant": {
+            "value": 1
+        },
+	"minecraft:interact": [
+                    {
+        "on_interact": {
+            "event": "serp:third_spawn",
+            "target": "self"
+        },
+        "swing": true,
+    "interact_text": "action.interact.opencontainer"
+          }
+        ]
+      },
+            "serp:third_spawn": {
+        "minecraft:variant": {
+            "value": 2
+        },
+      "minecraft:spawn_entity": [
+        {
+          "min_wait_time": 0,
+          "max_wait_time": 0,
+          "spawn_entity": "serp:loot_bubble",
+          "spawn_event": "serp:third",
+          "single_use": true,
+          "num_to_spawn": 15,
+          "should_leash": false
+        },
+        {
+          "min_wait_time": 0,
+          "max_wait_time": 0,
+          "spawn_entity": "serp:loot_bubble2",
+          "single_use": true,
+          "num_to_spawn": 1,
+          "should_leash": false
+        }
+      ],
+        "minecraft:timer": {
+            "time": 2,
+            "randomInterval": false,
+            "looping": false,
+            "time_down_event": {
+                "event": "serp:reset",
+                "target": "self"
+          }
+        }
+      },
+      "serp:despawn": {
+      "minecraft:despawn": {}
+      }
+    },
+    "events": {
+        "minecraft:entity_spawned": {
+        "add": {
+          "component_groups" : [
+              "serp:third"
+                ]
+            }
+        },
+    "serp:first": {
+        "remove": {
+            "component_groups": [
+                "serp:off"
+                    ]
+                },
+        "add": {
+            "component_groups": [
+                "serp:first"
+                    ]
+                }
+            },
+    "serp:first_spawn": {
+        "add": {
+            "component_groups": [
+                "serp:first_spawn"
+                    ]
+                }
+            },
+    "serp:second": {
+        "remove": {
+            "component_groups": [
+                "serp:first"
+                    ]
+                },
+        "add": {
+            "component_groups": [
+                "serp:second"
+                    ]
+                }
+            },
+    "serp:second_spawn": {
+        "add": {
+            "component_groups": [
+                "serp:second_spawn"
+                    ]
+                }
+            },
+    "serp:third": {
+        "remove": {
+            "component_groups": [
+                "serp:second"
+                    ]
+                },
+        "add": {
+            "component_groups": [
+                "serp:third"
+                    ]
+                }
+            },
+    "serp:third_spawn": {
+        "add": {
+            "component_groups": [
+                "serp:third_spawn"
+                    ]
+                }
+            },
+    "serp:despawn": {
+        "randomize": [
+         {
+            "weight": 5,
+        "add": {
+          "component_groups": [
+            "serp:despawn"
+            ]
+          }
+        },
+        {
+            "weight": 1,
+        "add": {
+          "component_groups": [
+            "empty"
+            ]
+          }
+        }
+      ]
+    },
+    "serp:reset": {
+        "randomize": [
+         {
+        "weight": 4,
+        "add": {
+          "component_groups": [
+            "serp:off"
+            ]
+          },
+    "remove": {
+        "component_groups": [
+            "serp:first",
+            "serp:second",
+            "serp:third",
+            "serp:first_spawn",
+            "serp:second_spawn",
+            "serp:third_spawn"
+            ]
+          }
+        },
+        {
+            "weight": 1,
+        "add": {
+          "component_groups": [
+            "serp:despawn"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  }
+}

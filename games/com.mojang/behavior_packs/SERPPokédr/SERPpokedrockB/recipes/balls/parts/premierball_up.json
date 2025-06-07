@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:premierball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "aaa",
+      "aaa"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_white"
+      }
+    },
+    "result": {
+      "item": "serp:premierball_up",
+      "count": 6
+    }
+  }
+}

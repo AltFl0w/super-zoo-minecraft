@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:pizza_colgante2",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_pizza2"
+      },
+      "geometry": {
+        "default": "geometry.df_pizza2_fnaf2"
+      },
+      "animations": {
+        "df_pizza_colgante": "animation.df_pizza.pared"
+  
+      },
+      "scripts": {
+        "animate": [
+         "df_pizza_colgante"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_pizza_colgante2",
+        "texture_index": 0
+      }
+    }
+  }
+}

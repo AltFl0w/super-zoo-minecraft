@@ -1,0 +1,179 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bugatti_cen.turning": {
+			"loop": true,
+			"bones": {
+				"Steeringwheel": {
+					"rotation": [
+						0,
+						0,
+						"math.max(-30,math.min(30,query.yaw_speed*0.5))*-1"
+					]
+				},
+				"Wheel1": {
+					"rotation": [
+						0,
+						"math.max(-26,math.min(26,query.yaw_speed*0.5))*1",
+						0
+					]
+				},
+				"Wheel2": {
+					"rotation": [
+						0,
+						"math.max(-26,math.min(26,query.yaw_speed*0.5))*1",
+						0
+					]
+				},
+				"Car": {
+					"rotation": [
+						"query.vertical_speed*-1",
+						0,
+						0
+					]
+				}
+			}
+		},
+		"animation.bugatti_cen.drive": {
+			"loop": true,
+			"animation_length": 0.1667,
+			"bones": {
+				"Wheel1": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.1667": [
+							180,
+							0,
+							0
+						]
+					}
+				},
+				"Wheel2": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.1667": [
+							180,
+							0,
+							0
+						]
+					}
+				},
+				"Wheel3": {
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.1667": [
+							180,
+							0,
+							0
+						]
+					}
+				}
+			}
+		},
+		"animation.bugatti_cen.door": {
+			"loop": true,
+			"bones": {
+				"Door1": {
+					"rotation": [
+						0,
+						-45,
+						0
+					]
+				},
+				"Door2": {
+					"rotation": [
+						0,
+						45,
+						0
+					]
+				}
+			}
+		},
+		"animation.bugatti_cen.open": {
+			"bones": {
+				"Door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							-45,
+							0
+						],
+						"0.56": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"Door2": {
+					"rotation": {
+						"0.0": [
+							0,
+							45,
+							0
+						],
+						"0.56": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "open"
+				}
+			}
+		},
+		"animation.bugatti_cen.close": {
+			"bones": {
+				"Door1": {
+					"rotation": {
+						"0.0": [
+							0,
+							45,
+							0
+						],
+						"0.56": [
+							0,
+							0,
+							0
+						]
+					}
+				},
+				"Door2": {
+					"rotation": {
+						"0.0": [
+							0,
+							-45,
+							0
+						],
+						"0.56": [
+							0,
+							0,
+							0
+						]
+					}
+				}
+			},
+			"sound_effects": {
+				"0.0": {
+					"effect": "close"
+				}
+			}
+		}
+	}
+}

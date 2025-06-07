@@ -1,0 +1,30 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:rotomarket",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{"default":"textures/entity/rotomarket"},
+      "geometry":{"default":"geometry.serprotomarket"},
+      "animations":{
+    "eyes_controller":"controller.animation.eyes",
+    "open":"animation.serpmob.open",
+    "close":"animation.serpmob.close",
+    "root":"controller.animation.pokemon_ground",
+    "quiet":"animation.rotomarket.quiet",
+    "walk":"animation.rotomarket.walk",
+    "sit":"animation.rotomarket.quiet",
+    "attack":"animation.rotomarket.quiet",
+    "attack2":"animation.rotomarket.quiet",
+    "look_at_target":"animation.common.look_at_target"
+    },
+      "scripts":{
+        "animate":["root","eyes_controller","look_at_target"]
+      },
+      "sound_effects":{
+        "on":"mob.pc.boot_on"
+      },
+      "render_controllers":["controller.render.default"]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.lightning_sword": {
+			"geometry": "Geometry.lightning_sword",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.lightning_sword"
+			]
+		}
+	}
+}

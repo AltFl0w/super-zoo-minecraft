@@ -1,0 +1,86 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 3}],
+    "wants": [{"item": "serp:potion"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 5}],
+    "wants": [{"item": "serp:super_potion"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 10}],
+    "wants": [{"item": "serp:hyper_potion"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 15}],
+    "wants": [{"item": "serp:max_potion"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 8}],
+    "wants": [{"item": "serp:fresh_water"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 10}],
+    "wants": [{"item": "serp:soda_pop"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 12}],
+    "wants": [{"item": "serp:lemonade"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 12}],
+    "wants": [{"item": "serp:revive"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 25}],
+    "wants": [{"item": "serp:x_factor"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 25}],
+    "wants": [{"item": "serp:y_factor"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 15}],
+    "wants": [{"item": "serp:clothing_ticket"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 25}],
+    "wants": [{"item": "serp:bike_pass"}],
+        "max_uses": 256
+        },
+        {
+    "gives": [{"item": "serp:poke",
+    "quantity": 25}],
+    "wants": [{"item": "serp:ride_pass"}],
+        "max_uses": 256
+        }
+      ]
+    }
+  ]
+}

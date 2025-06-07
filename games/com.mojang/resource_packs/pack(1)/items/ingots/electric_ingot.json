@@ -1,0 +1,16 @@
+{
+	"format_version": 1.1,
+	"minecraft:item": {
+		"description": {
+			"identifier": "wep:electric_ingot"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.iron"
+			},
+			"minecraft:icon": "electric_ingot",
+			"minecraft:render_offsets": "ingots",
+			"minecraft:display_name": {}
+		}
+	}
+}

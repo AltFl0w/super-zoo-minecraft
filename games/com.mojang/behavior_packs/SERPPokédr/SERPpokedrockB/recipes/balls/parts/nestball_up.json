@@ -1,0 +1,27 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:nestball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "yyy",
+      "yvy"
+    ],
+    "key": {
+      "y": {
+        "item": "serp:apricorn_yellow"
+      },
+      "v": {
+        "item": "serp:apricorn_green"
+      }
+    },
+    "result": {
+      "item": "serp:nestball_up",
+      "count": 6
+    }
+  }
+}

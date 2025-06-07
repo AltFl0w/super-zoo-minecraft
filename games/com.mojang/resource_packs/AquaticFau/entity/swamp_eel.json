@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.swamp_eel"
+      },
+      "identifier": "fauna:swamp_eel",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "swamp_eel",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/fish/swamp_eel"
+      },
+      "animations": {
+        "idle": "animation.swamp.idle",
+        "swim": "animation.swamp.swim",
+        "walk": "animation.swamp.walk",
+        "move": "controller.animation.ancientfish.move"
+      }
+    }
+  }
+}

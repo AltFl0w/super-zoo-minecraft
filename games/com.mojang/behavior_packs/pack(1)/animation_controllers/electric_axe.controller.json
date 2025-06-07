@@ -1,0 +1,27 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.electric_axe": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'electric_axe' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'electric_axe' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'electric_axe'"
+						}
+					],
+					"on_entry": [
+						"/execute @e[type=!item,type=!lightning_bolt,tag=!electric_axe,r=6,c=3] ~~~ summon lightning_bolt ~~~",
+						"/execute @e[type=!item,tag=!electric_axe,r=6,c=3] ~~~ summon wep:snap_orb ~~~"
+					]
+				}
+			}
+		}
+	}
+}

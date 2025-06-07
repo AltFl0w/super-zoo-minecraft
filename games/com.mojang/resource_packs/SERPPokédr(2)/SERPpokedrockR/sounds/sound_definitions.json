@@ -1,0 +1,68 @@
+{
+  "serp.mega": {
+    "category": "neutral",
+    "sounds": [{"name":"sounds/serp/effects/mega","stream": true,"volume": 1,"load_on_low_memory":true}]},
+
+  "serp.slot.clap": {
+    "category": "neutral",
+    "sounds": [{"name":"sounds/serp/effects/slot_clap","volume": 0.1,"load_on_low_memory":true}]},
+
+  "welcome.music": {
+    "category": "neutral",
+    "min_distance": 0,
+    "max_distance": 10.5,
+"sounds": [{"name":"sounds/serp/effects/welcome","stream": true,"volume":0.3,"load_on_low_memory": true}]},
+
+  "center.music": {
+    "category": "neutral",
+    "min_distance": 0,
+    "max_distance": 10.5,
+"sounds": [{"name":"sounds/serp/effects/center","stream": true,"volume":0.3,"load_on_low_memory": true}]},
+
+  "mob.zombie.remedy":{"category":"neutral", "min_distance":8.0,"max_distance":8.0, "sounds":[{"name":"sounds/serp/effects/heal", "volume": 0.4,"load_on_low_memory": true}]},
+
+  "serp.market.trade":{"category": "neutral", "min_distance":8.0,"max_distance":8.0, "sounds":[{"name":"sounds/serp/rotomarket/market_trading","volume":1,"load_on_low_memory": true}]},
+
+  "serp.market.say":{"category": "neutral", "min_distance":8.0,"max_distance":8.0, "sounds":[{"name":"sounds/serp/rotomarket/say","volume":0.2,"load_on_low_memory": true}]},
+
+  "serp.market.spawn":{"category": "neutral", "min_distance":8.0,"max_distance":8.0, "sounds":[{"name":"sounds/serp/rotomarket/spawn","volume":1,"load_on_low_memory": true}]},
+
+  "serp.market.store":{"category": "neutral", "min_distance":8.0,"max_distance":8.0, "sounds":[{"name":"sounds/serp/rotomarket/store","volume":1,"load_on_low_memory": true}]},
+
+  "serp.apricorn.wiggle":{"category": "neutral", "sounds":[{"name":"sounds/serp/effects/apricorn_wiggle","volume":1, "load_on_low_memory": true}]},
+
+  "serp.tree.shake":{"category": "neutral", "sounds":[{"name":"sounds/serp/effects/berry_tree_shake","volume":1.2, "load_on_low_memory": true}]},
+
+  "serp.pokedex":{"category": "neutral", "min_distance":8.0,"max_distance":8.0,"sounds":[{"name":"sounds/serp/effects/pokedex", "volume":2.5,"load_on_low_memory": true}]},
+
+  "serp.open":{"category":"neutral", "min_distance":8.0,"max_distance":8.0, "sounds":[{"name":"sounds/serp/effects/open", "volume": 1,"load_on_low_memory":true}]},
+
+  "serp.bike_bell":{"category":"neutral", "min_distance":8.0,"max_distance":8.0, "sounds":[{"name":"sounds/serp/effects/bike_bell","volume": 1.2,"load_on_low_memory":true}]},
+
+  "mob.bike.wheel":{"category":"neutral", "sounds":[{"name":"sounds/serp/effects/bike_wheel","volume": 0.3, "load_on_low_memory":true}]},
+ 
+  "camera.take_picture":{"category": "neutral","min_distance":8.0,"max_distance":8.0,"sounds":[{"name":"sounds/serp/ball/defeat","volume":0.8,"load_on_low_memory":true}]},
+
+  "serp.pokeball.throw":{"category": "neutral","sounds":[{"name": "sounds/serp/ball/throw","volume":0.25,"pitch": 1}]},
+ 
+  "serp.pokeball.pop":{"category": "neutral","sounds":[{"name": "sounds/serp/ball/pop","volume":0.4,"pitch": 0.5}]},
+  
+  "serp.pokeball.wiggle":{"category": "neutral","sounds":[{"name":"sounds/serp/ball/wiggle","volume":0.4,"load_on_low_memory": true}]},
+  
+  "serp.pokeball.catch":{"category":"neutral","sounds":[{"name":"sounds/serp/ball/catch","pitch":1.5,"load_on_low_memory":true}]},
+
+  "serp.pokeball.free":{"category": "neutral","sounds":[{"name": "sounds/serp/ball/free","volume":1.3,"pitch": 1}]},
+
+  "serp.pokeball.enter":{"category": "neutral","sounds":[{"name": "sounds/serp/ball/enter","volume":1.3,"pitch": 1}]},
+
+
+  "serp.pokeball.capture":{"category": "neutral","min_distance":8.0,"max_distance": 8.0,"sounds": [{"name":"sounds/serp/ball/capture","volume": 0.3,"load_on_low_memory": true}]},
+  
+  "mob.pc.boot_on": {"category": "neutral","sounds": ["sounds/serp/poke/boot_on"]},
+  
+  "mob.pc.boot_off":{"category": "neutral","sounds":["sounds/serp/poke/boot_off"]},
+  
+  "serp.lab.working":{"category": "neutral","volume": 0.3,"sounds": ["sounds/step/ladder1","sounds/step/ladder2","sounds/step/ladder3","sounds/step/ladder4"]},
+
+  "mob.berry_tree.item":{"category": "neutral","min_distance":8.0,"max_distance":8.0,"sounds":[{"name":"sounds/serp/poke/find_item","volume": 0.3,"load_on_low_memory":true}]}
+}

@@ -1,0 +1,39 @@
+{
+	"format_version": "1.10.0",
+	"geometry.scope": {
+		"texturewidth": 128,
+		"textureheight": 128,
+		"visible_bounds_width": 4,
+		"visible_bounds_height": 4,
+		"visible_bounds_offset": [0, 2, 0],
+		"bones": [
+			{
+				"name": "root",
+				"pivot": [0, 0, 0]
+			},
+			{
+				"name": "waist",
+				"parent": "root",
+				"pivot": [0, 12, 0]
+			},
+			{
+				"name": "body",
+				"parent": "waist",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "head",
+				"parent": "body",
+				"pivot": [0, 24, 0]
+			},
+			{
+				"name": "crosshair",
+				"parent": "head",
+				"pivot": [0, 28, -13],
+				"cubes": [
+					{"origin": [-19.95, 11.5, -11], "size": [40, 32, 0], "uv": [0, 0]}
+				]
+			}
+		]
+	}
+}

@@ -1,0 +1,247 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.machoke.quiet": {
+			"loop": true,
+			"bones": {
+				"machoke": {
+					"position": [0, -2.2, 3]
+				},
+				"head": {
+					"position": [0, "-0.5+(Math.cos(q.anim_time*180)*-0.5)", "-2+(Math.cos(q.anim_time*180)*-1)"]
+				},
+				"body": {
+					"rotation": ["10+(Math.cos(q.anim_time*180)*5)", 0, 0]
+				},
+				"arms": {
+					"position": [0, 0, "-1+(Math.cos(q.anim_time*180)*-1)"]
+				},
+				"right_arm": {
+					"rotation": [25, "-25+(Math.cos(q.anim_time*180)*10)", -45]
+				},
+				"right_hand": {
+					"rotation": [0, -45, 0]
+				},
+				"left_arm": {
+					"rotation": [25, "25+(Math.cos(q.anim_time*180)*-10)", 45]
+				},
+				"left_hand": {
+					"rotation": [0, 45, 0]
+				},
+				"right_leg": {
+					"rotation": [-35, 25, 0]
+				},
+				"right_foot": {
+					"rotation": [35, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [-35, -25, 0]
+				},
+				"left_foot": {
+					"rotation": [35, 0, 0]
+				}
+			}
+		},
+		"animation.machoke.walk": {
+			"loop": true,
+			"bones": {
+				"machoke": {
+					"position": [0, "-1+(Math.cos(q.anim_time*720)*-0.5)", 3]
+				},
+				"head": {
+					"position": [0, "-0.5+(Math.cos(q.anim_time*720)*-0.5)", "-2+(Math.cos(q.anim_time*720)*-1)"]
+				},
+				"body": {
+					"rotation": ["10+(Math.cos(q.anim_time*720)*5)", 0, 0]
+				},
+				"arms": {
+					"position": [0, 0, "-1+(Math.cos(q.anim_time*720)*-1)"]
+				},
+				"right_arm": {
+					"rotation": [25, "Math.cos(q.anim_time*360)*35", -45]
+				},
+				"right_hand": {
+					"rotation": [0, -45, 0]
+				},
+				"left_arm": {
+					"rotation": [25, "Math.cos(q.anim_time*360)*35", 45]
+				},
+				"left_hand": {
+					"rotation": [0, 45, 0]
+				},
+				"right_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*-35", 0, 0]
+				},
+				"right_foot": {
+					"rotation": ["15+(Math.cos(q.anim_time*360)*-15)", 0, 0]
+				},
+				"left_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*35", 0, 0]
+				},
+				"left_foot": {
+					"rotation": ["15+(Math.cos(q.anim_time*360)*15)", 0, 0]
+				}
+			}
+		},
+		"animation.machoke.sitting": {
+			"loop": true,
+			"bones": {
+				"machoke": {
+					"position": [0, -6.7, 3]
+				},
+				"head": {
+					"position": [0, -1.5, -5.5]
+				},
+				"body": {
+					"rotation": [20, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [60, -35, -70],
+					"position": [-2, -1, -4]
+				},
+				"right_hand": {
+					"rotation": [0, -20, 0]
+				},
+				"left_arm": {
+					"rotation": [40, 10, 65],
+					"position": [0, 0, -2]
+				},
+				"left_hand": {
+					"rotation": [0, 55, 0]
+				},
+				"right_leg": {
+					"rotation": [-120, 0, 0],
+					"position": [-1, -2, 0]
+				},
+				"right_foot": {
+					"rotation": [120, 0, 0],
+					"position": [0, 0, 3.75]
+				},
+				"left_leg": {
+					"rotation": [-20, 0, 0],
+					"position": [1, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [135, 0, 0],
+					"position": [0, 0, 3.75]
+				}
+			}
+		},
+		"animation.machoke.attack": {
+			"loop": true,
+			"bones": {
+				"machoke": {
+					"position": [0, -0.75, 0]
+				},
+				"head": {
+					"position": [1, -1.5, -5]
+				},
+				"body": {
+					"rotation": [20, -15, 0]
+				},
+				"right_arm": {
+					"rotation": [0, -65, 0],
+					"position": [0, -1, -4]
+				},
+				"right_hand": {
+					"rotation": [0, -25, 0]
+				},
+				"left_arm": {
+					"rotation": [0, -30, 45],
+					"position": [1, 1, -2]
+				},
+				"left_hand": {
+					"rotation": [0, 45, 0]
+				},
+				"right_leg": {
+					"rotation": [-15, 15, 0]
+				},
+				"right_foot": {
+					"rotation": [15, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [25, -15, -20]
+				},
+				"left_foot": {
+					"rotation": [30, 0, 0]
+				}
+			}
+		},
+		"animation.machoke.attack2": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [-1, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 15, -5]
+				},
+				"right_arm": {
+					"rotation": [0, 20, -50],
+					"position": [0, 0, 1]
+				},
+				"right_hand": {
+					"rotation": [0, -30, 0]
+				},
+				"left_arm": {
+					"rotation": [-155, 20, -80],
+					"position": [1, 0, -1]
+				},
+				"left_hand": {
+					"rotation": [0, 25, 0]
+				},
+				"right_leg": {
+					"rotation": [0, 45, 0],
+					"position": [0, 0, 1]
+				},
+				"left_leg": {
+					"position": [0, 0, -0.5]
+				}
+			}
+		},
+		"animation.machoke.defeated": {
+			"loop": true,
+			"bones": {
+				"machoke": {
+					"position": [0, -6.7, 3]
+				},
+				"head": {
+					"position": [0, -1.5, -5.5]
+				},
+				"body": {
+					"rotation": [20, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [60, -35, -70],
+					"position": [-2, -1, -4]
+				},
+				"right_hand": {
+					"rotation": [0, -20, 0]
+				},
+				"left_arm": {
+					"rotation": [40, 10, 65],
+					"position": [0, 0, -2]
+				},
+				"left_hand": {
+					"rotation": [0, 15, 0]
+				},
+				"right_leg": {
+					"rotation": [-120, 0, 0],
+					"position": [-1, -2, 0]
+				},
+				"right_foot": {
+					"rotation": [120, 0, 0],
+					"position": [0, 0, 3.75]
+				},
+				"left_leg": {
+					"rotation": [-20, 0, 0],
+					"position": [1, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [135, 0, 0],
+					"position": [0, 0, 3.75]
+				}
+			}
+		}
+	}
+}

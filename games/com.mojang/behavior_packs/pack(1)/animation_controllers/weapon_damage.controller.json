@@ -1,0 +1,538 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.weapon_damage": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"burning_double_axe": "query.get_equipped_item_name('main_hand') == 'burning_double_axe'"
+						},
+						{
+							"fiery_sword": "query.get_equipped_item_name('main_hand') == 'fiery_sword'"
+						},
+						{
+							"lava_sword": "query.get_equipped_item_name('main_hand') == 'lava_sword'"
+						},
+						{
+							"magma_greatsword": "query.get_equipped_item_name('main_hand') == 'magma_greatsword'"
+						},
+						{
+							"meteorite_sword": "query.get_equipped_item_name('main_hand') == 'meteorite_sword'"
+						},
+						{
+							"air_sword": "query.get_equipped_item_name('main_hand') == 'air_sword'"
+						},
+						{
+							"windy_double_sword": "query.get_equipped_item_name('main_hand') == 'windy_double_sword'"
+						},
+						{
+							"windy_greataxe": "query.get_equipped_item_name('main_hand') == 'windy_greataxe'"
+						},
+						{
+							"tornado_sword": "query.get_equipped_item_name('main_hand') == 'tornado_sword'"
+						},
+						{
+							"throwing_axe": "query.get_equipped_item_name('main_hand') == 'throwing_axe'"
+						},
+						{
+							"void_sword": "query.get_equipped_item_name('main_hand') == 'void_sword'"
+						},
+						{
+							"battle_void_axe": "query.get_equipped_item_name('main_hand') == 'battle_void_axe'"
+						},
+						{
+							"short_shadow_sword": "query.get_equipped_item_name('main_hand') == 'short_shadow_sword'"
+						},
+						{
+							"dark_broadsword": "query.get_equipped_item_name('main_hand') == 'dark_broadsword'"
+						},
+						{
+							"storm_sword": "query.get_equipped_item_name('main_hand') == 'storm_sword'"
+						},
+						{
+							"water_axe": "query.get_equipped_item_name('main_hand') == 'water_axe'"
+						},
+						{
+							"water_greatsword": "query.get_equipped_item_name('main_hand') == 'water_greatsword'"
+						},
+						{
+							"geyser_axe": "query.get_equipped_item_name('main_hand') == 'geyser_axe'"
+						},
+						{
+							"boulder_axe": "query.get_equipped_item_name('main_hand') == 'boulder_axe'"
+						},
+						{
+							"rocky_greatsword": "query.get_equipped_item_name('main_hand') == 'rocky_greatsword'"
+						},
+						{
+							"ground_axe": "query.get_equipped_item_name('main_hand') == 'ground_axe'"
+						},
+						{
+							"rockfall_axe": "query.get_equipped_item_name('main_hand') == 'rockfall_axe'"
+						},
+						{
+							"snap_sword": "query.get_equipped_item_name('main_hand') == 'snap_sword'"
+						},
+						{
+							"electric_axe": "query.get_equipped_item_name('main_hand') == 'electric_axe'"
+						},
+						{
+							"lightning_sword": "query.get_equipped_item_name('main_hand') == 'lightning_sword'"
+						},
+						{
+							"bolt_sword": "query.get_equipped_item_name('main_hand') == 'bolt_sword'"
+						},
+						{
+							"poison_sword": "query.get_equipped_item_name('main_hand') == 'poison_sword'"
+						},
+						{
+							"poisonous_axe": "query.get_equipped_item_name('main_hand') == 'poisonous_axe'"
+						},
+						{
+							"poisonous_hammer_axe": "query.get_equipped_item_name('main_hand') == 'poisonous_hammer_axe'"
+						},
+						{
+							"frost_sword": "query.get_equipped_item_name('main_hand') == 'frost_sword'"
+						},
+						{
+							"ice_battleaxe": "query.get_equipped_item_name('main_hand') == 'ice_battleaxe'"
+						},
+						{
+							"icicle_sword": "query.get_equipped_item_name('main_hand') == 'icicle_sword'"
+						},
+						{
+							"reverse_sword": "query.get_equipped_item_name('main_hand') == 'reverse_sword'"
+						},
+						{
+							"timelapse_axe": "query.get_equipped_item_name('main_hand') == 'timelapse_axe'"
+						},
+						{
+							"fast_sword": "query.get_equipped_item_name('main_hand') == 'fast_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_unequip_weapon"
+					]
+				},
+				"burning_double_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'burning_double_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_burning_double_axe_equipped"
+					]
+				},
+				"fiery_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'fiery_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_fiery_sword_equipped",
+						"/tag @s add fiery_sword"
+					],
+					"on_exit": [
+						"/tag @s remove fiery_sword"
+					]
+				},
+				"lava_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'lava_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_lava_sword_equipped"
+					]
+				},
+				"magma_greatsword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'magma_greatsword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_magma_greatsword_equipped"
+					]
+				},
+				"meteorite_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'meteorite_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_meteorite_sword_equipped",
+						"/tag @s add meteorite_sword"
+					],
+					"on_exit": [
+						"/tag @s remove meteorite_sword"
+					]
+				},
+				"air_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'air_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_air_sword_equipped"
+					]
+				},
+				"windy_double_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'windy_double_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_windy_double_sword_equipped"
+					]
+				},
+				"windy_greataxe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'windy_greataxe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_windy_greataxe_equipped"
+					]
+				},
+				"tornado_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'tornado_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_tornado_sword_equipped",
+						"/tag @s add tornado_sword"
+					],
+					"on_exit": [
+						"/tag @s remove tornado_sword"
+					]
+				},
+				"throwing_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'throwing_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_throwing_axe_equipped"
+					]
+				},
+				"void_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'void_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_void_sword_equipped"
+					]
+				},
+				"battle_void_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'battle_void_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_battle_void_axe_equipped",
+						"/tag @s add battle_void_axe"
+					],
+					"on_exit": [
+						"/tag @s remove battle_void_axe"
+					]
+				},
+				"short_shadow_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'short_shadow_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_short_shadow_sword_equipped"
+					],
+					"on_exit": [
+						"/effect @s clear"
+					]
+				},
+				"dark_broadsword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'dark_broadsword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_dark_broadsword_equipped"
+					]
+				},
+				"storm_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'storm_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_storm_sword_equipped",
+						"/tag @s add storm_sword"
+					],
+					"on_exit": [
+						"/tag @s remove storm_sword"
+					]
+				},
+				"water_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'water_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_water_axe_equipped"
+					]
+				},
+				"water_greatsword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'water_greatsword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_water_greatsword_equipped",
+						"/tag @s add water_greatsword"
+					],
+					"on_exit": [
+						"/tag @s remove water_greatsword"
+					]
+				},
+				"geyser_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'geyser_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_geyser_axe_equipped",
+						"/tag @s add geyser_axe"
+					],
+					"on_exit": [
+						"/tag @s remove geyser_axe"
+					]
+				},
+				"boulder_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'boulder_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_boulder_axe_equipped"
+					]
+				},
+				"rocky_greatsword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'rocky_greatsword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_rocky_greatsword_equipped"
+					]
+				},
+				"ground_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'ground_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_ground_axe_equipped"
+					]
+				},
+				"rockfall_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'rockfall_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_rockfall_axe_equipped"
+					]
+				},
+				"snap_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'snap_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_snap_sword_equipped",
+						"/tag @s add snap_sword"
+					],
+					"on_exit": [
+						"/tag @s remove snap_sword"
+					]
+				},
+				"electric_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'electric_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_electric_axe_equipped",
+						"/tag @s add electric_axe"
+					],
+					"on_exit": [
+						"/tag @s remove electric_axe"
+					]
+				},
+				"lightning_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'lightning_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_lightning_sword_equipped"
+					]
+				},
+				"bolt_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'bolt_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_bolt_sword_equipped"
+					]
+				},
+				"poison_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'poison_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_poison_sword_equipped",
+						"/tag @s add poison_sword"
+					],
+					"on_exit": [
+						"/tag @s remove poison_sword"
+					]
+				},
+				"poisonous_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'poisonous_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_poisonous_axe_equipped",
+						"/tag @s add poisonous_axe"
+					],
+					"on_exit": [
+						"/tag @s remove poisonous_axe"
+					]
+				},
+				"poisonous_hammer_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'poisonous_hammer_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_poisonous_hammer_axe_equipped",
+						"/tag @s add poisonous_hammer_axe"
+					],
+					"on_exit": [
+						"/tag @s remove poisonous_hammer_axe"
+					]
+				},
+				"frost_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'frost_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_frost_sword_equipped",
+						"/tag @s add frost_sword"
+					],
+					"on_exit": [
+						"/tag @s remove frost_sword"
+					]
+				},
+				"ice_battleaxe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'ice_battleaxe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_ice_battleaxe_equipped",
+						"/tag @s add ice_battleaxe"
+					],
+					"on_exit": [
+						"/tag @s remove ice_battleaxe"
+					]
+				},
+				"icicle_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'icicle_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_icicle_sword_equipped"
+					]
+				},
+				"reverse_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'reverse_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_reverse_sword_equipped"
+					]
+				},
+				"timelapse_axe": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'timelapse_axe'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_timelapse_axe_equipped",
+						"/tag @s add timelapse_axe"
+					],
+					"on_exit": [
+						"/tag @s remove timelapse_axe"
+					]
+				},
+				"fast_sword": {
+					"transitions": [
+						{
+							"default": "query.get_equipped_item_name('main_hand') != 'fast_sword'"
+						}
+					],
+					"on_entry": [
+						"@s wep:on_fast_sword_equipped"
+					],
+					"on_exit": [
+						"/effect @s clear"
+					]
+				}
+			}
+		}
+	}
+}

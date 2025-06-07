@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.magma_greatsword": {
+			"geometry": "Geometry.magma_greatsword",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.magma_greatsword"
+			]
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+  "pools":[
+	  {
+      "rolls":1,
+      "entries":[
+{"type":"item","name":"serp:articuno_feather"},
+{"type":"item","name":"serp:zapdos_feather"},
+{"type":"item","name":"serp:moltres_feather"},
+{"type":"item","name":"serp:mew_dna"},
+{"type":"item","name":"serp:raikou_lock"},
+{"type":"item","name":"serp:entei_lock"},
+{"type":"item","name":"serp:suicune_lock"},
+{"type":"item","name":"serp:kyogre_fang"},
+{"type":"item","name":"serp:groudon_claw"},
+{"type":"item","name":"serp:rayquaza_scale"},
+{"type":"item","name":"serp:blue_ribbon"},
+{"type":"item","name":"serp:deoxys_virus"}
+      ]
+    }
+  ]
+}

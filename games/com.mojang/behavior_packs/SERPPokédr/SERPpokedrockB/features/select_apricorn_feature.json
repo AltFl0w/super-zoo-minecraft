@@ -1,0 +1,19 @@
+{
+  "format_version":"1.13.0",
+  "minecraft:weighted_random_feature":{
+    "description":{
+      "identifier":"serp:select_apricorn_feature"
+    },
+    "features":[
+      ["serp:black_apricorn_feature",1],
+      ["serp:blue_apricorn_feature",1],
+      ["serp:cyan_apricorn_feature",1],
+      ["serp:green_apricorn_feature",1],
+      ["serp:orange_apricorn_feature",1],
+      ["serp:pink_apricorn_feature",1],
+      ["serp:red_apricorn_feature",1],
+      ["serp:white_apricorn_feature",1],
+      ["serp:yellow_apricorn_feature",1]
+    ]
+  }
+}

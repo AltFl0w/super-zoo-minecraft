@@ -1,0 +1,22 @@
+{
+  "pools": [
+      {
+            "rolls": 1,
+            "entries": [
+                {
+    "type": "item",
+    "name": "serp:gravelers"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+    "type": "item",
+    "name": "serp:candy_bowl"
+                }
+            ]
+        }
+    ]
+}

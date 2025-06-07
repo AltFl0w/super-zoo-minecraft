@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:hombres_de_papel",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_hombre_de_papel"
+      },
+      "geometry": {
+        "default": "geometry.df_hombres_de_papel"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_hombres_de_papel",
+        "texture_index": 0
+      }
+    }
+  }
+}

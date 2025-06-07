@@ -1,0 +1,16 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:key_table",
+      "materials": { "default": "entity_alphatest" },
+      "textures": {
+        "default": "textures/entity/key_table"
+      },
+      "geometry": {
+        "default": "geometry.key_table"
+      },
+      "render_controllers": [ "controller.render.serp_general" ]
+    }
+  }
+}

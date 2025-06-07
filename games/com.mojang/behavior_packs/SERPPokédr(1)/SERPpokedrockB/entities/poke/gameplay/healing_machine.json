@@ -1,0 +1,77 @@
+{
+  "format_version": "1.13.0", 
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:healing_machine",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+	    "serp:from_player": {
+	"minecraft:skin_id":{"value":1}
+	},
+        "serp:using": {
+    "minecraft:is_saddled":{},
+        "minecraft:timer": {
+    "time":2.1,"randomInterval":false,
+    "looping":false,"time_down_event":{
+    "event":"serp:reset","target": "self"}}
+    },
+        "serp:return": {
+"minecraft:health":{"value":0,"max":0},
+        "minecraft:despawn": {}}
+    },
+    "components": {
+"minecraft:type_family":{"family":["serp"]},
+      "minecraft:is_charged": {},
+        "minecraft:interact": {
+          "interactions": [
+{"on_interact": {"filters":{"all_of":[{ "test":"is_sneaking","subject":"other"},{"test":"is_skin_id","value":1}]},
+"event":"serp:return","target":"self" },"add_items":{"table": "loot_tables/entities/000healing_machine.json" },"interact_text": "structure_block.save"
+            },
+{"on_interact":{"filters":{"test":"is_family","subject":"other","value":"player"},"event":"serp:using","target":"self"},"swing":true,"cooldown":2.1,"play_sounds":"remedy","interact_text":"action.interact.cure"}
+            ]
+        },
+      "minecraft:knockback_resistance": { "value": 100 },
+      "minecraft:is_stackable": {},
+       "minecraft:scale": {"value": 1.0},
+      "minecraft:damage_sensor": {
+"triggers":[{"on_damage":{"filters":{"test":"is_family","subject":"other","value":"player"},"event":"serp:rotate"},"deals_damage":false}]},
+      "minecraft:breathable": {
+        "total_supply": 150,
+        "suffocate_time": 0
+      },
+    "minecraft:collision_box": {"width": 0.7, "height": 1 },
+    "minecraft:health":{"value":10,"max":10},
+    "minecraft:hurt_on_condition":{
+"damage_conditions":[{"filters":{"test":"in_lava","subject":"self","operator":"==","value":true},"cause":"lava","damage_per_tick":0}]},
+      "minecraft:movement": {"value": 0},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+
+    "events": {
+		"serp:using": {
+        "sequence":[
+{"add":{"component_groups":["serp:using"]}},
+{"run_command":{"command":["function heal1","function heal2","function heal3","function heal4","function heal5","function heal6","function heal7","function heal8","function heal9","function healzar"]
+          }
+        }
+      ]
+    },
+    "serp:from_player": {
+    "add":{"component_groups": ["serp:from_player"]}},
+	  "serp:rotate":{
+	"run_command":{"command":["tp @s ~~0.2~~45~"]}
+	  },
+      "serp:return": {
+    "add":{"component_groups":["serp:return"]}},
+      "serp:reset": {
+    "remove":{"component_groups":["serp:using"]}}
+    }
+  }
+}

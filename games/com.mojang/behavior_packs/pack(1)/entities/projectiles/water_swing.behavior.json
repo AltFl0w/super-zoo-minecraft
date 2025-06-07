@@ -1,0 +1,87 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:water_swing",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"wep:knockback": {
+				"minecraft:behavior.knockback_roar": {
+					"attack_time": 0.1,
+					"cooldown_time": 0.2,
+					"duration": 0.2,
+					"priority": 0,
+					"knockback_damage": 7,
+					"knockback_strength": 6,
+					"knockback_range": 4,
+					"knockback_filters": {
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "other",
+								"operator": "not",
+								"value": "water_greatsword"
+							}
+						]
+					},
+					"damage_filters": {
+						"all_of": [
+							{
+								"test": "has_tag",
+								"subject": "other",
+								"operator": "not",
+								"value": "water_greatsword"
+							}
+						]
+					},
+					"on_roar_end": {
+						"event": "wep:on_despawn"
+					}
+				}
+			},
+			"wep:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"despawns"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"trigger": "wep:on_knockback"
+			},
+			"wep:on_knockback": {
+				"add": {
+					"component_groups": [
+						"wep:knockback"
+					]
+				}
+			},
+			"wep:on_despawn": {
+				"add": {
+					"component_groups": [
+						"wep:despawn"
+					]
+				}
+			}
+		}
+	}
+}

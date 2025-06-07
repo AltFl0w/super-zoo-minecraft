@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:diveball_up",
+      "category": "Equipment"
+    },
+    
+    "components": {
+      "minecraft:icon": "diveball_up"
+    }
+  }
+}

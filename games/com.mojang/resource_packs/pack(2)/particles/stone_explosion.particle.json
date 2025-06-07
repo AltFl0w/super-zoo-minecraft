@@ -1,0 +1,47 @@
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "nw:stone_explosion",
+			"basic_render_parameters": {
+				"material": "particles_alpha",
+				"texture": "textures/particle/stone_attack"
+			}
+		},
+		"components": {
+			"minecraft:emitter_rate_steady": {
+				"spawn_rate": 1500,
+				"max_particles": 2000
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 0.1
+			},
+			"minecraft:emitter_shape_point": {},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": "variable.particle_random_1*2"
+			},
+			"minecraft:particle_initial_speed": "math.random(36,42)",
+			"minecraft:particle_motion_dynamic": {
+				"linear_acceleration": [0, -20, 0],
+				"linear_drag_coefficient": "math.random(8,12)"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [0.1, 0.1],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 3,
+					"texture_height": 3,
+					"uv": [0, 0],
+					"uv_size": [3, 3]
+				}
+			},
+			"minecraft:particle_motion_collision": {
+				"collision_drag": 1,
+				"collision_radius": 0.1
+			},
+			"minecraft:particle_appearance_tinting": {
+				"color": [0.38039, 0.38039, 0.38039, 1]
+			}
+		}
+	}
+}

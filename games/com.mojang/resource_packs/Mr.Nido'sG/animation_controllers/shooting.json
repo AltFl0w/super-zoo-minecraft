@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.target_shooting.shoot" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"shoot" : "q.mark_variant == 1"
+						}
+					],"blend_transition":0.1
+				},
+				"shoot" : {
+					"animations" : [ "shoot" ],
+					"transitions" : [
+						{
+							"default" : "q.mark_variant == 0"
+						}
+					],"blend_transition":0.25
+				}
+			}
+		}
+	}
+}

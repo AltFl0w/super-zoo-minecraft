@@ -1,0 +1,16 @@
+{
+  "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+{"type":"item","name":"minecraft:egg","functions":[{"function":"set_count","count":3}]}
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+{"type":"item","name":"minecraft:log","functions":[{"function":"set_count","count":2},{"function":"set_data","data":3}]}
+            ]
+        }
+    ]
+}

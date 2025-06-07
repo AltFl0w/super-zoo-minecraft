@@ -1,0 +1,52 @@
+{
+	"format_version": 2,
+	"header": {
+		"description": "pack.description",
+		"name": "§2SERP §ePokédrock §4B",
+		"uuid": "807bf5b4-6ecd-4b36-9265-0db03b5816fe",
+		"version": [1,0,14],
+		"min_engine_version": [1,13,0]
+	},
+	"modules": [
+		{
+		"description": "pack.description",
+		"type": "data",
+		"uuid": "55bd5a8e-7268-48a9-9c77-fab5128ad4aa",
+		"version": [1,0,14]
+		},
+		{
+		"type": "script",
+		"language": "javascript",
+		"uuid": "1485f315-23a2-4e3a-af73-f687c0fc5c64",
+		"entry": "scripts/pokedex.js",
+		"version": [1,0,0]
+		}
+	],
+	"dependencies": [
+		{
+		"uuid": "b26a4d4c-afdf-4690-88f8-931846312678",
+		"version": [0,1,0]
+		},
+		{
+		"uuid": "6f4b6893-1bb6-42fd-b458-7fa3d0c89616",
+		"version": [0,1,0]
+		},
+		{
+		"uuid": "2bd50a27-ab5f-4f40-a596-3641627c635e",
+		"version": [0,1,0]
+		}
+	],
+    "subpacks": [
+    	{
+   	"name": "Add Vanilla mobs",
+    	"folder_name": "add",
+    	"memory_tier": 2
+    	},
+    	{
+   	"name": "Remove Vanilla mobs",
+    	"folder_name": "remove",
+    	"memory_tier": 2
+    	}
+    ]
+
+}

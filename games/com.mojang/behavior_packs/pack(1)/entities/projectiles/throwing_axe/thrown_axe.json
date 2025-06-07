@@ -1,0 +1,87 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:thrown_axe",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball"
+		},
+		"component_groups": {
+			"minecraft:return": {
+				"minecraft:transformation": {
+					"into": "wep:returning_axe"
+				}
+			}
+		},
+		"components": {
+			"minecraft:collision_box": {
+				"width": 0.4,
+				"height": 0.4
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"randomInterval": false,
+				"time": 1,
+				"time_down_event": {
+					"event": "minecraft:event_return"
+				}
+			},
+			"minecraft:health": {
+				"value": 1000
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 5,
+						"knockback": true,
+						"semirandomdiffdamage": false
+					},
+					"definition_event": {
+						"affectProjectile": true,
+						"eventTrigger": {
+							"event": "minecraft:event_return",
+							"target": "self"
+						}
+					}
+				},
+				"power": 1.2,
+				"gravity": 0,
+				"angle_offset": 0,
+				"inertia": 1,
+				"liquid_inertia": 1
+			},
+			"minecraft:physics": {},
+			"minecraft:area_attack": {
+				"damage_range": 0.7,
+				"damage_per_tick": 2,
+				"entity_filter": {
+					"none_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						}
+					]
+				}
+			}
+		},
+		"events": {
+			"minecraft:event_return": {
+				"add": {
+					"component_groups": [
+						"minecraft:return"
+					]
+				}
+			}
+		}
+	}
+}

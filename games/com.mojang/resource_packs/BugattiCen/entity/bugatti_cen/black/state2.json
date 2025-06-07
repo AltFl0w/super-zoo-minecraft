@@ -1,0 +1,38 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "bugatti:centodieci_black_2",
+			"materials": {
+				"default": "entity_emissive_alpha"
+			},
+			"textures": {
+				"default": "textures/entity/bugatti_cen/black"
+			},
+			"geometry": {
+				"default": "geometry.bugatti_cen_2"
+			},
+			"render_controllers": [
+				"controller.render.bugatti_cen"
+			],
+			"animations": {
+				"drive": "animation.bugatti_cen.drive",
+				"turning": "animation.bugatti_cen.turning",
+				"door": "animation.bugatti_cen.door",
+				"open": "animation.bugatti_cen.open"
+			},
+			"sound_effects": {
+				"open": "vehicle.bugatti_cen.dooropen"
+			},
+			"spawn_egg": {
+				"texture": "bugatti_cen_black_item",
+				"texture_index": 0
+			},
+			"animation_controllers": [
+				{
+					"general": "controller.animation.bugatti_cen.general2"
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:bike",
+      "materials": { 
+          "default": "entity_emissive_alpha"
+          },
+      "textures": {
+        "default": "textures/entity/pokebike"
+      },
+      "geometry": {
+        "default": "geometry.serpbike"
+      },
+      "animations": {
+    "walk": "animation.serpbike.walk",
+    "direction": "animation.bike.direction"
+      },
+      "scripts": {
+        "animate": [
+		{
+		"walk" : "query.is_moving"
+		},
+        "direction"
+        ]
+      },
+      "sound_effects": {
+        "wheel": "mob.bike.wheel"
+      },
+      "render_controllers": [ "controller.render.serp_general" ],
+      "spawn_egg": {
+          "texture": "pokeitems",
+        "texture_index": 13
+      }
+    }
+  }
+}

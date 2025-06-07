@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:timerball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "nan",
+      "nbn"
+    ],
+    "key": {
+      "a": {
+        "item": "serp:apricorn_black"
+      },
+      "b": {
+        "item": "serp:apricorn_white"
+      },
+      "n": {
+        "item": "serp:apricorn_orange"
+      }
+    },
+    "result": {
+      "item": "serp:timerball_up",
+      "count": 6
+    }
+  }
+}

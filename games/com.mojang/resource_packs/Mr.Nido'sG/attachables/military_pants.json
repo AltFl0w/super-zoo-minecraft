@@ -1,0 +1,20 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:attachable": {
+		"description": { 
+			"identifier": "gunsaddon:military_pants",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/suits/military_pants"
+			},
+			"geometry": {
+				"default": "geometry.military_pants"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

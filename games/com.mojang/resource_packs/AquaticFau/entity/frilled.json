@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.frilled"
+      },
+      "identifier": "fauna:frilled",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "render_controllers": [
+        "controller.render.salmon"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "frilled",
+        "texture_index": 0
+      },
+      "textures": {
+        "default": "textures/entity/shark/frilled"
+      },
+      "animations": {
+        "attack": "animation.frilled.attack",
+        "idle": "animation.frilled.flop",
+        "swim": "animation.frilled.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

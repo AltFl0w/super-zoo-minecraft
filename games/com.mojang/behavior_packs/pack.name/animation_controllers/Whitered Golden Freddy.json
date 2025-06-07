@@ -1,0 +1,51 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.Withered_Golden_Freddy.efecto": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "efecto": "query.has_target"
+                        }, {
+                            "sin_efecto": "!query.has_target"
+                        }
+                    ]
+                },
+                "efecto": {
+                    "transitions": [{
+                            "default": "!query.has_target"
+                        }
+                    ],
+                    "on_entry": [
+                        "/stopsound @a ambiente.presion",
+                        "/weather thunder",
+                        "/execute @e[type=df:withered_golden_freddy] ~ ~ ~ effect @e[r=40,type=!df:withered_golden_freddy] blindness 3 2 true",
+                        "/execute @e[type=df:withered_golden_freddy] ~ ~ ~ effect @e[r=40,type=!df:withered_golden_freddy] nausea 30 2 true",
+                        "/execute @e[type=df:withered_golden_freddy] ~ ~ ~ effect @e[r=40,type=!df:withered_golden_freddy] slowness 30 2 true",
+                        "/execute @e[type=df:withered_golden_freddy,r=10] ~ ~ ~ title @a times 1 20 5",
+                        "/execute @e[type=df:withered_golden_freddy,r=10] ~ ~ ~ title @a title it´s me",
+                        "/execute @e[type=df:withered_golden_freddy,r=10] ~ ~ ~ gamemode s @a",
+                        "/execute @e[type=df:withered_golden_freddy,r=10] ~ ~ ~ playsound ScareScrape @a",
+                        "/execute @e[type=df:withered_golden_freddy,r=10] ~ ~ ~ playsound ambiente.presion @a"
+                    ]
+                },
+				"sin_efecto": {
+                    "transitions": [{
+                            "default": "query.has_target"
+                        }
+                    ],
+					"on_entry": [
+                        "/stopsound @a ambiente.presion",
+                        "/weather clear",
+                        "/execute @e[type=df:withered_golden_freddy,r=10] ~ ~ ~ title @a times 1 3 1",
+                        "/execute @e[type=df:withered_golden_freddy] ~ ~ ~ effect @e[r=30,type=!df:withered_golden_freddy] slowness 0 0 true",
+                        "/execute @e[type=df:withered_golden_freddy] ~ ~ ~ effect @e[r=20,type=!df:withered_golden_freddy] blindness 0 0 true",
+                        "/execute @e[type=df:withered_golden_freddy] ~ ~ ~ effect @e[r=10,type=!df:withered_golden_freddy] nausea 0 0 true",
+                        "/gamerule sendcommandfeedback false",
+                        "/gamerule commandblockoutput false"
+                    ]
+                }
+            }
+        }
+    }
+}

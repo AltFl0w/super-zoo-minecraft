@@ -1,0 +1,33 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "ravemon:amethyst_breath",
+			"materials": {
+				"default": "snowball"
+			},
+			"textures": {
+				"default": "textures/particle/amethyst"
+			},
+			"geometry": {
+				"default": "geometry.item_sprite"
+			},
+			"render_controllers": [
+				"controller.render.item_sprite"
+			],
+			"animations": {
+				"default": "controller.animation.particle_effects",
+				"flying": "animation.actor.billboard"
+			},
+			"scripts": {
+				"animate": [
+					"default",
+					"flying"
+				]
+			},
+			"particle_effects": {
+				"particle": "ravemon:amethyst_breath"
+			}
+		}
+	}
+}

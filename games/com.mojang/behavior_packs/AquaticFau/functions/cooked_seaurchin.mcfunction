@@ -1,0 +1,1 @@
+give @s fauna:cooked_sea_urchin

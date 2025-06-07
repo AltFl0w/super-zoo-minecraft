@@ -1,0 +1,31 @@
+{
+  "pools": [
+      {
+            "rolls": 1,
+            "entries": [
+                {
+    "type": "item",
+    "name": "serp:mega_ring_empty"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+    "type": "item",
+    "name": "serp:key_stone"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+    "type": "item",
+    "name": "serp:x_factor"
+                }
+            ]
+        }
+    ]
+}

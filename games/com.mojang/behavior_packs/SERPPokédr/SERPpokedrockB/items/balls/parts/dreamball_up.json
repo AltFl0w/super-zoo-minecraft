@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:dreamball_up",
+      "menu_category":{"group":"itemGroup.name.arrow","category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:dreamball_up.name"},
+      "minecraft:icon":"dreamball_up"
+    }
+  }
+}

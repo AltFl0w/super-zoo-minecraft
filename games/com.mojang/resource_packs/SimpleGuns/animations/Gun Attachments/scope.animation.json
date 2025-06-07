@@ -1,0 +1,33 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.scope.default": {
+			"loop": true,
+			"bones": {
+				"gun": {
+					"position": [0, 0, 0]
+				}
+			}
+		},
+		"animation.scope.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [90, 57.5, -45],
+					"position": [-1, 26, 5],
+					"scale": 1.4
+				}
+			}
+		},
+		"animation.scope.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"root": {
+					"rotation": [90, 0, -22.5],
+					"position": [0, 19, -1],
+					"scale": 0.9
+				}
+			}
+		}
+	}
+}

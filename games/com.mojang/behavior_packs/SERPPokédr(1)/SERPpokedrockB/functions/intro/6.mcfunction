@@ -1,0 +1,1 @@
+tellraw @s {"rawtext":[{"translate":"serp.intro6"}]}

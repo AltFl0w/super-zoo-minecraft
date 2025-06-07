@@ -1,0 +1,128 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.micro_uzi.shoot.explosive": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.01": [
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.micro_uzi @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.micro_uzi @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			"/event entity @s guns:micro_uzi.explosive",
+			"/function micro_uzi/micro_uzi",
+			"/scoreboard players remove @s micro_uzi 1"
+        ]
+      }
+    },
+    "animation.micro_uzi.shoot.fire": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.01": [
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.micro_uzi @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.micro_uzi @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			"/event entity @s guns:micro_uzi.fire",
+			"/function micro_uzi/micro_uzi",
+			"/scoreboard players remove @s micro_uzi 1"
+        ]
+      }
+    },
+    "animation.micro_uzi.shoot": {
+      "loop": true,
+      "animation_length": 0.1,
+      "timeline": {
+        "0.01": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.micro_uzi @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.micro_uzi @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:micro_uzi",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:micro_uzi",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:micro_uzi_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:micro_uzi_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:micro_uzi_silenciador",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:micro_uzi_silenciador_laser",
+			
+			"/function micro_uzi/micro_uzi",
+			"/scoreboard players remove @s micro_uzi 1"
+        ]
+      }
+    },
+    "animation.micro_uzi.apuntar.shoot": {
+      "loop": true,
+      "animation_length": 0.2,
+      "timeline": {
+        "0.01": [
+			//DefaultShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=0}] run playsound gun.micro_uzi @a[r=25]",
+			"/execute if entity @s[has_property={nido:item.attachments.3=2}] run playsound gun.micro_uzi @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:micro_uzi_apuntar",
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:micro_uzi_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=0}] guns:micro_uzi_apuntar_laser",
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=2}] guns:micro_uzi_apuntar_laser",
+			//SilencerShoot
+			"/execute if entity @s[has_property={nido:item.attachments.3=1}] run playsound gun.silencer_shoot @a[r=25]",
+			//Normal
+			"/execute if entity @s[has_property={nido:item.attachments.2=0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:micro_uzi_silenciador_apuntar",
+			//Laser
+			"/execute if entity @s[has_property={nido:item.attachments.2=!0}] run event entity @s[has_property={nido:item.attachments.3=1}] guns:micro_uzi_silenciador_apuntar_laser",
+			
+			"/function micro_uzi/micro_uzi",
+			"/scoreboard players remove @s micro_uzi 1"
+        ]
+      }
+    },
+    "animation.micro_uzi.shotgun.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.shotgun_reload @a[r=25]"
+        ],
+        "1.85": [
+			"/event entity @s guns:reload.off",
+			"/function micro_uzi/micro_uzi_shotgun_reload"
+        ]
+      }
+    },
+    "animation.micro_uzi.m203.reload": {
+      "loop": false,
+      "animation_length": 2.0,
+      "timeline": {
+        "0.0": [
+			"/playsound gun.m203_reload @a[r=25]"
+        ],
+        "1.85": [
+			"/event entity @s guns:reload.off",
+			"/function micro_uzi/micro_uzi_m203_reload"
+        ]
+      }
+    },
+    "animation.micro_uzi.reload": {
+      "loop": false,
+      "animation_length": 2.5,
+      "timeline": {
+        "0.0": [
+			"/scoreboard players set @s micro_uzi_fire 0", "/scoreboard players set @s micro_uzi_explosive 0"
+        ],
+        "0.25": [
+			"/playsound gun.micro_uzi_reload @a[r=25]"
+        ],
+        "2.4": [
+			"/scoreboard players set @s micro_uzi 20",
+			"/event entity @s guns:reload.off",
+			"/clear @s gunsaddon:micro_uzi_ammo 0 1"
+        ]
+      }
+    }
+  }
+}

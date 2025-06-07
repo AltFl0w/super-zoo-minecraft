@@ -1,0 +1,263 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.magneton.quiet": {
+			"loop": true,
+			"animation_length": 1.2,
+			"bones": {
+				"magneton": {
+					"position": {
+						"0.0": [0, 1, 0],
+						"0.3": [0, 2, 0],
+						"0.6": [0, 1, 0],
+						"0.9": [0, 2, 0],
+						"1.2": [0, 1, 0]
+					}
+				},
+				"screw1": {
+					"position": {
+						"0.0": [0, -1, 0],
+						"0.6": [0, 0, 0],
+						"1.2": [0, -1, 0]
+					}
+				},
+				"screw2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.6": [1, 0, 1],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"screw4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.6": [1, 0, 1],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"screw6": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.6": [1, 0, 1],
+						"1.2": [0, 0, 0]
+					}
+				},
+				"screw3": {
+					"position": {
+						"0.0": [-1, 0, 1],
+						"0.6": [0, 0, 0],
+						"1.2": [-1, 0, 1]
+					}
+				},
+				"screw5": {
+					"position": {
+						"0.0": [-1, 0, 1],
+						"0.6": [0, 0, 0],
+						"1.2": [-1, 0, 1]
+					}
+				},
+				"screw7": {
+					"position": {
+						"0.0": [-1, 0, 1],
+						"0.6": [0, 0, 0],
+						"1.2": [-1, 0, 1]
+					}
+				},
+				"right_magnet": {
+					"rotation": {
+						"0.0": [0, 0, -15],
+						"0.7": [360, 0, 30],
+						"1.2": [360, 0, -15]
+					}
+				},
+				"right_magnet2": {
+					"rotation": {
+						"0.0": [0, 0, -15],
+						"0.7": [360, 0, 30],
+						"1.2": [360, 0, -15]
+					}
+				},
+				"right_magnet3": {
+					"rotation": {
+						"0.0": [0, 0, -15],
+						"0.7": [360, 0, 30],
+						"1.2": [360, 0, -15]
+					}
+				},
+				"left_magnet": {
+					"rotation": {
+						"0.0": [0, 0, 15],
+						"0.7": [360, 0, -30],
+						"1.2": [360, 0, 15]
+					}
+				},
+				"left_magnet2": {
+					"rotation": {
+						"0.0": [0, 0, 15],
+						"0.7": [360, 0, -30],
+						"1.2": [360, 0, 15]
+					}
+				},
+				"left_magnet3": {
+					"rotation": {
+						"0.0": [0, 0, 15],
+						"0.7": [360, 0, -30],
+						"1.2": [360, 0, 15]
+					}
+				}
+			}
+		},
+		"animation.magneton.walk": {
+			"loop": true,
+			"animation_length": 0.6,
+			"bones": {
+				"magneton": {
+					"rotation": {
+						"0.0": [25, 0, 0],
+						"0.2": [35, 0, 0],
+						"0.6": [25, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 3, 0],
+						"0.3": [0, 2, 0],
+						"0.6": [0, 3, 0]
+					}
+				},
+				"right_magnet": {
+					"rotation": {
+						"0.0": [-45, 45, -55],
+						"0.4": [-75, 30, -70],
+						"0.6": [-45, 45, -55]
+					}
+				},
+				"left_magnet": {
+					"rotation": {
+						"0.0": [-45, -45, 55],
+						"0.4": [-75, -30, 70],
+						"0.6": [-45, -45, 55]
+					}
+				},
+				"right_magnet2": {
+					"rotation": {
+						"0.0": [-45, 45, -55],
+						"0.4": [-75, 30, -70],
+						"0.6": [-45, 45, -55]
+					}
+				},
+				"left_magnet2": {
+					"rotation": {
+						"0.0": [-45, -45, 55],
+						"0.4": [-75, -30, 70],
+						"0.6": [-45, -45, 55]
+					},
+					"position": [0, 0, 1]
+				},
+				"right_magnet3": {
+					"rotation": {
+						"0.0": [-45, -45, 55],
+						"0.4": [-75, -30, 70],
+						"0.6": [-45, -45, 55]
+					}
+				},
+				"left_magnet3": {
+					"rotation": {
+						"0.0": [-45, 45, -55],
+						"0.4": [-75, 30, -70],
+						"0.6": [-45, 45, -55]
+					},
+					"position": [0, 0, -2]
+				}
+			}
+		},
+		"animation.magneton.sitting": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"rotation": [-25, 0, 25],
+					"position": [-1, 1, -1]
+				},
+				"right_magnet": {
+					"rotation": [-95, 55, -25],
+					"position": [-1, -3, -5]
+				},
+				"left_magnet": {
+					"rotation": [-95, 50, 25],
+					"position": [0, -3, 0]
+				},
+				"right_magnet2": {
+					"rotation": [-90, 55, -25],
+					"position": [0, -4, 2]
+				},
+				"left_magnet2": {
+					"rotation": [-25, 0, 0],
+					"position": [-1, -2, 4]
+				},
+				"right_magnet3": {
+					"rotation": [-90, 0, 25],
+					"position": [-4, -4, 5]
+				},
+				"left_magnet3": {
+					"rotation": [-90, 0, 0],
+					"position": [7, -3, 11]
+				}
+			}
+		},
+		"animation.magneton.attack": {
+			"loop": true,
+			"bones": {
+				"magneton": {
+					"rotation": [40, 0, 0],
+					"position": [0, 4, 0]
+				},
+				"right_magnet": {
+					"rotation": [-80, -30, 75],
+					"position": [0, 1, -2]
+				},
+				"left_magnet": {
+					"rotation": [-80, 30, -75],
+					"position": [0, 1, -2]
+				},
+				"right_magnet2": {
+					"rotation": [-80, -30, 75],
+					"position": [0, 1, -2]
+				},
+				"left_magnet2": {
+					"rotation": [-80, 30, -75],
+					"position": [0, 1, -2]
+				},
+				"right_magnet3": {
+					"rotation": [-80, 30, -75],
+					"position": [0, 1, -2]
+				},
+				"left_magnet3": {
+					"rotation": [-80, -30, 75],
+					"position": [0, 1, -2]
+				}
+			}
+		},
+		"animation.magneton.direction": {
+			"loop": true,
+			"bones": {
+				"magneton": {
+					"rotation": [ "query.vertical_speed * -3.0", 0, "-math.max(-20,math.min(20,query.yaw_speed))"]
+				}
+			}
+		},
+        "animation.magneton.health_bar":{
+            "loop":true,
+            "bones":{
+                "health_hover":{
+    "rotation":["q.camera_rotation(0)","q.camera_rotation(1)-q.body_y_rotation",0],
+	"position": [0,26,0],
+    "scale":"query.is_in_ui?0:1.5"
+                },
+				"bar_green": {
+					"scale": ["query.health/query.max_health*1", 1, 1]
+				},
+				"bar_black": {
+					"scale": ["(1)+(query.health/query.max_health*-1)", 1, 1]
+				}
+			}
+        }
+	}
+}

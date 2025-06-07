@@ -1,0 +1,30 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "gunsaddon:explosive_ammo_box0"
+      },
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+        "CCC",
+		"BBB",
+        "AAA"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:iron_ingot"
+        },
+        "B": {
+          "item": "minecraft:gunpowder"
+        },
+        "C": {
+          "item": "minecraft:tnt"
+        }
+      },
+      "result": {
+        "item": "gunsaddon:explosive_ammo_box0",
+        "count": 1
+      }
+    }
+  }

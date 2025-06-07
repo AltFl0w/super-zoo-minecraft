@@ -1,0 +1,32 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "serp:block_setter",
+            "is_spawnable": false,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+        "minecraft:instant_despawn": {}
+    },
+        "events": {
+    "minecraft:entity_spawned": {
+        "sequence": [
+{"filters":{"test":"is_biome","value":"desert"},
+"run_command":{
+"command":["setblock~~~serp:wish_ore_block"]}
+          },
+{"filters":{"test":"is_underground"},
+"randomize": [
+{"run_command":{
+"command":["setblock~~~serp:poke_ore_block"]}},
+{"run_command":{
+"command":["setblock~~~serp:key_ore_block"]}}
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

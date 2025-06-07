@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:full_restore",
+	    "menu_category":{"group":"itemGroup.name.potion","category":"equipment"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:full_restore.name"},
+      "minecraft:icon":"full_restore"
+    }
+  }
+}

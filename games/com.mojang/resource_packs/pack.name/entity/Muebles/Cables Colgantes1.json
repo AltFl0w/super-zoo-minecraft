@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:cables_colgantes1",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_cables_colgantes_fnaf2"
+      },
+      "geometry": {
+        "default": "geometry.df_cables_colgantes1_fnaf2"
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_cables_colgantes1_fnaf2",
+        "texture_index": 0
+      }
+    }
+  }
+}

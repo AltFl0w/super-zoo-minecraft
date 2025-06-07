@@ -1,0 +1,149 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:void_ball",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball",
+			"animations": {
+				"effect": "controller.animation.void_sword.effect"
+			},
+			"scripts": {
+				"animate": [
+					"effect"
+				]
+			}
+		},
+		"component_groups": {
+			"wep:despawning": {
+				"minecraft:timer": {
+					"looping": false,
+					"time": 1,
+					"time_down_event": {
+						"event": "wep:on_despawn"
+					}
+				}
+			},
+			"wep:despawn": {
+				"minecraft:instant_despawn": {}
+			},
+			"wep:cast": {
+				"minecraft:is_ignited": {}
+			},
+			"wep:explode": {
+				"minecraft:explode": {
+					"fuse_length": -1,
+					"fuse_lit": true,
+					"power": 2,
+					"causes_fire": false,
+					"destroy_affected_by_griefing": true
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"despawns"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0.4,
+				"height": 0.4
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": 10,
+				"time_down_event": {
+					"event": "wep:on_despawning"
+				}
+			},
+			"minecraft:physics": {
+				"has_gravity": false,
+				"has_collision": true
+			},
+			"minecraft:fire_immune": true,
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 0,
+						"knockback": true
+					},
+					"stick_in_ground": {
+						"shake_time": 0.5
+					}
+				},
+				"power": 2,
+				"gravity": 0.03,
+				"angle_offset": 0
+			},
+			"minecraft:knockback_resistance": {
+				"value": 999
+			},
+			"minecraft:pushable": {
+				"is_pushable": false
+			},
+			"minecraft:entity_sensor": {
+				"sensor_range": 2,
+				"event_filters": {
+					"all_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "mob"
+						}
+					]
+				},
+				"event": "wep:on_explode",
+				"require_all": false,
+				"relative_range": false
+			}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+				"randomize": [
+					{
+						"weight": 20,
+						"add": {
+							"component_groups": [
+								"wep:cast"
+							]
+						}
+					},
+					{
+						"weight": 80
+					}
+				]
+			},
+			"wep:on_despawning": {
+				"add": {
+					"component_groups": [
+						"wep:despawning"
+					]
+				}
+			},
+			"wep:on_despawn": {
+				"add": {
+					"component_groups": [
+						"wep:despawn"
+					]
+				}
+			},
+			"wep:on_explode": {
+				"add": {
+					"component_groups": [
+						"wep:explode"
+					]
+				}
+			}
+		}
+	}
+}

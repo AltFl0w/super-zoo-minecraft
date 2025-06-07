@@ -1,0 +1,57 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+        "identifier": "serp:rotomarket_spawned",
+        "materials": {
+            "default": "entity_emissive_alpha"
+        },
+      "textures": {            
+"default":"textures/entity/market/default",
+"potions":"textures/entity/market/potions",
+"pokeballs":"textures/entity/market/pokeballs",
+"stuff":"textures/entity/market/stuff",
+"suits":"textures/entity/market/suits"
+      },
+        "geometry": {
+            "default": "geometry.serppc"
+        },
+      "animations": {
+    "spawn": "animation.pc.spawn",
+    "quiet": "animation.pc.quiet",
+    "walk": "animation.pc.walk",
+    "say": "animation.pc.say",
+    "pokedex_controller": "controller.animation.pokedex",
+    "say_controller": "controller.animation.rotomarket_dialog",
+    "look_at_player": "animation.common.look_at_target" 
+      },
+      "scripts": {
+        "animate": [
+          "say_controller",
+          "pokedex_controller",
+          "look_at_player",
+          "spawn",
+          "quiet",
+		  {
+	"walk": "query.modified_move_speed"
+		  }
+        ]
+      },
+      "sound_effects": {
+        "say": "serp.market.say"
+      },
+      "particle_effects": {
+        "pokedex": "serp:rotomarket",
+        "say1": "serp:say1",
+        "say2": "serp:say2",
+        "say3": "serp:say3",
+        "say4": "serp:say4",
+        "say5": "serp:say5",
+        "say6": "serp:say6",
+        "say7": "serp:say7",
+        "say8": "serp:say8",
+        "say9": "serp:say9"            },
+        "render_controllers": [ "controller.render.pc" ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.df_endo02_estanteria_fnaf2": {
+      "geometry": "Geometry.df_endo02_estanteria_fnaf2",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.df_endo02_estanteria_fnaf2" ]
+    }
+  }
+}

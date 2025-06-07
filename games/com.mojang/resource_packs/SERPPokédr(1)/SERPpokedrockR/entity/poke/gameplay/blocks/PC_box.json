@@ -1,0 +1,26 @@
+{
+  "format_version":"1.10.0",
+  "minecraft:client_entity":{
+    "description":{
+      "identifier":"serp:pc_box",
+      "materials":{"default":"entity_emissive_alpha"},
+      "textures":{
+    "on":"textures/entity/pc_box/on",
+    "off":"textures/entity/pc_box/off"
+      },
+      "geometry":{
+    "default":"geometry.serppc_box"
+      },
+      "animations":{
+    "on":"animation.serppc_box.wake",
+    "off":"animation.serppc_box.sleep",
+    "serp_pc":"controller.animation.serp_pc",
+    "icon":"animation.serppc_box.icon"
+      },
+      "scripts":{
+    "animate":["serp_pc","icon"]
+      },
+      "render_controllers":["controller.render.pc_box"]
+    }
+  }
+}

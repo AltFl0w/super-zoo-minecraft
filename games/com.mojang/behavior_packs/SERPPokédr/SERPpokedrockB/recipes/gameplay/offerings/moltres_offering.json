@@ -1,0 +1,19 @@
+{
+  "format_version":"1.12",
+  "minecraft:recipe_shaped":{
+    "description":{
+    "identifier":"serp:moltres_offering"
+    },
+    "tags":["crafting_table"],
+    "pattern":[
+      "wfw",
+      "fif"
+    ],
+    "key":{
+      "w":{"item":"minecraft:wheat"},
+      "f":{"item":"serp:moltres_feather"},
+      "i":{"item":"minecraft:iron_ingot"}
+    },
+    "result":{"item":"serp:moltres_offering"}
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+	"animation_controllers": {
+     "controller.animation.target_shooting.water": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "in_water": "q.is_in_water" }
+                    ]
+                },
+                "in_water": { 
+					"on_entry": [ "/event entity @s gunsaddon:death" ],
+                    "transitions": [
+                        { "default": "!q.is_in_water" }
+                    ]
+				}
+       }
+    },
+     "controller.animation.block.rotation": {
+            "initial_state": "default",
+            "states": {
+                "default": {
+                    "transitions": [
+                        { "north": "(query.body_y_rotation > 135.0 || query.body_y_rotation <= -135.0)" },
+                        { "south": "(query.body_y_rotation > -45.0 && query.body_y_rotation <= 45.0)" },
+                        { "west": "(query.body_y_rotation > 45.0 && query.body_y_rotation <= 135.0)" },
+                        { "east": "(query.body_y_rotation > -135.0 && query.body_y_rotation <= -45.0)" }
+                    ]
+                },
+                "north": { "on_entry": [ "/tp @s ~ ~ ~ facing ~ ~ ~-1" ] },
+                "south": { "on_entry": [ "/tp @s ~ ~ ~ facing ~ ~ ~1" ] },
+                "west": { "on_entry": [ "/tp @s ~ ~ ~ facing ~-1 ~ ~" ] },
+                "east": { "on_entry": [ "/tp @s ~ ~ ~ facing ~1 ~ ~" ] }
+       }
+    }
+  }
+}

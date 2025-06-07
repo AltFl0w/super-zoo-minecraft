@@ -1,0 +1,21 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "it:skullgrey_breath",
+			"materials": {
+				"default": "entity_alphatest"
+			},
+			"textures": {
+				"default": "textures/entity/skullgrey_shoot"
+			},
+			"geometry": {
+				"default": "geometry.skullgrey_shoot"
+			},
+			"render_controllers": [
+				"controller.render.default"
+			]
+		}
+	}
+}

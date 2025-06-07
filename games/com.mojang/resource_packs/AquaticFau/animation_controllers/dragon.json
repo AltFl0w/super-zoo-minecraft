@@ -1,0 +1,102 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dragon.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [
+            "default",
+            "idle"
+          ],
+          "transitions": [
+            {
+              "attack": "query.is_delayed_attacking"
+            },
+            {
+              "swim": "query.is_in_water"
+            },
+            {
+              "walk": "query.ground_speed\u003e0.1"
+            },
+            {
+              "sit": "query.is_sitting"
+            }
+          ],
+          "blend_transition": 0.4
+        },
+        "walk": {
+          "animations": [
+            {
+              "walk": "query.ground_speed\u003e0.1 \u0026\u0026 query.ground_speed\u003c2.4"
+            },
+            {
+              "run": "query.ground_speed\u003e2.4"
+            }
+          ],
+          "transitions": [
+            {
+              "attack": "query.is_delayed_attacking"
+            },
+            {
+              "swim": "query.is_in_water"
+            },
+            {
+              "sit": "query.is_sitting"
+            },
+            {
+              "default": "query.ground_speed\u003c0.1"
+            }
+          ],
+          "blend_transition": 0.5
+        },
+        "swim": {
+          "transitions": [
+            {
+              "default": "!query.is_in_water"
+            },
+            {
+              "attack": "query.is_delayed_attacking"
+            }
+          ],
+          "blend_transition": 0.2,
+          "animations": [
+            {
+              "swim": "query.is_in_water"
+            }
+          ]
+        },
+        "attack": {
+          "animations": [
+            {
+              "swimattack": "query.is_in_water"
+            },
+            {
+              "attack": "!query.is_in_water"
+            }
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_delayed_attacking \u0026\u0026 !query.is_in_water"
+            },
+            {
+              "swim": "!query.is_delayed_attacking \u0026\u0026 query.is_in_water"
+            }
+          ],
+          "blend_transition": 0.1
+        },
+        "sit": {
+          "animations": [
+            "sit"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_sitting"
+            }
+          ],
+          "blend_transition": 0.2
+        }
+      }
+    }
+  }
+}

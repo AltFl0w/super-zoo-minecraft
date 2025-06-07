@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:peluche_de_foxdee",
+      "materials": {
+        "default": "base"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/peluches/df_peluche_de_foxdee"
+      },
+      "geometry": {
+        "default": "geometry.df_peluche_de_foxdee"
+      },
+      "animations": {
+        "df_peluche_de_foxdee": "animation.df_peluche_de_foxdee.base",
+        "df_peluche_de_foxdee_feliz": "animation.df_peluche_de_foxdee.feliz"
+      },
+      "scripts": {
+        "animate": [
+          "df_peluche_de_foxdee"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf"],
+      "spawn_egg": {
+        "texture": "df_peluche_de_foxdee",
+        "texture_index": 0
+      }
+    }
+  }
+}

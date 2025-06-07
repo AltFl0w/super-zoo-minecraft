@@ -1,0 +1,42 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:m202",
+			  "menu_category": {
+				"category": "equipment"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+					"gun",
+                    "item_hand",
+					"m202",
+					"item_using",
+					"trs26"
+                ]
+            },
+			"minecraft:food": {
+				"can_always_eat": true
+			},
+			"minecraft:enchantable": {
+				"value": 14,
+				"slot": "sword"
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:use_modifiers": {
+				"use_duration": 999999,
+				"movement_modifier": 0.65
+			},
+			"minecraft:cooldown": {
+				"duration": 1.55,
+				"category": "m202"
+			},
+			"minecraft:icon": {
+				"texture": "m202"
+			},
+			"minecraft:hand_equipped": true
+		}
+	}
+}

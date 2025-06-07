@@ -1,0 +1,17 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.water_greatsword": {
+			"animation_length": 1,
+			"loop": true,
+			"timeline": {
+				"0.5": [
+					"/execute @e[type=!item,type=!wep:water_swing,r=5,c=1] ~~~ summon wep:water_swing ^^^1",
+					"/playsound mob.dolphin.splash @a ~~~ 1 0.7",
+					"/particle wep:water_greatsword ~~~"
+				]
+			}
+		}
+	}
+}

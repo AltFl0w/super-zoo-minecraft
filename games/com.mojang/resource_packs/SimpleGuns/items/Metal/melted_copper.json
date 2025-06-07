@@ -1,0 +1,13 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "true:melted_copper",
+      "category": "Item"
+    },
+    
+    "components": {
+      "minecraft:icon": "melted_copper"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:weighted_random_feature": {
+        "description": {
+    "identifier": "serp:houses_feature"
+    },
+    "features": [
+      ["serp:lamp_mcstructure",2],
+      ["serp:battle_arena_mcstructure",1],
+      ["serp:player_house_mcstructure",2],
+      ["serp:pokehouse1_mcstructure",2],
+      ["serp:pokehouse2_mcstructure",2],
+      ["serp:pokehouse3_mcstructure",2]
+    ]
+  }
+}

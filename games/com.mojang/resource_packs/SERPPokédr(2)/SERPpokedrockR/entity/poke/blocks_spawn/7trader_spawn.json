@@ -1,0 +1,12 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:trader_spawn",
+      "spawn_egg": {
+          "texture": "pokeitems",
+        "texture_index": 7
+      }
+    }
+  }
+}

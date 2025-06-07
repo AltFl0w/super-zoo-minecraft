@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "testdf:toy_freddy",
+			"is_spawnable": true,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:armor_stand"
+        },
+        "component_groups": {},
+		"components": {
+			"minecraft:health": {
+				"value": 100,
+				"max": 100
+			},
+			"minecraft:collision_box": {
+				"width": 4.0,
+				"height": 4.0
+			},
+			"minecraft:scale": {
+				"value": 0.57
+            },
+            "minecraft:loot": {
+				"table": "loot_tables/entities/empty.json"
+			},
+			"minecraft:type_family": {
+				"family": ["DanyFox","ToyFreddy","Toy"]
+			},
+			"minecraft:physics": {}
+		},
+		"events": {
+			"minecraft:entity_spawned": {
+			}
+		}
+	}
+}

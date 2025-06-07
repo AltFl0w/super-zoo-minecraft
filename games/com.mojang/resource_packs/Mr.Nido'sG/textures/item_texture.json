@@ -1,0 +1,147 @@
+{
+  "resource_pack_name": "chickenxp resource",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "target_shooting": {
+      "textures": "textures/items/target_shooting"
+    },
+    "military_suit": {
+      "textures": "textures/items/military_suit"
+    },
+    "covered_military_helmet": {
+      "textures": "textures/items/covered_military_helmet"
+    },
+    "militar_helmet": {
+      "textures": "textures/items/militar_helmet"
+    },
+    "big_bulletproof_vest": {
+      "textures": "textures/items/big_bulletproof_vest"
+    },
+    "bulletproof_vest": {
+      "textures": "textures/items/bulletproof_vest"
+    },
+    "red_military_pants": {
+      "textures": "textures/items/red_military_pants"
+    },
+    "blue_military_pants": {
+      "textures": "textures/items/blue_military_pants"
+    },
+    "beige_military_pants": {
+      "textures": "textures/items/beige_military_pants"
+    },
+    "military_pants": {
+      "textures": "textures/items/military_pants"
+    },
+    "bulletproof_helmet": {
+      "textures": "textures/items/bulletproof_helmet"
+    },
+    "military_boots": {
+      "textures": "textures/items/military_boots"
+    },
+    "double_skorpion_vz61": {
+      "textures": "textures/items/double_skorpion_vz61"
+    },
+    "m202_ammo": {
+      "textures": "textures/items/m202_ammo"
+    },
+    "m202": {
+      "textures": "textures/items/m202"
+    },
+    "m32_ammo": {
+      "textures": "textures/items/m32_ammo"
+    },
+    "m32": {
+      "textures": "textures/items/m32"
+    },
+    "m32": {
+      "textures": "textures/items/m32"
+    },
+    "remington_870": {
+      "textures": "textures/items/remington_870"
+    },
+    "m4a1_ammo": {
+      "textures": "textures/items/m4a1_ammo"
+    },
+    "m4a1": {
+      "textures": "textures/items/m4a1"
+    },
+    "skorpion_vz61_ammo": {
+      "textures": "textures/items/skorpion_vz61_ammo"
+    },
+    "skorpion_vz61": {
+      "textures": "textures/items/skorpion_vz61"
+    },
+    "ak47_ammo": {
+      "textures": "textures/items/ak47_ammo"
+    },
+    "ak47": {
+      "textures": "textures/items/ak47"
+    },
+    "m249_ammo": {
+      "textures": "textures/items/m249_ammo"
+    },
+    "m249": {
+      "textures": "textures/items/m249"
+    },
+    "barret_m82a1_ammo": {
+      "textures": "textures/items/barret_m82a1_ammo"
+    },
+    "barret_m82a1": {
+      "textures": "textures/items/barret_m82a1"
+    },
+    "m67": {
+      "textures": "textures/items/m67"
+    },
+    "desert_eagle_ammo": {
+      "textures": "textures/items/desert_eagle_ammo"
+    },
+    "desert_eagle": {
+      "textures": "textures/items/desert_eagle"
+    },
+    "double_glock_17": {
+      "textures": "textures/items/dual_glock_17"
+    },
+    "glock_17_ammo": {
+      "textures": "textures/items/glock_17_ammo"
+    },
+    "glock_17": {
+      "textures": "textures/items/glock_17"
+    },
+    "double_micro_uzi": {
+      "textures": "textures/items/double_micro_uzi"
+    },
+    "micro_uzi": {
+      "textures": "textures/items/micro_uzi"
+    },
+    "micro_uzi_ammo": {
+      "textures": "textures/items/micro_uzi_ammo"
+    },
+    "m16": {
+      "textures": "textures/items/m16"
+    },
+    "m16_ammo": {
+      "textures": "textures/items/m16_ammo"
+    },
+    "benelli_m4": {
+      "textures": "textures/items/benelli_m4"
+    },
+    "cartucho": {
+      "textures": "textures/items/cartucho"
+    },
+    "rocket": {
+      "textures": "textures/items/rocket"
+    },
+    "bala_ligera": {
+      "textures": "textures/items/bala_ligera"
+    },
+    "bala_mediana": {
+      "textures": "textures/items/bala_mediana"
+    },
+    "bala_pesada": {
+      "textures": "textures/items/bala_pesada"
+    },
+    "grenade_bullet": {
+      "textures": "textures/items/grenade_bullet"
+    }
+  }
+}

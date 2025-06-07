@@ -1,0 +1,39 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:meteorite_forged_metal.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"lbl",
+			"nin",
+			"lcl"
+		],
+		"key": {
+			"b": {
+				"item": "minecraft:coal_block"
+			},
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"c": {
+				"item": "minecraft:coal"
+			},
+			"l": {
+				"item": "minecraft:lava_bucket"
+			},
+			"n": {
+				"item": "wep:lava_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:meteorite_forged_metal",
+				"count": 3
+			}
+		]
+	}
+}

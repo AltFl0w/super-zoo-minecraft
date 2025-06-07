@@ -1,0 +1,35 @@
+{
+  "format_version":"1.16.0",
+  "minecraft:entity":{
+    "description":{
+      "identifier":"serp:trade_machine",
+      "is_spawnable":false,
+      "is_summonable":true,
+      "is_experimental":false,
+      "properties":{"serp:trader":{"client_sync":true,"range":[0,2],"type":"int","default":0}}
+	},
+    "components":{
+      "minecraft:type_family":{"family":["inanimated"]},
+      "minecraft:physics":{},
+      "minecraft:health":{"value":1},
+      "minecraft:scale":{"value":1.5},
+      "minecraft:collision_box":{"height":1.3,"width":0.65},
+      "minecraft:is_stackable":{},
+      "minecraft:interact":{"interactions":[{"on_interact":{"filters":{"all_of":[{"test":"is_sneaking","subject":"other"},{"test":"is_owner","subject":"other"},{"test":"distance_to_nearest_player","operator":"<=","value":5}]},"event":"serp:despawn"},"add_items":{"table":"loot_tables/machines/trade_machine.json"},"interact_text":"structure_block.save"}]},
+      "minecraft:damage_sensor":{"triggers":[{"on_damage":{"filters":{"test":"has_equipment","subject":"other","operator":"!=","domain":"hand","value":"serp:pokedex"},"event":"serp:rotate"},"deals_damage":false},{"on_damage":{"filters":{"test":"has_damage","value":"fatal"}},"deals_damage":false}]},
+      "minecraft:scheduler":{"min_delay_secs":0,"max_delay_secs":0,"scheduled_events":[{"filters":{"all_of":[{"test":"int_property","domain":"serp:trader","operator":">","value":0},{"test":"distance_to_nearest_player","operator":">","value":3}]},"event":"serp:reset"}]},
+      "minecraft:pushable":{"is_pushable":false,"is_pushable_by_piston":false},
+      "minecraft:knockback_resistance":{"value":100}
+    },
+    "component_groups":{
+      "serp:despawn":{"minecraft:instant_despawn":{}}
+    },
+    "events":{
+"minecraft:entity_spawned":{"queue_command":{"command":["scoreboard players add @s level 0","scoreboard players add @s mount 0"]}},
+"minecraft:entity_transformed":{"queue_command":{"command":["tp @s ~~0.2~ 0 0","scoreboard players add @s level 0","scoreboard players add @s mount 0"]}},
+"serp:reset":{"set_property":{"serp:trader":0}},
+"serp:rotate":{"queue_command":{"command":["tp @s ~~0.25~~90~"]}},
+"serp:despawn":{"add":{"component_groups":["serp:despawn"]}}
+    }
+  }
+}

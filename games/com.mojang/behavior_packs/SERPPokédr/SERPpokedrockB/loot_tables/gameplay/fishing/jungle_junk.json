@@ -1,0 +1,157 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "serp:pokeball",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "serp:superball",
+          "weight": 7
+        },
+        {
+          "type": "item",
+          "name": "serp:ultraball",
+          "weight": 3
+        },
+        {
+          "type": "item",
+          "name": "serp:poke",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "serp:oran_berry",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "serp:sitrus_berry",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "serp:mago_berry",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "serp:enigma_berry",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather_boots",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0,
+                "max": 0.90
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:leather",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:string",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:fishing_rod",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0,
+                "max": 0.90
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bowl",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:stick",
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_data",
+              "data": 0
+            },
+            {
+              "function": "set_count",
+              "count": 10
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:dye",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "set_data",
+              "data":3
+            },
+            {
+              "function": "set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:tripwire_hook",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:bamboo",
+          "weight": 10
+        }
+      ]
+    }
+  ]
+}

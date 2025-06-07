@@ -1,0 +1,24 @@
+{
+	"format_version": "1.20.50",
+	"minecraft:item": {
+		"description": {
+			"identifier": "gunsaddon:glock_17_ammo",
+			  "menu_category": {
+				"category": "items"
+			  }
+		},
+		"components": {
+            "minecraft:tags": {
+                "tags": [
+                    "glock_17_ammo"
+                ]
+            },
+			"minecraft:stacked_by_data": true,
+			"minecraft:max_stack_size": 16,
+			"minecraft:hand_equipped": false,
+			"minecraft:icon": {
+				"texture": "glock_17_ammo"
+			}
+		}
+	}
+}

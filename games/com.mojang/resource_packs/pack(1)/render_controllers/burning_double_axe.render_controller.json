@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.burning_double_axe": {
+			"geometry": "Geometry.burning_double_axe",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.burning_double_axe"
+			]
+		}
+	}
+}

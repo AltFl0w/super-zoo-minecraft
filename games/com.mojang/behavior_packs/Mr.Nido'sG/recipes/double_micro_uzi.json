@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "gunsaddon:double_micro_uzi"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "ingredients": [
+	  {
+        "item": "gunsaddon:micro_uzi",
+		"count": 1
+      },
+	  {
+        "item": "gunsaddon:micro_uzi",
+		"count": 1
+      }
+    ],
+    "result": {
+      "item": "gunsaddon:double_micro_uzi",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

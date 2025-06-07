@@ -1,0 +1,79 @@
+{
+"format_version":"1.16.0",
+"minecraft:entity":{
+"description":{
+"identifier":"serp:ball_thrown",
+"is_spawnable":false,
+"is_summonable":false,
+"is_experimental":false
+},
+"components":{
+"minecraft:scale":{"value":0.4},
+"minecraft:collision_box":{"width":0.5,"height":0.5},
+"minecraft:projectile":{"on_hit":{"impact_damage":{"damage":0,"knockback":false,"semi_random_diff_damage":false,"destroy_on_hit":true},"remove_on_hit":true},
+"power":0.8,
+"gravity":0.05,
+"liquid_inertia":1,
+"uncertainty_base":0,
+"uncertainty_multiplier":0,
+"anchor":0,
+"should_bounce":true,
+"offset":[0,0,0]
+},
+"minecraft:despawn":{
+"filters":{"test":"distance_to_nearest_player","subject":"self","operator":">","value":20}}
+},
+"component_groups":{
+"pokeball":{"minecraft:type_family": {"family":["pokeball"]},"minecraft:variant":{"value":0}},
+"greatball":{"minecraft:type_family": {"family":["greatball"]},"minecraft:variant":{"value":1}},
+"ultraball":{"minecraft:type_family": {"family":["ultraball"]},"minecraft:variant":{"value":2}},
+"masterball":{"minecraft:type_family": {"family":["masterball"]},"minecraft:variant":{"value":3}},
+"diveball":{"minecraft:type_family": {"family":["diveball"]},"minecraft:variant":{"value":4}},
+"duskball":{"minecraft:type_family": {"family":["duskball"]},"minecraft:variant":{"value":5}},
+"fastball":{"minecraft:type_family": {"family":["fastball"]},"minecraft:variant":{"value":6}},
+"heavyball":{"minecraft:type_family": {"family":["heavyball"]},"minecraft:variant":{"value":7}},
+"lureball":{"minecraft:type_family": {"family":["lureball"]},"minecraft:variant":{"value":8}},
+"moonball":{"minecraft:type_family": {"family":["moonball"]},"minecraft:variant":{"value":9}},
+"nestball":{"minecraft:type_family": {"family":["nestball"]},"minecraft:variant":{"value":10}},
+"netball":{"minecraft:type_family": {"family":["netball"]},"minecraft:variant":{"value":11}},
+"parkball":{"minecraft:type_family": {"family":["parkball"]},"minecraft:variant":{"value":12}},
+"premierball":{"minecraft:type_family": {"family":["premierball"]},"minecraft:variant":{"value":13}},
+"safariball":{"minecraft:type_family": {"family":["safariball"]},"minecraft:variant":{"value":14}},
+"timerball":{"minecraft:type_family": {"family":["timerball"]},"minecraft:variant":{"value":15}}
+},
+"events":{
+      "serp:pokeball": {
+"add":{"component_groups":["pokeball"]}},
+      "serp:greatball": {
+"add":{"component_groups":["greatball"]}},
+      "serp:ultraball": {
+"add":{"component_groups":["ultraball"]}},
+      "serp:masterball": {
+"add":{"component_groups":["masterball"]}},
+      "serp:diveball": {
+"add":{"component_groups":["diveball"]}},
+      "serp:duskball": {
+"add":{"component_groups":["duskball"]}},
+      "serp:fastball": {
+"add":{"component_groups":["fastball"]}},
+      "serp:heavyball": {
+"add":{"component_groups":["heavyball"]}},
+      "serp:lureball": {
+"add":{"component_groups":["lureball"]}},
+      "serp:moonball": {
+"add":{"component_groups":["moonball"]}},
+      "serp:nestball": {
+"add":{"component_groups":["nestball"]}},
+      "serp:netball": {
+"add":{"component_groups":["netball"]}},
+      "serp:parkball": {
+"add":{"component_groups":["parkball"]}},
+      "serp:premierball": {
+"add":{"component_groups":["premierball"]}},
+      "serp:safariball": {
+"add":{"component_groups":["safariball"]}},
+      "serp:timerball": {
+"add":{"component_groups":["timerball"]}}
+    }
+  }
+}

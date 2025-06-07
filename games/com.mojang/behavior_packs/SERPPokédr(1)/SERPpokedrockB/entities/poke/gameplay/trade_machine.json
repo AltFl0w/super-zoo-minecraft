@@ -1,0 +1,296 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:entity": {
+        "description": {
+    "identifier": "serp:trade_machine",
+    "is_spawnable": false,
+    "is_summonable": true,
+    "is_experimental": false
+		},
+    "components": {
+        "minecraft:physics": {},
+        "minecraft:scale": {"value":1.5},
+    "minecraft:collision_box":{
+            "height":1.3,
+            "width": 0.5 },
+      "minecraft:is_stackable": {},
+      "minecraft:damage_sensor":{
+        "triggers":[{"on_damage":{ "filters":{"test":"has_damage","value":"all"}},"deals_damage":false}]},
+          "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false },
+"minecraft:knockback_resistance":{"value":100}
+    },
+        "component_groups": {
+    "serp:shiny": {
+      "minecraft:mark_variant":{"value":1}
+    },
+    "serp:normal": {
+        "minecraft:variant": {"value": 0},
+      "minecraft:mark_variant":{"value":0},
+        "minecraft:interact": [
+{"on_interact":{"filters":{"test":"is_sneaking","subject":"other"},"event":"serp:store","target":"self"},"add_items": {"table":"loot_tables/entities/trade_machine.json"},"interact_text": "structure_block.save"},
+{"on_interact":{"filters":{"test":"is_family","subject":"other","value":"player"},"event":"serp:using","target":"self"},"swing":true,"cooldown":10,"play_sounds":"remedy","interact_text":"hbui.PackListItem.activateButtonText"}
+      ]
+    },
+    "serp:take": {
+        "minecraft:is_saddled": {}
+    },
+    "serp:pre_take":{
+        "minecraft:is_shaking": {},
+        "minecraft:variant":{"value":1},
+        "minecraft:timer":{
+"looping":false,"randomInterval":false,
+"time": 10,"time_down_event":{
+"event":"serp:add_take"}}
+            },
+    "serp:store":{
+        "minecraft:despawn":{}
+    },
+    
+    
+    "serp:alakazam": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/065alakazam.json"}}]
+    },
+    "serp:machamp": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/068machamp.json"}}]
+    },
+    "serp:golem": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/076golem.json"}}]
+    },
+    "serp:gengar": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/094gengar.json"}}]
+    },
+    "serp:steelix": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/208steelix.json"}}]
+    },
+    "serp:kingdra": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/230kingdra.json"}}]
+    },
+    "serp:scizor": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/212scizor.json"}}]
+    },
+    "serp:politoed": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/186politoed.json"}}]
+    },
+    "serp:slowking": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/199slowking.json"}}]
+    },
+    "serp:porygon2": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/233porygon2.json"}}]
+    },
+    "serp:gorebyss": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/368gorebyss.json"}}]
+    },
+    "serp:huntail": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/367huntail.json"}}]
+    },
+    "serp:rhyperior": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/464rhyperior.json"}}]
+    },
+    "serp:porygonz": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/474porygonz.json"}}]
+    },
+    "serp:dusknoir": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/477dusknoir.json"}}]
+    },
+    "serp:magmortar": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/467magmortar.json"}}]
+    },
+    "serp:electivire": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/466electivire.json"}}]
+    },
+    "serp:milotic": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/350milotic.json"}}]
+    },
+    "serp:gigalith": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/526gigalith.json"}}]
+    },
+    "serp:conkeldurr": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/534conkeldurr.json"}}]
+    },
+    "serp:escavalier": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/589escavalier.json"}}]
+    },
+    "serp:accelgor": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/617accelgor.json"}}]
+    },
+    "serp:aromatisse": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/683aromatisse.json"}}]
+    },
+    "serp:slurpuff": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/685slurpuff.json"}}]
+    },
+    "serp:trevenant": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/709trevenant.json"}}]
+    },
+    "serp:gourgeist": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/711gourgeist.json"}}]
+    },
+    "serp:golema": {
+        "minecraft:interact":[
+{"on_interact":{"filters":{"test": "has_component","value": "minecraft:is_saddled"},"event":"serp:reset"},"interact_text":"controller.buttonTip.take","swing":true,"add_items":{"table":"loot_tables/pokemon/076golema.json"}}]
+      }
+    },
+    "events": {
+            "minecraft:entity_spawned": {
+        "add": {
+"component_groups": ["serp:normal"]}},
+	  "serp:add_take": {
+		"add": {
+"component_groups": ["serp:take"]},
+		"remove": {
+"component_groups": ["serp:pre_take"]}},
+	  "serp:rotate":{
+	"run_command":{"command":["tp @s ~~0.2~~45~"]}
+	  },
+	  "serp:using": {
+        "sequence":[
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_kadabra"},
+"add":{"component_groups":["serp:pre_take","serp:alakazam"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_kadabras"},
+"add":{"component_groups":["serp:pre_take","serp:alakazam","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_machoke"},
+"add":{"component_groups":["serp:pre_take","serp:machamp"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_machokes"},
+"add":{"component_groups":["serp:pre_take","serp:machamp","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_graveler"},
+"add":{"component_groups":["serp:pre_take","serp:golem"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_gravelers"},
+"add":{"component_groups":["serp:pre_take","serp:golem","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_haunter"},
+"add":{"component_groups":["serp:pre_take","serp:gengar"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_haunters"},
+"add":{"component_groups":["serp:pre_take","serp:gengar","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_onix"},
+"add":{"component_groups":["serp:pre_take","serp:steelix"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_onixs"},
+"add":{"component_groups":["serp:pre_take","serp:steelix","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_seadra"},
+"add":{"component_groups":["serp:pre_take","serp:kingdra"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_seadras"},
+"add":{"component_groups":["serp:pre_take","serp:kingdra","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_scyther"},
+"add":{"component_groups":["serp:pre_take","serp:scizor"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_scythers"},
+"add":{"component_groups":["serp:pre_take","serp:scizor","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_poliwhirl"},
+"add":{"component_groups":["serp:pre_take","serp:politoed"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_poliwhirls"},
+"add":{"component_groups":["serp:pre_take","serp:politoed","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_slowpoke"},
+"add":{"component_groups":["serp:pre_take","serp:slowking"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_slowpokes"},
+"add":{"component_groups":["serp:pre_take","serp:slowking","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_porygon"},
+"add":{"component_groups":["serp:pre_take","serp:porygon2"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_porygons"},
+"add":{"component_groups":["serp:pre_take","serp:porygon2","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_clamperl1"},
+"add":{"component_groups":["serp:pre_take","serp:gorebyss"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_clamperl1s"},
+"add":{"component_groups":["serp:pre_take","serp:gorebyss","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_clamperl2"},
+"add":{"component_groups":["serp:pre_take","serp:huntail"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_clamperl2s"},
+"add":{"component_groups":["serp:pre_take","serp:huntail","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_rhydon"},
+"add":{"component_groups":["serp:pre_take","serp:rhyperior"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_rhydons"},
+"add":{"component_groups":["serp:pre_take","serp:rhyperior","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_porygon2"},
+"add":{"component_groups":["serp:pre_take","serp:porygonz"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_porygon2s"},
+"add":{"component_groups":["serp:pre_take","serp:porygonz","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_dusclops"},
+"add":{"component_groups":["serp:pre_take","serp:dusknoir"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_dusclopss"},
+"add":{"component_groups":["serp:pre_take","serp:dusknoir","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_magmar"},
+"add":{"component_groups":["serp:pre_take","serp:magmortar"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_magmars"},
+"add":{"component_groups":["serp:pre_take","serp:magmortar","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_electabuzz"},
+"add":{"component_groups":["serp:pre_take","serp:electivire"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_electabuzzs"},
+"add":{"component_groups":["serp:pre_take","serp:electivire","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_feebas"},
+"add":{"component_groups":["serp:pre_take","serp:milotic"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_feebass"},
+"add":{"component_groups":["serp:pre_take","serp:milotic","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_boldore"},
+"add":{"component_groups":["serp:pre_take","serp:gigalith"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_boldores"},
+"add":{"component_groups":["serp:pre_take","serp:gigalith","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_gurdurr"},
+"add":{"component_groups":["serp:pre_take","serp:conkeldurr"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_gurdurrs"},
+"add":{"component_groups":["serp:pre_take","serp:conkeldurr","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_karrablast"},
+"add":{"component_groups":["serp:pre_take","serp:escavalier"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_karrablasts"},
+"add":{"component_groups":["serp:pre_take","serp:escavalier","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_shellmet"},
+"add":{"component_groups":["serp:pre_take","serp:accelgor"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_shellmets"},
+"add":{"component_groups":["serp:pre_take","serp:accelgor","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_spritzee"},
+"add":{"component_groups":["serp:pre_take","serp:aromatisse"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_spritzees"},
+"add":{"component_groups":["serp:pre_take","serp:aromatisse","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_swirlix"},
+"add":{"component_groups":["serp:pre_take","serp:slurpuff"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_swirlixs"},
+"add":{"component_groups":["serp:pre_take","serp:slurpuff","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_phantump"},
+"add":{"component_groups":["serp:pre_take","serp:trevenant"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_phantumps"},
+"add":{"component_groups":["serp:pre_take","serp:trevenant","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_pumpkaboo"},
+"add":{"component_groups":["serp:pre_take","serp:gourgeist"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_pumpkaboos"},
+"add":{"component_groups":["serp:pre_take","serp:gourgeist","serp:shiny"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_gravelera"},
+"add":{"component_groups":["serp:pre_take","serp:golema"]}},
+{"filters":{"test":"has_equipment","domain":"hand","subject":"other","value":"serp:trading_graveleras"},
+"add":{"component_groups":["serp:pre_take","serp:golema","serp:shiny"]}},
+{"run_command":{"command":["function mission/trade"]}}
+      ]
+	},
+    "serp:reset": {
+        "remove": {
+"component_groups":["serp:take","serp:alakazam","serp:machamp","serp:golem","serp:gengar","serp:steelix","serp:kingdra","serp:scizor","serp:politoed","serp:slowking","serp:porygon2","serp:gorebyss","serp:huntail","serp:rhyperior","serp:dusknoir","serp:porygonz","serp:magmortar","serp:electivire","serp:milotic","serp:gigalith","serp:conkeldurr","serp:escavalier","serp:accelgor","serp:aromatisse","serp:slurpuff","serp:trevenant","serp:gourgeist","serp:golema"]},
+        "add": {
+"component_groups": ["serp:normal"]}},
+    "serp:store": {
+        "add": {
+"component_groups": ["serp:store"]}}
+        }
+    }
+}

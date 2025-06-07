@@ -1,0 +1,13 @@
+effect @p[r=30] mining_fatigue 1 2 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=wooden_sword}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=stone_sword}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=iron_sword}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=golden_sword}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=diamond_sword}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=netherite_sword}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=wooden_axe}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=stone_axe}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=iron_axe}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=golden_axe}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=diamond_axe}]] weakness 1 10 true
+effect @p[r=30,hasitem=[{location=slot.weapon.mainhand,item=netherite_axe}]] weakness 1 10 true

@@ -1,0 +1,108 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.hk416.shoot": {
+			"animation_length": 0.1875,
+			"bones": {
+				"rightArm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0625": {
+							"post": [-2.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1875": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					},
+					"position": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.0625": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.1875": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"bullet": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.0625": [0, 0, 0],
+						"0.125": [-45, 0, 0],
+						"0.1875": [-130, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0625": [3, 3, 0],
+						"0.125": [7, 1, 0],
+						"0.1875": [12, -5, 0]
+					}
+				},
+				"flash": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0625": [0, 0, -1],
+						"0.125": [0, 0, 0]
+					},
+					"scale": {
+						"0.0": [1, 1, 1],
+						"0.0625": [6, 6, 1],
+						"0.125": [1, 1, 1]
+					}
+				},
+				"pull_back": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0625": [0, 0, -3],
+						"0.125": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.hk416.wield_first_person": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [90, 57.5, -45],
+					"position": [1, 26, -1],
+					"scale": 1.3
+				},
+				"flash": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.hk416.wield_third_person": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [90, 0, 0],
+					"position": [0, 17, -1]
+				},
+				"flash": {
+					"scale": 1
+				}
+			}
+		},
+		"animation.hk416_scope.first_person_sneaking_main_hand": {
+			"loop": true,
+			"bones": {
+				"rightArm": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 0],
+					"scale": [0.0, 0.0, 0.0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "format_version":"1.21.10",
+  "minecraft:item":{
+    "description":{
+      "identifier":"serp:dynamax_candy",
+	    "menu_category":{"category":"items"}
+    },
+    "components":{
+      "minecraft:display_name":{"value":"item.serp:dynamax_candy.name"},
+      "minecraft:icon":"dynamax_candy"
+    }
+  }
+}

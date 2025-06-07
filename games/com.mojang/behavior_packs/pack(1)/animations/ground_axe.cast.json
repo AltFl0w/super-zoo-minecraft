@@ -1,0 +1,15 @@
+{
+	"format_version": "1.10.0",
+	"animations": {
+		"animation.ground_axe": {
+			"animation_length": 1,
+			"loop": true,
+			"timeline": {
+				"0.5": [
+					"/event entity @s wep:on_cast_ground_spike",
+					"/playsound block.sweet_berry_bush.place @a ~~~"
+				]
+			}
+		}
+	}
+}

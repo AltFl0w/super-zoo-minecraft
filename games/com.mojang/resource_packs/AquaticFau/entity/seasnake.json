@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.seasnake"
+      },
+      "identifier": "fauna:seasnake",
+      "materials": {
+        "default": "salmon"
+      },
+      "render_controllers": [
+        "controller.render.seasnakevariant"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "seasnake",
+        "texture_index": 0
+      },
+      "textures": {
+        "seasnake": "textures/entity/snake/seasnake",
+        "orange": "textures/entity/snake/orange",
+        "galactic": "textures/entity/snake/galactic"
+      },
+      "animations": {
+        "idle": "animation.seasnake.idle",
+        "swim": "animation.seasnake.swim",
+        "walk": "animation.seasnake.walk",
+        "move": "controller.animation.ancientfish.move"
+      }
+    }
+  }
+}

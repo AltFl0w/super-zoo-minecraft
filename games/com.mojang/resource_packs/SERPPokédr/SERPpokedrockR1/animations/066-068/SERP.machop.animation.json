@@ -1,0 +1,234 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.machop.quiet": {
+			"loop": true,
+			"bones": {
+				"right_arm": {
+					"rotation": [0, 5, "-35+(Math.cos(q.anim_time*180)*-5)"]
+				},
+				"right_hand": {
+					"rotation": [0, -25, 0]
+				},
+				"right_leg": {
+					"rotation": [-35, 15, 0]
+				},
+				"right_foot": {
+					"rotation": [35, 0, 0]
+				},
+				"left_leg": {
+					"rotation": [-35, -10, 0]
+				},
+				"left_foot": {
+					"rotation": [35, 0, 0]
+				},
+				"left_arm": {
+					"rotation": [0, -5, "35+(Math.cos(q.anim_time*180)*5)"]
+				},
+				"left_hand": {
+					"rotation": [0, 25, 0]
+				},
+				"machop": {
+					"position": [0, -1.2, 0]
+				},
+				"head": {
+					"position": [0, "-0.25+(Math.cos(q.anim_time*180)*-0.25)", "-1.5+(Math.cos(q.anim_time*180)*-1)"]
+				},
+				"body": {
+					"rotation": ["10+(Math.cos(q.anim_time*180)*5)", 0, 0]
+				},
+				"tail": {
+					"rotation": ["-10+(Math.cos(q.anim_time*360)*-5)", "15+(Math.cos(q.anim_time*240)*15)", 0]
+				},
+				"tail_tip": {
+					"rotation": ["10+(Math.cos(q.anim_time*360)*5)", "15+(Math.cos(q.anim_time*240)*15)", 0]
+				},
+				"arms": {
+					"position": [0, 0, "-1.5+(Math.cos(q.anim_time*180)*-0.5)"]
+				}
+			}
+		},
+		"animation.machop.walk": {
+			"loop": true,
+			"bones": {
+				"body_root": {
+					"rotation": [0, 0, "Math.cos(q.anim_time*360)*5"],
+					"position": [0, "-0.5+(Math.cos(q.anim_time*720)*0.5)", 0]
+				},
+				"tail": {
+					"rotation": [-20, "Math.cos(q.anim_time*360)*-25", 0]
+				},
+				"tail_tip": {
+					"rotation": [0, "Math.cos(q.anim_time*360)*-25", 0]
+				},
+				"arms": {
+					"rotation": [-45, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [0, 0, -65],
+					"position": [-0.5, 0, 0]
+				},
+				"right_hand": {
+					"rotation": [0, -85, 0]
+				},
+				"left_arm": {
+					"rotation": [0, 0, 65],
+					"position": [0.5, 0, 0]
+				},
+				"left_hand": {
+					"rotation": [0, 85, 0]
+				},
+				"right_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*-35", 0, 0]
+				},
+				"right_foot": {
+					"rotation": ["15+(Math.cos(q.anim_time*360)*-15)", 0, 0]
+				},
+				"left_leg": {
+					"rotation": ["Math.cos(q.anim_time*360)*35", 0, 0]
+				},
+				"left_foot": {
+					"rotation": ["15+(Math.cos(q.anim_time*360)*15)", 0, 0]
+				}
+			}
+		},
+		"animation.machop.sitting": {
+			"loop": true,
+			"bones": {
+				"machop": {
+					"position": [0, -7, 2]
+				},
+				"tail": {
+					"rotation": [-15, 0, 0]
+				},
+				"tail_tip": {
+					"rotation": [15, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [5, -25, -50]
+				},
+				"right_hand": {
+					"rotation": [0, -70, 0]
+				},
+				"left_arm": {
+					"rotation": [5, 25, 50]
+				},
+				"left_hand": {
+					"rotation": [0, 70, 0]
+				},
+				"legs": {
+					"rotation": [-105, 0, 0],
+					"position": [0, 1, -1]
+				},
+				"right_foot": {
+					"rotation": [25, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [25, 0, 0]
+				}
+			}
+		},
+		"animation.machop.attack": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [1.5, -1, -3.5]
+				},
+				"body": {
+					"rotation": [25, -20, 0]
+				},
+				"tail": {
+					"rotation": [-40.52368, -28.02432, 21.88151]
+				},
+				"right_arm": {
+					"rotation": [0, -70, 0],
+					"position": [0.5, -1, -3]
+				},
+				"right_hand": {
+					"rotation": [0, -20, 0]
+				},
+				"left_arm": {
+					"rotation": [0, -40, 50],
+					"position": [1, -1, -2]
+				},
+				"left_hand": {
+					"rotation": [0, 30, 0]
+				},
+				"left_leg": {
+					"rotation": [45, -15, -15]
+				},
+				"left_foot": {
+					"rotation": [15, 0, 0]
+				}
+			}
+		},
+		"animation.machop.attack2": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"position": [0, 0, 2]
+				},
+				"body": {
+					"rotation": [-15, 0, 0]
+				},
+				"tail": {
+					"rotation": [-45, 0, 0]
+				},
+				"tail_tip": {
+					"rotation": [35, 0, 0]
+				},
+				"arms": {
+					"position": [0, -0.5, 2]
+				},
+				"right_arm": {
+					"rotation": [-10, -40, -35]
+				},
+				"right_hand": {
+					"rotation": [0, -45, 0]
+				},
+				"left_arm": {
+					"rotation": [-10, 40, 35]
+				},
+				"left_hand": {
+					"rotation": [0, 45, 0]
+				}
+			}
+		},
+		"animation.machop.defeated": {
+			"loop": true,
+			"bones": {
+				"machop": {
+					"position": [0, -7, 2]
+				},
+				"tail": {
+					"rotation": [-15, 0, 0]
+				},
+				"tail_tip": {
+					"rotation": [15, 0, 0]
+				},
+				"right_arm": {
+					"rotation": [5, -25, -50]
+				},
+				"right_hand": {
+					"rotation": [0, -20, 0]
+				},
+				"left_arm": {
+					"rotation": [5, 25, 50]
+				},
+				"left_hand": {
+					"rotation": [0, 20, 0]
+				},
+				"legs": {
+					"rotation": [-105, 0, 0],
+					"position": [0, 1, -1]
+				},
+				"right_foot": {
+					"rotation": [25, 0, 0]
+				},
+				"left_foot": {
+					"rotation": [25, 0, 0]
+				}
+			}
+		}
+	}
+}

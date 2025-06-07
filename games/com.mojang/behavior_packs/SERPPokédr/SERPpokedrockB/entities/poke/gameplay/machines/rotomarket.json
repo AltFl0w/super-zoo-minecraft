@@ -1,0 +1,27 @@
+{
+  "format_version":"1.16.0", 
+  "minecraft:entity":{
+    "description":{
+      "identifier":"serp:rotomarket",
+      "is_spawnable":false,"is_summonable":true,
+      "is_experimental":false,"properties":{"serp:st":{"client_sync":true,"range":[0,6],"type":"int","default":0}}
+    },
+    "component_groups":{
+    "serp:despawn":{"minecraft:instant_despawn":{}}
+    },
+    "components":{
+      "minecraft:type_family":{"family":["serp","inanimated"]},
+      "minecraft:interact":{"interactions":[{"on_interact":{"filters":{"all_of":[{"test":"is_sneaking","subject":"other"},{"test":"is_owner","subject":"other"}]},"event":"serp:despawn"},"add_items":{"table":"loot_tables/machines/rotomarket.json"},"interact_text":"structure_block.save"}]},
+      "minecraft:damage_sensor":{"triggers":[{"on_damage":{"filters":{"test":"has_damage","value":"fatal"}},"deals_damage":false}]},
+      "minecraft:collision_box":{"width":0.7,"height":2},
+      "minecraft:health":{"value":1},
+      "minecraft:physics":{},
+      "minecraft:behavior.look_at_player":{"priority":2,"target_distance":20,"probability":1},
+      "minecraft:pushable":{"is_pushable":true,"is_pushable_by_piston":true}
+    },
+    "events":{
+"minecraft:entity_transformed":{"add":{"component_groups":["serp:tamed"]},"queue_command":{"command":["tp @s ~~0.2~ 0 0"]}},
+"serp:despawn":{"add":{"component_groups":["serp:despawn"]}}
+    }
+  }
+}

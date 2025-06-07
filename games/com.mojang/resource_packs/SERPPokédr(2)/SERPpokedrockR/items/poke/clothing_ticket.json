@@ -1,0 +1,12 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:clothing_ticket",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "clothing_ticket"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.throwing_axe": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"normal_attack": "query.get_equipped_item_name('main_hand') == 'throwing_axe' && variable.attack_time"
+						}
+					]
+				},
+				"normal_attack": {
+					"transitions": [
+						{
+							"default": "(query.get_equipped_item_name('main_hand') == 'throwing_axe' && !variable.attack_time) || query.get_equipped_item_name('main_hand') != 'throwing_axe'"
+						}
+					],
+					"on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 air",
+						"/playsound mob.witch.throw @a",
+						"@s wep:on_cast_throwing_axe"
+					]
+				}
+			}
+		},
+		"controller.animation.axe_returning": {
+			"states": {
+				"default": {
+					"on_entry": [
+						"/tp ^^^0.6 facing @p"
+					],
+					"transitions": [
+						{
+							"repeat": "(1.0)"
+						}
+					]
+				},
+				"repeat": {
+					"on_entry": [
+						"/tp ^^^0.6 facing @p"
+					],
+					"transitions": [
+						{
+							"default": "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

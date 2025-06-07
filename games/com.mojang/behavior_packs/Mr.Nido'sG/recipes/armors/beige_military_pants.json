@@ -1,0 +1,33 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+      "description": {
+      "identifier": "gunsaddon:beige_military_pants"
+      },
+      
+      "tags": [ "crafting_table" ],
+      "pattern": [
+		"DAD",
+        "DDD",
+        "BCB"
+      ],
+      "key": {
+        "A": {
+          "item": "minecraft:blue_dye"
+        },
+        "B": {
+          "item": "minecraft:iron_ingot"
+        },
+        "C": {
+          "item": "gunsaddon:military_pants"
+        },
+        "D": {
+          "item": "minecraft:leather"
+        }
+      },
+      "result": {
+        "item": "gunsaddon:beige_military_pants",
+        "count": 1
+      }
+    }
+  }

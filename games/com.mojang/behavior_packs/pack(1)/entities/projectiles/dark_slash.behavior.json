@@ -1,0 +1,89 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "wep:dark_slash",
+			"is_spawnable": false,
+			"is_summonable": true,
+			"is_experimental": false,
+			"runtime_identifier": "minecraft:snowball",
+			"scripts": {
+				"animate": [
+					"effect"
+				]
+			},
+			"animations": {
+				"effect": "controller.animation.dark_broadsword.effect"
+			}
+		},
+		"component_groups": {
+			"wep:despawn": {
+				"minecraft:instant_despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"despawns"
+				]
+			},
+			"minecraft:collision_box": {
+				"width": 0,
+				"height": 0
+			},
+			"minecraft:attack": {
+				"damage": 3
+			},
+			"minecraft:area_attack": {
+				"damage_range": 2,
+				"damage_per_tick": 5,
+				"entity_filter": {
+					"none_of": [
+						{
+							"test": "is_family",
+							"subject": "other",
+							"value": "player"
+						}
+					]
+				}
+			},
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 5,
+						"knockback": true
+					},
+					"stick_in_ground": {
+						"shake_time": 0.5
+					}
+				},
+				"power": 10,
+				"gravity": 0.03,
+				"angle_offset": 0
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"deals_damage": false
+					}
+				]
+			},
+			"minecraft:timer": {
+				"looping": false,
+				"time": 0.1,
+				"time_down_event": {
+					"event": "wep:on_despawn"
+				}
+			}
+		},
+		"events": {
+			"wep:on_despawn": {
+				"add": {
+					"component_groups": [
+						"wep:despawn"
+					]
+				}
+			}
+		}
+	}
+}

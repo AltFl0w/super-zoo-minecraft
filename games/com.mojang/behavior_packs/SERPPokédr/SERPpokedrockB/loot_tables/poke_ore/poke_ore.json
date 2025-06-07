@@ -1,0 +1,20 @@
+{
+  "pools":[
+    {
+      "rolls":1,
+      "entries":[
+{"type":"item","name":"serp:fire_stone"},
+{"type":"item","name":"serp:thunder_stone"},
+{"type":"item","name":"serp:water_stone"},
+{"type":"item","name":"serp:moon_stone"},
+{"type":"item","name":"serp:leaf_stone"},
+{"type":"item","name":"serp:sun_stone"},
+{"type":"item","name":"serp:shiny_stone"},
+{"type":"item","name":"serp:dusk_stone"},
+{"type":"item","name":"serp:dawn_stone"},
+{"type":"item","name":"serp:ice_stone"},
+{"type":"item","name":"serp:kings_rock"}
+      ]
+    }
+  ]
+}

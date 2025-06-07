@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "serp:plants",
+      "population_control": "animal"
+    },
+    "conditions": [
+      {
+    "minecraft:spawns_on_surface": {},
+"minecraft:delay_filter": {
+    "min": 80,"max": 150,
+    "identifier": "serp:plants",
+    "spawn_chance": 20
+        },
+    "minecraft:spawns_on_block_filter":
+        ["minecraft:grass"],
+    "minecraft:biome_filter":{"test":"has_biome_tag","operator":"==","value":"animal"}
+      }
+    ]
+  }
+}

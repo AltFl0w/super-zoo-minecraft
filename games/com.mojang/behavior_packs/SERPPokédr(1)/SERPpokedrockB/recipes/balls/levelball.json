@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:levelball"
+    },
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " p ",
+      " b ",
+      " d "
+    ],
+    "key": {
+      "p": {
+        "item": "serp:levelball_up"
+      },
+      "b": {
+        "item": "minecraft:stone_button"
+      },
+      "d": {
+        "item": "serp:down_part"
+      }
+    },
+    "result": {
+      "item": "serp:levelball",
+      "count": 1
+    }
+  }
+}

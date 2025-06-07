@@ -1,0 +1,14 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "fauna:cooked_tuna",
+      "category": "Nature"
+    },
+    "components": {
+      "minecraft:icon": "cooked_tuna",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

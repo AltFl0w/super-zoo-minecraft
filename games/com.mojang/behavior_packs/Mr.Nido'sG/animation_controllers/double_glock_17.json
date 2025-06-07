@@ -1,0 +1,89 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.double_glock_17" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"on_entry" : [ "/scoreboard objectives add double_glock_17 dummy", "/scoreboard players add @s double_glock_17 0", "/event entity @s guns:shoot.off", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"double_glock_17" : "q.scoreboard('double_glock_17') > 0 && q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17') && q.is_alive"
+						},
+						{
+							"reload" : "q.scoreboard('double_glock_17') < 1 && q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17') && q.is_using_item && q.is_alive"
+						}
+					]
+				},
+				"double_glock_17" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('double_glock_17') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"no_ammo" : "q.scoreboard('double_glock_17') == 0 && q.is_using_item"
+						},
+						{
+							"shoot" : "q.is_using_item"
+						}
+					]
+				},
+				"shoot" : {
+					"on_entry" : [ "/event entity @s guns:shoot" ],
+					"animations" : [ "double_glock_17.shoot" ],
+					"transitions" : [
+						{
+							"default" : "(q.scoreboard('double_glock_17') < 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17')) && !q.is_using_item || !q.is_alive"
+						},
+						{
+							"double_glock_17" : "!q.is_using_item"
+						},
+						{
+							"no_ammo" : "q.scoreboard('double_glock_17') == 0 && q.is_using_item"
+						}
+					]
+				},
+				"no_ammo" : {
+					"on_entry" : [ "/event entity @s guns:shoot.off" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_using_item || !q.is_alive"
+						}
+					]
+				},
+				"reload" : {
+					"animations" : [ "reload.time" ],
+					"on_entry" : [ "/event entity @s[hasitem={item=gunsaddon:glock_17_ammo,quantity=2..}] guns:reload" ],
+					"transitions" : [
+						{
+							"default" : "q.property('arathnido:animation') == 0 || !q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17') || !q.is_alive"
+						},
+						{
+							"reload.on" : "q.property('arathnido:animation') == 3"
+						}
+					]
+				},
+				"reload.on" : {
+					"animations" : [ "double_glock_17.reload" ],
+					"transitions" : [
+						{
+							"default" : "q.any_animation_finished || !q.is_alive"
+						},
+						{
+							"stop" : "!q.equipped_item_any_tag('slot.weapon.mainhand', 'double_glock_17')"
+						}
+					]
+				},
+				"stop" : {
+					"on_entry" : [ "/stopsound @s gun.double_glock_17_reload", "/event entity @s guns:reload.off" ],
+					"transitions" : [
+						{
+							"default" : "(1.0)"
+						}
+					]
+				}
+			}
+		}
+	}
+}

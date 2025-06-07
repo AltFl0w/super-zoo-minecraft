@@ -1,0 +1,18 @@
+{
+  "format_version": "1.16",
+  "minecraft:item": {
+    "description": {
+      "identifier": "serp:hondew_berry",
+      "category": "Nature"
+    },
+    
+    "components": {
+		"minecraft:creative_category": {
+			"parent": "itemGroup.name.berries"
+		},
+      "minecraft:icon": "hondew",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "apple"
+    }
+  }
+}

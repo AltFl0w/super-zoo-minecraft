@@ -1,0 +1,70 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serpdiglett",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "diglett",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "diglett",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-3, 0, -3], "size": [6, 10, 6], "uv": [0, 0]},
+						{"origin": [-2.5, 9.5, -2.5], "size": [5, 1, 5], "uv": [18, 0]},
+						{"origin": [2.5, 0.5, -2.5], "size": [1, 9, 5], "uv": [12, 16]},
+						{"origin": [-3.5, 0.5, -2.5], "size": [1, 9, 5], "uv": [0, 16]},
+						{"origin": [-2.5, 0.5, -3.5], "size": [5, 9, 1], "uv": [24, 16]},
+						{"origin": [-1.5, 5.5, -4.3], "size": [3, 2, 1], "inflate": -0.2, "uv": [36, 28]},
+						{"origin": [-2.5, 0.5, 2.5], "size": [5, 9, 1], "uv": [24, 6]}
+					]
+				},
+				{
+					"name": "rocks1",
+					"parent": "diglett",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-1, 0, 3], "size": [2, 1, 2], "uv": [30, 39]},
+						{"origin": [2, 0, 2], "size": [2, 2, 2], "pivot": [3, 0, 3], "rotation": [-22.5, 30, 0], "uv": [36, 20]},
+						{"origin": [2, 0, -4], "size": [2, 2, 2], "inflate": -0.3, "pivot": [3, 2, -3], "rotation": [22.5, 30, 0], "uv": [36, 16]},
+						{"origin": [-4, 0, 2], "size": [2, 2, 2], "pivot": [-3, 0, 3], "rotation": [22.5, 30, 0], "uv": [36, 12]},
+						{"origin": [-4, 0, -4], "size": [2, 2, 2], "pivot": [-3, 0, -3], "rotation": [22.5, 30, 0], "uv": [36, 8]},
+						{"origin": [-1, 0, -5], "size": [2, 2, 2], "uv": [36, 4]},
+						{"origin": [3, 0, -1], "size": [2, 1, 2], "uv": [6, 39]},
+						{"origin": [-5, 0, -1], "size": [2, 1, 2], "uv": [37, 37]},
+						{"origin": [-2, 0, 0], "size": [3, 3, 3], "pivot": [1, 0, 1], "rotation": [52.5, -117.5, -7.5], "uv": [0, 30]},
+						{"origin": [1, 0, 2], "size": [3, 2, 2], "pivot": [3, 1, 3], "rotation": [52.5, -45, -22.5], "uv": [7, 16]},
+						{"origin": [-3, 2, -2], "size": [3, 2, 3], "pivot": [0, 2, -2], "rotation": [0, -45, -22.5], "uv": [21, 32]},
+						{"origin": [-4, 1, 1], "size": [3, 1, 3], "uv": [12, 30]}
+					]
+				},
+				{
+					"name": "rocks2",
+					"parent": "diglett",
+					"pivot": [0, 0, 0],
+					"rotation": [0, 22.5, 0],
+					"cubes": [
+						{"origin": [-1, 0, 3], "size": [2, 1, 2], "inflate": 0.3, "uv": [24, 37]},
+						{"origin": [2, 0, 2], "size": [2, 2, 2], "inflate": 0.3, "pivot": [3, 0, 3], "rotation": [-22.5, 30, 0], "uv": [0, 36]},
+						{"origin": [2, 0, -4], "size": [2, 2, 2], "inflate": 0.3, "pivot": [3, 2, -3], "rotation": [22.5, 30, 0], "uv": [10, 35]},
+						{"origin": [-4, 0, 2], "size": [2, 2, 2], "inflate": 0.3, "pivot": [-3, 0, 3], "rotation": [22.5, 30, 0], "uv": [34, 24]},
+						{"origin": [-4, 0, -4], "size": [2, 2, 2], "inflate": 0.3, "pivot": [-3, 0, -3], "rotation": [22.5, 30, 0], "uv": [33, 32]},
+						{"origin": [-1, 0, -5], "size": [2, 2, 2], "inflate": 0.3, "uv": [33, 0]},
+						{"origin": [3, 0, -1], "size": [2, 1, 2], "inflate": 0.3, "uv": [16, 37]},
+						{"origin": [-5, 0, -1], "size": [2, 1, 2], "inflate": 0.3, "uv": [31, 36]}
+					]
+				}
+			]
+		}
+	]
+}

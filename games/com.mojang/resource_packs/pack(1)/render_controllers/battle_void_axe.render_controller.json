@@ -1,0 +1,16 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.battle_void_axe": {
+			"geometry": "Geometry.battle_void_axe",
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.battle_void_axe"
+			]
+		}
+	}
+}

@@ -1,0 +1,65 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.serphaunter",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "haunter",
+					"pivot": [0, 3, 0]
+				},
+				{
+					"name": "head",
+					"parent": "haunter",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [-5, 8, -5], "size": [10, 5, 8], "uv": [0, 9]}, 
+						{"origin": [-4.5, 12.5, -4], "size": [9, 1, 6], "uv": [2, 11]}, 
+						{"origin": [-10, 6, -3], "size": [5, 9, 0], "pivot": [-5, 13, -3], "rotation": [0, 35, 0], "uv": [37, 9]}, 
+						{"origin": [5, 6, -3], "size": [5, 9, 0], "pivot": [5, 13, -3], "rotation": [0, -35, 0], "uv": [37, 9], "mirror": true}, 
+						{"origin": [-5, 3.4972, -0.67873], "size": [10, 4.41, 4], "pivot": [0, 8.4972, 3.32127], "rotation": [-33, 0, 0], "uv": [0, 23]}, 
+						{"origin": [-5, 2, -5], "size": [10, 6, 3], "pivot": [0, 8, -5], "rotation": [30, 0, 0], "uv": [29, 23]}, 
+						{"origin": [-5, -5.19615, -2], "size": [10, 8, 0], "pivot": [0, 2.80385, -2], "rotation": [70, 0, 0], "uv": [21, 33]}, 
+						{"origin": [-5, -2.69709, -0.40227], "size": [10, 8, 0], "pivot": [0, 5.30291, -0.40227], "rotation": [50, 0, 0], "uv": [21, 33]}, 
+						{"origin": [-7, 13, -5], "size": [14, 0, 8], "pivot": [0, 13, -5], "rotation": [35, 0, 0], "uv": [0, 0]}
+					]
+				}, 
+				{
+					"name": "tail",
+					"parent": "head",
+					"pivot": [0, 3, 0]
+				}, 
+				{
+					"name": "hands",
+					"parent": "haunter",
+					"pivot": [0, 7, -5]
+				}, 
+				{
+					"name": "right_hand",
+					"parent": "hands",
+					"pivot": [-4, 6, -7],
+					"rotation": [30, 20, 0],
+					"cubes": [
+						{"origin": [-8, 3, -11], "size": [5, 4, 5], "uv": [0, 32]}
+					]
+				}, 
+				{
+					"name": "left_hand",
+					"parent": "hands",
+					"pivot": [4, 6, -7],
+					"rotation": [30, -20, 0],
+					"cubes": [
+						{"origin": [3, 3, -11], "size": [5, 4, 5], "uv": [0, 32], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

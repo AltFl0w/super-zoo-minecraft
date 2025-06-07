@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:caja_de_puppet",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_caja_de_puppet"
+      },
+      "geometry": {
+        "default": "geometry.df_caja_de_puppet"
+      },
+      "animations": {
+        "default_pose": "animation.df_caja_de_puppet.abierta",
+        "no_pose": "animation.df_caja_de_puppet.cerrada",
+        "solemn_pose": "animation.df_caja_de_puppet.abierta",
+        "athena_pose": "animation.df_caja_de_puppet.cerrada",
+        "brandish_pose": "animation.df_caja_de_puppet.abierta",
+        "honor_pose": "animation.df_caja_de_puppet.cerrada",
+        "entertain_pose": "animation.df_caja_de_puppet.abierta",
+        "riposte_pose": "animation.df_caja_de_puppet.cerrada",
+        "salute_pose": "animation.df_caja_de_puppet.abierta",
+        "zombie_pose": "animation.df_caja_de_puppet.cerrada",
+        "cancan_a_pose": "animation.df_caja_de_puppet.abierta",
+        "cancan_b_pose": "animation.df_caja_de_puppet.cerrada",
+        "hero_pose": "animation.df_caja_de_puppet.abierta",
+        "wiggle": "animation.df_caja_de_puppet.cerrada"
+      },
+      "animation_controllers": [
+        { "pose": "controller.animation.armor_stand.pose" },
+        { "wiggling": "controller.animation.armor_stand.wiggle" }
+      ],
+      "render_controllers": [
+        "controller.render.fnaf"
+      ],
+      "spawn_egg": {
+        "texture": "df_caja_de_puppet",
+		"texture_index": 0
+      }
+    }
+  }
+}

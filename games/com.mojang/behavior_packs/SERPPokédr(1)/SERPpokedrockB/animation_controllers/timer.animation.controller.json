@@ -1,0 +1,74 @@
+{
+	"format_version": "1.10.0",
+	"animation_controllers": {
+"controller.animation.root": {
+  "states": {
+    "root": {
+      "animations": [{"attacks":"query.is_sheared"},"fly","slow_falling","dive","typhlosion"]
+        }
+      }
+    },
+"controller.animation.heal": {
+  "initial_state": "normal",
+  "states": {
+    "normal": {
+      "animations": ["timer"],
+      "transitions": [{"heal":"query.has_owner && query.anim_time >= 10"}]
+    },
+    "heal": {
+      "transitions": [{"normal":"(1.0)"}],
+      "on_exit": ["/effect @a[r=5] regeneration 1 2","/effect @s regeneration 1 2"]
+        }
+      }
+    },
+"controller.animation.despawn": {
+  "states": {
+    "default": {
+      "transitions": [
+      {"1":"(1.0)"}]},
+        "1": {
+      "transitions": [{"default":"(1.0)"}],
+      "on_entry":["@s despawn"],
+      "on_exit":["@s despawn"]}
+      }
+    },
+"controller.animation.ball": {
+  "states": {
+    "default": {
+      "transitions": [
+      {"1":"query.skin_id == 1"}]
+    },
+    "1": {
+      "transitions": [{"default":"query.variant != 0"}],
+    "on_entry":["/tp @s ~~0.2~ facing @p"],
+    "on_exit":["/tp @s ~~0.5~ facing @p"]}
+      }
+    },
+"controller.animation.trainer": {
+  "states": {
+    "default": {
+      "transitions":[{"1":"query.skin_id == 2"}]},
+    "1": {
+      "transitions":[{"default":"(1.0)"}],
+    "on_exit":["/function battle/trainer"]}
+      }
+    },
+"controller.animation.attacks": {
+  "states": {
+    "default": {
+      "transitions": [
+      {"attack":"!query.is_tamed"},
+      {"reset":"query.is_tamed"}]},
+        "attack": {
+      "animations": ["timer"],
+      "transitions": [{"reset":"query.anim_time >= 1.0"}],
+      "on_entry":["/effect @s slowness 3 10 true"],
+      "on_exit":["@s serp:attack_switch"]},
+        "reset": {
+      "animations": ["timer"],
+      "transitions": [{"default":"query.anim_time >= 0.2"}],
+      "on_exit":["@s serp:end_attack","/function battle/battle_reset"]}
+      }
+    }
+  }
+}

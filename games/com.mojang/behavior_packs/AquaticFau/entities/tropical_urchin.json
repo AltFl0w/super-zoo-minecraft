@@ -1,0 +1,99 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "fauna:tropical_urchin",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "\u003d\u003d",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? Math.Random(3,5) : 0"
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/seaurchin.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": [
+          "seaurchin"
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      },
+      "minecraft:movement": {
+        "value": 0.01
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.01
+      },
+      "minecraft:behavior.random_swim": {
+        "priority": 4,
+        "speed_multiplier": 1,
+        "xz_dist": 36,
+        "interval": 12
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_swim": false,
+        "can_walk": true,
+        "can_breach": true,
+        "can_sink": false,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.sway": {
+        "sway_amplitude": 0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:physics": {},
+      "minecraft:behavior.move_to_water": {
+        "priority": 1,
+        "search_range": 16,
+        "search_height": 5,
+        "goal_radius": 0.1,
+        "probability": 0.2
+      },
+      "minecraft:movement.amphibious": {
+        "max_turn": 15
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 9,
+        "probability": 0.1,
+        "interval": 100
+      },
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:scale": {
+        "value": 0.9
+      }
+    }
+  }
+}

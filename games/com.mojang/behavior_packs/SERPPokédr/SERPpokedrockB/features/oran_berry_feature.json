@@ -1,0 +1,12 @@
+{
+  "format_version":"1.16.0",
+  "minecraft:single_block_feature":{
+    "description":{
+      "identifier":"serp:oran_berry_feature"
+    },
+    "places_block":{"name":"serp:berry_block","states":{"serp:phase":2,"serp:berry":7}},
+    "enforce_survivability_rules":false,
+    "enforce_placement_rules":false,
+    "may_replace":["minecraft:tallgrass"]
+  }
+}

@@ -1,0 +1,35 @@
+{
+    "authorizedUsers": [
+        "YourMinecraftUsername",
+        "AdminUser1",
+        "AdminUser2"
+    ],
+    "restrictedCommands": [
+        "emergency",
+        "clean", 
+        "schedule",
+        "authorize"
+    ],
+    "feedingSchedule": {
+        "enabled": true,
+        "times": ["08:00", "12:00", "16:00", "20:00"]
+    },
+    "emergencyProtocols": {
+        "clearWeather": true,
+        "setDayTime": true,
+        "giveSupplies": true,
+        "lockEnclosures": true
+    },
+    "animalTypes": [
+        "lions",
+        "tigers", 
+        "elephants",
+        "penguins",
+        "dolphins",
+        "giraffes",
+        "monkeys",
+        "bears",
+        "wolves",
+        "pandas"
+    ]
+} 

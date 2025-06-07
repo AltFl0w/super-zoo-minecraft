@@ -1,0 +1,85 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+		"controller.animation.attack": {
+            "states": {
+                "default": {
+                    "transitions": [
+						{
+                            "attack": "variable.attack_time > 0"
+                        }
+					]
+                },
+                "attack": {
+                    "transitions": [{
+                            "default": "query.all_animations_finished"
+                        }
+                    ],
+                    "animations": [
+					   "attack_anim"
+                    ],
+					"on_entry": [
+						"/gamerule sendcommandfeedback false"
+					],
+					"on_exit": [
+						"/gamerule sendcommandfeedback true"
+					]
+                }
+            }
+        },
+		"controller.animation.puppet.music": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "sound": "query.variant == 0"
+                        },
+						{
+                            "sound2": "query.variant == 1"
+                        }
+					]
+                },
+                "sound": {
+                    "transitions": [{
+                            "default": "query.variant != 0"
+                        }
+                    ],
+                    "on_entry": [
+					   "/stopsound @p puppet.musica",
+					   "/playsound puppet.musica @p[m=!c]"
+                    ]
+                },
+				"sound2": {
+                    "transitions": [{
+                            "default": "query.variant != 1"
+                        }
+                    ],
+                    "on_entry": [
+					   "/stopsound @p ballora.musica"
+                    ]
+                }
+            }
+        },
+		"controller.animation.dead": {
+            "states": {
+                "default": {
+                    "transitions": [{
+                            "kill": "query.is_alive"
+                        }
+					],
+					"on_entry": [
+					   "/stopsound @p puppet.musica"
+                    ]
+                },
+                "kill": {
+                    "transitions": [{
+                            "default": "!query.is_alive"
+                        }
+                    ],
+                    "on_entry": [
+					   "/stopsound @p puppet.musica"
+                    ]
+                }
+            }
+        }
+    }
+}

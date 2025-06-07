@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "serp:profs",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "oak": "textures/entity/npc/oak",
+        "elm": "textures/entity/npc/elm"
+      },
+      "geometry": {
+        "oak": "geometry.serpoak",
+        "elm": "geometry.serpelm"
+      },
+      "scripts": {
+        "scale": "0.9375",
+        "animate": [
+          "look_at_target",
+          "quiet"
+        ]
+      },
+      "animations": {
+    "quiet": "animation.prof.quiet",
+    "look_at_target": "animation.common.look_at_target"
+    },
+      "render_controllers": [ "controller.render.profs" ],
+      "spawn_egg": {
+          "texture": "base_npc",
+        "texture_index": 0
+      }
+    }
+  }
+}

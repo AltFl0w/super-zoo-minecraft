@@ -1,0 +1,31 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:ultraball"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " p ",
+      " b ",
+      " d "
+    ],
+    "key": {
+      "p": {
+        "item": "serp:ultraball_up"
+      },
+      "b": {
+        "item": "minecraft:stone_button"
+      },
+      "d": {
+        "item": "serp:down_part"
+      }
+    },
+    "result": {
+      "item": "serp:ultraball",
+      "count": 1
+    }
+  }
+}

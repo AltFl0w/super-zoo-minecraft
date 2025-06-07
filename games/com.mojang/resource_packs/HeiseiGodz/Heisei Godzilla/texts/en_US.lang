@@ -1,0 +1,8 @@
+entity.heiseigodzilla:burning_godzilla.name=Burning Godzilla
+entity.heiseigodzilla:heisei_godzilla.name=Heisei Godzilla
+
+item.spawn_egg.entity.heiseigodzilla:burning_godzilla.name=Spawn Burning Godzilla
+item.spawn_egg.entity.heiseigodzilla:heisei_godzilla.name=Spawn Heisei Godzilla
+
+item.heiseigodzilla:fire_bomb.name=Fire Bomb
+item.heiseigodzilla:snow_bomb.name=Snow Bomb

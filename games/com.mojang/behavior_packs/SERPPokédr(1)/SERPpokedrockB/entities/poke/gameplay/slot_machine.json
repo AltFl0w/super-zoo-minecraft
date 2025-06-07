@@ -1,0 +1,158 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "serp:slot_machine",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+			"scripts": {
+				"animate": ["rotate"]},
+			"animations": {"rotate": "controller.animation.rotate"}
+		},
+    "component_groups": {
+	"serp:no_rotate": {
+		"minecraft:skin_id": {"value": 0}},
+	"serp:rotate": {
+		"minecraft:skin_id": {"value": 1}},
+        "serp:adult": {
+        "minecraft:is_saddled": {},
+        "minecraft:timer": {"looping": false, "randomInterval": false,"time": 2.4, "time_down_event": {"event": "admire_item_stopped_event"}}},
+      "serp:return": {
+      "minecraft:loot": {
+    "table": "loot_tables/empty.json"},
+    "minecraft:health": {"value": 0,"max": 0},
+    "minecraft:despawn": {
+        "filters": {"all_of": [ {"test": "distance_to_nearest_player","subject": "self","operator": ">=","value": 0 } ] } } },
+      "serp:trade": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+            "filters": {"test": "is_sneaking", "subject": "other" },
+		"event": "serp:return",
+		"target": "self"},
+        "add_items": {
+            "table": "loot_tables/entities/slot.json" },
+"interact_text": "structure_block.save"
+            },
+            {
+              "on_interact": {
+        "filters": {"test": "has_equipment", "subject": "other","domain": "hand","value": "serp:poke"} },"barter": true,"admire": true, "use_item": true, "cooldown_after_being_attacked": 20, "interact_text": "action.interact.barter" }
+          ]
+        }
+      }
+    },
+    "components": {
+"minecraft:admire_item": {"duration": 2.4},
+        "minecraft:barter": {
+          "barter_table": "loot_tables/entities/trade_resources.json"
+        },
+    "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+            },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {
+              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "player" },
+              "event": "serp:rotate"
+            },
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 1.9
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:health": {
+        "value": 1600,
+        "max": 16000
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/slot.json"
+      },
+      "minecraft:behavior.admire_item": {
+        "priority": 0,
+        "admire_item_sound": "admire",
+        "on_admire_item_start": {
+          "event": "admire_item_started_event",
+          "target": "self"
+        },
+        "on_admire_item_stop": {
+          "event": "admire_item_stopped_event",
+          "target": "self"
+        }
+      },
+      "minecraft:behavior.barter": {
+        "priority": 0
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+"component_groups": ["serp:trade"]
+        }
+      },
+	  "serp:rotate": {
+		"add": {
+"component_groups": ["serp:rotate"]
+				}
+			},
+	  "serp:no_rotate": {
+		"add": {
+"component_groups": ["serp:no_rotate"]
+				},
+		"remove": {
+"component_groups": ["serp:rotate"]
+				}
+			},
+      "serp:return": {
+        "add": {
+"component_groups": ["serp:return"]
+        }
+      },
+      "admire_item_started_event": {
+        "remove": {
+"component_groups": ["serp:trade"]
+        },
+        "add": {
+"component_groups": ["serp:adult"]
+        }
+      },
+      "admire_item_stopped_event": {
+        "remove": {
+"component_groups": ["serp:adult"]
+        },
+        "add": {
+"component_groups": ["serp:trade"]
+        }
+      }
+    }
+  }
+}

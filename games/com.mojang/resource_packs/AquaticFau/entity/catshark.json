@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "geometry": {
+        "default": "geometry.catshark"
+      },
+      "identifier": "fauna:catshark",
+      "materials": {
+        "default": "entity_emissive_alpha"
+      },
+      "render_controllers": [
+        "controller.render.catsharkvariant"
+      ],
+      "scripts": {
+        "animate": [
+          "move"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "catshark",
+        "texture_index": 0
+      },
+      "textures": {
+        "catshark": "textures/entity/shark/catshark/catshark",
+        "leopard": "textures/entity/shark/catshark/leopard",
+        "invisible": "textures/entity/shark/catshark/invisible",
+        "iceland": "textures/entity/shark/catshark/iceland"
+      },
+      "animations": {
+        "attack": "animation.catshark.attack",
+        "idle": "animation.catshark.flop",
+        "swim": "animation.catshark.swim",
+        "move": "controller.animation.predator.move"
+      }
+    }
+  }
+}

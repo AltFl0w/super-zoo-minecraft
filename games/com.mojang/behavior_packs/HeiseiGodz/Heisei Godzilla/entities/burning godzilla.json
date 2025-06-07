@@ -1,0 +1,403 @@
+{
+    "format_version": "1.16.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "heiseigodzilla:burning_godzilla",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false,
+            "animations": {
+                "animMakeFire": "animation.heiseigodzilla.create_fire_on_ground"
+            },
+            "scripts": {
+                "animate": [
+                    "animMakeFire"
+                ]
+            }
+        },
+        "component_groups": {
+            "heiseigodzilla:no_target": {
+                "minecraft:entity_sensor": {
+                    "sensor_range": 96,
+                    "relative_range": true,
+                    "minimum_count": 1,
+                    "event_filters": {
+                        "any_of": [
+                            {
+                                "test": "is_family", 
+                                "subject":"other", 
+                                "value": "mob"
+                            },
+                            {
+                                "all_of": [
+                                    {
+                                        "test": "is_family", 
+                                        "subject": "other", 
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_ability", 
+                                        "subject": "other",
+                                        "operator": "!=",
+                                        "value": "invulnerable"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "event": "heiseigodzilla:start_attacking"
+                },
+                "minecraft:pushable": {
+                    "is_pushable": false,
+                    "is_pushable_by_piston": false
+                }
+            },
+            "heiseigodzilla:use_roar": {
+				"minecraft:behavior.knockback_roar": {
+					"priority": 0,
+					"duration": 5.2917,
+					"attack_time": 1.25,
+					"knockback_damage": 210000,
+					"knockback_strength": 1,
+					"knockback_range": 24,
+					"damage_filters": {
+                        "any_of": [
+                            {
+                                "test": "is_family", 
+                                "subject":"other", 
+                                "value": "mob"
+                            },
+                            {
+                                "all_of": [
+                                    {
+                                        "test": "is_family", 
+                                        "subject": "other", 
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_ability", 
+                                        "subject": "other",
+                                        "operator": "!=",
+                                        "value": "invulnerable"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+					"knockback_filters": {
+                        "any_of": [
+                            {
+                                "test": "is_family", 
+                                "subject":"other", 
+                                "value": "mob"
+                            },
+                            {
+                                "all_of": [
+                                    {
+                                        "test": "is_family", 
+                                        "subject": "other", 
+                                        "value": "player"
+                                    },
+                                    {
+                                        "test": "has_ability", 
+                                        "subject": "other",
+                                        "operator": "!=",
+                                        "value": "invulnerable"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+					"on_roar_end": {
+						"event": "heiseigodzilla:stop_roar"
+					}
+				},
+                "minecraft:pushable": {
+                    "is_pushable": false,
+                    "is_pushable_by_piston": false
+                }
+            },
+            "heiseigodzilla:use_melee_attack": {
+                "minecraft:behavior.delayed_attack": {
+                    "priority": 4,
+                    "attack_duration": 1.0417,
+                    "hit_delay_pct": 0.5568,
+                    "reach_multiplier": 3
+                },
+                "minecraft:pushable": {
+                    "is_pushable": false,
+                    "is_pushable_by_piston": false
+                },
+                "minecraft:timer": {
+                    "time": 15,
+                    "time_down_event": {
+                        "event": "heiseigodzilla:stop_attacking",
+                        "target": "self"
+                    }
+                }
+            },
+            "heiseigodzilla:use_atomic_breath": {
+                "minecraft:is_charged": {},
+                "minecraft:behavior.melee_attack": {
+                    "priority": 3,
+                    "reach_multiplier": 1
+                },
+				"minecraft:spawn_entity": {
+					"entities": [
+						{
+							"spawn_entity": "heiseigodzilla:laser_explosion",
+                            "num_to_spawn": 3,
+							"min_wait_time": 0,
+							"max_wait_time": 0
+						}
+					]
+				},
+                "minecraft:pushable": {
+                    "is_pushable": false,
+                    "is_pushable_by_piston": false
+                },
+                "minecraft:timer": {
+                    "time": 5,
+                    "time_down_event": {
+                        "event": "heiseigodzilla:melee_attack_mode",
+                        "target": "self"
+                    }
+                }
+            },
+            "heiseigodzilla:neutralized": {
+                "minecraft:is_sheared": {}
+            },
+            "heiseigodzilla:explode": {
+                "minecraft:explode": {
+                    "fuse_length": 0,
+                    "fuse_lit": true,
+                    "causes_fire": false,
+                    "power": 16
+                }
+            }
+        },
+        "components": {
+			"minecraft:boss": {
+				"name": "entity.heiseigodzilla:burning_godzilla.name"
+			},
+            "minecraft:type_family": {
+				"family": [
+					"burningGodzilla",
+					"mob"
+				]
+            },
+            "minecraft:health": {
+                "value": 11500000
+            },
+            "minecraft:attack": {
+                "damage": 680000
+            },
+            "minecraft:scale": {
+                "value": 3
+            },
+            "minecraft:behavior.nearest_prioritized_attackable_target": {
+                "priority": 2,
+                "within_radius": 192,
+                "entity_types": [
+                    {
+                        "filters": {
+                            "any_of": [
+                                {
+                                    "test": "is_family", 
+                                    "subject": "other", 
+                                    "value": "mob"
+                                },
+                                {
+                                    "all_of": [
+                                        {
+                                            "test": "is_family", 
+                                            "subject": "other", 
+                                            "value": "player"
+                                        },
+                                        {
+                                            "test": "has_ability", 
+                                            "subject": "other",
+                                            "operator": "!=",
+                                            "value": "invulnerable"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "minecraft:behavior.hurt_by_target": {
+                "priority": 1
+            },
+            "minecraft:collision_box": {
+                "width": 4,
+                "height": 4
+            },
+            "minecraft:experience_reward": {
+                "on_death": "query.last_hit_by_player ? Math.Random(24,32) : 0"
+            },
+            "minecraft:navigation.walk": {
+				"avoid_water": true,
+				"avoid_damage_blocks": true
+			},
+            "minecraft:movement.basic": {},
+            "minecraft:movement": {
+                "value": 0.25
+            },
+            "minecraft:behavior.random_stroll": {
+                "priority": 5
+            },
+            "minecraft:behavior.random_look_around": {
+				"priority": 6
+			},
+			"minecraft:jump.static": {},
+            "minecraft:behavior.float": {},
+            "minecraft:is_hidden_when_invisible": {},
+			"minecraft:physics": {},
+            "minecraft:fire_immune": {},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "entity_explosion",
+						"deals_damage": false
+					},
+                    {
+                        "on_damage": {
+                            "filters": {
+                                "test": "has_component",
+                                "subject": "self",
+                                "operator": "!=",
+                                "value": "minecraft:is_sheared"
+                            },
+                            "event": "heiseigodzilla:commit_explosion",
+                            "target": "self"
+                        },
+						"cause": "fatal"
+                    }
+				]
+			},
+            "minecraft:interact": {
+				"interactions": [
+					{
+						"on_interact": {
+							"filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_component",
+                                        "subject": "self",
+                                        "operator": "!=",
+                                        "value": "minecraft:is_sheared"
+                                    },
+                                    {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "heiseigodzilla:snow_bomb"
+                                    }
+                                ]
+                            },
+                            "event": "heiseigodzilla:get_neutralized",
+                            "target": "self"
+                        }
+                    }
+                ]
+            },
+			"minecraft:knockback_resistance": {
+				"value": 100
+			},
+			"minecraft:nameable": {}
+        },
+        "events": {
+            "minecraft:entity_spawned": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:no_target"
+                    ]
+                }
+            },
+            "heiseigodzilla:start_attacking": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:use_roar"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "heiseigodzilla:no_target"
+                    ]
+                }
+            },
+            "heiseigodzilla:stop_attacking": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:no_target"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "heiseigodzilla:use_roar",
+                        "heiseigodzilla:attack_target",
+                        "heiseigodzilla:use_melee_attack",
+                        "heiseigodzilla:use_atomic_breath"
+                    ]
+                }
+            },
+            "heiseigodzilla:stop_roar": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:use_atomic_breath"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "heiseigodzilla:use_roar"
+                    ]
+                }
+            },
+            "heiseigodzilla:melee_attack_mode": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:use_melee_attack"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "heiseigodzilla:use_atomic_breath"
+                    ]
+                }
+            },
+            "heiseigodzilla:atomic_breath_mode": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:use_atomic_breath"
+                    ]
+                },
+                "remove": {
+                    "component_groups": [
+                        "heiseigodzilla:use_melee_attack"
+                    ]
+                }
+            },
+            "heiseigodzilla:commit_explosion": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:explode"
+                    ]
+                }
+            },
+            "heiseigodzilla:get_neutralized": {
+                "add": {
+                    "component_groups": [
+                        "heiseigodzilla:neutralized"
+                    ]
+                },
+                "run_command": {
+                    "command": [
+                        "tellraw @p {\"rawtext\":[{\"text\":\"Burning Godzilla has been neutralized, it will no longer create fire or explode upon death!\"}]}"
+                    ]
+                }
+            }
+        }
+    }
+}

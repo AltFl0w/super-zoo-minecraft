@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:paperpal3",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/muebles/df_paperpalls3_fnaf2"
+      },
+      "geometry": {
+        "default": "geometry.df_paperpalls3_fnaf2"
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_paperpal3",
+        "texture_index": 0
+      }
+    }
+  }
+}

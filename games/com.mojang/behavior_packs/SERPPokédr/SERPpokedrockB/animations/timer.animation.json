@@ -1,0 +1,11 @@
+{
+	"format_version":"1.8.0",
+	"animations":{
+		"animation.timer":{
+	"loop":false,"animation_length":15,
+			"timeline":{
+"0.0":["/effect @p[c=1,r=4] fatal_poison 15 1"]
+			}
+		}
+	}
+}

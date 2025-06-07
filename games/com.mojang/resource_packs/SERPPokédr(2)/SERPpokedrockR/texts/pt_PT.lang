@@ -1,0 +1,182 @@
+pack.description=§fDivirta-se capturando, criando e lutando ao lado de Pokémon com este complemento para a base do Minecraft! §2criado por Zacek el Serpentín, §cNenhum aplicativo da Play Store ou qualquer página que não seja Mcpedl e www.serpzacek.com tem permissão para distribuir este projeto, não incentiva a pirataria. Os nomes das espécies e de vários objetos são propriedade da empresa Pokémon e este projeto não está relacionado com a saga do videogame Pokémon
+
+intro#######################################
+
+item.serp:button_a.name=Botão A
+ball.catch=Muito bem! Eu peguei um Pokémon!
+ball.free=Ah não! Eu quase tive!
+skill.1=Habilidade 1
+skill.2=Habilidade 2
+skill.3=Habilidade 3
+attack.main=Ataque Principal
+attack.secondary=Contra-Ataque/Ataque Secundário
+attack.bold=Ataque ousado
+serp.intro1=Olá! Bem-vindo ao mundo dos Pokémon!
+serp.intro2=Este mundo é habitado por criaturas chamadas Pokémon!
+serp.intro3=Para algumas pessoas, Pokémon são animais de estimação. Outros os usam para brigas
+serp.intro4=Agora, vamos ver, seu nome é
+serp.intro4.1=, certo?
+serp.choosing_gen=Qual geração você escolherá?
+serp.choosing_poke=Qual inicial você escolherá?
+serp.choosed_poke=Boa escolha!
+serp.intro5=Eu lhe darei seu Pokémon inicial junto com um kit inicial
+serp.intro6=Muitas aventuras com os Pokémon esperam por você!
+serp.intro7=Este addon foi feito por Zacek the Serpentine
+joy.1=Bem-vindo ao Centro Pokémon! aqui você e seu Pokémon podem descansar até se recuperarem!
+joy.2=Você pode curar seu Pokémon derrotado com a máquina ao meu lado, é grátis!
+joy.3=Ao viajar você pode encontrar outros Centros Pokémon como este, não se preocupe se for muito longe!
+joy.4=Em cada Pokémon Center haverá uma enfermeira igual a mim, não se assuste, somos uma família uWu
+joy.5=Se você não tiver um Centro Pokémon por perto, você pode fazer sua própria máquina de cura!
+jenny.1=Seção de achados e perdidos, você reconhece alguma?
+jenny.2=Aqui, parece que isso pertence a você!
+jenny.3=Opa... Receio que este item não lhe pertença. Vejo você em breve!
+jenny.4=Obrigado por sua colaboração! Quando o dono deste objeto vier buscá-lo, nós o entregaremos a ele!
+prof.1=Estudar Pokémon é um trabalho exaustivo... Mas fascinante!
+prof.2=Quantos Pokémon você capturou hoje?
+prof.3=De vez em quando um Professor diferente vem para me substituir, mas até lá vou continuar trabalhando!
+prof.4=Não esqueça que se precisar descansar, você pode ir a qualquer centro Pokémon!
+prof.5=Nossa pesquisa irá progredir muito mais rápido graças à sua ajuda!
+
+Store######################################
+
+store.bike=Deixe-me ver... Vamos! um cupom de bicicleta? Muito bom, aproveite!
+store.ride=Isto é... Um Cupom de Montaria?? Aí está, cuidado!
+
+Mission####################################
+
+communicator.on=Bem-vindo ao Rotom-Communicator! Agache-se e interaja para trocar os contatos.
+trainer.mission=Olá! Isso acontece, eu preciso de uma Wishing star, uma Key Stone ou uma Rare Candy Bowl. Se você me ajudar eu te dou algo que tenho na minha mochila!
+trainer.thanks=Muito obrigado! Aqui está sua recompensa.
+prof.mission=Saudações! Precisa que eu inspecione algo?
+prof.mega=Ah, uma Key Stone! Ok, este dispositivo irá ajudá-lo a usar adequadamente sua energia. chama-se Mega Ring!
+prof.dynamax=Isso é... uma Wishing star?! incrível! Com este dispositivo você poderá liberar a energia Dynamax de seu Pokémon, chama-se Dynamax band!
+prof.egg=Um ovo podre... Mesmo que seja ruim, ainda posso recuperá-lo. Leva! Leve-o ao Laboratório Pessoal para fazê-lo eclodir!
+mission.legendary=Mostre-me sua habilidade como treinador de Pokémon e eu lhe darei evidências da existência de Pokémon Lendários em troca!
+goh.mission=Olá! Você tem algum item relacionado a um Pokémon Lendário? Se sim, mostre-me e eu lhe darei as ferramentas necessárias para convocá-los!
+goh.articuno=Uau, uma pena congelada! Com isso posso conferir os gostos do Articuno e... Vamos lá! Se você der essa oferenda a um anel de Hoopa com certeza Articuno é quem vai aparecer!
+goh.zapdos=Uau, uma pena elétrica! Com isso eu posso checar os gostos de Zapdos e... Vamos lá! Se você der essa oferenda a um anel de Hoopa com certeza Zapdos é quem vai aparecer!
+goh.moltres=Uau, uma Pena Ardente! Com isso posso verificar os gostos de Moltres e... Vamos! Se você der esta oferenda a um anel de Hoopa com certeza Moltres é quem vai aparecer!
+
+Battle#####################################
+
+combat.received=!O Pokémon recebeu
+combat.receivedd=!O Pokémon recebeu §l§c
+combat.receivedm=!O Pokémon recebeu §l§d
+combat.damage=§r dano!
+combat.not_received=Pokémon não recebeu dano!
+combat.ineeffective=O ataque foi ineficaz!
+combat.immunity=O Pokémon é imune!
+combat.miss=Ataque perdido!
+combat.effective=O ataque foi super efetivo!
+combat.critic=Um ataque crítico!
+
+Rotodialogs################################
+
+entity.serp:pc_description.name=¡bem-vindo ao Poké Mart online!
+entity.serp:rotomarket_buy.name=¡Oi-roto! Você trouxe algo para mim??
+entity.serp:rotomarket_potions.name=¡Oi-roto! Você quer algum consumível??
+entity.serp:rotomarket_pokeballs.name=¡Oi-roto! Você quer comprar Pokéballs??
+entity.serp:rotomarket_stuff.name=¡Oi-roto! Você gostaria de algum item??
+entity.serp:rotomarket_suits.name=¡Oi-roto! Você vai comprar alguma roupa??
+entity.pokedrock.pilot.name=Deixe-me ver o que você tem para mim hoje?
+
+Trade//////////////////////////////////////
+
+item.serp:trading_kadabra.name=Vou trade kadabra
+item.serp:trading_kadabras.name=Vou trade kadabra
+item.serp:trading_machoke.name=Vou trade machoke
+item.serp:trading_machokes.name=Vou trade machoke
+item.serp:trading_graveler.name=Vou trade graveler
+item.serp:trading_gravelers.name=Vou trade graveler
+item.serp:trading_haunter.name=Vou trade haunter
+item.serp:trading_haunters.name=Vou trade haunter
+item.serp:trading_onix.name=Vou trade onix
+item.serp:trading_onixs.name=Vou trade onix
+item.serp:trading_seadra.name=Vou trade seadra
+item.serp:trading_seadras.name=Vou trade seadra
+item.serp:trading_scyther.name=Vou trade scyther
+item.serp:trading_scythers.name=Vou trade scyther
+item.serp:trading_poliwhirl.name=Vou trade poliwhirl
+item.serp:trading_poliwhirls.name=Vou trade poliwhirl
+item.serp:trading_slowpoke.name=Vou trade slowpoke
+item.serp:trading_slowpokes.name=Vou trade slowpoke
+item.serp:trading_porygon.name=Vou trade porygon
+item.serp:trading_porygons.name=Vou trade porygon
+item.serp:trading_clamperl1.name=Vou trade clamperl1
+item.serp:trading_clamperl1s.name=Vou trade clamperl1
+item.serp:trading_clamperl2.name=Vou trade clamperl2
+item.serp:trading_clamperl2s.name=Vou trade clamperl2
+item.serp:trading_rhydon.name=Vou trade rhydon
+item.serp:trading_rhydons.name=Vou trade rhydon
+item.serp:trading_porygon2.name=Vou trade porygon2
+item.serp:trading_porygon2s.name=Vou trade porygon2
+item.serp:trading_dusclops.name=Vou trade dusclops
+item.serp:trading_dusclopss.name=Vou trade dusclops
+item.serp:trading_magmar.name=Vou trade magmar
+item.serp:trading_magmars.name=Vou trade magmar
+item.serp:trading_electabuzz.name=Vou trade electabuzz
+item.serp:trading_electabuzzs.name=Vou trade electabuzz
+item.serp:trading_feebas.name=Vou trade feebas
+item.serp:trading_feebass.name=Vou trade feebas
+item.serp:trading_boldore.name=Vou trade boldore
+item.serp:trading_boldores.name=Vou trade boldore
+item.serp:trading_gurdurr.name=Vou trade gurdurr
+item.serp:trading_gurdurrs.name=Vou trade gurdurr
+item.serp:trading_karrablast.name=Vou trade karrablast
+item.serp:trading_karrablasts.name=Vou trade karrablast
+item.serp:trading_shellmet.name=Vou trade shellmet
+item.serp:trading_shellmets.name=Vou trade shellmet
+item.serp:trading_spritzee.name=Vou trade spritzee
+item.serp:trading_spritzees.name=Vou trade spritzee
+item.serp:trading_swirlix.name=Vou trade swirlix
+item.serp:trading_swirlixs.name=Vou trade swirlix
+item.serp:trading_phantump.name=Vou trade phantump
+item.serp:trading_phantumps.name=Vou trade phantump
+item.serp:trading_pumpkaboo.name=Vou trade pumpkaboo
+item.serp:trading_pumpkaboos.name=Vou trade pumpkaboo
+item.serp:trading_gravelera.name=Vou trade graveler Alola
+item.serp:trading_graveleras.name=Vou trade graveler Alola
+
+Pokedex###################################
+
+serp.height=§lAltura:§r
+serp.weight=§lPeso:§r
+serp.type=§lTipo(s):§r
+serp.biome=§lLocal(is):§r
+serp.getting=§lObtendo:§r
+serp.bug=Bicho
+serp.dark=Escuro
+serp.dragon=Dragão
+serp.electric=Elétrico
+serp.fairy=Fada
+serp.fight=Luta
+serp.fire=Fogo
+serp.flying=Volador
+serp.ghost=Fantasma
+serp.grass=Planta
+serp.ground=Terra
+serp.ice=Gelo
+serp.normal=Normal
+serp.poison=Veneno
+serp.psychic=Psíquico
+serp.rock=Rocha
+serp.steel=Aço
+serp.water=Água
+serp.evolve=Evoluir
+serp.unknown=Desconhecido
+serp.mission=Missão
+serp.any=Em todos os lugares
+serp.cave=Cavernas
+serp.night=À noite
+serp.desert=Deserto
+serp.ocean=Oceano
+serp.frozen_ocean=Oceano Congelado
+serp.river=Rio
+serp.plains=Planícies
+serp.forest=Florestas
+serp.birch=Floresta de Bétulas
+serp.dark_f=Floresta Escura
+serp.mesa=Meseta
+serp.beach=Praia
+serp.savanna=Savana 
+serp.sunflower=Campo dos Girassóis 

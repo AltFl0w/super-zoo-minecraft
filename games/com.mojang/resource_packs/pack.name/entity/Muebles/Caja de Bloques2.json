@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "df:caja_bloques2_fnaf2",
+      "materials": {
+        "default": "armor_stand"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/df_caja_de_objetos"
+      },
+      "geometry": {
+        "default": "geometry.df_caja_de_objetos"
+      },
+      "render_controllers": [
+         "controller.render.fnaf"
+         ],
+      "spawn_egg": {
+        "texture": "df_caja_de_objetos",
+        "texture_index": 0
+      }
+    }
+  }
+}

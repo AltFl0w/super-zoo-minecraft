@@ -1,0 +1,83 @@
+///Dany Fox 2020///
+///Si te lo robas eres gay///
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.df_papel_con_cara",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 13,
+				"visible_bounds_height": 19,
+				"visible_bounds_offset": [0, 3.5, 0]
+			},
+			"bones": [
+				{
+					"name": "WitheredBonnie",
+					"pivot": [0, -0.5, 0]
+				},
+				{
+					"name": "Parte1",
+					"parent": "WitheredBonnie",
+					"pivot": [0, 48.5, 6]
+				},
+				{
+					"name": "head",
+					"parent": "Parte1",
+					"pivot": [0, 76.5, 6]
+				},
+				{
+					"name": "CabezaT",
+					"parent": "head",
+					"pivot": [0, 76.5, 8]
+				},
+				{
+					"name": "Papel",
+					"parent": "CabezaT",
+					"pivot": [0, 93.8, 0.2],
+					"rotation": [-14.56312, 4.98093, 5.019],
+					"cubes": [
+						{"origin": [-5, 90.8, 0.2], "size": [10, 3, 0], "inflate": 0.05, "uv": [52, 112]}
+					]
+				},
+				{
+					"name": "Papel2",
+					"parent": "Papel",
+					"pivot": [0, 90.8, 0.2],
+					"rotation": [12.5, 0, 0],
+					"cubes": [
+						{"origin": [-5, 87.8, 0.2], "size": [10, 3, 0], "inflate": 0.05, "uv": [52, 114]}
+					]
+				},
+				{
+					"name": "Papel3",
+					"parent": "Papel2",
+					"pivot": [0, 87.8, 0.2],
+					"rotation": [-5, 0, 0],
+					"cubes": [
+						{"origin": [-5, 84.8, 0.2], "size": [10, 3, 0], "inflate": 0.05, "uv": [52, 117]}
+					]
+				},
+				{
+					"name": "Papel4",
+					"parent": "Papel3",
+					"pivot": [0, 84.8, 0.2],
+					"rotation": [7.5, 0, 0],
+					"cubes": [
+						{"origin": [-5, 81.8, 0.2], "size": [10, 3, 0], "inflate": 0.05, "uv": [52, 120]}
+					]
+				},
+				{
+					"name": "Papel5",
+					"parent": "Papel4",
+					"pivot": [0, 81.8, 0.2],
+					"rotation": [-12.5, 0, 0],
+					"cubes": [
+						{"origin": [-5, 78.8, 0.2], "size": [10, 3, 0], "inflate": 0.05, "uv": [52, 123]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,63 @@
+{
+	"namespace": "tabbed_upsell",
+
+	"danyfox_panel": {
+		"type": "stack_panel",
+		"orientation": "horizontal",
+		"size": ["100%",256],
+		"offset": [4,4],
+		"controls": [
+			{
+				"r":{
+					"type": "stack_panel",
+					"size": [132,"100%"],
+					"controls": [
+						{"1": {"type": "image","texture": "pack_icon","size": [128,128]}},
+						{"2": {"type": "panel","size": [4,4]}},
+						{"3": {"type": "label","font_scale_factor": 1.5,"text": "§4FNaF 2"}},
+						{"4": {"type": "label","font_scale_factor": 1.0,"text": "v1.5"}},
+						{"5": {"type": "label","font_scale_factor": 1.5,"text": ""}}
+					]
+				}
+			},
+			{
+				"l":{
+					"type": "stack_panel",
+					"size": ["fill","150%"],
+					"controls": [
+						{"tutulo": {"type": "label","font_scale_factor": 1.5,"text": "titulo_info"}},
+						{"subtulo1": {"type": "label","text": "texto0.0"}},
+						{"subtulo2": {"type": "label","text": "texto0.1"}},
+						{"subtulo3": {"type": "label","text": "texto0.2"}},
+
+						{"descarga": {"type": "label","font_scale_factor": 0.8,"text": "descarga"}},
+						{"descarga1": {"type": "label","font_scale_factor": 0.6,"text": "descarga.1"}},
+						{"pagina": {"type": "label","font_scale_factor": 0.8,"text": "pagina"}},
+						{"pagina1": {"type": "label","font_scale_factor": 0.6,"text": "pagina.1"}},
+						{"divicion": {"type": "label","font_scale_factor": 0.7,"text": ""}},
+
+						{"anuncio1": {"type": "label","font_scale_factor": 0.6,"text": "anuncio1"}},
+						{"anuncio2": {"type": "label","font_scale_factor": 0.6,"text": "anuncio2"}},
+
+						{"divicion2": {"type": "label","font_scale_factor": 0.7,"text": ""}},
+	
+
+						{"apoyotitulo0": {"type": "label","font_scale_factor": 1.1,"text": "apoyotitulo0"}},	
+						{"apoyotitulo1": {"type": "label","font_scale_factor": 1.1,"text": "apoyotitulo1"}},
+						{"apoyo0": {"type": "label","font_scale_factor": 0.9,"text": "apoyo0"}},
+						{"apoyo1": {"type": "label","font_scale_factor": 0.9,"text": "apoyo1"}}
+					]
+				}
+			}
+		]
+	},
+	"scroll@common.scrolling_panel": {
+		"$show_background": false,
+		"$scrolling_content": "tabbed_upsell.danyfox_panel"
+	},
+	"tabbed_upseel_screen_panel@common_dialogs.main_panel_no_buttons": {
+		"size": ["80%","80%"],
+		"$text_name": "titulo_info",
+		"$child_control": "tabbed_upsell.scroll"
+	}
+}

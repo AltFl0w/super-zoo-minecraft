@@ -1,0 +1,33 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "wep:wind_ingot.recipe"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"lal",
+			"aia",
+			"lal"
+		],
+		"key": {
+			"i": {
+				"item": "minecraft:iron_ingot"
+			},
+			"l": {
+				"item": "minecraft:feather"
+			},
+			"a": {
+				"item": "wep:air_ingot"
+			}
+		},
+		"result": [
+			{
+				"item": "wep:wind_ingot",
+				"count": 3
+			}
+		]
+	}
+}

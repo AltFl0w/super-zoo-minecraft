@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "showtime:toy_foxy",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/danyfox/toy/df_mangle"
+      },
+      "geometry": {
+        "default": "geometry.df_toy_foxy"
+      },
+      "animations": {
+        "showtime": "animation.toyfoxy.showtime",
+
+        "general": "controller.animation.showtime"
+      },
+      "scripts": {
+        "animate": [
+         "general"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 10.0);"
+        ]
+      },
+      "render_controllers": [ "controller.render.fnaf" ],
+      "spawn_egg": {
+        "texture": "df_toy_foxy_showtime",
+        "texture_index": 0
+      }
+    }
+  }
+}

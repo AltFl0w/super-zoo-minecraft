@@ -1,0 +1,337 @@
+﻿
+pack.name=§lFNaF 2 §b[PR]§r
+pack.description=§l§f- - - §3Dany Fox§f - - - §4NO PUEDE REPUBLICAR ESTE ADD-ON EN PÁGINAS WEB, APLICACIONES Y OTRAS
+
+///Menú///
+titulo_info=§lFNaF 2 info
+
+texto0.0=§bDany Fox ©2020
+texto0.1=§7Derechos reservados a Scott Cawthon
+texto0.2=§6URL
+
+descarga=§3Descarga oficial
+descarga.1=§ehttps://mcpedl.com/five-nights-at-freddys-2-animatronics/
+
+pagina=§3Página web oficial
+pagina.1=§ehttps://dany-fazbear.webnode.es/
+
+anuncio1=§l§eEvita y reporta terceros que
+anuncio2=§l§erepublican este addon en sitios webs y apps
+
+
+apoyotitulo0=§eEste addon fué posible
+apoyotitulo1=§eal apoyo de:
+apoyo0=§bJulius Scizzor
+apoyo1=§bBendyTheDemon18
+
+
+
+
+///Dany Entidades///
+item.spawn_egg.entity.df:foxdee.name=§3Foxdee§r
+entity.df:foxdee.name=§3Foxdee§r
+
+entity.df:foxdee_m.name=Foxdee
+
+item.spawn_egg.entity.df:peluche_de_foxdee.name=§3Peluche de Foxdee§r
+entity.df:peluche_de_foxdee.name=§3Peluche de Foxdee§r
+
+item.spawn_egg.entity.df:peluche_de_foxdee_fanatico.name=§3Peluche de Foxdee Fanatico§r
+entity.df:peluche_de_foxdee_fanatico.name=§3Peluche de Foxdee Fanatico§r
+
+item.spawn_egg.entity.df:foxdee_stand.name=§3[Puesto de Foxdee]§r
+
+item.spawn_egg.entity.testdf:foxdee.name=Foxdee §e[Prueba de Animaciones]§r
+
+
+///ANIMATRONICOS Spawn Eggs///
+
+
+
+item.spawn_egg.entity.df:withered_bonnie_con_cara.name=Withered Bonnie con cara
+
+item.spawn_egg.entity.df:toy_chica_sin_pico.name=toy Chica sin pico
+
+
+item.spawn_egg.entity.df:peluchetoyfreddy.name=Peluche de Toy Freddy
+item.spawn_egg.entity.df:peluchetoybonnie.name=Peluche de Toy Bonnie 
+item.spawn_egg.entity.df:peluchetoychica.name=Peluche de Toy Chica 
+item.spawn_egg.entity.df:peluchetoyfoxy.name=Peluche de Toy Foxy 
+item.spawn_egg.entity.df:peluchefreddy.name=Peluche de Freddy
+item.spawn_egg.entity.df:peluchebonnie.name=Peluche de Bonnie
+item.spawn_egg.entity.df:peluchechica.name=Peluche de Chica
+item.spawn_egg.entity.df:peluchefoxy.name=Peluche de Foxy
+item.spawn_egg.entity.df:peluchefredbear.name=Peluche de Fredbear
+
+item.spawn_egg.entity.df:cupcake2.name=Cupcake
+
+
+///Dany Entidades///
+item.spawn_egg.entity.df:foxdee.name=§l§3Foxdee§r
+entity.df:foxdee.name=§l§3Foxdee§r
+
+entity.df:foxdee_m.name=Foxdee
+
+item.spawn_egg.entity.df:peluchefoxdee.name=§l§3Peluche de Foxdee§r
+entity.df:peluchefoxdee.name=§l§3Peluche de Foxdee§r
+
+item.spawn_egg.entity.testdf:foxdee.name=Foxdee Prueba de animaciones
+
+
+///ANIMATRONICOS Entidades///
+
+
+entity.df:withered_bonnie_con_cara.name=Withered Bonnie con cara
+
+entity.df:toy_chica_sin_pico.name=toy Chica sin pico
+
+
+entity.df:peluchetoyfreddy.name=Peluche de Toy Freddy
+entity.df:peluchetoybonnie.name=Peluche de Toy Bonnie 
+entity.df:peluchetoychica.name=Peluche de Toy Chica 
+entity.df:peluchetoyfoxy.name=Peluche de Toy Foxy 
+entity.df:peluchefreddy.name=Peluche de Freddy
+entity.df:peluchebonnie.name=Peluche de Bonnie
+entity.df:peluchechica.name=Peluche de Chica
+entity.df:peluchefoxy.name=Peluche de Foxy
+entity.df:peluchefredbear.name=Peluche de Fredbear
+
+///Salir
+
+action.hint.exit.df:inodoro=Presiona el botón de saltar para salir
+action.hint.exit.df:silla_escritorio=Presiona el botón de saltar para salir
+
+///Muebles///
+
+item.spawn_egg.entity.df:cables_colgantes1.name=Cables colgantes
+item.spawn_egg.entity.df:cables_colgantes2.name=Cables colgantes
+item.spawn_egg.entity.df:cables_colgantes3.name=Cables colgantes
+item.spawn_egg.entity.df:escritorio_fnaf2.name=Escritorio
+item.spawn_egg.entity.df:foco_colgante.name=Foco colgante
+item.spawn_egg.entity.df:foco_colgante2.name=Foco colgante
+item.spawn_egg.entity.df:foco_colgante3.name=Foco colgante
+item.spawn_egg.entity.df:mesa_blanca_fnaf2.name=Mesa blanca con sombreros
+item.spawn_egg.entity.df:mesa_blanca2_fnaf2.name=Mesa blanca
+item.spawn_egg.entity.df:panel_de_luz.name=Panel de luz
+item.spawn_egg.entity.df:tvs1_fnaf2.name=Pila de Tv´s
+item.spawn_egg.entity.df:tvs2_fnaf2.name=Pila de Tv´s
+item.spawn_egg.entity.df:ventilador_fnaf2.name=Ventilador
+item.spawn_egg.entity.df:caja_bloques_fnaf2.name=Caja de bloques
+item.spawn_egg.entity.df:caja_bloques2_fnaf2.name=Caja de bloques 2
+item.spawn_egg.entity.df:caja_muebles_fnaf2.name=Caja de muebles
+item.spawn_egg.entity.df:caja_muebles2_fnaf2.name=Caja de muebles 2
+item.spawn_egg.entity.df:arcade_toy_bonnie.name=Toy Bonnie Arcade
+item.spawn_egg.entity.df:arcade_toy_chica.name=Toy Chica Arcade
+item.spawn_egg.entity.df:arcade_toy_foxy.name=Toy Foxy Arcade
+item.spawn_egg.entity.df:arcade_toy_freddy.name=Toy Freddy Arcade
+item.spawn_egg.entity.df:bocina.name=Bocina
+item.spawn_egg.entity.df:caja_de_puppet.name=Caja de Puppet
+item.spawn_egg.entity.df:cartel_happy_birthday.name=Cartel de Feliz cumpleaños
+item.spawn_egg.entity.df:cartel_lets_party.name=Cartel de vamaos a celebrar
+item.spawn_egg.entity.df:estrellas_colgantes1.name=Estrellas colgantes
+item.spawn_egg.entity.df:estrellas_colgantes2.name=Estrellas colgantes
+item.spawn_egg.entity.df:estrellas_colgantes3.name=Estrellas colgantes
+item.spawn_egg.entity.df:mesa_metalica.name=Mesa metalica
+item.spawn_egg.entity.df:mesa_roja_fnaf2.name=Mesa roja
+item.spawn_egg.entity.df:estanteria_fnaf2.name=Estanteria con repuestos
+item.spawn_egg.entity.df:recorte_toy_foxy.name=Recorte de Toy Foxy
+item.spawn_egg.entity.df:carrusel.name=Carrusel
+item.spawn_egg.entity.df:regalo1.name=Regalo amarillo
+item.spawn_egg.entity.df:regalo2.name=Regalo azul
+item.spawn_egg.entity.df:regalo3.name=Regalo rojo
+item.spawn_egg.entity.df:regalo4.name=Regalo morado
+item.spawn_egg.entity.df:regalo5.name=Regalo rosa
+item.spawn_egg.entity.df:regalo6.name=Regalo verde
+item.spawn_egg.entity.df:pizza_colgante.name=Pizza Colgante
+item.spawn_egg.entity.df:pizza_colgante1_1.name=Pizza Colgante
+item.spawn_egg.entity.df:pizza_colgante1_2.name=Pizza Colgante
+item.spawn_egg.entity.df:pizza_colgante2.name=Pizza Colgante
+item.spawn_egg.entity.df:pizza_colgante2_1.name=Pizza Colgante
+item.spawn_egg.entity.df:pizza_colgante2_2.name=Pizza Colgante
+item.spawn_egg.entity.df:inodoro.name=Inodoro
+item.spawn_egg.entity.df:globos1.name=Globos
+item.spawn_egg.entity.df:globos2.name=Globos
+item.spawn_egg.entity.df:paperpal1.name=paperpal 1
+item.spawn_egg.entity.df:paperpal2.name=paperpal 2
+item.spawn_egg.entity.df:paperpal3.name=paperpal 3
+item.spawn_egg.entity.df:caja_de_pizza.name=Caja de Pizza
+item.spawn_egg.entity.df:piso_mojado.name=Letrero de piso mojado
+item.spawn_egg.entity.df:cable_colgante_horizontal.name=Cable colgante horizontal
+item.spawn_egg.entity.df:adorno_colgante1.name=Adorno colgante
+item.spawn_egg.entity.df:adorno_colgante2.name=Adorno colgante
+item.spawn_egg.entity.df:hombres_de_papel.name=Figuras de papel
+item.spawn_egg.entity.df:puerta_parts_and_service.name=Puerta de Parts and Services
+item.spawn_egg.entity.df:silla_escritorio.name=Silla de escritorio
+
+
+entity.df:cables_colgantes1.name=Cables colgantes
+entity.df:cables_colgantes2.name=Cables colgantes
+entity.df:cables_colgantes3.name=Cables colgantes
+entity.df:escritorio_fnaf2.name=Escritorio
+entity.df:foco_colgante.name=Foco colgante
+entity.df:foco_colgante2.name=Foco colgante
+entity.df:foco_colgante3.name=Foco colgante
+entity.df:mesa_blanca_fnaf2.name=Mesa blanca con sombreros
+entity.df:mesa_blanca2_fnaf2.name=Mesa blanca
+entity.df:panel_de_luz.name=Panel de luz
+entity.df:tvs1_fnaf2.name=Pila de Tv´s
+entity.df:tvs2_fnaf2.name=Pila de Tv´s
+entity.df:ventilador_fnaf2.name=Ventilador
+entity.df:caja_bloques_fnaf2.name=Caja de bloques
+entity.df:caja_bloques2_fnaf2.name=Caja de bloques 2
+entity.df:caja_muebles_fnaf2.name=Caja de muebles
+entity.df:caja_muebles2_fnaf2.name=Caja de muebles 2
+entity.df:arcade_toy_bonnie.name=Toy Bonnie Arcade
+entity.df:arcade_toy_chica.name=Toy Chica Arcade
+entity.df:arcade_toy_foxy.name=Toy Foxy Arcade
+entity.df:arcade_toy_freddy.name=Toy Freddy Arcade
+entity.df:bocina.name=Bocina
+entity.df:caja_de_puppet.name=Caja de Puppet
+entity.df:cartel_happy_birthday.name=Cartel de Feliz cumpleaños
+entity.df:cartel_lets_party.name=Cartel de vamaos a celebrar
+entity.df:estrellas_colgantes1.name=Estrellas colgantes
+entity.df:estrellas_colgantes2.name=Estrellas colgantes
+entity.df:estrellas_colgantes3.name=Estrellas colgantes
+entity.df:mesa_metalica.name=Mesa metalica
+entity.df:mesa_roja_fnaf2.name=Mesa roja
+entity.df:estanteria_fnaf2.name=Estanteria con repuestos
+entity.df:recorte_toy_foxy.name=Recorte de Toy Foxy
+entity.df:carrusel.name=Carrusel
+entity.df:regalo1.name=Regalo amarillo
+entity.df:regalo2.name=Regalo azul
+entity.df:regalo3.name=Regalo rojo
+entity.df:regalo4.name=Regalo morado
+entity.df:regalo5.name=Regalo rosa
+entity.df:regalo6.name=Regalo verde
+entity.df:pizza_colgante.name=Pizza Colgante
+entity.df:pizza_colgante1_1.name=Pizza Colgante
+entity.df:pizza_colgante1_2.name=Pizza Colgante
+entity.df:pizza_colgante2.name=Pizza Colgante
+entity.df:pizza_colgante2_1.name=Pizza Colgante
+entity.df:pizza_colgante2_2.name=Pizza Colgante
+entity.df:inodoro.name=Inodoro
+entity.df:globos1.name=Globos
+entity.df:globos2.name=Globos
+entity.df:paperpal1.name=paperpal 1
+entity.df:paperpal2.name=paperpal 2
+entity.df:paperpal3.name=paperpal 3
+entity.df:caja_de_pizza.name=Caja de Pizza
+entity.df:piso_mojado.name=Letrero de piso mojado
+entity.df:cable_colgante_horizontal.name=Cable colgante horizontal
+entity.df:adorno_colgante1.name=Adorno colgante
+entity.df:adorno_colgante2.name=Adorno colgante
+entity.df:hombres_de_papel.name=Figuras de papel
+entity.df:puerta_parts_and_service.name=Puerta de Parts and Services
+entity.df:silla_escritorio.name=Silla de escritorio
+
+
+///Showtime///
+
+
+item.spawn_egg.entity.showtime:toy_freddy.name=Toy Freddy Showtime
+entity.showtime:toy_freddy.name=Toy Freddy Showtime
+
+item.spawn_egg.entity.showtime:toy_bonnie.name=Toy Bonnie Showtime
+entity.showtime:toy_bonnie.name=Toy Bonnie Showtime
+
+item.spawn_egg.entity.showtime:toy_chica.name=Toy Chica Showtime
+entity.showtime:toy_chica.name=Toy Chica Showtime
+
+item.spawn_egg.entity.showtime:toy_foxy.name=Toy Foxy Showtime
+entity.showtime:toy_foxy.name=Toy Foxy Showtime
+
+
+///Test Animations///
+
+
+item.spawn_egg.entity.testdf:toy_freddy.name=Toy Freddy §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:toy_bonnie.name=Toy Bonnie §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:toy_chica.name=Toy Chica §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:toy_foxy.name=Toy Foxy §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:withered_golden_freddy.name=Withered Golden Freddy §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:shadow_freddy2.name=Shadow Freddy §e[Prueba de Animaciones]§r
+
+item.spawn_egg.entity.testdf:withered_freddy.name=Withered §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:withered_bonnie.name=Withered §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:withered_chica.name=Withered §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:withered_foxy.name=Withered §e[Prueba de Animaciones]§r
+
+item.spawn_egg.entity.testdf:puppet.name=Puppet §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:balloon_boy.name=BB §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:jj.name=JJ §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:shadow_bonnie.name=RWQFSFASXC §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:mangle.name=Mangle §e[Prueba de Animaciones]§r
+item.spawn_egg.entity.testdf:endo02.name=Endo02 §e[Prueba de Animaciones]§r
+
+///Muertos///
+
+entity.df:withered_freddy_m.name=Withered Freddy
+entity.df:withered_chica_m.name=Withered Chica
+entity.df:withered_bonnie_m.name=Withered Bonnie
+entity.df:withered_bonnie_con_cara_m.name=Withered Bonnie con cara
+entity.df:withered_foxy_m.name=Withered Foxy
+
+entity.df:toy_freddy_m.name=Toy Freddy
+entity.df:toy_bonnie_m.name=Toy Bonnie
+entity.df:toy_chica_m.name=Toy Chica
+entity.df:toy_chica_sin_pico_m.name=toy Chica sin pico
+entity.df:mangle_m.name=Mangle
+entity.df:toy_foxy_m.name=Toy Foxy
+entity.df:balloon_boy_m.name=Balloon Boy
+entity.df:jj_m.name=JJ
+entity.df:puppet_m.name=Puppet
+entity.df:endo02_m.name=Endo02
+
+///Items///
+item.df:mascara_fnaf2.name=Máscara de freddy
+item.df:rebanada_pizza.name=Pizza
+
+
+///Bloques///
+
+tile.df:white_wall_up_fnaf2.name=Pared blanca superior
+tile.df:white_wall_fnaf2.name=Pared blanca
+tile.df:wall_with_stripe_with_signal_fnaf2.name=Pared blanca con señal
+tile.df:wall_with_frange_fnaf2.name=Pared blanca con franja
+tile.df:wall_with_frange2_fnaf2.name=Pared blanca con franja con borde
+tile.df:white_wall_with_top_edge_fnaf2.name=Pared blanca con borde superior
+tile.df:white_wall_with_top_edge2_fnaf2.name=Pared blanca con borde superior 2
+tile.df:wall_with_mosaic_with_frange_fnaf2.name=Pared con mosaico con franja
+tile.df:mosaic_wall_fnaf2.name=Pared de mosaico
+tile.df:wall_with_mosaic_fnaf2.name=Pared con mosaico
+tile.df:wall_with_mosaic_with_right_edge_fnaf2.name=Pared con franja con borde derecho
+tile.df:dirty_wall_with_mosaic_with_right_edge_fnaf2.name=Pared sucia con mosaico con borde derecho
+tile.df:dirty_wall_with_mosaic_with_right_edge2_fnaf2.name=Pared sucia con mosaico con borde derecho 2
+tile.df:wall_with_mosaic_with_right_edge2_fnaf2.name=Pared con mosaico con borde derecho 2
+tile.df:dirty_wall_with_mosaic_with_left_edge_fnaf2.name=Pared sucia con borde izquierdo
+tile.df:dirty_wall_with_mosaic_with_left_edge2_fnaf2.name=Pared sucia con borde izquierdo 2
+tile.df:wall_with_mosaic_with_left_edge_fnaf2.name=Pared con borde izquierdo
+tile.df:wall_with_mosaic_with_left_edge2_fnaf2.name=Pared con borde izquierdo 2
+tile.df:mosaic_floor_fnaf2.name=Piso de mosaico
+tile.df:ceiling_fnaf2.name=Techo
+tile.df:clear_ceiling_fnaf2.name=Techo claro
+tile.df:ventilation_fnaf2.name=Ventilacion
+tile.df:mens_bathroom_fnaf2.name=Baño de hombres
+tile.df:women_bathroom_fnaf2.name=Baño de mujeres
+tile.df:white_wall_with_papers_fnaf2.name=Pared blanca con papeles
+tile.df:white_wall_with_confetti_fnaf2.name=Pared blanca con confeti
+tile.df:dirty_white_wall_fnaf2.name=Pared blanca sucia
+tile.df:dirty_wall_with_mosaic_fnaf2.name=Pared de mosaico sucia
+tile.df:white_wall_up_with_confetti_fnaf2.name=Pared blanca superior con confeti
+tile.df:white_wall_for_button_fnaf2.name=pared blanca para botón
+tile.df:white_wall_with_right_edge_fnaf2.name=Pared blanca con borde derecho
+tile.df:white_wall_with_right_edge2_fnaf2.name=Pared blanca con borde derecho 2
+tile.df:white_wall_with_left_edge_fnaf2.name=Pared blanca con borde izquierdo
+tile.df:white_wall_with_left_edge2_fnaf2.name=Pared blanca con borde izquierdo 2
+tile.df:white_wall_with_left_top_edge_fnaf2.name=Pared blanca con borde superior izquierdo
+tile.df:white_wall_with_left_top_edge2_fnaf2.name=Pared blanca con borde superior izquierdo 2
+tile.df:white_wall_with_right_top_edge_fnaf2.name=Pared blanca con borde superior derecho
+tile.df:counter_fnaf2.name=Rincón 
+tile.df:counter_with_poster_fnaf2.name=Rincón con poster
+tile.df:white_wall_with_right_top_edge2_fnaf2.name=Pared blanca con borde superior derecho 2
+tile.df:white_wall_with_right_edge_rotated_fnaf2.name=Pared blanca con borde derecho rotado
+tile.df:white_wall_with_left_edge_rotated_fnaf2.name=Pared blanca con borde izquierdo rotado
+tile.df:white_wall_with_left_top_edge_rotated_fnaf2.name=Pared blanca con borde superior izquierdo rotado
+tile.df:white_wall_with_right_top_edge_rotated_fnaf2.name=Pared blanca con borde superior derecho rotado
+tile.df:white_wall_with_mosaic_with_right_edge_rotated_fnaf2.name=Pared de mosaico con borde derecho derecho rotado
+tile.df:white_wall_with_mosaic_with_left_edge_rotated_fnaf2.name=Pared de mosaico con borde izquierdo derecho rotado

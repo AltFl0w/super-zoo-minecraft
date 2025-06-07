@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {  
+    "controller.render.pokeball": {
+      "geometry": "Geometry.pokeball",
+      "materials": [ { "*": "Material.default" } ],
+            "part_visibility": [ 
+        { "*": "query.variant != 0" }
+      ],
+      "textures": [ "Texture.pokeball"]
+    },
+    "controller.render.pokemon_n": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+            "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "textures": [ "Texture.default"]
+    }
+  }
+}

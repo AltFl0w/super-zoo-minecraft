@@ -1,0 +1,23 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "serp:pokeball_up"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "rrr"
+    ],
+    "key": {
+      "r": {
+        "item": "serp:apricorn_red"
+      }
+    },
+    "result": {
+      "item": "serp:pokeball_up",
+      "count": 3
+    }
+  }
+}
