@@ -54,4 +54,4 @@ resource_packs/*/
 !resource_packs/.gitkeep
 
 # Allow the specific Super Zoo world
-!worlds/sWcJIvWk2cM=/
+!worlds/Super_Zoo/
