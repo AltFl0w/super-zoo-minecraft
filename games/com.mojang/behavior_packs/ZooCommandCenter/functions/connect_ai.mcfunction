@@ -9,4 +9,5 @@ connect 172.19.0.11:8080/ws
 # Notify players
 say §a🤖 Connecting Zoo AI Caretaker...
 say §e💡 AI Bot should be online in a few seconds!
-say §e📋 Type !help to see available commands 
+say §c🔒 Password required! Type: !password <your_password>
+say §e📋 Contact admin for your access password, then type !help 

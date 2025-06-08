@@ -12,7 +12,12 @@ class SuperZooCaretaker {
         this.feedingSchedule = new Map();
         this.lastFeedingTime = new Map();
         this.authenticatedPlayers = new Set(); // Track who has entered the password
-        this.serverPassword = "ZooKeeper2024"; // Change this to your desired password
+        this.passwordLevels = {
+            "visitzoo": "visitor",
+            "builderzoo": "builder", 
+            "managezoo": "manager",
+            "adminzoo": "admin"
+        };
         
         // Initialize with some default animal data
         this.initializeAnimalData();
@@ -244,14 +249,35 @@ class SuperZooCaretaker {
         // Check for password authentication first
         if (message.startsWith('!password ')) {
             const enteredPassword = message.slice(10).trim(); // Remove "!password "
-            if (enteredPassword === this.serverPassword) {
+            const assignedLevel = this.passwordLevels[enteredPassword];
+            
+            if (assignedLevel) {
+                // Remove player from all permission levels first
+                for (const level of Object.keys(this.config.permissionLevels)) {
+                    const index = this.config.permissionLevels[level].indexOf(player);
+                    if (index > -1) {
+                        this.config.permissionLevels[level].splice(index, 1);
+                    }
+                }
+                
+                // Add to new permission level (unless visitor - they're default)
+                if (assignedLevel !== 'visitor') {
+                    this.config.permissionLevels[assignedLevel].push(player);
+                }
+                
+                // Mark as authenticated
                 this.authenticatedPlayers.add(player);
-                this.sendMessageToClient(ws, `§a🔓 Welcome to the zoo, ${player}! You are now authenticated.`);
+                
+                this.sendMessageToClient(ws, `§a🔓 Welcome to the zoo, ${player}!`);
+                this.sendMessageToClient(ws, `§e📋 Permission level: §a${assignedLevel}`);
                 this.sendMessageToClient(ws, `§e💡 Type !help to see available commands`);
-                console.log(`✅ ${player} successfully authenticated`);
+                console.log(`✅ ${player} authenticated as ${assignedLevel}`);
+                
+                // Save the updated permissions
+                this.saveConfig();
             } else {
-                this.sendMessageToClient(ws, `§c🔒 Incorrect password! Access denied.`);
-                console.log(`❌ ${player} failed authentication attempt`);
+                this.sendMessageToClient(ws, `§c🔒 Invalid password! Access denied.`);
+                console.log(`❌ ${player} failed authentication attempt with: ${enteredPassword}`);
             }
             return;
         }
@@ -756,7 +782,7 @@ class SuperZooCaretaker {
         if (!isAuthenticated) {
             this.sendMessageToClient(ws, `§c🔒 You are not authenticated!`);
             this.sendMessageToClient(ws, `§e💡 To access the zoo, type: §a!password <your_password>`);
-            this.sendMessageToClient(ws, `§e📞 Contact the server admin for the password`);
+            this.sendMessageToClient(ws, `§e📞 Contact the server admin for your access password`);
             return;
         }
         
