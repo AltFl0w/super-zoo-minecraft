@@ -38,5 +38,15 @@
 	{
 		"pack_id" : "286f891f-4ea7-4f44-aaac-b1e85fe2abad",
 		"version" : [ 0, 0, 1 ]
+	},
+	
+	{
+		"pack_id" : "261673a1-b129-42fa-8d98-154042524b19",
+		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "abcdef12-3456-7890-abcd-ef1234567890",
+		"version" : [ 1, 0, 0 ]
 	}
 ]
