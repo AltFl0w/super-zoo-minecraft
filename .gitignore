@@ -2,8 +2,7 @@
 data/
 logs/
 crash/
-worlds/*/db/
-*.log
+# Remove the conflicting worlds/*/db/ rule to allow Super_Zoo
 /.history
 
 # Docker volumes
@@ -53,6 +52,9 @@ resource_packs/*/
 !behavior_packs/.gitkeep
 !resource_packs/.gitkeep
 
-# Allow the specific Super Zoo world
+# Ignore other worlds but allow Super_Zoo
+worlds/*
 !worlds/Super_Zoo/
-!worlds/Super_Zoo/db/
+
+# Allow log files in Super_Zoo world database
+!worlds/Super_Zoo/**/*.log
