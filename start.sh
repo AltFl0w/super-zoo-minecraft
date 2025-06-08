@@ -41,10 +41,46 @@ echo "eula=true" > eula.txt
 # Start AI Bot in background (with error handling)
 echo "🤖 Starting Zoo AI Caretaker..."
 if [ -d "/home/minecraft/zoo-ai-bot" ] && [ -f "/home/minecraft/zoo-ai-bot/zoo-caretaker.js" ]; then
+    # Test if Node.js is working and dependencies are available
+    echo "🔍 Testing Node.js and AI bot dependencies..."
     cd /home/minecraft/zoo-ai-bot
-    node zoo-caretaker.js > ../logs/ai-bot.log 2>&1 &
-    AI_PID=$!
-    echo "AI Bot started with PID: $AI_PID"
+    
+    # Check if Node.js is available
+    if ! command -v node &> /dev/null; then
+        echo "❌ Node.js not found! AI Bot cannot start."
+        AI_PID=""
+    else
+        echo "✅ Node.js found: $(node --version)"
+        
+        # Test if the AI bot can load (syntax check)
+        if node -c zoo-caretaker.js 2>/dev/null; then
+            echo "✅ AI Bot syntax check passed"
+            
+            # Start the AI bot
+            echo "🚀 Starting AI Bot..."
+            node zoo-caretaker.js > ../logs/ai-bot.log 2>&1 &
+            AI_PID=$!
+            echo "AI Bot started with PID: $AI_PID"
+            
+            # Check if it starts successfully
+            sleep 3
+            if ! kill -0 $AI_PID 2>/dev/null; then
+                echo "💥 AI Bot failed to start! Checking logs..."
+                if [ -f "../logs/ai-bot.log" ]; then
+                    echo "📋 AI Bot startup errors:"
+                    cat ../logs/ai-bot.log
+                fi
+                AI_PID=""
+            else
+                echo "✅ AI Bot appears to be running"
+            fi
+        else
+            echo "❌ AI Bot syntax check failed!"
+            echo "📋 Checking for syntax errors:"
+            node -c zoo-caretaker.js
+            AI_PID=""
+        fi
+    fi
 else
     echo "⚠️ AI Bot files not found, skipping AI bot startup"
     AI_PID=""
@@ -102,11 +138,33 @@ echo ""
 while true; do
     # Check if AI bot is still running (only if it was started)
     if [ ! -z "$AI_PID" ] && ! kill -0 $AI_PID 2>/dev/null; then
-        echo "⚠️ AI Bot crashed, restarting..."
+        echo "⚠️ AI Bot crashed, checking error logs..."
+        
+        # Show the last few lines of the AI bot log to see what went wrong
+        if [ -f "/home/minecraft/logs/ai-bot.log" ]; then
+            echo "📋 Last 10 lines of AI bot log:"
+            tail -10 /home/minecraft/logs/ai-bot.log
+            echo "---"
+        fi
+        
+        echo "🔄 Restarting AI Bot..."
         cd /home/minecraft/zoo-ai-bot
-        node zoo-caretaker.js > ../logs/ai-bot.log 2>&1 &
+        
+        # Add timestamp to log file
+        echo "$(date): AI Bot restarting..." >> ../logs/ai-bot.log
+        
+        # Start with more verbose logging
+        node zoo-caretaker.js >> ../logs/ai-bot.log 2>&1 &
         AI_PID=$!
         echo "AI Bot restarted with PID: $AI_PID"
+        
+        # Give it a moment to start and check if it crashes immediately
+        sleep 5
+        if ! kill -0 $AI_PID 2>/dev/null; then
+            echo "💥 AI Bot crashed immediately after restart!"
+            echo "📋 Checking for immediate errors:"
+            tail -5 /home/minecraft/logs/ai-bot.log
+        fi
     fi
     
     # Check if Minecraft server is still running

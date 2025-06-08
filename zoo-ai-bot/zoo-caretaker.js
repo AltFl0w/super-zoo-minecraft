@@ -36,8 +36,8 @@ class SuperZooCaretaker {
             
             console.log('🦁 Super Zoo AI Caretaker initializing...');
             console.log(`🔐 Authorized users: ${this.getAllAuthorizedUsers().join(', ')}`);
-            console.log('🌐 WebSocket server ready on port 8080');
-            console.log('📋 To connect from Minecraft, use: /connect localhost:8080/ws');
+            console.log('🌐 WebSocket server ready on 0.0.0.0:8080');
+            console.log('📋 To connect from Minecraft, use: /connect <server-ip>:8080/ws');
         } catch (error) {
             console.error('💥 Failed to initialize Zoo Caretaker:', error);
             process.exit(1);
@@ -160,11 +160,11 @@ class SuperZooCaretaker {
             res.json({ success: true, message: `Feeding ${animal}` });
         });
 
-        // Create HTTP server
+        // Create HTTP server and bind to all interfaces (0.0.0.0) for Docker
         this.server = require('http').createServer(this.app);
         
-        this.server.listen(8080, () => {
-            console.log('🌐 Zoo management API running on port 8080');
+        this.server.listen(8080, '0.0.0.0', () => {
+            console.log('🌐 Zoo management API running on 0.0.0.0:8080');
         });
 
         return this.server;
@@ -208,7 +208,8 @@ class SuperZooCaretaker {
         });
 
         console.log('🔌 WebSocket server listening on port 8080/ws');
-        console.log('📋 Players can connect using: /connect localhost:8080/ws');
+        console.log('📋 Players can connect using: /connect <server-ip>:8080/ws');
+        console.log('💡 Replace <server-ip> with your server\'s IP address (e.g., 10.0.0.70:8080/ws)');
     }
 
     handleMinecraftEvent(event, ws, clientId) {
