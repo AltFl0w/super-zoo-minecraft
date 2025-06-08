@@ -14,9 +14,7 @@ const passwordLevels = {
 const actionPermissions = {
     "break_blocks": ["builder", "manager", "admin"],
     "place_blocks": ["builder", "manager", "admin"],
-    "interact_entities": ["visitor", "builder", "manager", "admin"],
     "open_containers": ["builder", "manager", "admin"],
-    "use_items": ["visitor", "builder", "manager", "admin"],
     "attack_entities": ["manager", "admin"],
     "use_commands": ["admin"]
 };
@@ -52,15 +50,15 @@ function handlePasswordCommand(player, password) {
         
         player.sendMessage(`§a🔓 Welcome to the zoo, ${player.name}!`);
         player.sendMessage(`§e📋 Permission level: §a${assignedLevel}`);
-        player.sendMessage(`§e💡 You can now interact with the zoo!`);
+        player.sendMessage(`§e💡 You can now access restricted areas!`);
         
         // Show what they can do
         switch(assignedLevel) {
             case "visitor":
-                player.sendMessage(`§7You can: Feed animals, view stats, use basic items`);
+                player.sendMessage(`§7You can: Feed animals, explore safely`);
                 break;
             case "builder":
-                player.sendMessage(`§7You can: Build, break blocks, open chests, feed animals`);
+                player.sendMessage(`§7You can: Build, break blocks, open chests`);
                 break;
             case "manager":
                 player.sendMessage(`§7You can: Everything builders can do + manage animals`);
@@ -77,28 +75,20 @@ function handlePasswordCommand(player, password) {
     }
 }
 
-// Security event handlers
+// Security event handlers - Only block dangerous actions
 world.beforeEvents.playerBreakBlock.subscribe((event) => {
     if (!hasPermission(event.player, "break_blocks")) {
         event.cancel = true;
-        event.player.sendMessage(`§c🔒 You need builder access or higher to break blocks!`);
-        event.player.sendMessage(`§e💡 Type: !password <your_password>`);
+        event.player.sendMessage(`§c🔒 You need builder access to break blocks!`);
+        event.player.sendMessage(`§e💡 Type: !password builderzoo (or higher)`);
     }
 });
 
 world.beforeEvents.playerPlaceBlock.subscribe((event) => {
     if (!hasPermission(event.player, "place_blocks")) {
         event.cancel = true;
-        event.player.sendMessage(`§c🔒 You need builder access or higher to place blocks!`);
-        event.player.sendMessage(`§e💡 Type: !password <your_password>`);
-    }
-});
-
-world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
-    if (!hasPermission(event.player, "interact_entities")) {
-        event.cancel = true;
-        event.player.sendMessage(`§c🔒 You need visitor access or higher to interact with animals!`);
-        event.player.sendMessage(`§e💡 Type: !password <your_password>`);
+        event.player.sendMessage(`§c🔒 You need builder access to place blocks!`);
+        event.player.sendMessage(`§e💡 Type: !password builderzoo (or higher)`);
     }
 });
 
@@ -110,17 +100,9 @@ world.beforeEvents.playerInteractWithBlock.subscribe((event) => {
         block.typeId.includes('shulker') || block.typeId.includes('hopper')) {
         if (!hasPermission(event.player, "open_containers")) {
             event.cancel = true;
-            event.player.sendMessage(`§c🔒 You need builder access or higher to open containers!`);
-            event.player.sendMessage(`§e💡 Type: !password <your_password>`);
+            event.player.sendMessage(`§c🔒 You need builder access to open containers!`);
+            event.player.sendMessage(`§e💡 Type: !password builderzoo (or higher)`);
         }
-    }
-});
-
-world.beforeEvents.itemUse.subscribe((event) => {
-    if (!hasPermission(event.source, "use_items")) {
-        event.cancel = true;
-        event.source.sendMessage(`§c🔒 You need visitor access or higher to use items!`);
-        event.source.sendMessage(`§e💡 Type: !password <your_password>`);
     }
 });
 
@@ -136,8 +118,8 @@ world.beforeEvents.entityHurt.subscribe((event) => {
             
             if (!hasPermission(player, "attack_entities")) {
                 event.cancel = true;
-                player.sendMessage(`§c🔒 You need manager access or higher to harm animals!`);
-                player.sendMessage(`§e💡 Type: !password <your_password>`);
+                player.sendMessage(`§c🔒 You need manager access to harm animals!`);
+                player.sendMessage(`§e💡 Type: !password managezoo (or adminzoo)`);
             }
         }
     }
@@ -154,17 +136,6 @@ world.beforeEvents.chatSend.subscribe((event) => {
         const password = message.slice(10).trim();
         handlePasswordCommand(player, password);
         return;
-    }
-    
-    // Handle other commands that need authentication
-    if (message.startsWith('!')) {
-        if (!isAuthenticated(player)) {
-            event.cancel = true;
-            player.sendMessage(`§c🔒 You must authenticate first!`);
-            player.sendMessage(`§e💡 Type: !password <your_password>`);
-            player.sendMessage(`§e📞 Contact admin for your access password`);
-            return;
-        }
     }
     
     // Handle help command
@@ -184,57 +155,60 @@ world.beforeEvents.chatSend.subscribe((event) => {
         }
         return;
     }
+    
+    // Auto-connect AI bot for anyone (no permissions needed)
+    if (message === '!connect' || message === '!ai') {
+        event.cancel = true;
+        player.sendMessage('§b🤖 Connecting Zoo AI Bot...');
+        player.runCommand('connect localhost:8080/ws');
+        player.sendMessage('§a✅ AI Bot connection initiated!');
+        return;
+    }
 });
 
 // Show help based on authentication status
 function showHelp(player) {
-    if (!isAuthenticated(player)) {
-        player.sendMessage(`§6🔒 Zoo Security System`);
-        player.sendMessage(`§c⚠️ You are not authenticated!`);
-        player.sendMessage(`§e💡 To access the zoo, type: §a!password <your_password>`);
-        player.sendMessage(`§e📞 Contact the server admin for your access password`);
-        player.sendMessage(`§7Available passwords grant different access levels:`);
-        player.sendMessage(`§7• Visitor: Basic interaction with animals`);
-        player.sendMessage(`§7• Builder: Can build and modify structures`);
-        player.sendMessage(`§7• Manager: Can manage animals and staff`);
-        player.sendMessage(`§7• Admin: Full access to everything`);
-        return;
-    }
-    
+    const isAuth = isAuthenticated(player);
     const level = getPlayerPermission(player);
-    player.sendMessage(`§6🤖 Zoo Help - Access Level: §a${level}`);
-    player.sendMessage(`§e💡 Available actions based on your level:`);
     
-    switch(level) {
-        case "visitor":
-            player.sendMessage(`§a✅ Feed animals, view stats, use basic items`);
-            player.sendMessage(`§c❌ Cannot build, open chests, or harm animals`);
-            break;
-        case "builder":
-            player.sendMessage(`§a✅ Build, break blocks, open chests, feed animals`);
-            player.sendMessage(`§c❌ Cannot harm animals or use admin commands`);
-            break;
-        case "manager":
-            player.sendMessage(`§a✅ Everything builders can do + manage animals`);
-            player.sendMessage(`§c❌ Cannot use admin commands`);
-            break;
-        case "admin":
-            player.sendMessage(`§a✅ Full access to everything`);
-            player.sendMessage(`§e💡 Type !cc for the Command Center`);
-            break;
+    player.sendMessage(`§6🦁 Super Zoo Help`);
+    
+    if (!isAuth) {
+        player.sendMessage(`§e💡 Basic access: You can explore and interact with animals`);
+        player.sendMessage(`§c🔒 Restricted: Building, containers, harming animals`);
+        player.sendMessage(`§a📝 To get access, type: §e!password <your_password>`);
+        player.sendMessage(`§7Available levels: visitor, builder, manager, admin`);
+    } else {
+        player.sendMessage(`§a🔓 Access Level: §e${level}`);
+        switch(level) {
+            case "visitor":
+                player.sendMessage(`§a✅ You can explore and interact safely`);
+                break;
+            case "builder":
+                player.sendMessage(`§a✅ You can build and access containers`);
+                break;
+            case "manager":
+                player.sendMessage(`§a✅ You can manage animals and build`);
+                break;
+            case "admin":
+                player.sendMessage(`§a✅ Full access - Type !cc for Command Center`);
+                break;
+        }
     }
+    
+    player.sendMessage(`§b🤖 To connect AI bot: Type §e!connect §bor §e!ai`);
 }
 
-// Player join handler - show security message
+// Player join handler - show welcome message
 world.afterEvents.playerSpawn.subscribe((event) => {
     if (event.initialSpawn) {
         const player = event.player;
         
         system.runTimeout(() => {
             player.sendMessage(`§6🦁 Welcome to the Super Zoo!`);
-            player.sendMessage(`§c🔒 Security System Active`);
-            player.sendMessage(`§e💡 Type: §a!password <your_password> §eto get access`);
-            player.sendMessage(`§e📞 Contact admin if you don't have a password`);
+            player.sendMessage(`§a✅ You can explore and interact with animals`);
+            player.sendMessage(`§e💡 For building access: §a!password builderzoo`);
+            player.sendMessage(`§b🤖 To connect AI bot: §a!connect`);
             player.sendMessage(`§7Type §a!help §7for more information`);
         }, 20); // 1 second delay
     }

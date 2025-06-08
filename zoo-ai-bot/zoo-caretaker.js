@@ -192,8 +192,8 @@ class SuperZooCaretaker {
             
             // Send welcome message
             this.sendCommandToClient(ws, '/say §a🤖 Zoo AI Caretaker is now online!');
-            this.sendCommandToClient(ws, '/say §c🔒 Authentication required! Type: !password <your_password>');
-            this.sendCommandToClient(ws, '/say §eType !help for more information');
+            this.sendCommandToClient(ws, '/say §e💡 Type !help for available commands');
+            this.sendCommandToClient(ws, '/say §b🔗 AI Bot connected successfully!');
 
             ws.on('message', (data) => {
                 try {
@@ -218,6 +218,62 @@ class SuperZooCaretaker {
         console.log('🔌 WebSocket server listening on port 8080/ws');
         console.log('📋 Players can connect using: /connect <server-ip>:8080/ws');
         console.log('💡 Replace <server-ip> with your server\'s IP address (e.g., 10.0.0.70:8080/ws)');
+        
+        // Try to auto-connect after a delay
+        setTimeout(() => {
+            this.attemptAutoConnection();
+        }, 15000); // Wait 15 seconds for server to fully start
+    }
+
+    attemptAutoConnection() {
+        console.log('🔗 Attempting auto-connection to Minecraft server...');
+        
+        // Try to connect as a client to the Minecraft server
+        const WebSocket = require('ws');
+        const connectionUrls = [
+            'ws://localhost:19132/ws',
+            'ws://127.0.0.1:19132/ws',
+            'ws://172.19.0.11:19132/ws'
+        ];
+        
+        connectionUrls.forEach((url, index) => {
+            setTimeout(() => {
+                try {
+                    const client = new WebSocket(url);
+                    
+                    client.on('open', () => {
+                        console.log(`✅ Auto-connected to Minecraft server via ${url}`);
+                        
+                        // Send connection command
+                        const connectMessage = {
+                            "body": {
+                                "origin": {
+                                    "type": "player"
+                                },
+                                "commandLine": `connect localhost:8080/ws`,
+                                "version": 1
+                            },
+                            "header": {
+                                "requestId": this.generateRequestId(),
+                                "messagePurpose": "commandRequest",
+                                "version": 1,
+                                "messageType": "commandRequest"
+                            }
+                        };
+                        
+                        client.send(JSON.stringify(connectMessage));
+                        client.close();
+                    });
+                    
+                    client.on('error', (error) => {
+                        console.log(`⚠️ Auto-connection failed for ${url}: ${error.message}`);
+                    });
+                    
+                } catch (error) {
+                    console.log(`⚠️ Could not attempt connection to ${url}: ${error.message}`);
+                }
+            }, index * 2000); // Stagger attempts by 2 seconds
+        });
     }
 
     handleMinecraftEvent(event, ws, clientId) {
