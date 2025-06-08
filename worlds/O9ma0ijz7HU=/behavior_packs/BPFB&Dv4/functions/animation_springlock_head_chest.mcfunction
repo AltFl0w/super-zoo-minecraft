@@ -1,1 +1,0 @@
-playanimation @s animation.humanoid.springbonnie_suits_head_chest

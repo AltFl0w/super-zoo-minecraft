@@ -1,1 +1,0 @@
-fill ~1 ~ ~-1 ~-1 ~-2 ~1 fb:spotlight["fb:head_rotation"="2700"] replace fb:spotlight
