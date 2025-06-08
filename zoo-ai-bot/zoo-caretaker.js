@@ -129,7 +129,7 @@ class SuperZooCaretaker {
 
     hasCommandPermission(playerName, command) {
         const playerLevel = this.getPlayerPermissionLevel(playerName);
-        const allowedLevels = this.config.commandPermissions?.[command] || [];
+        const allowedLevels = (this.config.commandPermissions && this.config.commandPermissions[command]) || [];
         return allowedLevels.includes(playerLevel);
     }
 
@@ -591,7 +591,7 @@ class SuperZooCaretaker {
         this.sendMessageToClient(ws, '§6🧨 TNT Authorization List:');
         
         // Get TNT authorized users (admins only for now)
-        const tntUsers = this.config.permissionLevels?.admin || [];
+        const tntUsers = (this.config.permissionLevels && this.config.permissionLevels.admin) || [];
         
         if (tntUsers.length === 0) {
             this.sendMessageToClient(ws, '§e📋 No users currently authorized for TNT usage');
