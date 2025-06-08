@@ -1,9 +1,248 @@
 import { world, system } from '@minecraft/server';
 import { ActionFormData, ModalFormData } from '@minecraft/server-ui';
 
-// Admin permission check
+// Security System - Track authenticated players
+const authenticatedPlayers = new Set();
+const passwordLevels = {
+    "visitzoo": "visitor",
+    "builderzoo": "builder", 
+    "managezoo": "manager",
+    "adminzoo": "admin"
+};
+
+// Permission levels for different actions
+const actionPermissions = {
+    "break_blocks": ["builder", "manager", "admin"],
+    "place_blocks": ["builder", "manager", "admin"],
+    "interact_entities": ["visitor", "builder", "manager", "admin"],
+    "open_containers": ["builder", "manager", "admin"],
+    "use_items": ["visitor", "builder", "manager", "admin"],
+    "attack_entities": ["manager", "admin"],
+    "use_commands": ["admin"]
+};
+
+// Store player permission levels
+const playerPermissions = new Map();
+
+// Check if player is authenticated
+function isAuthenticated(player) {
+    return authenticatedPlayers.has(player.name);
+}
+
+// Get player permission level
+function getPlayerPermission(player) {
+    return playerPermissions.get(player.name) || "none";
+}
+
+// Check if player has permission for specific action
+function hasPermission(player, action) {
+    if (!isAuthenticated(player)) return false;
+    const playerLevel = getPlayerPermission(player);
+    const requiredLevels = actionPermissions[action] || [];
+    return requiredLevels.includes(playerLevel);
+}
+
+// Handle password authentication
+function handlePasswordCommand(player, password) {
+    const assignedLevel = passwordLevels[password];
+    
+    if (assignedLevel) {
+        authenticatedPlayers.add(player.name);
+        playerPermissions.set(player.name, assignedLevel);
+        
+        player.sendMessage(`§a🔓 Welcome to the zoo, ${player.name}!`);
+        player.sendMessage(`§e📋 Permission level: §a${assignedLevel}`);
+        player.sendMessage(`§e💡 You can now interact with the zoo!`);
+        
+        // Show what they can do
+        switch(assignedLevel) {
+            case "visitor":
+                player.sendMessage(`§7You can: Feed animals, view stats, use basic items`);
+                break;
+            case "builder":
+                player.sendMessage(`§7You can: Build, break blocks, open chests, feed animals`);
+                break;
+            case "manager":
+                player.sendMessage(`§7You can: Everything builders can do + manage animals`);
+                break;
+            case "admin":
+                player.sendMessage(`§7You can: Full access to everything`);
+                break;
+        }
+        
+        return true;
+    } else {
+        player.sendMessage(`§c🔒 Invalid password! Access denied.`);
+        return false;
+    }
+}
+
+// Security event handlers
+world.beforeEvents.playerBreakBlock.subscribe((event) => {
+    if (!hasPermission(event.player, "break_blocks")) {
+        event.cancel = true;
+        event.player.sendMessage(`§c🔒 You need builder access or higher to break blocks!`);
+        event.player.sendMessage(`§e💡 Type: !password <your_password>`);
+    }
+});
+
+world.beforeEvents.playerPlaceBlock.subscribe((event) => {
+    if (!hasPermission(event.player, "place_blocks")) {
+        event.cancel = true;
+        event.player.sendMessage(`§c🔒 You need builder access or higher to place blocks!`);
+        event.player.sendMessage(`§e💡 Type: !password <your_password>`);
+    }
+});
+
+world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
+    if (!hasPermission(event.player, "interact_entities")) {
+        event.cancel = true;
+        event.player.sendMessage(`§c🔒 You need visitor access or higher to interact with animals!`);
+        event.player.sendMessage(`§e💡 Type: !password <your_password>`);
+    }
+});
+
+world.beforeEvents.playerInteractWithBlock.subscribe((event) => {
+    const block = event.block;
+    
+    // Check for containers (chests, barrels, etc.)
+    if (block.typeId.includes('chest') || block.typeId.includes('barrel') || 
+        block.typeId.includes('shulker') || block.typeId.includes('hopper')) {
+        if (!hasPermission(event.player, "open_containers")) {
+            event.cancel = true;
+            event.player.sendMessage(`§c🔒 You need builder access or higher to open containers!`);
+            event.player.sendMessage(`§e💡 Type: !password <your_password>`);
+        }
+    }
+});
+
+world.beforeEvents.itemUse.subscribe((event) => {
+    if (!hasPermission(event.source, "use_items")) {
+        event.cancel = true;
+        event.source.sendMessage(`§c🔒 You need visitor access or higher to use items!`);
+        event.source.sendMessage(`§e💡 Type: !password <your_password>`);
+    }
+});
+
+world.beforeEvents.entityHurt.subscribe((event) => {
+    if (event.damageSource.damagingEntity && event.damageSource.damagingEntity.typeId === 'minecraft:player') {
+        const player = event.damageSource.damagingEntity;
+        
+        // Protect animals from unauthorized players
+        if (event.hurtEntity.typeId.includes('animal') || 
+            event.hurtEntity.typeId.includes('wolf') ||
+            event.hurtEntity.typeId.includes('cat') ||
+            event.hurtEntity.typeId.includes('horse')) {
+            
+            if (!hasPermission(player, "attack_entities")) {
+                event.cancel = true;
+                player.sendMessage(`§c🔒 You need manager access or higher to harm animals!`);
+                player.sendMessage(`§e💡 Type: !password <your_password>`);
+            }
+        }
+    }
+});
+
+// Chat command handler
+world.beforeEvents.chatSend.subscribe((event) => {
+    const message = event.message.toLowerCase().trim();
+    const player = event.sender;
+    
+    // Handle password commands
+    if (message.startsWith('!password ')) {
+        event.cancel = true; // Don't show password in chat
+        const password = message.slice(10).trim();
+        handlePasswordCommand(player, password);
+        return;
+    }
+    
+    // Handle other commands that need authentication
+    if (message.startsWith('!')) {
+        if (!isAuthenticated(player)) {
+            event.cancel = true;
+            player.sendMessage(`§c🔒 You must authenticate first!`);
+            player.sendMessage(`§e💡 Type: !password <your_password>`);
+            player.sendMessage(`§e📞 Contact admin for your access password`);
+            return;
+        }
+    }
+    
+    // Handle help command
+    if (message === '!help') {
+        event.cancel = true;
+        showHelp(player);
+        return;
+    }
+    
+    // Handle command center
+    if (message === '!cc') {
+        event.cancel = true;
+        if (isAdmin(player)) {
+            showCommandCenter(player);
+        } else {
+            player.sendMessage('§c[Zoo Command Center] Access Denied - Admin Only!');
+        }
+        return;
+    }
+});
+
+// Show help based on authentication status
+function showHelp(player) {
+    if (!isAuthenticated(player)) {
+        player.sendMessage(`§6🔒 Zoo Security System`);
+        player.sendMessage(`§c⚠️ You are not authenticated!`);
+        player.sendMessage(`§e💡 To access the zoo, type: §a!password <your_password>`);
+        player.sendMessage(`§e📞 Contact the server admin for your access password`);
+        player.sendMessage(`§7Available passwords grant different access levels:`);
+        player.sendMessage(`§7• Visitor: Basic interaction with animals`);
+        player.sendMessage(`§7• Builder: Can build and modify structures`);
+        player.sendMessage(`§7• Manager: Can manage animals and staff`);
+        player.sendMessage(`§7• Admin: Full access to everything`);
+        return;
+    }
+    
+    const level = getPlayerPermission(player);
+    player.sendMessage(`§6🤖 Zoo Help - Access Level: §a${level}`);
+    player.sendMessage(`§e💡 Available actions based on your level:`);
+    
+    switch(level) {
+        case "visitor":
+            player.sendMessage(`§a✅ Feed animals, view stats, use basic items`);
+            player.sendMessage(`§c❌ Cannot build, open chests, or harm animals`);
+            break;
+        case "builder":
+            player.sendMessage(`§a✅ Build, break blocks, open chests, feed animals`);
+            player.sendMessage(`§c❌ Cannot harm animals or use admin commands`);
+            break;
+        case "manager":
+            player.sendMessage(`§a✅ Everything builders can do + manage animals`);
+            player.sendMessage(`§c❌ Cannot use admin commands`);
+            break;
+        case "admin":
+            player.sendMessage(`§a✅ Full access to everything`);
+            player.sendMessage(`§e💡 Type !cc for the Command Center`);
+            break;
+    }
+}
+
+// Player join handler - show security message
+world.afterEvents.playerSpawn.subscribe((event) => {
+    if (event.initialSpawn) {
+        const player = event.player;
+        
+        system.runTimeout(() => {
+            player.sendMessage(`§6🦁 Welcome to the Super Zoo!`);
+            player.sendMessage(`§c🔒 Security System Active`);
+            player.sendMessage(`§e💡 Type: §a!password <your_password> §eto get access`);
+            player.sendMessage(`§e📞 Contact admin if you don't have a password`);
+            player.sendMessage(`§7Type §a!help §7for more information`);
+        }, 20); // 1 second delay
+    }
+});
+
+// Check if player is admin
 function isAdmin(player) {
-    return player.hasTag('admin') || player.hasTag('owner') || player.isOp();
+    return getPlayerPermission(player) === "admin";
 }
 
 // Main Command Center UI
@@ -346,26 +585,6 @@ function showEmergencyMenu(player) {
         showEmergencyMenu(player);
     });
 }
-
-// Command Center Block interaction
-world.beforeEvents.playerInteractWithBlock.subscribe((event) => {
-    const { player, block } = event;
-    
-    if (block.typeId === 'zoo:command_center') {
-        event.cancel = true;
-        showCommandCenter(player);
-    }
-});
-
-// Chat command to open command center
-world.beforeEvents.chatSend.subscribe((event) => {
-    const { sender, message } = event;
-    
-    if (message === '!cc' || message === '!commandcenter') {
-        event.cancel = true;
-        showCommandCenter(sender);
-    }
-});
 
 // Initialize
 system.run(() => {
