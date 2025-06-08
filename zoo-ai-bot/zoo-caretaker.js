@@ -18,14 +18,30 @@ class SuperZooCaretaker {
         // Load configuration
         this.loadConfig();
         
-        this.setupWebServer();
-        this.setupWebSocketServer();
-        this.setupScheduledTasks();
+        // Add error handling
+        process.on('uncaughtException', (error) => {
+            console.error('💥 Uncaught Exception:', error);
+            console.log('🔄 Attempting to continue...');
+        });
+
+        process.on('unhandledRejection', (reason, promise) => {
+            console.error('💥 Unhandled Rejection at:', promise, 'reason:', reason);
+            console.log('🔄 Attempting to continue...');
+        });
         
-        console.log('🦁 Super Zoo AI Caretaker initializing...');
-        console.log(`🔐 Authorized users: ${this.getAllAuthorizedUsers().join(', ')}`);
-        console.log('🌐 WebSocket server ready on port 8080');
-        console.log('📋 To connect from Minecraft, use: /connect localhost:8080');
+        try {
+            this.setupWebServer();
+            this.setupWebSocketServer();
+            this.setupScheduledTasks();
+            
+            console.log('🦁 Super Zoo AI Caretaker initializing...');
+            console.log(`🔐 Authorized users: ${this.getAllAuthorizedUsers().join(', ')}`);
+            console.log('🌐 WebSocket server ready on port 8080');
+            console.log('📋 To connect from Minecraft, use: /connect localhost:8080/ws');
+        } catch (error) {
+            console.error('💥 Failed to initialize Zoo Caretaker:', error);
+            process.exit(1);
+        }
     }
 
     initializeAnimalData() {
@@ -144,17 +160,20 @@ class SuperZooCaretaker {
             res.json({ success: true, message: `Feeding ${animal}` });
         });
 
-        const server = this.app.listen(8080, () => {
+        // Create HTTP server
+        this.server = require('http').createServer(this.app);
+        
+        this.server.listen(8080, () => {
             console.log('🌐 Zoo management API running on port 8080');
         });
 
-        return server;
+        return this.server;
     }
 
     setupWebSocketServer() {
-        // Create WebSocket server that Minecraft clients will connect to
+        // Create WebSocket server that shares the HTTP server
         this.wss = new WebSocket.Server({ 
-            port: 8080,
+            server: this.server,
             path: '/ws'
         });
 
@@ -188,8 +207,8 @@ class SuperZooCaretaker {
             });
         });
 
-        console.log('🔌 WebSocket server listening on port 8080');
-        console.log('📋 Players can connect using: /connect localhost:8080');
+        console.log('🔌 WebSocket server listening on port 8080/ws');
+        console.log('📋 Players can connect using: /connect localhost:8080/ws');
     }
 
     handleMinecraftEvent(event, ws, clientId) {
@@ -768,14 +787,4 @@ process.on('SIGINT', () => {
         caretaker.wss.close();
     }
     process.exit(0);
-});
-
-process.on('uncaughtException', (error) => {
-    console.error('💥 Uncaught Exception:', error);
-    console.log('🔄 Attempting to continue...');
-});
-
-process.on('unhandledRejection', (reason, promise) => {
-    console.error('💥 Unhandled Rejection at:', promise, 'reason:', reason);
-    console.log('🔄 Attempting to continue...');
 }); 
