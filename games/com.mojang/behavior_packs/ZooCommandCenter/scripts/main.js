@@ -21,6 +21,7 @@ function showCommandCenter(player) {
         .button('§3🐾 Animal Management', 'textures/items/spawn_egg')
         .button('§5👥 Player Management', 'textures/items/player_head')
         .button('§e🏗️ Building Tools', 'textures/items/golden_pickaxe')
+        .button('§b🤖 Connect AI Bot', 'textures/items/redstone')
         .button('§c⚠️ Emergency Controls', 'textures/items/redstone');
 
     form.show(player).then((response) => {
@@ -32,7 +33,8 @@ function showCommandCenter(player) {
             case 2: showAnimalMenu(player); break;
             case 3: showPlayerMenu(player); break;
             case 4: showBuildingMenu(player); break;
-            case 5: showEmergencyMenu(player); break;
+            case 5: connectAIBot(player); break;
+            case 6: showEmergencyMenu(player); break;
         }
     });
 }
@@ -284,6 +286,19 @@ function showBuildingMenu(player) {
         }
         showBuildingMenu(player);
     });
+}
+
+// AI Bot Connection
+function connectAIBot(player) {
+    player.sendMessage('§b🤖 Connecting Zoo AI Bot...');
+    player.runCommand('function ai');
+    player.sendMessage('§a✅ AI Bot connection initiated!');
+    player.sendMessage('§e💡 Try typing !help to test the connection');
+    
+    // Return to main menu after a moment
+    setTimeout(() => {
+        showCommandCenter(player);
+    }, 2000);
 }
 
 // Emergency Controls Menu

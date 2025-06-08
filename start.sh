@@ -121,6 +121,18 @@ if ! kill -0 $SERVER_PID 2>/dev/null; then
     exit 1
 fi
 
+# Wait for server to fully initialize
+echo "⏳ Waiting for server to fully initialize..."
+sleep 10
+
+# Auto-connect AI Bot (if it's running)
+if [ ! -z "$AI_PID" ] && kill -0 $AI_PID 2>/dev/null; then
+    echo "🤖 Auto-connecting AI Bot to server..."
+    # Try to auto-connect the AI bot using the function we created
+    echo "function connect_ai" >> logs/server_commands.txt
+    echo "🔗 AI Bot connection initiated automatically"
+fi
+
 # Monitor both processes
 echo "✅ Super Zoo Server is running!"
 echo "🌐 Server accessible on port 19132"
@@ -132,6 +144,11 @@ echo "   1. Open Minecraft Bedrock Edition"
 echo "   2. Go to 'Play' > 'Servers' > 'Add Server'"
 echo "   3. Enter Server Address: $(hostname -I | awk '{print $1}'):19132"
 echo "   4. Or use 'localhost:19132' if playing on the same computer"
+echo ""
+echo "🤖 AI Bot Connection:"
+echo "   • Should connect automatically on startup"
+echo "   • If not working, any admin can type: /function ai"
+echo "   • Or use the Command Center (!cc) to connect"
 echo ""
 
 # Keep the script running and monitor child processes
