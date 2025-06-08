@@ -1,17 +1,22 @@
 [
     {
         "ignoresPlayerLimit": false,
-        "name": "PUT_YOUR_MINECRAFT_USERNAME_HERE",
-        "xuid": "2535465048055551"
+        "name": "Dad"
     },
     {
         "ignoresPlayerLimit": false,
-        "name": "PUT_KIDS_USERNAME_HERE",
-        "xuid": "THEIR_XBOX_ID_HERE"
+        "name": "Your mom 20458"
     },
     {
         "ignoresPlayerLimit": false,
-        "name": "PUT_FRIENDS_USERNAME_HERE", 
-        "xuid": "THEIR_XBOX_ID_HERE"
+        "name": "YourSonsName"
+    },
+    {
+        "ignoresPlayerLimit": false,
+        "name": "Friend1"
+    },
+    {
+        "ignoresPlayerLimit": false,
+        "name": "Friend2"
     }
 ] 
