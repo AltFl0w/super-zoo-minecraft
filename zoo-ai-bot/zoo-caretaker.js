@@ -11,6 +11,8 @@ class SuperZooCaretaker {
         this.animalStats = new Map();
         this.feedingSchedule = new Map();
         this.lastFeedingTime = new Map();
+        this.authenticatedPlayers = new Set(); // Track who has entered the password
+        this.serverPassword = "ZooKeeper2024"; // Change this to your desired password
         
         // Initialize with some default animal data
         this.initializeAnimalData();
@@ -185,7 +187,8 @@ class SuperZooCaretaker {
             
             // Send welcome message
             this.sendCommandToClient(ws, '/say §a🤖 Zoo AI Caretaker is now online!');
-            this.sendCommandToClient(ws, '/say §eType !help for available commands');
+            this.sendCommandToClient(ws, '/say §c🔒 Authentication required! Type: !password <your_password>');
+            this.sendCommandToClient(ws, '/say §eType !help for more information');
 
             ws.on('message', (data) => {
                 try {
@@ -237,6 +240,29 @@ class SuperZooCaretaker {
         const player = event.sender;
         
         console.log(`📢 ${player}: ${message}`);
+
+        // Check for password authentication first
+        if (message.startsWith('!password ')) {
+            const enteredPassword = message.slice(10).trim(); // Remove "!password "
+            if (enteredPassword === this.serverPassword) {
+                this.authenticatedPlayers.add(player);
+                this.sendMessageToClient(ws, `§a🔓 Welcome to the zoo, ${player}! You are now authenticated.`);
+                this.sendMessageToClient(ws, `§e💡 Type !help to see available commands`);
+                console.log(`✅ ${player} successfully authenticated`);
+            } else {
+                this.sendMessageToClient(ws, `§c🔒 Incorrect password! Access denied.`);
+                console.log(`❌ ${player} failed authentication attempt`);
+            }
+            return;
+        }
+
+        // Check if player is authenticated (except for help command)
+        if (!this.authenticatedPlayers.has(player) && !message.startsWith('!help')) {
+            this.sendMessageToClient(ws, `§c🔒 You must enter the server password first!`);
+            this.sendMessageToClient(ws, `§e💡 Type: !password <your_password>`);
+            this.sendMessageToClient(ws, `§e💡 Or type !help for more information`);
+            return;
+        }
 
         if (message.startsWith('!')) {
             const [command, ...args] = message.slice(1).split(' ');
@@ -722,6 +748,18 @@ class SuperZooCaretaker {
 
     showHelp(player, ws = null) {
         const playerLevel = this.getPlayerPermissionLevel(player);
+        const isAuthenticated = this.authenticatedPlayers.has(player);
+        
+        this.sendMessageToClient(ws, `§6🤖 Super Zoo AI Caretaker Help`);
+        
+        // Show authentication status
+        if (!isAuthenticated) {
+            this.sendMessageToClient(ws, `§c🔒 You are not authenticated!`);
+            this.sendMessageToClient(ws, `§e💡 To access the zoo, type: §a!password <your_password>`);
+            this.sendMessageToClient(ws, `§e📞 Contact the server admin for the password`);
+            return;
+        }
+        
         const availableCommands = [];
         
         // Check which commands this player can use
@@ -731,7 +769,7 @@ class SuperZooCaretaker {
             }
         }
         
-        this.sendMessageToClient(ws, `§6🤖 Super Zoo AI Caretaker Help`);
+        this.sendMessageToClient(ws, `§a🔓 Authenticated as: §e${player}`);
         this.sendMessageToClient(ws, `§e📋 Your permission level: §a${playerLevel}`);
         this.sendMessageToClient(ws, `§e💡 Available commands:`);
         
