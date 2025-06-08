@@ -49,6 +49,22 @@ RUN mkdir -p worlds behavior_packs resource_packs zoo-ai-bot logs backups
 # Copy the Super Zoo world
 COPY worlds/Super_Zoo/ ./worlds/Super_Zoo/
 
+# Copy behavior packs and resource packs to world directory
+COPY games/com.mojang/behavior_packs/ ./worlds/Super_Zoo/behavior_packs/
+COPY games/com.mojang/resource_packs/ ./worlds/Super_Zoo/resource_packs/
+
+# Also copy to server-level directories for global access
+COPY games/com.mojang/behavior_packs/ ./behavior_packs/
+COPY games/com.mojang/resource_packs/ ./resource_packs/
+
+# Copy skin packs and other resources
+COPY games/com.mojang/skin_packs/ ./skin_packs/
+COPY games/com.mojang/world_templates/ ./world_templates/
+
+# Copy development packs (in case they're needed)
+COPY games/com.mojang/development_behavior_packs/ ./development_behavior_packs/
+COPY games/com.mojang/development_resource_packs/ ./development_resource_packs/
+
 # Set up AI Bot
 WORKDIR /home/minecraft/zoo-ai-bot
 COPY zoo-ai-bot/package*.json ./
@@ -59,10 +75,11 @@ RUN chown -R minecraft:minecraft /home/minecraft/zoo-ai-bot
 # Back to main directory
 WORKDIR /home/minecraft
 
-# Copy server configuration files
+# Copy server configuration files (use root directory versions with latest settings)
 COPY server.properties ./server.properties
 COPY permissions.json ./permissions.json
 COPY allowlist.json ./allowlist.json
+COPY bootstrap_settings.json ./bootstrap_settings.json
 COPY start.sh ./start.sh
 
 # Make start script executable
