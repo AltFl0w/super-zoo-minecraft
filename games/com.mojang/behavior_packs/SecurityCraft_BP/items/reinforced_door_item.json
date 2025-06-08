@@ -1,0 +1,18 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:item": {
+		"description": {
+			"identifier": "scb:reinforced_door_item",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.door"
+			}
+		},
+		"components": {
+			"minecraft:block_placer": {
+				"block": "scb:reinforced_door"
+			},
+			"minecraft:icon": "reinforced_door"
+		}
+	}
+}

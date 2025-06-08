@@ -1,0 +1,286 @@
+{
+  "format_version": "1.17.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "scb:turret",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "scb:tamed": {
+        "minecraft:is_tamed": {}
+      },
+      "scb:off": {
+        "minecraft:is_sheared": {}
+      },
+      "scb:on": {
+        "minecraft:behavior.look_at_player": {
+          "priority": 2
+        },
+        "minecraft:behavior.random_look_around": {
+          "priority": 2
+        },
+        "minecraft:type_family": {
+          "family": ["turret", "irongolem"]
+        }
+      },
+      "scb:only_monsters": {
+        "minecraft:entity_sensor": {
+          "subsensors": [
+            {
+              "range": 1,
+              "event_filters": {
+                "all_of": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "monster"
+                }
+              },
+              "event": "scb:push_monsters"
+            }
+          ]
+        },
+        "minecraft:shooter": {
+          "def": "scb:turret_bullet"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "attack_interval_min": 0.5,
+          "attack_interval_max": 0.5,
+          "attack_radius": 30
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 0,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 40
+            }
+          ],
+          "set_persistent": true
+        }
+      },
+      "scb:only_players": {
+        "minecraft:entity_sensor": {
+          "subsensors": [
+            {
+              "range": 1,
+              "event_filters": {
+                "all_of": {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              },
+              "event": "scb:push_monsters"
+            }
+          ]
+        },
+        "minecraft:shooter": {
+          "def": "scb:turret_bullet"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "attack_interval_min": 0.5,
+          "attack_interval_max": 0.5,
+          "attack_radius": 30
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 0,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 40
+            }
+          ],
+          "set_persistent": true
+        }
+      },
+      "scb:attack_all": {
+        "minecraft:entity_sensor": {
+          "subsensors": [
+            {
+              "range": 1,
+              "event_filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "monster"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              },
+              "event": "scb:push_monsters"
+            }
+          ]
+        },
+        "minecraft:shooter": {
+          "def": "scb:turret_bullet"
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 0,
+          "attack_interval_min": 0.5,
+          "attack_interval_max": 0.5,
+          "attack_radius": 30
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 0,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              },
+              "max_dist": 40
+            },
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 40
+            }
+          ],
+          "set_persistent": true
+        }
+      },
+      "scb:tameable": {
+        "minecraft:tameable": {
+          "probability": 1,
+          "tame_items": ["scb:padlock"],
+          "tame_event": {
+            "event": "scb:tamed"
+          }
+        }
+      },
+      "scb:remove": {
+        "minecraft:despawn": {},
+        "minecraft:instant_despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 20,
+        "min": 1
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "avoid_sun": true,
+        "avoid_water": true
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1.5
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "on_damage": {},
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1
+      }
+    },
+    "events": {
+      "scb:push_monsters": {
+        "queue_command": {
+          "command": ["tag @s add turretTarget"]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["scb:tameable"]
+        }
+      },
+      "scb:tamed": {
+        "add": {
+          "component_groups": ["scb:tamed", "scb:off"]
+        },
+        "remove": {
+          "component_groups": ["scb:tameable"]
+        }
+      },
+      "scb:on": {
+        "remove": {
+          "component_groups": ["scb:off"]
+        },
+        "add": {
+          "component_groups": ["scb:on"]
+        },
+        "queue_command": {
+          "command": ["tag @s add tpfacing"]
+        }
+      },
+      "scb:off": {
+        "add": {
+          "component_groups": ["scb:off"]
+        },
+        "remove": {
+          "component_groups": [
+            "scb:on",
+            "scb:attack_all",
+            "scb:only_monsters",
+            "scb:only_players"
+          ]
+        }
+      },
+      "scb:only_monsters": {
+        "add": {
+          "component_groups": ["scb:only_monsters"]
+        },
+        "remove": {
+          "component_groups": ["scb:only_players", "scb:attack_all"]
+        }
+      },
+      "scb:only_players": {
+        "add": {
+          "component_groups": ["scb:only_players"]
+        },
+        "remove": {
+          "component_groups": ["scb:only_monsters", "scb:attack_all"]
+        }
+      },
+      "scb:attack_all": {
+        "add": {
+          "component_groups": ["scb:attack_all"]
+        },
+        "remove": {
+          "component_groups": ["scb:only_monsters", "scb:only_players"]
+        }
+      }
+    }
+  }
+}

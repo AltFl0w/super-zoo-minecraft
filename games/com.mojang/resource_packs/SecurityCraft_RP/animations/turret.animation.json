@@ -1,0 +1,57 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.turret.close": {
+			"loop": true,
+			"bones": {
+				"base": {
+					"position": [0, -15, 0]
+				}
+			}
+		},
+		"animation.turret.look": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": ["query.target_x_rotation - this", "query.target_y_rotation - this", 0]
+				},
+				"body": {
+					"rotation": [0, "-q.body_y_rotation + (Math.round(q.body_y_rotation / 90) * 90)", 0]
+				}
+			}
+		},
+		"animation.turret.move": {
+			"loop": true,
+			"animation_length": 0.48,
+			"bones": {
+				"bone6": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"bone7": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"bone3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [-360, 0, 0]
+					}
+				},
+				"bone4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [-360, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

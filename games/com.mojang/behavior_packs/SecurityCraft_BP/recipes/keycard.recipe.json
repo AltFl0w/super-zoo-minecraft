@@ -1,0 +1,27 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "scb:keycard"
+        },
+        "tags": [
+            "scb"
+        ],
+        "pattern": [
+            "#i",
+            "#i"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:redstone"
+            },
+            "i": {
+                "item": "minecraft:iron_ingot"
+            }
+        },
+        "result": {
+            "item": "scb:keycard",
+            "count": 1
+        }
+    }
+}

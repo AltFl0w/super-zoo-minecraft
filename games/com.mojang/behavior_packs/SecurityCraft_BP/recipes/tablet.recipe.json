@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "scb:tablet"
+        },
+        "tags": [
+            "scb"
+        ],
+        "pattern": [
+            "iii",
+            "iRi",
+            "iGi"
+        ],
+        "key": {
+            "i": {
+                "item": "minecraft:iron_ingot"
+            },
+            "R": {
+                "item": "minecraft:redstone_block"
+            },
+            "G": {
+                "item": "minecraft:glass_pane"
+            }
+        },
+        "result": {
+            "item": "scb:tablet",
+            "count": 1
+        }
+    }
+}

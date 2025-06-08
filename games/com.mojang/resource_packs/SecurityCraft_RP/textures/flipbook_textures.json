@@ -1,0 +1,14 @@
+[
+  {
+    "atlas_tile": "security_camera",
+    "flipbook_texture": "textures/blocks/security_camera",
+    "ticks_per_frame": 10,
+    "blend_frames": false
+  },
+  {
+    "atlas_tile": "scanner",
+    "flipbook_texture": "textures/blocks/scanner",
+    "ticks_per_frame": 20,
+    "blend_frames": false
+  }
+]

@@ -1,0 +1,38 @@
+{
+    "resource_pack_name": "scb",
+    "texture_data": {
+        "chest_transfer": {
+            "textures": "textures/items/chest_transfer"
+        },
+        "universal_block_remover": {
+            "textures": "textures/items/universal_block_remover"
+        },
+        "reinforced_door": {
+            "textures": "textures/items/reinforced_door"
+        },
+        "keycard": {
+            "textures": "textures/items/keycard"
+        },
+        "scb_turret_module": {
+            "textures": "textures/items/turret_module"
+        },
+        "scb_block_reinforcer": {
+            "textures": "textures/items/block_reinforcer"
+        },
+        "scb_tablet": {
+            "textures": "textures/items/tablet"
+        },
+        "scb_remover": {
+            "textures": "textures/items/remover"
+        },
+        "scb_turret": {
+            "textures": "textures/items/turret"
+        },
+        "scb_mine": {
+            "textures": "textures/items/mine"
+        },
+        "scb_mine_module": {
+            "textures": "textures/items/mine_module"
+        }
+    }
+}

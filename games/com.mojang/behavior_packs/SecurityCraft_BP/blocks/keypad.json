@@ -1,0 +1,80 @@
+{
+  "format_version": "1.20.81",
+  "minecraft:block": {
+    "description": {
+      "identifier": "scb:keypad",
+      "menu_category": {
+        "category": "items"
+      },
+      "states": {
+        "scb:switch": [0, 1]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "y_rotation_offset": 180,
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('scb:switch') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "keypad",
+              "ambient_occlusion": true,
+              "face_dimming": true,
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('scb:switch') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "keypad_on",
+              "ambient_occlusion": true,
+              "face_dimming": true,
+              "render_method": "opaque"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:geometry": "geometry.keypad",
+      "minecraft:loot": "loot_tables/scanner.json",
+      "minecraft:custom_components": ["scb:block"],
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": false
+    }
+  }
+}

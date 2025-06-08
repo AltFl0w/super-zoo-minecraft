@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "scb:reinforced_door"
+        },
+        "tags": [
+            "scb"
+        ],
+        "pattern": [
+            "#I"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:iron_door"
+            },
+            "I": {
+                "item": "minecraft:iron_block"
+            }
+        },
+        "result": {
+            "item": "scb:reinforced_door_item",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "format_version": "1.20.81",
+    "minecraft:block": {
+        "description": {
+            "identifier": "scb:scanner",
+            "menu_category": {
+                "category": "items"
+            }
+        },
+        "components": {
+            "minecraft:loot": "loot_tables/scanner.json",
+            "minecraft:custom_components": [
+                "scb:block"
+            ],
+            "minecraft:flammable": false,
+            "minecraft:destructible_by_mining": false,
+            "minecraft:destructible_by_explosion": false
+        }
+    }
+}

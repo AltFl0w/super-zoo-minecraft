@@ -1,7 +1,17 @@
 [
     {
         "ignoresPlayerLimit": false,
-        "name": "YourMinecraftUsername",
+        "name": "PUT_YOUR_MINECRAFT_USERNAME_HERE",
         "xuid": "2535465048055551"
+    },
+    {
+        "ignoresPlayerLimit": false,
+        "name": "PUT_KIDS_USERNAME_HERE",
+        "xuid": "THEIR_XBOX_ID_HERE"
+    },
+    {
+        "ignoresPlayerLimit": false,
+        "name": "PUT_FRIENDS_USERNAME_HERE", 
+        "xuid": "THEIR_XBOX_ID_HERE"
     }
 ] 

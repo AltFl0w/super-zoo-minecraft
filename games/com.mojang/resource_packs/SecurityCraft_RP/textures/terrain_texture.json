@@ -1,0 +1,48 @@
+{
+    "resource_pack_name": "scb",
+	"texture_name": "atlas.terrain",
+    "texture_data": {
+        "scb_table": {
+            "textures": "textures/blocks/scb_table"
+        },
+        "reinforced_door_bottom": {
+            "textures": "textures/blocks/reinforced_door_bottom"
+        },
+        "reinforced_door_top": {
+            "textures": "textures/blocks/reinforced_door_top"
+        },
+        "keycard_reader_on": {
+            "textures": "textures/blocks/keycard_reader_on"
+        },
+        "keycard_reader": {
+            "textures": "textures/blocks/keycard_reader"
+        },
+        "trophy_system": {
+            "textures": "textures/blocks/trophy_system"
+        },
+        "keypad": {
+            "textures": "textures/blocks/keypad"
+        },
+        "keypad_on": {
+            "textures": "textures/blocks/keypad_on"
+        },
+        "scanner": {
+            "textures": "textures/blocks/scanner"
+        },
+        "security_camera": {
+            "textures": "textures/blocks/security_camera"
+        },
+        "mine": {
+            "textures": "textures/blocks/mine"
+        },
+        "mine_inactive": {
+            "textures": "textures/blocks/mine_inactive"
+        },
+        "key_chest": {
+            "textures": "textures/blocks/key_chest"
+        },
+        "key_chest_keypad": {
+            "textures": "textures/blocks/key_chest_keypad"
+        }
+    }
+}

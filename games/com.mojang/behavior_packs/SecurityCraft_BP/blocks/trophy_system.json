@@ -1,0 +1,54 @@
+{
+  "format_version": "1.20.81",
+  "minecraft:block": {
+    "description": {
+      "identifier": "scb:trophy_system",
+      "menu_category": {
+        "category": "items"
+      },
+      "states": {
+        "scb:visible": [0, 1]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('scb:visible') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.trophy_system",
+            "bone_visibility": {
+              "group": true,
+              "bone": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('scb:visible') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.trophy_system",
+            "bone_visibility": {
+              "group": false,
+              "bone": false
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:custom_components": ["scb:block"],
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "trophy_system",
+          "ambient_occlusion": true,
+          "face_dimming": true,
+          "render_method": "opaque"
+        }
+      },
+      "minecraft:destructible_by_explosion": false,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:flammable": false
+    }
+  }
+}

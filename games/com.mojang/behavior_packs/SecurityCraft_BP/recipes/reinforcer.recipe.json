@@ -1,0 +1,31 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "scb:reinforcer"
+        },
+        "tags": [
+            "scb"
+        ],
+        "pattern": [
+            " #D",
+            " i#",
+            "i  "
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:redstone"
+            },
+            "D": {
+                "item": "minecraft:diamond"
+            },
+            "i": {
+                "item": "minecraft:iron_ingot"
+            }
+        },
+        "result": {
+            "item": "scb:reinforcer",
+            "count": 1
+        }
+    }
+}

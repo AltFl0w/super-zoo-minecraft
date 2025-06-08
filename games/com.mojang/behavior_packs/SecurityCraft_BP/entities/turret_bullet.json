@@ -1,0 +1,75 @@
+//bridge-file-version: #9
+{
+	"format_version": "1.17.0",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "scb:turret_bullet",
+			"is_summonable": true,
+			"is_spawnable": false,
+			"is_experimental": false
+		},
+		"component_groups": {
+			"despawn": {
+				"minecraft:instant_despawn": {},
+				"minecraft:despawn": {}
+			}
+		},
+		"components": {
+			"minecraft:projectile": {
+				"on_hit": {
+					"impact_damage": {
+						"damage": 5,
+						"knockback": true,
+						"semi_random_diff_damage": true,
+						"destroy_on_hit": true,
+						"max_critical_damage": 10,
+						"min_critical_damage": 9,
+						"power_multiplier": 0.97
+					},
+					"definition_event": {
+						"event_trigger": {
+							"event": "despawn"
+						}
+					}
+				},
+				"hit_sound": "random.pop",
+				"power": 1,
+				"gravity": 0.02,
+				"uncertainty_base": 0,
+				"uncertainty_multiplier": 0,
+				"anchor": 1,
+				"should_bounce": true,
+				"offset": [
+					0,
+					-0.1,
+					0
+				],
+				"shoot_sound": "random.pop"
+			},
+			"minecraft:damage_sensor": {
+				"triggers": [
+					{
+						"cause": "all",
+						"deals_damage": false
+					}
+				]
+			}
+		},
+		"events": {
+			"despawn": {
+				"add": {
+					"component_groups": [
+						"despawn"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"queue_command": {
+					"command": [
+						"playsound random.pop"
+					]
+				}
+			}
+		}
+	}
+}

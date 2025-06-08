@@ -1,0 +1,26 @@
+{
+    "format_version": "1.12",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "scb:reinforced_chest_keypad"
+        },
+        "tags": [
+            "scb"
+        ],
+        "pattern": [
+            "#S"
+        ],
+        "key": {
+            "#": {
+                "item": "scb:reinforced_chest"
+            },
+            "S": {
+                "item": "scb:keypad"
+            }
+        },
+        "result": {
+            "item": "scb:reinforced_chest_keypad",
+            "count": 1
+        }
+    }
+}

@@ -1,0 +1,214 @@
+{
+	"format_version": "1.20.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "scb:reinforced_door",
+			"menu_category": {
+				"category": "none",
+				"is_hidden_in_commands": true
+			},
+			"states": {
+				"scb:powered": [
+					false,
+					true
+				],
+				"scb:upper_block_bit": [
+					false,
+					true
+				],
+				"scb:open_bit": [
+					false,
+					true
+				],
+				"scb:reversed": [
+					false,
+					true
+				]
+			},
+			"traits": {
+				"minecraft:placement_direction": {
+					"enabled_states": [
+						"minecraft:cardinal_direction"
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destructible_by_mining": false,
+			"minecraft:destructible_by_explosion": false,
+			"minecraft:flammable": false,
+			"tag:scb:is_door": {},
+			"minecraft:custom_components": [
+				"scb:door", "scb:block"
+			],
+			"minecraft:tick": {
+				"interval_range": [
+					5,
+					5
+				]
+			},
+			"minecraft:geometry": {
+				"bone_visibility": {
+					"open_top": "query.block_state('scb:open_bit') && query.block_state('scb:upper_block_bit') && !q.block_state('scb:reversed')",
+					"open_bottom": "query.block_state('scb:open_bit') && query.block_state('scb:upper_block_bit') == false && !q.block_state('scb:reversed')",
+					"top": "query.block_state('scb:open_bit') == false && query.block_state('scb:upper_block_bit') && !q.block_state('scb:reversed')",
+					"bottom": "query.block_state('scb:open_bit') == false && query.block_state('scb:upper_block_bit') == false && !q.block_state('scb:reversed')",
+					"reversed_open_top": "query.block_state('scb:open_bit') && query.block_state('scb:upper_block_bit') && q.block_state('scb:reversed')",
+					"reversed_open_bottom": "query.block_state('scb:open_bit') && query.block_state('scb:upper_block_bit') == false && q.block_state('scb:reversed')",
+					"reversed_top": "query.block_state('scb:open_bit') == false && query.block_state('scb:upper_block_bit') && q.block_state('scb:reversed')",
+					"reversed_bottom": "query.block_state('scb:open_bit') == false && query.block_state('scb:upper_block_bit') == false && q.block_state('scb:reversed')"
+				},
+				"identifier": "geometry.door"
+			},
+			"minecraft:display_name": "Custom Door"
+		},
+		"permutations": [
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'north'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							180,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'east'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							90,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('minecraft:cardinal_direction') == 'west'",
+				"components": {
+					"minecraft:transformation": {
+						"rotation": [
+							0,
+							270,
+							0
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('scb:open_bit') == false",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							3
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('scb:open_bit') == true && !q.block_state('scb:reversed')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('scb:open_bit') == true && q.block_state('scb:reversed')",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							5,
+							0,
+							-8
+						],
+						"size": [
+							3,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('scb:upper_block_bit') == false",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "reinforced_door_bottom",
+							"render_method": "blend"
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_state('scb:upper_block_bit') == true",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "reinforced_door_top",
+							"render_method": "blend"
+						}
+					}
+				}
+			}
+		]
+	}
+}

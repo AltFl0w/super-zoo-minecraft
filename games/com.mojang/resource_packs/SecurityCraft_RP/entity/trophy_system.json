@@ -1,0 +1,28 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "scb:trophy_system",
+            "materials": {
+                "default": "skeleton"
+            },
+            "textures": {
+                "default": "textures/blocks/trophy_system"
+            },
+            "geometry": {
+                "default": "geometry.trophy_system"
+            },
+            "animations": {
+                "basic": "animation.trophy_system.rotate"
+            },
+            "scripts": {
+                "animate": [
+                    "basic"
+                ]
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ]
+        }
+    }
+}

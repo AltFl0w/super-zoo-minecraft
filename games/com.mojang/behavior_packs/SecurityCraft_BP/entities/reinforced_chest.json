@@ -1,0 +1,115 @@
+{
+  "format_version": "1.19.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "scb:reinforced_chest",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "component_groups": {
+      "scb:despawn": {
+        "minecraft:instant_despawn": {}
+      },
+      "tamed": {
+        "minecraft:is_tamed": {},
+        "minecraft:inventory": {
+          "container_type": "container",
+          "private": false,
+          "inventory_size": 27,
+          "restrict_to_owner": true
+        }
+      },
+      "tameable": {
+        "minecraft:tameable": {
+          "probability": 1,
+          "tame_event": {
+            "event": "tamed"
+          }
+        }
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:loot": {
+        "table": "loot_tables/reinforced_chest.json"
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "play_sounds": "block.stonecutter.use",
+            "swing": true,
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_owner",
+                    "subject": "other",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "value": "scb:remover"
+                  }
+                ]
+              },
+              "event": "scb:remove"
+            }
+          }
+        ]
+      },
+      "minecraft:health": {
+        "value": 1
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:knockback_resistance": {
+        "value": 1
+      },
+      "minecraft:movement": {
+        "value": 0
+      },
+      "minecraft:collision_box": {
+        "height": 1,
+        "width": 1
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      }
+    },
+    "events": {
+      "scb:remove": {
+        "queue_command": {
+          "command": ["kill @s", "setblock ~ ~ ~ air"]
+        }
+      },
+      "scb:despawn": {
+        "add": {
+          "component_groups": ["scb:despawn"]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": ["tameable"]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["tameable"]
+        }
+      },
+      "tamed": {
+        "add": {
+          "component_groups": ["tamed"]
+        }
+      }
+    }
+  }
+}

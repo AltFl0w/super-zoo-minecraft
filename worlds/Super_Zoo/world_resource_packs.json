@@ -1,4 +1,3 @@
-
 [
 	
 	{
@@ -34,5 +33,10 @@
 	{
 		"pack_id" : "ab5ca10b-b5f9-46b9-ad9a-aabf71c1d545",
 		"version" : [ 1, 0, 0 ]
+	},
+	
+	{
+		"pack_id" : "286f891f-4ea7-4f44-aaac-b1e85fe2abad",
+		"version" : [ 0, 0, 1 ]
 	}
 ]

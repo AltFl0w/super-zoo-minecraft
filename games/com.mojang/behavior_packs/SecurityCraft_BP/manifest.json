@@ -1,0 +1,58 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "SecurityBeCraft BP",
+		"description": "Made by Halo333X",
+		"uuid": "993365c5-254c-44f4-b94d-c387fd0303dd",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			21,
+			20
+		]
+	},
+	"modules": [
+		{
+			"type": "script",
+			"uuid": "6f31b3ce-939d-4476-83de-ab565e0d3ba5",
+			"entry": "scripts/index.js",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"capabilities": [
+		"script_eval"
+	],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "1.14.0-beta"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "1.1.0"
+		},
+		{
+			"uuid": "261673a1-b129-42fa-8d98-154042524b19",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"1.8.5"
+			]
+		}
+	}
+}

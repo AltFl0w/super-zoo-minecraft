@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "scb:turret",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/turret"
+      },
+      "geometry": {
+        "default": "geometry.turret"
+      },
+      "animations": {
+        "look_at_target": "animation.turret.look",
+        "open": "animation.turret.open",
+        "close": "animation.turret.close"
+      },
+      "scripts": {
+        "animate": [
+            "look_at_target",
+            {
+              "close": "query.is_sheared"
+            }
+        ]
+      },
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 35
+      }
+    }
+  }
+}

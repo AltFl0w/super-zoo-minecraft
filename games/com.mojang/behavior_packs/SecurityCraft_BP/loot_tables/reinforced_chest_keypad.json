@@ -1,0 +1,23 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "functions": [
+                        {
+                            "function": "set_count",
+                            "count": {
+                                "max": 1,
+                                "min": 1
+                            }
+                        }
+                    ],
+                    "type": "item",
+                    "weight": 1,
+                    "name": "scb:reinforced_chest_keypad"
+                }
+            ]
+        }
+    ]
+}

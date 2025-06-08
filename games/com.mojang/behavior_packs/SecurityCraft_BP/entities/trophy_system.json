@@ -1,0 +1,65 @@
+{
+    "format_version": "1.20.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "scb:trophy_system",
+            "is_spawnable": false,
+            "is_summonable": true
+        },
+        "component_groups": {
+            "scb:despawn": {
+                "minecraft:instant_despawn": {
+                    "remove_child_entities": false
+                }
+            }
+        },
+        "components": {
+            "minecraft:block_sensor": {
+                "sensor_radius": 1,
+                "on_break": [
+                    {
+                        "block_list": [
+                            "scb:trophy_system"
+                        ],
+                        "on_block_broken": "scb:remove"
+                    }
+                ]
+            },
+            "minecraft:collision_box": {
+                "height": 0,
+                "width": 0
+            },
+            "minecraft:knockback_resistance": {
+                "value": 1
+            },
+            "minecraft:damage_sensor": {
+                "triggers": [
+                    {
+                        "cause": "all",
+                        "deals_damage": false
+                    }
+                ]
+            },
+            "minecraft:health": {
+                "value": 1,
+                "min": 1
+            }
+        },
+        "events": {
+            "scb:remove": {
+                "add": {
+                    "component_groups": [
+                        "scb:despawn"
+                    ]
+                }
+            },
+            "scb:despawn": {
+                "add": {
+                    "component_groups": [
+                        "scb:despawn"
+                    ]
+                }
+            }
+        }
+    }
+}

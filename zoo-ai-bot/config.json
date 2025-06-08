@@ -1,16 +1,14 @@
 {
     "permissionLevels": {
         "admin": [
-            "YourMinecraftUsername",
-            "ServerOwner"
+            "PUT_YOUR_MINECRAFT_USERNAME_HERE"
         ],
         "manager": [
-            "ZooManager1", 
-            "HeadKeeper"
+            "PUT_KIDS_USERNAMES_HERE",
+            "PUT_TRUSTED_FRIENDS_HERE"
         ],
         "builder": [
-            "Architect1",
-            "Constructor1"
+            "PUT_BUILDER_USERNAMES_HERE"
         ],
         "visitor": []
     },

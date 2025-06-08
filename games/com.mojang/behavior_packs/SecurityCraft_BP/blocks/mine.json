@@ -1,0 +1,56 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "scb:mine",
+      "states": {
+        "scb:active": [false, true]
+      },
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('scb:active') == false",
+        "components": {
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "mine_inactive",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('scb:active') == true",
+        "components": {
+          "minecraft:custom_components": ["scb:block"],
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "mine",
+              "render_method": "alpha_test",
+              "ambient_occlusion": true,
+              "face_dimming": true
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:destructible_by_explosion": false,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:geometry": "geometry.mine",
+      "minecraft:collision_box": {
+        "origin": [-2, 0, -2],
+        "size": [4, 4, 4]
+      },
+      "minecraft:selection_box": {
+        "origin": [-2, 0, -2],
+        "size": [4, 1, 4]
+      }
+    }
+  }
+}
