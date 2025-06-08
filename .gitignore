@@ -55,3 +55,4 @@ resource_packs/*/
 
 # Allow the specific Super Zoo world
 !worlds/Super_Zoo/
+!worlds/Super_Zoo/db/
